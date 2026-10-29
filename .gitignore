@@ -1,0 +1,58 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Python build and packaging output
+build/
+dist/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local datasets: preserve only the directory placeholders
+/data/raw/*
+!/data/raw/.gitkeep
+/data/interim/*
+!/data/interim/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Model and experiment artifacts
+checkpoints/
+mlruns/
+mlartifacts/
+mlflow.db
+mlflow.db-*
+artifacts/
+*.pt
+*.pth
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files, logs, and test/lint caches
+*.log
+*.tmp
+*.swp
+.demo_scratch/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+.aws/

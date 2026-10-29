@@ -1,0 +1,18 @@
+# Baseline run configuration. Every field here is logged to MLflow so a run is
+# fully traceable: dataset version, split version, config, seed, and (recorded
+# separately at run time) the Git commit.
+#
+# data_dir/manifest_path/split_path below point at the committed SYNTHETIC demo
+# fixtures (data/manifests/demo/, splits/demo/) — never the real WildfireSpreadTS
+# dataset. Re-running this config regenerates them deterministically (same seed).
+# For a real run, copy this file and point it at data/raw/WildfireSpreadTS/ and
+# non-demo manifest/split paths instead.
+data_dir: data/raw/synthetic
+manifest_path: data/manifests/demo/manifest_synthetic.csv
+split_path: splits/demo/event_split_synthetic.csv
+context_days: 3
+seed: 42
+split_ratios: [0.7, 0.15, 0.15]
+batch_size: 4
+dataset_version: "synthetic-v1 (mirrors WildfireSpreadTS v1.0, zenodo.8006177, 40-channel schema)"
+split_version: "v1"

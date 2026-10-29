@@ -1,0 +1,9 @@
+event_id,split
+2018/synthetic_fire_00,val
+2018/synthetic_fire_05,test
+2019/synthetic_fire_04,train
+2019/synthetic_fire_06,train
+2019/synthetic_fire_07,train
+2020/synthetic_fire_02,train
+2020/synthetic_fire_03,train
+2021/synthetic_fire_01,train

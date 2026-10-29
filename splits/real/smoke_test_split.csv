@@ -1,0 +1,6 @@
+event_id,split
+2018/fire_21748813,test
+2018/fire_21997864,train
+2019/fire_23300839,train
+2020/fire_23654679,train
+2020/fire_24104674,val

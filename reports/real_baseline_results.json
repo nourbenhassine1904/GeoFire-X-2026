@@ -1,0 +1,40 @@
+{
+  "qualification": "TECHNICAL VERIFICATION ON SAMPLE - not a scientific benchmark (3 event(s))",
+  "split_name": "train",
+  "context_days": 1,
+  "num_valid_windows": 67,
+  "num_events": 3,
+  "window_rejections": {},
+  "elapsed_seconds": 13.536260399996536,
+  "overall_metrics": {
+    "dice": 0.5584328183265928,
+    "iou": 0.5201084976099484,
+    "precision": 0.6848220549408068,
+    "recall": 0.6727542735751582,
+    "pr_auc": 0.12467399842880657
+  },
+  "per_event_metrics": {
+    "2018/fire_21997864": {
+      "dice": 0.4130969161496443,
+      "iou": 0.27258838778909517,
+      "precision": 0.45307303176206704,
+      "recall": 0.4525938858004177,
+      "pr_auc": 0.21161508350699806
+    },
+    "2019/fire_23300839": {
+      "dice": 0.4369165509579423,
+      "iou": 0.4358764413222471,
+      "precision": 0.6118577350304137,
+      "recall": 0.6537842455838138,
+      "pr_auc": 0.001032925555218549
+    },
+    "2020/fire_23654679": {
+      "dice": 0.7534544659742628,
+      "iou": 0.7477077258163054,
+      "precision": 0.8928928976066445,
+      "recall": 0.827533430462992,
+      "pr_auc": 0.026900025760696306
+    }
+  },
+  "git_commit": "4111e86dd5f33f28fd024a77c6a8995110d31510"
+}
