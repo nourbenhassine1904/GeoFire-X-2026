@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-30",
+  "measurement_source": "Windows CIM read-only inventory; disk free varies during the session",
+  "cpu": "12th Gen Intel(R) Core(TM) i7-1255U",
+  "physical_cores": 10,
+  "logical_processors": 12,
+  "physical_memory_bytes": 16837500928,
+  "disk_C_total_bytes": 1022752714752,
+  "disk_C_free_bytes_at_inventory": 128998653952,
+  "gpu": "NVIDIA GeForce MX550, 2048 MiB (previous nvidia-smi verification)",
+  "pytorch_run_device": "cpu",
+  "cuda_training_profiled": false,
+  "note": "No cloud price or GPU speedup assumed. CPU microprofile is stored separately."
+}

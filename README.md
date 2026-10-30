@@ -4,8 +4,37 @@ Multimodal Spatio-Temporal Deep Learning for Next-Day Wildfire Spread Forecastin
 
 ## Current Phase
 
-Phase 3 — Real-data spatio-temporal J+1 pipeline (technical verification, not
-yet a scientific benchmark — see `reports/REAL_PIPELINE_REPORT.md`).
+Benchmark preparation now extends the project to all 607 official events:
+[delivery report](reports/BENCHMARK_PREPARATION_REPORT.md),
+[verified U-Net audit](reports/UNET_AUDIT_V2.md),
+[acquisition and storage budget](docs/FULL_CORPUS_PLAN.md), and
+[multi-model protocol](docs/BENCHMARK_PROTOCOL.md).
+Annual splits and B0–B3 prototypes are prepared; the full corpus has not been
+downloaded or trained. Large acquisition and long training require a reviewed budget.
+
+Suivi 3 — First trained lightweight 2D U-Net for J+1 active-fire segmentation.
+The five-event sample supports technical verification only. The first short
+training performs substantially worse than Persistence; all measured results
+are retained in [the training report](reports/UNET_BASELINE_REPORT.md).
+
+The preceding real-data spatio-temporal pipeline remains documented in
+`reports/REAL_PIPELINE_REPORT.md`.
+
+### U-Net baseline (real data, CPU or CUDA)
+
+Use the project environment on Windows (Python 3.11), not the global Python:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -u scripts/train_unet.py --config configs/unet_baseline.yaml --device cpu
+```
+
+See [the audited protocol and inference commands](docs/UNET_BASELINE.md).
+Training creates a unique artifact directory and a new run in
+`geofirex-unet2d-real-v1`. Raw rasters, historical manifests/splits and previous
+experiments are preserved. Checkpoints and MLflow artifacts stay outside Git.
+The conservative input policy uses current fire and terrain; annual land cover
+has an explicit optional one-hot encoder and is excluded from this first run.
 
 See [Project Context](docs/PROJECT_CONTEXT.md) for the scientific objective,
 input and target contracts, scope, and experimental rules. See

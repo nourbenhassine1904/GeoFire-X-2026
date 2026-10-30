@@ -1,0 +1,32 @@
+# First real training: a technical baseline on 5 events, not an OOD benchmark.
+manifest: data/manifests/real/manifest_wildfirespreadts.csv
+split: splits/real/smoke_test_split.csv
+dataset_version: "WildfireSpreadTS v1.0 / zenodo.8006177 / local 108-file sample"
+split_version: "historical smoke_test seed42, 3 train / 1 val / 1 test events"
+experiment: geofirex-unet2d-real-v1
+output_root: artifacts/unet
+seed: 42
+device: auto
+cpu_threads: 2
+feature_policy: conservative_fire_terrain
+# Annual LC may encode information after J. Opt-in requires the explicit
+# landcover_availability: retrospective_annual_assumption acknowledgement.
+include_landcover: false
+landcover_availability: excluded_unverified_publication_date
+normalization_clip: 8.0
+patch_size: 64
+positive_fraction: 0.5
+samples_per_epoch: 128
+batch_size: 8
+base_channels: 8
+depth: 3
+epochs: 5
+optimizer: adamw
+learning_rate: 0.001
+weight_decay: 0.0001
+dice_weight: 0.5
+pos_weight: 1.0
+mini_overfit_steps: 200
+mini_overfit_lr: 0.01
+thresholds: [0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+max_figures_per_split: 3

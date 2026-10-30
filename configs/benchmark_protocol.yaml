@@ -1,0 +1,27 @@
+protocol_version: annual-v1-preparation
+dataset: "WildfireSpreadTS v1.0 / zenodo.8006177"
+index: data/manifests/real/corpus_zip_index_v1.json
+fold: 0
+train_years: [2018, 2019]
+val_years: [2020]
+test_years: [2021]
+contexts: [1, 3, 5]
+evaluation_target_policy: intersection_actual_windows_T1_T3_T5
+training_target_policy: same_intersection_for_temporal_ablation
+feature_policy: conservative_fire_terrain
+include_landcover: false
+normalization: unique_train_input_paths_fold_only
+patch_size: 64
+inference: fixed_nonoverlapping_tiles_padding_excluded
+primary_metric: micro_pixel_average_precision
+checkpoint_selection: maximize_validation_full_scene_average_precision
+model_selection: validation_only
+threshold_selection: maximize_validation_micro_dice_fixed_grid
+thresholds: [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
+seeds_planned: [42, 43, 44]
+models_prepared: [B0, B1, B2, B3]
+model_deferred: B4
+mlflow_experiment_planned: geofirex-benchmark-annual-v1
+test_policy: explicit_final_evaluation_only_after_selection_lock
+training_authorized_now: false
+full_acquisition_authorized_now: false

@@ -20,6 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest"]
 viewer = ["xarray", "rioxarray"]
+benchmark-metadata = ["pyarrow"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
