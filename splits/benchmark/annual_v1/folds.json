@@ -1,0 +1,817 @@
+{
+  "index_sha256": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+  "local_manifest_sha256": "d657d7bec0fe731c107d8339675a8b13f4ee3ce163416ce4b68812392d15a3f6",
+  "qualification": "607-event metadata splits; only local sample availability checked",
+  "folds": [
+    {
+      "fold_id": 0,
+      "train_years": [
+        2018,
+        2019
+      ],
+      "val_years": [
+        2020
+      ],
+      "test_years": [
+        2021
+      ],
+      "events_per_split": {
+        "train": 250,
+        "val": 201,
+        "test": 156
+      },
+      "split_sha256": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864",
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 41,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5198,
+          "local_observations": 56,
+          "missing_observations": 5142
+        },
+        "val": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        },
+        "test": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 1,
+      "train_years": [
+        2018,
+        2019
+      ],
+      "val_years": [
+        2021
+      ],
+      "test_years": [
+        2020
+      ],
+      "events_per_split": {
+        "train": 250,
+        "test": 201,
+        "val": 156
+      },
+      "split_sha256": "f0a3381e6dce0c6ad16f3d73b64845b63303b33de1b48bf0c0cf091c83f513f6",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864",
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 41,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5198,
+          "local_observations": 56,
+          "missing_observations": 5142
+        },
+        "val": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        },
+        "test": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 2,
+      "train_years": [
+        2018,
+        2020
+      ],
+      "val_years": [
+        2019
+      ],
+      "test_years": [
+        2021
+      ],
+      "events_per_split": {
+        "train": 377,
+        "val": 74,
+        "test": 156
+      },
+      "split_sha256": "b2a7c49fdf7124b38e9ef043b6a403510c2a5714ba06455e12b97398231a5d15",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864",
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 64,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 8065,
+          "local_observations": 84,
+          "missing_observations": 7981
+        },
+        "val": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        },
+        "test": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 3,
+      "train_years": [
+        2018,
+        2020
+      ],
+      "val_years": [
+        2021
+      ],
+      "test_years": [
+        2019
+      ],
+      "events_per_split": {
+        "train": 377,
+        "test": 74,
+        "val": 156
+      },
+      "split_sha256": "53762a611d31831cab6f4658d65401323603966ab10c016d25d557630f0fb894",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864",
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 64,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 8065,
+          "local_observations": 84,
+          "missing_observations": 7981
+        },
+        "val": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        },
+        "test": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 4,
+      "train_years": [
+        2018,
+        2021
+      ],
+      "val_years": [
+        2019
+      ],
+      "test_years": [
+        2020
+      ],
+      "events_per_split": {
+        "train": 332,
+        "val": 74,
+        "test": 201
+      },
+      "split_sha256": "f7cfdda2cce7d97ec85a647d50146167b20f644a87f075684e75e9c60846cdfe",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 7890,
+          "local_observations": 32,
+          "missing_observations": 7858
+        },
+        "val": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        },
+        "test": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 5,
+      "train_years": [
+        2018,
+        2021
+      ],
+      "val_years": [
+        2020
+      ],
+      "test_years": [
+        2019
+      ],
+      "events_per_split": {
+        "train": 332,
+        "test": 74,
+        "val": 201
+      },
+      "split_sha256": "b6e4fca40f052cdd62df97b8d0d0a476cc89b34167318c1b043a4811da0ec75b",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 7890,
+          "local_observations": 32,
+          "missing_observations": 7858
+        },
+        "val": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        },
+        "test": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 6,
+      "train_years": [
+        2019,
+        2020
+      ],
+      "val_years": [
+        2018
+      ],
+      "test_years": [
+        2021
+      ],
+      "events_per_split": {
+        "val": 176,
+        "train": 275,
+        "test": 156
+      },
+      "split_sha256": "8aed50e5f3384e9168fd1813d2adceae3f7d69e82981d032ba3824ff08316c33",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2019/fire_23300839",
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 61,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5717,
+          "local_observations": 76,
+          "missing_observations": 5641
+        },
+        "val": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        },
+        "test": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 7,
+      "train_years": [
+        2019,
+        2020
+      ],
+      "val_years": [
+        2021
+      ],
+      "test_years": [
+        2018
+      ],
+      "events_per_split": {
+        "test": 176,
+        "train": 275,
+        "val": 156
+      },
+      "split_sha256": "e642969ed871b46233c28a5b10bc6b06078efb85404eb93ad6bb682ded1c967e",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2019/fire_23300839",
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 61,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5717,
+          "local_observations": 76,
+          "missing_observations": 5641
+        },
+        "val": {
+          "available_local_events": [],
+          "aligned_target_count": 0,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4117,
+          "local_observations": 0,
+          "missing_observations": 4117
+        },
+        "test": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        }
+      },
+      "ready_for_local_training": false,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 8,
+      "train_years": [
+        2019,
+        2021
+      ],
+      "val_years": [
+        2018
+      ],
+      "test_years": [
+        2020
+      ],
+      "events_per_split": {
+        "val": 176,
+        "train": 230,
+        "test": 201
+      },
+      "split_sha256": "e46c99f3179c8d8c62ba185bb58c6f51f2cbaecc6fdcd584bc1385fc9fb7cd08",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5542,
+          "local_observations": 24,
+          "missing_observations": 5518
+        },
+        "val": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        },
+        "test": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 9,
+      "train_years": [
+        2019,
+        2021
+      ],
+      "val_years": [
+        2020
+      ],
+      "test_years": [
+        2018
+      ],
+      "events_per_split": {
+        "test": 176,
+        "train": 230,
+        "val": 201
+      },
+      "split_sha256": "4f0ce562acc4cef2f4fd4eed9bf5094b555491677715b729a33bcf1cfb4282af",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 5542,
+          "local_observations": 24,
+          "missing_observations": 5518
+        },
+        "val": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 4292,
+          "local_observations": 52,
+          "missing_observations": 4240
+        },
+        "test": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 10,
+      "train_years": [
+        2020,
+        2021
+      ],
+      "val_years": [
+        2018
+      ],
+      "test_years": [
+        2019
+      ],
+      "events_per_split": {
+        "val": 176,
+        "test": 74,
+        "train": 357
+      },
+      "split_sha256": "c84f5537584c7833c672f9695d831ab3d7966d23585b4b60101e83ce1a811d5d",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 8409,
+          "local_observations": 52,
+          "missing_observations": 8357
+        },
+        "val": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        },
+        "test": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    },
+    {
+      "fold_id": 11,
+      "train_years": [
+        2020,
+        2021
+      ],
+      "val_years": [
+        2019
+      ],
+      "test_years": [
+        2018
+      ],
+      "events_per_split": {
+        "test": 176,
+        "val": 74,
+        "train": 357
+      },
+      "split_sha256": "b6c7c48ef34e9f08f0098397299363f4bd874c14f80651153f99a34fc8d4bc0b",
+      "local_availability": {
+        "train": {
+          "available_local_events": [
+            "2020/fire_23654679",
+            "2020/fire_24104674"
+          ],
+          "aligned_target_count": 42,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 8409,
+          "local_observations": 52,
+          "missing_observations": 8357
+        },
+        "val": {
+          "available_local_events": [
+            "2019/fire_23300839"
+          ],
+          "aligned_target_count": 19,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 1425,
+          "local_observations": 24,
+          "missing_observations": 1401
+        },
+        "test": {
+          "available_local_events": [
+            "2018/fire_21748813",
+            "2018/fire_21997864"
+          ],
+          "aligned_target_count": 22,
+          "rejections_by_context": {
+            "1": {},
+            "3": {},
+            "5": {}
+          },
+          "expected_observations": 3773,
+          "local_observations": 32,
+          "missing_observations": 3741
+        }
+      },
+      "ready_for_local_training": true,
+      "complete_fold_metadata": false,
+      "scientific_execution_enabled": false
+    }
+  ]
+}
