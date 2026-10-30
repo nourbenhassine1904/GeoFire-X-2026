@@ -2,7 +2,7 @@
   "qualification": "real training on 5 events; technical baseline, no generalization claim",
   "run_id": "77c1d8876ff44e4c9a03f01bb3298fb3",
   "experiment": "geofirex-unet2d-real-v1",
-  "output_dir": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\unet\\20261030T091804Z_3277e4f4",
+  "output_dir": "artifacts/unet/20261030T091804Z_3277e4f4",
   "best_epoch": 5,
   "best_val_loss": 0.5068312377169513,
   "threshold": 0.01,
