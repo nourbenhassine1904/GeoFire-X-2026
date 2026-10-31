@@ -1,0 +1,39 @@
+# Template: generate runnable B0..B3 configs with scripts/kaggle_campaign.py.
+# 30 * ceil(4096/8) = 15360 planned updates for B1/B2/B3 before early stopping.
+protocol_version: annual-v2-runner
+dataset_version: WildfireSpreadTS v1.0 / zenodo.8006177
+qualification: pilot
+feature_policy: conservative_fire_terrain
+model: B2
+fold: 0
+context: 3
+seed: 42
+device: cuda
+amp: true
+data_root: /kaggle/input
+data_roots: []
+manifest: /kaggle/working/prepared/manifest.csv
+split: /kaggle/working/prepared/split.csv
+index: data/manifests/real/corpus_zip_index_v1.json
+output_root: /kaggle/working/geofirex-runs
+experiment: geofirex-kaggle-scale-pilot-v1
+storage_policy: ephemeral_export
+cpu_threads: 2
+workers: 2
+reader_cache_mb: 64
+patch_size: 64
+batch_size: 8
+eval_batch_size: 8
+epochs: 30
+samples_per_epoch: 4096
+positive_tile_fraction: 0.5
+learning_rate: 0.001
+weight_decay: 0.0001
+pos_weight: auto
+max_pos_weight: 100
+dice_weight: 0.5
+preflight_steps: 100
+early_stopping_patience: 5
+early_stopping_min_delta: 0.0001
+checkpoint_every_epochs: 1
+thresholds: [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]

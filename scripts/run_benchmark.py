@@ -20,6 +20,7 @@ def main():
         parser.add_argument("--context", type=int, choices=[1, 3, 5])
         parser.add_argument("--device", choices=["cpu", "cuda", "auto"])
         parser.add_argument("--data-root")
+        parser.add_argument("--data-roots", nargs="+", help="Read-only corpus batch roots in /kaggle/input")
         parser.add_argument("--manifest")
         parser.add_argument("--split")
         parser.add_argument("--index")
@@ -39,7 +40,7 @@ def main():
     args = p.parse_args()
     if args.phase in {"inspect", "train"}:
         overrides = {k: getattr(args, k) for k in ("model", "fold", "seed", "context", "device", "data_root",
-                                                  "manifest", "split", "index", "output_root") if getattr(args, k) is not None}
+                                                  "data_roots", "manifest", "split", "index", "output_root") if getattr(args, k) is not None}
         if args.fold is not None and args.split is None:
             overrides["split"] = f"splits/benchmark/annual_v1/fold_{args.fold:02d}.csv"
         config = load_config(args.config, overrides)

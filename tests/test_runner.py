@@ -262,3 +262,163 @@ def test_bounded_physical_cache_matches_window_reader_and_evicts(corpus):
     no_cache = RasterReader(cache_bytes=0)
     for a, b in zip(no_cache.tile(str(paths[0]), 2, 3, 8), read_tile(str(paths[0]), 2, 3, 8)):
         np.testing.assert_array_equal(a, b)
+
+
+def test_positive_sampling_is_reproducible_and_train_only(corpus):
+    _, _, store = store_for(corpus)
+    tiles = TrainTiles(store, 8, 200, 42, positive_fraction=1.)
+    prior = tiles.prior()
+    assert prior["positive_tiles"] < prior["total_tiles"]
+    choices = [tiles.coordinate(i) for i in range(len(tiles))]
+    assert choices == [tiles.coordinate(i) for i in range(len(tiles))]
+    assert all(t in tiles.positive_tiles for t in choices)
+    tiles.epoch = 2
+    assert choices != [tiles.coordinate(i) for i in range(len(tiles))]
+
+
+def test_early_stopping_and_successful_optimizer_update_counts(corpus):
+    c = {**corpus, "epochs": 5, "early_stopping_patience": 1,
+         "early_stopping_min_delta": 1., "positive_tile_fraction": .5}
+    out = train(c)
+    summary = json.loads((out/"summary.json").read_text())
+    assert summary["early_stopped"] and len(summary["history"]) == 2
+    assert summary["optimizer_updates"] == 4
+    assert not summary["complete_corpus"]
+    assert summary["corpus_counts"]["train"]["manifest_observations"] == 16
+    assert summary["history"][0]["observations_covered"] > 0
+
+
+def test_resume_across_changed_readonly_mount_paths(corpus, tmp_path):
+    import shutil
+    first = train(corpus)
+    mounted = tmp_path/"new-session-input"
+    mounted.mkdir()
+    roots = []
+    for year in (2018, 2019, 2020, 2021):
+        # Reverse lexical mount order relative to event/year order.
+        root = mounted/str(10000-year)
+        shutil.copytree(Path(corpus["data_root"])/str(year), root/str(year))
+        roots.append(str(root))
+    c = {**corpus, "data_root": str(tmp_path/"empty"), "data_roots": roots,
+         "output_root": str(tmp_path/"new-session-runs")}
+    resumed = train(c, first/"epoch_0001.pt")
+    a = torch.load(first/"epoch_0002.pt", weights_only=False)
+    b = torch.load(resumed/"epoch_0002.pt", weights_only=False)
+    assert a["identity"] == b["identity"]
+    assert all(torch.equal(a["model"][k], b["model"][k]) for k in a["model"])
+
+
+def test_multimodal_requires_availability_and_retains_fire_channel(corpus, tmp_path):
+    from geofirex.feature_profiles import PROFILES, feature_profile
+    from geofirex.runner import runner_model
+    policy = "multimodal_observed_j_v1"
+    with pytest.raises(ValueError, match="availability"):
+        feature_profile({**corpus, "feature_policy": policy})
+    declaration = tmp_path/"availability.json"
+    declaration.write_text(json.dumps({"policy": policy, "reviewed": True,
+        "decision_time": "end_of_day_J", "available_by_J_bands": list(range(23)),
+        "evidence": ["Synthetic fixture only; no real-world availability claim"]}))
+    c = {**corpus, "model": "B0", "feature_policy": policy, "feature_availability": str(declaration)}
+    profile = feature_profile(c)
+    assert 7 not in profile["continuous"] and not set(range(17, 22)) & set(profile["continuous"])
+    data = FoldData(c)
+    norm = fit_fold_normalizer(data.groups["train"][5], size=8,
+                               continuous=profile["continuous"], landcover=True)
+    store = TemporalStore(data.windows("train"), norm, data.groups["train"][5], cache_bytes=0)
+    x, y, valid, observed = store.tile(0, 0, 0, 8)
+    assert x.shape[1] == 50 and np.isfinite(x).all()
+    np.testing.assert_array_equal(runner_model(c, norm).predict_proba(torch.from_numpy(x)[None])[0], observed)
+    assert norm.mean[profile["continuous"].index(12)] < 1000
+    out = train(c)
+    assert json.loads((out/"features.json").read_text())["channels"] == norm.channel_names
+
+
+def test_prepare_mounted_real_headers_full_split_and_duplicate_guard(corpus, tmp_path):
+    import shutil
+    import zipfile
+    from geofirex.cloud_corpus import batch_inventory, plan_batch, prepare_mounted
+    from geofirex.corpus import acquire_members, index_zip, json_new
+    zip_path = tmp_path/"raster-fixture.zip"
+    with zipfile.ZipFile(zip_path, "w") as z:
+        for year in (2018, 2019, 2020, 2021):
+            for path in (Path(corpus["data_root"])/str(year)).rglob("*.tif"):
+                z.write(path, path.relative_to(corpus["data_root"]).as_posix())
+    with zipfile.ZipFile(zip_path) as z:
+        index = index_zip(z, archive_size=zip_path.stat().st_size)
+        roots = []
+        for year in (2018, 2020):
+            plan = plan_batch(index, years=[year], max_events=1, transfer_bytes=10**7,
+                storage_bytes=2*1024**3, private_free_bytes=10**7, upload_bytes=10**7)
+            root = tmp_path/f"mounted-{year}"
+            acquire_members(z, plan["entries"], root)
+            json_new(root/"inventory.json", batch_inventory(plan, root))
+            roots.append(root)
+    dest = tmp_path/"prepared"
+    report = prepare_mounted(index, roots, dest)
+    assert report["actual_events"] == 2 and not report["complete_corpus"]
+    assert report["by_split"]["train"]["observations"] == 8
+    assert len(list(csv.DictReader((dest/"split.csv").open()))) == 4
+    json_new(dest/"index.json", index)
+    c = {**corpus, "manifest": str(dest/"manifest.csv"), "index": str(dest/"index.json"),
+         "split": str(dest/"split.csv"), "data_roots": [str(p) for p in roots], "qualification": "pilot"}
+    data = FoldData(c)
+    assert data.audit({"train", "val"})["corpus_counts"]["train"]["used_events"] == 1
+    with pytest.raises(ValueError, match="Duplicate events"):
+        prepare_mounted(index, [*roots, roots[0]], tmp_path/"duplicate")
+
+
+def test_mlflow_training_snapshot_contains_portable_metric_history(corpus, tmp_path):
+    from geofirex.kaggle_persistence import snapshot_training, verify_package
+    c = {**corpus, "model": "B0", "mlflow_enabled": True,
+         "tracking_uri": "sqlite:///"+(tmp_path/"snapshot-tracking.db").as_posix(),
+         "artifact_root": (tmp_path/"snapshot-mlflow-artifacts").as_uri(),
+         "experiment": "snapshot-integration"}
+    out = train(c)
+    package = tmp_path/"snapshot-package"
+    inv = snapshot_training(out, package, tracking_db=tmp_path/"snapshot-tracking.db")
+    assert verify_package(package, inv)["files"] > 10
+    history = json.loads((package/"mlflow_metric_history.json").read_text())
+    assert history["validation_average_precision"][0]["value"] >= 0
+
+
+def test_epoch_checkpoints_publish_versions_and_final_summary(corpus, tmp_path, monkeypatch):
+    from geofirex import kaggle_persistence as persistence
+    from test_cloud_corpus import FakeKaggle
+    backend = FakeKaggle(tmp_path/"fake-kaggle-datasets")
+    original_is_dir = Path.is_dir
+    monkeypatch.setattr(Path, "is_dir", lambda p: True if p.as_posix() == "/kaggle/input" else original_is_dir(p))
+    monkeypatch.setattr(persistence, "KaggleBackend", lambda: backend)
+    monkeypatch.setattr(persistence, "session_id", lambda: "synthetic-notebook-session")
+    c = {**corpus, "checkpoint_dataset": "tester/geofirex-epoch-test",
+         "checkpoint_upload_budget_bytes": 100*1024**2, "checkpoint_private_free_bytes": 100*1024**2}
+    out = train(c)
+    assert backend.uploads == 3  # each of two epochs + final closed-run snapshot
+    final_receipt = json.loads((out/"backup_0002_final.json").read_text())
+    assert final_receipt["status"] == "REMOTE_VERIFIED_FRESH_SESSION_PENDING"
+    assert (backend.versions[3]/"run/summary.json").is_file()
+    state = torch.load(backend.versions[3]/"run/epoch_0002.pt", weights_only=False)
+    assert state["epoch"] == 2 and state["optimizer"]
+
+
+def test_gpu_campaign_generates_ten_comparable_configs_and_refuses_tiny_default(corpus, tmp_path):
+    import shutil
+    from scripts.kaggle_campaign import configure
+    from geofirex.corpus import json_new
+    prepared = tmp_path/"campaign-prepared"
+    prepared.mkdir()
+    for key in ("manifest", "split"):
+        shutil.copy2(corpus[key], prepared/f"{key}.csv")
+    json_new(prepared/"mounts.json", [corpus["data_root"]])
+    json_new(prepared/"completeness.json", {"complete_corpus": False, "actual_events": 4,
+        "actual_observations": 32, "by_split": {"train": {"events": 2}, "val": {"events": 1}}})
+    with pytest.raises(ValueError, match="substantial"):
+        configure(prepared, corpus["index"], tmp_path/"tiny-refused", "tester/runs", 10**8, 10**8)
+    configs = configure(prepared, corpus["index"], tmp_path/"campaign-configs", "tester/runs", 10**8, 10**8,
+                        min_train_events=2, min_val_events=1)
+    assert len(configs) == 10
+    assert sum(c["model"] == "B0" for c in configs) == 1
+    for item in configs:
+        config = load_config(item["config"])
+        assert config["context"] == 3 and config["epochs"] == 30
+        assert config["positive_tile_fraction"] == .5
+        assert config["checkpoint_dataset"].startswith("tester/runs-")

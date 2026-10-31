@@ -47,6 +47,10 @@ DEFAULTS = {
     "index": "data/manifests/real/corpus_zip_index_v1.json", "output_root": "artifacts/benchmark",
     "mlflow_enabled": True, "experiment": "geofirex-benchmark-diagnostic-v2",
     "tracking_uri": "", "artifact_root": "", "storage_policy": "ephemeral_export",
+    "data_roots": [], "positive_tile_fraction": 0., "early_stopping_patience": 0,
+    "early_stopping_min_delta": 0., "checkpoint_dataset": "", "checkpoint_every_epochs": 1,
+    "checkpoint_upload_budget_bytes": 0, "checkpoint_private_free_bytes": 0,
+    "feature_availability": "",
 }
 
 
@@ -62,7 +66,8 @@ def load_config(path, overrides=None):
     if set(supplied)-DEFAULTS.keys():
         raise ValueError(f"Unknown configuration keys: {set(supplied)-DEFAULTS.keys()}")
     c = {**DEFAULTS, **supplied, **(overrides or {})}
-    if c["feature_policy"] != "conservative_fire_terrain" or c["protocol_version"] != "annual-v2-runner":
+    from geofirex.feature_profiles import PROFILES
+    if c["feature_policy"] not in PROFILES or c["protocol_version"] != "annual-v2-runner":
         raise ValueError("Unsupported feature policy/protocol")
     if c["model"] not in {"B0", "B1", "B2", "B3"} or c["context"] not in {1, 3, 5}:
         raise ValueError("Models B0..B3 and contexts 1/3/5 only")
@@ -89,10 +94,27 @@ def load_config(path, overrides=None):
         raise ValueError("pos_weight must be auto or positive")
     if c["storage_policy"] not in {"persistent", "ephemeral_export"}:
         raise ValueError("Declare persistent or ephemeral_export storage")
+    if not 0 <= c["positive_tile_fraction"] <= 1:
+        raise ValueError("positive_tile_fraction must be in [0,1]")
+    for key in ("early_stopping_patience", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes"):
+        if not isinstance(c[key], int) or isinstance(c[key], bool) or c[key] < 0:
+            raise ValueError(f"{key} must be a nonnegative integer")
+    if (not np.isfinite(c["early_stopping_min_delta"]) or c["early_stopping_min_delta"] < 0
+            or not isinstance(c["checkpoint_every_epochs"], int) or c["checkpoint_every_epochs"] < 1):
+        raise ValueError("Invalid early stopping/checkpoint interval")
+    if c["checkpoint_dataset"] and min(c["checkpoint_upload_budget_bytes"], c["checkpoint_private_free_bytes"]) < 1:
+        raise ValueError("Explicit checkpoint upload and private storage quotas required")
+    if not isinstance(c["data_roots"], list) or any(not isinstance(p, str) for p in c["data_roots"]):
+        raise ValueError("data_roots must be a list of mounted directories")
     if c["qualification"] == "scientific" and "diagnostic" in c["experiment"]:
         raise ValueError("Use a separate scientific MLflow experiment")
     for key in ("data_root", "manifest", "split", "index", "output_root"):
         c[key] = str((ROOT / c[key]).resolve())
+    c["data_roots"] = [str((ROOT/p).resolve()) for p in c["data_roots"]]
+    if c["feature_availability"]:
+        c["feature_availability"] = str((ROOT/c["feature_availability"]).resolve())
+    from geofirex.feature_profiles import feature_profile
+    feature_profile(c)
     return c
 
 
@@ -153,8 +175,48 @@ def snapshot(out):
 
 def semantic_config(c):
     runtime = {"device", "amp", "cpu_threads", "workers", "output_root", "tracking_uri", "artifact_root",
-               "mlflow_enabled", "experiment", "storage_policy", "data_root", "manifest", "split", "index", "reader_cache_mb"}
+               "mlflow_enabled", "experiment", "storage_policy", "data_root", "data_roots", "manifest", "split", "index", "reader_cache_mb",
+               "checkpoint_dataset", "checkpoint_every_epochs", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "feature_availability"}
     return {k: v for k, v in c.items() if k not in runtime}
+
+
+def portable_normalization(norm, data):
+    value = norm.to_dict()
+    value["fit_paths"] = sorted(data.path_tokens[p] for p in value["fit_paths"])
+    return value
+
+
+def runner_model(c, norm):
+    kwargs = dict(c["model_kwargs"])
+    if c["model"] == "B0":
+        kwargs["fire_channel"] = norm.channel_names.index("fire_J")
+    return make_model(c["model"], channels=len(norm.channel_names), context=c["context"], **kwargs)
+
+
+class EpochBackup:
+    """Opt-in official Kaggle upload, bounded across the entire training session."""
+    def __init__(self, c, out):
+        self.c, self.out = c, out
+        self.remaining = c["checkpoint_upload_budget_bytes"]
+        self.private_remaining = c["checkpoint_private_free_bytes"]
+
+    def save(self, epoch, *, final=False):
+        if not self.c["checkpoint_dataset"] or (not final and epoch % self.c["checkpoint_every_epochs"]):
+            return
+        from geofirex.kaggle_persistence import publish_package, session_id, snapshot_training
+        if not Path("/kaggle/input").is_dir():
+            raise RuntimeError("Checkpoint publication must run inside Kaggle")
+        package = self.out.parent/(self.out.name+f"-backup-{epoch:04d}"+("-final" if final else ""))
+        db_uri = tracking_uri(self.c)
+        db = db_uri[len("sqlite:///"):] if db_uri.startswith("sqlite:///") else None
+        snapshot_training(self.out, package, tracking_db=db)
+        receipt_path = self.out/(f"backup_{epoch:04d}"+("_final" if final else "")+".json")
+        receipt = publish_package(package, self.c["checkpoint_dataset"], receipt_path,
+                                  upload_bytes=self.remaining, private_free_bytes=self.private_remaining,
+                                  session=session_id(), allow_version=True)
+        # Conservatively charge the full version, even if backend deduplicates.
+        self.remaining -= receipt["bytes"]
+        self.private_remaining -= receipt["bytes"]
 
 
 def tracking_uri(c):
@@ -297,23 +359,31 @@ def train(c, resume=None):
     write_json(out/"data_audit.json", audit)
     for key in ("manifest", "split", "index"):
         shutil.copy2(c[key], out/(key+Path(c[key]).suffix))
-    norm = fit_fold_normalizer(data.groups["train"][5], clip=c["normalization_clip"])
+    from geofirex.feature_profiles import availability_hash, feature_profile
+    profile = feature_profile(c)
+    norm = fit_fold_normalizer(data.groups["train"][5], clip=c["normalization_clip"],
+                               continuous=profile["continuous"], landcover=profile["landcover"])
+    write_json(out/"features.json", {"policy": c["feature_policy"], "channels": norm.channel_names,
+                                    "availability_sha256": availability_hash(c)})
     write_json(out/"normalization.json", norm.to_dict())
     stores = {role: TemporalStore(data.windows(role), norm, data.groups[role][5], int(c["reader_cache_mb"]*1024**2))
               for role in ("train", "val")}
-    tiles = TrainTiles(stores["train"], c["patch_size"], c["samples_per_epoch"], c["seed"])
+    tiles = TrainTiles(stores["train"], c["patch_size"], c["samples_per_epoch"], c["seed"], c["positive_tile_fraction"])
     prior = tiles.prior()
     weight = min(prior["negative_positive_ratio"], c["max_pos_weight"]) if c["pos_weight"] == "auto" else c["pos_weight"]
     prior["effective_pos_weight"] = weight
     write_json(out/"train_prior.json", prior)
-    identity = digest({"config": semantic_config(c), "data": audit, "normalization": norm.to_dict(),
+    norm_identity = portable_normalization(norm, data)
+    identity = digest({"config": semantic_config(c), "data": audit, "normalization": norm_identity,
+                       "availability_sha256": availability_hash(c),
                        "source_hash": provenance["source_hash"]})
-    model = make_model(c["model"], channels=8, context=c["context"], **c["model_kwargs"]).to(device)
+    model = runner_model(c, norm).to(device)
     criterion = SegmentationLoss(c["dice_weight"], weight).to(device)
     tracking = Tracking(c, out, {"identity": identity, "git_commit": provenance["git_commit"],
                                 "dataset_hash": data.hashes["manifest"], "source_hash": provenance["source_hash"]}, "train")
     write_json(out/"tracking.json", {"run_id": tracking.run_id})
     history, best_ap, best_epoch, start_epoch = [], -1., 0, 0
+    backup = EpochBackup(c, out)
     failed = True
     try:
         if c["model"] == "B0":
@@ -331,7 +401,7 @@ def train(c, resume=None):
                 if not result["passed"]:
                     raise RuntimeError("Mini-overfit did not reduce train-tile loss; inspect preflight.json")
             seed_all(c["seed"])
-            model = make_model(c["model"], channels=8, context=c["context"], **c["model_kwargs"]).to(device)
+            model = runner_model(c, norm).to(device)
             optimizer = torch.optim.AdamW(model.parameters(), lr=c["learning_rate"], weight_decay=c["weight_decay"])
             amp = bool(c["amp"] and device == "cuda")
             scaler = torch.amp.GradScaler("cuda", enabled=amp)
@@ -363,6 +433,7 @@ def train(c, resume=None):
                 tiles.epoch = epoch
                 write_json(out/f"sampling_{epoch:04d}.json", [tiles.coordinate(i) for i in range(len(tiles))])
                 total = pixels = seen_positive = 0.
+                optimizer_updates = 0
                 train_io_seconds = train_compute_seconds = 0.
                 covered = set()
                 batch_ready = time.perf_counter()
@@ -379,8 +450,10 @@ def train(c, resume=None):
                     scaler.scale(loss).backward()
                     scaler.unscale_(optimizer)
                     torch.nn.utils.clip_grad_norm_(model.parameters(), c["gradient_clip"], error_if_nonfinite=True)
+                    previous_scale = scaler.get_scale()
                     scaler.step(optimizer)
                     scaler.update()
+                    optimizer_updates += int(scaler.get_scale() >= previous_scale)
                     n = float(valid.sum().detach().cpu())
                     total += float(loss.detach().cpu())*n
                     pixels += n
@@ -397,13 +470,26 @@ def train(c, resume=None):
                 ap = metrics["micro"]["average_precision"]
                 if ap is None:
                     raise ValueError("Undefined validation AP")
+                stale_epochs = (history[-1].get("stale_epochs", 0) if history else 0)
+                early_reference = history[-1].get("early_stopping_reference_ap", -1.) if history else -1.
+                if ap > early_reference+c["early_stopping_min_delta"]:
+                    early_reference, stale_epochs = ap, 0
+                else:
+                    stale_epochs += 1
                 if ap > best_ap:
                     best_ap, best_epoch = ap, epoch
                 row = {"epoch": epoch, "train_loss": total/pixels, "validation_loss": metrics["validation_loss"],
                        "validation_average_precision": ap, "train_seconds": training_seconds,
                        "epoch_seconds": time.perf_counter()-epoch_start, "seen_positive_pixels": seen_positive,
                        "seen_valid_pixels": pixels, "seen_prevalence": seen_positive/pixels,
-                       "events_covered": len(covered), **metrics["timings"]}
+                       "events_covered": len(covered), "stale_epochs": stale_epochs,
+                       "early_stopping_reference_ap": early_reference,
+                       "optimizer_updates": optimizer_updates, **metrics["timings"]}
+                sampled = {tiles.coordinate(i)[0] for i in range(len(tiles))}
+                row["observations_covered"] = len({p for i in sampled for p in
+                    (*stores["train"].domain_windows[i].context_paths, stores["train"].domain_windows[i].target_path)})
+                row["model_input_observations_covered"] = len({p for i in sampled
+                    for p in stores["train"].windows[i].context_paths})
                 row.update({"train_io_seconds": train_io_seconds, "train_compute_seconds": train_compute_seconds})
                 history.append(row)
                 state = {"model": model.state_dict(), "optimizer": optimizer.state_dict(), "scaler": scaler.state_dict(),
@@ -417,7 +503,10 @@ def train(c, resume=None):
                 tracking.metrics({"validation_dice": metrics["micro"]["dice"],
                                   "validation_new_ignition_ap": metrics["new_ignitions"]["average_precision"]}, epoch)
                 tracking.sync()
+                backup.save(epoch)
                 print(f"Epoch {epoch}: train_loss={row['train_loss']:.6f}; val_micro_AP={ap:.6f}", flush=True)
+                if c["early_stopping_patience"] and stale_epochs >= c["early_stopping_patience"]:
+                    break
             checkpoint = out/f"epoch_{best_epoch:04d}.pt"
             metrics = json.loads((out/f"validation_{best_epoch:04d}.json").read_text(encoding="utf-8"))
         summary = {"status": "FINISHED", "run_id": tracking.run_id or out.name, "model": c["model"],
@@ -427,13 +516,15 @@ def train(c, resume=None):
                    "qualification": c["qualification"], "identity": identity,
                    "comparison_hash": digest({"config": {k: v for k, v in semantic_config(c).items()
                                                          if k not in {"model", "model_kwargs", "context", "seed"}},
-                                              "data": data.hashes, "normalization": norm.to_dict(),
+                                              "data": data.hashes, "normalization": norm_identity,
                                               "source_hash": provenance["source_hash"]}),
                    "best_epoch": best_epoch, "checkpoint": checkpoint.name,
                    "checkpoint_sha256": sha256_file(checkpoint), "threshold": metrics["threshold"],
                    "validation_average_precision": best_ap, "history": history,
                    "parameters": sum(p.numel() for p in model.parameters()),
-                   "optimizer_updates": len(history)*((c["samples_per_epoch"]+c["batch_size"]-1)//c["batch_size"]),
+                   "optimizer_updates": sum(r["optimizer_updates"] for r in history),
+                   "corpus_counts": audit["corpus_counts"], "complete_corpus": audit["complete_corpus"],
+                   "early_stopped": bool(history and history[-1]["epoch"] < c["epochs"]),
                    "seconds": time.perf_counter()-start}
         write_json(out/"summary.json", summary)
         figures(out, history, out/f"validation_{best_epoch:04d}", metrics["threshold"])
@@ -442,10 +533,11 @@ def train(c, resume=None):
         failed = False
     finally:
         tracking.close(failed)
+    backup.save(history[-1]["epoch"] if history else 0, final=True)
     return out
 
 
-LOCK_FILES = ("summary.json", "config.json", "normalization.json", "data_audit.json", "source_hashes.json")
+LOCK_FILES = ("summary.json", "config.json", "normalization.json", "data_audit.json", "source_hashes.json", "features.json")
 
 
 def lock_selection(run_dirs, destination, expected_seeds=(42, 43, 44)):
@@ -519,7 +611,7 @@ def final_test(run_dir, lock_path):
     audit = data.audit({"test"})
     norm = Normalizer(**json.loads((run_dir/"normalization.json").read_text(encoding="utf-8")))
     store = TemporalStore(data.windows("test"), norm, data.groups["test"][5], int(c["reader_cache_mb"]*1024**2))
-    model = make_model(c["model"], channels=8, context=c["context"], **c["model_kwargs"]).to(device)
+    model = runner_model(c, norm).to(device)
     state = torch.load(run_dir/summary["checkpoint"], map_location="cpu", weights_only=False)
     if state["identity"] != summary["identity"]:
         raise ValueError("Checkpoint identity mismatch")
