@@ -56,3 +56,13 @@ htmlcov/
 .env.*
 !.env.example
 .aws/
+node_modules/
+/frontend/dist/
+
+# Restored experiment stores and local Kaggle credentials
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+**/.kaggle/
+/kaggle.json

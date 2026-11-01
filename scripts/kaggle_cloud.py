@@ -11,7 +11,7 @@ from geofirex.cloud_corpus import (acquire_batch, plan_batch, prepare_mounted,
                                     validate_index)
 from geofirex.corpus import json_new
 from geofirex.kaggle_persistence import (publish_package, session_id,
-                                         snapshot_training, verify_fresh_session)
+                                         snapshot_training, verify_fresh_session, adopt_manual, inspect_dataset)
 
 
 def read(path):
@@ -48,11 +48,19 @@ def main():
     publish.add_argument("--upload-bytes", type=int, required=True)
     publish.add_argument("--private-free-bytes", type=int, required=True)
     publish.add_argument("--allow-version", action="store_true")
+    publish.add_argument("--publication-mode", choices=["create", "resume", "version"], default="create")
     publish.add_argument("--out", required=True)
     publish.add_argument("--execute", action="store_true")
     verify = commands.add_parser("verify-session")
     verify.add_argument("--receipt", required=True)
     verify.add_argument("--out", required=True)
+    adopt = commands.add_parser("adopt-manual")
+    adopt.add_argument("--index", required=True)
+    adopt.add_argument("--root", required=True)
+    adopt.add_argument("--handle", required=True)
+    adopt.add_argument("--out", required=True)
+    inspect = commands.add_parser("inspect-dataset")
+    inspect.add_argument("--handle", required=True)
     prepare = commands.add_parser("prepare")
     prepare.add_argument("--index", required=True)
     prepare.add_argument("--roots", nargs="+", required=True)
@@ -100,7 +108,12 @@ def main():
         require_kaggle()
         publish_package(args.root, args.handle, args.out, upload_bytes=args.upload_bytes,
                         private_free_bytes=args.private_free_bytes, session=session_id(),
-                        allow_version=args.allow_version)
+                        allow_version=args.allow_version, mode=args.publication_mode)
+    elif args.command == "adopt-manual":
+        require_kaggle()
+        json_new(args.out, adopt_manual(read(args.index), args.root, args.handle, session=session_id()))
+    elif args.command == "inspect-dataset":
+        print(json.dumps(inspect_dataset(args.handle), indent=2))
     elif args.command == "verify-session":
         require_kaggle()
         json_new(args.out, verify_fresh_session(read(args.receipt), session=session_id()))

@@ -4,6 +4,19 @@ Multimodal Spatio-Temporal Deep Learning for Next-Day Wildfire Spread Forecastin
 
 ## Current Phase
 
+**Suivi 3 — GPU pilot completed (1 November 2026).** B1 CNN, B2 U-Net and B3 ConvLSTM
+each completed 10 epochs / 1,280 updates on the certified 108-TIFF sample.
+B1 is the demonstration candidate (validation AP 0.3535); Persistence retains
+slightly higher Dice (0.4814 vs 0.4800). These are pilot results, one seed,
+three training events and two validation events; test 2021 remains locked.
+
+- [Demonstration, installation and restored MLflow](docs/DEMO_SUIVI3.md)
+- [GPU results and verified backup](reports/GPU_PILOT_2026-11-01.md)
+- [GitHub publication and integration plan](docs/GITHUB_SUIVI3.md)
+
+The following preparation and CPU sections describe historical work. Do not
+rerun their acquisition or training commands to launch the current demonstration.
+
 Benchmark preparation now extends the project to all 607 official events:
 [delivery report](reports/BENCHMARK_PREPARATION_REPORT.md),
 [verified U-Net audit](reports/UNET_AUDIT_V2.md),

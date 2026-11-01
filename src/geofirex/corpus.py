@@ -58,6 +58,22 @@ class BudgetRangeFile(HttpRangeFile):
         self.budget_bytes = int(budget_bytes)
         self.bytes_reserved = 0
         self.requests = 0
+        self.ledger_path = None
+
+    def enable_ledger(self, path, plan_identity):
+        self.ledger_path = Path(path)
+        self.ledger_path.parent.mkdir(parents=True, exist_ok=True)
+        with self.ledger_path.open('x', encoding='utf-8') as output:
+            output.write(json.dumps({'plan_identity': plan_identity, 'budget_bytes': self.budget_bytes})+'\n')
+
+    def _record_reservation(self, start, length):
+        if self.ledger_path is not None:
+            import os
+            with self.ledger_path.open('a', encoding='utf-8') as output:
+                output.write(json.dumps({'reserved_bytes': self.bytes_reserved,
+                    'requests': self.requests, 'start': start, 'length': length})+'\n')
+                output.flush()
+                os.fsync(output.fileno())
 
     def read(self, n=-1):
         end = self.size if n < 0 else min(self.pos + n, self.size)
@@ -74,6 +90,7 @@ class BudgetRangeFile(HttpRangeFile):
                 raise RuntimeError("Session transfer budget exhausted before request")
             self.bytes_reserved += reservation
             self.requests += 1
+            self._record_reservation(start, length)
             request = urllib.request.Request(self.url, headers={"Range": f"bytes={start}-{end-1}",
                                                                "Accept-Encoding": "identity"})
             try:
@@ -94,6 +111,52 @@ class BudgetRangeFile(HttpRangeFile):
                     raise
                 time.sleep(0.25 * (attempt + 1))
         raise AssertionError("unreachable")
+
+
+class MemberCachedRangeFile(BudgetRangeFile):
+    """Prefetch only the selected ZIP member, in bounded 4 MiB blocks.
+
+    Avoids separate HTTP connections for its name, extra header and each small
+    decompressor read. Never prefetches neighbouring/unselected archive data.
+    """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.member_start = self.member_stop = None
+        self.cache_start, self.cache = 0, b''
+
+    def begin_member(self, info):
+        import struct
+        self.member_start = self.member_stop = None
+        self.cache = b''
+        self.seek(info.header_offset)
+        header = super().read(30)
+        if len(header) != 30 or header[:4] != b'PK\x03\x04':
+            raise RangeResponseError('Invalid ZIP local header')
+        name_bytes, extra_bytes = struct.unpack_from('<HH', header, 26)
+        self.member_start = info.header_offset
+        self.member_stop = info.header_offset+30+name_bytes+extra_bytes+info.compress_size
+        if self.member_stop > self.size:
+            raise RangeResponseError('ZIP member exceeds pinned archive size')
+        self.cache_start, self.cache = info.header_offset, header
+
+    def read(self, n=-1):
+        if self.member_start is None or not self.member_start <= self.pos < self.member_stop:
+            return super().read(n)
+        if n < 0 or n > 4*1024**2:
+            raise RangeResponseError('Single read exceeds bounded member cache')
+        wanted = min(n, self.member_stop-self.pos)
+        result = bytearray()
+        while len(result) < wanted:
+            offset = self.pos-self.cache_start
+            if not 0 <= offset < len(self.cache):
+                start = self.pos
+                self.cache = super().read(min(4*1024**2, self.member_stop-start))
+                self.cache_start = self.pos = start
+                offset = 0
+            count = min(wanted-len(result), len(self.cache)-offset)
+            result.extend(self.cache[offset:offset+count])
+            self.pos += count
+        return bytes(result)
 
 
 def index_zip(zf, *, archive_size=None, remote=False):
@@ -161,6 +224,8 @@ def acquire_members(zf, entries, destination, *, max_files=None, max_compressed_
         reserved += entry["compressed_bytes"]
         output.parent.mkdir(parents=True, exist_ok=True)
         temporary = output.with_name(output.name + f".{uuid.uuid4().hex}.part")
+        if hasattr(zf.fp, 'begin_member'):
+            zf.fp.begin_member(info)
         with zf.open(info) as source, temporary.open("xb") as target:
             shutil.copyfileobj(source, target, length=1024 * 1024)
         if not verify_member(temporary, entry):

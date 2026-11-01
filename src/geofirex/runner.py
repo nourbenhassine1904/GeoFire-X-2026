@@ -51,6 +51,7 @@ DEFAULTS = {
     "early_stopping_min_delta": 0., "checkpoint_dataset": "", "checkpoint_every_epochs": 1,
     "checkpoint_upload_budget_bytes": 0, "checkpoint_private_free_bytes": 0,
     "feature_availability": "",
+    "max_run_seconds": 0,
 }
 
 
@@ -96,7 +97,7 @@ def load_config(path, overrides=None):
         raise ValueError("Declare persistent or ephemeral_export storage")
     if not 0 <= c["positive_tile_fraction"] <= 1:
         raise ValueError("positive_tile_fraction must be in [0,1]")
-    for key in ("early_stopping_patience", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes"):
+    for key in ("early_stopping_patience", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "max_run_seconds"):
         if not isinstance(c[key], int) or isinstance(c[key], bool) or c[key] < 0:
             raise ValueError(f"{key} must be a nonnegative integer")
     if (not np.isfinite(c["early_stopping_min_delta"]) or c["early_stopping_min_delta"] < 0
@@ -176,7 +177,7 @@ def snapshot(out):
 def semantic_config(c):
     runtime = {"device", "amp", "cpu_threads", "workers", "output_root", "tracking_uri", "artifact_root",
                "mlflow_enabled", "experiment", "storage_policy", "data_root", "data_roots", "manifest", "split", "index", "reader_cache_mb",
-               "checkpoint_dataset", "checkpoint_every_epochs", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "feature_availability"}
+               "checkpoint_dataset", "checkpoint_every_epochs", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "feature_availability", "max_run_seconds"}
     return {k: v for k, v in c.items() if k not in runtime}
 
 
@@ -188,6 +189,13 @@ def portable_normalization(norm, data):
 
 def runner_model(c, norm):
     kwargs = dict(c["model_kwargs"])
+    upsampling = kwargs.pop("upsampling", "historical_bilinear")
+    if upsampling != "historical_bilinear":
+        if upsampling != "nearest_v1" or c["model"] not in {"B2", "B3"}:
+            raise ValueError("nearest_v1 upsampling is supported only for B2/B3")
+        from geofirex.deterministic_models import NearestStackedUNet, NearestConvLSTM
+        factory = NearestStackedUNet if c["model"] == "B2" else NearestConvLSTM
+        return factory(channels=len(norm.channel_names), context=c["context"], **kwargs)
     if c["model"] == "B0":
         kwargs["fire_channel"] = norm.channel_names.index("fire_J")
     return make_model(c["model"], channels=len(norm.channel_names), context=c["context"], **kwargs)
@@ -199,6 +207,7 @@ class EpochBackup:
         self.c, self.out = c, out
         self.remaining = c["checkpoint_upload_budget_bytes"]
         self.private_remaining = c["checkpoint_private_free_bytes"]
+        self.published = False
 
     def save(self, epoch, *, final=False):
         if not self.c["checkpoint_dataset"] or (not final and epoch % self.c["checkpoint_every_epochs"]):
@@ -213,7 +222,8 @@ class EpochBackup:
         receipt_path = self.out/(f"backup_{epoch:04d}"+("_final" if final else "")+".json")
         receipt = publish_package(package, self.c["checkpoint_dataset"], receipt_path,
                                   upload_bytes=self.remaining, private_free_bytes=self.private_remaining,
-                                  session=session_id(), allow_version=True)
+                                  session=session_id(), mode="version" if self.published or (self.out/"resume.json").exists() else "create")
+        self.published = True
         # Conservatively charge the full version, even if backend deduplicates.
         self.remaining -= receipt["bytes"]
         self.private_remaining -= receipt["bytes"]
@@ -344,7 +354,9 @@ def figures(out, history, evaluation_dir, threshold):
     plt.close(fig)
 
 
-def train(c, resume=None):
+def train(c, resume=None, *, stop_after_epochs=None):
+    if stop_after_epochs is not None and (not isinstance(stop_after_epochs, int) or stop_after_epochs < 1):
+        raise ValueError("stop_after_epochs must be positive")
     start = time.perf_counter()
     device = choose_device(c["device"])
     torch.set_num_threads(c["cpu_threads"])
@@ -377,11 +389,14 @@ def train(c, resume=None):
     identity = digest({"config": semantic_config(c), "data": audit, "normalization": norm_identity,
                        "availability_sha256": availability_hash(c),
                        "source_hash": provenance["source_hash"]})
+    write_json(out/"identity.json", {"identity": identity})
     model = runner_model(c, norm).to(device)
     criterion = SegmentationLoss(c["dice_weight"], weight).to(device)
     tracking = Tracking(c, out, {"identity": identity, "git_commit": provenance["git_commit"],
                                 "dataset_hash": data.hashes["manifest"], "source_hash": provenance["source_hash"]}, "train")
     write_json(out/"tracking.json", {"run_id": tracking.run_id})
+    tracking.metrics({f"{role}_{key}": value for role, counts in audit["corpus_counts"].items()
+                      for key, value in counts.items()}, 0)
     history, best_ap, best_epoch, start_epoch = [], -1., 0, 0
     backup = EpochBackup(c, out)
     failed = True
@@ -427,19 +442,27 @@ def train(c, resume=None):
             generator = torch.Generator().manual_seed(c["seed"])
             loader = DataLoader(tiles, batch_size=c["batch_size"], shuffle=False,
                                 num_workers=c["workers"], generator=generator, pin_memory=device == "cuda")
-            for epoch in range(start_epoch+1, c["epochs"]+1):
+            last_epoch = min(c["epochs"], start_epoch+stop_after_epochs) if stop_after_epochs else c["epochs"]
+            for epoch in range(start_epoch+1, last_epoch+1):
                 epoch_start = time.perf_counter()
                 model.train()
                 tiles.epoch = epoch
                 write_json(out/f"sampling_{epoch:04d}.json", [tiles.coordinate(i) for i in range(len(tiles))])
                 total = pixels = seen_positive = 0.
                 optimizer_updates = 0
+                patches_seen = 0
+                gpu_compute_seconds = 0. if device == "cuda" else None
+                if device == "cuda":
+                    torch.cuda.reset_peak_memory_stats()
                 train_io_seconds = train_compute_seconds = 0.
                 covered = set()
                 batch_ready = time.perf_counter()
                 for x, y, valid in loader:
                     train_io_seconds += time.perf_counter()-batch_ready
                     compute_start = time.perf_counter()
+                    if device == "cuda":
+                        gpu_start, gpu_end = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
+                        gpu_start.record()
                     x, y, valid = [a.to(device, non_blocking=True) for a in (x, y, valid)]
                     optimizer.zero_grad(set_to_none=True)
                     with torch.autocast(device_type=device, enabled=amp, dtype=torch.float16):
@@ -453,11 +476,17 @@ def train(c, resume=None):
                     previous_scale = scaler.get_scale()
                     scaler.step(optimizer)
                     scaler.update()
+                    if device == "cuda":
+                        gpu_end.record()
                     optimizer_updates += int(scaler.get_scale() >= previous_scale)
                     n = float(valid.sum().detach().cpu())
                     total += float(loss.detach().cpu())*n
                     pixels += n
                     seen_positive += float((y*valid).sum().detach().cpu())
+                    patches_seen += x.shape[0]
+                    if device == "cuda":
+                        gpu_end.synchronize()
+                        gpu_compute_seconds += gpu_start.elapsed_time(gpu_end)/1000.
                     train_compute_seconds += time.perf_counter()-compute_start
                     batch_ready = time.perf_counter()
                 if not pixels:
@@ -479,6 +508,12 @@ def train(c, resume=None):
                 if ap > best_ap:
                     best_ap, best_epoch = ap, epoch
                 row = {"epoch": epoch, "train_loss": total/pixels, "validation_loss": metrics["validation_loss"],
+                       **{f"validation_{key}": metrics["micro"][key] for key in ("dice", "iou", "precision", "recall")},
+                       "validation_threshold": metrics["threshold"], "train_patches": patches_seen,
+                       "train_patches_per_second": patches_seen/training_seconds,
+                       "gpu_compute_seconds": gpu_compute_seconds,
+                       "gpu_peak_allocated_bytes": torch.cuda.max_memory_allocated() if device == "cuda" else None,
+                       "gpu_peak_reserved_bytes": torch.cuda.max_memory_reserved() if device == "cuda" else None,
                        "validation_average_precision": ap, "train_seconds": training_seconds,
                        "epoch_seconds": time.perf_counter()-epoch_start, "seen_positive_pixels": seen_positive,
                        "seen_valid_pixels": pixels, "seen_prevalence": seen_positive/pixels,
@@ -505,11 +540,18 @@ def train(c, resume=None):
                 tracking.sync()
                 backup.save(epoch)
                 print(f"Epoch {epoch}: train_loss={row['train_loss']:.6f}; val_micro_AP={ap:.6f}", flush=True)
+                # Reserve finalization time and avoid starting an epoch unlikely to fit.
+                # The campaign also imposes a hard subprocess/global timeout.
+                if c["max_run_seconds"] and time.perf_counter()-start + 1.5*row["epoch_seconds"] + 45 >= c["max_run_seconds"]:
+                    break
                 if c["early_stopping_patience"] and stale_epochs >= c["early_stopping_patience"]:
                     break
             checkpoint = out/f"epoch_{best_epoch:04d}.pt"
             metrics = json.loads((out/f"validation_{best_epoch:04d}.json").read_text(encoding="utf-8"))
-        summary = {"status": "FINISHED", "run_id": tracking.run_id or out.name, "model": c["model"],
+        early_stopped = bool(history and c["early_stopping_patience"] and history[-1]["stale_epochs"] >= c["early_stopping_patience"])
+        completed = c["model"] == "B0" or early_stopped or bool(history and history[-1]["epoch"] == c["epochs"])
+        summary = {"status": "FINISHED" if completed else "PAUSED_AT_EPOCH_BOUNDARY",
+                   "run_id": tracking.run_id or out.name, "model": c["model"],
                    "context_days": c["context"], "seed": c["seed"], "fold_id": c["fold"],
                    "protocol_version": c["protocol_version"], "dataset_hash": data.hashes["manifest"],
                    "evaluation_target_hash": data.hashes["targets"], "feature_policy": c["feature_policy"],
@@ -524,11 +566,13 @@ def train(c, resume=None):
                    "parameters": sum(p.numel() for p in model.parameters()),
                    "optimizer_updates": sum(r["optimizer_updates"] for r in history),
                    "corpus_counts": audit["corpus_counts"], "complete_corpus": audit["complete_corpus"],
-                   "early_stopped": bool(history and history[-1]["epoch"] < c["epochs"]),
+                   "early_stopped": early_stopped, "train_patches": sum(r["train_patches"] for r in history),
                    "seconds": time.perf_counter()-start}
         write_json(out/"summary.json", summary)
         figures(out, history, out/f"validation_{best_epoch:04d}", metrics["threshold"])
         tracking.metrics({"validation_average_precision": best_ap, "total_seconds": summary["seconds"],
+                          **{f"validation_{key}": metrics["micro"][key] for key in ("dice", "iou", "precision", "recall")},
+                          "validation_threshold": metrics["threshold"], "optimizer_updates": summary["optimizer_updates"],
                           "parameters": summary["parameters"]}, best_epoch)
         failed = False
     finally:

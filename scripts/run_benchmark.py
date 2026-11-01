@@ -27,6 +27,7 @@ def main():
         parser.add_argument("--output-root")
         if phase == "train":
             parser.add_argument("--resume", help="Trusted checkpoint from the same immutable configuration")
+            parser.add_argument("--stop-after-epochs", type=int, help="Session limit; preserves the configured total epoch budget for resume")
     parser = commands.add_parser("lock")
     parser.add_argument("--runs", nargs="+", required=True)
     parser.add_argument("--out", required=True)
@@ -45,7 +46,7 @@ def main():
             overrides["split"] = f"splits/benchmark/annual_v1/fold_{args.fold:02d}.csv"
         config = load_config(args.config, overrides)
         if args.phase == "train":
-            print(train(config, args.resume))
+            print(train(config, args.resume, stop_after_epochs=args.stop_after_epochs))
         else:
             data = FoldData(config)
             info = hardware(choose_device(config["device"]))

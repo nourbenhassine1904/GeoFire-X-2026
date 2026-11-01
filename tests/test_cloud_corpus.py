@@ -43,6 +43,19 @@ class FakeKaggle:
         self.private = True
         self.fail_upload = False
 
+    def username(self):
+        return "tester"
+
+    def create(self, handle, root, notes):
+        if self.versions:
+            error = RuntimeError("Dataset already exists")
+            error.error_code = 409
+            raise error
+        return self.upload(handle, root, notes)
+
+    def version(self, handle, root, notes):
+        return self.upload(handle, root, notes)
+
     def metadata(self, handle):
         if not self.versions:
             return None

@@ -62,6 +62,19 @@ class StackedUNet(ForecastModel):
         return self.network(x.flatten(1,2))
 
 
+class SpatialCNN(ForecastModel):
+    """Versioned three-layer CNN. Legacy single-layer B1 remains loadable."""
+    def __init__(self, channels, context, width=16):
+        super().__init__(channels, context)
+        self.network = nn.Sequential(nn.Conv2d(channels*context, width, 3, padding=1), nn.ReLU(),
+                                     nn.Conv2d(width, width, 3, padding=1), nn.ReLU(),
+                                     nn.Conv2d(width, 1, 1))
+
+    def forward(self, x):
+        self.validate(x)
+        return self.network(x.flatten(1, 2))
+
+
 class ConvLSTM(ForecastModel):
     """Spatial encoder -> ConvLSTM gates -> upsampled one-channel decoder."""
     def __init__(self,channels,context,hidden_channels=8):
@@ -85,6 +98,12 @@ class ConvLSTM(ForecastModel):
 
 
 def make_model(name,channels=8,context=1,**kwargs):
+    if name == "B1":
+        architecture = kwargs.pop("architecture", "legacy_conv_v1")
+        if architecture == "spatial_cnn_v2":
+            return SpatialCNN(channels, context, **kwargs)
+        if architecture != "legacy_conv_v1":
+            raise ValueError("Unknown B1 architecture version")
     factories={"B0":Persistence,"B1":ConvLogistic,"B2":StackedUNet,"B3":ConvLSTM}
     if name == "B4":
         raise NotImplementedError("Temporal U-Net/UTAE deferred until resource pilot and architecture review")

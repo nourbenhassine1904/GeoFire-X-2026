@@ -13,7 +13,7 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 
-from geofirex.corpus import (ARCHIVE_BYTES, ARCHIVE_MD5, BudgetRangeFile,
+from geofirex.corpus import (ARCHIVE_BYTES, ARCHIVE_MD5, BudgetRangeFile, MemberCachedRangeFile,
                             acquire_members, inventory_local, json_new,
                             safe_entry, sha256_file)
 from geofirex.remote_archive import ARCHIVE_URL
@@ -71,7 +71,7 @@ def plan_batch(index, *, years, max_events, transfer_bytes, storage_bytes,
         c = sum(e["compressed_bytes"] for e in entries)
         u = sum(e["geotiff_bytes"] for e in entries)
         if (math.ceil((compressed+c)*1.15) + 8*1024**2 > transfer_bytes
-                or extracted+u+1024**3 > storage_bytes
+                or 2*(extracted+u)+1024**3 > storage_bytes
                 or extracted+u+1024**2 > min(private_free_bytes, upload_bytes)):
             continue  # an oversized event must never be truncated
         selected.extend(entries)
@@ -88,6 +88,7 @@ def plan_batch(index, *, years, max_events, transfer_bytes, storage_bytes,
                  "events": sorted({e["event_id"] for e in selected}),
                  "observations": len(selected), "compressed_bytes": compressed,
                  "geotiff_bytes": extracted, "limits": limits,
+                 "publication_staging_bytes": extracted,
                  "quota_validation": "caller must verify current Kaggle account/session quotas"})
 
 
@@ -113,7 +114,7 @@ def batch_inventory(plan, root):
                  "complete_batch": True, "complete_corpus": len(files) == 13607 and len(plan["events"]) == 607})
 
 
-def acquire_batch(plan, index, destination, report_path, *, stream_factory=BudgetRangeFile):
+def acquire_batch(plan, index, destination, report_path, *, stream_factory=MemberCachedRangeFile):
     validate_plan(plan, index)
     validate_index(index, official=True)
     if Path(report_path).exists():
@@ -127,6 +128,8 @@ def acquire_batch(plan, index, destination, report_path, *, stream_factory=Budge
     if occupied+required > plan["limits"]["storage_bytes"] or shutil.disk_usage(root).free < required:
         raise RuntimeError("Storage quota/free disk insufficient; existing files preserved")
     stream = stream_factory(plan["limits"]["transfer_bytes"], url=plan["source"], size=plan["archive_bytes"])
+    if isinstance(stream, BudgetRangeFile):
+        stream.enable_ledger(Path(report_path).with_suffix('.transfer.jsonl'), plan['identity'])
     report = {"plan_identity": plan["identity"], "status": "FAILED_FILES_PRESERVED"}
     try:
         current = inventory_local({"entries": plan["entries"]}, root)
@@ -155,6 +158,29 @@ def acquire_batch(plan, index, destination, report_path, *, stream_factory=Budge
         json_new(report_path, report)
 
 
+def verify_corpus_package(index, root, inventory):
+    from geofirex.kaggle_persistence import verify_package
+    validate_index(index)
+    result = verify_package(root, inventory)
+    if inventory.get("kind") != "corpus" or inventory.get("index_identity") != fingerprint(index):
+        raise ValueError("Mounted corpus/index mismatch")
+    events = inventory["events"]
+    if not events or len(events) != len(set(events)):
+        raise ValueError("Duplicate/empty inventory events")
+    expected = {e["path"]: e for e in index["entries"] if e["event_id"] in events}
+    if {f["path"] for f in inventory["files"]} != set(expected):
+        raise ValueError("Mounted batch contains incomplete events")
+    if inventory.get("observations") != len(expected) or inventory.get("complete_batch") is not True:
+        raise ValueError("Inaccurate batch completeness/count declaration")
+    if set(events) != {e["event_id"] for e in expected.values()}:
+        raise ValueError("Unknown inventory event")
+    for f in inventory["files"]:
+        e = expected[f["path"]]
+        if (f["bytes"], f["crc32"]) != (e["geotiff_bytes"], e["crc32"]):
+            raise ValueError("Mounted entry differs from official index")
+    return result
+
+
 def prepare_mounted(index, roots, destination):
     """Verify mounted batches; write portable manifest + FULL annual split.
 
@@ -171,9 +197,7 @@ def prepare_mounted(index, roots, destination):
     located, events = {}, set()
     for root in map(Path, roots):
         inventory = json.loads((root/"inventory.json").read_text(encoding="utf-8"))
-        verify_package(root, inventory)
-        if inventory["kind"] != "corpus" or inventory["index_identity"] != fingerprint(index):
-            raise ValueError("Mounted corpus/index mismatch")
+        verify_corpus_package(index, root, inventory)
         if events.intersection(inventory["events"]):
             raise ValueError("Duplicate events across mounted batches")
         batch_paths = {f["path"] for f in inventory["files"]}

@@ -1,0 +1,105 @@
+{
+  "browser": "Blocked by Computer Use: current Chrome URL could not be determined confidently; no browser interaction performed",
+  "http": {
+    "index": {
+      "status": 200,
+      "bytes": 318
+    },
+    "app.js": {
+      "status": 200,
+      "bytes": 227080
+    },
+    "style.css": {
+      "status": 200,
+      "bytes": 812
+    },
+    "health": {
+      "status": 200,
+      "bytes": 115
+    },
+    "events": {
+      "status": 200,
+      "bytes": 2965
+    }
+  },
+  "mlflow_ui": {
+    "status": 200,
+    "runs": [
+      {
+        "model": "B0",
+        "run_id": "93c3cc570f17412fb6835936c00dd1f2",
+        "artifact_http_status": 200,
+        "figure": "example.png",
+        "bytes": 20342
+      },
+      {
+        "model": "B1",
+        "run_id": "225187e4b6004cdca29aabfe88f61665",
+        "artifact_http_status": 200,
+        "figure": "curves.png",
+        "bytes": 37009
+      },
+      {
+        "model": "B2",
+        "run_id": "09ff77b0da944268a6f9f1bd55641899",
+        "artifact_http_status": 200,
+        "figure": "curves.png",
+        "bytes": 44167
+      },
+      {
+        "model": "B3",
+        "run_id": "b9461ee7a6a74d31870675dc24e15220",
+        "artifact_http_status": 200,
+        "figure": "curves.png",
+        "bytes": 38627
+      }
+    ]
+  },
+  "git": {
+    "secret_signature_paths": [],
+    "files_over_10MiB": [],
+    "forbidden_candidates": [],
+    "main_is_ancestor_of_feature": true,
+    "scope": "Local refs only; no fetch, staging, commit, merge or push"
+  },
+  "event_predictions": [
+    {
+      "event_id": "2018/fire_21748813",
+      "target_date": "2018-05-08",
+      "updates": 1280,
+      "truth_separate": true
+    },
+    {
+      "event_id": "2018/fire_21997864",
+      "target_date": "2018-08-07",
+      "updates": 1280,
+      "truth_separate": true
+    },
+    {
+      "event_id": "2019/fire_23300839",
+      "target_date": "2019-09-08",
+      "updates": 1280,
+      "truth_separate": true
+    },
+    {
+      "event_id": "2020/fire_23654679",
+      "target_date": "2020-01-06",
+      "updates": 1280,
+      "truth_separate": true
+    },
+    {
+      "event_id": "2020/fire_24104674",
+      "target_date": "2020-06-16",
+      "updates": 1280,
+      "truth_separate": true
+    }
+  ],
+  "user_visual_validation": {
+    "source": "Explicit user confirmation during GitHub finalization",
+    "browser": "Chrome",
+    "react_fastapi": true,
+    "event_and_date_selection": true,
+    "maps": true,
+    "mlflow_four_runs_parameters_metrics_curves": true
+  }
+}

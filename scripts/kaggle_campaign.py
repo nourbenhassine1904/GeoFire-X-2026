@@ -35,6 +35,8 @@ def configure(prepared, index, destination, checkpoint_prefix, upload_budget, pr
         for seed in ([42] if model == "B0" else [42, 43, 44]):
             c = {**base, "model": model, "seed": seed,
                  "checkpoint_dataset": f"{checkpoint_prefix}-{model.lower()}-s{seed}"}
+            if model == "B1":
+                c["model_kwargs"] = {"architecture": "spatial_cnn_v2", "width": 16}
             path = destination/f"{model}_s{seed}.yaml"
             path.write_text(yaml.safe_dump(c, sort_keys=False), encoding="utf-8")
             checked = load_config(path)

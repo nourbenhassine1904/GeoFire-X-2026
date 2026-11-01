@@ -11,10 +11,14 @@ def package(destination):
     root = Path(__file__).resolve().parents[1]
     destination = Path(destination)
     files = [root/"pyproject.toml", root/"README.md", root/"docs/KAGGLE_CLOUD_SCALE.md",
-             root/"data/manifests/real/corpus_zip_index_v1.json"]
-    for folder, extensions in (("src", {".py"}), ("scripts", {".py"}),
+             root/"data/manifests/real/corpus_zip_index_v1.json", root/"docs/KAGGLE_UNBLOCK_QUICKSTART.md",
+             root/"docs/ORCHESTRATION_SUIVI3.md", root/"docs/PILOTE_GPU_SAMPLE_2026-11-01.md",
+             root/"frontend/package.json", root/"frontend/package-lock.json",
+             root/"frontend/index.html", root/"frontend/build.mjs", root/"frontend/src/style.css"]
+    for folder, extensions in (("src", {".py"}), ("scripts", {".py", ".ps1"}),
                                ("tests", {".py"}), ("configs", {".yaml", ".json"}),
-                               ("splits/benchmark/annual_v1", {".csv", ".json"})):
+                               ("splits/benchmark/annual_v1", {".csv", ".json"}),
+                               ("notebooks", {".ipynb"}), ("frontend/src", {".mjs"})):
         files += [p for p in (root/folder).rglob("*")
                   if p.is_file() and p.suffix in extensions and "__pycache__" not in p.parts]
     hashes = {p.relative_to(root).as_posix(): sha256_file(p) for p in sorted(files)}

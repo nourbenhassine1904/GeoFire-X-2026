@@ -1,5 +1,9 @@
 # Acquisition CPU et campagnes GPU Kaggle
 
+> Procédure actualisée après le blocage HTTP403 : suivre
+> [KAGGLE_UNBLOCK_QUICKSTART.md](KAGGLE_UNBLOCK_QUICKSTART.md) et les notebooks v3.
+> Ils remplacent les anciennes instructions de première publication ci-dessous.
+
 Le code ne considère jamais `/kaggle/working` comme une sauvegarde. Aucun
 transfert réel, upload Kaggle ou entraînement GPU prolongé n'a été exécuté dans
 la préparation locale. Les tests du backend cloud utilisent un service simulé.
