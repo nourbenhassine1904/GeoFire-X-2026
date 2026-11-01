@@ -1,0 +1,35 @@
+protocol_version: annual-v2-runner
+qualification: pilot
+experiment: geofirex-sample-t4-pilot-20261101
+model: B1
+model_kwargs:
+  architecture: spatial_cnn_v2
+  width: 16
+device: cuda
+amp: false
+seed: 42
+fold: 0
+context: 3
+feature_policy: conservative_fire_terrain
+epochs: 10
+samples_per_epoch: 2048
+batch_size: 16
+eval_batch_size: 32
+patch_size: 64
+workers: 2
+cpu_threads: 2
+reader_cache_mb: 256
+positive_tile_fraction: 0.5
+pos_weight: auto
+max_pos_weight: 100.0
+dice_weight: 0.5
+learning_rate: 0.001
+weight_decay: 0.0001
+gradient_clip: 1.0
+preflight_steps: 30
+early_stopping_patience: 3
+early_stopping_min_delta: 0.0001
+max_run_seconds: 780
+mlflow_enabled: true
+storage_policy: ephemeral_export
+output_root: /kaggle/working/sample-pilot

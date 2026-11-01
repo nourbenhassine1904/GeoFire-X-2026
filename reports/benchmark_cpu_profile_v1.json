@@ -1,0 +1,190 @@
+{
+  "qualification": "hardware microbenchmark on real patches, untrained models; no accuracy results",
+  "torch": "2.15.0+cpu",
+  "device": "cpu",
+  "batch_size": 2,
+  "patch_size": 64,
+  "historical_normalization": "used for profiling only, not proposed fold training statistics",
+  "records": [
+    {
+      "model": "B0",
+      "context_days": 1,
+      "input_shape": [
+        2,
+        1,
+        8,
+        64,
+        64
+      ],
+      "parameters": 0,
+      "median_batch_seconds": 5.309999960445566e-05,
+      "operation": "inference only",
+      "torch_threads": 2
+    },
+    {
+      "model": "B1",
+      "context_days": 1,
+      "input_shape": [
+        2,
+        1,
+        8,
+        64,
+        64
+      ],
+      "parameters": 73,
+      "median_batch_seconds": 0.001261999999769614,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B2",
+      "context_days": 1,
+      "input_shape": [
+        2,
+        1,
+        8,
+        64,
+        64
+      ],
+      "parameters": 122825,
+      "median_batch_seconds": 0.012685400000009395,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B3",
+      "context_days": 1,
+      "input_shape": [
+        2,
+        1,
+        8,
+        64,
+        64
+      ],
+      "parameters": 5297,
+      "median_batch_seconds": 0.003061800000068615,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B0",
+      "context_days": 3,
+      "input_shape": [
+        2,
+        3,
+        8,
+        64,
+        64
+      ],
+      "parameters": 0,
+      "median_batch_seconds": 6.570000005012844e-05,
+      "operation": "inference only",
+      "torch_threads": 2
+    },
+    {
+      "model": "B1",
+      "context_days": 3,
+      "input_shape": [
+        2,
+        3,
+        8,
+        64,
+        64
+      ],
+      "parameters": 217,
+      "median_batch_seconds": 0.001537300000563846,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B2",
+      "context_days": 3,
+      "input_shape": [
+        2,
+        3,
+        8,
+        64,
+        64
+      ],
+      "parameters": 123977,
+      "median_batch_seconds": 0.014334800000142423,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B3",
+      "context_days": 3,
+      "input_shape": [
+        2,
+        3,
+        8,
+        64,
+        64
+      ],
+      "parameters": 5297,
+      "median_batch_seconds": 0.0049102000002676505,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B0",
+      "context_days": 5,
+      "input_shape": [
+        2,
+        5,
+        8,
+        64,
+        64
+      ],
+      "parameters": 0,
+      "median_batch_seconds": 4.939999962516595e-05,
+      "operation": "inference only",
+      "torch_threads": 2
+    },
+    {
+      "model": "B1",
+      "context_days": 5,
+      "input_shape": [
+        2,
+        5,
+        8,
+        64,
+        64
+      ],
+      "parameters": 361,
+      "median_batch_seconds": 0.0017861000005723326,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B2",
+      "context_days": 5,
+      "input_shape": [
+        2,
+        5,
+        8,
+        64,
+        64
+      ],
+      "parameters": 125129,
+      "median_batch_seconds": 0.013681700000233832,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    },
+    {
+      "model": "B3",
+      "context_days": 5,
+      "input_shape": [
+        2,
+        5,
+        8,
+        64,
+        64
+      ],
+      "parameters": 5297,
+      "median_batch_seconds": 0.00860720000036963,
+      "operation": "forward + loss + backward, no optimizer",
+      "torch_threads": 2
+    }
+  ]
+}

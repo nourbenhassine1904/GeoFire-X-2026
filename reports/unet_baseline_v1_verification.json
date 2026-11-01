@@ -1,0 +1,16 @@
+{
+  "run_id": "77c1d8876ff44e4c9a03f01bb3298fb3",
+  "status": "verified",
+  "raw_files_unchanged": 108,
+  "source_files_verified": 51,
+  "changed_model_tensors": 44,
+  "all_model_stages_updated": true,
+  "train_only_normalization_verified": true,
+  "mlflow_checkpoint_and_metrics_verified": true,
+  "real_inference_verified": true,
+  "inference_probability_range": [
+    0.00030542988679371774,
+    0.03970823809504509
+  ],
+  "checkpoint_sha256": "127d0112263d803be71509da2f30ff2f602fd0c5a086f345e4e8e79237f24e9e"
+}

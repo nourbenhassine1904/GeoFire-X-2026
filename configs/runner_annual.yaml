@@ -1,0 +1,34 @@
+# Planning configuration, NOT a convergence claim. No command runs it implicitly.
+# Provide a COMPLETE versioned manifest and persistent paths before use.
+protocol_version: annual-v2-runner
+dataset_version: WildfireSpreadTS v1.0 / zenodo.8006177
+qualification: scientific
+model: B2
+fold: 0
+context: 3
+seed: 42
+device: cuda
+amp: true
+data_root: /workspace/geofirex-data
+manifest: /workspace/geofirex-data/manifests/full_v1.csv
+split: splits/benchmark/annual_v1/fold_00.csv
+index: data/manifests/real/corpus_zip_index_v1.json
+output_root: /workspace/geofirex-runs/annual-v2
+artifact_root: file:///workspace/geofirex-runs/annual-v2/mlflow_artifacts
+tracking_uri: sqlite:////workspace/geofirex-runs/annual-v2/tracking.db
+experiment: geofirex-benchmark-annual-v2
+storage_policy: persistent
+cpu_threads: 2
+workers: 2
+patch_size: 64
+batch_size: 8
+eval_batch_size: 8
+epochs: 20
+samples_per_epoch: 1024
+learning_rate: 0.001
+weight_decay: 0.0001
+pos_weight: auto
+max_pos_weight: 100
+dice_weight: 0.5
+preflight_steps: 100
+thresholds: [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]

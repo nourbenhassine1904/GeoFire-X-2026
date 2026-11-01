@@ -1,0 +1,27 @@
+# Five local events: diagnostic only. One epoch, four optimizer updates.
+protocol_version: annual-v2-runner
+qualification: diagnostic
+model: B1
+fold: 0
+context: 3
+seed: 42
+device: cpu
+amp: false
+data_root: .
+manifest: data/manifests/real/manifest_wildfirespreadts.csv
+split: splits/benchmark/annual_v1/fold_00.csv
+index: data/manifests/real/corpus_zip_index_v1.json
+output_root: artifacts/benchmark
+epochs: 1
+samples_per_epoch: 32
+batch_size: 8
+eval_batch_size: 8
+patch_size: 64
+preflight_steps: 30
+pos_weight: auto
+max_pos_weight: 100
+dice_weight: 0.5
+thresholds: [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9]
+experiment: geofirex-benchmark-diagnostic-v2
+mlflow_enabled: true
+storage_policy: ephemeral_export

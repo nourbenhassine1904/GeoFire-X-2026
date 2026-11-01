@@ -1,0 +1,46 @@
+{
+  "index_sha256": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+  "events": 607,
+  "observations": 13607,
+  "events_per_year": {
+    "2018": 176,
+    "2019": 74,
+    "2020": 201,
+    "2021": 156
+  },
+  "observations_per_year": {
+    "2018": 3773,
+    "2019": 1425,
+    "2020": 4292,
+    "2021": 4117
+  },
+  "archive_bytes_exact": 48359369821,
+  "tif_payload_compressed_bytes_exact": 48356472675,
+  "extracted_geotiff_bytes_exact": 49294235723,
+  "disk_free_bytes_measured": 129188233216,
+  "decoded_float32_23_bands_estimate": {
+    "low": 90801252696,
+    "sample_mean": 113812301369.55554,
+    "high": 126888159684
+  },
+  "compact_memmap_3_float32_fire_lc_estimate": {
+    "low": 13817581932,
+    "sample_mean": 17319263251.888885,
+    "high": 19309067778
+  },
+  "decoded_float32_40_channels_estimate": {
+    "low": 157915222080,
+    "sample_mean": 197934437164.44443,
+    "high": 220675060320
+  },
+  "estimate_warning": "Pixel estimates extrapolate 108 local scenes, not full-corpus raster headers; not guaranteed bounds.",
+  "sample_pixels_min": 72534,
+  "sample_pixels_max": 101361,
+  "source_sample_scenes": 108,
+  "transfer_time_hours_at_Mbps": {
+    "10": 10.745882816666668,
+    "50": 2.149176563333333,
+    "100": 1.0745882816666665
+  },
+  "scope": "ZIP central directory and local sample only; no full-corpus pixels processed"
+}

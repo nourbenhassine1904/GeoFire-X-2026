@@ -1,0 +1,8 @@
+{
+  "policy": "multimodal_observed_j_v1",
+  "decision_time": "end_of_day_J",
+  "reviewed": false,
+  "available_by_J_bands": [],
+  "evidence": [],
+  "instructions": "Populate only after auditing observation/composite/publication dates for vegetation, annual landcover and GRIDMET. Forecast bands 17-21 and legacy wind direction 7 are excluded. This template deliberately cannot authorize a run."
+}

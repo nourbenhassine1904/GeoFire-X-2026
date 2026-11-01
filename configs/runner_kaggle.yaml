@@ -1,0 +1,25 @@
+# Edit manifest/data_root for YOUR attached Kaggle Dataset (see guide).
+# This is a bounded diagnostic, not the annual benchmark.
+qualification: diagnostic
+model: B1
+fold: 0
+context: 3
+seed: 42
+device: cuda
+amp: true
+data_root: /kaggle/input/geofirex-sample
+manifest: /kaggle/input/geofirex-sample/manifest.csv
+split: splits/benchmark/annual_v1/fold_00.csv
+index: data/manifests/real/corpus_zip_index_v1.json
+output_root: /kaggle/working/geofirex-runs
+artifact_root: file:///kaggle/working/geofirex-runs/mlflow_artifacts
+tracking_uri: sqlite:////kaggle/working/geofirex-runs/tracking.db
+experiment: geofirex-benchmark-kaggle-diagnostic-v2
+storage_policy: ephemeral_export
+epochs: 1
+samples_per_epoch: 32
+batch_size: 8
+eval_batch_size: 8
+patch_size: 64
+preflight_steps: 30
+workers: 0

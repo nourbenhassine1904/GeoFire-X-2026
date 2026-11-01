@@ -20,6 +20,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest"]
 viewer = ["xarray", "rioxarray"]
+benchmark-metadata = ["pyarrow"]
+kaggle = ["kagglehub>=1.0.3,<2"]
+api = ["fastapi", "uvicorn"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

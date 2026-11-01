@@ -1,0 +1,16 @@
+model: B1
+model_kwargs:
+  architecture: spatial_cnn_v2
+  width: 16
+qualification: diagnostic
+experiment: geofirex-demo-real-data-v1
+device: cpu
+epochs: 2
+samples_per_epoch: 32
+positive_tile_fraction: 0.5
+batch_size: 8
+patch_size: 64
+context: 3
+output_root: artifacts/demo-training
+mlflow_enabled: true
+storage_policy: ephemeral_export
