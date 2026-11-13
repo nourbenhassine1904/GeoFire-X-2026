@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import {Fade} from './studio_ui.mjs';
 const h = React.createElement;
 const names = {B1: 'CNN · B1', B2: 'U-Net · B2'};
-const colors = {B1: '#ffad66', B2: '#66d6cb'};
+const colors = {B1: '#B45309', B2: '#0F766E'};
 const number = (v, digits = 6) => v === null || v === undefined ? '—' : Number(v).toLocaleString('fr-FR', {maximumFractionDigits: digits});
 const pct = v => v === null ? '—' : `${number(v * 100, 2)} %`;
 const asset = name => `/science/assets/${name.split('/').map(encodeURIComponent).join('/')}`;
@@ -38,9 +39,9 @@ function Distribution({data, metric}) {
   const x=v=>left+v/max*(width-left-right), y=v=>height-bottom-v*(height-top-bottom);
   return h('svg', {viewBox:`0 0 ${width} ${height}`, role:'img', 'aria-label':`Distribution cumulative ${metric} par événement`, className:'distribution'},
     ...[0,.25,.5,.75,1].flatMap(v=>[
-      h('line',{key:'l'+v,x1:left,x2:width-right,y1:y(v),y2:y(v),stroke:'#365053'}),
-      h('text',{key:'t'+v,x:5,y:y(v)+4,fill:'#aec7c2',fontSize:12},`${v*100}%`),
-      h('text',{key:'x'+v,x:x(v*max),y:height-10,fill:'#aec7c2',fontSize:12,textAnchor:'middle'},number(v*max,3))]),
+      h('line',{key:'l'+v,x1:left,x2:width-right,y1:y(v),y2:y(v),stroke:'var(--line)'}),
+      h('text',{key:'t'+v,x:5,y:y(v)+4,fill:'var(--text-secondary)',fontSize:12},`${v*100}%`),
+      h('text',{key:'x'+v,x:x(v*max),y:height-10,fill:'var(--text-secondary)',fontSize:12,textAnchor:'middle'},number(v*max,3))]),
     ...['B1','B2'].flatMap(model=>[.5,.95].map(t=>{
       const values=data.models[model].filter(r=>r.threshold===t && r[metric]!==null).map(r=>r[metric]).sort((a,b)=>a-b);
       const points=values.map((v,i)=>`${x(v)},${y((i+1)/values.length)}`).join(' ');
@@ -95,7 +96,7 @@ function MapPanel({phase}) {
 export function Results() {
   const state=useData('/science/summary');
   const [phase,setPhase]=useState('holdout169');
-  if (!state.data) return h('main',{className:'science'},h(State,state));
+  if (!state.data) return h('section',{className:'science'},h(State,state));
   const data=state.data, rows=data.comparison.filter(r=>r.phase===phase);
   const cards=['B1','B2'].map(model=>{
     const b=rows.find(r=>r.model===model && r.mode==='baseline_05'), c=rows.find(r=>r.model===model && r.mode==='calibrated');
@@ -104,9 +105,9 @@ export function Results() {
       h('strong',null,`+${number(c.dice-b.dice)} Dice · ${pct(1-c.fp/b.fp)} de FP en moins`),
       h('p',null,`Rappel ${number(b.recall,3)} → ${number(c.recall,3)} · AP ${number(c.average_precision)}`));
   });
-  return h('main',{className:'science'},
+  return h('section',{className:'science'},
     h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Résultats Kaggle vérifiés · 12 novembre 2026'),
-      h('h1',null,'CNN & U-Net, au seuil mesuré'),h('p',null,'250 événements train · 4 époques · 23 404 updates par modèle · T=3 → J+1 · seed 42')),
+      h('h2',null,'CNN & U-Net, au seuil mesuré'),h('p',null,'250 événements train · 4 époques · 23 404 updates par modèle · T=3 → J+1 · seed 42')),
     h('div',{className:'phase-switch',role:'group','aria-label':'Groupe de validation'},
       ...[['calibration32','32 événements · réglage'],['holdout169','169 événements · confirmation']].map(([k,label])=>h('button',{key:k,'aria-pressed':phase===k,onClick:()=>setPhase(k)},label))),
     h('p',null,phase==='holdout169'?'Seuils fixés sur les 32 événements, puis vérifiés ici sans ajustement. Ce panel désormais observé ne sert pas à multiplier les essais.':'Ces 32 événements servent au réglage et ont déjà été utilisés pendant l’entraînement. Les scores de sélection ne sont pas un test indépendant.'),
@@ -126,13 +127,18 @@ export function Results() {
 export function BigData() {
   const state=useData('/science/big-data');
   const lineage=useData('/lab/lineage');
-  if (!state.data) return h('main',{className:'science'},h(State,state));
+  if (!state.data) return h('section',{className:'science'},h(State,state));
   const data=state.data;
-  return h('main',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Spark SQL → Parquet · résultats existants'),h('h1',null,'Big Data, chiffres et provenance'),
+  return h('section',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Spark SQL → Parquet · résultats existants'),h('h2',null,'Inventaire, volumes et provenance'),
     h('p',null,`Spark ${data.spark_version} · ${data.master} · exécution locale à deux threads · aucun job relancé`)),
-    h('section',{className:'panel'},h('h2',null,'Le parcours des données'),
-      h('p',null,'1. Inventaire des observations → 2. Requêtes Spark SQL (groupements, contrôles, jointure des cibles) → 3. Agrégats Parquet → 4. Lecture FastAPI et visualisation React.'),
-      h('p',null,'La démonstration lit les sorties déjà calculées. Ouvrir les requêtes et leurs empreintes ci-dessous pour relier chaque chiffre à sa source ; aucun calcul Spark n’est déclenché par l’interface.')),
+    h(Fade,null,h('section',{className:'panel'},h('h2',null,'Le parcours des données'),
+      h('div',{className:'pipeline-diagram','aria-label':'Pipeline exécuté puis lecture des sorties'},...[
+        ['01','Inventaire',`${number(data.tables.annual.reduce((n,r)=>n+r.observations,0),0)} observations indexées`],
+        ['02','Spark SQL',`Spark ${data.spark_version} · ${data.master}`],
+        ['03','Parquet',`${data.parquet_files.length} agrégats matérialisés`],
+        ['04','FastAPI → React','Lecture des résultats et de leurs SHA-256']
+      ].map(([step,title,detail])=>h('div',{className:'pipeline-node',key:step},h('span',{className:'eyebrow'},step),h('strong',null,title),h('small',null,detail)))),
+      h('p',null,'Spark local[2] réellement exécuté : deux threads locaux, sans cluster distribué ni streaming. La démonstration lit les sorties déjà calculées ; aucun calcul Spark n’est déclenché par l’interface.'))),
     lineage.data&&h('section',{className:'panel'},h('h2',null,'Du corpus compact au Prediction Lab'),
       h('p',null,`${lineage.data.partitions} partitions existantes · ${lineage.data.archive_count} archives événementielles · ${number(lineage.data.source_bytes/1e9,2)} Go de fichiers sources compacts. Aucune reconstruction ni republication.`),
       h(Table,{rows:Object.entries(lineage.data.roles).map(([split,r])=>({split,...r})),columns:[['split','Périmètre'],['events','Événements'],['tiles','Tuiles',v=>number(v,0)]]}),
@@ -142,7 +148,7 @@ export function BigData() {
     lineage.error&&h('p',{role:'alert'},'Traçabilité du Prediction Lab indisponible ; les résultats Spark restent affichés.'),
     h('div',{className:'metric-grid'},h('article',{className:'metric-card'},h('span',null,'Temps total historique'),h('div',{className:'score'},`${number(data.total_seconds,2)} s`),h('p',null,`JVM ${number(data.jvm_start_seconds,2)} s · traitement ${number(data.processing_seconds,2)} s`)),
       h('article',{className:'metric-card'},h('span',null,'Inventaire de métadonnées'),h('div',{className:'score'},`${number(data.tables.annual.reduce((n,r)=>n+r.events,0),0)} événements`),h('p',null,`${number(data.tables.annual.reduce((n,r)=>n+r.observations,0),0)} observations indexées · 2021 : inventaire seulement`))),
-    h('section',{className:'panel'},h('h2',null,'Inventaire annuel'),h(Table,{rows:data.tables.annual,columns:[['year','Année'],['split','Périmètre',v=>v==='test'?'Test verrouillé · métadonnées uniquement':v],['events','Événements',v=>number(v,0)],['observations','Observations',v=>number(v,0)]]})),
+    h(Fade,null,h('section',{className:'panel'},h('h2',null,'Inventaire annuel'),h(InventoryChart,{rows:data.tables.annual}),h(Table,{rows:data.tables.annual,columns:[['year','Année'],['split','Périmètre',v=>v==='test'?'Test verrouillé · métadonnées uniquement':v],['events','Événements',v=>number(v,0)],['observations','Observations',v=>number(v,0)]]}))),
     h('section',{className:'panel'},h('h2',null,'Fenêtres temporelles alignées'),h(Table,{rows:data.tables.windows,columns:[['split','Split'],['context','Jours de contexte'],['events','Événements',v=>number(v,0)],['windows','Fenêtres',v=>number(v,0)]]})),
     h('section',{className:'panel'},h('h2',null,'Jointure des fenêtres T=3 avec leurs cibles'),h(Table,{rows:data.tables.window_join,columns:[['split','Split'],['matched_targets','Cibles appariées',v=>number(v,0)]]}),h('p',null,'Résultat SQL déjà calculé : chaque fenêtre T=3 est reliée à une observation cible par événement et date. Le tableau expose les nombres réellement matérialisés en Parquet.')),
     h('section',{className:'panel'},h('h2',null,'Qualité déjà calculée · observations train/validation'),h(Table,{rows:data.tables.quality,columns:[['split','Split'],['observations','Observations',v=>number(v,0)],['positive_pixels','Pixels feu',v=>number(v,0)],['valid_pixels','Pixels valides',v=>number(v,0)],['invalid_pixels','Pixels invalides',v=>number(v,0)],['no_detection_days','Jours sans détection',v=>number(v,0)]]}),
@@ -152,4 +158,10 @@ export function BigData() {
       ...Object.entries(data.queries).map(([k,q])=>h('div',{key:k},h('h3',null,`${k} · ${number(data.query_seconds[k],3)} s`),h('pre',null,q))),
       h(Table,{rows:data.parquet_files,columns:[['path','Parquet existant'],['rows','Lignes'],['bytes','Octets',v=>number(v,0)],['sha256','SHA256']]}),
       h('p',null,data.provenance),h('pre',null,JSON.stringify({report_sha256:data.report_sha256,source_hashes:data.source_hashes},null,2))));
+}
+
+function InventoryChart({rows}){
+ const totals=Object.entries(rows.reduce((acc,r)=>({...acc,[r.split]:(acc[r.split]||0)+r.events}),{})).map(([split,events])=>({year:split,split,events}));
+ const chart=(values,label)=>h('div',{className:'annual-chart',role:'img','aria-label':label+': '+values.map(r=>`${r.year} ${r.split} ${r.events} événements`).join('; ')},...values.map(r=>h('div',{className:'annual-row',key:r.year},h('span',null,r.year,h('small',null,r.split==='test'?'test · métadonnées':r.split)),h('div',{className:'annual-track','aria-hidden':true},h('div',{className:'annual-bar','data-split':r.split,style:{width:(r.events/250*100)+'%'}})),h('strong',null,number(r.events,0)))));
+ return h(React.Fragment,null,chart(rows,'Événements par année et split, axe 0 à 250'),h('details',null,h('summary',null,'Répartition par split'),chart(totals,'Total par split, axe 0 à 250')),h('p',{className:'caption'},'Longueur proportionnelle au nombre d’événements · axe commun 0–250. Source : agrégat Spark annual.parquet. Le test 2021 reste un inventaire de métadonnées ; aucun pixel lu.'));
 }

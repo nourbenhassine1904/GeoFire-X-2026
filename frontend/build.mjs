@@ -5,3 +5,4 @@ await build({entryPoints: ['src/main.mjs'], bundle: true, minify: true,
   outfile: 'dist/app.js', define: {'process.env.NODE_ENV': '"production"'}});
 await copyFile('index.html', 'dist/index.html');
 await copyFile('src/style.css', 'dist/style.css');
+await copyFile('src/reactbits/LICENSE.md', 'dist/react-bits-LICENSE.txt');

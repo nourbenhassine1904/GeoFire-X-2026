@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "device": "cpu",
+  "model": "B2 U-Net poids 10",
+  "threshold": 0.78,
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "updates": 23404,
+  "events": 201,
+  "torch_version": "2.15.0+cpu",
+  "training_torch_version": "2.11.0+cu130",
+  "test_2021_locked": true,
+  "preprocessing": "already normalized compact T3; train-only normalizer; no re-normalization",
+  "spatial_reference": "pixel grid; CRS/affine unavailable in compact",
+  "historical_predictor_bypassed": false
+}

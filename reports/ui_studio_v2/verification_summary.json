@@ -1,0 +1,487 @@
+{
+  "status": "PASS",
+  "scientific_files_unchanged": [
+    {
+      "path": "src/geofirex/acquisition_session.py",
+      "before": "3213b781be2e7a9fd6ab7ad5966c9cd0e7fd6a03337e51401acb7d40a0b2f5e8",
+      "after": "3213b781be2e7a9fd6ab7ad5966c9cd0e7fd6a03337e51401acb7d40a0b2f5e8"
+    },
+    {
+      "path": "src/geofirex/archive_transfer.py",
+      "before": "5ccd64755cbc987ec4b8c8840e102c3e8b5fed6bb3afd188ee398c165d3be97a",
+      "after": "5ccd64755cbc987ec4b8c8840e102c3e8b5fed6bb3afd188ee398c165d3be97a"
+    },
+    {
+      "path": "src/geofirex/archive_verification.py",
+      "before": "366686f64d24a5eafce582d3a575092fef3ad52ba5b319b0ae0c872f231a6e49",
+      "after": "366686f64d24a5eafce582d3a575092fef3ad52ba5b319b0ae0c872f231a6e49"
+    },
+    {
+      "path": "src/geofirex/audit.py",
+      "before": "2cb6584356794a2cc78be392ab7f575ba27964ec52936234a31f606a86329b06",
+      "after": "2cb6584356794a2cc78be392ab7f575ba27964ec52936234a31f606a86329b06"
+    },
+    {
+      "path": "src/geofirex/baseline.py",
+      "before": "5d4d3a752279dd9b9bbb31faa9dd87776176b027eb4f15fe1661d9b6398ad517",
+      "after": "5d4d3a752279dd9b9bbb31faa9dd87776176b027eb4f15fe1661d9b6398ad517"
+    },
+    {
+      "path": "src/geofirex/benchmark.py",
+      "before": "93f5cd5fd7807ac4c71edf0fd1c8374c834652b14590401596489ab9cae11a19",
+      "after": "93f5cd5fd7807ac4c71edf0fd1c8374c834652b14590401596489ab9cae11a19"
+    },
+    {
+      "path": "src/geofirex/benchmark_metrics.py",
+      "before": "b63f07a891643008c4cb764c98ca92fc80a61264039c90faffb18bb67964c18d",
+      "after": "b63f07a891643008c4cb764c98ca92fc80a61264039c90faffb18bb67964c18d"
+    },
+    {
+      "path": "src/geofirex/benchmark_models.py",
+      "before": "6d72a4f890ab2e92a1d9b6ed1c91bb0e33c9b3c6fd15bac7c624a2a4a94185c5",
+      "after": "6d72a4f890ab2e92a1d9b6ed1c91bb0e33c9b3c6fd15bac7c624a2a4a94185c5"
+    },
+    {
+      "path": "src/geofirex/calibration_io.py",
+      "before": "dc206f85bb277b7c741621f0772c54388fb158bee728dd2e6e2d5116122e57c3",
+      "after": "dc206f85bb277b7c741621f0772c54388fb158bee728dd2e6e2d5116122e57c3"
+    },
+    {
+      "path": "src/geofirex/calibration_mounts.py",
+      "before": "1f5a8f5beabaf24f45c5f156822af4dbabe8ea65fa90c9b6507ae02f7bde5f43",
+      "after": "1f5a8f5beabaf24f45c5f156822af4dbabe8ea65fa90c9b6507ae02f7bde5f43"
+    },
+    {
+      "path": "src/geofirex/cloud_corpus.py",
+      "before": "797cfbdf841d895e48d0757eee2512514350326d4d64dddd0198612e1a7aec9c",
+      "after": "797cfbdf841d895e48d0757eee2512514350326d4d64dddd0198612e1a7aec9c"
+    },
+    {
+      "path": "src/geofirex/compact_calibration.py",
+      "before": "996d259f5be1afed48b4ded31188e5d948828c3d1707ad9999892b5f86402a7d",
+      "after": "996d259f5be1afed48b4ded31188e5d948828c3d1707ad9999892b5f86402a7d"
+    },
+    {
+      "path": "src/geofirex/constants.py",
+      "before": "353e84927687ae033609d1d571df65dbc630744ff16985d596526fb6e40ed1f3",
+      "after": "353e84927687ae033609d1d571df65dbc630744ff16985d596526fb6e40ed1f3"
+    },
+    {
+      "path": "src/geofirex/corpus.py",
+      "before": "aac236e48cb854f0397c093548830282e1a04d69920f3fedf10bdec16e1a3c43",
+      "after": "aac236e48cb854f0397c093548830282e1a04d69920f3fedf10bdec16e1a3c43"
+    },
+    {
+      "path": "src/geofirex/dataset.py",
+      "before": "dd13a53caaca5f09e3ddb3fd41debee565b4aabf51d3b86a52b84edb404cb9e1",
+      "after": "dd13a53caaca5f09e3ddb3fd41debee565b4aabf51d3b86a52b84edb404cb9e1"
+    },
+    {
+      "path": "src/geofirex/deterministic_models.py",
+      "before": "57dfe44a9816f63487abdcbe4892d93433ef3996910652016fd48090c94242d2",
+      "after": "57dfe44a9816f63487abdcbe4892d93433ef3996910652016fd48090c94242d2"
+    },
+    {
+      "path": "src/geofirex/event_cache.py",
+      "before": "954bcc07d6f9f635d1de3d71b504ef7b113ca9d0daded8218f83d3d8a8b7c3bf",
+      "after": "954bcc07d6f9f635d1de3d71b504ef7b113ca9d0daded8218f83d3d8a8b7c3bf"
+    },
+    {
+      "path": "src/geofirex/fast_compact.py",
+      "before": "1396ab8bbda26b3e10d199dda20bbdb4d3fe858c394f684b5effbaf057bed635",
+      "after": "1396ab8bbda26b3e10d199dda20bbdb4d3fe858c394f684b5effbaf057bed635"
+    },
+    {
+      "path": "src/geofirex/fast_raw.py",
+      "before": "e33cb9ede5d7117cdfccea90c16980a0c99aa16f65e97eb5987585524f3e59df",
+      "after": "e33cb9ede5d7117cdfccea90c16980a0c99aa16f65e97eb5987585524f3e59df"
+    },
+    {
+      "path": "src/geofirex/feature_profiles.py",
+      "before": "5176754868f48d9164f4d968978add9423b534a02d78411ea2d55ac638f70088",
+      "after": "5176754868f48d9164f4d968978add9423b534a02d78411ea2d55ac638f70088"
+    },
+    {
+      "path": "src/geofirex/full_corpus.py",
+      "before": "2dec25c1071aeeb0957675ebcd6610a23f38435731337d302ea0233ca2afff2a",
+      "after": "2dec25c1071aeeb0957675ebcd6610a23f38435731337d302ea0233ca2afff2a"
+    },
+    {
+      "path": "src/geofirex/gpu_operational.py",
+      "before": "4d42c91404ad0cf7f85d811394a316c79aa6763bab41f3eae16e5011ca2197f0",
+      "after": "4d42c91404ad0cf7f85d811394a316c79aa6763bab41f3eae16e5011ca2197f0"
+    },
+    {
+      "path": "src/geofirex/io.py",
+      "before": "539168555ee0ab37d81e599aac4d1e6e5597ecf36fd71d9f0eaa83214dbeda78",
+      "after": "539168555ee0ab37d81e599aac4d1e6e5597ecf36fd71d9f0eaa83214dbeda78"
+    },
+    {
+      "path": "src/geofirex/job_control.py",
+      "before": "fd599e139c81bce6284025c12f5e9365f75b172af4a9d1be793708a84bce4991",
+      "after": "fd599e139c81bce6284025c12f5e9365f75b172af4a9d1be793708a84bce4991"
+    },
+    {
+      "path": "src/geofirex/kaggle_persistence.py",
+      "before": "bd07e9bfc8ef750ca8b100117381ba34eb7014b46239e29ccd5cd2af991daa71",
+      "after": "bd07e9bfc8ef750ca8b100117381ba34eb7014b46239e29ccd5cd2af991daa71"
+    },
+    {
+      "path": "src/geofirex/loss_ablation.py",
+      "before": "c2ba87d57dbafc8b82ed56b2729d8225f7b96b666ba09c5b181a290cedcd6e15",
+      "after": "c2ba87d57dbafc8b82ed56b2729d8225f7b96b666ba09c5b181a290cedcd6e15"
+    },
+    {
+      "path": "src/geofirex/manifest.py",
+      "before": "81b5d7346edea8c602316c65d59e99a373adf5b5884839cc5ed185699c55b0e7",
+      "after": "81b5d7346edea8c602316c65d59e99a373adf5b5884839cc5ed185699c55b0e7"
+    },
+    {
+      "path": "src/geofirex/metrics.py",
+      "before": "f0aa41d53a1d2bccb659a2607ca724d97e63ea4b4a0fd8f26f6d0d80dae154b0",
+      "after": "f0aa41d53a1d2bccb659a2607ca724d97e63ea4b4a0fd8f26f6d0d80dae154b0"
+    },
+    {
+      "path": "src/geofirex/mission_results.py",
+      "before": "065faf8785064c0db70d118c22d3c84beea5dfddad88e1db7a13108a7fe0ff30",
+      "after": "065faf8785064c0db70d118c22d3c84beea5dfddad88e1db7a13108a7fe0ff30"
+    },
+    {
+      "path": "src/geofirex/mission_streaming.py",
+      "before": "37b67efb0b5805937cbbd42c3b4d625beb5d11b80bf265d9ac811d96622cae84",
+      "after": "37b67efb0b5805937cbbd42c3b4d625beb5d11b80bf265d9ac811d96622cae84"
+    },
+    {
+      "path": "src/geofirex/mission_training.py",
+      "before": "6f5472d3595f32d565c75608118936cde249eefd27f87a46ac89eb5aff8ad982",
+      "after": "6f5472d3595f32d565c75608118936cde249eefd27f87a46ac89eb5aff8ad982"
+    },
+    {
+      "path": "src/geofirex/orchestration.py",
+      "before": "0f4f4792e45712dcdcb27bb48290c3695b27a6910d700b960bbc3d80ce228b52",
+      "after": "0f4f4792e45712dcdcb27bb48290c3695b27a6910d700b960bbc3d80ce228b52"
+    },
+    {
+      "path": "src/geofirex/prediction_lab.py",
+      "before": "1b5dffd241dbae96b29978d98d62a6a1232c07bb490c35daa031ab66a22da5a2",
+      "after": "1b5dffd241dbae96b29978d98d62a6a1232c07bb490c35daa031ab66a22da5a2"
+    },
+    {
+      "path": "src/geofirex/propagation_experiment.py",
+      "before": "c09009a1dfe48e0c97fbee368150b62e84591f21ebccbbc773e635f5b3ff011a",
+      "after": "c09009a1dfe48e0c97fbee368150b62e84591f21ebccbbc773e635f5b3ff011a"
+    },
+    {
+      "path": "src/geofirex/propagation_results.py",
+      "before": "5eb02515dee2c10eb36b817074eb6acb45ab38c9c21584e8a1e3f4c57deebcaf",
+      "after": "5eb02515dee2c10eb36b817074eb6acb45ab38c9c21584e8a1e3f4c57deebcaf"
+    },
+    {
+      "path": "src/geofirex/real_constants.py",
+      "before": "e6d71a56ba0add9aded9fbe01748355f88924aaf33502d4b3b49d12cf55ef1f9",
+      "after": "e6d71a56ba0add9aded9fbe01748355f88924aaf33502d4b3b49d12cf55ef1f9"
+    },
+    {
+      "path": "src/geofirex/real_dataset.py",
+      "before": "cfd0890750791dfd905e43313726a71cdb56fdd207295958bc80d3a23312f915",
+      "after": "cfd0890750791dfd905e43313726a71cdb56fdd207295958bc80d3a23312f915"
+    },
+    {
+      "path": "src/geofirex/real_manifest.py",
+      "before": "cd51953962f70d6907be462863e1fbc46f72ed1370db8db9c2f453a5d38eeaf6",
+      "after": "cd51953962f70d6907be462863e1fbc46f72ed1370db8db9c2f453a5d38eeaf6"
+    },
+    {
+      "path": "src/geofirex/real_splits.py",
+      "before": "3d6eeabb386cb70c7dee4b95b4c2dea3d6992228f5bf3bb90461ba85a7ea5e82",
+      "after": "3d6eeabb386cb70c7dee4b95b4c2dea3d6992228f5bf3bb90461ba85a7ea5e82"
+    },
+    {
+      "path": "src/geofirex/remote_archive.py",
+      "before": "e4c0db84efb0b9460fe0397dd9a809cd6202bcb69af8c9ec9f718c5151940650",
+      "after": "e4c0db84efb0b9460fe0397dd9a809cd6202bcb69af8c9ec9f718c5151940650"
+    },
+    {
+      "path": "src/geofirex/runner.py",
+      "before": "3497d9ce3fe6162e48edd9443a676ed9c8ba9b8717778c1850dbd987cd7538c2",
+      "after": "3497d9ce3fe6162e48edd9443a676ed9c8ba9b8717778c1850dbd987cd7538c2"
+    },
+    {
+      "path": "src/geofirex/runner_data.py",
+      "before": "f69ef6413a26746645ea9797c603629db4b385c1ec7d1a354692da8a98255a01",
+      "after": "f69ef6413a26746645ea9797c603629db4b385c1ec7d1a354692da8a98255a01"
+    },
+    {
+      "path": "src/geofirex/runner_evaluation.py",
+      "before": "ba630211cd2581032d83fd6c42792610e40c0278c8005d03cc892e3924757e65",
+      "after": "ba630211cd2581032d83fd6c42792610e40c0278c8005d03cc892e3924757e65"
+    },
+    {
+      "path": "src/geofirex/science_results.py",
+      "before": "43d6041cea13a5824b912f3150739f6b2be928028b27075ca7caf6bc8ed48ce2",
+      "after": "43d6041cea13a5824b912f3150739f6b2be928028b27075ca7caf6bc8ed48ce2"
+    },
+    {
+      "path": "src/geofirex/scientific_scaleup.py",
+      "before": "a34e91bc716881197687854aca1957e90b76aa94d82d24fb14fcec62e89b70fc",
+      "after": "a34e91bc716881197687854aca1957e90b76aa94d82d24fb14fcec62e89b70fc"
+    },
+    {
+      "path": "src/geofirex/serving.py",
+      "before": "c956c315e4586b43efccb971f03d4e4e078982dd2a921dfc3714baa0cac1986c",
+      "after": "c956c315e4586b43efccb971f03d4e4e078982dd2a921dfc3714baa0cac1986c"
+    },
+    {
+      "path": "src/geofirex/splits.py",
+      "before": "055139c80a7da169e5d360c9e41484d71eab89dbf59fe9d7bb0fd3505526c496",
+      "after": "055139c80a7da169e5d360c9e41484d71eab89dbf59fe9d7bb0fd3505526c496"
+    },
+    {
+      "path": "src/geofirex/synthetic.py",
+      "before": "fdb2d33e60f6fc5fe252ce25135fe019a6e690034ae57fc64dd07c8acbeb03e8",
+      "after": "fdb2d33e60f6fc5fe252ce25135fe019a6e690034ae57fc64dd07c8acbeb03e8"
+    },
+    {
+      "path": "src/geofirex/unet.py",
+      "before": "c0a9ce9a28e0e3475f8b138f52485f09173e6e5a0eba6070990aa2c46d93a6cc",
+      "after": "c0a9ce9a28e0e3475f8b138f52485f09173e6e5a0eba6070990aa2c46d93a6cc"
+    },
+    {
+      "path": "src/geofirex/unet_confirmation.py",
+      "before": "3d65025b29487c7fd14a012df4cdf8c0a78606891b615b2118e19758e3438a5c",
+      "after": "3d65025b29487c7fd14a012df4cdf8c0a78606891b615b2118e19758e3438a5c"
+    },
+    {
+      "path": "src/geofirex/unet_data.py",
+      "before": "89a73eb9d46d99d0a8d386104c8c4ade9bc4307d89faf68cd189d548a2223aa3",
+      "after": "89a73eb9d46d99d0a8d386104c8c4ade9bc4307d89faf68cd189d548a2223aa3"
+    },
+    {
+      "path": "src/geofirex/unet_evaluation.py",
+      "before": "dd4c7f2f333bf91ac8017196aa4d9b42f203234a211ac3ecd9c2fdd278d3e7b7",
+      "after": "dd4c7f2f333bf91ac8017196aa4d9b42f203234a211ac3ecd9c2fdd278d3e7b7"
+    },
+    {
+      "path": "src/geofirex/unet_results.py",
+      "before": "6193f2024178866682c73987d5a3ff39b7c0dc9a52500deb3af06a3923516016",
+      "after": "6193f2024178866682c73987d5a3ff39b7c0dc9a52500deb3af06a3923516016"
+    },
+    {
+      "path": "src/geofirex/upload_budget.py",
+      "before": "ac7a725fcead4ae997259e47d4bcab2c699c74b0099ad505e133b5de9d022364",
+      "after": "ac7a725fcead4ae997259e47d4bcab2c699c74b0099ad505e133b5de9d022364"
+    },
+    {
+      "path": "src/geofirex/windows.py",
+      "before": "304a8eeca69004bf3dfcd0fb3eb2c3be3a2765b9ac6473673d15109cb4a0a785",
+      "after": "304a8eeca69004bf3dfcd0fb3eb2c3be3a2765b9ac6473673d15109cb4a0a785"
+    },
+    {
+      "path": "src/geofirex/__init__.py",
+      "before": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003",
+      "after": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003"
+    },
+    {
+      "path": "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip",
+      "before": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+      "after": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07"
+    },
+    {
+      "path": "reports/loss_ablation_20261112_v1/loss-ablation-code.zip",
+      "before": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e",
+      "after": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e"
+    },
+    {
+      "path": "reports/gpu_acceleration_20261111_v1/publication/plan.json",
+      "before": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8",
+      "after": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8"
+    },
+    {
+      "path": "reports/gpu_acceleration_20261111_v1/index/index.json",
+      "before": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+      "after": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7"
+    },
+    {
+      "path": "reports/gpu_acceleration_20261111_v1/index/normalization.json",
+      "before": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+      "after": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    },
+    {
+      "path": "configs/prediction_lab_v1.json",
+      "before": "4c09d17c9bcf1c56c513f3297df6d6e51ea2d852b06315387375dd3025f7dd57",
+      "after": "4c09d17c9bcf1c56c513f3297df6d6e51ea2d852b06315387375dd3025f7dd57"
+    },
+    {
+      "path": "configs/propagation_comparison_v1.json",
+      "before": "926ea70249d84afe7b390a56c63c6d2909d5b9b113a0f1dda1dbb1d0d4dfc4bf",
+      "after": "926ea70249d84afe7b390a56c63c6d2909d5b9b113a0f1dda1dbb1d0d4dfc4bf"
+    }
+  ],
+  "scientific_files_count": 63,
+  "api_contracts": [
+    {
+      "endpoint": "/science/summary",
+      "unchanged": true
+    },
+    {
+      "endpoint": "/science/unet-ablation",
+      "unchanged": true
+    },
+    {
+      "endpoint": "/lab/lineage",
+      "unchanged": true
+    },
+    {
+      "endpoint": "/science/big-data",
+      "unchanged": true
+    }
+  ],
+  "pixel_renderer_unchanged": true,
+  "build_assets": [
+    {
+      "path": "frontend/dist/app.css",
+      "bytes": 11270,
+      "gzip_bytes": 2564,
+      "sha256": "9fcb4556f7c47972bc9bc64ecc397625c99c56308336745d9ec7c3df0a5f1798",
+      "http_status": 200
+    },
+    {
+      "path": "frontend/dist/app.js",
+      "bytes": 573551,
+      "gzip_bytes": 195414,
+      "sha256": "6514f7d0bc3ea6e7cf092c8cc8f2df0c554d6c93683a30267167095cd6a0e63d",
+      "http_status": 200
+    },
+    {
+      "path": "frontend/dist/index.html",
+      "bytes": 551,
+      "gzip_bytes": 346,
+      "sha256": "9833aa8a190ec91847d0b097b086d6d63c6d5b36bd045eb436b90bbab290d2c6",
+      "http_status": 200
+    },
+    {
+      "path": "frontend/dist/react-bits-LICENSE.txt",
+      "bytes": 2060,
+      "gzip_bytes": 1076,
+      "sha256": "4bdd1fa59a6b7d5954bc3b213dbc34e455c635a94bbcecf9293553797d0fad02",
+      "http_status": 200
+    },
+    {
+      "path": "frontend/dist/style.css",
+      "bytes": 45381,
+      "gzip_bytes": 9071,
+      "sha256": "35dd9fe3e31225eaaee0424cad0d2fd628d75be9aa89ef6d5f4c3d8fde656c45",
+      "http_status": 200
+    }
+  ],
+  "changed_source_and_docs": [
+    {
+      "path": "frontend/index.html",
+      "change": "modified from local V1",
+      "bytes": 551
+    },
+    {
+      "path": "frontend/verify-studio.mjs",
+      "change": "modified from local V1",
+      "bytes": 700
+    },
+    {
+      "path": "frontend/src/EventForecast.mjs",
+      "change": "modified from local V1",
+      "bytes": 17790
+    },
+    {
+      "path": "frontend/src/PropagationComparison.mjs",
+      "change": "modified from local V1",
+      "bytes": 3640
+    },
+    {
+      "path": "frontend/src/ScienceResults.mjs",
+      "change": "modified from local V1",
+      "bytes": 18884
+    },
+    {
+      "path": "frontend/src/StudioApp.mjs",
+      "change": "modified from local V1",
+      "bytes": 8373
+    },
+    {
+      "path": "frontend/src/StudioPages.mjs",
+      "change": "modified from local V1",
+      "bytes": 14332
+    },
+    {
+      "path": "frontend/src/studio_ui.mjs",
+      "change": "modified from local V1",
+      "bytes": 5884
+    },
+    {
+      "path": "frontend/src/style.css",
+      "change": "modified from local V1",
+      "bytes": 45381
+    },
+    {
+      "path": "frontend/src/UnetAblation.mjs",
+      "change": "modified from local V1",
+      "bytes": 11299
+    },
+    {
+      "path": "frontend/src/reactbits/AnimatedList.jsx",
+      "change": "modified from local V1",
+      "bytes": 21385
+    },
+    {
+      "path": "frontend/src/reactbits/Aurora.jsx",
+      "change": "modified from local V1",
+      "bytes": 17368
+    },
+    {
+      "path": "frontend/src/reactbits/PROVENANCE.json",
+      "change": "modified from local V1",
+      "bytes": 6542
+    },
+    {
+      "path": "frontend/src/reactbits/SplitText.jsx",
+      "change": "modified from local V1",
+      "bytes": 13984
+    },
+    {
+      "path": "frontend/src/reactbits/Stepper.jsx",
+      "change": "modified from local V1",
+      "bytes": 20085
+    },
+    {
+      "path": "frontend/tests/studio-dom.mjs",
+      "change": "modified from local V1",
+      "bytes": 26333
+    },
+    {
+      "path": "README.md",
+      "change": "modified from local V1",
+      "bytes": 13603
+    },
+    {
+      "path": "frontend/verify-legacy-studio.mjs",
+      "change": "new in V2",
+      "bytes": 1535
+    },
+    {
+      "path": "frontend/tests/layout-v1.json",
+      "change": "new in V2",
+      "bytes": 30745
+    },
+    {
+      "path": "frontend/tests/theme-contract.mjs",
+      "change": "new in V2",
+      "bytes": 3872
+    },
+    {
+      "path": "docs/UI_STUDIO_V2.md",
+      "change": "new in V2",
+      "bytes": 12416
+    }
+  ],
+  "new_dependencies": [],
+  "browser_visual_review": "PENDING: browser access host unavailable",
+  "git_mutations": []
+}

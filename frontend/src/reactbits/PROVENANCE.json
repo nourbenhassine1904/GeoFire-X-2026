@@ -1,0 +1,127 @@
+{
+  "repository": "https://github.com/DavidHDev/react-bits",
+  "commit": "4e0d091d3b1ea8b7aadef33716a8d99d164ae4ce",
+  "files": [
+    {
+      "source": "src/content/Backgrounds/Aurora/Aurora.jsx",
+      "path": "frontend/src/reactbits/Aurora.jsx",
+      "imports": [
+        "import { useEffect, useRef } from 'react';",
+        "import './Aurora.css';"
+      ],
+      "upstream_sha256": "2586a8883696655f944ae9e5535351a7000b194feee1f38a476fb518e4e1a371",
+      "local_source_sha256_normalized_lf": "fce58fe670ec34a32f95755905ef890aac5d031f619b8f761fa4f67123032df8"
+    },
+    {
+      "source": "src/content/Backgrounds/Aurora/Aurora.css",
+      "path": "frontend/src/reactbits/Aurora.css",
+      "imports": [],
+      "upstream_sha256": "a27157d447e395fed72a20a35149f0afb8addae074e0a20503bea2cc90f3e7fd",
+      "local_source_sha256_normalized_lf": "a27157d447e395fed72a20a35149f0afb8addae074e0a20503bea2cc90f3e7fd"
+    },
+    {
+      "source": "src/content/TextAnimations/SplitText/SplitText.jsx",
+      "path": "frontend/src/reactbits/SplitText.jsx",
+      "imports": [
+        "import { useEffect, useLayoutEffect, useRef, useState } from 'react';",
+        "import { gsap } from 'gsap';",
+        "import { ScrollTrigger } from 'gsap/ScrollTrigger';",
+        "import { SplitText as GSAPSplitText } from 'gsap/SplitText';",
+        "import { useGSAP } from '@gsap/react';"
+      ],
+      "upstream_sha256": "f3b9433ce28aa703f4ea6c4e7a7d023aa91de3f4b21002fc99477ea095c932b1",
+      "local_source_sha256_normalized_lf": "86ebf14d8a4f3a45b1ed930632c8c57ac2e31184a66e36b2874c0eb839433756"
+    },
+    {
+      "source": "src/content/TextAnimations/CountUp/CountUp.jsx",
+      "path": "frontend/src/reactbits/CountUp.jsx",
+      "imports": [
+        "import { animate, cubicBezier, useInView } from 'motion/react';",
+        "import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';"
+      ],
+      "upstream_sha256": "7c3d3b6cdbd6957484fd7f3a2149d9cd56ad3e4df11437e09dcfa84225b648e3",
+      "local_source_sha256_normalized_lf": "6ab496325f949c4e149846e0a2d756d3e96920f5672af49eccb3b6b1115cab40"
+    },
+    {
+      "source": "src/content/Components/SpotlightCard/SpotlightCard.jsx",
+      "path": "frontend/src/reactbits/SpotlightCard.jsx",
+      "imports": [
+        "import { useEffect, useRef } from 'react';",
+        "import './SpotlightCard.css';"
+      ],
+      "upstream_sha256": "e0b91ba07c173c98b87b44ec451d0243fe0a3edc67864e2779ad8507d455af67",
+      "local_source_sha256_normalized_lf": "b7bcffeeee71b77cd2b8e0ab07e9eac6f05ee9bf98a56e7e626dc70c26027818"
+    },
+    {
+      "source": "src/content/Components/SpotlightCard/SpotlightCard.css",
+      "path": "frontend/src/reactbits/SpotlightCard.css",
+      "imports": [],
+      "upstream_sha256": "b646b7da4bb46f0a4d819d0af275804c49a845a5c2dc848700aaf9282db13a92",
+      "local_source_sha256_normalized_lf": "b646b7da4bb46f0a4d819d0af275804c49a845a5c2dc848700aaf9282db13a92"
+    },
+    {
+      "source": "src/content/Components/Stepper/Stepper.jsx",
+      "path": "frontend/src/reactbits/Stepper.jsx",
+      "imports": [
+        "import { Children, isValidElement, useEffect, useLayoutEffect, useRef, useState } from 'react';",
+        "import { HugeiconsIcon } from '@hugeicons/react';",
+        "import { ArrowLeft01Icon, ArrowRight01Icon, Tick02Icon } from '@hugeicons/core-free-icons';",
+        "import './Stepper.css';"
+      ],
+      "upstream_sha256": "9df93b5e34b767652dccd0cd56341a66792db742278310958d38bd4700fb4225",
+      "local_source_sha256_normalized_lf": "db5f0ae1a272fa67439ff5c4d0e09752003ae2b07e648697e3a23033b2b3ec01"
+    },
+    {
+      "source": "src/content/Components/Stepper/Stepper.css",
+      "path": "frontend/src/reactbits/Stepper.css",
+      "imports": [],
+      "upstream_sha256": "417223c9c56157b27bae7d7214e3fb3a3c8da65e69c6935c6a199fc22b151436",
+      "local_source_sha256_normalized_lf": "417223c9c56157b27bae7d7214e3fb3a3c8da65e69c6935c6a199fc22b151436"
+    },
+    {
+      "source": "src/content/Animations/FadeContent/FadeContent.jsx",
+      "path": "frontend/src/reactbits/FadeContent.jsx",
+      "imports": [
+        "import { useEffect, useLayoutEffect, useRef } from 'react';",
+        "import { gsap } from 'gsap';",
+        "import { ScrollTrigger } from 'gsap/ScrollTrigger';"
+      ],
+      "upstream_sha256": "8311fcc4f3172ce66d7e0017ccdce19c8bf58c2a286425e974cd16820f8edb82",
+      "local_source_sha256_normalized_lf": "289ccb6708240e2d398c16221ca917965a46f5fa4cc5435ce3824e75fae94230"
+    },
+    {
+      "source": "src/content/Components/AnimatedList/AnimatedList.jsx",
+      "path": "frontend/src/reactbits/AnimatedList.jsx",
+      "imports": [
+        "import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';",
+        "import { HugeiconsIcon } from '@hugeicons/react';",
+        "import {",
+        "import './AnimatedList.css';"
+      ],
+      "upstream_sha256": "bd554c09360298bca5b8d74a79595d22fd1c4c4aeb56ab4548eff412385bd593",
+      "local_source_sha256_normalized_lf": "df757ec301306263d57d122adfacab4dabfac13427bcd726f15374fd79c20081"
+    },
+    {
+      "source": "src/content/Components/AnimatedList/AnimatedList.css",
+      "path": "frontend/src/reactbits/AnimatedList.css",
+      "imports": [],
+      "upstream_sha256": "c9b74ad88b92e9836b6ec91ad21170da5d5325cfd0a1a18d1a863e545d8baffc",
+      "local_source_sha256_normalized_lf": "c9b74ad88b92e9836b6ec91ad21170da5d5325cfd0a1a18d1a863e545d8baffc"
+    },
+    {
+      "source": "LICENSE.md",
+      "path": "frontend/src/reactbits/LICENSE.md",
+      "imports": [],
+      "upstream_sha256": "4bdd1fa59a6b7d5954bc3b213dbc34e455c635a94bbcecf9293553797d0fad02",
+      "local_source_sha256_normalized_lf": "4bdd1fa59a6b7d5954bc3b213dbc34e455c635a94bbcecf9293553797d0fad02"
+    }
+  ],
+  "adaptations": [
+    "Explicit React import for the existing esbuild classic JSX transform.",
+    "Accessible label added to the event Animated List listbox.",
+    "Animation wrappers disable effects for system or user reduced-motion preference.",
+    "V2: renderer/timeline diagnostic data attributes on Aurora and SplitText; no shader or animation effect replacement.",
+    "V2: Stepper transition=none also suppresses checkmark and glider motion; cleanup cancels checkmark animation.",
+    "V2: AnimatedList animation=none also snaps the selected indicator for the user reduced-motion preference."
+  ]
+}

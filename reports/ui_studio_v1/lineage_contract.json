@@ -1,0 +1,34 @@
+{
+  "partitions": 11,
+  "archive_count": 451,
+  "source_bytes": 9845667110,
+  "roles": {
+    "train": {
+      "tiles": 93603,
+      "events": 250
+    },
+    "val": {
+      "tiles": 78771,
+      "events": 201
+    }
+  },
+  "context": 3,
+  "target": "J+1",
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "index_sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+  "format": "lossless float32 NPZ day/tile archives; temporal references, no duplicated T3 arrays",
+  "live_inference": "only J-4..J read; T3 model inputs J-2,J-1,J; target opened in separate comparison request",
+  "features": [
+    "slope_z",
+    "elevation_z",
+    "slope_missing",
+    "elevation_missing",
+    "aspect_sin",
+    "aspect_cos",
+    "aspect_missing",
+    "active_fire"
+  ],
+  "corpus_rebuilt": false,
+  "spark_restarted": false,
+  "test_2021_pixels_opened": 0
+}

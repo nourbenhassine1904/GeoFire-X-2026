@@ -3,11 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "test:studio": "node verify-studio.mjs"
   },
   "dependencies": {
+    "@gsap/react": "2.1.2",
+    "@hugeicons/core-free-icons": "4.4.0",
+    "@hugeicons/react": "1.1.10",
     "esbuild": "0.28.2",
+    "gsap": "3.15.1",
+    "motion": "14.14.0",
     "react": "19.3.1",
     "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "happy-dom": "21.0.4"
   }
 }

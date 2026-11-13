@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "preserved_geometry_rules": 344,
+  "contrast_pairs": [
+    {
+      "foreground": "--text",
+      "background": "--bg",
+      "ratio": 12.130019654240403,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text",
+      "background": "--surface",
+      "ratio": 12.776629812644474,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text",
+      "background": "--surface-secondary",
+      "ratio": 11.565695838820607,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text",
+      "background": "--accent-soft",
+      "ratio": 11.426917531792702,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text",
+      "background": "--hover",
+      "ratio": 10.79737983686931,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--bg",
+      "ratio": 5.926876556089564,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--surface",
+      "ratio": 6.2428182196659066,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--surface-secondary",
+      "ratio": 5.651141010147117,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--accent-soft",
+      "ratio": 5.583332225177014,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--text-secondary",
+      "background": "--hover",
+      "ratio": 5.275732376902097,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--accent",
+      "background": "--bg",
+      "ratio": 6.937250699358033,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface",
+      "ratio": 7.3070519776298735,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--accent",
+      "background": "--surface-secondary",
+      "ratio": 6.614509607853139,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--accent",
+      "background": "--accent-soft",
+      "ratio": 6.535141236248851,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--accent",
+      "background": "--hover",
+      "ratio": 6.175103829973682,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--button-text",
+      "background": "--button-bg",
+      "ratio": 5.172437130070934,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--button-text",
+      "background": "--button-hover",
+      "ratio": 7.92797956737837,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--danger-ink",
+      "background": "--danger-bg",
+      "ratio": 5.914600426850339,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--warning",
+      "background": "#FFF5D6",
+      "ratio": 6.2912578252312255,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--success",
+      "background": "--success-bg",
+      "ratio": 6.811651629293788,
+      "minimum": 4.5
+    },
+    {
+      "foreground": "--focus",
+      "background": "--surface",
+      "ratio": 7.3070519776298735,
+      "minimum": 3
+    },
+    {
+      "foreground": "--border-control",
+      "background": "--surface",
+      "ratio": 3.7184236637647268,
+      "minimum": 3
+    },
+    {
+      "foreground": "--border-control",
+      "background": "--bg",
+      "ratio": 3.5302386298788067,
+      "minimum": 3
+    }
+  ],
+  "limits": "Token contrast calculation and CSS declaration comparison only; no browser compositing, visual motion or responsive layout measurement."
+}
