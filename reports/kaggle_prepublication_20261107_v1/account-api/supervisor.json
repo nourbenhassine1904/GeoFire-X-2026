@@ -1,0 +1,44 @@
+{
+  "command": [
+    ".\\artifacts\\orchestrator\\kaggle-cli-env\\Scripts\\python.exe",
+    "scripts/kaggle_prepublication_readonly.py",
+    "--credentials",
+    "C:/Users/nourb/.kaggle/credentials.json",
+    "--out",
+    "reports/kaggle_prepublication_20261107_v1/account-current.json"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5484310528,
+    "load_percent": 67,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19272904704,
+    "commit_used_bytes": 17965690880
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:57:36.168972+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 38144,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.8280000000004293,
+  "peak_tree_rss_bytes": 44113920,
+  "peak_sampled_private_commit_bytes": 33382400,
+  "peak_job_commit_bytes": 36347904,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 5484310528,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 5553283072,
+    "load_percent": 67,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19365122048,
+    "commit_used_bytes": 17873473536
+  }
+}

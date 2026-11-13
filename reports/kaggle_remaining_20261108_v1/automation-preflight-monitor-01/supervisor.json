@@ -1,0 +1,46 @@
+{
+  "command": [
+    "artifacts/orchestrator/kaggle-cli-env/Scripts/python.exe",
+    "scripts/kaggle_cpu_job.py",
+    "--plan",
+    "reports/kaggle_remaining_20261108_v1/plan.json",
+    "--tag",
+    "canary",
+    "--out",
+    "reports/kaggle_remaining_20261108_v1/automation-preflight-01"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 3665879040,
+    "load_percent": 78,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 15501393920,
+    "commit_used_bytes": 21737201664
+  },
+  "limit_seconds": 2400,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 1073741824,
+  "rss_limit_bytes": 1073741824,
+  "time": "2026-11-08T13:36:32.583702+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 28500,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 64.82799999999952,
+  "peak_tree_rss_bytes": 51896320,
+  "peak_sampled_private_commit_bytes": 38703104,
+  "peak_job_commit_bytes": 38703104,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 3527659520,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 3642527744,
+    "load_percent": 78,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 15516717056,
+    "commit_used_bytes": 21721878528
+  }
+}

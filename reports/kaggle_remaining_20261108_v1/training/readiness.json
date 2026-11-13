@@ -1,0 +1,65 @@
+{
+  "status": "PREPARED_TEMPLATES_WAITING_FOR_CERTIFICATES",
+  "pending_cpu_certificates": [
+    "lot-002",
+    "lot-003",
+    "lot-004",
+    "lot-005",
+    "lot-006",
+    "lot-007",
+    "lot-008"
+  ],
+  "models": [
+    {
+      "model": "B0",
+      "folder": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B0",
+      "sha256": "ee3796d54fde7a83d640679eda85da702140497da6b1b79b87fd191650aeb611",
+      "kernel": "nnnnbhss/geofirex-expanded-b0-t3-seed42-20261108-v1",
+      "bytes": 2567175
+    },
+    {
+      "model": "B1",
+      "folder": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B1",
+      "sha256": "045145077f77514b5c9a9c3307e33ca712de593b868f88d31c8a470a8a35571a",
+      "kernel": "nnnnbhss/geofirex-expanded-b1-t3-seed42-20261108-v1",
+      "bytes": 2567476
+    },
+    {
+      "model": "B2",
+      "folder": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B2",
+      "sha256": "251959f9186a03e9aaaf2d659856e03086e0d5c825240c60be8815250bf9310a",
+      "kernel": "nnnnbhss/geofirex-expanded-b2-t3-seed42-20261108-v1",
+      "bytes": 2567476
+    },
+    {
+      "model": "B3",
+      "folder": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B3",
+      "sha256": "f47afd9f17f85068748a0508421519d7cad25bd9ee094a7c345413cec3f7b239",
+      "kernel": "nnnnbhss/geofirex-expanded-b3-t3-seed42-20261108-v1",
+      "bytes": 2567476
+    }
+  ],
+  "train_events": 250,
+  "validation_events": 201,
+  "test_events_attached": 0,
+  "normalizer_sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+  "context": 3,
+  "seed": 42,
+  "encoded_channels": 8,
+  "learned_model_epochs": 1,
+  "learned_samples_per_epoch": 93616,
+  "expected_updates_per_learned_model": 5851,
+  "baseline_device": "cpu",
+  "gpu_training_started": false,
+  "mlflow_enabled": false,
+  "tracking": "Runner JSON/CSV/checkpoints retained; optional MLflow disabled in new copies because Kaggle CPU image lacks it",
+  "metrics": [
+    "dice",
+    "iou",
+    "precision",
+    "recall",
+    "average_precision"
+  ],
+  "selection": "best validation AP; decision threshold selected on validation Dice; 2021 final-test commands omitted",
+  "limitation": "One complete epoch per learned model is the existing operational budget, not a convergence claim"
+}

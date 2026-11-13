@@ -1,0 +1,26 @@
+{
+  "loader": "cached",
+  "workers": 0,
+  "pin_memory": false,
+  "persistent_workers": false,
+  "model": "B1",
+  "measured_updates": 1,
+  "tiles": 16,
+  "seconds": 0.062428400000499096,
+  "tiles_per_second": 256.2936099575207,
+  "estimated_119_train_epoch_seconds": 3.8042306250304136,
+  "scaled_250_train_seconds": 365.2178453279198,
+  "scope": "raw119 measured; compact throughput not measured on this GPU",
+  "stages": [
+    {
+      "wait": 0.0188865000000078,
+      "h2d": 2.080000012938399e-05,
+      "compute": 0.04352110000036191,
+      "worker_loading_sum": 0.017653699997026706,
+      "tiles": 16,
+      "loss": 0.8659444451332092
+    }
+  ],
+  "peak_parent_rss": 605106176,
+  "gpu_allocated": null
+}

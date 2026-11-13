@@ -1,0 +1,79 @@
+{
+  "status": "PREPARED_NO_TRANSFER",
+  "prerequisite": "Lot 001 remote CPU certificate must pass before any publication",
+  "lots": [
+    {
+      "number": 2,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+      "role": "train",
+      "events": 62,
+      "files": 1380,
+      "raw_bytes": 4995042486,
+      "identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f",
+      "transferred": false
+    },
+    {
+      "number": 3,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-003-v1",
+      "role": "train",
+      "events": 68,
+      "files": 1344,
+      "raw_bytes": 4905540263,
+      "identity": "15ad89eca43c61678ad886af60387cb43b7104bb888e7a4700c2aabdb3de6201",
+      "transferred": false
+    },
+    {
+      "number": 4,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-004-v1",
+      "role": "train",
+      "events": 63,
+      "files": 1205,
+      "raw_bytes": 4443126438,
+      "identity": "5de8dec39928f8adca729888fff0f00a23b87aba961af9d4fee6c7d195520844",
+      "transferred": false
+    },
+    {
+      "number": 5,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-005-v1",
+      "role": "val",
+      "events": 69,
+      "files": 1305,
+      "raw_bytes": 4886889025,
+      "identity": "ef579d40d24107bbb034ab4e0cef12a256f7ecf0ddd85f43d5162b6854fd92ff",
+      "transferred": false
+    },
+    {
+      "number": 6,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-006-v1",
+      "role": "val",
+      "events": 54,
+      "files": 1350,
+      "raw_bytes": 4919863753,
+      "identity": "8852036659a34e19836bafc57b89fc50afc38ebf9302745a8db8ad3caf9b96d7",
+      "transferred": false
+    },
+    {
+      "number": 7,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-007-v1",
+      "role": "val",
+      "events": 61,
+      "files": 1321,
+      "raw_bytes": 4833117096,
+      "identity": "87afc8aa0ed24ef0e469d4c4e20e0f6d28a52f95d56df46c10de7b87be6e4ed2",
+      "transferred": false
+    },
+    {
+      "number": 8,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-008-v1",
+      "role": "val",
+      "events": 17,
+      "files": 316,
+      "raw_bytes": 1182299296,
+      "identity": "94f961182623909310a20e594a0517adc1af36d004be98c8be876e59dfb8e407",
+      "transferred": false
+    }
+  ],
+  "remaining_raw_bytes": 30165878357,
+  "all_lots_events": 451,
+  "test_2021_files": 0
+}

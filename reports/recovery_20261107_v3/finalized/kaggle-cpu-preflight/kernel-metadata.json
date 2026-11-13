@@ -1,0 +1,23 @@
+{
+  "id": "nnnnbhss/geofirex-expanded-cpu-recovery-v1",
+  "title": "GeoFire-X expanded CPU recovery v1",
+  "code_file": "cpu-preflight.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-expanded-code-recovery-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-003-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-004-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-005-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-006-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-007-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-008-v1"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

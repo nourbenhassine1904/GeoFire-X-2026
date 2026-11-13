@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="10" time="7.942" timestamp="2026-11-02T20:20:25.752925+01:00" hostname="NourBh"><testcase classname="tests.test_archive_transfer" name="test_zip_resumes_prefix_and_preserves_budget" time="1.158" /><testcase classname="tests.test_archive_transfer" name="test_zip_ignored_resume_range_never_appends" time="0.912"><failure message="Failed: DID NOT RAISE ValueError">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-339/test_zip_ignored_resume_range_0')
+
+    def test_zip_ignored_resume_range_never_appends(tmp_path):
+        data,index=fixture();out=tmp_path/'archive.zip';session=tmp_path/'session'
+        with patch('urllib.request.urlopen',side_effect=response(data,[])),patch('geofirex.archive_transfer.time.sleep'):
+            download_archive(index,out,session,100000,block_size=64,
+                             stop_requested=lambda:Path(str(out)+'.part').exists())
+        original=Path(str(out)+'.part').read_bytes()
+        with patch('urllib.request.urlopen',side_effect=response(data,[],ignore_range=True)):
+&gt;           with pytest.raises(ValueError,match='206'): download_archive(index,out,session,100000,block_size=64)
+E           Failed: DID NOT RAISE ValueError
+
+tests\test_archive_transfer.py:62: Failed</failure></testcase><testcase classname="tests.test_archive_transfer" name="test_zip_insufficient_budget_and_md5_mismatch_preserve" time="0.144" /><testcase classname="tests.test_archive_transfer" name="test_zip_crash_reservation_and_orphan_fail_closed" time="0.064" /><testcase classname="tests.test_acquisition_session" name="test_cap_is_cumulative_across_process_restarts" time="0.045" /><testcase classname="tests.test_acquisition_session" name="test_retry_reserves_before_request_and_cannot_reset" time="0.049" /><testcase classname="tests.test_acquisition_session" name="test_corrupt_ledger_and_concurrent_session_fail_closed" time="0.024" /><testcase classname="tests.test_acquisition_session" name="test_sub_batches_interrupt_part_preserved_resume_without_duplicates" time="0.307" /><testcase classname="tests.test_acquisition_session" name="test_disk_guard_precedes_any_network" time="0.028" /><testcase classname="tests.test_acquisition_session" name="test_batches_preserve_events" time="0.003" /></testsuite></testsuites>

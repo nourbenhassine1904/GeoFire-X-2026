@@ -1,0 +1,30 @@
+{
+  "status": "INSTALLED_OFFLINE_FROM_VERIFIED_PACKAGES",
+  "versions": {
+    "pyspark": "4.0.2",
+    "py4j": "0.10.9.9"
+  },
+  "confirmed_body_bytes": 434421883,
+  "reserved_body_bytes": 436510100,
+  "cap_bytes": 600000000,
+  "packages": [
+    {
+      "filename": "pyspark-4.0.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/96/89/408b42c803db71f4a4d8a3f1ab0745a40dfe41aeacdfc453545665a171f4/pyspark-4.0.2.tar.gz",
+      "bytes": 434209940,
+      "sha256": "938b4a1883383374d331ebfcb5d92debfa1891cf3d7a6d730520a1a2d23f1a90"
+    },
+    {
+      "filename": "py4j-0.10.9.9-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/bd/db/ea0203e495be491c85af87b66e37acfd3bf756fd985f87e46fc5e3bf022c/py4j-0.10.9.9-py2.py3-none-any.whl",
+      "bytes": 203008,
+      "sha256": "c7c26e4158defb37b0bb124933163641a2ff6e3a3913f7811b0ddbe07ed61533"
+    }
+  ],
+  "corpus_downloads": 0,
+  "receipt": "artifacts\\local-spark-tooling-v1\\installed-11a0c403a78a4e47b568d0fe6b228089.json",
+  "receipt_sha256": "8483d15caf64bbf9ee87744e7332b41b28d82fd2ad3f56766e08765b834c5d84",
+  "ledger": "artifacts\\local-spark-tooling-v1\\http-body.jsonl",
+  "ledger_sha256": "431a8856db2c8bb6b21672decf0429aa2a7924e0a259bbabb9bfeb9b2b6387d5",
+  "installer_sha256": "13acc8c413234f8220795f0131e6e57c885e46542b4ff4fa0013c4f55454c8d9"
+}

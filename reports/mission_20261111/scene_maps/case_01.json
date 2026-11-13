@@ -1,0 +1,44 @@
+{
+  "event_id": "2020/fire_24332761",
+  "target_date": "2020-08-20",
+  "context_dates": [
+    "2020-08-17",
+    "2020-08-18",
+    "2020-08-19"
+  ],
+  "crs": "EPSG:32610",
+  "transform": [
+    375.0,
+    0.0,
+    574875.0,
+    0.0,
+    -375.0,
+    4087500.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "shape": [
+    300,
+    245
+  ],
+  "case_selection": "highest B0 FN overall / highest B0 FN among six B1 validation events",
+  "b0_metrics": {
+    "event_id": "2020/fire_24332761",
+    "target_date": "2020-08-20",
+    "invalid_pixels": 0,
+    "tp": 550,
+    "fp": 718,
+    "fn": 580,
+    "tn": 71652,
+    "valid_pixels": 73500,
+    "positive_pixels": 1130,
+    "dice": 0.45871559633027525,
+    "iou": 0.2976190476190476,
+    "precision": 0.43375394321766564,
+    "recall": 0.48672566371681414,
+    "average_precision": 0.21901033236498865
+  },
+  "b1_checkpoint_sha256": "b2756ea977e2c7cd537d63292ff84dfb12ca8881f382d2a2f1cd691f84d961f3",
+  "b1_optimizer_updates": 432
+}

@@ -1,0 +1,47 @@
+{
+  "status": "LOCAL_WORK_AND_SHORT_T4_PROFILES_COMPLETE",
+  "artifacts": {
+    "EXECUTION.md": {
+      "bytes": 6481,
+      "sha256": "6a943ce7ef46bc81aed87ab409defb49ebc05113d683017e5569510d0a6a8c4a"
+    },
+    "B1_B2_COMPACT_FINAL.ipynb": {
+      "bytes": 422312,
+      "sha256": "33e80743d288940d7a23d49d8af482c69dd9c26042b9f6a1dc37f015c97393c5"
+    },
+    "gpu-budget.json": {
+      "bytes": 760,
+      "sha256": "56bd73b2e58d76b4910581068e819b0c1bd8a27f09c23875c7c3394be517c104"
+    },
+    "scope-difference.json": {
+      "bytes": 402,
+      "sha256": "d472a68fcc6b452b2f86e5f0a1c535907966fe6ed27c05f3efebddc7702772a6"
+    },
+    "publication/plan.json": {
+      "bytes": 191287,
+      "sha256": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8"
+    },
+    "publication-compatibility.json": {
+      "bytes": 220,
+      "sha256": "e60f0a4b45d4f99271db835cf61db7db102621f74ec4d8beec48d263ca4722c6"
+    },
+    "resume-verification.json": {
+      "bytes": 244,
+      "sha256": "b71c0425fe58ae22ac40676e9b4517e6ae06f37cb6bc21ed69ffadafbd037e83"
+    },
+    "t4-results-v3/summary.json": {
+      "bytes": 13396,
+      "sha256": "0edffdbe374036a8fde50e41eb46c210db7726bce3d195bb3d07a7f35f7f118e"
+    },
+    "t4-results/summary.json": {
+      "bytes": 4055,
+      "sha256": "be843faca781ebfb8838d7789d77ab1f23bb6634d39f1ba4b665301567ae0dfe"
+    }
+  },
+  "bulk_uploads": 0,
+  "full_GPU_epochs": 0,
+  "old_B0_reexecuted": false,
+  "corpus_rebuilt": false,
+  "test_2021": false,
+  "plan_sha256": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8"
+}

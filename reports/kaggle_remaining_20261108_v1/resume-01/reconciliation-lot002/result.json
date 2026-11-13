@@ -1,0 +1,46 @@
+{
+  "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+  "upload_requests": 0,
+  "dataset_write_requests": 0,
+  "catalogues": {
+    "mine": {
+      "count": 8,
+      "complete": true,
+      "target": [
+        {
+          "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+          "private": true,
+          "version": 1
+        }
+      ]
+    },
+    "private": {
+      "count": 8,
+      "complete": true,
+      "target": [
+        {
+          "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+          "private": true,
+          "version": 1
+        }
+      ]
+    },
+    "public": {
+      "count": 0,
+      "complete": true,
+      "target": []
+    }
+  },
+  "presence": {
+    "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "private": true,
+    "version": 1,
+    "basis": "Complete consistent authenticated owner catalogues",
+    "GetDataset_required": false
+  },
+  "control_body_bytes": 647,
+  "cumulative_body_bytes": 4995534702,
+  "credentials_unchanged": true
+}

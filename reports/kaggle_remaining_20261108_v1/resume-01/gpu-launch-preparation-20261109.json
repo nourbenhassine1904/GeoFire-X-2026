@@ -1,0 +1,52 @@
+{
+  "status": "BLOCKED_PENDING_LOTS003_TO008_CPU_CERTIFICATES",
+  "time": "2026-11-09T20:26:22.249678+00:00",
+  "models": [
+    {
+      "model": "B1",
+      "kernel": "nnnnbhss/geofirex-expanded-b1-t3-seed42-20261108-v1",
+      "notebook": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B1\\certify.ipynb",
+      "sha256": "045145077f77514b5c9a9c3307e33ca712de593b868f88d31c8a470a8a35571a",
+      "status": "EXISTING_TEMPLATE_REQUIRES_CERTIFICATION_REFRESH"
+    },
+    {
+      "model": "B2",
+      "kernel": "nnnnbhss/geofirex-expanded-b2-t3-seed42-20261108-v1",
+      "notebook": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B2\\certify.ipynb",
+      "sha256": "251959f9186a03e9aaaf2d659856e03086e0d5c825240c60be8815250bf9310a",
+      "status": "EXISTING_TEMPLATE_REQUIRES_CERTIFICATION_REFRESH"
+    },
+    {
+      "model": "B3",
+      "kernel": "nnnnbhss/geofirex-expanded-b3-t3-seed42-20261108-v1",
+      "notebook": "reports\\kaggle_remaining_20261108_v1\\training\\notebooks\\B3\\certify.ipynb",
+      "sha256": "f47afd9f17f85068748a0508421519d7cad25bd9ee094a7c345413cec3f7b239",
+      "status": "EXISTING_TEMPLATE_REQUIRES_CERTIFICATION_REFRESH"
+    }
+  ],
+  "certified_lots": [
+    1,
+    2
+  ],
+  "pending_lots": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "gpu_started": false,
+  "templates_submitted": false,
+  "normalizer_sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+  "normalizer_refit": false,
+  "test_2021_locked": true,
+  "train_events": 250,
+  "validation_events": 201,
+  "test_events_attached": 0,
+  "context": 3,
+  "seed": 42,
+  "epochs": 1,
+  "required_after_all_certificates": "Regenerate templates with scripts/prepare_remaining_kaggle.py --out reports/kaggle_remaining_20261108_v1 --refresh-training; verify readiness before any separate GPU launch",
+  "current_embedded_templates": "Previous templates preserved; they still contain pending gates and cannot pass mount_certified_lots"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "OFFLINE_PILOT_PREPARATION_VERIFIED",
+  "zip_bytes": 4829918684,
+  "zip_sha256": "464e89146fa6fdabfccdd1eb81d97b08549ca9b14428a32e3993f5996e8f5890",
+  "source_raster_hashes_verified_during_staging": 1269,
+  "source_raster_pixels_read": 0,
+  "zip_central_directory_sizes_and_crcs_verified": 1269,
+  "whole_zip_sha256_streamed_by_completed_staging": true,
+  "second_whole_zip_sha_scan": false,
+  "embedded_canonical_manifest_matches": true,
+  "private_cpu_only_one_attached_dataset": true,
+  "cpu_submission_dry_mode": {
+    "status": "OFFLINE_CPU_SUBMISSION_REVIEW_ONLY",
+    "kernel": "nnnnbhss/geofirex-certify-pilot-001-20261107-v2",
+    "notebook_bytes": 230055,
+    "private": true,
+    "gpu": false,
+    "internet": false
+  },
+  "serialized_cpu_request_bytes": 266649,
+  "uploads": 0,
+  "cloud_jobs": 0,
+  "original_frozen_code_sha256_unchanged": true,
+  "source_sha256": {
+    "scripts/prepare_kaggle_single_lot_pilot.py": "306a8add23ab8f0c9f717c9057b5c59f9e14de69a83995f93d69199b0eca033c",
+    "scripts/kaggle_certify_inputs.py": "a1a9ebfe5486265fee6266ebbf6b83f7eb1b4b706fdeaf737aec817c17418c1e",
+    "scripts/publish_kaggle_single_attempt.py": "5b4a8bd7fece804977c427f4859eb35cf6dcfcc087ad0ef86924dd24f8c5b337",
+    "scripts/submit_kaggle_cpu_certification.py": "39eb4a1cfa46ec1aad68d42380658ac926aa101aa04a28ca897eef18b0cd9f64",
+    "scripts/run_kaggle_phase_guarded.py": "d5e84b524630e25fb3cd50be0bc131ce19a950e26bb9f96e0de271866b56b911"
+  }
+}

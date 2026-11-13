@@ -1,0 +1,122 @@
+﻿[
+    {
+        "TimeCreated":  "\/Date(1794052883905)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1794052883901)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    },
+    {
+        "TimeCreated":  "\/Date(1794002331076)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1794002325904)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1794002325900)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    },
+    {
+        "TimeCreated":  "\/Date(1793999678628)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793963994950)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793958677905)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1793958677901)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    },
+    {
+        "TimeCreated":  "\/Date(1793901327090)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793901323902)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1793901323898)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    },
+    {
+        "TimeCreated":  "\/Date(1793881328752)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793881140264)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793881057511)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793875122646)\/",
+        "Id":  7,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-VmSwitch",
+        "Message":  "Miniport NIC 790E58B4-7939-4434-9358-89AE7DDBE87F (Friendly Name: WSL (Hyper-V firewall)) successfully initialized."
+    },
+    {
+        "TimeCreated":  "\/Date(1793873088866)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1793873088862)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    },
+    {
+        "TimeCreated":  "\/Date(1793816673261)\/",
+        "Id":  129,
+        "ProviderName":  "Microsoft-Windows-Hyper-V-Hypervisor",
+        "Message":  "L\u0027hyperviseur a initialisé le remappage E/S.\r\n\r\nMatériel présent : true\r\nMatériel activé : true\r\nPolitique : 0x0\r\nFonctions activées : 0x43\r\nInformations internes : 0x0\r\nProblèmes : 0x0\r\nInformations supplémentaires : 0x0 "
+    },
+    {
+        "TimeCreated":  "\/Date(1793816673257)\/",
+        "Id":  153,
+        "ProviderName":  "Microsoft-Windows-Kernel-Boot",
+        "Message":  "La sécurité basée sur la virtualisation (stratégies : VBS Enabled,VSM Required,Boot Chain Signer Soft Enforced) est enabled due to HyperV."
+    }
+]

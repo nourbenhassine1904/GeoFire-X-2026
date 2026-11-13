@@ -1,0 +1,33 @@
+{
+  "new_fire_candidates": {
+    "threshold": 0.78,
+    "tp": 45245,
+    "fp": 143828,
+    "fn": 262923,
+    "tn": 216484453,
+    "valid_pixels": 216936449,
+    "positive_pixels": 308168,
+    "predicted_positive_pixels": 189073,
+    "prevalence": 0.0014205450555706293,
+    "dice": 0.18198418875354205,
+    "iou": 0.10010044336675546,
+    "precision": 0.2392991066942398,
+    "recall": 0.14681926741258014
+  },
+  "observed_fire_candidates": {
+    "threshold": 0.78,
+    "tp": 216998,
+    "fp": 241750,
+    "fn": 37787,
+    "tn": 73983,
+    "valid_pixels": 570518,
+    "positive_pixels": 254785,
+    "predicted_positive_pixels": 458748,
+    "prevalence": 0.4465853838090998,
+    "dice": 0.6082353584207038,
+    "iou": 0.43702458034176844,
+    "precision": 0.4730222257099759,
+    "recall": 0.8516906411287949
+  },
+  "definition": "new fire: target=1, observed fire at J=0, joint valid mask"
+}

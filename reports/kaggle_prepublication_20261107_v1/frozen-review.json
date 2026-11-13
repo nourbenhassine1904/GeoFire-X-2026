@@ -1,0 +1,197 @@
+{
+  "status": "FROZEN_CODE_AND_METADATA_REVIEW_PASSED",
+  "raw_rasters_opened": 0,
+  "source_rasters_statted": 0,
+  "package": {
+    "bytes": 1930818,
+    "sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+    "manifest_sha256": "45cc69b9793ea7a85ef6d89eb8ab4416d2e6403e350b04e238781e0ed13a0b77",
+    "entries": 65,
+    "manifest_files": 64,
+    "crc_and_sha256": true,
+    "secret_path_scan_findings": [],
+    "secret_scan_scope": "known local credential values + private-key/AWS/KGAT patterns; no static scanner proves all possible secrets absent"
+  },
+  "dependencies": {
+    "name": "geofirex",
+    "version": "0.1.0",
+    "description": "Multimodal spatio-temporal deep learning for next-day wildfire spread forecasting (GeoFire-X)",
+    "requires-python": ">=3.10",
+    "dependencies": [
+      "numpy",
+      "rasterio",
+      "torch",
+      "mlflow",
+      "pyyaml",
+      "matplotlib",
+      "scikit-learn"
+    ],
+    "optional-dependencies": {
+      "dev": [
+        "pytest"
+      ],
+      "viewer": [
+        "xarray",
+        "rioxarray"
+      ],
+      "benchmark-metadata": [
+        "pyarrow"
+      ],
+      "gpu-operational": [
+        "pyarrow",
+        "psutil>=5.9,<8"
+      ],
+      "kaggle": [
+        "kagglehub>=1.0.3,<2"
+      ],
+      "api": [
+        "fastapi",
+        "uvicorn"
+      ]
+    }
+  },
+  "lots": [
+    {
+      "number": 1,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+      "role": "train",
+      "events": 57,
+      "files": 1269,
+      "raw_bytes": 4829474073,
+      "predicted_zip_bytes": 4829909728,
+      "identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81"
+    },
+    {
+      "number": 2,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+      "role": "train",
+      "events": 62,
+      "files": 1380,
+      "raw_bytes": 4995042486,
+      "predicted_zip_bytes": 4995516213,
+      "identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f"
+    },
+    {
+      "number": 3,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-003-v1",
+      "role": "train",
+      "events": 68,
+      "files": 1344,
+      "raw_bytes": 4905540263,
+      "predicted_zip_bytes": 4906001810,
+      "identity": "15ad89eca43c61678ad886af60387cb43b7104bb888e7a4700c2aabdb3de6201"
+    },
+    {
+      "number": 4,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-004-v1",
+      "role": "train",
+      "events": 63,
+      "files": 1205,
+      "raw_bytes": 4443126438,
+      "predicted_zip_bytes": 4443540337,
+      "identity": "5de8dec39928f8adca729888fff0f00a23b87aba961af9d4fee6c7d195520844"
+    },
+    {
+      "number": 5,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-005-v1",
+      "role": "val",
+      "events": 69,
+      "files": 1305,
+      "raw_bytes": 4886889025,
+      "predicted_zip_bytes": 4887337254,
+      "identity": "ef579d40d24107bbb034ab4e0cef12a256f7ecf0ddd85f43d5162b6854fd92ff"
+    },
+    {
+      "number": 6,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-006-v1",
+      "role": "val",
+      "events": 54,
+      "files": 1350,
+      "raw_bytes": 4919863753,
+      "predicted_zip_bytes": 4920327042,
+      "identity": "8852036659a34e19836bafc57b89fc50afc38ebf9302745a8db8ad3caf9b96d7"
+    },
+    {
+      "number": 7,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-007-v1",
+      "role": "val",
+      "events": 61,
+      "files": 1321,
+      "raw_bytes": 4833117096,
+      "predicted_zip_bytes": 4833570621,
+      "identity": "87afc8aa0ed24ef0e469d4c4e20e0f6d28a52f95d56df46c10de7b87be6e4ed2"
+    },
+    {
+      "number": 8,
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-008-v1",
+      "role": "val",
+      "events": 17,
+      "files": 316,
+      "raw_bytes": 1182299296,
+      "predicted_zip_bytes": 1182408142,
+      "identity": "94f961182623909310a20e594a0517adc1af36d004be98c8be876e59dfb8e407"
+    }
+  ],
+  "complete_indexed_events": true,
+  "train_events": 250,
+  "val_events": 201,
+  "raw_bytes": 34995352430,
+  "observations": 9490,
+  "test_2021_rasters": 0,
+  "normalizer": {
+    "sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+    "fit_events": 250,
+    "fit_files": 4948,
+    "years": [
+      2018,
+      2019
+    ]
+  },
+  "parquets": {
+    "observations": {
+      "rows": 9490,
+      "columns": [
+        "event_id",
+        "date",
+        "split",
+        "relative_path",
+        "status",
+        "crs",
+        "sha256",
+        "error",
+        "sidecars_json",
+        "year",
+        "height",
+        "width",
+        "bytes",
+        "positive_pixels",
+        "valid_pixels",
+        "invalid_pixels",
+        "no_detection_pixels",
+        "transform"
+      ],
+      "schema": "event_id: string\ndate: string\nsplit: string\nrelative_path: string\nstatus: string\ncrs: string\nsha256: string\nerror: string\nsidecars_json: string\nyear: int64\nheight: int64\nwidth: int64\nbytes: int64\npositive_pixels: int64\nvalid_pixels: int64\ninvalid_pixels: int64\nno_detection_pixels: int64\ntransform: list<element: double>\n  child 0, element: double"
+    },
+    "windows": {
+      "rows": 21705,
+      "columns": [
+        "event_id",
+        "target_date",
+        "target_path",
+        "split",
+        "context",
+        "context_dates",
+        "context_paths"
+      ],
+      "schema": "event_id: string\ntarget_date: string\ntarget_path: string\nsplit: string\ncontext: int64\ncontext_dates: list<element: string>\n  child 0, element: string\ncontext_paths: list<element: string>\n  child 0, element: string"
+    }
+  },
+  "network": {
+    "predicted_initial_zip_bodies": 35000541965,
+    "actual_staged_zip_sizes_verified": false,
+    "margin_at_36GB": 999458035,
+    "proposed_body_ceiling": 50000000000,
+    "initial_conservative_raw_plus_zip_overhead_and_code": 35077283248,
+    "proposed_physical_network_planning_envelope": 55000000000
+  }
+}

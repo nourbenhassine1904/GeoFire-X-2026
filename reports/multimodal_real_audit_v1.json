@@ -1,0 +1,690 @@
+{
+  "files": [
+    {
+      "path": "data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-03.tif",
+      "sha256": "17467f4f92757e4414b2c3bca6c0554f2007ecfc88fbe6a9197972ad10362ff7",
+      "bands": [
+        {
+          "index": 0,
+          "name": "M11",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 585.0,
+          "max": 7498.0
+        },
+        {
+          "index": 1,
+          "name": "I2",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 99.0,
+          "max": 11681.0
+        },
+        {
+          "index": 2,
+          "name": "I1",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": -100.0,
+          "max": 11272.0
+        },
+        {
+          "index": 3,
+          "name": "NDVI_last",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 610.0,
+          "max": 7691.0
+        },
+        {
+          "index": 4,
+          "name": "EVI2_last",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 441.0,
+          "max": 4530.0
+        },
+        {
+          "index": 5,
+          "name": "total precipitation",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        {
+          "index": 6,
+          "name": "wind speed",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 2.4000000953674316,
+          "max": 4.0
+        },
+        {
+          "index": 7,
+          "name": "wind direction",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 260.0,
+          "max": 307.0
+        },
+        {
+          "index": 8,
+          "name": "minimum temperature",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 266.8999938964844,
+          "max": 280.0
+        },
+        {
+          "index": 9,
+          "name": "maximum temperature",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 286.3999938964844,
+          "max": 297.0
+        },
+        {
+          "index": 10,
+          "name": "energy release component",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 67.0,
+          "max": 97.0
+        },
+        {
+          "index": 11,
+          "name": "specific humidity",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.002589999930933118,
+          "max": 0.003379999892786145
+        },
+        {
+          "index": 12,
+          "name": "slope",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 34.59275817871094
+        },
+        {
+          "index": 13,
+          "name": "aspect",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": -0.0,
+          "max": 359.7040710449219
+        },
+        {
+          "index": 14,
+          "name": "elevation",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 1336.0,
+          "max": 3112.0
+        },
+        {
+          "index": 15,
+          "name": "pdsi",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": -4.260000228881836,
+          "max": -1.1200000047683716
+        },
+        {
+          "index": 16,
+          "name": "LC_Type1",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 1.0,
+          "max": 16.0
+        },
+        {
+          "index": 17,
+          "name": "total_precipitation_surface_sum",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 2.125
+        },
+        {
+          "index": 18,
+          "name": "forecast wind speed",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.907489001750946,
+          "max": 2.058260917663574
+        },
+        {
+          "index": 19,
+          "name": "forecast wind direction",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": -86.67903900146484,
+          "max": 88.78104400634766
+        },
+        {
+          "index": 20,
+          "name": "forecast temperature",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 12.796711921691895,
+          "max": 21.126644134521484
+        },
+        {
+          "index": 21,
+          "name": "forecast specific humidity",
+          "finite": 100386,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.003294651862233877,
+          "max": 0.003661051858216524
+        },
+        {
+          "index": 22,
+          "name": "active fire",
+          "finite": 0,
+          "nan": 100386,
+          "inf": 0,
+          "min": null,
+          "max": null
+        }
+      ]
+    },
+    {
+      "path": "data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-03.tif",
+      "sha256": "fb3ccd8595158fa3998e1577d4ea173bb5662664b4293e8b7dfe80ece31dea41",
+      "bands": [
+        {
+          "index": 0,
+          "name": "M11",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 80.0,
+          "max": 4940.0
+        },
+        {
+          "index": 1,
+          "name": "I2",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 476.0,
+          "max": 6527.0
+        },
+        {
+          "index": 2,
+          "name": "I1",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -100.0,
+          "max": 5898.0
+        },
+        {
+          "index": 3,
+          "name": "NDVI_last",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -3966.0,
+          "max": 9454.0
+        },
+        {
+          "index": 4,
+          "name": "EVI2_last",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -331.0,
+          "max": 6533.0
+        },
+        {
+          "index": 5,
+          "name": "total precipitation",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        {
+          "index": 6,
+          "name": "wind speed",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 2.4000000953674316,
+          "max": 3.799999952316284
+        },
+        {
+          "index": 7,
+          "name": "wind direction",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 140.0,
+          "max": 183.0
+        },
+        {
+          "index": 8,
+          "name": "minimum temperature",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 276.70001220703125,
+          "max": 290.6000061035156
+        },
+        {
+          "index": 9,
+          "name": "maximum temperature",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 300.6000061035156,
+          "max": 309.1000061035156
+        },
+        {
+          "index": 10,
+          "name": "energy release component",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 48.0,
+          "max": 82.0
+        },
+        {
+          "index": 11,
+          "name": "specific humidity",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.005119999870657921,
+          "max": 0.007679999805986881
+        },
+        {
+          "index": 12,
+          "name": "slope",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 35.67582321166992
+        },
+        {
+          "index": 13,
+          "name": "aspect",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -0.0,
+          "max": 359.74554443359375
+        },
+        {
+          "index": 14,
+          "name": "elevation",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 221.0,
+          "max": 1848.0
+        },
+        {
+          "index": 15,
+          "name": "pdsi",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -2.259999990463257,
+          "max": 4.230000019073486
+        },
+        {
+          "index": 16,
+          "name": "LC_Type1",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 1.0,
+          "max": 17.0
+        },
+        {
+          "index": 17,
+          "name": "total_precipitation_surface_sum",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 8.3125,
+          "max": 71.5625
+        },
+        {
+          "index": 18,
+          "name": "forecast wind speed",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.06451635807752609,
+          "max": 0.7949511408805847
+        },
+        {
+          "index": 19,
+          "name": "forecast wind direction",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": -89.7822265625,
+          "max": 69.36686706542969
+        },
+        {
+          "index": 20,
+          "name": "forecast temperature",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 16.29684066772461,
+          "max": 21.41110610961914
+        },
+        {
+          "index": 21,
+          "name": "forecast specific humidity",
+          "finite": 72534,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.006492698099464178,
+          "max": 0.007372364867478609
+        },
+        {
+          "index": 22,
+          "name": "active fire",
+          "finite": 55,
+          "nan": 72479,
+          "inf": 0,
+          "min": 1000.0,
+          "max": 2124.0
+        }
+      ]
+    },
+    {
+      "path": "data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-01.tif",
+      "sha256": "3aa73496f3c0af3fb2a65428be7c83d6ef10a49ec656633ac2f266f2007a28c4",
+      "bands": [
+        {
+          "index": 0,
+          "name": "M11",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 205.0,
+          "max": 3275.0
+        },
+        {
+          "index": 1,
+          "name": "I2",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 116.0,
+          "max": 11303.0
+        },
+        {
+          "index": 2,
+          "name": "I1",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 2.0,
+          "max": 11882.0
+        },
+        {
+          "index": 3,
+          "name": "NDVI_last",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -450.0,
+          "max": 9736.0
+        },
+        {
+          "index": 4,
+          "name": "EVI2_last",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -403.0,
+          "max": 4131.0
+        },
+        {
+          "index": 5,
+          "name": "total precipitation",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 3.4000000953674316
+        },
+        {
+          "index": 6,
+          "name": "wind speed",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 2.5,
+          "max": 5.599999904632568
+        },
+        {
+          "index": 7,
+          "name": "wind direction",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 262.0,
+          "max": 295.0
+        },
+        {
+          "index": 8,
+          "name": "minimum temperature",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 261.5,
+          "max": 271.1000061035156
+        },
+        {
+          "index": 9,
+          "name": "maximum temperature",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 272.8999938964844,
+          "max": 285.6000061035156
+        },
+        {
+          "index": 10,
+          "name": "energy release component",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 8.0,
+          "max": 29.0
+        },
+        {
+          "index": 11,
+          "name": "specific humidity",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.002240000059828162,
+          "max": 0.0034000000450760126
+        },
+        {
+          "index": 12,
+          "name": "slope",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 36.29322814941406
+        },
+        {
+          "index": 13,
+          "name": "aspect",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -0.0,
+          "max": 359.7040710449219
+        },
+        {
+          "index": 14,
+          "name": "elevation",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 1075.0,
+          "max": 3316.0
+        },
+        {
+          "index": 15,
+          "name": "pdsi",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -2.640000104904175,
+          "max": 2.119999885559082
+        },
+        {
+          "index": 16,
+          "name": "LC_Type1",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 1.0,
+          "max": 16.0
+        },
+        {
+          "index": 17,
+          "name": "total_precipitation_surface_sum",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0,
+          "max": 3.375
+        },
+        {
+          "index": 18,
+          "name": "forecast wind speed",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.3006351888179779,
+          "max": 3.325263261795044
+        },
+        {
+          "index": 19,
+          "name": "forecast wind direction",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -86.22860717773438,
+          "max": 88.85649108886719
+        },
+        {
+          "index": 20,
+          "name": "forecast temperature",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": -1.5881874561309814,
+          "max": 5.698078632354736
+        },
+        {
+          "index": 21,
+          "name": "forecast specific humidity",
+          "finite": 98448,
+          "nan": 0,
+          "inf": 0,
+          "min": 0.0024520999286323786,
+          "max": 0.0029143665451556444
+        },
+        {
+          "index": 22,
+          "name": "active fire",
+          "finite": 0,
+          "nan": 98448,
+          "inf": 0,
+          "min": null,
+          "max": null
+        }
+      ]
+    }
+  ],
+  "profiles": {
+    "conservative_fire_terrain": {
+      "continuous": [
+        12,
+        14
+      ],
+      "landcover": false
+    },
+    "terrain_vegetation_v1": {
+      "continuous": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        12,
+        14
+      ],
+      "landcover": true
+    },
+    "multimodal_observed_j_v1": {
+      "continuous": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "landcover": true
+    }
+  },
+  "profiles_identity": "66efacdad76aa53faa4d99774cd86988517c38dfb1879e967ddad88884835e61",
+  "availability_by_J": "NOT inferable from GeoTIFF names/values; review production time provenance",
+  "excluded": {
+    "7": "legacy wind direction quadrant ambiguity",
+    "17-21": "forecast issue/valid times not established"
+  },
+  "active_fire": "finite detection code = fire; NaN = no detection; explicit GDAL mask handles invalid footprint"
+}

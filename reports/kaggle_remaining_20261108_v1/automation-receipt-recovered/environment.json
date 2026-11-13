@@ -1,0 +1,1 @@
+{"status": "CPU_AUTOMATION_READY", "gpu": false, "training": false, "datasets": [], "mlflow_available": false, "tracking": "runner_json_csv_checkpoints"}

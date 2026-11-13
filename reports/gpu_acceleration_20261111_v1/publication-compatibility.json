@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "partitions": 11,
+  "original_and_fast_loader_equal_samples": 5,
+  "train_tiles": 93603,
+  "val_tiles": 78771,
+  "hashes_verified": 459,
+  "archive_rebuilt": false,
+  "network_bytes": 0
+}

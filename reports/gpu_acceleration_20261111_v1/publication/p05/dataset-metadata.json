@@ -1,0 +1,10 @@
+{
+  "id": "nnnnbhss/geofirex-compact-t3-20261111-p05",
+  "title": "geofirex-compact-t3-20261111-p05",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "description": "Derived eight-channel WildfireSpreadTS, T=3/J+1. Source https://doi.org/10.5281/zenodo.8006177 (CC-BY-4.0). Private partition; .bin objects retain exact ZIP/NPZ/metadata bytes. See mount-map.json. No held-out 2021 pixels."
+}

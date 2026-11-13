@@ -1,0 +1,13 @@
+{
+  "quota": {
+    "used": 4559.038,
+    "reserved": 0.0,
+    "allowed": 108000.0,
+    "reset": "2026-11-14 00:00:00"
+  },
+  "kernel_response_fields": [
+    "metadata",
+    "blob"
+  ],
+  "status": "READ_ONLY_OK"
+}

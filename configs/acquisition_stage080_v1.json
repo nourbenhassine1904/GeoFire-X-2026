@@ -1,0 +1,11 @@
+{
+  "plan": "reports/scientific_scaleup_v4/acquisition_80.json",
+  "destination": "data/raw/WildfireSpreadTS/scientific_corpus_v1",
+  "reuse_root": [
+    "data/raw/WildfireSpreadTS/real_sample",
+    "data/raw/WildfireSpreadTS/corpus_v1"
+  ],
+  "session_dir": "artifacts/scientific-acquisition/stage080-v1",
+  "batch_bytes": 268435456,
+  "max_mbps": 20
+}

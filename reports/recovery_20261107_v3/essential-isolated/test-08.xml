@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.103" timestamp="2026-11-07T14:15:38.557358+01:00" hostname="NourBh"><testcase classname="tests.test_recovery_tools.RecoveryTools" name="test_freezer_preserves_inputs_and_refuses_old_configs" time="0.058" /></testsuite></testsuites>

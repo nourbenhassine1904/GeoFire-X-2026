@@ -1,0 +1,11 @@
+{
+  "changed_since_start": [
+    "scripts/kaggle_account_inventory.py",
+    "scripts/prepare_expanded_code.py",
+    "src/geofirex/job_control.py",
+    "tests/test_gpu_operational.py"
+  ],
+  "missing": [],
+  "historical_report_changes": [],
+  "baseline_files": 369
+}

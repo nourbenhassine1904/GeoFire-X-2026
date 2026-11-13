@@ -1,0 +1,51 @@
+{
+  "time": "2026-11-07T12:49:46.075241+00:00",
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_gpu_operational.py",
+    "tests/test_gpu_resources.py",
+    "tests/test_runner.py",
+    "tests/test_benchmark_contracts.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v2\\pytest-tmp",
+    "--junitxml",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v2\\tests.xml",
+    "-o",
+    "faulthandler_timeout=60"
+  ],
+  "pid": 30792,
+  "status": "LOW_AVAILABLE_MEMORY",
+  "exit_code": 1,
+  "elapsed_seconds": 163.17200000000003,
+  "limit_seconds": 300,
+  "peak_system_memory_load_percent": 93,
+  "before": {
+    "memory": {
+      "total": 16837500928,
+      "available": 3478708224,
+      "load_percent": 79
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903634464768,
+      "free": 119118249984
+    }
+  },
+  "after": {
+    "memory": {
+      "total": 16837500928,
+      "available": 1045954560,
+      "load_percent": 93
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903687815168,
+      "free": 119064899584
+    }
+  }
+}

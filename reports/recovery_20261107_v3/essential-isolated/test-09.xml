@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="4.568" timestamp="2026-11-07T14:15:39.351445+01:00" hostname="NourBh"><testcase classname="tests.test_gpu_operational" name="test_training_scope_does_not_require_test_files" time="1.257" /></testsuite></testsuites>

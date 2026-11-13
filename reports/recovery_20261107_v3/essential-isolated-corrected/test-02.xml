@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="1.075" timestamp="2026-11-07T14:19:21.959049+01:00" hostname="NourBh"><testcase classname="tests.test_memory_guard" name="test_monitor_records_owned_memory" time="1.028" /></testsuite></testsuites>

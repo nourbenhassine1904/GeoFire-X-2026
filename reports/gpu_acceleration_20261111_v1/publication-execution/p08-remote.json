@@ -1,0 +1,211 @@
+{
+  "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+  "handle": "nnnnbhss/geofirex-compact-t3-20261111-p08",
+  "private": true,
+  "version": 1,
+  "basis": "Complete consistent authenticated owner catalogues",
+  "GetDataset_required": false,
+  "files": [
+    {
+      "name": "mount-map.json",
+      "bytes": 11614
+    },
+    {
+      "name": "part2__train__2018__fire_21889719.zip.bin",
+      "bytes": 62141527
+    },
+    {
+      "name": "part2__train__2018__fire_21889750.zip.bin",
+      "bytes": 16553568
+    },
+    {
+      "name": "part2__train__2018__fire_21889779.zip.bin",
+      "bytes": 43523996
+    },
+    {
+      "name": "part2__train__2018__fire_21889826.zip.bin",
+      "bytes": 22211173
+    },
+    {
+      "name": "part2__train__2018__fire_21889953.zip.bin",
+      "bytes": 12702040
+    },
+    {
+      "name": "part2__train__2018__fire_21889990.zip.bin",
+      "bytes": 13027288
+    },
+    {
+      "name": "part2__train__2018__fire_21889995.zip.bin",
+      "bytes": 13911167
+    },
+    {
+      "name": "part2__train__2018__fire_21890007.zip.bin",
+      "bytes": 29453388
+    },
+    {
+      "name": "part2__train__2018__fire_21890013.zip.bin",
+      "bytes": 18784345
+    },
+    {
+      "name": "part2__train__2018__fire_21890033.zip.bin",
+      "bytes": 13000695
+    },
+    {
+      "name": "part2__train__2018__fire_21890058.zip.bin",
+      "bytes": 13002030
+    },
+    {
+      "name": "part2__train__2018__fire_21890069.zip.bin",
+      "bytes": 20153132
+    },
+    {
+      "name": "part2__train__2018__fire_21890087.zip.bin",
+      "bytes": 12114367
+    },
+    {
+      "name": "part2__train__2018__fire_21890100.zip.bin",
+      "bytes": 19023795
+    },
+    {
+      "name": "part2__train__2018__fire_21890106.zip.bin",
+      "bytes": 13699991
+    },
+    {
+      "name": "part2__train__2018__fire_21890115.zip.bin",
+      "bytes": 26618614
+    },
+    {
+      "name": "part2__train__2018__fire_21890143.zip.bin",
+      "bytes": 35367600
+    },
+    {
+      "name": "part2__train__2018__fire_21890208.zip.bin",
+      "bytes": 23502574
+    },
+    {
+      "name": "part2__train__2018__fire_21890643.zip.bin",
+      "bytes": 15377821
+    },
+    {
+      "name": "part2__train__2018__fire_21997828.zip.bin",
+      "bytes": 32961625
+    },
+    {
+      "name": "part2__train__2018__fire_21997854.zip.bin",
+      "bytes": 6399228
+    },
+    {
+      "name": "part2__train__2018__fire_21998081.zip.bin",
+      "bytes": 11023767
+    },
+    {
+      "name": "part2__train__2018__fire_21998100.zip.bin",
+      "bytes": 11676350
+    },
+    {
+      "name": "part2__train__2018__fire_21998143.zip.bin",
+      "bytes": 13802863
+    },
+    {
+      "name": "part2__train__2018__fire_21998187.zip.bin",
+      "bytes": 25386038
+    },
+    {
+      "name": "part2__train__2018__fire_21998255.zip.bin",
+      "bytes": 22473146
+    },
+    {
+      "name": "part2__train__2018__fire_21998265.zip.bin",
+      "bytes": 12297749
+    },
+    {
+      "name": "part2__train__2018__fire_21998299.zip.bin",
+      "bytes": 28917393
+    },
+    {
+      "name": "part2__train__2018__fire_21999260.zip.bin",
+      "bytes": 28991977
+    },
+    {
+      "name": "part2__train__2018__fire_21999299.zip.bin",
+      "bytes": 27527737
+    },
+    {
+      "name": "part2__train__2018__fire_21999354.zip.bin",
+      "bytes": 28455708
+    },
+    {
+      "name": "part2__train__2018__fire_22141243.zip.bin",
+      "bytes": 16190708
+    },
+    {
+      "name": "part2__train__2018__fire_22141356.zip.bin",
+      "bytes": 17677339
+    },
+    {
+      "name": "part2__train__2018__fire_22141461.zip.bin",
+      "bytes": 20024366
+    },
+    {
+      "name": "part2__train__2018__fire_22141528.zip.bin",
+      "bytes": 19644572
+    },
+    {
+      "name": "part2__train__2018__fire_22141567.zip.bin",
+      "bytes": 20338341
+    },
+    {
+      "name": "part2__train__2018__fire_22141576.zip.bin",
+      "bytes": 18268138
+    },
+    {
+      "name": "part2__train__2018__fire_22141596.zip.bin",
+      "bytes": 31855871
+    },
+    {
+      "name": "part2__train__2018__fire_22257911.zip.bin",
+      "bytes": 10067554
+    },
+    {
+      "name": "part2__train__2018__fire_22258318.zip.bin",
+      "bytes": 16185543
+    },
+    {
+      "name": "part2__train__2018__fire_22343666.zip.bin",
+      "bytes": 9734064
+    },
+    {
+      "name": "part2__train__2019__fire_22710141.zip.bin",
+      "bytes": 15080382
+    },
+    {
+      "name": "part2__train__2019__fire_22938746.zip.bin",
+      "bytes": 15043991
+    },
+    {
+      "name": "part2__train__2019__fire_22939600.zip.bin",
+      "bytes": 35863448
+    },
+    {
+      "name": "part2__train__2019__fire_23036542.zip.bin",
+      "bytes": 12147721
+    },
+    {
+      "name": "part2__train__2019__fire_23036565.zip.bin",
+      "bytes": 22801545
+    },
+    {
+      "name": "part2__train__2019__fire_23036804.zip.bin",
+      "bytes": 12327959
+    },
+    {
+      "name": "part2__train__2019__fire_23036871.zip.bin",
+      "bytes": 14449609
+    },
+    {
+      "name": "publication_identity.json",
+      "bytes": 172
+    }
+  ],
+  "all_filenames_and_sizes_match": true
+}

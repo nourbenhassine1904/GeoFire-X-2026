@@ -1,0 +1,7 @@
+{
+  "status": "CERTIFIED",
+  "certificate": "remote-certificate.json",
+  "gpu_profile_prepared": true,
+  "gpu_campaign_started": false,
+  "notebook": "B1_B2_COMPACT_CERTIFIED_READY.ipynb"
+}

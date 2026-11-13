@@ -1,0 +1,229 @@
+{
+  "device": "cpu",
+  "gpu": null,
+  "rows": [
+    {
+      "loader": "old",
+      "workers": 0,
+      "pin_memory": false,
+      "persistent_workers": false,
+      "model": "B1",
+      "measured_updates": 1,
+      "tiles": 16,
+      "seconds": 0.08153010000023642,
+      "tiles_per_second": 196.246539620994,
+      "estimated_119_train_epoch_seconds": 4.968240468764407,
+      "scaled_250_train_seconds": 476.9663718951331,
+      "scope": "raw119 measured; compact throughput not measured on this GPU",
+      "stages": [
+        {
+          "wait": 0.033355999999912456,
+          "h2d": 2.59000007645227e-05,
+          "compute": 0.04814819999955944,
+          "worker_loading_sum": 0.03190069999618572,
+          "tiles": 16,
+          "loss": 0.861809492111206
+        }
+      ],
+      "peak_parent_rss": 555868160,
+      "gpu_allocated": null
+    },
+    {
+      "loader": "cached",
+      "workers": 0,
+      "pin_memory": false,
+      "persistent_workers": false,
+      "model": "B1",
+      "measured_updates": 1,
+      "tiles": 16,
+      "seconds": 0.062428400000499096,
+      "tiles_per_second": 256.2936099575207,
+      "estimated_119_train_epoch_seconds": 3.8042306250304136,
+      "scaled_250_train_seconds": 365.2178453279198,
+      "scope": "raw119 measured; compact throughput not measured on this GPU",
+      "stages": [
+        {
+          "wait": 0.0188865000000078,
+          "h2d": 2.080000012938399e-05,
+          "compute": 0.04352110000036191,
+          "worker_loading_sum": 0.017653699997026706,
+          "tiles": 16,
+          "loss": 0.8659444451332092
+        }
+      ],
+      "peak_parent_rss": 605106176,
+      "gpu_allocated": null
+    },
+    {
+      "loader": "cached",
+      "workers": 2,
+      "pin_memory": true,
+      "persistent_workers": true,
+      "model": "B1",
+      "measured_updates": 1,
+      "tiles": 16,
+      "seconds": 0.0484082999992097,
+      "tiles_per_second": 330.5218320052803,
+      "estimated_119_train_epoch_seconds": 2.9498807812018413,
+      "scaled_250_train_seconds": 283.1976315516266,
+      "scope": "raw119 measured; compact throughput not measured on this GPU",
+      "stages": [
+        {
+          "wait": 0.0010048999993159669,
+          "h2d": 2.029999996011611e-05,
+          "compute": 0.04738309999993362,
+          "worker_loading_sum": 0.024891299997761962,
+          "tiles": 16,
+          "loss": 0.8659444451332092
+        }
+      ],
+      "peak_parent_rss": 605106176,
+      "gpu_allocated": null
+    },
+    {
+      "loader": "cached",
+      "workers": 2,
+      "pin_memory": true,
+      "persistent_workers": true,
+      "model": "B2",
+      "measured_updates": 1,
+      "tiles": 16,
+      "seconds": 0.15439730000070995,
+      "tiles_per_second": 103.62875516557887,
+      "estimated_119_train_epoch_seconds": 9.408585468793262,
+      "scaled_250_train_seconds": 903.2531544979033,
+      "scope": "raw119 measured; compact throughput not measured on this GPU",
+      "stages": [
+        {
+          "wait": 0.001857400000517373,
+          "h2d": 2.7100000806967728e-05,
+          "compute": 0.1525127999993856,
+          "worker_loading_sum": 0.002195099998061778,
+          "tiles": 16,
+          "loss": 0.5162047743797302
+        }
+      ],
+      "peak_parent_rss": 605106176,
+      "gpu_allocated": null
+    },
+    {
+      "loader": "cached",
+      "workers": 4,
+      "pin_memory": true,
+      "persistent_workers": true,
+      "model": "B1",
+      "measured_updates": 1,
+      "tiles": 16,
+      "seconds": 0.051690899997993256,
+      "tiles_per_second": 309.5322387619707,
+      "estimated_119_train_epoch_seconds": 3.1499142186277145,
+      "scaled_250_train_seconds": 302.40145703201017,
+      "scope": "raw119 measured; compact throughput not measured on this GPU",
+      "stages": [
+        {
+          "wait": 0.0018710999993345467,
+          "h2d": 3.699999979289714e-05,
+          "compute": 0.04978279999886581,
+          "worker_loading_sum": 1.6271452000019053,
+          "tiles": 16,
+          "loss": 0.8659444451332092
+        }
+      ],
+      "peak_parent_rss": 605106176,
+      "gpu_allocated": null
+    }
+  ],
+  "provenance": {
+    "train_events": [
+      "2018/fire_21748813",
+      "2018/fire_21997864",
+      "2019/fire_23300839"
+    ],
+    "val_events": [
+      "2020/fire_23654679",
+      "2020/fire_24104674"
+    ],
+    "duplicate_paths_resolved": 0,
+    "source_verification": "existing certificates; current file sizes only, no repeat SHA/CRC audit"
+  },
+  "train_tiles": 975,
+  "diagnostic_cases": [
+    [
+      "2020/fire_23654679",
+      "2020-01-07",
+      128,
+      128
+    ],
+    [
+      "2020/fire_23654679",
+      "2020-01-08",
+      64,
+      0
+    ],
+    [
+      "2020/fire_23654679",
+      "2020-01-08",
+      128,
+      128
+    ],
+    [
+      "2020/fire_23654679",
+      "2020-01-09",
+      64,
+      0
+    ],
+    [
+      "2020/fire_23654679",
+      "2020-01-13",
+      64,
+      0
+    ],
+    [
+      "2020/fire_23654679",
+      "2020-01-28",
+      64,
+      0
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-16",
+      128,
+      128
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-17",
+      128,
+      128
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-18",
+      128,
+      128
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-19",
+      128,
+      128
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-20",
+      128,
+      128
+    ],
+    [
+      "2020/fire_24104674",
+      "2020-06-21",
+      128,
+      128
+    ]
+  ],
+  "diagnostic_positive_pixels": 556,
+  "diagnostic_scope": "label-informed loader diagnostic, not representative validation",
+  "elapsed_seconds": 32.65153250000003,
+  "complete_epochs": 0,
+  "test_2021": false
+}

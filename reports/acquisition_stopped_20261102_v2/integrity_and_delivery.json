@@ -1,0 +1,37 @@
+{
+  "sha256_matches_existing_references": 406,
+  "new_sha256_first_recorded_at_stop": 8,
+  "all_414_crc_valid": true,
+  "original_session_metadata_matches_backup": {
+    "attempt-2ef2c859fae3469cb64f266e8e63089a.json": true,
+    "batch-427115000a6744d2b3bbf8ca5d266dfa.json": true,
+    "batch-da2b85e462d649e9b0afe6e2f27edea1.json": true,
+    "batch-f40bec195a0d4d47a61234c8a592ef3b.json": true,
+    "batch-fd147fb2c4eb47f4869543ef9a13517f.json": true,
+    "session.json": true,
+    "STOP": true,
+    "transfer.jsonl": true
+  },
+  "source_and_delivery_sha256": {
+    "src/geofirex/archive_transfer.py": "3e4da8903d3c154348026f3bcd0e73991b925478d33d222b310135423dd316a1",
+    "src/geofirex/acquisition_session.py": "cda834bb006eebbecce7ac78863a3387b24918c7c8a0851495d2fe1bf94b8cdf",
+    "scripts/full_corpus_external.py": "bb5b0beafc434b6048cb64fbc576ad1c4b6103311d3c1bb25505b6841bc32dd1",
+    "scripts/snapshot_acquisition_stop.py": "b5d4772d198c3f27df62349eb1e74db52cacda2313f2aa15cd0ecf29dee907a7",
+    "docs/ACQUISITION_D_POWERSHELL.md": "a8906623ab26be88f579efacfe485b28bf0265c02856c1629132326ffce3370d",
+    "tests/test_archive_transfer.py": "f3b6518225233cb9a06e32636cf34c32896ec142df7216b29d2b268d398400c0",
+    "reports/external_acquisition_tests_delivery.xml": "2d0d544bcf990aa554e4eabe24a91c78215f2538cddea2392a1bde0dc064a7c6"
+  },
+  "latest_counter": {
+    "utc": "2026-11-02T19:25:05.660Z",
+    "reserved_bytes": 839496472,
+    "requests": 528,
+    "confirmed_body_bytes": 839458790,
+    "kind": "checkpoint",
+    "downloaded_tiff": 206,
+    "complete_events_present": 18,
+    "partial_files": 1,
+    "batches": 4,
+    "free_bytes": 121167126528
+  },
+  "D_free_bytes": 536110944256
+}

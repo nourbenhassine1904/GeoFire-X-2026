@@ -1,0 +1,81 @@
+{
+  "status": "DELIVERED_LOCAL",
+  "files": {
+    "RAPPORT_FINAL.md": {
+      "bytes": 9580,
+      "sha256": "6fc01c746b7b8bce704c111ca978aaf5963dbbf2d8e11f28aafb30b26b1e538c"
+    },
+    "B1_GPU_FINAL_20261111.ipynb": {
+      "bytes": 1248165,
+      "sha256": "5dd0c06c9ee5b8a7adb00d76a0dcc2805f6d7a1a76c9c81e7e65148eef3b04f0"
+    },
+    "b0_v2/results.json": {
+      "bytes": 1423438,
+      "sha256": "38d1833eada3b4d2fea762159b1a522aaff3ce5481ea951e94454154c69d2b2f"
+    },
+    "b1_cpu_pilot/summary.json": {
+      "bytes": 1884,
+      "sha256": "09d952fd423607d4611c85d90dbe3b061bfa7149e631aa2ed5718e9cc8eee1c1"
+    },
+    "b1_cpu_pilot/checkpoint-verification.json": {
+      "bytes": 121,
+      "sha256": "8e593392853d35db829bfc27893e3da9914930572606c206ffbc5be7f0be50e6"
+    },
+    "matched_b0_b1_pilot.json": {
+      "bytes": 1107,
+      "sha256": "0218a6ae6c362068176e4127f580ffd8fef9baf4dbe8385b9e3045891efab1ed"
+    },
+    "compact_full/report.json": {
+      "bytes": 1430,
+      "sha256": "072a159a32a0d298258c38915ff6e4759986658135bb50808d5e7a2d93a03dcf"
+    },
+    "compact_full/transfer-budget.json": {
+      "bytes": 230,
+      "sha256": "d5c0f9df90203d672c8f1e8ca9a7253c38bb81ba80f516acce4d740f07c0e69c"
+    },
+    "compact_full/pytorch-verification.json": {
+      "bytes": 189,
+      "sha256": "bc5cb71a13ad4ea978eaaf31249dbc0b81fc07225c6272eac8dcf00c2de00332"
+    },
+    "full-original-comparison.json": {
+      "bytes": 1942,
+      "sha256": "6aac550cc7c028c62bcc83581c75aaa155e293013eb737f6576d629c729a7a4c"
+    },
+    "spark/report.json": {
+      "bytes": 4136,
+      "sha256": "c4d60077996676203c1ca9a56bd5f95fdd3550285f66bf194fae2e15d68312e6"
+    },
+    "api-verification.json": {
+      "bytes": 135,
+      "sha256": "eee2f935d4e27454c8a3c1a4baee4e625c099ac14b917327d65adaab8b206e19"
+    },
+    "INTEGRATION_APPLICATION.md": {
+      "bytes": 2441,
+      "sha256": "86b34c9349115f0f95319215c93bc85e6e410fc553f75c6f6e7431beffe29bc6"
+    },
+    "final-readiness.json": {
+      "bytes": 363,
+      "sha256": "33184d379d4f9b636f18be09ba17a664f1bae9822ac552d11b3f02b6fc27a2bb"
+    },
+    "notebook-build-final.json": {
+      "bytes": 601,
+      "sha256": "c1e8e72fd2718ea7003ece1ccd70551c52c2683cc70d099bbae1a62ce03d6cf5"
+    }
+  },
+  "sources": {
+    "src/geofirex/mission_streaming.py": "6fdd148c2711fbaaa61d977761fcd552fd1920c861b68ffadb2d9e2bc7bf7b18",
+    "src/geofirex/mission_training.py": "a764822514bd18180ec0a8e3ae60a37cf8dd11e770d9427ef92aae6cadef2cfd",
+    "src/geofirex/mission_results.py": "a27d6a2e54746d074ec75efe605b76bc00665fa163600b875f72eb29457ed4d0",
+    "scripts/mission_spark_demo.py": "d83ece3bb416d6039d50d17be117a54bc1a70b1119a7d25b2a4a49898b9307b2",
+    "scripts/mission_real_maps.py": "cdf4267ab5d45b66b41d7d438db480aa3e051fd2092856360daa820bad582747",
+    "scripts/prepare_mission_notebook.py": "8f86e04c4d426ed9233d4388fe924d47caeb6868cf9fb4100871ae0655ffd314",
+    "scripts/finalize_mission_compact.py": "4f01c2bf5d45ae5ba7f5561aea2eda5f834c7fdac71311adfab961751c5171dd",
+    "scripts/verify_mission_compact.py": "b3193b2986f594d49fb9b6a5e00e9d2229388e2b0110cffaeed4123d6ef09eb1",
+    "scripts/verify_mission_results.py": "6427edecc8d703e1111cfabd1331cfa2feecfd573dbfd0bd9aa1a5dec6d2f199"
+  },
+  "test_pixels_opened": 0,
+  "transfers_executed": 0,
+  "gpu_jobs_submitted": 0,
+  "commits": 0,
+  "scope": "Local execution complete; GPU quota unavailable; extended GPU campaign and upload not authorized or executed"
+}

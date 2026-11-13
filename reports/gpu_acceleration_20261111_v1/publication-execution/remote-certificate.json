@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "gpu_used": false,
+  "partitions": [
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p00",
+      "identity": "ed88f93ae8329c57f34709fdf3a59e3ec3272db8238f843d4329f2cb23e293d0",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p00",
+      "files": 10,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p01",
+      "identity": "4aa8b2818192a2cc67941f1c1bbb8a1001e144114486bb05ecaa9b504993c6fa",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p01",
+      "files": 42,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p02",
+      "identity": "b5caf48618be26a75a480d91401f9de0d0936607936d09556f6308c1d76c5dcd",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p02",
+      "files": 52,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p03",
+      "identity": "ba72fbbc58f398a7bcd471d5cb21aebe4d11ed68da02caa912c2e746ccadc04d",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p03",
+      "files": 48,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p04",
+      "identity": "ada2f8b9a3f7f340efed521b15bf3fe4e3b4151fa39eab06ca2055518f58ab58",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p04",
+      "files": 51,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p05",
+      "identity": "3bcde37b262d5828f98153350d961e0ad771032fdedb04ff180ace536e4cb33a",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p05",
+      "files": 48,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p06",
+      "identity": "001a171f309ac58f4160269d46b9163b0c0c26c7a488cc545f6fa1b42e55d72a",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p06",
+      "files": 44,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p07",
+      "identity": "906b02993f756f4b6098ac8da11ecac173f59d20ebda70c8d2bd3bb37b8f6dbd",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p07",
+      "files": 47,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p08",
+      "identity": "793223fda8a5f0d06e792bcd09b2604a97252952a5323b144184a8e4f1496a4f",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p08",
+      "files": 50,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p09",
+      "identity": "af3015768e0174071c4d197ad31681ef20fbe0cc1de2c1084254bfef5b91393f",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p09",
+      "files": 55,
+      "all_sizes_sha256_match": true
+    },
+    {
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p10",
+      "identity": "49e5551860a6d14c020c86dc33118a7cd2e0ca3dc9b470e6e95af6061817fa81",
+      "mounted_path": "/kaggle/input/datasets/nnnnbhss/geofirex-compact-t3-20261111-p10",
+      "files": 34,
+      "all_sizes_sha256_match": true
+    }
+  ],
+  "roles": {
+    "train": {
+      "events": 250,
+      "tiles": 93603,
+      "real_samples_checked": 250
+    },
+    "val": {
+      "events": 201,
+      "tiles": 78771,
+      "real_samples_checked": 201
+    }
+  },
+  "objects_verified": 481,
+  "archives_opened": 451,
+  "real_pytorch_event_samples": 451,
+  "legacy_fast_tensor_comparisons": [
+    {
+      "role": "train",
+      "index": 0,
+      "event": "2018/fire_21458798"
+    },
+    {
+      "role": "train",
+      "index": 46801,
+      "event": "2018/fire_21997775"
+    },
+    {
+      "role": "train",
+      "index": 93602,
+      "event": "2019/fire_23493986"
+    },
+    {
+      "role": "val",
+      "index": 0,
+      "event": "2020/fire_23757491"
+    },
+    {
+      "role": "val",
+      "index": 39385,
+      "event": "2020/fire_24332803"
+    },
+    {
+      "role": "val",
+      "index": 78770,
+      "event": "2020/fire_24695963"
+    }
+  ],
+  "validation_diagnostic_positive_pixels": 456,
+  "train_val_disjoint": true,
+  "test_2021_absent": true,
+  "T": 3,
+  "target": "J+1",
+  "seed": 42,
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "normalizer_refitted": false,
+  "normalizer_train_only": true,
+  "normalizer_fit_events": 250,
+  "temporal_metadata_hash_verified": true,
+  "archives_rebuilt": false,
+  "paths_reconstructed_by_verified_links": true,
+  "seconds": 129.930629281,
+  "peak_parent_rss_bytes": 933421056
+}

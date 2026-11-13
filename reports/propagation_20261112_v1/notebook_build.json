@@ -1,0 +1,10 @@
+{
+  "notebook_sha256": "d577ecf9f0adbf31beb1411de00e9dafb12d4ea525defd851ce8ae376b17ab98",
+  "code_sha256": "90351bc94a731c09aa26e6dbbe4653ee315e9d2abac0153e239fe50f005f44ec",
+  "protocol_sha256": "5983837d035a9cd536969bc3c601705d054e100e7f85aae279e4adc385d2630e",
+  "baseline32_sha256": "3956aa821804451ca416cc31ad64055b07253e5b04f4662b37c4ba3b7a63193e",
+  "runs": 1,
+  "training_executed": false,
+  "gpu_executed": false,
+  "kaggle_submitted": false
+}

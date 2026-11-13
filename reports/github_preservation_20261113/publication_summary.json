@@ -1,0 +1,29 @@
+{
+  "destination_branch": "feature/scientific-scaleup-v1",
+  "publication_files": 1656,
+  "publication_bytes": 226753487,
+  "categories": {
+    ".gitattributes": 1,
+    ".gitignore": 1,
+    "README.md": 1,
+    "artifacts": 2,
+    "configs": 3,
+    "docs": 6,
+    "frontend": 10,
+    "pyproject.toml": 1,
+    "reports": 1461,
+    "scripts": 114,
+    "src": 30,
+    "tests": 26
+  },
+  "off_git_files": 24808,
+  "off_git_logical_bytes": 43400302516,
+  "unreviewed_selected_secret_findings": 0,
+  "errors": [],
+  "manifest_hash_exceptions": [
+    "reports/github_preservation_20261113/publication_manifest.csv",
+    "reports/github_preservation_20261113/publication_summary.json"
+  ],
+  "commit_performed": false,
+  "push_performed": false
+}

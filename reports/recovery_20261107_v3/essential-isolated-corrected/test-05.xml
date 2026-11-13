@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.173" timestamp="2026-11-07T14:19:25.768587+01:00" hostname="NourBh"><testcase classname="tests.test_memory_guard" name="test_sampling_handles_normal_process_exit" time="0.074"><failure message="PermissionError: [WinError 5] Accès refusé.">def test_sampling_handles_normal_process_exit():
+        for _ in range(8):
+            tree = ProcessTree([sys.executable, '-c', 'pass'], memory_limit_bytes=128*1024**2)
+            try:
+                deadline = time.monotonic()+5
+                while tree.proc.poll() is None and time.monotonic() &lt; deadline:
+&gt;                   tree.memory_sample()
+
+tests\test_memory_guard.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;geofirex.job_control.ProcessTree object at 0x0000020C07D01550&gt;
+
+    def memory_sample(self):
+        """Query only owned processes. RSS includes shared pages; private is commit."""
+        if not self.job:
+            raise NotImplementedError('Native tree memory telemetry requires Windows')
+        import ctypes as ct
+        from ctypes import wintypes as wt
+        class Pids(ct.Structure):
+            _fields_ = [('assigned', wt.DWORD), ('count', wt.DWORD), ('pids', ct.c_size_t*256)]
+        class Counters(ct.Structure):
+            _fields_ = [('cb', wt.DWORD), ('faults', wt.DWORD)]+[(name, ct.c_size_t) for name in
+                ('peak_rss', 'rss', 'peak_paged_pool', 'paged_pool', 'peak_nonpaged_pool', 'nonpaged_pool',
+                 'pagefile', 'peak_pagefile', 'private')]
+        pids, limits = Pids(), self._extended()
+        for kind, value in ((3, pids), (9, limits)):
+            if not self.kernel.QueryInformationJobObject(self.job, kind, ct.byref(value), ct.sizeof(value), None):
+                raise ct.WinError(ct.get_last_error())
+        self.kernel.OpenProcess.argtypes = [wt.DWORD, wt.BOOL, wt.DWORD]
+        self.kernel.OpenProcess.restype = wt.HANDLE
+        self.kernel.K32GetProcessMemoryInfo.argtypes = [wt.HANDLE, ct.c_void_p, wt.DWORD]
+        self.kernel.QueryFullProcessImageNameW.argtypes = [wt.HANDLE, wt.DWORD, wt.LPWSTR, ct.POINTER(wt.DWORD)]
+        self.kernel.GetProcessHandleCount.argtypes = [wt.HANDLE, ct.POINTER(wt.DWORD)]
+        self.kernel.WaitForSingleObject.argtypes = [wt.HANDLE, wt.DWORD]
+        rows = []
+        for pid in list(pids.pids)[:pids.count]:
+            handle = self._memory_handles.get(pid)
+            if not handle:
+                handle = self.kernel.OpenProcess(0x1000 | 0x100000, False, pid)
+            if not handle:
+                error = ct.get_last_error()
+                # A process can become non-openable while its final Job entry
+                # is being removed. Only ignore it after membership disappears.
+                for _ in range(5):
+                    current = Pids()
+                    if not self.kernel.QueryInformationJobObject(self.job, 3, ct.byref(current), ct.sizeof(current), None):
+                        raise ct.WinError(ct.get_last_error())
+                    if pid not in list(current.pids)[:current.count]:
+                        break
+                    time.sleep(.01)
+                else:
+                    raise ct.WinError(error)
+                continue
+            self._memory_handles[pid] = handle
+            if self.kernel.WaitForSingleObject(handle, 0) == 0:
+                continue
+            value = Counters()
+            value.cb = ct.sizeof(value)
+            name = ct.create_unicode_buffer(32768)
+            size, handles = wt.DWORD(len(name)), wt.DWORD()
+            queries = (
+                lambda: self.kernel.K32GetProcessMemoryInfo(handle, ct.byref(value), ct.sizeof(value)),
+                lambda: self.kernel.QueryFullProcessImageNameW(handle, 0, name, ct.byref(size)),
+                lambda: self.kernel.GetProcessHandleCount(handle, ct.byref(handles)),
+            )
+            for query in queries:
+                if not query():
+                    error = ct.get_last_error()
+                    if self.kernel.WaitForSingleObject(handle, 0) == 0:
+                        break
+&gt;                   raise ct.WinError(error)
+E                   PermissionError: [WinError 5] Accès refusé.
+
+src\geofirex\job_control.py:119: PermissionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,60 @@
+{
+  "status": "AUTONOMOUS_LAUNCHER_PREPARED_NOT_STARTED",
+  "time": "2026-11-09T21:52:49.063215+00:00",
+  "memory_profile": {
+    "start_bytes": 3221225472,
+    "reserve_bytes": 2147483648,
+    "whole_tree_cap_bytes": 536870912,
+    "interval_seconds": 0.25
+  },
+  "same_resume": "resume-01",
+  "next_lot": 3,
+  "remaining_lots": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "certified_lots_preserved": [
+    1,
+    2
+  ],
+  "historical_files_hashed": 60,
+  "historical_files_changed": [],
+  "http_journal_unchanged": true,
+  "cumulative_body_bytes": 4995735202,
+  "ceiling_body_bytes": 31000000000,
+  "remaining_body_bytes": 26004264798,
+  "tests": {
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": "targeted-tests.xml"
+  },
+  "offline_launcher_review": "launcher-review.log",
+  "offline_status": "launcher-status.log",
+  "new_deployment_attempt_created": false,
+  "network_requests": 0,
+  "uploads": 0,
+  "gpu_training_started": false,
+  "commit": false,
+  "push": false,
+  "merge": false,
+  "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\scripts\\Start-KaggleRemaining.ps1\" -Execute",
+  "source_sha256": {
+    "scripts/kaggle_autonomous.py": "ee6e01bea666b39e78112a7b43a02264dbf354e810c58a0cf81f47bdf6c54134",
+    "scripts/run_autonomous_kaggle.py": "701afcd598dfa9f1c847d8f92424f85b40142db85bb618097ea99cf64f4bb61f",
+    "scripts/Start-KaggleRemaining.ps1": "07d78829a4d69680fa579d19aa710a2901192408a39a175ffeb917a4aec8ecac",
+    "scripts/resume_remaining_lots.py": "6860976133246259811ba13a6a700a14ddd7ac5449f2c779cf5480437fda5014",
+    "scripts/publish_remaining_lots.py": "695f7ea8f0426b76fc6e811a09c9be56d8eae0a83fe5d3c6311825d0c1f419a6",
+    "scripts/publish_kaggle_single_attempt.py": "fc1d913c072ed0693b104b0651ed1c64d26218f9a8276c253f763bc27a65a0ab",
+    "scripts/kaggle_cpu_job.py": "634238d2771eac1e55cb16d3536ffc1fa31b81f4104d1b605442e009f596a2bb",
+    "scripts/run_memory_guarded.py": "fe01411c7846cce19b6a4153506fe89ed94b902674ec152312ef105f8f06dc60",
+    "src/geofirex/job_control.py": "efc70951e2d91638182d3d57a8f71dd8818799f2bc03e692bae5a479d318acd0",
+    "tests/test_kaggle_autonomous.py": "751c69ef4636fdedbe9b13af541f21aa9c68b078b8f1e4a6645f7df70fa93c32",
+    "docs/KAGGLE_AUTONOMOUS_LOTS003_008.md": "c1aa23e03cb0d12379f37e088b6042b30da4056ac170cfc9f890e0fbaefe15b1"
+  }
+}

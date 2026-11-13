@@ -1,0 +1,36 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "scripts/publish_remaining_lots.py",
+    "--plan",
+    "reports\\kaggle_remaining_20261108_v1\\plan.json",
+    "--continue-after-indexing",
+    "--approve-body-bytes",
+    "31000000000",
+    "--execute"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 1479348224,
+    "load_percent": 91,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 16523411456,
+    "commit_used_bytes": 20715184128
+  },
+  "limit_seconds": 50000,
+  "start_memory_bytes": 4294967296,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 1073741824,
+  "rss_limit_bytes": 1073741824,
+  "time": "2026-11-09T20:25:15.012783+00:00",
+  "status": "PREFLIGHT_LOW_MEMORY",
+  "children_started": 0,
+  "after": {
+    "total": 16837500928,
+    "available": 1479348224,
+    "load_percent": 91,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 16523411456,
+    "commit_used_bytes": 20715184128
+  }
+}

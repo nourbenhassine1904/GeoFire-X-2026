@@ -1,0 +1,9 @@
+{
+  "handle": "nnnnbhss/geofirex-expanded-code-recovery-v1",
+  "payload_bytes": 1930818,
+  "sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+  "lot_identity": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+  "kind": "code_and_metadata_only",
+  "files": 64,
+  "raw_tiffs": 0
+}

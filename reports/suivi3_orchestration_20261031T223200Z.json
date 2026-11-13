@@ -1,0 +1,450 @@
+{
+  "time": "2026-10-31T22:32:00.046585+00:00",
+  "qualification": "actual live evidence plus explicitly labelled CPU diagnostics",
+  "git_branch": "feature/unet-baseline",
+  "head_unchanged": "e8ff4b07a384fff9bab8bc50b7754b595f489528",
+  "git_commit_or_push_performed": false,
+  "paid_resources_requested": false,
+  "tests": {
+    "tests": 194,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_report": "reports/orchestration_tests_final_v6.xml",
+  "bootstrap": {
+    "path": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\jobs\\20261031-202857-f13d587d\\retrievals\\c3cea258cd874f269ff107ee0d80f702\\geofirex-result\\bootstrap.json",
+    "certificate": {
+      "schema_version": 2,
+      "status": "PERSISTENCE_VERIFIED_NEW_SESSION",
+      "session": "372fa8b7497d402fa6279555564401a0",
+      "producer_session": "3676b27e1fa349fa84acf79cf4428ab7",
+      "private_verified": true,
+      "publication_provenance": "manual",
+      "inventory_identity": "e8c7709b4f07770938411ff0139f4e12295a7d765459ceca4fb0f4b01c158979",
+      "index_identity": "7aee2fc32d01fb8b3f0671073ab7aa12c12fbb4a90cb1d0f21d79e0ff843bbad",
+      "versioned_handle": "nnnnbhss/geofire-x-wsts-batch001/versions/1",
+      "verification": {
+        "files": 14,
+        "bytes": 45061097,
+        "identity": "e8c7709b4f07770938411ff0139f4e12295a7d765459ceca4fb0f4b01c158979"
+      },
+      "producer_receipt_identity": "584a401223368c46a47825ed8436051ee823b46a5d2873628d106d340af8f15d",
+      "identity": "b7b10bf76c06d1c5e4e79c9d862d9035204e9cd3045792d16a328422e0c4288a"
+    }
+  },
+  "spark": {
+    "path": "artifacts\\orchestrator\\jobs\\20261031-210700-478e4d85\\retrievals\\676ab33ae0da410f848de910287022cb\\geofirex-result\\spark-report.json",
+    "report": {
+      "status": "SPARK_EXECUTED",
+      "spark_version": "4.0.4",
+      "master": "local[2]",
+      "scope": "607-event official archive index; existing local raster QC covers only 108 observations / 5 events",
+      "raster_corpus_acquired": false,
+      "distributed_cluster": false,
+      "index_observations": 13607,
+      "index_events": 607,
+      "duplicate_keys": 0,
+      "invalid_rows": 0,
+      "cross_calendar_year_observations": 3,
+      "raster_qc_observations": 108,
+      "raster_qc_events": 5,
+      "unmatched_raster_qc_keys": 0,
+      "index_ingestion_qc_seconds": 11.841025757000011,
+      "index_rows_per_second_including_qc": 1149.1403092300518,
+      "total_seconds": 32.60065718100009,
+      "annual": [
+        {
+          "year": 2018,
+          "observations": 3773,
+          "events": 176,
+          "indexed_bytes": 13880390020
+        },
+        {
+          "year": 2019,
+          "observations": 1425,
+          "events": 74,
+          "indexed_bytes": 5292793240
+        },
+        {
+          "year": 2020,
+          "observations": 4292,
+          "events": 201,
+          "indexed_bytes": 15822169170
+        },
+        {
+          "year": 2021,
+          "observations": 4117,
+          "events": 156,
+          "indexed_bytes": 14298883293
+        }
+      ],
+      "source_index_sha256": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+      "raster_qc_parquet_sha256": "a805d9356a13cb206e4845d46e9d3f4e80a2053d7a7cb37f8bb87798a529ea33",
+      "identity": "dd4cb5dfa10316f4cbd8bde58f1008475c4055448c5245a13e2e5491f0e07a8b"
+    },
+    "local_parquet_check": "artifacts/orchestrator/jobs/20261031-210700-478e4d85/retrievals/676ab33ae0da410f848de910287022cb/spark-local-verification.json"
+  },
+  "comparison": {
+    "qualification": "diagnostic",
+    "real_data": true,
+    "training": "CPU, seed 42, 2 epochs x 32 patches, B0 untrained",
+    "corpus_counts": {
+      "train": {
+        "manifest_events": 3,
+        "manifest_observations": 56,
+        "used_events": 3,
+        "used_observations": 56,
+        "aligned_targets": 41
+      },
+      "val": {
+        "manifest_events": 2,
+        "manifest_observations": 52,
+        "used_events": 2,
+        "used_observations": 52,
+        "aligned_targets": 42
+      },
+      "test": {
+        "manifest_events": 0,
+        "manifest_observations": 0,
+        "used_events": 0,
+        "used_observations": 0,
+        "aligned_targets": 0
+      }
+    },
+    "test_2021": "locked; no final-test command used",
+    "scientific_architecture_selection": false,
+    "comparison_hash": "b9de154a90c6a760efd7bab6d7878bee94561c82a76c3b6335a970d4a7d98c53",
+    "rows": [
+      {
+        "model": "B0",
+        "run": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\demo-training\\B0-fold00-T3-seed42-train-20261031T211526Z-7dd9914be7",
+        "run_id": "bbe20849d53144569673ba0b92a54cf3",
+        "optimizer_updates": 0,
+        "best_epoch": 0,
+        "seconds": 25.912442799999553,
+        "threshold": 0.9,
+        "average_precision": 0.2319483834781091,
+        "validation": {
+          "dice": 0.4813519813519814,
+          "iou": 0.31696085955487335,
+          "precision": 0.48702830188679247,
+          "recall": 0.47580645161290325,
+          "tp": 826,
+          "fp": 870,
+          "fn": 910,
+          "pixels": 4190163,
+          "positive_pixels": 1736,
+          "prevalence": 0.0004143036917656903,
+          "brier": 0.000424804476580028,
+          "average_precision": 0.2319483834781091
+        }
+      },
+      {
+        "model": "B1",
+        "run": "artifacts\\demo-training\\B1-fold00-T3-seed42-train-20261031T212139Z-cba3e700bf",
+        "run_id": "a80409f95fe742ddbc11975a9e80639f",
+        "optimizer_updates": 8,
+        "best_epoch": 1,
+        "seconds": 125.02467150000302,
+        "threshold": 0.5,
+        "average_precision": 0.004120117647254168,
+        "validation": {
+          "dice": 0.0008519634368165461,
+          "iou": 0.0004261632561644565,
+          "precision": 0.0004261647327152707,
+          "recall": 0.9919354838709677,
+          "tp": 1722,
+          "fp": 4038969,
+          "fn": 14,
+          "pixels": 4190163,
+          "positive_pixels": 1736,
+          "prevalence": 0.0004143036917656903,
+          "brier": 0.2720191043298441,
+          "average_precision": 0.004120117647254168
+        }
+      },
+      {
+        "model": "B2",
+        "run": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\demo-training\\B2-fold00-T3-seed42-train-20261031T211550Z-d48a6e2f8d",
+        "run_id": "599b4595444f49c28b44673e79fa9da6",
+        "optimizer_updates": 8,
+        "best_epoch": 2,
+        "seconds": 144.23963319999893,
+        "threshold": 0.1,
+        "average_precision": 0.0019413728281704285,
+        "validation": {
+          "dice": 0.0010225802474454061,
+          "iou": 0.0005115516750419258,
+          "precision": 0.0005115539558636835,
+          "recall": 0.9913594470046083,
+          "tp": 1721,
+          "fp": 3362538,
+          "fn": 15,
+          "pixels": 4190163,
+          "positive_pixels": 1736,
+          "prevalence": 0.0004143036917656903,
+          "brier": 0.015324221153504888,
+          "average_precision": 0.0019413728281704285
+        }
+      },
+      {
+        "model": "B3",
+        "run": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\demo-training\\B3-fold00-T3-seed42-train-20261031T211817Z-2b92429f9e",
+        "run_id": "c3c9bf56a58740f99fd63475f89cb689",
+        "optimizer_updates": 8,
+        "best_epoch": 1,
+        "seconds": 124.89112519999617,
+        "threshold": 0.5,
+        "average_precision": 0.000537125761714412,
+        "validation": {
+          "dice": 0.0009810980992034544,
+          "iou": 0.0004907898060746513,
+          "precision": 0.0004908000778205528,
+          "recall": 0.9591013824884793,
+          "tp": 1665,
+          "fp": 3390755,
+          "fn": 71,
+          "pixels": 4190163,
+          "positive_pixels": 1736,
+          "prevalence": 0.0004143036917656903,
+          "brier": 0.25396625215108815,
+          "average_precision": 0.000537125761714412
+        }
+      }
+    ]
+  },
+  "http_demo": {
+    "scope": "real-data diagnostic HTTP integration; browser visual QA unavailable",
+    "health": {
+      "ready": true,
+      "model": "B1",
+      "inventory_identity": "70e13ded86ac279a8bf31c3dcbbce92b2f89b44d9394f4b0193351447e229af3"
+    },
+    "event_id": "2020/fire_23654679",
+    "as_of": "2020-01-05",
+    "model": "B1",
+    "qualification": "diagnostic",
+    "split": "val",
+    "optimizer_updates": 8,
+    "checkpoint_sha256": "3731fef7cb9821f666aea3bc51908fe94bcdb1b8533544fe70c9435799c87a52",
+    "predict_seconds": 0.6836439999970025,
+    "ground_truth_seconds": 0.17285890000493964,
+    "test_2021_locked": {
+      "predict": 403,
+      "ground-truth": 403
+    },
+    "geometry_matches": true
+  },
+  "archive": {
+    "path": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\kaggle\\geofirex-orchestrated-code-v4.2.zip",
+    "sha256": "28d4506a10c8545bb68362f4cc47f03053087557de20d42ce55260111cacb88c",
+    "bytes": 791150,
+    "files": 178,
+    "all_local_and_zip_hashes_and_crc_verified": true
+  },
+  "live_status_snapshot": {
+    "generated_at": "2026-10-31T22:32:00.046585+00:00",
+    "jobs": [
+      {
+        "job_id": "20261031-202730-15a64835",
+        "latest_local_event": "LOCAL_INTEGRITY_FAILED",
+        "detail": "Prepared metadata changed",
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-202857-f13d587d",
+        "kind": "session-b",
+        "handle": "nnnnbhss/geofirex-session-b-20261031-202857-f13d587d",
+        "latest_local_event": "EVIDENCE_VERIFIED",
+        "last_remote_status": "COMPLETE",
+        "last_remote_check": "2026-10-31T20:30:29.472009+00:00",
+        "evidence": {
+          "time": "2026-10-31T20:30:48.442483+00:00",
+          "kind": "EVIDENCE_VERIFIED",
+          "path": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\jobs\\20261031-202857-f13d587d\\retrievals\\c3cea258cd874f269ff107ee0d80f702\\geofirex-result\\bootstrap.json",
+          "sha256": "0be0864ab9cfc43bcdf2788f69e3f89505b6d80f95bf0e2d8ddbb3df38e6333a",
+          "status": "PERSISTENCE_VERIFIED_NEW_SESSION"
+        }
+      },
+      {
+        "job_id": "20261031-203118-e5b39ae4",
+        "kind": "publication-probe",
+        "handle": "nnnnbhss/geofirex-publication-probe-20261031-203118-e5b39ae4",
+        "latest_local_event": "SUBMISSION_UNCONFIRMED",
+        "last_remote_status": "NOT_QUERIED",
+        "last_remote_check": null,
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-203241-aae74499",
+        "kind": "publication-probe",
+        "handle": "nnnnbhss/geofirex-probe-20261031-203241-aae74499",
+        "latest_local_event": "REMOTE_FAILURE",
+        "last_remote_status": "ERROR",
+        "last_remote_check": "2026-10-31T20:37:25.018315+00:00",
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-204157-6dad4c9c",
+        "kind": "publication-probe",
+        "handle": "nnnnbhss/geofirex-probe-20261031-204157-6dad4c9c",
+        "latest_local_event": "EVIDENCE_VERIFIED",
+        "last_remote_status": "COMPLETE",
+        "last_remote_check": "2026-10-31T20:43:53.160246+00:00",
+        "evidence": {
+          "time": "2026-10-31T20:44:10.747355+00:00",
+          "kind": "EVIDENCE_VERIFIED",
+          "path": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\jobs\\20261031-204157-6dad4c9c\\retrievals\\f7fa6e8c9b964c9ab3160d682553b108\\geofirex-result\\publication-probe.json",
+          "sha256": "a44e9fea92f0c6c48b7b4cbc08cb48086b5e33b1fa6df6f03642caf00de2e4fe",
+          "status": "REMOTE_VERIFIED_FRESH_SESSION_PENDING"
+        }
+      },
+      {
+        "job_id": "20261031-205821-90dbaaf7",
+        "kind": "bigdata",
+        "handle": "nnnnbhss/geofirex-bigdata-20261031-205821-90dbaaf7",
+        "latest_local_event": "PREPARED",
+        "last_remote_status": "NOT_QUERIED",
+        "last_remote_check": null,
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-205829-923ffb32",
+        "kind": "acquire",
+        "handle": "nnnnbhss/geofirex-acquire-20261031-205829-923ffb32",
+        "latest_local_event": "REMOTE_STATUS",
+        "last_remote_status": "UNKNOWN",
+        "last_remote_check": "2026-10-31T22:31:39.139129+00:00",
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-205845-9e2ab980",
+        "kind": "acquire",
+        "handle": "nnnnbhss/geofirex-acquire-20261031-205845-9e2ab980",
+        "latest_local_event": "REMOTE_STATUS",
+        "last_remote_status": "UNKNOWN",
+        "last_remote_check": "2026-10-31T22:31:40.266447+00:00",
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-205945-97cf9126",
+        "kind": "bigdata",
+        "handle": "nnnnbhss/geofirex-bigdata-20261031-205945-97cf9126",
+        "latest_local_event": "CLI",
+        "last_remote_status": "ERROR",
+        "last_remote_check": "2026-10-31T21:03:34.255034+00:00",
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-210700-478e4d85",
+        "kind": "bigdata",
+        "handle": "nnnnbhss/geofirex-bigdata-20261031-210700-478e4d85",
+        "latest_local_event": "EVIDENCE_VERIFIED",
+        "last_remote_status": "COMPLETE",
+        "last_remote_check": "2026-10-31T21:08:44.876490+00:00",
+        "evidence": {
+          "time": "2026-10-31T21:13:15.036654+00:00",
+          "kind": "EVIDENCE_VERIFIED",
+          "path": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\jobs\\20261031-210700-478e4d85\\retrievals\\676ab33ae0da410f848de910287022cb\\geofirex-result\\spark-report.json",
+          "sha256": "f058da3f947300de9edfca8715518cfc023feea8ddcd6e7d7a33c7cf8011df72",
+          "status": "SPARK_EXECUTED"
+        }
+      },
+      {
+        "job_id": "20261031-214546-9ce311ef",
+        "kind": "publication-probe",
+        "handle": "nnnnbhss/geofirex-probe-20261031-214546-9ce311ef",
+        "latest_local_event": "PREPARED",
+        "last_remote_status": "NOT_QUERIED",
+        "last_remote_check": null,
+        "evidence": null
+      },
+      {
+        "job_id": "20261031-221724-b1312212",
+        "kind": "publication-probe",
+        "handle": "nnnnbhss/geofirex-probe-20261031-221724-b1312212",
+        "latest_local_event": "REMOTE_FAILURE",
+        "last_remote_status": "ERROR",
+        "last_remote_check": "2026-10-31T22:23:40.308504+00:00",
+        "evidence": null
+      }
+    ],
+    "monitors": [
+      {
+        "directory": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\monitor-8c008c7e7dd1",
+        "pid": 39496,
+        "started_at": "2026-10-31T21:03:29.080691+00:00",
+        "deadline_minutes": 65,
+        "job_ids": [
+          "20261031-205945-97cf9126",
+          "20261031-205829-923ffb32",
+          "20261031-205845-9e2ab980"
+        ],
+        "scope": "status and evidence retrieval only",
+        "finished": {
+          "time": "2026-10-31T21:29:33.117921+00:00",
+          "pending": [
+            "20261031-205829-923ffb32",
+            "20261031-205845-9e2ab980"
+          ],
+          "reason": "STOP_OR_DEADLINE"
+        },
+        "last_cycle": "2026-10-31T21:29:03.116209+00:00"
+      }
+    ],
+    "chains": [
+      {
+        "directory": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\chain-pilot-v1",
+        "pid": 31548,
+        "time": "2026-10-31T21:29:23.301646+00:00",
+        "acquisition_jobs": [
+          "20261031-205829-923ffb32",
+          "20261031-205845-9e2ab980"
+        ],
+        "scope_identity": "0418cd39a21f3b51d27a7fe1ebad82303d0a263e2baa43538dff606c231c39a4",
+        "deadline_minutes": 60,
+        "active_process_record": {
+          "pid": 43316,
+          "time": "2026-10-31T22:15:40.643168+00:00",
+          "deadline_minutes": 720
+        },
+        "latest": {
+          "time": "2026-10-31T22:31:37.997987+00:00",
+          "certificates": {},
+          "phase": "WAITING_FOR_ACQUISITION"
+        }
+      }
+    ],
+    "local_demo_http_verification": {
+      "scope": "real-data diagnostic HTTP integration; browser visual QA unavailable",
+      "health": {
+        "ready": true,
+        "model": "B1",
+        "inventory_identity": "70e13ded86ac279a8bf31c3dcbbce92b2f89b44d9394f4b0193351447e229af3"
+      },
+      "event_id": "2020/fire_23654679",
+      "as_of": "2020-01-05",
+      "model": "B1",
+      "qualification": "diagnostic",
+      "split": "val",
+      "optimizer_updates": 8,
+      "checkpoint_sha256": "3731fef7cb9821f666aea3bc51908fe94bcdb1b8533544fe70c9435799c87a52",
+      "predict_seconds": 0.6836439999970025,
+      "ground_truth_seconds": 0.17285890000493964,
+      "test_2021_locked": {
+        "predict": 403,
+        "ground-truth": 403
+      },
+      "geometry_matches": true
+    },
+    "local_diagnostic_comparison": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\demo-comparison\\real-cpu-v1\\comparison.json",
+    "long_gpu": "NOT_AUTHORIZED_NOT_SUBMITTED"
+  },
+  "not_executed": [
+    "long GPU training campaign",
+    "2019 extension acquisition",
+    "final test 2021"
+  ],
+  "identity": "473df22e10f7d0f404273d3586514eba426f5a21b35f344982407c1a451d8691"
+}

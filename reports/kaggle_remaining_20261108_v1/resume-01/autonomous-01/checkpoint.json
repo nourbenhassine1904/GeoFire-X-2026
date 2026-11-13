@@ -1,0 +1,19 @@
+{
+  "time": "2026-11-09T21:57:57.305643+00:00",
+  "pid": 24224,
+  "status": "RUNNING",
+  "phase": "lot-003/stage-monitor",
+  "active_lot": 3,
+  "same_resume": "resume-01",
+  "completed_lots": [
+    1,
+    2
+  ],
+  "cumulative_reserved_body_bytes": 4995735202,
+  "remaining_body_bytes": 26004264798,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "tree_limit_bytes": 536870912,
+  "automatic_retries": 0,
+  "gpu_started": false
+}

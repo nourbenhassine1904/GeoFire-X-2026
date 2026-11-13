@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "kind": "read_only_real_compact_loader_parity_not_model_evaluation",
+  "index_sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+  "roles": {
+    "train": {
+      "tiles": 93603,
+      "events": 250
+    },
+    "val": {
+      "tiles": 78771,
+      "events": 201
+    }
+  },
+  "checks": [
+    {
+      "index": 0,
+      "event_id": "2020/fire_23757491",
+      "category": 0,
+      "shape": [
+        3,
+        8,
+        64,
+        64
+      ],
+      "valid_pixels": 4096,
+      "positive_pixels": 0,
+      "tensor_target_joint_mask_identical": true
+    },
+    {
+      "index": 29,
+      "event_id": "2020/fire_23757491",
+      "category": 1,
+      "shape": [
+        3,
+        8,
+        64,
+        64
+      ],
+      "valid_pixels": 4096,
+      "positive_pixels": 14,
+      "tensor_target_joint_mask_identical": true
+    },
+    {
+      "index": 69,
+      "event_id": "2020/fire_23757491",
+      "category": 2,
+      "shape": [
+        3,
+        8,
+        64,
+        64
+      ],
+      "valid_pixels": 4096,
+      "positive_pixels": 0,
+      "tensor_target_joint_mask_identical": true
+    }
+  ],
+  "model_checkpoint_loaded": false,
+  "gpu_used": false,
+  "training_executed": false,
+  "test_2021_pixels_opened": 0
+}

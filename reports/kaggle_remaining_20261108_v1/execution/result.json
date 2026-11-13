@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STOP_NO_RETRY",
+  "completed": [],
+  "error_type": "RuntimeError",
+  "reason": "Stopped at lot-002/stage-monitor; inspect logs, no automatic retry"
+}

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="58.559" timestamp="2026-11-03T15:22:03.445795+01:00" hostname="NourBh"><testcase classname="tests.test_full_corpus" name="test_spark_window_rows_match_independent_builder_and_are_materialized" time="42.205" /></testsuite></testsuites>

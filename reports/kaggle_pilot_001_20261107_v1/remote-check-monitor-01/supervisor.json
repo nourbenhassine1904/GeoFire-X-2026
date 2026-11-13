@@ -1,0 +1,42 @@
+{
+  "command": [
+    "artifacts/orchestrator/kaggle-cli-env/Scripts/python.exe",
+    "reports/kaggle_pilot_001_20261107_v1/verify-remote-readonly.py",
+    "--out",
+    "reports/kaggle_pilot_001_20261107_v1/remote-check-01"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6047281152,
+    "load_percent": 64,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18457264128,
+    "commit_used_bytes": 18781331456
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 1073741824,
+  "rss_limit_bytes": 1073741824,
+  "time": "2026-11-08T00:53:45.784415+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 43288,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 2.0939999999973224,
+  "peak_tree_rss_bytes": 51834880,
+  "peak_sampled_private_commit_bytes": 38567936,
+  "peak_job_commit_bytes": 38588416,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 6000185344,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6027411456,
+    "load_percent": 64,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18453782528,
+    "commit_used_bytes": 18784813056
+  }
+}

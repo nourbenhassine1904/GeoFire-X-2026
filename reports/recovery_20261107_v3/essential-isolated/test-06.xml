@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.062" timestamp="2026-11-07T14:15:37.007311+01:00" hostname="NourBh"><testcase classname="tests.test_recovery_tools.RecoveryTools" name="test_resource_error_stops_child" time="0.021" /></testsuite></testsuites>

@@ -1,0 +1,39 @@
+{
+  "elapsed_seconds": 65.12256019999768,
+  "observations": 108,
+  "parquet_window_rows": 249,
+  "roundtrip": "passed",
+  "scope": "local CPU only; no transfer, no training, no MLflow writes",
+  "source_hashes": {
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\scripts\\scientific_scaleup.py": "1778178f908e239a0c9f0ab74a6dad1c67a177c81dc07d15a1e07afcb6bb20cd",
+    "src\\geofirex\\scientific_scaleup.py": "06ec7cae6182cbc6fb8ea76dd154d894b39155004bb039a0097c660c6176947c"
+  },
+  "hashes": {
+    "acquisition_200.json": "677b8ca7bba789c00d3d62605fb824f9c9f7969360d5f9d3402bbb9caa25f822",
+    "acquisition_451.json": "227cf419a45044e73f7905437fb6f011edf61bc35fd13631d49554610b33f55c",
+    "acquisition_80.json": "97e7b3d232d6a4361d1111b76703077f63f465a4557f3c21e9c377104602f1cf",
+    "additional_local_inventory.json": "efb8466654fe39b005d6fc86a28bd1bd439d9791d93c80e54f18c5de588c0d80",
+    "events.csv": "87044f49114b5116809450e6d9e7fd77c5377a5fcd830b35ae0b75b87ebe73fb",
+    "feature_contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+    "git_before.json": "95dfd0cc941e990fec049483aa2bc2f1dea970258099de543ad14f3d21d9f497",
+    "gpu_plan.json": "2eb3375e634cbe99961e8519c6cd4f49f886c8ddae5279ed049b66d2dec9a43b",
+    "observations.parquet": "c6dfba6a0ecb593bb33572cbfb3fe77c669f3ab2fbfe47bd268e72e089fa8a29",
+    "rarity.json": "729709866e333f80602b7fd8da591dd4b9cb1ac7e128326e5fa33167be99b55d",
+    "rarity.png": "6a51dbc1319b2bebf9378de3abc5b33d42ce42a70b8a6c0a6004ad75a734b68f",
+    "windows.parquet": "6ed0d78cd646cb665eac82a9ba77862830e84c702a676bf3fd523b8f3e18be3a",
+    "gpu_configs/L1_B0_seed42.yaml": "28550128eb9efc6eb2307bb61cd23360c95c7307af5c83baab09b29601bf77b4",
+    "gpu_configs/L1_B1_seed42.yaml": "cfbc723cdfe46d80ee6fef28cbd71bb718d78a4b4ed86ed6c20fa05891ae6f54",
+    "gpu_configs/L1_B2_seed42.yaml": "e57737cdcbb7b5be6a4d4b2b0996e39189586398f546bd1e34627a059c630c1d",
+    "gpu_configs/L1_B3_seed42.yaml": "4ad91a54a52b169b9bf6fb07817eb12cbb85e7b3e5b4760cc68d11f3e85c822f",
+    "gpu_configs/L2_B0_seed42.yaml": "28550128eb9efc6eb2307bb61cd23360c95c7307af5c83baab09b29601bf77b4",
+    "gpu_configs/L2_B1_seed42.yaml": "cfbc723cdfe46d80ee6fef28cbd71bb718d78a4b4ed86ed6c20fa05891ae6f54",
+    "gpu_configs/L2_B1_seed43.yaml": "15629f0f5421885ee2be60774f39b31c4ae0bbf7375634db11b1d6fd7629c55c",
+    "gpu_configs/L2_B1_seed44.yaml": "81dd940c32b518c1836aead1f10d57a3978c75958bdf2454d34b520bbd0504d6",
+    "gpu_configs/L2_B2_seed42.yaml": "e57737cdcbb7b5be6a4d4b2b0996e39189586398f546bd1e34627a059c630c1d",
+    "gpu_configs/L2_B2_seed43.yaml": "50b1962d27a4aa25a611d0f7b34f0545dda3b1707f52d31613285333277e39ae",
+    "gpu_configs/L2_B2_seed44.yaml": "599e4c67dc9c0e120a013bfbcd1a0bf7e3550cdb19832b78c4aecbd34e162eda",
+    "gpu_configs/L2_B3_seed42.yaml": "4ad91a54a52b169b9bf6fb07817eb12cbb85e7b3e5b4760cc68d11f3e85c822f",
+    "gpu_configs/L2_B3_seed43.yaml": "8e36229867032635fff2065076b9fd485c5be27d6be033e7b17f9ff428d517e8",
+    "gpu_configs/L2_B3_seed44.yaml": "8c7f462f54a2ea472148e83f9bd8ef0cc54d24a43e09c0184f56301a73fc1327"
+  }
+}

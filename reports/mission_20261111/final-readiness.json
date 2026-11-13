@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "notebook_cells": 7,
+  "code_cells_compiled": true,
+  "prolonged_gpu_disabled_by_default": true,
+  "conversion_and_consolidation_filesystem_span_seconds": 1199.5797204971313,
+  "finalization_filesystem_span_seconds": 48.57014179229736,
+  "scope": "observed artifact timestamps; excludes interpreter startup before first artifact"
+}

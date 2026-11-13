@@ -6,6 +6,7 @@ tiles is mathematically identical to pooling reconstructed complete scenes.
 from __future__ import annotations
 
 import time
+import uuid
 from pathlib import Path
 
 import numpy as np
@@ -51,9 +52,15 @@ def _macro(rows):
 def evaluate(model, store, config, device, directory, *, threshold=None, criterion=None):
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=False)
+    scratch = directory
+    if config.get('evaluation_scratch_root'):
+        scratch = Path(config['evaluation_scratch_root'])/uuid.uuid4().hex
+        scratch.mkdir(parents=True, exist_ok=False)
+    def ap(name):
+        return ExternalAveragePrecision(scratch/name, retain_runs=not config.get('evaluation_cleanup_runs', False))
     thresholds = sorted(set(config["thresholds"])) if threshold is None else [threshold]
-    global_ap = ExternalAveragePrecision(directory/"global_ap")
-    ignition_ap = ExternalAveragePrecision(directory/"ignition_ap")
+    global_ap = ap('global_ap')
+    ignition_ap = ap('ignition_ap')
     pooled, ignition = Counts(thresholds), Counts(thresholds)
     events, windows = {}, []
     model.eval()
@@ -62,10 +69,10 @@ def evaluate(model, store, config, device, directory, *, threshold=None, criteri
     for i, w in enumerate(store.windows):
         event_id = w.event_id
         if event_id not in events:
-            events[event_id] = (Counts(thresholds), ExternalAveragePrecision(directory/f"event_{len(events):04d}"))
+            events[event_id] = (Counts(thresholds), ap(f"event_{len(events):04d}"))
         event_counts, event_ap = events[event_id]
         window_counts = Counts(thresholds)
-        window_ap = ExternalAveragePrecision(directory/f"window_{i:06d}")
+        window_ap = ap(f"window_{i:06d}")
         coordinates = tile_coordinates(*store.shapes[i], config["patch_size"])
         for offset in range(0, len(coordinates), config["eval_batch_size"]):
             t = time.perf_counter()

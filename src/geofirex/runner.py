@@ -52,6 +52,9 @@ DEFAULTS = {
     "checkpoint_upload_budget_bytes": 0, "checkpoint_private_free_bytes": 0,
     "feature_availability": "",
     "max_run_seconds": 0,
+    "window_manifest": "",
+    "corpus_scope": "complete", "normalization_artifact": "", "normalization_sha256": "",
+    "evaluation_scratch_root": "", "evaluation_cleanup_runs": False,
 }
 
 
@@ -74,6 +77,10 @@ def load_config(path, overrides=None):
         raise ValueError("Models B0..B3 and contexts 1/3/5 only")
     if c["qualification"] not in {"diagnostic", "pilot", "scientific"}:
         raise ValueError("Invalid qualification")
+    if c['corpus_scope'] not in ('complete', 'train_validation'):
+        raise ValueError('Unsupported corpus scope')
+    if bool(c['normalization_artifact']) != bool(c['normalization_sha256']):
+        raise ValueError('Cached normalization requires an explicit artifact and SHA256')
     for key in ("epochs", "samples_per_epoch", "batch_size", "eval_batch_size", "patch_size",
                 "cpu_threads", "preflight_steps"):
         if not isinstance(c[key], int) or isinstance(c[key], bool) or c[key] < 1:
@@ -114,6 +121,10 @@ def load_config(path, overrides=None):
     c["data_roots"] = [str((ROOT/p).resolve()) for p in c["data_roots"]]
     if c["feature_availability"]:
         c["feature_availability"] = str((ROOT/c["feature_availability"]).resolve())
+    if c['window_manifest']:
+        c['window_manifest'] = str((ROOT/c['window_manifest']).resolve())
+    if c['normalization_artifact']:
+        c['normalization_artifact'] = str((ROOT/c['normalization_artifact']).resolve())
     from geofirex.feature_profiles import feature_profile
     feature_profile(c)
     return c
@@ -177,7 +188,7 @@ def snapshot(out):
 def semantic_config(c):
     runtime = {"device", "amp", "cpu_threads", "workers", "output_root", "tracking_uri", "artifact_root",
                "mlflow_enabled", "experiment", "storage_policy", "data_root", "data_roots", "manifest", "split", "index", "reader_cache_mb",
-               "checkpoint_dataset", "checkpoint_every_epochs", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "feature_availability", "max_run_seconds"}
+               "checkpoint_dataset", "checkpoint_every_epochs", "checkpoint_upload_budget_bytes", "checkpoint_private_free_bytes", "feature_availability", "max_run_seconds", "window_manifest", "normalization_artifact", "evaluation_scratch_root", "evaluation_cleanup_runs"}
     return {k: v for k, v in c.items() if k not in runtime}
 
 
@@ -371,10 +382,16 @@ def train(c, resume=None, *, stop_after_epochs=None):
     write_json(out/"data_audit.json", audit)
     for key in ("manifest", "split", "index"):
         shutil.copy2(c[key], out/(key+Path(c[key]).suffix))
+    if c.get('window_manifest'):
+        shutil.copy2(c['window_manifest'], out/'windows.parquet')
     from geofirex.feature_profiles import availability_hash, feature_profile
     profile = feature_profile(c)
-    norm = fit_fold_normalizer(data.groups["train"][5], clip=c["normalization_clip"],
-                               continuous=profile["continuous"], landcover=profile["landcover"])
+    if c.get('normalization_artifact'):
+        from geofirex.gpu_operational import load_training_normalizer
+        norm = load_training_normalizer(c, data)
+    else:
+        norm = fit_fold_normalizer(data.groups["train"][5], clip=c["normalization_clip"],
+                                   continuous=profile["continuous"], landcover=profile["landcover"])
     write_json(out/"features.json", {"policy": c["feature_policy"], "channels": norm.channel_names,
                                     "availability_sha256": availability_hash(c)})
     write_json(out/"normalization.json", norm.to_dict())
@@ -640,6 +657,8 @@ def final_test(run_dir, lock_path):
     if entry is None or any(sha256_file(run_dir/name) != h for name, h in entry["files"].items()):
         raise ValueError("Run is not selected or a locked artifact was modified")
     c = json.loads((run_dir/"config.json").read_text(encoding="utf-8"))
+    if c.get('corpus_scope') == 'train_validation':
+        raise ValueError('Test is inaccessible in a train/validation-only deployment')
     summary = json.loads((run_dir/"summary.json").read_text(encoding="utf-8"))
     device = choose_device(c["device"])
     torch.set_num_threads(c["cpu_threads"])

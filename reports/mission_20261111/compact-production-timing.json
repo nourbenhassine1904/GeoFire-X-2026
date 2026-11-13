@@ -1,0 +1,14 @@
+{
+  "filesystem_observed_span_seconds": 1111.4097683429718,
+  "scope": "first partition normalization artifact creation to last partition verification receipt; excludes process import/startup and root finalization",
+  "worker_conversion_seconds": [
+    1110.2901595000003,
+    1099.5804418999996,
+    1070.4308671
+  ],
+  "worker_conversion_peak_rss_bytes": [
+    621744128,
+    619548672,
+    613076992
+  ]
+}

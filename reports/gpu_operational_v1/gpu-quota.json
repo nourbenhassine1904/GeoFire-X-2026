@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-03T16:37:38.338354+00:00",
+  "used_seconds": 9072.533889,
+  "reserved_seconds": 0.0,
+  "allowed_seconds": 108000.0,
+  "pay_to_scale": false,
+  "reset_time": "2026-11-07 00:00:00"
+}

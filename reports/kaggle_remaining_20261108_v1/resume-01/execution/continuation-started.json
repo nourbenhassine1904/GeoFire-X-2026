@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-09T21:57:57.303651+00:00",
+  "same_resume": "resume-01",
+  "reason": "Accepted upload/create; transient catalogue indexing reconciled; lot002 CPU certified",
+  "first_new_upload_lot": 3,
+  "lot002_upload_repetition_forbidden": true,
+  "current_reserved_body_bytes": 4995735202,
+  "initial_memory": {
+    "total": 16837500928,
+    "available": 6565736448,
+    "load_percent": 61,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 22623027200,
+    "commit_used_bytes": 14615568384
+  },
+  "autonomous": true,
+  "start_memory_bytes": 3221225472
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PREPARED_AND_LOCALLY_VERIFIED",
+  "real_checkpoint_metrics": "PENDING_KAGGLE_EXECUTION",
+  "tests_passed": 7,
+  "training_executed": false,
+  "upload_executed": false,
+  "commit_or_push": false,
+  "files": {
+    "GEOFIREX_B1_B2_CALIBRATION_20261112.ipynb": {
+      "bytes": 40698,
+      "sha256": "ee4a4355fdee6c31bef9a8ed8bcaaa29a935c9941ce51efd829ea6edf632bd91"
+    },
+    "calibration-code.zip": {
+      "bytes": 22443,
+      "sha256": "659ccf0e07c494c3a4c93d527af13054e68019f74bd71c8c86458601b32fa61f"
+    },
+    "source-manifest.json": {
+      "bytes": 1982,
+      "sha256": "fbb38849499e905eb2eabd0fc259ddc0dfe10eed0ed91bd934db1f83911e0133"
+    },
+    "dataset-sources.json": {
+      "bytes": 531,
+      "sha256": "8c1059a0bc9590b3f5725d6decc234fa079350d7bf68b4d66c27415b6ae73be9"
+    },
+    "kernel-metadata.json": {
+      "bytes": 937,
+      "sha256": "038c73fa8ea03f23a874b967eb09b6552c0b220fe5ff91f9f980b6984ce824a2"
+    },
+    "requirements-calibration.txt": {
+      "bytes": 51,
+      "sha256": "4ed24d8fef2c6d7137e417613fa73b5c41cbecc9c7220602ace30e148b59fe1d"
+    },
+    "EXECUTION.md": {
+      "bytes": 8957,
+      "sha256": "e2e3f926b091179729d5f27c3ac69c9889e7465c3fbafadce98c2c9f650c9e42"
+    },
+    "DIAGNOSTIC.md": {
+      "bytes": 6461,
+      "sha256": "059b2ce2e448a59b5ce18af20586bd6a6412d4d28cb359870554f7b094c7db81"
+    },
+    "APPLICATION.md": {
+      "bytes": 2894,
+      "sha256": "e4f87572d315edc14a1b393d2c9425a915c547d42e2bfa19c5204159c7b744d0"
+    },
+    "VALIDATION.md": {
+      "bytes": 2199,
+      "sha256": "5222696762c6920393b2dc27cefd3985404684f4a1f3dbbfce8555ad9a1bc539"
+    },
+    "tests.xml": {
+      "bytes": 1160,
+      "sha256": "109fa09221d47ba5cbf9aef167c27de797c2c9c010345a4cf6e9f93a956887c7"
+    },
+    "local-loader-verification.json": {
+      "bytes": 1328,
+      "sha256": "6294fae71915fdbc66ddeaf4e794fcf41424e8e38e88abee7790ac2514fbf2ab"
+    }
+  }
+}

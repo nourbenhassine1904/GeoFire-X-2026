@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_SHA256_CRC_SIZE_MATCH",
+  "members": 13607,
+  "certificate": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\.extraction-session\\complete-e285d40057b44a488b9baee10afe7c22.json",
+  "certificate_sha256": "96fc830c716437d0a390c490ecfb8d1d76d3831f6df7190cd2497020654d088f",
+  "archive_md5": "dc1a04e63ccc70037b277d585b8fe761",
+  "archive_md5_status": "VERIFIED",
+  "archive_note": "Previously certified; no repeat read of the ZIP in this integration"
+}

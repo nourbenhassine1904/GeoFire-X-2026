@@ -1,0 +1,40 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "reports/kaggle_blob_validation_20261108_v1/verify_delivery.py"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5856509952,
+    "load_percent": 65,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18104627200,
+    "commit_used_bytes": 19133968384
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 268435456,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T23:50:59.918169+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 51488,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.26600000000325963,
+  "peak_tree_rss_bytes": 2260992,
+  "peak_sampled_private_commit_bytes": 503808,
+  "peak_job_commit_bytes": 11747328,
+  "peak_owned_processes": 1,
+  "minimum_available_bytes": 5849088000,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 5848403968,
+    "load_percent": 65,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18107514880,
+    "commit_used_bytes": 19131080704
+  }
+}

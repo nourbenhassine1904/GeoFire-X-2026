@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="38.426" timestamp="2026-11-07T14:10:59.229284+01:00" hostname="NourBh"><testcase classname="tests.test_runner" name="test_resume_across_changed_readonly_mount_paths" time="32.454" /></testsuite></testsuites>

@@ -1,0 +1,8 @@
+{
+  "payload_bytes": 9845585072,
+  "report_bytes": 1430,
+  "manifest_bytes": 80608,
+  "exact_application_file_bytes": 9845667110,
+  "protocol_overhead": "unknown; transport and retry dependent",
+  "upload_executed": false
+}

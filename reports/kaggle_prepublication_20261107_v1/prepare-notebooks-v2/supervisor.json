@@ -1,0 +1,44 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/prepare_kaggle_certification_notebooks.py",
+    "--out",
+    "reports/kaggle_prepublication_20261107_v1/cpu-certification-v2",
+    "--frozen",
+    "reports/recovery_20261107_v3/finalized"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 4411416576,
+    "load_percent": 73,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18296647680,
+    "commit_used_bytes": 18941947904
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 536870912,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T14:39:40.949811+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 48800,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.26599999999962165,
+  "peak_tree_rss_bytes": 2260992,
+  "peak_sampled_private_commit_bytes": 507904,
+  "peak_job_commit_bytes": 11710464,
+  "peak_owned_processes": 1,
+  "minimum_available_bytes": 4410941440,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 4401614848,
+    "load_percent": 73,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18265452544,
+    "commit_used_bytes": 18973143040
+  }
+}

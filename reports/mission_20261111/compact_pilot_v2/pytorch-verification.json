@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "batch_shape": [
+    4,
+    3,
+    8,
+    64,
+    64
+  ],
+  "original_comparisons": 3,
+  "all_day_first_tile_roundtrips": 340,
+  "torch_version": "2.15.0+cpu"
+}

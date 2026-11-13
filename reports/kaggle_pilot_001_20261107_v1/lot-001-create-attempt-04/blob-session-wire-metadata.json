@@ -1,0 +1,19 @@
+{
+  "response_form": "mapping",
+  "createUrl_present": true,
+  "create_url_present": false,
+  "token_field_present": true,
+  "alias_conflict": false,
+  "wire_snake_only": false,
+  "url_type": "string",
+  "url_nonempty": true,
+  "token_type": "string",
+  "token_nonempty": true,
+  "url_scheme": "https",
+  "url_has_userinfo": false,
+  "url_has_fragment": false,
+  "url_has_backslash": false,
+  "url_has_whitespace": false,
+  "url_host": "www.googleapis.com",
+  "url_port": null
+}

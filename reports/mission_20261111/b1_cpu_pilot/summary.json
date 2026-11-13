@@ -1,0 +1,64 @@
+{
+  "status": "FINISHED",
+  "device": "cpu",
+  "epochs_completed": 2,
+  "train_samples_seen": 6900,
+  "optimizer_updates": 432,
+  "history": [
+    {
+      "epoch": 1,
+      "complete_epoch": true,
+      "train_samples_seen": 3450,
+      "total_train_samples_seen": 3450,
+      "optimizer_updates": 216,
+      "train_loss": 0.6663180836114072,
+      "validation": {
+        "dice": 0.2750441306266549,
+        "iou": 0.15944995203070036,
+        "precision": 0.2407067683692189,
+        "recall": 0.32080813280144127,
+        "tp": 2493,
+        "fp": 7864,
+        "fn": 5278,
+        "pixels": 8351749,
+        "positive_pixels": 7771,
+        "prevalence": 0.0009304637866870759,
+        "brier": 0.0025935943335074407,
+        "average_precision": 0.1395173567071111,
+        "loss": 0.6052753727493422,
+        "samples_seen": 2575
+      },
+      "elapsed_seconds": 145.25407599999926
+    },
+    {
+      "epoch": 2,
+      "complete_epoch": true,
+      "train_samples_seen": 3450,
+      "total_train_samples_seen": 6900,
+      "optimizer_updates": 432,
+      "train_loss": 0.5979482748313371,
+      "validation": {
+        "dice": 0.31637365911799764,
+        "iou": 0.1879120392902969,
+        "precision": 0.22262410232216806,
+        "recall": 0.5465191095097156,
+        "tp": 4247,
+        "fp": 14830,
+        "fn": 3524,
+        "pixels": 8351749,
+        "positive_pixels": 7771,
+        "prevalence": 0.0009304637866870759,
+        "brier": 0.0027780254046444654,
+        "average_precision": 0.180657644269648,
+        "loss": 0.583691558868196,
+        "samples_seen": 2575
+      },
+      "elapsed_seconds": 324.3172945999995
+    }
+  ],
+  "elapsed_seconds": 324.32411649999995,
+  "peak_rss_bytes": 503091200,
+  "gpu_peak_allocated_bytes": null,
+  "best_validation_ap": 0.180657644269648,
+  "best_epoch": 2
+}

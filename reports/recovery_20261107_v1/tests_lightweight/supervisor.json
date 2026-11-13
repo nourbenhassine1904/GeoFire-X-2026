@@ -1,0 +1,28 @@
+{
+  "status": "PREFLIGHT_LOW_MEMORY",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_recovery_tools.py",
+    "-v"
+  ],
+  "pid": null,
+  "required_available_bytes": 1073741824,
+  "before": {
+    "memory": {
+      "total": 16837500928,
+      "available": 911958016,
+      "load_percent": 94
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903564414976,
+      "free": 119188299776
+    }
+  }
+}

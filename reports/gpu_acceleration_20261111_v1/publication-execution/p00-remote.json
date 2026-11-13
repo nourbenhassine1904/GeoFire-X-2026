@@ -1,0 +1,51 @@
+{
+  "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+  "handle": "nnnnbhss/geofirex-compact-t3-20261111-p00",
+  "private": true,
+  "version": 1,
+  "basis": "Complete consistent authenticated owner catalogues",
+  "GetDataset_required": false,
+  "files": [
+    {
+      "name": "index__index.json.bin",
+      "bytes": 48584
+    },
+    {
+      "name": "index__train.npy.bin",
+      "bytes": 1029825
+    },
+    {
+      "name": "index__val.npy.bin",
+      "bytes": 866673
+    },
+    {
+      "name": "mount-map.json",
+      "bytes": 1714
+    },
+    {
+      "name": "normalization.json.bin",
+      "bytes": 425833
+    },
+    {
+      "name": "publication_identity.json",
+      "bytes": 171
+    },
+    {
+      "name": "report.json.bin",
+      "bytes": 1430
+    },
+    {
+      "name": "samples.json.bin",
+      "bytes": 148104920
+    },
+    {
+      "name": "shards.json.bin",
+      "bytes": 101207586
+    },
+    {
+      "name": "transfer-manifest.json.bin",
+      "bytes": 80608
+    }
+  ],
+  "all_filenames_and_sizes_match": true
+}

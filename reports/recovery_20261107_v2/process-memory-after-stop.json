@@ -1,0 +1,62 @@
+﻿[
+    {
+        "Id":  2220,
+        "ProcessName":  "Code",
+        "WorkingSet64":  797523968
+    },
+    {
+        "Id":  13268,
+        "ProcessName":  "Code",
+        "WorkingSet64":  357179392
+    },
+    {
+        "Id":  21984,
+        "ProcessName":  "chrome",
+        "WorkingSet64":  356614144
+    },
+    {
+        "Id":  17864,
+        "ProcessName":  "Code",
+        "WorkingSet64":  345018368
+    },
+    {
+        "Id":  17712,
+        "ProcessName":  "Taskmgr",
+        "WorkingSet64":  294461440
+    },
+    {
+        "Id":  18756,
+        "ProcessName":  "Code",
+        "WorkingSet64":  280186880
+    },
+    {
+        "Id":  17976,
+        "ProcessName":  "chrome",
+        "WorkingSet64":  196714496
+    },
+    {
+        "Id":  8608,
+        "ProcessName":  "Code",
+        "WorkingSet64":  166731776
+    },
+    {
+        "Id":  7940,
+        "ProcessName":  "explorer",
+        "WorkingSet64":  147472384
+    },
+    {
+        "Id":  18964,
+        "ProcessName":  "PhoneExperienceHost",
+        "WorkingSet64":  145502208
+    },
+    {
+        "Id":  18704,
+        "ProcessName":  "SnippingTool",
+        "WorkingSet64":  132665344
+    },
+    {
+        "Id":  19348,
+        "ProcessName":  "ChatGPT",
+        "WorkingSet64":  127393792
+    }
+]

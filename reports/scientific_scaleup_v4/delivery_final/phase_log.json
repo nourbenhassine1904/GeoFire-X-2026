@@ -1,0 +1,153 @@
+[
+  {
+    "Phase": "A",
+    "Objectif": "Auditer Git et les contrats existants",
+    "Statut": "r\u00e9alis\u00e9",
+    "Fichiers_inspectes": "README/docs/configs/src/scripts/tests/frontend/manifests/splits",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "Audit technique dans le rapport; historique conserv\u00e9",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Traiter les \u00e9carts documentaires avant benchmark d\u00e9finitif",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "B",
+    "Objectif": "Mesurer la raret\u00e9 sur fichiers certifi\u00e9s",
+    "Statut": "ex\u00e9cut\u00e9",
+    "Fichiers_inspectes": "manifest pilote, index, runner_data, windows",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "108 TIFF, 5 \u00e9v\u00e9nements; 52 jours sans d\u00e9tection; domaine val 1736/4190163",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "\u00c9tendre le QC apr\u00e8s acquisition",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "C",
+    "Objectif": "Pr\u00e9parer 80/200/451 \u00e9v\u00e9nements complets",
+    "Statut": "pr\u00e9par\u00e9 non approuv\u00e9",
+    "Fichiers_inspectes": "index ZIP, corpus/cloud_corpus, inventaires locaux et preuves historiques",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "Plans exacts et simulation80; aucun transfert",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Choisir destination et approuver un nouveau budget",
+    "Autorisation_necessaire": true,
+    "Budget_exact": [
+      {
+        "target_events": 80,
+        "additional_payload_bytes": 5741850510,
+        "proposed_transfer_cap_bytes": 6611516695
+      },
+      {
+        "target_events": 200,
+        "additional_payload_bytes": 14539037757,
+        "proposed_transfer_cap_bytes": 16728282029
+      },
+      {
+        "target_events": 451,
+        "additional_payload_bytes": 33536994440,
+        "proposed_transfer_cap_bytes": 38575932214
+      }
+    ]
+  },
+  {
+    "Phase": "D",
+    "Objectif": "Figer les contrats multimodaux",
+    "Statut": "contrats test\u00e9s; disponibilit\u00e9 \u00e9tendue bloqu\u00e9e",
+    "Fichiers_inspectes": "feature_profiles, unet_data, real_constants, DATA_AUDIT",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "8/36/50 canaux; matrice23 bandes; aucune nouvelle disponibilit\u00e9 affirm\u00e9e",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Revoir la provenance temporelle des produits",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "E",
+    "Objectif": "Relier m\u00e9tadonn\u00e9es et PyTorch",
+    "Statut": "d\u00e9velopp\u00e9 test\u00e9 localement",
+    "Fichiers_inspectes": "Spark historique, sch\u00e9mas Parquet et TemporalStore",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "108 lignes QC, 249 lignes fen\u00eatres; roundtrip et consommation PyTorch",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Brancher cet adaptateur dans le futur runner sous protocole explicite",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "F",
+    "Objectif": "Pr\u00e9parer les budgets et configurations GPU",
+    "Statut": "pr\u00e9par\u00e9 non approuv\u00e9",
+    "Fichiers_inspectes": "runner, mod\u00e8les, configs pilote, quota historique",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "16 YAML valid\u00e9s; aucun job soumis; dur\u00e9e et quotas actuels inconnus",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Profil born\u00e9 \u00e0 budg\u00e9ter apr\u00e8s certification du palier",
+    "Autorisation_necessaire": true,
+    "Budget_exact": "GPU non chiffrable avant profil/quota; aucun budget implicite"
+  },
+  {
+    "Phase": "G",
+    "Objectif": "Pr\u00e9parer \u00e9valuation et analyse erreurs",
+    "Statut": "outils existants audit\u00e9s; aucune nouvelle \u00e9valuation mod\u00e8le",
+    "Fichiers_inspectes": "benchmark_metrics, runner_evaluation, r\u00e9sultats historiques",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "Comparabilit\u00e9/domaine valid\u00e9s; aucune am\u00e9lioration ni m\u00e9trique2021",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Analyse des futurs runs de m\u00eame protocole",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "H",
+    "Objectif": "Maintenir la d\u00e9monstration stable",
+    "Statut": "conserv\u00e9; aucune modification application",
+    "Fichiers_inspectes": "serving, frontend, DEMO_SUIVI3, GPU_PILOT",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "Preuves historiques conserv\u00e9es; pas de nouveau test navigateur",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Pr\u00e9senter les figures et cas de raret\u00e9 avec la d\u00e9mo existante",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  },
+  {
+    "Phase": "I",
+    "Objectif": "V\u00e9rifier et livrer sans alt\u00e9ration",
+    "Statut": "r\u00e9alis\u00e9",
+    "Fichiers_inspectes": "nouveaux sources, XML de tests, hashes historiques/sorties",
+    "Fichiers_modifies": "nouveaux fichiers scientifiques et reports uniquement",
+    "Commandes_executees": "voir commandes de reproduction et execution.json; aucun transfert/GPU",
+    "Tests": "XML scientific_scaleup_tests_v3 et scientific_scaleup_tests_delivery; pas de nouvelle validation navigateur",
+    "Resultats_mesures": "64 tests \u00e9largis pass\u00e9s/2 ignor\u00e9s; tests finaux s\u00e9par\u00e9s; pr\u00e9servation v\u00e9rifi\u00e9e",
+    "Artefacts_produits": "reports\\scientific_scaleup_v4",
+    "Limites_et_risques": "pilote5 \u00e9v\u00e9nements; donn\u00e9es non acquises non analys\u00e9es; quotas/co\u00fbts cloud inconnus",
+    "Etape_suivante": "Revue des livrables puis autorisations distinctes acquisition/GPU/Git",
+    "Autorisation_necessaire": false,
+    "Budget_exact": null
+  }
+]

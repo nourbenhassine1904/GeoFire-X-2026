@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "renderer": "ReactDOMServer, real saved diagnostics",
+  "events": 169,
+  "map_layers": 5,
+  "html_bytes": 31153,
+  "browser_interactive_test": false
+}

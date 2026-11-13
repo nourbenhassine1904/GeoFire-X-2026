@@ -1,0 +1,702 @@
+[
+  {
+    "path": "2018/fire_21458798/2018-01-01.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3104767,
+    "sha256": "d262dfc1802ee5e936d43de9ec646569ad0fe28793433f93cb8a6319dcbe9413"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-02.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3144771,
+    "sha256": "2dfb1005eb6fd1aae58ebfaefb78863c4a0203135beb0ade4822882aa720175d"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-03.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3265320,
+    "sha256": "1807981a238265920d061e5ceb2e17393759b1b33e1001fa0fff952e13f7866c"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-04.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3229324,
+    "sha256": "805b7fddbdcea2b8c2e984184871ead3d09bae01ce5d5bafad0c965a70ea665b"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-05.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3231658,
+    "sha256": "9427687077df677fcb7b7ac96cc1d6bb3fb5e72ac545de53498a70aaa5943964"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-06.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3225820,
+    "sha256": "4b8b6934110ab5d90cc8fea78b841f1b02c68bde0b976ea17f71e01804b022fc"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-07.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3279070,
+    "sha256": "c3e36f8bdf640c7811ae0d0343c538e0b4a573f7a46d88a8f6978d321b2f117d"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-08.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3318094,
+    "sha256": "6e6116b1f63bd769b2b2a7cc259afda6f6509512d27d17a94c2626b5b3400257"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-09.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3309452,
+    "sha256": "25560f30a96a64c2ebb4f28a2cde43849970baabcec059469c0dd73f813fa9e8"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-10.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3201167,
+    "sha256": "4057e8a9cae12e70e1038d37885c5afa8cfbdadcae08a268dc13aadb712f8d7c"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-11.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3175159,
+    "sha256": "6c6f7deeb64176947c7a3d14cf62388f8f680fa878a705c72a457a404879e06c"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-12.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3182170,
+    "sha256": "8cea99c16fbe96da86dd20272cb4101834615426a2e489ec002b4cb3515d97e8"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-13.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3182606,
+    "sha256": "7f5123741f8a5ec9bc39d1d4c1afd53ef34c5990a7dee3a63ee29e57c68f91c1"
+  },
+  {
+    "path": "2018/fire_21458798/2018-01-14.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3211719,
+    "sha256": "6a45a59ad7631c6478f33404ca01af05ceaf1bd1fae5eaf62dbfab28b75fdbdc"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-25.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4109702,
+    "sha256": "5689e832ce54d155e3e967723cbce6c2789103906cff011736617388fb2f3459"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-26.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4085462,
+    "sha256": "864c5c6bb89d07cbb77563f51210ae9d02e9c8637f65ba3de6e7e7be12a3a8c1"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-27.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4087820,
+    "sha256": "cc487b323a0d7a6ea682fa8324093168c659f647625f7381627cf9cb5594220f"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-28.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4111359,
+    "sha256": "46c0186569c9ba658c0972fb254a0c10a362e37595bd52a3c793512836e45860"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-29.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4106973,
+    "sha256": "260f0085cdf4e1ffeb61015b8dc9d88b5650103b64925968565374cdc4b149a7"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-30.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4100404,
+    "sha256": "bb044e15a7b97120c8739b7c47b0014ef967e646a9150601dbbf509349750d57"
+  },
+  {
+    "path": "2018/fire_21458801/2018-01-31.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4091926,
+    "sha256": "b9190245b600aa01974a960c56aaaa0a2fb1a4319cea8cfb7edcb6f761ca6bc4"
+  },
+  {
+    "path": "2018/fire_21458801/2018-02-01.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4091302,
+    "sha256": "0ef87ddc9b3e089d71a78cb08b393411bac08c8d3db6824f6703d78eaf46658a"
+  },
+  {
+    "path": "2018/fire_21458801/2018-02-02.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4082980,
+    "sha256": "6e9367d13b9258a9000013226d11a39f9f588fae8bdbe309fe9d64a4195240ac"
+  },
+  {
+    "path": "2018/fire_21458801/2018-02-03.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4104285,
+    "sha256": "b4748dc6e0e00989b0c8c0c6f86e220484b16dec02baeda2eef6627a9a197d07"
+  },
+  {
+    "path": "2018/fire_21458801/2018-02-04.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4113303,
+    "sha256": "531b211618668e0bcf9505d1b780d0e7be61d8c9f571e9eceb1544d564b47168"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-12.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3182898,
+    "sha256": "d4080fa075f10a4c3290fe6c551219402daca3b4dd6136943b34d127c0887165"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-13.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3181453,
+    "sha256": "294f4051e922c1613cc57797394ac086fd7b2613458a10cf2f33223a1b51d102"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-14.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3207849,
+    "sha256": "0342bb0c5e078602bdb7c4f517c7f1be4b88832df7def91e50f1fe5693f4ab58"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-15.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3172212,
+    "sha256": "dde793ae0cf460f841555da4b331b9797a97ada6e529573495c229430d29d2f9"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-16.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3150601,
+    "sha256": "5694869fcc9a3b99e0745341bc8a487e7de84af6a282db49b4987b571e11a9eb"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-17.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3137148,
+    "sha256": "e860a80a3463f5606861c85a301a7229648f50af40e64793d0f33d48a8e56125"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-18.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3265542,
+    "sha256": "a058cf619d10a8b06d1ab3614f0390f8dac33668ce70909fdf0df14258d9a895"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-19.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3214169,
+    "sha256": "1a353fa2fca0eb5e6b7808e0d444cdbc3891aacb60b87929cc7c4ea85fa2363c"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-20.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3203163,
+    "sha256": "7398a4053ec5d43758171808b413a19df8ae6cddecf553bf291ac740ce038a7f"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-21.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3167946,
+    "sha256": "fdd83e7eb3380862ff613d4b2938914f1a27c5162523654f1f9ab4bfc0ccf13e"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-22.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3149962,
+    "sha256": "3dee30517dfaeb9f659e62d400b638d2fe95dfb46152df958f22b611afb58e33"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-23.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3200430,
+    "sha256": "0eaf79b115dacdfc4fabfac251523aaf40d35bd2c18b8475e4aa2bf847d7ba34"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-24.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3237201,
+    "sha256": "00159bd07d77b0409ac1b1f1c64f34ccef00a4c3bc559f94420466117f33a36b"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-25.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3228008,
+    "sha256": "d1c0b8b68e1db8268330a03db18c19e15601aa89ec5db63743f02a7ddd51ee76"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-26.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3169517,
+    "sha256": "1884ec126ce2d694dfc0d9c7d07ef2b17cf8817b55e7728473930977c66ec36b"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-27.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3157160,
+    "sha256": "06fe04f9fe21458a5552ce47e85cf5650c1e1a90d455345357befcba026f3d9f"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-28.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3146236,
+    "sha256": "95c0a3d22bb3c876813e13b9f4cc1b7b5aec3f85c90d5c19e8423d79d2a4bbb5"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-29.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3134061,
+    "sha256": "379cc2c8331cd3effd7418aee5e7e7a79e3c7609d543893d515295d85660567d"
+  },
+  {
+    "path": "2018/fire_21458806/2018-01-30.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3151837,
+    "sha256": "0d229150b2f738a93eeb6207cd1c3dcc1dd1475612389a2037d37a4d3735eccd"
+  },
+  {
+    "path": "2018/fire_21458836/2017-12-29.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3363155,
+    "sha256": "0e5f80eba8b3ec349c3acda5b5d93ba2ee6bfba97deb106710edb2f80ce97808"
+  },
+  {
+    "path": "2018/fire_21458836/2017-12-30.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 2787063,
+    "sha256": "b660fda1dddae911f5d7ecf5278be325c8957a0b251d54e48bf91dbcbc13c37f"
+  },
+  {
+    "path": "2018/fire_21458836/2017-12-31.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3349242,
+    "sha256": "cb993c48921db12f3c5b435ccc5a5a7fa2cd1ce0477b0b4c2779f83c660286db"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-01.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3333498,
+    "sha256": "6cb30b80961092f0c43d10b0260709b4760c70c800048f89defa5acc8dbcb736"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-02.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3383425,
+    "sha256": "5ef177aeceb39942af94a7e2dbe80b8b99b78caa17b6bc84d4d2b5ebe7d88619"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-03.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3487967,
+    "sha256": "806c63e3ca7faf1242880f16c5179b44ad77ee325a6eab731384ed99a5605aab"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-04.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3430712,
+    "sha256": "dd984707ffaf080205e4001b47536512d18641cfe2e02c96d693bfc3e186c8df"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-05.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3423379,
+    "sha256": "c66a0e650134a698286b60a8059984753bb35bedc84a6dd6f6ff0ed46271e3cf"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-06.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3375370,
+    "sha256": "3e2069e84346be232c109cf099c8d2e1e225977f178ac41a0eadc4f811eae7d3"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-07.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3468931,
+    "sha256": "a42891f52723f0d9656a2773e62b51ce623e98cf51be8bd6543139ee54f2bdc7"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-08.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3511327,
+    "sha256": "293d20525269647a04854f271b1dd63a7e9d481fc4bdc44e5f114d0207dc8f10"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-09.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3536735,
+    "sha256": "be175484a464dab35cedd2d49e93a36f872c5fe4c509c375d88f184f1382bd89"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-10.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3507451,
+    "sha256": "b5c217b45e77de7e90206427c67a96088b30480b976d7210105ba1e15fb4971d"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-11.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3391469,
+    "sha256": "2c65abc213a7887ecc557c812cd80dccf89cc3f38c772baec1721b490d2fd5e1"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-12.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3396137,
+    "sha256": "ef2c0a4b7870b38ac3cf08ffd8c8bf9beb7231b692e32123cc968cb1546622a7"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-13.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3407910,
+    "sha256": "253df26963d219f8e9e2c2728acaa5e3b12ad8b54551e123540c9e2d6b042e12"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-14.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3399834,
+    "sha256": "ed3fd18336962471b0e089ae339022aca22dadbc26c8160319363a18ce070000"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-15.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3402263,
+    "sha256": "e0844cc6b4044576e1c23f46cbbca3d25dcd015bc468905a3ebd9aa12c31a348"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-16.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3373285,
+    "sha256": "4e81e00c84f06aca836110b4c06cb7bcb45ebf58366dfae4a532ff8a18855337"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-17.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3368049,
+    "sha256": "ba58e84c3e5726103480d7eee65a155347978932cec8c57ba16d1488cbfd9ccb"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-18.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3471675,
+    "sha256": "a5744c6ddb2e73ba1f25e605078f70d875aa8b7c278a2543869e895eac3f8d43"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-19.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3501773,
+    "sha256": "f8477f25388ec7ca4113814afe1384fdeaa0f3f7da71fffc1bcc0082cd8778d0"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-20.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3415523,
+    "sha256": "6c61e0b60d9bdcef0a725fc19917a40c50e1164414891ae8bf6c1d53bc1abf5d"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-21.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3369173,
+    "sha256": "3257775b01e27a5c98ab954e6f101be9a0a76fbd6c8aeb8688169a5dc3f8c1e2"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-22.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3350166,
+    "sha256": "192f77a8204fc45c57907bbc7400eff66fb6b81b9374c953d4041fb5074287e0"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-23.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3363895,
+    "sha256": "8d6091f6190061e9baf2e22f4551df17c1ff22ed3390440e2754aab3630e57c2"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-24.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3427143,
+    "sha256": "8d639945972c0046e09e25124fb7085f814517a7dd59672cbc1b5b7653e7d7b3"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-25.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3504024,
+    "sha256": "3c7deb09adc05a0b54907e96c5d0fa6e12e343151a1601f5783484b063e1542b"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-26.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3366472,
+    "sha256": "0f372ae4f44438fd4132d41d3ff8958d33ef104fabfb315ed6b7b40d88b6c5a9"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-27.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3342682,
+    "sha256": "725286b5c3d6dbe3eb367ac715afa6d4dc7f3ff421db7c43d76d684437f01ce9"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-28.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3364077,
+    "sha256": "77b466df4cdb051f5809a3e277a4a77f300e2dbaf0c30ad9e60a35e420bfd69f"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-29.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3339216,
+    "sha256": "8102a29e37c5415dbdc48f46bf356d32354a6e6b9344d469709ed41102a4516e"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-30.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3360386,
+    "sha256": "1aa579b236d1213cc694b449a3663ee80c283cfe31cf52f5d9803246602a53b5"
+  },
+  {
+    "path": "2018/fire_21458836/2018-01-31.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3343246,
+    "sha256": "1332249e845ef3d09692bec52937d367ce45656bd612fd3bfb1a8a198cfc29a0"
+  },
+  {
+    "path": "2018/fire_21458836/2018-02-01.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 3330032,
+    "sha256": "5b6beb463e5005ed0b92a4ce5426672b5dc5719893da7d37072db728daa2b149"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-21.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4275218,
+    "sha256": "96e2b062f997e4f7a0301cc95f96943c939b86208c2628f0bcd144576bd9b3ae"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-22.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4253467,
+    "sha256": "1c561321db0b532098d2eed2b8c3aef8840f2fa95d79a223c6b5071d318c33de"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-23.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4264868,
+    "sha256": "c63fbc069ac49a4dc507cec539578cba844bd2ac6afc6e6512606fdc0db57720"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-24.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4231828,
+    "sha256": "d9bbe641808d4929a2dc9b4964589d4e7eb9d65c55b4117116326fea96edb532"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-25.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4241913,
+    "sha256": "2667ce9a6786aab61f36a4309777feb34af611fe315846de21739262bb2a7c98"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-26.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4217296,
+    "sha256": "a02211e4e3e1814195f0ae058d26ba24e6f731d01db22d9faca3ab1c63ee458b"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-27.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4218926,
+    "sha256": "9341d6096830d15f03e80e4dbb6f36993f7e977f05f8f9d2f2a9dd2e2ea1099c"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-28.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4245654,
+    "sha256": "0c710e02405ac868196e581969ed44e95891682a4d51c1c60c03d0be92e2cda9"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-29.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4221780,
+    "sha256": "228c5b3c59b48fd42cea82442871f1af062e2ef6a430ca3d11af4b73579e0141"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-30.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4218960,
+    "sha256": "751f6c38d158224584416b593f902d6629ab2b13d9c89b67569be71045b8a0ad"
+  },
+  {
+    "path": "2018/fire_21458848/2018-01-31.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4205932,
+    "sha256": "87150d24f532b5c3f544400ee32614e117b67b89b4512df97214aa92fb18d1aa"
+  },
+  {
+    "path": "2018/fire_21458848/2018-02-01.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4200971,
+    "sha256": "c9034dc79ddc989381821b4cff712b4c3ac6b0b814514f2b791c9ee76f6be446"
+  },
+  {
+    "path": "2018/fire_21458848/2018-02-02.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4229549,
+    "sha256": "dfef12959b9561421d1911fff83c54255a5f41f3a3805d584c479cf9cf9ad30a"
+  },
+  {
+    "path": "2018/fire_21458848/2018-02-03.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4238154,
+    "sha256": "31e2d6d18e29c87347ff92369d307629a268315638a9f62e77327b8a1c12d617"
+  },
+  {
+    "path": "2018/fire_21458848/2018-02-04.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4219576,
+    "sha256": "f20545c72b413110d85129ceef14c0b15c98a8912b243c3ba9857bd2fe341e0b"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-22.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4199251,
+    "sha256": "03a150e0da87d59d4d08005d580fd7f11de7b9b1214c98ff37509904701cc12c"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-23.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4169580,
+    "sha256": "15bee1626c4884f9eded4a33f4713debde5c9f130e78885f467750843e4d199d"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-24.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4180778,
+    "sha256": "67b88f98d8eb04b0e64ba63918f113c5770bb536e4817e190bc13ba722babb4a"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-25.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4303783,
+    "sha256": "030b1b4e0df67ec068b82278787ee6385ae02063e969b8272a43b32302e736e4"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-26.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4155240,
+    "sha256": "bbe1ea63797963d74daff969d90d36b899872cd4daff1080e7e38c51e19395e9"
+  },
+  {
+    "path": "2018/fire_21459234/2018-01-27.tif",
+    "root": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "crc_verified": true,
+    "bytes": 4145781,
+    "sha256": "da7afe97e80b5fad2b5db2630fe98462101fc9f84d024118f78ccb65beaf8e55"
+  }
+]

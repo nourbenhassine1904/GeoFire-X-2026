@@ -1,0 +1,9 @@
+{
+  "status": "WAITING_FOR_3_GIB_FREE_RAM",
+  "memory": {
+    "total": 16837500928,
+    "available": 995221504,
+    "load_percent": 94
+  },
+  "children_started": 0
+}

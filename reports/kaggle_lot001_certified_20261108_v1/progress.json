@@ -1,0 +1,53 @@
+{
+  "status": "RUNNING",
+  "files_certified": 1269,
+  "bytes_certified": 4829474073,
+  "dataset": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81",
+  "anomalies": [],
+  "gpu_used": false,
+  "training": false,
+  "inventory": {
+    "manifest_files": 1269,
+    "actual_geotiffs": 1269,
+    "total_attached_files": 1270,
+    "events": 57,
+    "train_events": 57,
+    "years": [
+      "2018"
+    ],
+    "heldout_2021_files": 0,
+    "preview_reported_elements": 617,
+    "preview_is_complete_manifest": false,
+    "json_top_level_keys": 9,
+    "manifest_matches_local": true,
+    "inventory_sha256": "20ddf1cbaa2a9bf15a171b3cc32f786126f8f43ab89c4b5bd2443cc5300b8ee4",
+    "observation_year_counts": {
+      "2017": 3,
+      "2018": 1266
+    },
+    "folder_date_year_mismatches": [
+      {
+        "path": "2018/fire_21458836/2017-12-29.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-30.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-31.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      }
+    ],
+    "approved_2017_context": true,
+    "forbidden_2020_2021_observations": 0
+  },
+  "resources": {
+    "peak_rss_bytes": 348590080,
+    "minimum_available_bytes": 32064323584
+  }
+}

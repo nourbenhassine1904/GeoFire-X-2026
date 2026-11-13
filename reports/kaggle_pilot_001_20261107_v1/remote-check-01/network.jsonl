@@ -1,0 +1,3 @@
+{"operation": "GenerateAccessToken", "body_bytes": 121, "http_status": 200}
+{"operation": "IntrospectToken", "body_bytes": 160, "http_status": 200}
+{"operation": "GetDataset", "body_bytes": 73, "http_status": 403}

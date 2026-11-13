@@ -28,7 +28,7 @@ mlruns/
 mlartifacts/
 mlflow.db
 mlflow.db-*
-artifacts/
+/artifacts/*
 *.pt
 *.pth
 *.ckpt
@@ -66,3 +66,58 @@ node_modules/
 *.sqlite3
 **/.kaggle/
 /kaggle.json
+
+# Scientific backup policy: datasets and checkpoints stay outside GitHub.
+*.zip
+*.zip.bin
+*.tar
+*.tar.gz
+*.7z
+*.part
+*.bin
+*.npy
+*.npz
+*.tif
+*.tiff
+*.onnx
+*.safetensors
+*.pem
+*.key
+**/credentials
+**/id_rsa
+**/id_ed25519
+
+# Generated test workspaces and locally installed third-party SDK.
+reports/**/test-work*/
+reports/**/synthetic-test*/
+reports/**/pytest-tmp/
+reports/**/tmp-*/
+reports/**/essential-final/
+reports/**/resume-check*/
+reports/**/continuous-check/
+reports/**/kaggle_sdk/
+reports/**/react-ssr-check.cjs
+
+# Large metadata and duplicate publication payloads (SHA-256 in backup manifest).
+/reports/full_corpus_v1/audit-attempt-*.jsonl
+/reports/full_corpus_v1/certified-observations-*.json
+/reports/mission_20261111/compact_full/samples.json
+/reports/mission_20261111/compact_full/shards.json
+/reports/mission_20261111/compact_full/part*/samples.json
+/reports/mission_20261111/compact_full/part*/shards.json
+/reports/gpu_acceleration_20261111_v1/publication-mount-test/
+
+# Audited lightweight results, exact executed sources and inference metadata.
+!/reports/calibration_20261112_v1/GeoFireX_CALIBRATION_RESULTATS.zip
+!/reports/calibration_20261112_v1/calibration-code.zip
+!/reports/loss_ablation_20261112_v1/loss-ablation-code.zip
+!/reports/propagation_20261112_v1/propagation-code.zip
+!/reports/gpu_acceleration_20261111_v1/index/train.npy
+!/reports/gpu_acceleration_20261111_v1/index/val.npy
+!/reports/unet_confirmation_20261112_v1/confirmation_cpu/**/*.npz
+!/artifacts/propagation-comparison/
+/artifacts/propagation-comparison/*
+!/artifacts/propagation-comparison/comparison.json
+!/artifacts/propagation-comparison/executed-training-code.zip
+/reports/github_preservation_20261113/selected_files.csv
+reports/**/memory.jsonl

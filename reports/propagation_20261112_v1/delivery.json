@@ -1,0 +1,593 @@
+{
+  "status": "PREPARED_NOT_TRAINED",
+  "url": "http://127.0.0.1:8014",
+  "tests": {
+    "tests": 29,
+    "failures": 0,
+    "errors": 0
+  },
+  "react_component": {
+    "status": "PASS",
+    "renderer": "ReactDOMServer, real saved diagnostics",
+    "events": 169,
+    "map_layers": 5,
+    "html_bytes": 31153,
+    "browser_interactive_test": false
+  },
+  "checks": [
+    {
+      "path": "/health",
+      "status": 200,
+      "bytes": 89,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 318,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 257758,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "bytes": 3941,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/science/summary",
+      "status": 200,
+      "bytes": 19220,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/big-data",
+      "status": 200,
+      "bytes": 4199,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/unet-ablation",
+      "status": 200,
+      "bytes": 317953,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/propagation",
+      "status": 200,
+      "bytes": 63408,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/events?phase=calibration32",
+      "status": 200,
+      "bytes": 189141,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/events?phase=holdout169",
+      "status": 200,
+      "bytes": 291597,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/retained-model",
+      "status": 200,
+      "bytes": 250,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/maps?phase=calibration32",
+      "status": 200,
+      "bytes": 5227,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_23654679_2020-01-17_probability.png",
+      "status": 200,
+      "bytes": 40588,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_23654679_2020-01-17_target.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_23654679_2020-01-17_segmentation.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_23654679_2020-01-17_errors.png",
+      "status": 200,
+      "bytes": 1452,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24332803_2020-08-25_probability.png",
+      "status": 200,
+      "bytes": 58937,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24332803_2020-08-25_target.png",
+      "status": 200,
+      "bytes": 1911,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24332803_2020-08-25_segmentation.png",
+      "status": 200,
+      "bytes": 1848,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24332803_2020-08-25_errors.png",
+      "status": 200,
+      "bytes": 2502,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24695970_2020-11-27_probability.png",
+      "status": 200,
+      "bytes": 35190,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24695970_2020-11-27_target.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24695970_2020-11-27_segmentation.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_calibration32/2020__fire_24695970_2020-11-27_errors.png",
+      "status": 200,
+      "bytes": 1453,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_23654679_2020-01-17_probability.png",
+      "status": 200,
+      "bytes": 35582,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_23654679_2020-01-17_target.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_23654679_2020-01-17_segmentation.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_23654679_2020-01-17_errors.png",
+      "status": 200,
+      "bytes": 1452,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24332803_2020-08-25_probability.png",
+      "status": 200,
+      "bytes": 60188,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24332803_2020-08-25_target.png",
+      "status": 200,
+      "bytes": 1911,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24332803_2020-08-25_segmentation.png",
+      "status": 200,
+      "bytes": 1855,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24332803_2020-08-25_errors.png",
+      "status": 200,
+      "bytes": 2510,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24695970_2020-11-27_probability.png",
+      "status": 200,
+      "bytes": 36738,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24695970_2020-11-27_target.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24695970_2020-11-27_segmentation.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_calibration32/2020__fire_24695970_2020-11-27_errors.png",
+      "status": 200,
+      "bytes": 1453,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/maps?phase=holdout169",
+      "status": 200,
+      "bytes": 5191,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_23756984_2020-02-09_probability.png",
+      "status": 200,
+      "bytes": 51566,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_23756984_2020-02-09_target.png",
+      "status": 200,
+      "bytes": 1150,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_23756984_2020-02-09_segmentation.png",
+      "status": 200,
+      "bytes": 1207,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_23756984_2020-02-09_errors.png",
+      "status": 200,
+      "bytes": 1220,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24332880_2020-09-04_probability.png",
+      "status": 200,
+      "bytes": 47335,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24332880_2020-09-04_target.png",
+      "status": 200,
+      "bytes": 1505,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24332880_2020-09-04_segmentation.png",
+      "status": 200,
+      "bytes": 1645,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24332880_2020-09-04_errors.png",
+      "status": 200,
+      "bytes": 2115,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24695963_2020-11-22_probability.png",
+      "status": 200,
+      "bytes": 34723,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24695963_2020-11-22_target.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24695963_2020-11-22_segmentation.png",
+      "status": 200,
+      "bytes": 1460,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B1_holdout169/2020__fire_24695963_2020-11-22_errors.png",
+      "status": 200,
+      "bytes": 1472,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_23756984_2020-02-09_probability.png",
+      "status": 200,
+      "bytes": 37438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_23756984_2020-02-09_target.png",
+      "status": 200,
+      "bytes": 1150,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_23756984_2020-02-09_segmentation.png",
+      "status": 200,
+      "bytes": 1193,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_23756984_2020-02-09_errors.png",
+      "status": 200,
+      "bytes": 1208,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24332880_2020-09-04_probability.png",
+      "status": 200,
+      "bytes": 42679,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24332880_2020-09-04_target.png",
+      "status": 200,
+      "bytes": 1505,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24332880_2020-09-04_segmentation.png",
+      "status": 200,
+      "bytes": 1488,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24332880_2020-09-04_errors.png",
+      "status": 200,
+      "bytes": 1964,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24695963_2020-11-22_probability.png",
+      "status": 200,
+      "bytes": 36630,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24695963_2020-11-22_target.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24695963_2020-11-22_segmentation.png",
+      "status": 200,
+      "bytes": 1440,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/assets/B2_holdout169/2020__fire_24695963_2020-11-22_errors.png",
+      "status": 200,
+      "bytes": 1454,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_23756984_2020-02-09_probability.png",
+      "status": 200,
+      "bytes": 2168,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_23756984_2020-02-09_target.png",
+      "status": 200,
+      "bytes": 1151,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_23756984_2020-02-09_segmentation.png",
+      "status": 200,
+      "bytes": 1206,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_23756984_2020-02-09_errors.png",
+      "status": 200,
+      "bytes": 1222,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24332880_2020-09-04_probability.png",
+      "status": 200,
+      "bytes": 12813,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24332880_2020-09-04_target.png",
+      "status": 200,
+      "bytes": 1478,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24332880_2020-09-04_segmentation.png",
+      "status": 200,
+      "bytes": 1465,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24332880_2020-09-04_errors.png",
+      "status": 200,
+      "bytes": 1879,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24695963_2020-11-22_probability.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24695963_2020-11-22_target.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24695963_2020-11-22_segmentation.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/unet-assets/B2_w10_holdout169/2020__fire_24695963_2020-11-22_errors.png",
+      "status": 200,
+      "bytes": 1452,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_23756984_2020-02-09_observed.png",
+      "status": 200,
+      "bytes": 1187,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_23756984_2020-02-09_new_target.png",
+      "status": 200,
+      "bytes": 1151,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_23756984_2020-02-09_new_prediction.png",
+      "status": 200,
+      "bytes": 1212,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_23756984_2020-02-09_new_probability.png",
+      "status": 200,
+      "bytes": 2169,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_23756984_2020-02-09_new_errors.png",
+      "status": 200,
+      "bytes": 1258,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24332880_2020-09-04_observed.png",
+      "status": 200,
+      "bytes": 1513,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24332880_2020-09-04_new_target.png",
+      "status": 200,
+      "bytes": 1437,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24332880_2020-09-04_new_prediction.png",
+      "status": 200,
+      "bytes": 1372,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24332880_2020-09-04_new_probability.png",
+      "status": 200,
+      "bytes": 12876,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24332880_2020-09-04_new_errors.png",
+      "status": 200,
+      "bytes": 1982,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24695963_2020-11-22_observed.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24695963_2020-11-22_new_target.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24695963_2020-11-22_new_prediction.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24695963_2020-11-22_new_probability.png",
+      "status": 200,
+      "bytes": 1438,
+      "content_type": "image/png"
+    },
+    {
+      "path": "/science/propagation-assets/2020__fire_24695963_2020-11-22_new_errors.png",
+      "status": 200,
+      "bytes": 1452,
+      "content_type": "image/png"
+    }
+  ],
+  "png_layers_checked": 75,
+  "historical_results_unchanged": true,
+  "spark_parquet_unchanged": true,
+  "checkpoints_archive_unchanged": true,
+  "new_training_executed": false,
+  "gpu_executed": false,
+  "historical_inference_rerun": false,
+  "spark_restarted": false,
+  "test_2021_pixels_opened": 0,
+  "kaggle_published": false,
+  "git_commit_push_merge": false,
+  "browser_interactive_validation": {
+    "status": "UNAVAILABLE",
+    "reason": "The browser access host is unavailable",
+    "scope": "HTTP, image bytes, build and automated contracts verified; interactive browser rendering not verified"
+  },
+  "provenance": {
+    "reports/calibration_20261112_v1/GeoFireX_CALIBRATION_RESULTATS.zip": "bd1e2f7e70ad6b8d1ce516e72626b1dfc9cb7050d0e02ad120b7b5a38031d6dd",
+    "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+    "reports/unet_confirmation_20261112_v1/confirmation_cpu/B2_w10_holdout169/evaluation.json": "4944478ae4d5d2e017149992550d19d304370338c6406be84ffc3d76e50b02d5",
+    "reports/unet_confirmation_20261112_v1/confirmation_cpu/confirmation_locked.json": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+    "reports/gpu_acceleration_20261111_v1/index/normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+  },
+  "source_sha256": {
+    "src/geofirex/propagation_experiment.py": "7d03cdc35453742ebd16e94c2c5a6ec371304ac10d043f7b43ae97b48d9f8b62",
+    "src/geofirex/propagation_results.py": "edc88939a4e7f9ff1ee776d5fcdfa1ed375c14cc324533199c0ff1399a71f3e2",
+    "frontend/src/Propagation.mjs": "944ff24b1647b22f4d703752d74a615c60640892e862e925105ae210f63ab5a6",
+    "frontend/src/main.mjs": "c1644cea92437901204ab7e12639e0a6e0be0448c40ab88b4d70a668dc762f4e",
+    "src/geofirex/science_results.py": "71246e84120e4b5f3754c06ae976fe875cb23da55f112ad440ac96a3ebb023f8",
+    "frontend/dist/app.js": "946250bff583aca9eaeef2f92c910db8dee4b26eebb0bc9247073ae2502fe7e4",
+    "src/geofirex/serving.py": "63c6f419cc51511a54e12a7584830065245f198c23c5687f62ba2604b6c60231",
+    "src/geofirex/unet.py": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0",
+    "src/geofirex/benchmark_models.py": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1"
+  },
+  "notebook": {
+    "notebook_sha256": "d577ecf9f0adbf31beb1411de00e9dafb12d4ea525defd851ce8ae376b17ab98",
+    "code_sha256": "90351bc94a731c09aa26e6dbbe4653ee315e9d2abac0153e239fe50f005f44ec",
+    "protocol_sha256": "5983837d035a9cd536969bc3c601705d054e100e7f85aae279e4adc385d2630e",
+    "baseline32_sha256": "3956aa821804451ca416cc31ad64055b07253e5b04f4662b37c4ba3b7a63193e",
+    "runs": 1,
+    "training_executed": false,
+    "gpu_executed": false,
+    "kaggle_submitted": false
+  },
+  "unresolved": "Kaggle torch2.11.0 initial-main digest and actual GPU kernels/memory/throughput remain to verify before/within authorized run",
+  "tests_xml_sha256": "f700c1128d68ce696edcf3de7945d2da528c59e0be202a8e699999b3c4705cba"
+}

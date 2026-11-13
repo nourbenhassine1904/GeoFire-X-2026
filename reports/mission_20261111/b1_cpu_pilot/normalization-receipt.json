@@ -1,0 +1,5 @@
+{
+  "status": "VERIFIED",
+  "sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "binding": "checkpoint config compact_report_sha256 -> report normalization_sha256 -> exact preserved normalization bytes"
+}

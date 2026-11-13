@@ -1,0 +1,15 @@
+{
+  "largest_blob": {
+    "path": "reports/github_preservation_20261113/excluded_files.csv",
+    "bytes": 14683051
+  },
+  "protected_scientific_byte_mismatches": [],
+  "other_content_mismatches": [],
+  "source_line_ending_normalizations": 4,
+  "remaining_unstaged_modifications": [],
+  "explicit_selection_matches_index": true,
+  "manifest_verified": true,
+  "commit_performed": false,
+  "push_performed": false,
+  "scope": "Index contents verified before adding this record; final file count and byte total are in publication_summary.json"
+}

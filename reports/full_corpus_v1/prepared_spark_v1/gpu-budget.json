@@ -1,0 +1,161 @@
+{
+  "status": "NOT_AUTHORIZED_NOT_SUBMITTED",
+  "namespace": "geofirex-full-corpus-fold0-v1",
+  "runs": [
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T1_seed42.yaml",
+      "context": 1,
+      "model": "B0",
+      "seed": 42,
+      "parameters": 0,
+      "maximum_optimizer_updates": 0,
+      "sampled_patches_per_epoch": 0,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T1_seed42.yaml",
+      "context": 1,
+      "model": "B1",
+      "seed": 42,
+      "parameters": 3505,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T1_seed42.yaml",
+      "context": 1,
+      "model": "B2",
+      "seed": 42,
+      "parameters": 122825,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T1_seed42.yaml",
+      "context": 1,
+      "model": "B3",
+      "seed": 42,
+      "parameters": 5297,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T3_seed42.yaml",
+      "context": 3,
+      "model": "B0",
+      "seed": 42,
+      "parameters": 0,
+      "maximum_optimizer_updates": 0,
+      "sampled_patches_per_epoch": 0,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T3_seed42.yaml",
+      "context": 3,
+      "model": "B1",
+      "seed": 42,
+      "parameters": 5809,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T3_seed42.yaml",
+      "context": 3,
+      "model": "B2",
+      "seed": 42,
+      "parameters": 123977,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T3_seed42.yaml",
+      "context": 3,
+      "model": "B3",
+      "seed": 42,
+      "parameters": 5297,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T5_seed42.yaml",
+      "context": 5,
+      "model": "B0",
+      "seed": 42,
+      "parameters": 0,
+      "maximum_optimizer_updates": 0,
+      "sampled_patches_per_epoch": 0,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T5_seed42.yaml",
+      "context": 5,
+      "model": "B1",
+      "seed": 42,
+      "parameters": 8113,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T5_seed42.yaml",
+      "context": 5,
+      "model": "B2",
+      "seed": 42,
+      "parameters": 125129,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    },
+    {
+      "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T5_seed42.yaml",
+      "context": 5,
+      "model": "B3",
+      "seed": 42,
+      "parameters": 5297,
+      "maximum_optimizer_updates": 58510,
+      "sampled_patches_per_epoch": 93616,
+      "full_grid_coverage_guaranteed": false,
+      "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+    }
+  ],
+  "next_step": "Discarded T=3 throughput probes, 20 measured + 3 warmup steps for B1/B2/B3; separately authorize <= 0.5 GPU hours total including preparation",
+  "proposed_first_T3_campaign_gpu_hours": 6.0,
+  "proposed_per_trainable_run_gpu_hours": 2.0,
+  "B0": "Persistence, zero optimizer updates; prefer CPU, not included in GPU-hour allocation",
+  "T1_T5": "Prepared configs only; no GPU budget granted or assumed",
+  "timing_caveat": "Provisional resource envelopes, not measured full-corpus GPU runtimes. Profile full validation before approval.",
+  "runner_time_limit": "max_run_seconds is cooperative at epoch boundaries, not a hard wall-time cap; external job timeout required",
+  "machine": {
+    "gpu_vram_gb": 16,
+    "ram_gb": 16,
+    "cpu_threads": 2,
+    "loader_workers": 0,
+    "reader_cache_mb_per_process": 64,
+    "minimum_free_disk_bytes": 20000000000
+  },
+  "transfer_policy": "No automatic cloud publication or copying; mount an already authorized corpus and relocate data_root/window paths",
+  "modalities": "Only conservative_fire_terrain; other existing profiles retain their availability-evidence lock",
+  "corpus_bytes_by_split": {
+    "train": 19173183260,
+    "val": 15822169170,
+    "test": 14298883293
+  },
+  "minimum_train_validation_volume_bytes": 54995352430
+}

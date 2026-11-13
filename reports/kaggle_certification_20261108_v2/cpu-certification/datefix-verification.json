@@ -1,0 +1,52 @@
+{
+  "status": "LOCAL_NOTEBOOK_VERIFIED_REMOTE_UNCERTIFIED",
+  "notebook": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\kaggle_certification_20261108_v2\\cpu-certification\\lot-001\\certify.ipynb",
+  "notebook_bytes": 186754,
+  "notebook_sha256": "9b6d42b130fa78c45ce7b104671d456888d7dce03c184fa8833a92f689742734",
+  "canonical_manifest_sha256": "1392e6ca16c8f22f04be2cb04c81d6da00daf026660d3a86ca4b96e8fb990638",
+  "files": 1269,
+  "events": 57,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+  ],
+  "gpu": false,
+  "tpu": false,
+  "internet": false,
+  "windows_drive_dependency": false,
+  "preserved_checks": [
+    "57 train events",
+    "1269 files",
+    "23-band layout",
+    "sizes",
+    "SHA256",
+    "CRC32",
+    "no 2020/2021 observations",
+    "no attached test 2021",
+    "actual CPU DataLoader"
+  ],
+  "date_policy": {
+    "observation_year_counts": {
+      "2017": 3,
+      "2018": 1266
+    },
+    "folder_date_year_mismatches": [
+      {
+        "path": "2018/fire_21458836/2017-12-29.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-30.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-31.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      }
+    ],
+    "approved_2017_context": true,
+    "forbidden_2020_2021_observations": 0
+  }
+}

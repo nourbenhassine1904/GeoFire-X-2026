@@ -1,0 +1,120 @@
+{
+  "status": "PASSED_METADATA_AUDIT",
+  "raster_sizes_checked": 0,
+  "raster_pixel_reads": 0,
+  "network_bytes": 0,
+  "official_index": {
+    "events": 607,
+    "files": 13607
+  },
+  "present_train_validation": {
+    "events": 451,
+    "files": 9490
+  },
+  "windows": {
+    "train": {
+      "1": 3948,
+      "3": 3948,
+      "5": 3948
+    },
+    "val": {
+      "1": 3287,
+      "3": 3287,
+      "5": 3287
+    }
+  },
+  "normalizer": {
+    "sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+    "train_events": 250,
+    "fit_files": 4948,
+    "test_inputs": 0,
+    "validation_inputs": 0
+  },
+  "test_rasters_required": 0,
+  "lots": [
+    {
+      "number": 1,
+      "role": "train",
+      "events": 57,
+      "files": 1269,
+      "raw_bytes": 4829474073,
+      "identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81",
+      "predicted_stored_zip_bytes": 4829918684
+    },
+    {
+      "number": 2,
+      "role": "train",
+      "events": 62,
+      "files": 1380,
+      "raw_bytes": 4995042486,
+      "identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f",
+      "predicted_stored_zip_bytes": 4995525361
+    },
+    {
+      "number": 3,
+      "role": "train",
+      "events": 68,
+      "files": 1344,
+      "raw_bytes": 4905540263,
+      "identity": "15ad89eca43c61678ad886af60387cb43b7104bb888e7a4700c2aabdb3de6201",
+      "predicted_stored_zip_bytes": 4906010754
+    },
+    {
+      "number": 4,
+      "role": "train",
+      "events": 63,
+      "files": 1205,
+      "raw_bytes": 4443126438,
+      "identity": "5de8dec39928f8adca729888fff0f00a23b87aba961af9d4fee6c7d195520844",
+      "predicted_stored_zip_bytes": 4443548105
+    },
+    {
+      "number": 5,
+      "role": "val",
+      "events": 69,
+      "files": 1305,
+      "raw_bytes": 4886889025,
+      "identity": "ef579d40d24107bbb034ab4e0cef12a256f7ecf0ddd85f43d5162b6854fd92ff",
+      "predicted_stored_zip_bytes": 4887346414
+    },
+    {
+      "number": 6,
+      "role": "val",
+      "events": 54,
+      "files": 1350,
+      "raw_bytes": 4919863753,
+      "identity": "8852036659a34e19836bafc57b89fc50afc38ebf9302745a8db8ad3caf9b96d7",
+      "predicted_stored_zip_bytes": 4920335806
+    },
+    {
+      "number": 7,
+      "role": "val",
+      "events": 61,
+      "files": 1321,
+      "raw_bytes": 4833117096,
+      "identity": "87afc8aa0ed24ef0e469d4c4e20e0f6d28a52f95d56df46c10de7b87be6e4ed2",
+      "predicted_stored_zip_bytes": 4833579397
+    },
+    {
+      "number": 8,
+      "role": "val",
+      "events": 17,
+      "files": 316,
+      "raw_bytes": 1182299296,
+      "identity": "94f961182623909310a20e594a0517adc1af36d004be98c8be876e59dfb8e407",
+      "predicted_stored_zip_bytes": 1182408142
+    }
+  ],
+  "upload": {
+    "raw_bytes": 34995352430,
+    "proposed_ceiling_bytes": 36000000000,
+    "raw_margin_bytes": 1004647570,
+    "predicted_stored_zip_bytes": 34998672663,
+    "predicted_margin_before_code_and_http_bytes": 1001327337,
+    "conservative_archive_bound_bytes": 35075352430,
+    "smallest_lot_retry_bytes": 1182408142,
+    "archive_status": "NOT_STAGED; predicted layout, not measured payload",
+    "http_total_status": "UNKNOWN until actual requests; durable shared BodyBudget required"
+  },
+  "time": "2026-11-07T13:27:37.020729+00:00"
+}

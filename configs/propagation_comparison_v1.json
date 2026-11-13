@@ -1,0 +1,8 @@
+{
+  "comparison": "artifacts/propagation-comparison/comparison.json",
+  "files": {
+    "artifacts/propagation-comparison/comparison.json": "ccc8a9c6224ae0bb183da070597a2da533fe33b261611fb4d6b2ced3caa3851b",
+    "artifacts/propagation-comparison/executed-training-code.zip": "cc2dcdbea89cf621a98058f65857f0c18e168ee9b6606085627117fad03c844e",
+    "artifacts/propagation-comparison/GeoFireX_UNET_PROPAGATION_COMPLETE.zip": "de2c4b7f52939223046c535ed77a7309537591f04d2521cc3affaa46695b0b85"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "CERTIFIED",
+  "verified_observations": 13607,
+  "verified_events": 607,
+  "expected_observations": 13607,
+  "expected_events": 607,
+  "errors": [],
+  "processed_this_attempt": 13607,
+  "reused_certificates": 0,
+  "seconds": 1517.033919900001,
+  "verified_bytes": 49294235723,
+  "network_bytes": 0,
+  "raw_writes": 0,
+  "journal": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\full_corpus_v1\\audit-attempt-1793711579113888200-d2ba964710c4406b9eda50575240afd5.jsonl",
+  "split_events": {
+    "train": 250,
+    "val": 201,
+    "test": 156
+  },
+  "split_observations": {
+    "train": 5198,
+    "val": 4292,
+    "test": 4117
+  }
+}

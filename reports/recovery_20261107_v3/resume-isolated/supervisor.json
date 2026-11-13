@@ -1,0 +1,46 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_runner.py::test_resume_across_changed_readonly_mount_paths",
+    "-vv",
+    "-s",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "reports/recovery_20261107_v3/tmp-resume-isolated",
+    "--junitxml",
+    "reports/recovery_20261107_v3/resume-isolated.xml",
+    "-o",
+    "faulthandler_timeout=45"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6998896640,
+    "load_percent": 58
+  },
+  "limit_seconds": 90,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:10:58.941810+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 18196,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 44.3119999999999,
+  "peak_tree_rss_bytes": 493072384,
+  "peak_sampled_private_commit_bytes": 562950144,
+  "peak_job_commit_bytes": 567087104,
+  "peak_owned_processes": 4,
+  "minimum_available_bytes": 5790797824,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6221565952,
+    "load_percent": 63
+  }
+}

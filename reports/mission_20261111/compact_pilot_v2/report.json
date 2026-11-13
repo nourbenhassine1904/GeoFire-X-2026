@@ -1,0 +1,54 @@
+{
+  "status": "EXECUTED",
+  "format": "lossless normalized float32 NPZ day/tile shards; temporal references avoid duplicated T=3 arrays",
+  "events": 16,
+  "train_events": 10,
+  "val_events": 6,
+  "event_ids": [
+    "2018/fire_21458798",
+    "2018/fire_21751305",
+    "2018/fire_21889744",
+    "2018/fire_21890058",
+    "2018/fire_21997828",
+    "2018/fire_21999270",
+    "2018/fire_22257882",
+    "2019/fire_23036860",
+    "2019/fire_23300668",
+    "2019/fire_23572745",
+    "2020/fire_23654679",
+    "2020/fire_24191375",
+    "2020/fire_24332761",
+    "2020/fire_24333033",
+    "2020/fire_24462764",
+    "2020/fire_24695970"
+  ],
+  "observations": 340,
+  "windows": 260,
+  "samples": 6025,
+  "shards": 7850,
+  "raw_geotiff_bytes": 1246381470,
+  "logical_array_bytes": 1061068800,
+  "shard_bytes": 340719827,
+  "metadata_bytes": 11106803,
+  "transfer_payload_bytes": 351826630,
+  "ratio_to_raw": 0.28227845043299626,
+  "elapsed_seconds": 456.06161710000015,
+  "peak_rss_bytes": 0,
+  "roundtrip_days": 340,
+  "categories": {
+    "train": {
+      "negative": 3141,
+      "positive": 246,
+      "hard_negative": 63
+    },
+    "val": {
+      "negative": 2433,
+      "positive": 109,
+      "hard_negative": 33
+    }
+  },
+  "selection": "metadata-only evenly spaced sorted event ids; all days/all tiles; validation exhaustive without balancing",
+  "train_sampling": "all positive/hard-negative/negative tiles retained; optional sampler is train-only",
+  "test_pixels_opened": 0,
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+}

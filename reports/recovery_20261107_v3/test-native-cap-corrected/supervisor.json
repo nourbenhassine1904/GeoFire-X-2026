@@ -1,0 +1,44 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_memory_guard.py::test_native_job_rejects_excess_commit",
+    "-vv",
+    "-s",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "reports/recovery_20261107_v3/tmp-native-cap-corrected",
+    "--junitxml",
+    "reports/recovery_20261107_v3/test-native-cap-corrected.xml"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 7094034432,
+    "load_percent": 57
+  },
+  "limit_seconds": 30,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:10:39.170383+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 44096,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5160000000005311,
+  "peak_tree_rss_bytes": 38014976,
+  "peak_sampled_private_commit_bytes": 25251840,
+  "peak_job_commit_bytes": 302161920,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 7061377024,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 7082639360,
+    "load_percent": 57
+  }
+}

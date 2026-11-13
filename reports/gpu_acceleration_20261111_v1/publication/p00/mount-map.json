@@ -1,0 +1,54 @@
+{
+  "schema": "opaque-compact-part-v1",
+  "identity": "ed88f93ae8329c57f34709fdf3a59e3ec3272db8238f843d4329f2cb23e293d0",
+  "files": [
+    {
+      "path": "normalization.json",
+      "alias": "normalization.json.bin",
+      "bytes": 425833,
+      "sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    },
+    {
+      "path": "samples.json",
+      "alias": "samples.json.bin",
+      "bytes": 148104920,
+      "sha256": "39a1d52082559233957911a57db00e7140aacdb5c4a55410e3b0346a852f27aa"
+    },
+    {
+      "path": "shards.json",
+      "alias": "shards.json.bin",
+      "bytes": 101207586,
+      "sha256": "c310b0dbf5140bafdee648cb1f8125355a5495d592854669af4069df2b234cf8"
+    },
+    {
+      "path": "report.json",
+      "alias": "report.json.bin",
+      "bytes": 1430,
+      "sha256": "072a159a32a0d298258c38915ff6e4759986658135bb50808d5e7a2d93a03dcf"
+    },
+    {
+      "path": "transfer-manifest.json",
+      "alias": "transfer-manifest.json.bin",
+      "bytes": 80608,
+      "sha256": "0715de6eaa4f1df5053430f3fd3f889bb821aba453a6ec5976905d65ab8ae4e2"
+    },
+    {
+      "path": "index/train.npy",
+      "alias": "index__train.npy.bin",
+      "bytes": 1029825,
+      "sha256": "ca48ce1ee07879f6175490239c56494c751a52aa0215b72d90c9dbd27debb182"
+    },
+    {
+      "path": "index/val.npy",
+      "alias": "index__val.npy.bin",
+      "bytes": 866673,
+      "sha256": "7a9021b41d2a054c6dbe2b9f44d7e713079eb14538fa0397d4e77a13912257be"
+    },
+    {
+      "path": "index/index.json",
+      "alias": "index__index.json.bin",
+      "bytes": 48584,
+      "sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7"
+    }
+  ]
+}

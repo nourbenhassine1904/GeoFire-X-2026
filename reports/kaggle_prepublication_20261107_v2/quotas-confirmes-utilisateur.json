@@ -1,0 +1,14 @@
+{
+  "source": "Kaggle Settings, valeurs personnellement consultees et communiquees par l'utilisateur le 2026-11-07",
+  "owner": "nnnnbhss",
+  "private_datasets": {"used_display": "504,96 MB", "limit_display": "214,75 GB", "available_approx_display": "214,25 GB"},
+  "private_models": {"used_display": "0 B", "limit_display": "214,75 GB"},
+  "gpu": {"used_display": "00:00", "limit_hours": 30},
+  "tpu": {"used_display": "00:00", "limit_hours": 20},
+  "qualification": "Valeurs affichees arrondies. Pas de deduction d'un plafond exact en octets; releve utilisateur, pas nouvelle consultation API/UI par l'agent.",
+  "storage_sufficient_for_single_lot_and_planned_451_events": true,
+  "upload_authorized": false,
+  "cloud_cpu_job_authorized": false,
+  "gpu_job_authorized": false,
+  "automatic_retry_authorized": false
+}

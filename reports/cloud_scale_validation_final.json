@@ -1,0 +1,33 @@
+{
+  "local_date": "2026-10-31",
+  "branch": "feature/unet-baseline",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "160",
+    "time": "71.661",
+    "timestamp": "2026-10-31T14:21:57.303310+01:00",
+    "hostname": "NourBh"
+  },
+  "archive": {
+    "path": "artifacts\\kaggle\\geofirex-cloud-code-v2.zip",
+    "source_files": 144,
+    "bytes": 708546,
+    "crc_and_sha256_verified": true
+  },
+  "real_geotiff_audit": {
+    "files": 3,
+    "years": [
+      2018,
+      2019,
+      2020
+    ],
+    "bands_per_file": 23
+  },
+  "live_kaggle_publication_tested": false,
+  "long_gpu_training_executed": false,
+  "full_corpus_download_executed": false,
+  "git_commit_push_merge_executed": false
+}

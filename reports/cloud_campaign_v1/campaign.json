@@ -1,0 +1,128 @@
+{
+  "status": "PLANNED_ONLY_NOT_ACQUIRED",
+  "by_split": {
+    "train": {
+      "events": 250,
+      "observations": 5198
+    },
+    "val": {
+      "events": 201,
+      "observations": 4292
+    },
+    "test": {
+      "events": 156,
+      "observations": 4117
+    }
+  },
+  "batches": [
+    {
+      "plan": "batch_001_2018.json",
+      "year": 2018,
+      "events": 48,
+      "observations": 939,
+      "geotiff_bytes": 3776474052
+    },
+    {
+      "plan": "batch_002_2018.json",
+      "year": 2018,
+      "events": 47,
+      "observations": 1117,
+      "geotiff_bytes": 3790962037
+    },
+    {
+      "plan": "batch_003_2018.json",
+      "year": 2018,
+      "events": 45,
+      "observations": 1034,
+      "geotiff_bytes": 3796741386
+    },
+    {
+      "plan": "batch_004_2018.json",
+      "year": 2018,
+      "events": 36,
+      "observations": 683,
+      "geotiff_bytes": 2516212545
+    },
+    {
+      "plan": "batch_005_2019.json",
+      "year": 2019,
+      "events": 51,
+      "observations": 1002,
+      "geotiff_bytes": 3777010575
+    },
+    {
+      "plan": "batch_006_2019.json",
+      "year": 2019,
+      "events": 23,
+      "observations": 423,
+      "geotiff_bytes": 1515782665
+    },
+    {
+      "plan": "batch_007_2020.json",
+      "year": 2020,
+      "events": 55,
+      "observations": 983,
+      "geotiff_bytes": 3775368774
+    },
+    {
+      "plan": "batch_008_2020.json",
+      "year": 2020,
+      "events": 45,
+      "observations": 1072,
+      "geotiff_bytes": 3774216865
+    },
+    {
+      "plan": "batch_009_2020.json",
+      "year": 2020,
+      "events": 42,
+      "observations": 1017,
+      "geotiff_bytes": 3792537722
+    },
+    {
+      "plan": "batch_010_2020.json",
+      "year": 2020,
+      "events": 48,
+      "observations": 1021,
+      "geotiff_bytes": 3767369986
+    },
+    {
+      "plan": "batch_011_2020.json",
+      "year": 2020,
+      "events": 11,
+      "observations": 199,
+      "geotiff_bytes": 712675823
+    },
+    {
+      "plan": "batch_012_2021.json",
+      "year": 2021,
+      "events": 47,
+      "observations": 979,
+      "geotiff_bytes": 3786602228
+    },
+    {
+      "plan": "batch_013_2021.json",
+      "year": 2021,
+      "events": 36,
+      "observations": 1176,
+      "geotiff_bytes": 3781298219
+    },
+    {
+      "plan": "batch_014_2021.json",
+      "year": 2021,
+      "events": 37,
+      "observations": 1090,
+      "geotiff_bytes": 3763135966
+    },
+    {
+      "plan": "batch_015_2021.json",
+      "year": 2021,
+      "events": 36,
+      "observations": 872,
+      "geotiff_bytes": 2967846880
+    }
+  ],
+  "events": 607,
+  "observations": 13607,
+  "private_storage_scenario_bytes": 68719476736,
+  "remaining_scenario_bytes": 19409512373
+}

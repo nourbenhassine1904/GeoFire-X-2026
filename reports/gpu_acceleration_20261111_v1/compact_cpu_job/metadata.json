@@ -1,0 +1,20 @@
+{
+  "id": "nnnnbhss/geofirex-compact-cpu-certificate-20261112",
+  "dataset_sources": [
+    "nnnnbhss/geofirex-compact-t3-20261111-p00",
+    "nnnnbhss/geofirex-compact-t3-20261111-p01",
+    "nnnnbhss/geofirex-compact-t3-20261111-p02",
+    "nnnnbhss/geofirex-compact-t3-20261111-p03",
+    "nnnnbhss/geofirex-compact-t3-20261111-p04",
+    "nnnnbhss/geofirex-compact-t3-20261111-p05",
+    "nnnnbhss/geofirex-compact-t3-20261111-p06",
+    "nnnnbhss/geofirex-compact-t3-20261111-p07",
+    "nnnnbhss/geofirex-compact-t3-20261111-p08",
+    "nnnnbhss/geofirex-compact-t3-20261111-p09",
+    "nnnnbhss/geofirex-compact-t3-20261111-p10"
+  ],
+  "private": true,
+  "gpu": false,
+  "timeout_seconds": 1200,
+  "code_sha256": "dfdeb8a38c282f6f796a92aff521ae3625a399727e68f6231f32b776397bc756"
+}

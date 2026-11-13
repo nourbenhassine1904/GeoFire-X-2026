@@ -1,0 +1,3 @@
+{"operation": "GenerateAccessToken", "body_bytes": 121, "http_status": 200}
+{"operation": "IntrospectToken", "body_bytes": 157, "http_status": 200}
+{"operation": "SaveKernel", "body_bytes": 185640, "http_status": 401}

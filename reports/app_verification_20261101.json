@@ -1,0 +1,20 @@
+{
+  "event": "2020/fire_23654679",
+  "target": "2020-01-06",
+  "updates": 8,
+  "truth_separate": true,
+  "checkpoint": "3731fef7cb9821f666aea3bc51908fe94bcdb1b8533544fe70c9435799c87a52",
+  "routes": [
+    "/openapi.json",
+    "/docs",
+    "/docs/oauth2-redirect",
+    "/redoc",
+    "/health",
+    "/events",
+    "/predict",
+    "/ground-truth",
+    ""
+  ],
+  "frontend_built": true,
+  "validation": "Direct Predictor + app construction; previous HTTP evidence preserved; TestClient unavailable (httpx2 missing)"
+}

@@ -1,0 +1,33 @@
+{
+    "checked_at":  "2026-11-03T12:36:49.6647110+01:00",
+    "antivirus_registered":  [
+                                 {
+                                     "displayName":  "Windows Defender",
+                                     "productState":  393472
+                                 },
+                                 {
+                                     "displayName":  "McAfee",
+                                     "productState":  278528
+                                 },
+                                 {
+                                     "displayName":  "360 Total Security",
+                                     "productState":  331776
+                                 }
+                             ],
+    "defender":  {
+                     "AMRunningMode":  "Not running",
+                     "RealTimeProtectionEnabled":  false
+                 },
+    "defender_path_blocks":  [
+
+                             ],
+    "application_events_near_failure":  [
+
+                                        ],
+    "volume":  {
+                   "DriveLetter":  "D",
+                   "FileSystem":  "NTFS",
+                   "HealthStatus":  "Healthy",
+                   "SizeRemaining":  479826927616
+               }
+}

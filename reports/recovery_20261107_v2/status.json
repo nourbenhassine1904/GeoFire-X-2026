@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED_WITHOUT_RETRY",
+  "stage": "tests-reference",
+  "exit_code": 1
+}

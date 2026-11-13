@@ -1,0 +1,22 @@
+{
+  "status": "LOT002_PRIVATE_CPU_CERTIFICATION_PENDING",
+  "lot001_closed": true,
+  "lot002": {
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "private": true,
+    "version": 1,
+    "upload_completed": true,
+    "upload_repetition_forbidden": true,
+    "archive_rebuilt": false,
+    "archive_verification": "resume-01/zip002-verification/verification.json",
+    "cpu_certified": false,
+    "certified_files": 0,
+    "cpu_evidence": "reports\\kaggle_remaining_20261108_v1\\resume-01\\execution\\lot-002\\cpu"
+  },
+  "lots003_to008": "NOT_STARTED",
+  "cumulative_reserved_body_bytes": 4995733627,
+  "remaining_body_bytes": 26004266373,
+  "http_journal": "reports\\kaggle_remaining_20261108_v1\\http-body.jsonl",
+  "no_automatic_retry": true,
+  "gpu_started": false
+}

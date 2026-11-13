@@ -1,0 +1,127 @@
+{
+  "status": "ALL_11_PRIVATE_REMOTE_FILES_CONFIRMED_CPU_HASH_CERTIFICATION_PENDING",
+  "plan_sha256": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8",
+  "ceiling": 12000000000,
+  "payload_bytes": 9847724207,
+  "parts": [
+    {
+      "number": 0,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p00",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 251767344,
+      "files": 10,
+      "filenames_sizes_verified": true,
+      "identity": "ed88f93ae8329c57f34709fdf3a59e3ec3272db8238f843d4329f2cb23e293d0"
+    },
+    {
+      "number": 1,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p01",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 989095857,
+      "files": 42,
+      "filenames_sizes_verified": true,
+      "identity": "4aa8b2818192a2cc67941f1c1bbb8a1001e144114486bb05ecaa9b504993c6fa"
+    },
+    {
+      "number": 2,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p02",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 987821930,
+      "files": 52,
+      "filenames_sizes_verified": true,
+      "identity": "b5caf48618be26a75a480d91401f9de0d0936607936d09556f6308c1d76c5dcd"
+    },
+    {
+      "number": 3,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p03",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 995329493,
+      "files": 48,
+      "filenames_sizes_verified": true,
+      "identity": "ba72fbbc58f398a7bcd471d5cb21aebe4d11ed68da02caa912c2e746ccadc04d"
+    },
+    {
+      "number": 4,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p04",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 992304009,
+      "files": 51,
+      "filenames_sizes_verified": true,
+      "identity": "ada2f8b9a3f7f340efed521b15bf3fe4e3b4151fa39eab06ca2055518f58ab58"
+    },
+    {
+      "number": 5,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p05",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 981434439,
+      "files": 48,
+      "filenames_sizes_verified": true,
+      "identity": "3bcde37b262d5828f98153350d961e0ad771032fdedb04ff180ace536e4cb33a"
+    },
+    {
+      "number": 6,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p06",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 968727495,
+      "files": 44,
+      "filenames_sizes_verified": true,
+      "identity": "001a171f309ac58f4160269d46b9163b0c0c26c7a488cc545f6fa1b42e55d72a"
+    },
+    {
+      "number": 7,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p07",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 990902097,
+      "files": 47,
+      "filenames_sizes_verified": true,
+      "identity": "906b02993f756f4b6098ac8da11ecac173f59d20ebda70c8d2bd3bb37b8f6dbd"
+    },
+    {
+      "number": 8,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p08",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 981795629,
+      "files": 50,
+      "filenames_sizes_verified": true,
+      "identity": "793223fda8a5f0d06e792bcd09b2604a97252952a5323b144184a8e4f1496a4f"
+    },
+    {
+      "number": 9,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p09",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 992795945,
+      "files": 55,
+      "filenames_sizes_verified": true,
+      "identity": "af3015768e0174071c4d197ad31681ef20fbe0cc1de2c1084254bfef5b91393f"
+    },
+    {
+      "number": 10,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p10",
+      "version": 1,
+      "private": true,
+      "payload_bytes": 715749969,
+      "files": 34,
+      "filenames_sizes_verified": true,
+      "identity": "49e5551860a6d14c020c86dc33118a7cd2e0ca3dc9b470e6e95af6061817fa81"
+    }
+  ],
+  "current_part": 10,
+  "automatic_retries": 0,
+  "started": "2026-11-11T22:58:42.449851+00:00",
+  "phase": "complete",
+  "current_file": "publication_identity.json",
+  "file_index": 33,
+  "reserved_http_body_bytes": 9847993302,
+  "confirmed_http_body_bytes": 9847993302,
+  "remaining_budget_bytes": 2152006698
+}

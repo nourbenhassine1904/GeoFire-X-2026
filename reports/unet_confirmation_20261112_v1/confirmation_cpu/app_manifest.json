@@ -1,0 +1,216 @@
+{
+  "schema": "geofirex-unet-confirmation-app-v1",
+  "threshold": 0.78,
+  "pos_weight": 10,
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "confirmation_lock_sha256": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+  "comparison": [
+    {
+      "phase": "holdout169",
+      "model": "B1",
+      "mode": "calibrated",
+      "events": 169,
+      "tiles": 65012,
+      "threshold": 0.95,
+      "tp": 321401,
+      "fp": 573648,
+      "fn": 241552,
+      "tn": 216370366,
+      "valid_pixels": 217506967,
+      "positive_pixels": 562953,
+      "predicted_positive_pixels": 895049,
+      "prevalence": 0.0025882067492578294,
+      "dice": 0.440878681922247,
+      "iou": 0.2827738142056887,
+      "precision": 0.3590876030250858,
+      "recall": 0.5709197748302256,
+      "average_precision": 0.26837721158563704,
+      "brier_score": 0.005693489536437916
+    },
+    {
+      "phase": "holdout169",
+      "model": "B2",
+      "mode": "calibrated",
+      "events": 169,
+      "tiles": 65012,
+      "threshold": 0.95,
+      "tp": 308606,
+      "fp": 646071,
+      "fn": 254347,
+      "tn": 216297943,
+      "valid_pixels": 217506967,
+      "positive_pixels": 562953,
+      "predicted_positive_pixels": 954677,
+      "prevalence": 0.0025882067492578294,
+      "dice": 0.4066946488933403,
+      "iou": 0.2552521703456673,
+      "precision": 0.32325697591960423,
+      "recall": 0.5481914120717005,
+      "average_precision": 0.30097234034891923,
+      "brier_score": 0.009511514563377867
+    },
+    {
+      "phase": "holdout169",
+      "model": "B2_w10",
+      "mode": "confirmed_fixed",
+      "events": 169,
+      "tiles": 65012,
+      "threshold": 0.78,
+      "tp": 262243,
+      "fp": 385578,
+      "fn": 300710,
+      "tn": 216558436,
+      "valid_pixels": 217506967,
+      "positive_pixels": 562953,
+      "predicted_positive_pixels": 647821,
+      "prevalence": 0.0025882067492578294,
+      "dice": 0.43318241059025053,
+      "iou": 0.2764727773789154,
+      "precision": 0.40480780956467916,
+      "recall": 0.46583462562594036,
+      "average_precision": 0.3186180462118112,
+      "brier_score": 0.0034977911713319127
+    }
+  ],
+  "macro_event": {
+    "dice": {
+      "mean": 0.21731993348303855,
+      "defined_events": 169,
+      "q10": 0.0,
+      "median": 0.14871016691957512,
+      "q90": 0.5011351629469527
+    },
+    "iou": {
+      "mean": 0.13513388731550002,
+      "defined_events": 169,
+      "q10": 0.0,
+      "median": 0.08032786885245902,
+      "q90": 0.3343431806404091
+    },
+    "precision": {
+      "mean": 0.18631403917993872,
+      "defined_events": 169,
+      "q10": 0.0,
+      "median": 0.11796246648793565,
+      "q90": 0.4458369233974337
+    },
+    "recall": {
+      "mean": 0.2948376858508217,
+      "defined_events": 165,
+      "q10": 0.0,
+      "median": 0.2341101694915254,
+      "q90": 0.6217512045221746
+    },
+    "average_precision": {
+      "mean": 0.1609347379437505,
+      "defined_events": 165,
+      "q10": 0.002860680999744804,
+      "median": 0.0788567617725428,
+      "q90": 0.42773781998433535
+    },
+    "brier_score": {
+      "mean": 0.002641533582188131,
+      "defined_events": 169,
+      "q10": 0.00025752297346472863,
+      "median": 0.0011764117719032375,
+      "q90": 0.006714478102999138
+    }
+  },
+  "maps": [
+    {
+      "event_id": "2020/fire_23756984",
+      "target_date": "2020-02-09",
+      "raw": "2020__fire_23756984_2020-02-09_raw.npz",
+      "shape": [
+        320,
+        256
+      ],
+      "tile_count": 20,
+      "spatial_reference": "pixel grid; compact does not store CRS/affine",
+      "selection": "evenly spaced event IDs; median target date; all tiles, padding invalid",
+      "model": "B2_w10",
+      "threshold": 0.78,
+      "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+      "npz": "2020__fire_23756984_2020-02-09.npz",
+      "preview": "2020__fire_23756984_2020-02-09.png",
+      "layers": {
+        "probability": "2020__fire_23756984_2020-02-09_probability.png",
+        "target": "2020__fire_23756984_2020-02-09_target.png",
+        "segmentation": "2020__fire_23756984_2020-02-09_segmentation.png",
+        "errors": "2020__fire_23756984_2020-02-09_errors.png"
+      },
+      "error_codes": {
+        "0": "TN",
+        "1": "TP",
+        "2": "FP",
+        "3": "FN",
+        "255": "invalid"
+      },
+      "directory": "B2_w10_holdout169"
+    },
+    {
+      "event_id": "2020/fire_24332880",
+      "target_date": "2020-09-04",
+      "raw": "2020__fire_24332880_2020-09-04_raw.npz",
+      "shape": [
+        320,
+        256
+      ],
+      "tile_count": 20,
+      "spatial_reference": "pixel grid; compact does not store CRS/affine",
+      "selection": "evenly spaced event IDs; median target date; all tiles, padding invalid",
+      "model": "B2_w10",
+      "threshold": 0.78,
+      "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+      "npz": "2020__fire_24332880_2020-09-04.npz",
+      "preview": "2020__fire_24332880_2020-09-04.png",
+      "layers": {
+        "probability": "2020__fire_24332880_2020-09-04_probability.png",
+        "target": "2020__fire_24332880_2020-09-04_target.png",
+        "segmentation": "2020__fire_24332880_2020-09-04_segmentation.png",
+        "errors": "2020__fire_24332880_2020-09-04_errors.png"
+      },
+      "error_codes": {
+        "0": "TN",
+        "1": "TP",
+        "2": "FP",
+        "3": "FN",
+        "255": "invalid"
+      },
+      "directory": "B2_w10_holdout169"
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "target_date": "2020-11-22",
+      "raw": "2020__fire_24695963_2020-11-22_raw.npz",
+      "shape": [
+        384,
+        320
+      ],
+      "tile_count": 30,
+      "spatial_reference": "pixel grid; compact does not store CRS/affine",
+      "selection": "evenly spaced event IDs; median target date; all tiles, padding invalid",
+      "model": "B2_w10",
+      "threshold": 0.78,
+      "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+      "npz": "2020__fire_24695963_2020-11-22.npz",
+      "preview": "2020__fire_24695963_2020-11-22.png",
+      "layers": {
+        "probability": "2020__fire_24695963_2020-11-22_probability.png",
+        "target": "2020__fire_24695963_2020-11-22_target.png",
+        "segmentation": "2020__fire_24695963_2020-11-22_segmentation.png",
+        "errors": "2020__fire_24695963_2020-11-22_errors.png"
+      },
+      "error_codes": {
+        "0": "TN",
+        "1": "TP",
+        "2": "FP",
+        "3": "FN",
+        "255": "invalid"
+      },
+      "directory": "B2_w10_holdout169"
+    }
+  ],
+  "ablation_archive_sha256": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+  "historical_archive_sha256": "bd1e2f7e70ad6b8d1ce516e72626b1dfc9cb7050d0e02ad120b7b5a38031d6dd"
+}

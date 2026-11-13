@@ -21,6 +21,7 @@ dependencies = [
 dev = ["pytest"]
 viewer = ["xarray", "rioxarray"]
 benchmark-metadata = ["pyarrow"]
+gpu-operational = ["pyarrow", "psutil>=5.9,<8"]
 kaggle = ["kagglehub>=1.0.3,<2"]
 api = ["fastapi", "uvicorn"]
 

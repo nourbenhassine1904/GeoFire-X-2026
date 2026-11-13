@@ -1,0 +1,16 @@
+{"event_id": "2018/fire_21458798", "events": 1, "observations": 280, "samples": 180, "event_seconds": 3.9959508000001733, "elapsed_seconds": 4.887507999999798, "peak_rss_bytes": 402771968}
+{"event_id": "2018/fire_21751305", "events": 2, "observations": 820, "samples": 570, "event_seconds": 7.536921500000062, "elapsed_seconds": 12.425205599999572, "peak_rss_bytes": 453427200}
+{"event_id": "2018/fire_21889744", "events": 3, "observations": 1180, "samples": 830, "event_seconds": 4.911714500000016, "elapsed_seconds": 17.33720799999992, "peak_rss_bytes": 453427200}
+{"event_id": "2018/fire_21890058", "events": 4, "observations": 1460, "samples": 1010, "event_seconds": 4.249246699999276, "elapsed_seconds": 21.586775699999635, "peak_rss_bytes": 453427200}
+{"event_id": "2018/fire_21997828", "events": 5, "observations": 2100, "samples": 1550, "event_seconds": 9.035127000000102, "elapsed_seconds": 30.623778799999855, "peak_rss_bytes": 453427200}
+{"event_id": "2018/fire_21999270", "events": 6, "observations": 2800, "samples": 2150, "event_seconds": 9.842349900000045, "elapsed_seconds": 40.466419600000336, "peak_rss_bytes": 453427200}
+{"event_id": "2018/fire_22257882", "events": 7, "observations": 3200, "samples": 2450, "event_seconds": 5.470982700000604, "elapsed_seconds": 45.937702100000024, "peak_rss_bytes": 453427200}
+{"event_id": "2019/fire_23036860", "events": 8, "observations": 3840, "samples": 2990, "event_seconds": 10.781894800000373, "elapsed_seconds": 56.71985250000034, "peak_rss_bytes": 453865472}
+{"event_id": "2019/fire_23300668", "events": 9, "observations": 4120, "samples": 3170, "event_seconds": 4.2813506000002235, "elapsed_seconds": 61.00141919999987, "peak_rss_bytes": 453865472}
+{"event_id": "2019/fire_23572745", "events": 10, "observations": 4500, "samples": 3450, "event_seconds": 5.035345000000234, "elapsed_seconds": 66.0370211999998, "peak_rss_bytes": 453865472}
+{"event_id": "2020/fire_23654679", "events": 11, "observations": 5340, "samples": 4140, "event_seconds": 14.502081200000248, "elapsed_seconds": 80.53933380000035, "peak_rss_bytes": 466378752}
+{"event_id": "2020/fire_24191375", "events": 12, "observations": 5640, "samples": 4315, "event_seconds": 5.208065400000123, "elapsed_seconds": 85.74800440000035, "peak_rss_bytes": 466378752}
+{"event_id": "2020/fire_24332761", "events": 13, "observations": 5980, "samples": 4555, "event_seconds": 4.360349999999926, "elapsed_seconds": 90.10884979999992, "peak_rss_bytes": 466378752}
+{"event_id": "2020/fire_24333033", "events": 14, "observations": 6850, "samples": 5275, "event_seconds": 22.092241500000455, "elapsed_seconds": 112.20134159999998, "peak_rss_bytes": 468078592}
+{"event_id": "2020/fire_24462764", "events": 15, "observations": 7130, "samples": 5455, "event_seconds": 6.678959599999871, "elapsed_seconds": 118.88056059999963, "peak_rss_bytes": 468078592}
+{"event_id": "2020/fire_24695970", "events": 16, "observations": 7850, "samples": 6025, "event_seconds": 11.971980799999983, "elapsed_seconds": 130.85277959999985, "peak_rss_bytes": 469581824}

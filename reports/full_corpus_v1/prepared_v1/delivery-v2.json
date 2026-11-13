@@ -1,0 +1,864 @@
+{
+  "status": "CORPUS_USABLE_SPARK_PENDING",
+  "audit": {
+    "status": "CERTIFIED",
+    "verified_observations": 13607,
+    "verified_events": 607,
+    "expected_observations": 13607,
+    "expected_events": 607,
+    "errors": [],
+    "processed_this_attempt": 13607,
+    "reused_certificates": 0,
+    "seconds": 1517.033919900001,
+    "verified_bytes": 49294235723,
+    "network_bytes": 0,
+    "raw_writes": 0,
+    "journal": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\full_corpus_v1\\audit-attempt-1793711579113888200-d2ba964710c4406b9eda50575240afd5.jsonl",
+    "split_events": {
+      "train": 250,
+      "val": 201,
+      "test": 156
+    },
+    "split_observations": {
+      "train": 5198,
+      "val": 4292,
+      "test": 4117
+    }
+  },
+  "preparation": {
+    "status": "PREPARED",
+    "events": 607,
+    "observations": 13607,
+    "train_validation_events": 451,
+    "window_counts": {
+      "train": {
+        "1": {
+          "natural": 4948,
+          "aligned": 3948,
+          "rejections": {}
+        },
+        "3": {
+          "natural": 4448,
+          "aligned": 3948,
+          "rejections": {}
+        },
+        "5": {
+          "natural": 3948,
+          "aligned": 3948,
+          "rejections": {}
+        }
+      },
+      "val": {
+        "1": {
+          "natural": 4091,
+          "aligned": 3287,
+          "rejections": {}
+        },
+        "3": {
+          "natural": 3689,
+          "aligned": 3287,
+          "rejections": {}
+        },
+        "5": {
+          "natural": 3287,
+          "aligned": 3287,
+          "rejections": {}
+        }
+      }
+    },
+    "window_rows": 21705,
+    "processing": {
+      "status": "PYARROW_ONLY",
+      "note": "Spark not executed"
+    },
+    "extraction_comparison": {
+      "status": "EXACT_SHA256_CRC_SIZE_MATCH",
+      "members": 13607,
+      "certificate": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\.extraction-session\\complete-e285d40057b44a488b9baee10afe7c22.json",
+      "certificate_sha256": "96fc830c716437d0a390c490ecfb8d1d76d3831f6df7190cd2497020654d088f",
+      "archive_md5": "dc1a04e63ccc70037b277d585b8fe761",
+      "archive_md5_status": "VERIFIED",
+      "archive_note": "Previously certified; no repeat read of the ZIP in this integration"
+    },
+    "test_policy": "2021 storage inventory/QC only; excluded from window tables, normalization and selection",
+    "certificate_sha256": "f7606ac51a3541a04d65330e266757107f1e5a9c4239fea2534944afdf891f4b",
+    "index_identity": "7aee2fc32d01fb8b3f0671073ab7aa12c12fbb4a90cb1d0f21d79e0ff843bbad",
+    "artifacts": {
+      "events.json": "723aa41b83c8b03482391acf5468a48b9122ba706f806615a1e79065fc23593d",
+      "events.parquet": "420a6e71b8ea2b9158de8796b59af03c6d71230b148cad88dbc1ac60ace421a8",
+      "extraction-comparison.json": "a9fa285cd552d4f9cb53bb142ffe5bb3214665f5fcbfc84232cd6fe4e71174b3",
+      "feature-contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+      "fold_00.csv": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "manifest.csv": "f0f04615e45914ee1c3f4332fa66758cbed0f3d45c271f5075b2285ff4aa86c0",
+      "observations-qc.parquet": "38f1b5dc88e583bb1559a619ca38ef19c74bf25b303b27a110921b4bfe944bee",
+      "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+      "processing.json": "06f129dca181bc2e26fba62ead5cac4998e476a9c1eca153ede819b2cda5e7cd",
+      "window-counts.json": "2f1d013166416a0c59356e051ea9b7806895362dc0db1a75d8d8f15447cbbe07",
+      "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345"
+    }
+  },
+  "cpu_validation": {
+    "status": "VALIDATED_CPU_ONLY",
+    "normalization_seconds": 466.24399000000267,
+    "normalization_unique_train_contexts": 4948,
+    "normalization_train_events": 250,
+    "normalizer_channels": [
+      "slope_z",
+      "elevation_z",
+      "slope_missing",
+      "elevation_missing",
+      "aspect_sin",
+      "aspect_cos",
+      "aspect_missing",
+      "fire_J"
+    ],
+    "channels": 8,
+    "raw_bands": 23,
+    "test_paths_used": 0,
+    "batches": [
+      {
+        "split": "train",
+        "context": 1,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.0091074999945704,
+        "seconds": 1.893772600000375,
+        "patches_per_second": 25.346232171692893,
+        "p50_batch_seconds": 0.003986849995271768,
+        "p95_batch_seconds": 0.9209095549980701,
+        "x_shape": [
+          4,
+          1,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "train",
+        "context": 3,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 0.45700070000020787,
+        "seconds": 0.9002008999959799,
+        "patches_per_second": 53.32143080529509,
+        "p50_batch_seconds": 0.0033944500028155744,
+        "p95_batch_seconds": 0.43068265000256356,
+        "x_shape": [
+          4,
+          3,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "train",
+        "context": 5,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 0.4780624999984866,
+        "seconds": 0.9553463000484044,
+        "patches_per_second": 50.243560892597785,
+        "p50_batch_seconds": 0.005848350003361702,
+        "p95_batch_seconds": 0.446058055001049,
+        "x_shape": [
+          4,
+          5,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 1,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.0259931999898981,
+        "seconds": 2.196986700000707,
+        "patches_per_second": 21.848106772783172,
+        "p50_batch_seconds": 0.002112850001140032,
+        "p95_batch_seconds": 1.0816643649959587,
+        "x_shape": [
+          4,
+          1,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 3,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 0.5626241999998456,
+        "seconds": 1.1672734999883687,
+        "patches_per_second": 41.12146810535688,
+        "p50_batch_seconds": 0.004773749999003485,
+        "p95_batch_seconds": 0.5602477600004931,
+        "x_shape": [
+          4,
+          3,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 5,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 0.6343675999960396,
+        "seconds": 1.2572394000017084,
+        "patches_per_second": 38.178886216845235,
+        "p50_batch_seconds": 0.005077750000054948,
+        "p95_batch_seconds": 0.6007371349987807,
+        "x_shape": [
+          4,
+          5,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      }
+    ],
+    "forward_contracts": [
+      {
+        "model": "B0",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.01431589999992866,
+        "parameters": 0,
+        "device": "cpu"
+      },
+      {
+        "model": "B1",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.04395269999804441,
+        "parameters": 5809,
+        "device": "cpu"
+      },
+      {
+        "model": "B2",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.02516750000359025,
+        "parameters": 123977,
+        "device": "cpu"
+      },
+      {
+        "model": "B3",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.011568099987925962,
+        "parameters": 5297,
+        "device": "cpu"
+      }
+    ],
+    "patch_inventory": {
+      "patch_size": 64,
+      "domain": "joint maximum context T=5 + target, identical for T=1/3/5",
+      "positive_sampling": "not used for this inventory; validation never filtered by labels",
+      "by_split": {
+        "train": {
+          "examples": 3948,
+          "geometric_patches": 93603,
+          "usable_patches": 93603,
+          "empty_patches": 0,
+          "valid_joint_pixels": 313977876,
+          "masked_examples": 0
+        },
+        "val": {
+          "examples": 3287,
+          "geometric_patches": 78771,
+          "usable_patches": 78771,
+          "empty_patches": 0,
+          "valid_joint_pixels": 263630731,
+          "masked_examples": 0
+        }
+      }
+    },
+    "gpu_training": false,
+    "optimizer_updates": 0,
+    "windows_source": "reports\\full_corpus_v1\\prepared_v1\\windows.parquet",
+    "input_hashes": {
+      "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+      "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+      "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+      "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+    },
+    "torch_threads": 2,
+    "loader_workers": 0,
+    "reader_cache_mb": 64,
+    "resources": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "logical_cpus": 12,
+      "workspace_free_bytes": 113643417600,
+      "corpus_volume_free_bytes": 438386307072,
+      "ram_total_bytes": 16837500928,
+      "ram_available_bytes": 1353707520,
+      "process_working_set_bytes": 728608768,
+      "process_peak_working_set_bytes": 736980992
+    },
+    "cache_caveat": "OS cache not flushed; first batch is not a certified cold-disk measurement"
+  },
+  "window_events_used": {
+    "train": 250,
+    "val": 201
+  },
+  "qc_by_split": {
+    "train": {
+      "observations": 5198,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        10636908,
+        10635996,
+        10635386,
+        9297248,
+        9297544,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        3247364,
+        3247364,
+        3180891,
+        5818892,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        413904274
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "training preparation"
+    },
+    "val": {
+      "observations": 4292,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        7216401,
+        7223825,
+        7223089,
+        25334232,
+        25334370,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        6441888,
+        6441888,
+        6338252,
+        6834136,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        344480528
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "training preparation"
+    },
+    "test": {
+      "observations": 4117,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        35354762,
+        35352735,
+        35352710,
+        55160544,
+        55160568,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        966626,
+        966626,
+        951117,
+        3445717,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        315215250
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "storage integrity only, no model use"
+    }
+  },
+  "gpu_budget": {
+    "status": "NOT_AUTHORIZED_NOT_SUBMITTED",
+    "namespace": "geofirex-full-corpus-fold0-v1",
+    "runs": [
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B0_T1_seed42.yaml",
+        "context": 1,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B1_T1_seed42.yaml",
+        "context": 1,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 3505,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B2_T1_seed42.yaml",
+        "context": 1,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 122825,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B3_T1_seed42.yaml",
+        "context": 1,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B0_T3_seed42.yaml",
+        "context": 3,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B1_T3_seed42.yaml",
+        "context": 3,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 5809,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B2_T3_seed42.yaml",
+        "context": 3,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 123977,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B3_T3_seed42.yaml",
+        "context": 3,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B0_T5_seed42.yaml",
+        "context": 5,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B1_T5_seed42.yaml",
+        "context": 5,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 8113,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B2_T5_seed42.yaml",
+        "context": 5,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 125129,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_v1\\gpu_configs\\B3_T5_seed42.yaml",
+        "context": 5,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      }
+    ],
+    "next_step": "Discarded T=3 throughput probes, 20 measured + 3 warmup steps for B1/B2/B3; separately authorize <= 0.5 GPU hours total including preparation",
+    "proposed_first_T3_campaign_gpu_hours": 6.0,
+    "proposed_per_trainable_run_gpu_hours": 2.0,
+    "B0": "Persistence, zero optimizer updates; prefer CPU, not included in GPU-hour allocation",
+    "T1_T5": "Prepared configs only; no GPU budget granted or assumed",
+    "timing_caveat": "Provisional resource envelopes, not measured full-corpus GPU runtimes. Profile full validation before approval.",
+    "runner_time_limit": "max_run_seconds is cooperative at epoch boundaries, not a hard wall-time cap; external job timeout required",
+    "machine": {
+      "gpu_vram_gb": 16,
+      "ram_gb": 16,
+      "cpu_threads": 2,
+      "loader_workers": 0,
+      "reader_cache_mb_per_process": 64,
+      "minimum_free_disk_bytes": 20000000000
+    },
+    "transfer_policy": "No automatic cloud publication or copying; mount an already authorized corpus and relocate data_root/window paths",
+    "modalities": "Only conservative_fire_terrain; other existing profiles retain their availability-evidence lock",
+    "corpus_bytes_by_split": {
+      "train": 19173183260,
+      "val": 15822169170,
+      "test": 14298883293
+    },
+    "minimum_train_validation_volume_bytes": 54995352430
+  },
+  "tests": {
+    "tests_delivery.xml": {
+      "tests": 55,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "passed": 54,
+      "sha256": "489f928961c586ff8f5a91c0100ec0ad00c620909971950494898e245748712b"
+    },
+    "tests_contracts_final.xml": {
+      "tests": 13,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "passed": 12,
+      "sha256": "ed2b16ffab72e2467c57091f86d73d639a7ec910176b3ed3d67f4927d56495cf"
+    }
+  },
+  "resources": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpus": 12,
+    "workspace_free_bytes": 113243189248,
+    "corpus_volume_free_bytes": 438386307072,
+    "ram_total_bytes": 16837500928,
+    "ram_available_bytes": 1338900480,
+    "process_working_set_bytes": 405839872,
+    "process_peak_working_set_bytes": 406892544
+  },
+  "artifact_hashes": {
+    "cli-inspect.json": "761bc3afc0f4160e50764a894df00198e6223aa1cf2f1ec728c5d013735d01b7",
+    "cpu-validation.json": "663a6f430be071b1ba510eaac65806aea18e8547eec2b47bdb524fd12604e165",
+    "delivery.json": "4105fb055ddf252f7bc9c313bd35de2ef3d31e86d037b0537dccaa51b6497e70",
+    "events.json": "723aa41b83c8b03482391acf5468a48b9122ba706f806615a1e79065fc23593d",
+    "events.parquet": "420a6e71b8ea2b9158de8796b59af03c6d71230b148cad88dbc1ac60ace421a8",
+    "extraction-comparison.json": "a9fa285cd552d4f9cb53bb142ffe5bb3214665f5fcbfc84232cd6fe4e71174b3",
+    "feature-contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+    "fold_00.csv": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "gpu-budget.json": "b595342217dd573b0b2a736c331eeaef60e549bf515c1bb66e3759b82ba9b631",
+    "manifest.csv": "f0f04615e45914ee1c3f4332fa66758cbed0f3d45c271f5075b2285ff4aa86c0",
+    "normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "observations-qc.parquet": "38f1b5dc88e583bb1559a619ca38ef19c74bf25b303b27a110921b4bfe944bee",
+    "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "patch-inventory.json": "e3c5e9962a87694710ae626f20e21195757e129b8dabae1d345d7dd7106a3342",
+    "preparation.json": "8e1cd4f0e0a979d56cc20e9ab3bb3b084ef99bee70e7a558b7d7ba10e069f831",
+    "processing.json": "06f129dca181bc2e26fba62ead5cac4998e476a9c1eca153ede819b2cda5e7cd",
+    "REPORT.md": "d3bfadc3d79e2387e40faffc646dac4b305dead58afc63ab6c1199cc01e26817",
+    "window-counts.json": "2f1d013166416a0c59356e051ea9b7806895362dc0db1a75d8d8f15447cbbe07",
+    "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "gpu_configs/B0_T1_seed42.yaml": "141cdcb569d6551c440e2634c9e5540f7a7c3468321432ef169263df9a2d12ca",
+    "gpu_configs/B0_T3_seed42.yaml": "d9305c1d8d59469fdf1792938ed293b4e83edf98c6f456dc9fc122702ee0507c",
+    "gpu_configs/B0_T5_seed42.yaml": "1d7e8f990e4475febe810feda0388ea283e3cf6a9b6cf20e46c854ed9c0c6b3c",
+    "gpu_configs/B1_T1_seed42.yaml": "670448f07c85a9a9afc13fd9bc9ccc9ec527c5d41aa3027614b463c0a10087fc",
+    "gpu_configs/B1_T3_seed42.yaml": "610c3f7d4fa22fed4ca609fa075ce121982d96e1ee03101910b727109fba5984",
+    "gpu_configs/B1_T5_seed42.yaml": "4610a07097267706c0a83f498e614c65abdfe73c007b2abfdd35f00364f2b693",
+    "gpu_configs/B2_T1_seed42.yaml": "587a7b56a2dd7a8e46e62ea31e653bb328336b52bab8086466a0f06f55058e17",
+    "gpu_configs/B2_T3_seed42.yaml": "335093c9da83c118197434072fa9cb6f88da60227e7013cc15c5659e43285a89",
+    "gpu_configs/B2_T5_seed42.yaml": "e983a16ebbb59af96b9632eb7840f015e57770e7673fcf5a3c1ef84eeb7b6955",
+    "gpu_configs/B3_T1_seed42.yaml": "a349b0ebc1506467c0fb4e3476814af4dcbebe4e804500d9f0f990b8234c0e51",
+    "gpu_configs/B3_T3_seed42.yaml": "48f129b79c9015f8cb7d94e3c052435f43bb86877be657c972974c1b73cbbe6c",
+    "gpu_configs/B3_T5_seed42.yaml": "5b37bf4eaa3cdf4b7426eb957321ad45d2b289ecd860253ea3d19941b40ec084"
+  },
+  "source_hashes": {
+    "src/geofirex/full_corpus.py": "5021a3f8f9544a2fdea8796d85a6eff581335c53eed48a05221a5706607b34c0",
+    "src/geofirex/runner.py": "4582e0c6594656c2940c3133b881c975d3eb40e13e4fa1097c658a1bd6edb5e4",
+    "src/geofirex/runner_data.py": "d2e90d5a00408574a1c994b8fa2bf6535e1997ff17a825d1c025a95d37de9a1b",
+    "scripts/integrate_full_corpus.py": "5ce85ee84002a452f1fed1634a0814af8e6687e2d37c2f43d57179fb4ec1123e",
+    "scripts/run_benchmark.py": "2bd99694028c47d2a59f86c80ca59524bf319e25851398731fcba732db706345",
+    "tests/test_full_corpus.py": "67940da1cc952ca365be745c4d500c797d83e4219e29ff14240f680029e710c7"
+  },
+  "forbidden_actions": {
+    "acquisition": false,
+    "gpu_training": false,
+    "model_test_2021": false,
+    "cloud_publication": false,
+    "commit": false,
+    "push": false
+  }
+}

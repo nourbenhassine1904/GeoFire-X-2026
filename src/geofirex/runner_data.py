@@ -34,8 +34,14 @@ class FoldData:
         self.config = config
         self.root = Path(config["data_root"]).resolve()
         self.roots = [Path(p).resolve() for p in config.get("data_roots", [])] or [self.root]
-        with Path(config["manifest"]).open(encoding="utf-8", newline="") as f:
-            self.rows = list(csv.DictReader(f))
+        if Path(config['manifest']).suffix == '.parquet':
+            import pyarrow.parquet as pq
+            self.rows = pq.read_table(config['manifest']).to_pylist()
+            if any(r.get('status') != 'ok' for r in self.rows):
+                raise ValueError('Parquet manifest contains observations without successful QC')
+        else:
+            with Path(config["manifest"]).open(encoding="utf-8", newline="") as f:
+                self.rows = list(csv.DictReader(f))
         with Path(config["split"]).open(encoding="utf-8", newline="") as f:
             split = list(csv.DictReader(f))
         self.assignment = {r["event_id"]: r["split"] for r in split}
@@ -55,9 +61,23 @@ class FoldData:
             raise ValueError("Duplicate manifest observation")
         if not present <= self.expected.keys():
             raise ValueError("Manifest observations absent from index")
+        scope = config.get('corpus_scope', 'complete')
+        if scope not in ('complete', 'train_validation'):
+            raise ValueError('Unsupported corpus scope')
+        required = {k for k in self.expected if self.assignment[k[0]] in ('train', 'val')}
+        if scope == 'train_validation':
+            if config['fold'] != 0 or present != required:
+                raise ValueError('Train/validation scope requires every train/val observation and no test')
+            # Portable, canonical tokens prevent a train row aliasing a held-out file.
+            for r in self.rows:
+                if r['relative_path'] != f"{r['event_id']}/{r['date']}.tif":
+                    raise ValueError('Train/validation scope requires canonical relative raster paths')
         if config["qualification"] == "scientific":
-            if len(self.assignment) != 607 or len(self.expected) != 13607 or present != self.expected.keys():
+            selected = required if scope == 'train_validation' else self.expected.keys()
+            if len(self.assignment) != 607 or len(self.expected) != 13607 or present != selected:
                 raise ValueError("Scientific runs require the complete 607-event / 13607-observation manifest")
+            if scope == 'train_validation' and (len(required) != 9490 or len({k[0] for k in required}) != 451):
+                raise ValueError('Scientific train/validation scope requires 451 events / 9490 observations')
         if config["qualification"] in {"pilot", "scientific"}:
             selected_events = {r["event_id"] for r in self.rows}
             if present != {key for key in self.expected if key[0] in selected_events}:
@@ -77,10 +97,27 @@ class FoldData:
         for role in ("train", "val", "test"):
             self.groups[role], self.rejections[role] = aligned_windows(
                 resolved, self.assignment, role, contexts=(1, 3, 5))
+        if config.get('window_manifest'):
+            if config['fold'] != 0 or Path(config['manifest']).suffix != '.parquet':
+                raise ValueError('Prepared window tables require audited Parquet observations and fold 0')
+            import pyarrow.parquet as pq
+            from geofirex.scientific_scaleup import load_window_manifest
+            window_rows = pq.read_table(config['window_manifest']).to_pylist()
+            if any(r['split'] not in ('train', 'val') or r['context'] not in (1, 3, 5) for r in window_rows):
+                raise ValueError('Prepared window table contains locked test or unsupported context')
+            window_rows = [{**r, 'target_path': str(self.resolve_path(r['target_path'])),
+                            'context_paths': [str(self.resolve_path(p)) for p in r['context_paths']]}
+                           for r in window_rows]
+            for role in ('train', 'val'):
+                for context in (1, 3, 5):
+                    self.groups[role][context] = load_window_manifest(
+                        window_rows, resolved, self.assignment, role, context)
         for role in ("train", "val"):
             if not self.groups[role][5]:
                 raise ValueError(f"No aligned windows in {role}")
         self.hashes = {key: sha256_file(config[key]) for key in ("manifest", "split", "index")}
+        if config.get('window_manifest'):
+            self.hashes['window_manifest'] = sha256_file(config['window_manifest'])
         self.hashes["targets"] = digest({role: [(w.event_id, w.target_date) for w in groups[5]]
                                          for role, groups in self.groups.items()})
         self.fingerprints = {}
@@ -90,6 +127,9 @@ class FoldData:
         if Path(name).is_absolute():
             return Path(name).resolve()
         paths = {(root/name).resolve() for root in self.roots if (root/name).is_file()}
+        if self.config.get('corpus_scope') == 'train_validation' and any(
+                not any(p.is_relative_to(root) for root in self.roots) for p in paths):
+            raise ValueError('Raster symlink escapes training mounts')
         if len(paths) > 1:
             raise ValueError(f"Ambiguous raster across mounts: {name}")
         return next(iter(paths)) if paths else (self.roots[0]/name).resolve()
@@ -106,6 +146,8 @@ class FoldData:
             key = (r["event_id"], r["date"])
             expected = self.expected[key]
             checksum = sha256_file(path)
+            if r.get('sha256') and checksum != r['sha256']:
+                raise ValueError(f'Certified observation SHA256 mismatch: {path}')
             if checksum in seen and seen[checksum] != role:
                 raise ValueError("Identical raster content crosses split roles")
             seen[checksum] = role
@@ -140,6 +182,8 @@ class FoldData:
         return {"hashes": self.hashes, "raster_fingerprints": self.fingerprints,
                 "event_geometries": self.geometries, "rejections": self.rejections,
                 "corpus_counts": counts, "complete_corpus": len(self.assignment) == 607 and len(self.expected) == 13607 and len(self.rows) == 13607,
+                "corpus_scope": self.config.get('corpus_scope', 'complete'),
+                "complete_train_validation": len(self.rows) == 9490 and len({r['event_id'] for r in self.rows}) == 451,
                 "windows": {r: len(g[5]) for r, g in self.groups.items()}}
 
     def windows(self, role):

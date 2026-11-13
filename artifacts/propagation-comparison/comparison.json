@@ -1,0 +1,127 @@
+{
+  "status": "VERIFIED_COMPARATIVE_ONLY",
+  "promoted": false,
+  "principal_model": "B2 pos_weight10",
+  "principal_threshold": 0.78,
+  "selection": {
+    "status": "COMPLETE",
+    "experiment": "UNET_NEW_FIRE_HEAD_V1",
+    "checkpoint_sha256": "55b05174b0c2cf61d005f1a38bdd45bff16ead3957ffd3345f309a474f59b67e",
+    "threshold": 0.845,
+    "full": {
+      "threshold": 0.845,
+      "tp": 38782,
+      "fp": 81944,
+      "fn": 42571,
+      "tn": 45960467,
+      "valid_pixels": 46123764,
+      "positive_pixels": 81353,
+      "predicted_positive_pixels": 120726,
+      "prevalence": 0.0017637979415556805,
+      "dice": 0.38383008625339593,
+      "iou": 0.23749364654586427,
+      "precision": 0.32123983234763015,
+      "recall": 0.4767125981832262,
+      "average_precision": 0.24418498838211738,
+      "brier_score": 0.0030443288266575642
+    },
+    "new_fire": {
+      "threshold": 0.845,
+      "tp": 10663,
+      "fp": 40980,
+      "fn": 39501,
+      "tn": 45950752,
+      "valid_pixels": 46041896,
+      "positive_pixels": 50164,
+      "predicted_positive_pixels": 51643,
+      "prevalence": 0.0010895294146878746,
+      "dice": 0.20947479053503198,
+      "iou": 0.11699069604142895,
+      "precision": 0.20647522413492633,
+      "recall": 0.21256279403556336
+    },
+    "baseline32": {
+      "full": {
+        "threshold": 0.78,
+        "tp": 36640,
+        "fp": 71223,
+        "fn": 44713,
+        "tn": 45971188,
+        "valid_pixels": 46123764,
+        "positive_pixels": 81353,
+        "predicted_positive_pixels": 107863,
+        "prevalence": 0.0017637979415556805,
+        "dice": 0.38728225942837813,
+        "iou": 0.24014261744966442,
+        "precision": 0.33969016252097567,
+        "recall": 0.4503828992169926,
+        "average_precision": 0.26788397857293444,
+        "brier_score": 0.002789059444907891
+      },
+      "new_fire": {
+        "threshold": 0.78,
+        "tp": 7850,
+        "fp": 27925,
+        "fn": 42314,
+        "tn": 45963807,
+        "valid_pixels": 46041896,
+        "positive_pixels": 50164,
+        "predicted_positive_pixels": 35775,
+        "prevalence": 0.0010895294146878746,
+        "dice": 0.18268772035979008,
+        "iou": 0.10052632252942156,
+        "precision": 0.2194269741439553,
+        "recall": 0.1564867235467666
+      }
+    },
+    "accepted_on_development32": false,
+    "rule": "on same 32: global Dice >= saved w10; new-fire Dice >= saved w10; new-fire recall > saved w10",
+    "boundary_warning": false,
+    "cpu_selection_seconds": 162.92805745800024,
+    "holdout169_pixels_opened": 0,
+    "test_2021_pixels_opened": 0,
+    "limitation": "32 repeatedly used for development; 169 previously seen, neither is a fresh blind test. No automatic promotion."
+  },
+  "delta": {
+    "full": {
+      "dice": -0.0034521731749821982,
+      "iou": -0.0026489709038001463,
+      "precision": -0.01845033017334552,
+      "recall": 0.026329698966233606,
+      "tp": 2142,
+      "fp": 10721,
+      "fn": -2142,
+      "average_precision": -0.02369899019081706
+    },
+    "new_fire": {
+      "dice": 0.0267870701752419,
+      "iou": 0.016464373512007385,
+      "precision": -0.012951750009028956,
+      "recall": 0.05607607048879676,
+      "tp": 2813,
+      "fp": 13055,
+      "fn": -2813
+    }
+  },
+  "training": {
+    "epochs": 4,
+    "updates": 23404,
+    "gpu": "Tesla T4",
+    "seconds": 887.0689039439999
+  },
+  "provenance": {
+    "archive": "artifacts/propagation-comparison/GeoFireX_UNET_PROPAGATION_COMPLETE.zip",
+    "archive_sha256": "de2c4b7f52939223046c535ed77a7309537591f04d2521cc3affaa46695b0b85",
+    "checkpoint_sha256": "55b05174b0c2cf61d005f1a38bdd45bff16ead3957ffd3345f309a474f59b67e",
+    "executed_source_bundle": "artifacts/propagation-comparison/executed-training-code.zip",
+    "executed_source_sha256": "cc2dcdbea89cf621a98058f65857f0c18e168ee9b6606085627117fad03c844e",
+    "architecture_and_loss_ast_match": true,
+    "initial_main_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f"
+  },
+  "limitations": [
+    "ZIP contains aggregate metrics and checkpoint only; per-event outputs, threshold curves and new-model maps not supplied. No evaluation rerun.",
+    "Threshold is the recorded selection; optimum cannot be reverified without the saved full curve."
+  ],
+  "evaluations_rerun": false,
+  "test_2021_pixels_opened": 0
+}

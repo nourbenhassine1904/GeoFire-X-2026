@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.192" timestamp="2026-11-07T14:09:37.556534+01:00" hostname="NourBh"><testcase classname="tests.test_memory_guard" name="test_native_job_rejects_excess_commit" time="0.081"><failure message="assert 275566592 &lt;= (128 * (1024 ** 2))">tmp_path = WindowsPath('C:/Users/nourb/Projects/GeoFire-X-2026/reports/recovery_20261107_v3/tmp-native-cap/test_native_job_rejects_excess0')
+
+    def test_native_job_rejects_excess_commit(tmp_path):
+        source = tmp_path/'probe.py'
+        source.write_text('import sys\ntry:\n    value = bytearray(256*1024*1024)\n'
+                          'except MemoryError:\n    print("NATIVE_CAP_ENFORCED")\n'
+                          'else:\n    sys.exit("Native memory limit was not enforced")\n')
+        tree = ProcessTree([sys.executable, str(source)], memory_limit_bytes=128*1024**2,
+                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        try:
+            output, _ = tree.proc.communicate(timeout=5)
+            sample = tree.memory_sample()
+            assert tree.proc.returncode == 0, output
+            assert 'NATIVE_CAP_ENFORCED' in output
+&gt;           assert 0 &lt; sample['peak_job_commit_bytes'] &lt;= 128*1024**2
+E           assert 275566592 &lt;= (128 * (1024 ** 2))
+
+tests\test_memory_guard.py:29: AssertionError</failure></testcase></testsuite></testsuites>

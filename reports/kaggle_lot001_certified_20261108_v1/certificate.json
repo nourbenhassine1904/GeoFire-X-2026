@@ -1,0 +1,330 @@
+{
+  "status": "LOT001_REMOTE_CPU_CERTIFIED",
+  "files_certified": 1269,
+  "bytes_certified": 4829474073,
+  "dataset": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81",
+  "anomalies": [],
+  "gpu_used": false,
+  "training": false,
+  "inventory": {
+    "manifest_files": 1269,
+    "actual_geotiffs": 1269,
+    "total_attached_files": 1270,
+    "events": 57,
+    "train_events": 57,
+    "years": [
+      "2018"
+    ],
+    "heldout_2021_files": 0,
+    "preview_reported_elements": 617,
+    "preview_is_complete_manifest": false,
+    "json_top_level_keys": 9,
+    "manifest_matches_local": true,
+    "inventory_sha256": "20ddf1cbaa2a9bf15a171b3cc32f786126f8f43ab89c4b5bd2443cc5300b8ee4",
+    "observation_year_counts": {
+      "2017": 3,
+      "2018": 1266
+    },
+    "folder_date_year_mismatches": [
+      {
+        "path": "2018/fire_21458836/2017-12-29.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-30.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      },
+      {
+        "path": "2018/fire_21458836/2017-12-31.tif",
+        "folder_year": 2018,
+        "observation_year": 2017
+      }
+    ],
+    "approved_2017_context": true,
+    "forbidden_2020_2021_observations": 0
+  },
+  "path_compatibility": {
+    "resolver": "geofirex.runner_data.FoldData.resolve_path",
+    "resolved_files": 1269,
+    "data_root": "/kaggle/input/datasets/nnnnbhss/geofirex-wsts-fold0-tv-001-v1/rasters",
+    "data_roots": [
+      "/kaggle/input/datasets/nnnnbhss/geofirex-wsts-fold0-tv-001-v1/rasters"
+    ],
+    "windows_drive_dependency": false
+  },
+  "rasterio_reads": [
+    {
+      "path": "2018/fire_21458798/2018-01-01.tif",
+      "bands": 23,
+      "width": 247,
+      "height": 304,
+      "crs": "EPSG:32610",
+      "transform": [
+        375.0,
+        0.0,
+        697500.0,
+        0.0,
+        -375.0,
+        4136625.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tile_shape": [
+        23,
+        64,
+        64
+      ],
+      "nan_values": 4096,
+      "driver": "GTiff"
+    },
+    {
+      "path": "2018/fire_21690064/2018-05-24.tif",
+      "bands": 23,
+      "width": 222,
+      "height": 299,
+      "crs": "EPSG:32610",
+      "transform": [
+        375.0,
+        0.0,
+        526125.0,
+        0.0,
+        -375.0,
+        4788000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tile_shape": [
+        23,
+        64,
+        64
+      ],
+      "nan_values": 4096,
+      "driver": "GTiff"
+    },
+    {
+      "path": "2018/fire_21804582/2018-07-11.tif",
+      "bands": 23,
+      "width": 236,
+      "height": 299,
+      "crs": "EPSG:32610",
+      "transform": [
+        375.0,
+        0.0,
+        528375.0,
+        0.0,
+        -375.0,
+        4335750.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tile_shape": [
+        23,
+        64,
+        64
+      ],
+      "nan_values": 4096,
+      "driver": "GTiff"
+    },
+    {
+      "path": "2018/fire_21889679/2018-07-27.tif",
+      "bands": 23,
+      "width": 221,
+      "height": 298,
+      "crs": "EPSG:32610",
+      "transform": [
+        375.0,
+        0.0,
+        466125.0,
+        0.0,
+        -375.0,
+        4787625.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tile_shape": [
+        23,
+        64,
+        64
+      ],
+      "nan_values": 4096,
+      "driver": "GTiff"
+    },
+    {
+      "path": "2018/fire_21889750/2018-08-08.tif",
+      "bands": 23,
+      "width": 241,
+      "height": 306,
+      "crs": "EPSG:32610",
+      "transform": [
+        375.0,
+        0.0,
+        754500.0,
+        0.0,
+        -375.0,
+        4470000.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "tile_shape": [
+        23,
+        64,
+        64
+      ],
+      "nan_values": 4096,
+      "driver": "GTiff"
+    }
+  ],
+  "raw_temporal_window": {
+    "X": [
+      1,
+      3,
+      23,
+      64,
+      64
+    ],
+    "device": "cpu",
+    "dtype": "torch.float32"
+  },
+  "events": 57,
+  "role": "train",
+  "loader_reads": [
+    {
+      "context_days": 1,
+      "event": "2018/fire_21458798",
+      "context_dates": [
+        "2018-01-05"
+      ],
+      "target_date": "2018-01-06",
+      "X": [
+        1,
+        1,
+        8,
+        64,
+        64
+      ],
+      "Y": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "validity": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "workers": 0,
+      "cache_bytes": 0,
+      "finite": true
+    },
+    {
+      "context_days": 3,
+      "event": "2018/fire_21458798",
+      "context_dates": [
+        "2018-01-03",
+        "2018-01-04",
+        "2018-01-05"
+      ],
+      "target_date": "2018-01-06",
+      "X": [
+        1,
+        3,
+        8,
+        64,
+        64
+      ],
+      "Y": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "validity": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "workers": 0,
+      "cache_bytes": 0,
+      "finite": true
+    },
+    {
+      "context_days": 5,
+      "event": "2018/fire_21458798",
+      "context_dates": [
+        "2018-01-01",
+        "2018-01-02",
+        "2018-01-03",
+        "2018-01-04",
+        "2018-01-05"
+      ],
+      "target_date": "2018-01-06",
+      "X": [
+        1,
+        5,
+        8,
+        64,
+        64
+      ],
+      "Y": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "validity": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "dtype": "torch.float32",
+      "device": "cpu",
+      "workers": 0,
+      "cache_bytes": 0,
+      "finite": true
+    }
+  ],
+  "aligned_windows": {
+    "1": 984,
+    "3": 984,
+    "5": 984
+  },
+  "window_rejections": {
+    "1": {},
+    "3": {},
+    "5": {}
+  },
+  "versions": {
+    "python": "3.13.18 (main, Oct 26 2026, 15:28:15) [GCC 13.3.0]",
+    "rasterio": "1.5.2",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.1.3",
+    "psutil": "5.9.5"
+  },
+  "resources": {
+    "peak_rss_bytes": 385814528,
+    "minimum_available_bytes": 32034902016,
+    "elapsed_seconds": 455.434146175,
+    "deadline_seconds": 1800,
+    "rss_limit_bytes": 3221225472,
+    "min_available_bytes": 2147483648,
+    "block_bytes": 1048576,
+    "gdal_cache_bytes": 67108864
+  },
+  "scope": "Only existing attached lot 001; no other lots or training certified"
+}

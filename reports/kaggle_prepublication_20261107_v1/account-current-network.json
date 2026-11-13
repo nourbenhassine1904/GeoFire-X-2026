@@ -1,0 +1,87 @@
+{
+  "time": "2026-11-07T13:58:11.021409+00:00",
+  "packages": {
+    "kaggle": "2.2.5",
+    "kagglehub": "1.0.3",
+    "kagglesdk": "0.1.38"
+  },
+  "dataset_writes": 0,
+  "sessions_started": 0,
+  "raw_downloads": 0,
+  "saved_token_expiration": "2026-11-04 04:29:26.351356+00:00",
+  "token_refreshed_in_memory": true,
+  "authenticated_owner": "nnnnbhss",
+  "gpu": {
+    "allowed_seconds": 108000.0,
+    "used_seconds": 0.0,
+    "reserved_seconds": 0.0,
+    "remaining_seconds": 108000.0,
+    "reset_time": "2026-11-14 00:00:00",
+    "pay_to_scale": false,
+    "qualification": "Authenticated allocation; does not prove GPU capacity or phone-verification eligibility"
+  },
+  "private_storage": {
+    "datasets": [
+      {
+        "handle": "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "private": true,
+        "total_bytes": 447927526,
+        "current_version": 1,
+        "returned_versions": 1
+      },
+      {
+        "handle": "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "private": true,
+        "total_bytes": 6071338,
+        "current_version": 1,
+        "returned_versions": 1
+      },
+      {
+        "handle": "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "private": true,
+        "total_bytes": 11762,
+        "current_version": 1,
+        "returned_versions": 1
+      },
+      {
+        "handle": "nnnnbhss/geofire-x-cloud-code-v3",
+        "private": true,
+        "total_bytes": 5875872,
+        "current_version": 1,
+        "returned_versions": 1
+      },
+      {
+        "handle": "nnnnbhss/geofire-x-wsts-batch001",
+        "private": true,
+        "total_bytes": 45064308,
+        "current_version": 1,
+        "returned_versions": 1
+      },
+      {
+        "handle": "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212",
+        "private": true,
+        "total_bytes": 11762,
+        "current_version": 1,
+        "returned_versions": 1
+      }
+    ],
+    "current_version_api_bytes": 504962568,
+    "account_limit_bytes": null,
+    "remaining_bytes": null,
+    "qualification": "Current-version metadata inventory; personal ceiling and historical-version storage require account UI"
+  },
+  "status": "AUTHENTICATED_READONLY_API_PASSED",
+  "credentials_unchanged": true,
+  "request_operations": [
+    "GenerateAccessToken",
+    "IntrospectToken",
+    "GetAcceleratorQuotaStatistics",
+    "ListDatasets",
+    "GetDataset",
+    "GetDataset",
+    "GetDataset",
+    "GetDataset",
+    "GetDataset",
+    "GetDataset"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "command": [
+    "artifacts/orchestrator/kaggle-cli-env/Scripts/python.exe",
+    "scripts/submit_kaggle_cpu_certification.py",
+    "--folder",
+    "reports/kaggle_certification_20261108_v1/cpu-certification/lot-001",
+    "--credentials",
+    "C:/Users/nourb/.kaggle/credentials.json",
+    "--journal",
+    "reports/kaggle_pilot_001_20261107_v1/http-body.jsonl",
+    "--attempt",
+    "reports/kaggle_certification_20261108_v1/submission-attempt-01",
+    "--max-http-body-bytes",
+    "6000000000",
+    "--stop-at-cumulative-body-bytes",
+    "6000000000",
+    "--execute"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 2397003776,
+    "load_percent": 85,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 17650642944,
+    "commit_used_bytes": 19587952640
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 1073741824,
+  "rss_limit_bytes": 1073741824,
+  "time": "2026-11-08T11:41:03.705564+00:00",
+  "status": "PREFLIGHT_LOW_MEMORY",
+  "children_started": 0,
+  "after": {
+    "total": 16837500928,
+    "available": 2397007872,
+    "load_percent": 85,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 17650642944,
+    "commit_used_bytes": 19587952640
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "same six 2020 events, same aligned targets and masks",
+  "events": [
+    "2020/fire_23654679",
+    "2020/fire_24191375",
+    "2020/fire_24332761",
+    "2020/fire_24333033",
+    "2020/fire_24462764",
+    "2020/fire_24695970"
+  ],
+  "b0": {
+    "tp": 3594,
+    "fp": 5313,
+    "fn": 4177,
+    "tn": 8338665,
+    "valid_pixels": 8351749,
+    "positive_pixels": 7771,
+    "dice": 0.43098692888835594,
+    "iou": 0.2746866401712015,
+    "precision": 0.403502862916807,
+    "recall": 0.462488740187878,
+    "average_precision": 0.18711566549478784
+  },
+  "b1": {
+    "dice": 0.31637365911799764,
+    "iou": 0.1879120392902969,
+    "precision": 0.22262410232216806,
+    "recall": 0.5465191095097156,
+    "tp": 4247,
+    "fp": 14830,
+    "fn": 3524,
+    "pixels": 8351749,
+    "positive_pixels": 7771,
+    "prevalence": 0.0009304637866870759,
+    "brier": 0.0027780254046444654,
+    "average_precision": 0.180657644269648,
+    "loss": 0.583691558868196,
+    "samples_seen": 2575
+  },
+  "gpu": false,
+  "claim": "CPU pilot only, no 201-event neural benchmark"
+}

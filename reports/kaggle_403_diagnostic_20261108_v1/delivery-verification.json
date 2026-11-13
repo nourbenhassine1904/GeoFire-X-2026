@@ -1,0 +1,33 @@
+{
+  "status": "DIAGNOSTIC_AND_FIX_VERIFIED_NO_PUBLICATION",
+  "classification": {
+    "state": "ABSENT_VERIFIED",
+    "allow_create_new": true,
+    "owner": "nnnnbhss",
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "absence_basis": "Complete consistent owner catalogues (MY, MY_PRIVATE, MY_PUBLIC) plus successful existing-owner read control",
+    "direct_lookup_state": "ACCESS_FORBIDDEN",
+    "create_permission_verified": false,
+    "reason": "Target absent from complete authenticated owner inventory; direct 403 is retained separately, not used as proof of absence",
+    "catalogued_owner_datasets": 6,
+    "limitation": "Catalogue visibility/consistency scope only; fresh check before create. CreateDataset must reject any collision; no version/update fallback."
+  },
+  "targeted_tests_passed": 14,
+  "cumulative_http_body_bytes": 2087,
+  "remaining": 5999997913,
+  "historical_budget_prefix_preserved": true,
+  "credentials_unchanged": true,
+  "zip_payload_bytes": 4829918684,
+  "zip_sha256_record_preserved": "464e89146fa6fdabfccdd1eb81d97b08549ca9b14428a32e3993f5996e8f5890",
+  "zip_rehashed_this_diagnosis": false,
+  "second_publication_started": false,
+  "new_dataset_writes": 0,
+  "new_notebook_jobs": 0,
+  "source_sha256": {
+    "scripts/publish_kaggle_single_attempt.py": "2cdbfb8736043d1468f25ba8deacd34be787c45ac824cc1e6afcba0f3e9f6be2",
+    "scripts/kaggle_dataset_preflight.py": "9cd24d18d7131a186c6bf35acca832c09f09a8cb0c05bc7f8f8823c11b3d2a09",
+    "scripts/diagnose_kaggle_403.py": "65e44d94b6744a2544fdaf970259f1e47aba934ca5402e988e592e80de7f4dce",
+    "tests/test_kaggle_dataset_preflight.py": "687ef3a9d62bde1eecdb739b717c4899ef210238cd6da083aea95be41d3450b1",
+    "reports/kaggle_prepublication_20261107_v2/PILOTE_LOT_001.ps1": "aa931988082384a59f86bf9641f313e28be2762f6857161213073b3176f2d820"
+  }
+}

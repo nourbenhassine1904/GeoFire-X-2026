@@ -1,0 +1,29 @@
+{
+  "status": "SUPPLIED_LOT002_EVIDENCE_VERIFIED_AND_REGISTERED",
+  "time": "2026-11-09T20:25:14.993296+00:00",
+  "kernel": "nnnnbhss/geofirex-certify-lot-002-cpu-20261108-v1",
+  "certificate_status": "LOT_REMOTE_CPU_CERTIFIED",
+  "identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f",
+  "files": {
+    "certificate.json": {
+      "bytes": 2324,
+      "sha256": "1d4f0c5a879b8de6314a502b471e828e4d017030edb277b17950f31ccdbfbe2a",
+      "matches_existing": "reports\\kaggle_remaining_20261108_v1\\resume-01\\execution\\lot-002\\cpu\\certificate.json"
+    },
+    "verified.json": {
+      "bytes": 224940,
+      "sha256": "0894ddd8ffc8fadda00e9ea717ad0bfa0c10cd3684b4338b62c8d06646b0f007",
+      "matches_existing": "reports\\kaggle_remaining_20261108_v1\\resume-01\\execution\\lot-002\\cpu\\verified.jsonl"
+    },
+    "progress.json": {
+      "bytes": 78,
+      "sha256": "a37715dad8f42db23006a470cda084bae8abcb5c6e354ee95c8d2cd64ac8e2e4",
+      "matches_existing": "reports\\kaggle_remaining_20261108_v1\\resume-01\\execution\\lot-002\\cpu\\progress.json"
+    }
+  },
+  "canonical_sha256": "23ed7f84308b1946a986c6fc833954bc9a022a41282374bb1a4afeea5f0dd790",
+  "all_file_paths_sizes_sha256_crc32_match": true,
+  "remote_certification_rerun": false,
+  "dataset_uploads": 0,
+  "gpu_started": false
+}

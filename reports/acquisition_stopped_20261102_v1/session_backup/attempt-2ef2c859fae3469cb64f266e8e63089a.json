@@ -1,0 +1,1442 @@
+{
+  "status": "FAILED_OR_INTERRUPTED_FILES_AND_BUDGET_PRESERVED",
+  "plan_identity": "7f24f1c401077e6bcf172a9c2ce250d7f0223e4cfd1bb62a7594758f4162a929",
+  "execute": true,
+  "destination": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\scientific_corpus_v1",
+  "missing_files": 1566,
+  "compressed_payload_bytes": 5741850510,
+  "additional_extracted_bytes": 5853750530,
+  "transfer_cap_bytes": 6611516695,
+  "reused": [
+    {
+      "path": "2018/fire_21458798/2018-01-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-01.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-02.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-05.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-06.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-07.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-08.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-09.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-10.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-11.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-12.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-13.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458798/2018-01-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458798\\2018-01-14.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-25.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-26.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-27.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-28.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-29.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-30.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-01-31.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-01-31.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-02-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-02-01.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-02-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-02-02.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-02-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-02-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458801/2018-02-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458801\\2018-02-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-12.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-13.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-14.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-15.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-16.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-17.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-18.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-19.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-20.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-20.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-21.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-22.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-23.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-24.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-25.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-26.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-27.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-28.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-29.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458806/2018-01-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458806\\2018-01-30.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2017-12-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2017-12-29.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2017-12-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2017-12-30.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2017-12-31.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2017-12-31.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-01.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-02.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-05.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-06.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-07.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-08.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-09.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-10.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-11.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-12.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-13.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-14.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-15.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-16.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-17.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-18.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-19.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-20.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-20.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-21.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-22.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-23.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-24.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-25.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-26.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-27.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-28.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-29.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-30.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-01-31.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-01-31.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458836/2018-02-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458836\\2018-02-01.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-21.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-22.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-23.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-24.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-25.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-26.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-27.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-28.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-29.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-30.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-01-31.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-01-31.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-02-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-02-01.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-02-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-02-02.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-02-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-02-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21458848/2018-02-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1\\2018\\fire_21458848\\2018-02-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-05.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-06.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-07.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-08.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-09.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-10.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-11.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-12.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-13.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-14.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-15.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21748813/2018-05-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21748813\\2018-05-16.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-02.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-03.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-04.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-05.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-06.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-07.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-08.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-09.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-10.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-11.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-12.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-13.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-14.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-15.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-16.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-17.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-18.tif"
+      ]
+    },
+    {
+      "path": "2018/fire_21997864/2018-08-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2018\\fire_21997864\\2018-08-19.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-03.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-04.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-05.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-06.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-07.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-08.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-09.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-10.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-11.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-12.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-13.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-14.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-15.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-16.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-17.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-18.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-19.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-20.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-20.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-21.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-22.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-23.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-24.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-25.tif"
+      ]
+    },
+    {
+      "path": "2019/fire_23300839/2019-09-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2019\\fire_23300839\\2019-09-26.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-01.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-02.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-03.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-04.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-05.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-05.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-06.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-06.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-07.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-07.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-08.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-08.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-09.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-09.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-10.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-10.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-11.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-12.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-13.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-14.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-15.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-16.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-17.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-18.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-19.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-20.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-20.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-21.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-22.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-23.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-24.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-25.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-26.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-27.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_23654679/2020-01-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_23654679\\2020-01-28.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-11.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-11.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-12.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-12.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-13.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-13.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-14.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-14.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-15.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-15.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-16.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-16.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-17.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-17.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-18.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-18.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-19.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-19.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-20.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-20.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-21.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-21.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-22.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-22.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-23.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-23.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-24.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-24.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-25.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-25.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-26.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-26.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-27.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-27.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-28.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-28.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-29.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-29.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-06-30.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-06-30.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-07-01.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-07-01.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-07-02.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-07-02.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-07-03.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-07-03.tif"
+      ]
+    },
+    {
+      "path": "2020/fire_24104674/2020-07-04.tif",
+      "locations": [
+        "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample\\2020\\fire_24104674\\2020-07-04.tif"
+      ]
+    }
+  ],
+  "upload_bytes": 0,
+  "publication": "none",
+  "session_dir": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\scientific-acquisition\\stage080-v1",
+  "max_mbps": 20,
+  "batches": [],
+  "reused_sha256": {
+    "2018/fire_21458798/2018-01-01.tif": "d262dfc1802ee5e936d43de9ec646569ad0fe28793433f93cb8a6319dcbe9413",
+    "2018/fire_21458798/2018-01-02.tif": "2dfb1005eb6fd1aae58ebfaefb78863c4a0203135beb0ade4822882aa720175d",
+    "2018/fire_21458798/2018-01-03.tif": "1807981a238265920d061e5ceb2e17393759b1b33e1001fa0fff952e13f7866c",
+    "2018/fire_21458798/2018-01-04.tif": "805b7fddbdcea2b8c2e984184871ead3d09bae01ce5d5bafad0c965a70ea665b",
+    "2018/fire_21458798/2018-01-05.tif": "9427687077df677fcb7b7ac96cc1d6bb3fb5e72ac545de53498a70aaa5943964",
+    "2018/fire_21458798/2018-01-06.tif": "4b8b6934110ab5d90cc8fea78b841f1b02c68bde0b976ea17f71e01804b022fc",
+    "2018/fire_21458798/2018-01-07.tif": "c3e36f8bdf640c7811ae0d0343c538e0b4a573f7a46d88a8f6978d321b2f117d",
+    "2018/fire_21458798/2018-01-08.tif": "6e6116b1f63bd769b2b2a7cc259afda6f6509512d27d17a94c2626b5b3400257",
+    "2018/fire_21458798/2018-01-09.tif": "25560f30a96a64c2ebb4f28a2cde43849970baabcec059469c0dd73f813fa9e8",
+    "2018/fire_21458798/2018-01-10.tif": "4057e8a9cae12e70e1038d37885c5afa8cfbdadcae08a268dc13aadb712f8d7c",
+    "2018/fire_21458798/2018-01-11.tif": "6c6f7deeb64176947c7a3d14cf62388f8f680fa878a705c72a457a404879e06c",
+    "2018/fire_21458798/2018-01-12.tif": "8cea99c16fbe96da86dd20272cb4101834615426a2e489ec002b4cb3515d97e8",
+    "2018/fire_21458798/2018-01-13.tif": "7f5123741f8a5ec9bc39d1d4c1afd53ef34c5990a7dee3a63ee29e57c68f91c1",
+    "2018/fire_21458798/2018-01-14.tif": "6a45a59ad7631c6478f33404ca01af05ceaf1bd1fae5eaf62dbfab28b75fdbdc",
+    "2018/fire_21458801/2018-01-25.tif": "5689e832ce54d155e3e967723cbce6c2789103906cff011736617388fb2f3459",
+    "2018/fire_21458801/2018-01-26.tif": "864c5c6bb89d07cbb77563f51210ae9d02e9c8637f65ba3de6e7e7be12a3a8c1",
+    "2018/fire_21458801/2018-01-27.tif": "cc487b323a0d7a6ea682fa8324093168c659f647625f7381627cf9cb5594220f",
+    "2018/fire_21458801/2018-01-28.tif": "46c0186569c9ba658c0972fb254a0c10a362e37595bd52a3c793512836e45860",
+    "2018/fire_21458801/2018-01-29.tif": "260f0085cdf4e1ffeb61015b8dc9d88b5650103b64925968565374cdc4b149a7",
+    "2018/fire_21458801/2018-01-30.tif": "bb044e15a7b97120c8739b7c47b0014ef967e646a9150601dbbf509349750d57",
+    "2018/fire_21458801/2018-01-31.tif": "b9190245b600aa01974a960c56aaaa0a2fb1a4319cea8cfb7edcb6f761ca6bc4",
+    "2018/fire_21458801/2018-02-01.tif": "0ef87ddc9b3e089d71a78cb08b393411bac08c8d3db6824f6703d78eaf46658a",
+    "2018/fire_21458801/2018-02-02.tif": "6e9367d13b9258a9000013226d11a39f9f588fae8bdbe309fe9d64a4195240ac",
+    "2018/fire_21458801/2018-02-03.tif": "b4748dc6e0e00989b0c8c0c6f86e220484b16dec02baeda2eef6627a9a197d07",
+    "2018/fire_21458801/2018-02-04.tif": "531b211618668e0bcf9505d1b780d0e7be61d8c9f571e9eceb1544d564b47168",
+    "2018/fire_21458806/2018-01-12.tif": "d4080fa075f10a4c3290fe6c551219402daca3b4dd6136943b34d127c0887165",
+    "2018/fire_21458806/2018-01-13.tif": "294f4051e922c1613cc57797394ac086fd7b2613458a10cf2f33223a1b51d102",
+    "2018/fire_21458806/2018-01-14.tif": "0342bb0c5e078602bdb7c4f517c7f1be4b88832df7def91e50f1fe5693f4ab58",
+    "2018/fire_21458806/2018-01-15.tif": "dde793ae0cf460f841555da4b331b9797a97ada6e529573495c229430d29d2f9",
+    "2018/fire_21458806/2018-01-16.tif": "5694869fcc9a3b99e0745341bc8a487e7de84af6a282db49b4987b571e11a9eb",
+    "2018/fire_21458806/2018-01-17.tif": "e860a80a3463f5606861c85a301a7229648f50af40e64793d0f33d48a8e56125",
+    "2018/fire_21458806/2018-01-18.tif": "a058cf619d10a8b06d1ab3614f0390f8dac33668ce70909fdf0df14258d9a895",
+    "2018/fire_21458806/2018-01-19.tif": "1a353fa2fca0eb5e6b7808e0d444cdbc3891aacb60b87929cc7c4ea85fa2363c",
+    "2018/fire_21458806/2018-01-20.tif": "7398a4053ec5d43758171808b413a19df8ae6cddecf553bf291ac740ce038a7f",
+    "2018/fire_21458806/2018-01-21.tif": "fdd83e7eb3380862ff613d4b2938914f1a27c5162523654f1f9ab4bfc0ccf13e",
+    "2018/fire_21458806/2018-01-22.tif": "3dee30517dfaeb9f659e62d400b638d2fe95dfb46152df958f22b611afb58e33",
+    "2018/fire_21458806/2018-01-23.tif": "0eaf79b115dacdfc4fabfac251523aaf40d35bd2c18b8475e4aa2bf847d7ba34",
+    "2018/fire_21458806/2018-01-24.tif": "00159bd07d77b0409ac1b1f1c64f34ccef00a4c3bc559f94420466117f33a36b",
+    "2018/fire_21458806/2018-01-25.tif": "d1c0b8b68e1db8268330a03db18c19e15601aa89ec5db63743f02a7ddd51ee76",
+    "2018/fire_21458806/2018-01-26.tif": "1884ec126ce2d694dfc0d9c7d07ef2b17cf8817b55e7728473930977c66ec36b",
+    "2018/fire_21458806/2018-01-27.tif": "06fe04f9fe21458a5552ce47e85cf5650c1e1a90d455345357befcba026f3d9f",
+    "2018/fire_21458806/2018-01-28.tif": "95c0a3d22bb3c876813e13b9f4cc1b7b5aec3f85c90d5c19e8423d79d2a4bbb5",
+    "2018/fire_21458806/2018-01-29.tif": "379cc2c8331cd3effd7418aee5e7e7a79e3c7609d543893d515295d85660567d",
+    "2018/fire_21458806/2018-01-30.tif": "0d229150b2f738a93eeb6207cd1c3dcc1dd1475612389a2037d37a4d3735eccd",
+    "2018/fire_21458836/2017-12-29.tif": "0e5f80eba8b3ec349c3acda5b5d93ba2ee6bfba97deb106710edb2f80ce97808",
+    "2018/fire_21458836/2017-12-30.tif": "b660fda1dddae911f5d7ecf5278be325c8957a0b251d54e48bf91dbcbc13c37f",
+    "2018/fire_21458836/2017-12-31.tif": "cb993c48921db12f3c5b435ccc5a5a7fa2cd1ce0477b0b4c2779f83c660286db",
+    "2018/fire_21458836/2018-01-01.tif": "6cb30b80961092f0c43d10b0260709b4760c70c800048f89defa5acc8dbcb736",
+    "2018/fire_21458836/2018-01-02.tif": "5ef177aeceb39942af94a7e2dbe80b8b99b78caa17b6bc84d4d2b5ebe7d88619",
+    "2018/fire_21458836/2018-01-03.tif": "806c63e3ca7faf1242880f16c5179b44ad77ee325a6eab731384ed99a5605aab",
+    "2018/fire_21458836/2018-01-04.tif": "dd984707ffaf080205e4001b47536512d18641cfe2e02c96d693bfc3e186c8df",
+    "2018/fire_21458836/2018-01-05.tif": "c66a0e650134a698286b60a8059984753bb35bedc84a6dd6f6ff0ed46271e3cf",
+    "2018/fire_21458836/2018-01-06.tif": "3e2069e84346be232c109cf099c8d2e1e225977f178ac41a0eadc4f811eae7d3",
+    "2018/fire_21458836/2018-01-07.tif": "a42891f52723f0d9656a2773e62b51ce623e98cf51be8bd6543139ee54f2bdc7",
+    "2018/fire_21458836/2018-01-08.tif": "293d20525269647a04854f271b1dd63a7e9d481fc4bdc44e5f114d0207dc8f10",
+    "2018/fire_21458836/2018-01-09.tif": "be175484a464dab35cedd2d49e93a36f872c5fe4c509c375d88f184f1382bd89",
+    "2018/fire_21458836/2018-01-10.tif": "b5c217b45e77de7e90206427c67a96088b30480b976d7210105ba1e15fb4971d",
+    "2018/fire_21458836/2018-01-11.tif": "2c65abc213a7887ecc557c812cd80dccf89cc3f38c772baec1721b490d2fd5e1",
+    "2018/fire_21458836/2018-01-12.tif": "ef2c0a4b7870b38ac3cf08ffd8c8bf9beb7231b692e32123cc968cb1546622a7",
+    "2018/fire_21458836/2018-01-13.tif": "253df26963d219f8e9e2c2728acaa5e3b12ad8b54551e123540c9e2d6b042e12",
+    "2018/fire_21458836/2018-01-14.tif": "ed3fd18336962471b0e089ae339022aca22dadbc26c8160319363a18ce070000",
+    "2018/fire_21458836/2018-01-15.tif": "e0844cc6b4044576e1c23f46cbbca3d25dcd015bc468905a3ebd9aa12c31a348",
+    "2018/fire_21458836/2018-01-16.tif": "4e81e00c84f06aca836110b4c06cb7bcb45ebf58366dfae4a532ff8a18855337",
+    "2018/fire_21458836/2018-01-17.tif": "ba58e84c3e5726103480d7eee65a155347978932cec8c57ba16d1488cbfd9ccb",
+    "2018/fire_21458836/2018-01-18.tif": "a5744c6ddb2e73ba1f25e605078f70d875aa8b7c278a2543869e895eac3f8d43",
+    "2018/fire_21458836/2018-01-19.tif": "f8477f25388ec7ca4113814afe1384fdeaa0f3f7da71fffc1bcc0082cd8778d0",
+    "2018/fire_21458836/2018-01-20.tif": "6c61e0b60d9bdcef0a725fc19917a40c50e1164414891ae8bf6c1d53bc1abf5d",
+    "2018/fire_21458836/2018-01-21.tif": "3257775b01e27a5c98ab954e6f101be9a0a76fbd6c8aeb8688169a5dc3f8c1e2",
+    "2018/fire_21458836/2018-01-22.tif": "192f77a8204fc45c57907bbc7400eff66fb6b81b9374c953d4041fb5074287e0",
+    "2018/fire_21458836/2018-01-23.tif": "8d6091f6190061e9baf2e22f4551df17c1ff22ed3390440e2754aab3630e57c2",
+    "2018/fire_21458836/2018-01-24.tif": "8d639945972c0046e09e25124fb7085f814517a7dd59672cbc1b5b7653e7d7b3",
+    "2018/fire_21458836/2018-01-25.tif": "3c7deb09adc05a0b54907e96c5d0fa6e12e343151a1601f5783484b063e1542b",
+    "2018/fire_21458836/2018-01-26.tif": "0f372ae4f44438fd4132d41d3ff8958d33ef104fabfb315ed6b7b40d88b6c5a9",
+    "2018/fire_21458836/2018-01-27.tif": "725286b5c3d6dbe3eb367ac715afa6d4dc7f3ff421db7c43d76d684437f01ce9",
+    "2018/fire_21458836/2018-01-28.tif": "77b466df4cdb051f5809a3e277a4a77f300e2dbaf0c30ad9e60a35e420bfd69f",
+    "2018/fire_21458836/2018-01-29.tif": "8102a29e37c5415dbdc48f46bf356d32354a6e6b9344d469709ed41102a4516e",
+    "2018/fire_21458836/2018-01-30.tif": "1aa579b236d1213cc694b449a3663ee80c283cfe31cf52f5d9803246602a53b5",
+    "2018/fire_21458836/2018-01-31.tif": "1332249e845ef3d09692bec52937d367ce45656bd612fd3bfb1a8a198cfc29a0",
+    "2018/fire_21458836/2018-02-01.tif": "5b6beb463e5005ed0b92a4ce5426672b5dc5719893da7d37072db728daa2b149",
+    "2018/fire_21458848/2018-01-21.tif": "96e2b062f997e4f7a0301cc95f96943c939b86208c2628f0bcd144576bd9b3ae",
+    "2018/fire_21458848/2018-01-22.tif": "1c561321db0b532098d2eed2b8c3aef8840f2fa95d79a223c6b5071d318c33de",
+    "2018/fire_21458848/2018-01-23.tif": "c63fbc069ac49a4dc507cec539578cba844bd2ac6afc6e6512606fdc0db57720",
+    "2018/fire_21458848/2018-01-24.tif": "d9bbe641808d4929a2dc9b4964589d4e7eb9d65c55b4117116326fea96edb532",
+    "2018/fire_21458848/2018-01-25.tif": "2667ce9a6786aab61f36a4309777feb34af611fe315846de21739262bb2a7c98",
+    "2018/fire_21458848/2018-01-26.tif": "a02211e4e3e1814195f0ae058d26ba24e6f731d01db22d9faca3ab1c63ee458b",
+    "2018/fire_21458848/2018-01-27.tif": "9341d6096830d15f03e80e4dbb6f36993f7e977f05f8f9d2f2a9dd2e2ea1099c",
+    "2018/fire_21458848/2018-01-28.tif": "0c710e02405ac868196e581969ed44e95891682a4d51c1c60c03d0be92e2cda9",
+    "2018/fire_21458848/2018-01-29.tif": "228c5b3c59b48fd42cea82442871f1af062e2ef6a430ca3d11af4b73579e0141",
+    "2018/fire_21458848/2018-01-30.tif": "751f6c38d158224584416b593f902d6629ab2b13d9c89b67569be71045b8a0ad",
+    "2018/fire_21458848/2018-01-31.tif": "87150d24f532b5c3f544400ee32614e117b67b89b4512df97214aa92fb18d1aa",
+    "2018/fire_21458848/2018-02-01.tif": "c9034dc79ddc989381821b4cff712b4c3ac6b0b814514f2b791c9ee76f6be446",
+    "2018/fire_21458848/2018-02-02.tif": "dfef12959b9561421d1911fff83c54255a5f41f3a3805d584c479cf9cf9ad30a",
+    "2018/fire_21458848/2018-02-03.tif": "31e2d6d18e29c87347ff92369d307629a268315638a9f62e77327b8a1c12d617",
+    "2018/fire_21458848/2018-02-04.tif": "f20545c72b413110d85129ceef14c0b15c98a8912b243c3ba9857bd2fe341e0b",
+    "2018/fire_21748813/2018-05-03.tif": "17467f4f92757e4414b2c3bca6c0554f2007ecfc88fbe6a9197972ad10362ff7",
+    "2018/fire_21748813/2018-05-04.tif": "76617025e1704158b114399628c642c2ce6f3a67de4baf787a0ce981aeb9aaa3",
+    "2018/fire_21748813/2018-05-05.tif": "d205aa234540cba7c6f09a2c3631bee2c980835d145dab531d5cc60315ff4a8d",
+    "2018/fire_21748813/2018-05-06.tif": "7672b2d78561d26cd0863a4af34f0fe2622209c83cc57715cdd8b0edc01c63bc",
+    "2018/fire_21748813/2018-05-07.tif": "d4275c67c6ae717c68548d060a45bb3c07d3dbbfb13e84db6e568a4beb710a6d",
+    "2018/fire_21748813/2018-05-08.tif": "c4f86dff23cb4507b78dc5d1d6d7c6cc54483a1673ac61259d9fef66a54d4fef",
+    "2018/fire_21748813/2018-05-09.tif": "fe2775c627f3d13a9633859213a46c7ccd07d565ac79bcc4e0d52c0892e73e69",
+    "2018/fire_21748813/2018-05-10.tif": "a26dd18fea3c0b100358d1a175ee8410a4c637825488c939fd1ffd4d14edc46d",
+    "2018/fire_21748813/2018-05-11.tif": "2b0a750734f543dffa97193a6b4fb0c8b52980d6ff32fc0e8d05703c37c80cc9",
+    "2018/fire_21748813/2018-05-12.tif": "f2de1225ce14f5321258364542e07c38401c17b5288dc9c509b3d804efa2e1fd",
+    "2018/fire_21748813/2018-05-13.tif": "58c1ca01b00952c57d6d5ee70ff5292d68dc895f42efc70628e9179c53bb5565",
+    "2018/fire_21748813/2018-05-14.tif": "928296a5543928556ff0cfa26b98ecfeb568a38a8263837f73c7631e552c9270",
+    "2018/fire_21748813/2018-05-15.tif": "35dd7131936f522c7604e7dbc36ccf5f40e66a9f77ac90cc4523b21fdaf69fc9",
+    "2018/fire_21748813/2018-05-16.tif": "d8e8766bdab57132d75eed13c42f4396ed03cc5f083b70c26055fa186531826c",
+    "2018/fire_21997864/2018-08-02.tif": "20dd3ffec33dd5baa036a833a838933c4537540308777e2ec7f14116734ac098",
+    "2018/fire_21997864/2018-08-03.tif": "76daefb28f27d1501baf803f4ee0820388d1f6a4129f9f47a252d69a91c66116",
+    "2018/fire_21997864/2018-08-04.tif": "421a3e89bae8cc6222c58e3d78115d64228da39b327a554d364fe5eb47687324",
+    "2018/fire_21997864/2018-08-05.tif": "52417f685b71ee6e5575511b09d5bd1ca8095360adf6b3d60fb714abc4f71e92",
+    "2018/fire_21997864/2018-08-06.tif": "3bcc919b2676aedd20fa5158552ed9e2c87cffd89df5e12a006eb4964cb3e8ed",
+    "2018/fire_21997864/2018-08-07.tif": "d25980b9521e2f5faf0e5e5421b775a547081faecdc3cfcc2eaf84182f7eba5e",
+    "2018/fire_21997864/2018-08-08.tif": "ff6747fc5f9c42bc782081a0897cf7d9375aa8ec6ff9d8f69dd863d9be306dac",
+    "2018/fire_21997864/2018-08-09.tif": "28b7b447336976b4910bfda9675ab1b1e4dd7e4938d296f895ba78862eb60a40",
+    "2018/fire_21997864/2018-08-10.tif": "06cda2bf9712b14cc37e49997ba2975be7e7ab78b0dad92585fd8fba6ef3c374",
+    "2018/fire_21997864/2018-08-11.tif": "f4a80ef8968308ae1105738de0dd4efbc87bdcd6392277300bd194346048b201",
+    "2018/fire_21997864/2018-08-12.tif": "8b3f152b1ecf65abae58fc9a609c74b1cd58e9efec4051496f1e5ca028361d95",
+    "2018/fire_21997864/2018-08-13.tif": "5577b824827842b1bb92fef460b4db79ead5600a32ea9ee995a46f532c2eb1be",
+    "2018/fire_21997864/2018-08-14.tif": "356ad61b1bd265381d5313a92c6e02ae03740cbf11ede725e5ad00de05711ea1",
+    "2018/fire_21997864/2018-08-15.tif": "19e08a49a825d79c0ed7de1a1f48b92bf82b53e613ad5932a1e0f6bf13c56d7f",
+    "2018/fire_21997864/2018-08-16.tif": "327131c0b78019b301f5085f9c84f79947a0110d186c2a61b318498a6b02ce0d",
+    "2018/fire_21997864/2018-08-17.tif": "61978165dc85d2992e338ab219d4ea91f635b6f9d5dc93ca8fe6b8d26fc005d3",
+    "2018/fire_21997864/2018-08-18.tif": "2059574c93470f37bcb7f45f875e9d67dea18570cebbcff95fdcc938dbee682b",
+    "2018/fire_21997864/2018-08-19.tif": "df53ea7f2c27cc257409cd88444fc358269eec8ab56ad70142b2ba5750c267c4",
+    "2019/fire_23300839/2019-09-03.tif": "fb3ccd8595158fa3998e1577d4ea173bb5662664b4293e8b7dfe80ece31dea41",
+    "2019/fire_23300839/2019-09-04.tif": "04c9f158d123fdcae32e81f87ef0c09942eb26c0707ddf97d131e6913752b33a",
+    "2019/fire_23300839/2019-09-05.tif": "1a1595a14cb76704b03028cb6ddb97d0278c30499bd93f93689c955c44e63456",
+    "2019/fire_23300839/2019-09-06.tif": "162182d7774ae437b5c64fc0ef3a412f6f896b089616fdc6a3dc6171775ae5ee",
+    "2019/fire_23300839/2019-09-07.tif": "775f432b4d3d5d27e37cab1106cbac44f0b0705ab6fcca404fc1a6cc76431056",
+    "2019/fire_23300839/2019-09-08.tif": "a31bc4004e716206c2a74cfa96c0e759dec82eff927829ae7012fec5535835f4",
+    "2019/fire_23300839/2019-09-09.tif": "22943c74c08c1c8ba011c0ecc6c2ac44e45d0249a15facd926a241ff4a0a3122",
+    "2019/fire_23300839/2019-09-10.tif": "c723c636c1bac9af811c112e88c25fff554ffe2556415d99b70b4866288f5ce2",
+    "2019/fire_23300839/2019-09-11.tif": "4a491cf582ef22ba82f9a5e25a9f6988a584514a985aaa3bd585baeae3ce8a8f",
+    "2019/fire_23300839/2019-09-12.tif": "90eb22d9003f7c06b0e34bd7a18b8b95ebc57992ae7a045df329914fddb7b0db",
+    "2019/fire_23300839/2019-09-13.tif": "43955916d12e4560162e73749b29d14471355826c008c13f49487aaf288a54de",
+    "2019/fire_23300839/2019-09-14.tif": "f9bb76caa0b51b728e9768a10d92c735c05c3f4115b18a50d6a5ab7f8f932360",
+    "2019/fire_23300839/2019-09-15.tif": "5708f48bbc250149b1846fc2dd38c9aa99615ebaebd2569213b4ab1c032a764f",
+    "2019/fire_23300839/2019-09-16.tif": "ef7a54c5b7d6008de4e90a11f86f044ce8b0317a4b64b94ad5db6da20628ad4a",
+    "2019/fire_23300839/2019-09-17.tif": "fafee80c51eea896864403a9999e586831e7d6d802ebf4d263ee5f9dd07e231d",
+    "2019/fire_23300839/2019-09-18.tif": "95fa65e94b6295997249cea822e55cf3a549f7f97487182d3e3f29d3851a94bc",
+    "2019/fire_23300839/2019-09-19.tif": "f9fc77e288ec799cc387139f7ec93268e37417d398b805c049ab0085fe702ab9",
+    "2019/fire_23300839/2019-09-20.tif": "c430eb36ef6ec396dd9f67db5b231c66b859bb4aa69db645a0a58ce252a07ad7",
+    "2019/fire_23300839/2019-09-21.tif": "49800823e0507dfeb010c936b555cce2056c63a56327045c53f867996998cb8c",
+    "2019/fire_23300839/2019-09-22.tif": "f1f5456bb34de53fc588316f59f86c9a42cd351c893ae6964116fb9714796b09",
+    "2019/fire_23300839/2019-09-23.tif": "841d74f207a6fd81b857968626b746cc3cfe9fdce2c04ff08afc914d32c9e56b",
+    "2019/fire_23300839/2019-09-24.tif": "71b74c777201869da81b6a326d844db354cc7dfdf242a72445f28e01dcfce433",
+    "2019/fire_23300839/2019-09-25.tif": "dfa06afdf25c33f6bf6bd6fc966bc76262bfcc179efc4216a843de2dac1231d6",
+    "2019/fire_23300839/2019-09-26.tif": "0d6ca99967cb41e0add5dcde1b45efdbdc36b18b4fcf5bcd708e77452b62e0d3",
+    "2020/fire_23654679/2020-01-01.tif": "3aa73496f3c0af3fb2a65428be7c83d6ef10a49ec656633ac2f266f2007a28c4",
+    "2020/fire_23654679/2020-01-02.tif": "45d854ee089aaf413f343893d0df9885e90b043ad5648d83996b5972d39b9f5c",
+    "2020/fire_23654679/2020-01-03.tif": "eae90785afe56e6f0717045948c45ef6c87f0a34a6a0424abbd755019c23b512",
+    "2020/fire_23654679/2020-01-04.tif": "5ffdd7fcd2a0b8bbfa2fe6af446c64adcf42cef87ad46d51bf728f892eac69f6",
+    "2020/fire_23654679/2020-01-05.tif": "0f86fb44b85169c1bf040dec7f295c4cc372218b4a2953ac1e5b6fd6ba1e7040",
+    "2020/fire_23654679/2020-01-06.tif": "26e375d1d5e7b5b222c1443e869971c4d098d86654e0605f9840c04dfbe36961",
+    "2020/fire_23654679/2020-01-07.tif": "d2e8fd3f01607bb70b89786bc034d8db68eb25f74fbda3229c01e1e83b0bff4e",
+    "2020/fire_23654679/2020-01-08.tif": "e42ecec408a08a881a709e34141b564d437cd8c607cf6c9901f416236cbfb93e",
+    "2020/fire_23654679/2020-01-09.tif": "11c2ce66d59f6d0b72da9411aa6d3517d62f632472ef19863080b7519ae09f93",
+    "2020/fire_23654679/2020-01-10.tif": "1612c7856e8cade4cad53dbba672b34599bd5805803a7da1ff5805fe521167cb",
+    "2020/fire_23654679/2020-01-11.tif": "dad849cc38a831482972eb6f42ea3eea668eef1d2f4ea391dc57773af89599ff",
+    "2020/fire_23654679/2020-01-12.tif": "cb5176c3005c05fe73c369af182f7eadb6963897da63386fd28c2a5cc35f5e6e",
+    "2020/fire_23654679/2020-01-13.tif": "c0920c503673d459565abdaa89832b7c656ddf351979f6259285257736e3709c",
+    "2020/fire_23654679/2020-01-14.tif": "4d84f99337de09596d97e10e250389eb40c86567768fc830e849db8c5df2da79",
+    "2020/fire_23654679/2020-01-15.tif": "fc58878052a814b99ce7f306b9216eea5a6c12f9cd20f94d4b4ae2cfd256d4e7",
+    "2020/fire_23654679/2020-01-16.tif": "d499898793c71a330532f5b0f74e2d8859eb1cf8ca8f160e0bc0a705eb11a786",
+    "2020/fire_23654679/2020-01-17.tif": "f92916d3302d20d55c1c9188c4c5a35775df322731de9add32321a4d40eecdda",
+    "2020/fire_23654679/2020-01-18.tif": "d866882662a99ab5fdae21a8e2e7a43efd824cb4e44dee82c477d272abacad6b",
+    "2020/fire_23654679/2020-01-19.tif": "7f313a7c6d93fa4517837835de0bfc245b5acf271ec262eb437ea5a7d1b28ee2",
+    "2020/fire_23654679/2020-01-20.tif": "77aeb4a573ded13667412da136e0878645fe5ea6fa1c7dc0af9fd79bc9abfe00",
+    "2020/fire_23654679/2020-01-21.tif": "abaa4e46543fa208f6bc2ebbbbb58a02d404177ee5110a3d4a4317582c3a1d4b",
+    "2020/fire_23654679/2020-01-22.tif": "f2cb2785790ba88a1651c4c1dbf647a753402cafe908c863a1f8ae1d6a5d0f2f",
+    "2020/fire_23654679/2020-01-23.tif": "bf26093d3dbd75ca347a73789788aadeb75a95fa845fd66d605907c3667c076b",
+    "2020/fire_23654679/2020-01-24.tif": "8633171de3843e4db32df846b6c6f8af00b4921eb25da77c672e5023fa477612",
+    "2020/fire_23654679/2020-01-25.tif": "a461008e1cb6f3adac2df52da66d8555bc36c35f616afcbe5776c99a31963628",
+    "2020/fire_23654679/2020-01-26.tif": "938f02681346f3f66584a4fe936823453ed7d080a77c1c7c899c0ad7076074e4",
+    "2020/fire_23654679/2020-01-27.tif": "00379271957a1d59817de89132b59174070539547306c326a9028a9ab70be69e",
+    "2020/fire_23654679/2020-01-28.tif": "9f16e19404c23b2b2028cc89d7a8c086f31794a6e0d7351600d46d426a05f2f9",
+    "2020/fire_24104674/2020-06-11.tif": "b121c2885b412f63683918aceb4c7beb52570207e9835e0e6d8b946a5bdac65b",
+    "2020/fire_24104674/2020-06-12.tif": "f0afebe08232e91c1471cb72828c6eea4cd064da7f31b1500902f32c4de94063",
+    "2020/fire_24104674/2020-06-13.tif": "0aea7b0d8169a503b3cdaa8b9b8083645054c9a7445317a0f477bdfdcbe3369a",
+    "2020/fire_24104674/2020-06-14.tif": "52aeb89172863f2c834c8b89aacf320c1fe33be3aec76bceac50ef4a4767f77a",
+    "2020/fire_24104674/2020-06-15.tif": "ef4c0d4fd5182c01c4d1f16b1a105388ab5abef37fd3de2cd04f29009fdb9ffd",
+    "2020/fire_24104674/2020-06-16.tif": "316c070921bef2e95d73633b80e763f58ded6cc2f149dff4afc63d476606de2a",
+    "2020/fire_24104674/2020-06-17.tif": "cd2a25fb756c52c907298acb9986a4f2b77860fc0f28e93510779a416996a37b",
+    "2020/fire_24104674/2020-06-18.tif": "43e4a67b57ce1371221458fe7867b98e6b661ed553915d0fd78b47f2ac21eca3",
+    "2020/fire_24104674/2020-06-19.tif": "7d2ff0edc4883c76aaba5a74077a03a65e0b1992f267d9a3fd1fb1ae9ad7fc1a",
+    "2020/fire_24104674/2020-06-20.tif": "004bb80fea9ad1311ac7ba9144fd89c223d5a944908b16b7622c675aff0233b3",
+    "2020/fire_24104674/2020-06-21.tif": "9af6edb862087d8ee86c599f7d380eeecde6e241683249d2faec9ca077a7d981",
+    "2020/fire_24104674/2020-06-22.tif": "f4d38539ffaf9a13c24916cb1709ea32d3c95b10cac10b67662cb6e5598c8dc7",
+    "2020/fire_24104674/2020-06-23.tif": "7d91e8b3d0bebc5eecc062471e657694de7d62cb42f04c62c424e8d06a9641ca",
+    "2020/fire_24104674/2020-06-24.tif": "e59c670e49dafd7d5fcb2beebef7d1a5f522eeda96b28b52cc782a884c426f69",
+    "2020/fire_24104674/2020-06-25.tif": "cda136a98b2c264e0c20fb111e7cf36fb73dcb867d0f0c81ae11e95e281961d2",
+    "2020/fire_24104674/2020-06-26.tif": "79316d0d9063cb28d88feafddb9a12cbb416042e0d2838e2da507ea498a85043",
+    "2020/fire_24104674/2020-06-27.tif": "228fe6bd39f418a53a29450ccd19a58fb1c8c24ba71f54f3e6bf0c52f2f0638a",
+    "2020/fire_24104674/2020-06-28.tif": "836350b0be978621b2377ebe197c203f762c7a3e9879c9f0a6e0bc177304441a",
+    "2020/fire_24104674/2020-06-29.tif": "6635c071991b090f545fba877e3edb2f1325a097c4455b97b91fa7999b10ebbb",
+    "2020/fire_24104674/2020-06-30.tif": "7d6d5113e3a399c27608fdb57f198eb8d4213fb0158a187e07b8a9608616b6be",
+    "2020/fire_24104674/2020-07-01.tif": "dc664dcb251b2e4d6f71adf48b353261991914d31bab80b89bef504f3bd27002",
+    "2020/fire_24104674/2020-07-02.tif": "c877dc299863aec3156c42a7addc684aa8df28a9090af9223a83f5a7ad6d16c6",
+    "2020/fire_24104674/2020-07-03.tif": "c3c1d162d6c52eac8dfea6599487c48aab515f2908abc576a8e6ccf0602e7181",
+    "2020/fire_24104674/2020-07-04.tif": "6e464a711470f2a40d111251a6bb95970b7f6a4d05bd05a3dc0dda1fb7cb05df"
+  },
+  "reused_files": 202,
+  "error": "BadZipFile: File is not a zip file",
+  "transfer": {
+    "confirmed_body_bytes": 0,
+    "reserved_bytes_including_retries": 69,
+    "requests": 3,
+    "cap_bytes": 6611516695,
+    "note": "Reservations conservatively charge interrupted responses; TCP/TLS overhead outside scope"
+  }
+}

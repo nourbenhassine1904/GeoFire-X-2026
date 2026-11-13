@@ -1,0 +1,16 @@
+{"event_id": "2018/fire_21458798", "events": 1, "observations": 280, "samples": 180, "event_seconds": 19.249604399999953, "elapsed_seconds": 20.27083420000008, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_21751305", "events": 2, "observations": 820, "samples": 570, "event_seconds": 29.96955809999963, "elapsed_seconds": 50.24086239999997, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_21889744", "events": 3, "observations": 1180, "samples": 830, "event_seconds": 32.1621811, "elapsed_seconds": 82.40359080000007, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_21890058", "events": 4, "observations": 1460, "samples": 1010, "event_seconds": 25.11975510000002, "elapsed_seconds": 107.52398350000021, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_21997828", "events": 5, "observations": 2100, "samples": 1550, "event_seconds": 52.032062299999325, "elapsed_seconds": 159.5575316000004, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_21999270", "events": 6, "observations": 2800, "samples": 2150, "event_seconds": 39.43325209999966, "elapsed_seconds": 198.99102419999963, "peak_rss_bytes": 0}
+{"event_id": "2018/fire_22257882", "events": 7, "observations": 3200, "samples": 2450, "event_seconds": 22.900432100000216, "elapsed_seconds": 221.89173870000013, "peak_rss_bytes": 0}
+{"event_id": "2019/fire_23036860", "events": 8, "observations": 3840, "samples": 2990, "event_seconds": 35.82572260000052, "elapsed_seconds": 257.71764989999974, "peak_rss_bytes": 0}
+{"event_id": "2019/fire_23300668", "events": 9, "observations": 4120, "samples": 3170, "event_seconds": 14.399392099999204, "elapsed_seconds": 272.1173117999997, "peak_rss_bytes": 0}
+{"event_id": "2019/fire_23572745", "events": 10, "observations": 4500, "samples": 3450, "event_seconds": 17.60290630000054, "elapsed_seconds": 289.7203887000005, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_23654679", "events": 11, "observations": 5340, "samples": 4140, "event_seconds": 47.248839199999566, "elapsed_seconds": 336.9694371000005, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_24191375", "events": 12, "observations": 5640, "samples": 4315, "event_seconds": 13.668760900000052, "elapsed_seconds": 350.63853649999965, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_24332761", "events": 13, "observations": 5980, "samples": 4555, "event_seconds": 16.656857000000855, "elapsed_seconds": 367.2955447000004, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_24333033", "events": 14, "observations": 6850, "samples": 5275, "event_seconds": 43.047578700000486, "elapsed_seconds": 410.3433637999997, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_24462764", "events": 15, "observations": 7130, "samples": 5455, "event_seconds": 13.566401299999598, "elapsed_seconds": 423.9099403, "peak_rss_bytes": 0}
+{"event_id": "2020/fire_24695970", "events": 16, "observations": 7850, "samples": 6025, "event_seconds": 31.65224330000001, "elapsed_seconds": 455.5626054000004, "peak_rss_bytes": 0}

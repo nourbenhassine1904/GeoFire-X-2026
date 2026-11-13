@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "same_event_date_target_and_mask": [
+    {
+      "event_id": "2020/fire_23756984",
+      "target_date": "2020-02-09",
+      "reference": "B1",
+      "target_and_valid_identical": true
+    },
+    {
+      "event_id": "2020/fire_23756984",
+      "target_date": "2020-02-09",
+      "reference": "B2",
+      "target_and_valid_identical": true
+    },
+    {
+      "event_id": "2020/fire_24332880",
+      "target_date": "2020-09-04",
+      "reference": "B1",
+      "target_and_valid_identical": true
+    },
+    {
+      "event_id": "2020/fire_24332880",
+      "target_date": "2020-09-04",
+      "reference": "B2",
+      "target_and_valid_identical": true
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "target_date": "2020-11-22",
+      "reference": "B1",
+      "target_and_valid_identical": true
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "target_date": "2020-11-22",
+      "reference": "B2",
+      "target_and_valid_identical": true
+    }
+  ],
+  "fixed_threshold": 0.78,
+  "error_codes_verified": true
+}

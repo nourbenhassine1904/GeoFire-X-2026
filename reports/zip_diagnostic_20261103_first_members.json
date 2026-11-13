@@ -1,0 +1,290 @@
+[
+  {
+    "buffered": true,
+    "member": "2018/",
+    "offset": 0,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.29699999999138527
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/",
+    "offset": 63,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.0
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-24.tif",
+    "offset": 140,
+    "bytes": 3493849,
+    "status": "CRC_OK",
+    "seconds": 0.03200000000651926
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-16.tif",
+    "offset": 3427892,
+    "bytes": 3535859,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-12.tif",
+    "offset": 6897966,
+    "bytes": 3431528,
+    "status": "CRC_OK",
+    "seconds": 0.046999999991385266
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-21.tif",
+    "offset": 10256783,
+    "bytes": 3467515,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-17.tif",
+    "offset": 13656296,
+    "bytes": 3438158,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-23.tif",
+    "offset": 17024159,
+    "bytes": 3479725,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-25.tif",
+    "offset": 20436268,
+    "bytes": 3467138,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-15.tif",
+    "offset": 23835733,
+    "bytes": 3448130,
+    "status": "CRC_OK",
+    "seconds": 0.030999999988125637
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-18.tif",
+    "offset": 27212035,
+    "bytes": 3420104,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-13.tif",
+    "offset": 30559285,
+    "bytes": 3442722,
+    "status": "CRC_OK",
+    "seconds": 0.04700000000593718
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-22.tif",
+    "offset": 33929238,
+    "bytes": 3460163,
+    "status": "CRC_OK",
+    "seconds": 0.014999999999417923
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-20.tif",
+    "offset": 37321147,
+    "bytes": 3444051,
+    "status": "CRC_OK",
+    "seconds": 0.03199999999196734
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-19.tif",
+    "offset": 40696295,
+    "bytes": 3446507,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_21890058/2018-07-14.tif",
+    "offset": 44073306,
+    "bytes": 3478492,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_22141426/",
+    "offset": 47482628,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.0
+  },
+  {
+    "buffered": true,
+    "member": "2018/fire_22141426/2018-09-07.tif",
+    "offset": 47482705,
+    "bytes": 3127873,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/",
+    "offset": 0,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.0
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/",
+    "offset": 63,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.0
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-24.tif",
+    "offset": 140,
+    "bytes": 3493849,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-16.tif",
+    "offset": 3427892,
+    "bytes": 3535859,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-12.tif",
+    "offset": 6897966,
+    "bytes": 3431528,
+    "status": "CRC_OK",
+    "seconds": 0.030999999988125637
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-21.tif",
+    "offset": 10256783,
+    "bytes": 3467515,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-17.tif",
+    "offset": 13656296,
+    "bytes": 3438158,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-23.tif",
+    "offset": 17024159,
+    "bytes": 3479725,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-25.tif",
+    "offset": 20436268,
+    "bytes": 3467138,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-15.tif",
+    "offset": 23835733,
+    "bytes": 3448130,
+    "status": "CRC_OK",
+    "seconds": 0.030999999988125637
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-18.tif",
+    "offset": 27212035,
+    "bytes": 3420104,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-13.tif",
+    "offset": 30559285,
+    "bytes": 3442722,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-22.tif",
+    "offset": 33929238,
+    "bytes": 3460163,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-20.tif",
+    "offset": 37321147,
+    "bytes": 3444051,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-19.tif",
+    "offset": 40696295,
+    "bytes": 3446507,
+    "status": "CRC_OK",
+    "seconds": 0.030999999988125637
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_21890058/2018-07-14.tif",
+    "offset": 44073306,
+    "bytes": 3478492,
+    "status": "CRC_OK",
+    "seconds": 0.01600000000325963
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_22141426/",
+    "offset": 47482628,
+    "bytes": 0,
+    "status": "CRC_OK",
+    "seconds": 0.0
+  },
+  {
+    "buffered": false,
+    "member": "2018/fire_22141426/2018-09-07.tif",
+    "offset": 47482705,
+    "bytes": 3127873,
+    "status": "CRC_OK",
+    "seconds": 0.031000000002677552
+  }
+]

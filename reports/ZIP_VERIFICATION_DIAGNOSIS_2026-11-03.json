@@ -1,0 +1,52 @@
+{
+  "archive": {
+    "path": "D:\\GeoFire-X\\WildfireSpreadTS\\archive\\WildfireSpreadTS.zip",
+    "size": 48359369821,
+    "mtime_ns": 1793682928188489400,
+    "ctime_ns": 1793648200437622300,
+    "device": 1242484519,
+    "inode": 281474977227156
+  },
+  "archive_unchanged_size_mtime": true,
+  "global_md5": {
+    "status": "PREVIOUSLY_CERTIFIED",
+    "value": "dc1a04e63ccc70037b277d585b8fe761",
+    "sources": [
+      "download receipt: full archive digest",
+      "independent PowerShell hash supplied by user"
+    ],
+    "recomputed_in_this_diagnostic": false
+  },
+  "structure_status": "VERIFIED_AGAINST_PINNED_INDEX",
+  "zip_entries": 14218,
+  "tiff_members": 13607,
+  "directory_members": 611,
+  "crc_members_verified_this_diagnostic": 14218,
+  "crc_tiffs_verified_this_diagnostic": 13607,
+  "crc_unverified_members": 0,
+  "member_errors": [],
+  "initial_errno22_reproduced": false,
+  "storage_evidence": {
+    "disk": "ADATA HV300",
+    "bus": "USB",
+    "disk_number": 1,
+    "ID51_events_last24h": 1149
+  },
+  "cause_assessment": "Intermittent storage/USB I/O is supported by Windows events; exact physical component and original failure site not established. No ZIP64 boundary failure or CRC corruption reproduced.",
+  "new_verifier_validation": "targeted unit/CLI tests; real complete per-member diagnostic uses the same bounded CRC calculation; no new global hash cache pre-seeded from external evidence",
+  "no_real_extraction": true,
+  "no_data_download": true,
+  "source_sha256": {
+    "src/geofirex/archive_transfer.py": "b27dfec80dc26a8832b1de2f1a4c95ce47efd80000c3c874048a8ae23ced716f",
+    "src/geofirex/archive_verification.py": "43627ad115b6f8d6f6c410bb61258160d9fa93a39f4595edea3221950cfbbd0f",
+    "scripts/full_corpus_external.py": "6219d040ca563809c0dde61988d0cdc575be6ec10d61d843758c516ae2fe1428",
+    "scripts/diagnose_zip_io.py": "19ce517a822f302048abfa1e2d345240f4d77e818a1632d4bdbebda725e00962",
+    "tests/test_archive_verification.py": "958a943bd0700215b110016ab400813ab59101efbde24063da8f45c55a17b7f5",
+    "docs/VERIFY_CORPUS_ZIP_V2.md": "37c2579c40931eee923d5dd705c12abd6f607e07bc01482d2f09fa13395d413b"
+  },
+  "evidence_sha256": {
+    "reports/zip_io_reproduction_20261103.jsonl": "d3ff0e74f81c250fa8c8df67c8b9dfcb36e4c204c98255a6e4f913e7d5a786a1",
+    "reports/zip_offset_probes_20261103.json": "20d4b2d431971be15c7286da0592e5fd59804bedebbec044c8eb4db37652129f",
+    "reports/zip_windows_storage_events_20261103.json": "217c878defbd3ae36859dc5008cf995052fd00e092de2dd4501ae5bd60608cda"
+  }
+}

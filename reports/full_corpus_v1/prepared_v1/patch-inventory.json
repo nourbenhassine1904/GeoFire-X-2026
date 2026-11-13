@@ -1,0 +1,23 @@
+{
+  "patch_size": 64,
+  "domain": "joint maximum context T=5 + target, identical for T=1/3/5",
+  "positive_sampling": "not used for this inventory; validation never filtered by labels",
+  "by_split": {
+    "train": {
+      "examples": 3948,
+      "geometric_patches": 93603,
+      "usable_patches": 93603,
+      "empty_patches": 0,
+      "valid_joint_pixels": 313977876,
+      "masked_examples": 0
+    },
+    "val": {
+      "examples": 3287,
+      "geometric_patches": 78771,
+      "usable_patches": 78771,
+      "empty_patches": 0,
+      "valid_joint_pixels": 263630731,
+      "masked_examples": 0
+    }
+  }
+}

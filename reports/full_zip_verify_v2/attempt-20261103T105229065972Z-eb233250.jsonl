@@ -1,0 +1,3 @@
+{"kind": "attempt_start", "utc": "2026-11-03T10:52:29.067973+00:00", "io_mode": "unbuffered", "archive": "D:\\GeoFire-X\\WildfireSpreadTS\\archive\\WildfireSpreadTS.zip", "python": "3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)]"}
+{"kind": "global_md5_ok", "utc": "2026-11-03T10:52:29.269870+00:00", "io_mode": "unbuffered", "md5": "dc1a04e63ccc70037b277d585b8fe761", "sha256": "25bbbf1d71e316610c552ef611a155b69869606ec41e5b3fbec093ceba95538c"}
+{"kind": "attempt_end", "utc": "2026-11-03T10:52:29.279354+00:00", "io_mode": "unbuffered", "status": "VERIFIED", "crc_verified_members": 14218}

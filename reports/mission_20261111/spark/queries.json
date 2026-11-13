@@ -1,0 +1,8 @@
+{
+  "annual": "SELECT year, split, COUNT(*) AS observations, COUNT(DISTINCT event_id) AS events FROM observations GROUP BY year, split ORDER BY year",
+  "windows": "SELECT split, context, COUNT(*) AS windows, COUNT(DISTINCT event_id) AS events FROM windows GROUP BY split, context ORDER BY split, context",
+  "quality": "SELECT split, status, COUNT(*) AS observations, SUM(positive_pixels) AS positive_pixels, SUM(valid_pixels) AS valid_pixels, SUM(invalid_pixels) AS invalid_pixels, SUM(CASE WHEN positive_pixels=0 THEN 1 ELSE 0 END) AS no_detection_days FROM observations WHERE split IN ('train','val') GROUP BY split, status ORDER BY split, status",
+  "duplicate_keys": "SELECT event_id,date,COUNT(*) AS n FROM observations GROUP BY event_id,date HAVING COUNT(*)>1",
+  "annual_leakage": "SELECT COUNT(*) AS violations FROM observations WHERE (split='train' AND year NOT IN (2018,2019)) OR (split='val' AND year<>2020)",
+  "window_join": "SELECT w.split, COUNT(*) AS matched_targets FROM windows w JOIN observations o ON w.event_id=o.event_id AND w.target_date=o.date WHERE w.context=3 GROUP BY w.split ORDER BY w.split"
+}

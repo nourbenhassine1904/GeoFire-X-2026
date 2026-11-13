@@ -1,0 +1,147 @@
+{
+  "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+  "handle": "nnnnbhss/geofirex-compact-t3-20261111-p10",
+  "private": true,
+  "version": 1,
+  "basis": "Complete consistent authenticated owner catalogues",
+  "GetDataset_required": false,
+  "files": [
+    {
+      "name": "mount-map.json",
+      "bytes": 7661
+    },
+    {
+      "name": "part2__val__2020__fire_24332933.zip.bin",
+      "bytes": 21802232
+    },
+    {
+      "name": "part2__val__2020__fire_24332949.zip.bin",
+      "bytes": 18171016
+    },
+    {
+      "name": "part2__val__2020__fire_24332969.zip.bin",
+      "bytes": 16208096
+    },
+    {
+      "name": "part2__val__2020__fire_24332995.zip.bin",
+      "bytes": 21773934
+    },
+    {
+      "name": "part2__val__2020__fire_24333012.zip.bin",
+      "bytes": 35074315
+    },
+    {
+      "name": "part2__val__2020__fire_24333039.zip.bin",
+      "bytes": 49520461
+    },
+    {
+      "name": "part2__val__2020__fire_24333267.zip.bin",
+      "bytes": 9505606
+    },
+    {
+      "name": "part2__val__2020__fire_24333279.zip.bin",
+      "bytes": 22008434
+    },
+    {
+      "name": "part2__val__2020__fire_24333293.zip.bin",
+      "bytes": 14303685
+    },
+    {
+      "name": "part2__val__2020__fire_24461347.zip.bin",
+      "bytes": 22062456
+    },
+    {
+      "name": "part2__val__2020__fire_24461618.zip.bin",
+      "bytes": 31359418
+    },
+    {
+      "name": "part2__val__2020__fire_24461780.zip.bin",
+      "bytes": 32269109
+    },
+    {
+      "name": "part2__val__2020__fire_24461899.zip.bin",
+      "bytes": 26105245
+    },
+    {
+      "name": "part2__val__2020__fire_24461996.zip.bin",
+      "bytes": 14685355
+    },
+    {
+      "name": "part2__val__2020__fire_24462127.zip.bin",
+      "bytes": 16689656
+    },
+    {
+      "name": "part2__val__2020__fire_24462243.zip.bin",
+      "bytes": 11615265
+    },
+    {
+      "name": "part2__val__2020__fire_24462335.zip.bin",
+      "bytes": 30976460
+    },
+    {
+      "name": "part2__val__2020__fire_24462610.zip.bin",
+      "bytes": 32135010
+    },
+    {
+      "name": "part2__val__2020__fire_24462764.zip.bin",
+      "bytes": 11528677
+    },
+    {
+      "name": "part2__val__2020__fire_24462847.zip.bin",
+      "bytes": 57065799
+    },
+    {
+      "name": "part2__val__2020__fire_24462912.zip.bin",
+      "bytes": 17823123
+    },
+    {
+      "name": "part2__val__2020__fire_24463187.zip.bin",
+      "bytes": 12714067
+    },
+    {
+      "name": "part2__val__2020__fire_24463206.zip.bin",
+      "bytes": 15526859
+    },
+    {
+      "name": "part2__val__2020__fire_24604426.zip.bin",
+      "bytes": 9782948
+    },
+    {
+      "name": "part2__val__2020__fire_24604462.zip.bin",
+      "bytes": 14210951
+    },
+    {
+      "name": "part2__val__2020__fire_24604731.zip.bin",
+      "bytes": 28308384
+    },
+    {
+      "name": "part2__val__2020__fire_24604783.zip.bin",
+      "bytes": 49391453
+    },
+    {
+      "name": "part2__val__2020__fire_24695413.zip.bin",
+      "bytes": 17188931
+    },
+    {
+      "name": "part2__val__2020__fire_24695447.zip.bin",
+      "bytes": 9777062
+    },
+    {
+      "name": "part2__val__2020__fire_24695557.zip.bin",
+      "bytes": 17658731
+    },
+    {
+      "name": "part2__val__2020__fire_24695627.zip.bin",
+      "bytes": 13373137
+    },
+    {
+      "name": "part2__val__2020__fire_24695963.zip.bin",
+      "bytes": 15126261
+    },
+    {
+      "name": "publication_identity.json",
+      "bytes": 172
+    }
+  ],
+  "all_filenames_and_sizes_match": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "equal_samples": 3,
+  "provenance": {
+    "train_events": [
+      "2018/fire_21748813",
+      "2018/fire_21997864",
+      "2019/fire_23300839"
+    ],
+    "val_events": [
+      "2020/fire_23654679",
+      "2020/fire_24104674"
+    ],
+    "duplicate_events_resolved": 0,
+    "source_verification": "pinned certified mount scope and event directory presence; file/header failures propagate at reads; no repeated per-file audit",
+    "tiff_headers_opened_during_setup": 0
+  },
+  "seconds": 3.64667560000089
+}

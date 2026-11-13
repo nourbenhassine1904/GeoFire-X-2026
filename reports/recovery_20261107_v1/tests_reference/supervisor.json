@@ -1,0 +1,51 @@
+{
+  "time": "2026-11-07T12:16:00.262128+00:00",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_gpu_operational.py",
+    "tests/test_gpu_resources.py",
+    "tests/test_runner.py",
+    "tests/test_benchmark_contracts.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "reports/recovery_20261107_v1/tests_reference_tmp",
+    "--junitxml",
+    "reports/recovery_20261107_v1/tests_reference.xml",
+    "-o",
+    "faulthandler_timeout=60"
+  ],
+  "pid": 16112,
+  "status": "LOW_AVAILABLE_MEMORY",
+  "exit_code": 1,
+  "elapsed_seconds": 8.7349999999999,
+  "limit_seconds": 240,
+  "peak_system_memory_load_percent": 93,
+  "before": {
+    "memory": {
+      "total": 16837500928,
+      "available": 1285033984,
+      "load_percent": 92
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903726612480,
+      "free": 119026102272
+    }
+  },
+  "after": {
+    "memory": {
+      "total": 16837500928,
+      "available": 601550848,
+      "load_percent": 96
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903997067264,
+      "free": 118755647488
+    }
+  }
+}

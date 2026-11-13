@@ -1,0 +1,37 @@
+{
+  "status": "SPARK_EXECUTED",
+  "spark_version": "4.0.2",
+  "master": "local[2]",
+  "distributed_cluster": false,
+  "observations": 13607,
+  "window_rows": 21705,
+  "independent_window_comparison": "exact_match",
+  "annual": [
+    {
+      "year": 2018,
+      "split": "train",
+      "observations": 3773,
+      "events": 176
+    },
+    {
+      "year": 2019,
+      "split": "train",
+      "observations": 1425,
+      "events": 74
+    },
+    {
+      "year": 2020,
+      "split": "val",
+      "observations": 4292,
+      "events": 201
+    },
+    {
+      "year": 2021,
+      "split": "test",
+      "observations": 4117,
+      "events": 156
+    }
+  ],
+  "materialization": "Spark SQL results -> PyArrow Parquet; no Hadoop native writer",
+  "seconds": 41.87598260000232
+}

@@ -1,0 +1,6 @@
+{
+  "status": "RUNNING",
+  "confirmation_lock_sha256": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+  "threshold": 0.78,
+  "device": "cpu"
+}
