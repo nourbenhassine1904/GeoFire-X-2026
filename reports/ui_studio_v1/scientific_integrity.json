@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files_checked": 63,
+  "mismatches": [],
+  "scope": "All backend Python modules and pinned Prediction Lab source/data/checkpoint archive identities captured before the UI edits."
+}

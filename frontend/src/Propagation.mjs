@@ -8,8 +8,8 @@ export default function Propagation(){
   useEffect(()=>{const controller=new AbortController();fetch('/science/propagation',{signal:controller.signal})
     .then(async r=>{if(!r.ok)throw new Error(`Diagnostic indisponible (${r.status})`);setData(await r.json());})
     .catch(e=>{if(e.name!=='AbortError')setError(e.message);});return()=>controller.abort();},[]);
-  if(error)return h('main',{className:'science'},h('p',{role:'alert'},error));
-  if(!data)return h('main',{className:'science'},h('p',{role:'status'},'Lecture des diagnostics enregistrés…'));
+  if(error)return h('section',{className:'science'},h('p',{role:'alert'},error));
+  if(!data)return h('section',{className:'science'},h('p',{role:'status'},'Lecture des diagnostics enregistrés…'));
   return h(PropagationView,{data});
 }
 export function PropagationView({data}){
@@ -19,8 +19,8 @@ export function PropagationView({data}){
   const columns=[['positive_pixels','Feux cibles'],['tp','TP'],['fp','FP'],['fn','FN'],['dice','Dice'],['precision','Précision'],['recall','Rappel']];
   const table=(rows,cols)=>h('div',{className:'table-scroll'},h('table',null,h('thead',null,h('tr',null,...cols.map(([key,label])=>h('th',{key,scope:'col'},label)))),
     h('tbody',null,...rows.map((r,i)=>h('tr',{key:i},...cols.map(([key])=>h('td',{key},r[key]===null||r[key]===undefined?'—':typeof r[key]==='number'?number(r[key],['n','positive_pixels','tp','fp','fn'].includes(key)?0:6):r[key])))))));
-  return h('main',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Prévoir demain · diagnostic scientifique'),
-    h('h1',null,'Propagation J+1 : résultats et compromis'),h('p',null,'Expérience comparative sur les32 ; diagnostic du modèle principal sur les169 présentés séparément. Sorties historiques conservées.')),
+  return h('section',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Prévoir demain · diagnostic scientifique'),
+    h('h2',null,'Propagation J+1 : résultats et compromis'),h('p',null,'Expérience comparative sur les32 ; diagnostic du modèle principal sur les169 présentés séparément. Sorties historiques conservées.')),
     h(PropagationComparison),
     h('section',{className:'panel'},h('h2',null,'Nouveaux pixels et feu déjà observé · 169 événements'),
       h('p',null,'Nouveau feu = cible J+1 positive, absence de détection à J et masque valide commun. Contexte : J−2, J−1, J ; cible : J+1. Le domaine valide inclut aussi J−4 et J−3 pour conserver la comparaison historique.'),

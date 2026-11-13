@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "path": "UI requestForecast -> FastAPI -> PyTorch CPU -> ForecastView -> imagePixels",
+  "event_id": "2020/fire_24332880",
+  "as_of": "2020-09-03",
+  "target_date": "2020-09-04",
+  "request_id": "557b6688ef5a45b7bf63463ab0fbb2f5",
+  "model": "B2 U-Net poids 10",
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "threshold": 0.78,
+  "target_pixels_read": false,
+  "elapsed_seconds": 0.06918949999817414,
+  "tiles": 20,
+  "canvas_maps": 8,
+  "width": 256,
+  "height": 320,
+  "experiment_promoted": false,
+  "big_data": "SPARK_EXECUTED",
+  "additional_points": [
+    {
+      "event_id": "2020/fire_23756984",
+      "as_of": "2020-02-07",
+      "target_date": "2020-02-08",
+      "request_id": "19c10a9f1c9641cfa95ace32fd4c5c05",
+      "seconds": 0.1131372999989253,
+      "tiles": 20
+    },
+    {
+      "event_id": "2020/fire_23756984",
+      "as_of": "2020-02-08",
+      "target_date": "2020-02-09",
+      "request_id": "a6def49c2ffd462687a86bd653c34526",
+      "seconds": 0.03852220000044326,
+      "tiles": 20
+    },
+    {
+      "event_id": "2020/fire_23756984",
+      "as_of": "2020-02-09",
+      "target_date": "2020-02-10",
+      "request_id": "fe14cbeecede4867a4edddc88de2d9d2",
+      "seconds": 0.04069629999867175,
+      "tiles": 20
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "as_of": "2020-11-20",
+      "target_date": "2020-11-21",
+      "request_id": "0d4a7dd7eddd4afa8030ea597d548685",
+      "seconds": 0.16716529999757768,
+      "tiles": 30
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "as_of": "2020-11-21",
+      "target_date": "2020-11-22",
+      "request_id": "ace9eff72a7f494ba291aa77f9bef4b6",
+      "seconds": 0.058438799998839386,
+      "tiles": 30
+    },
+    {
+      "event_id": "2020/fire_24695963",
+      "as_of": "2020-11-22",
+      "target_date": "2020-11-23",
+      "request_id": "d8588ff0fd6a409d9ba14fa70b12478b",
+      "seconds": 0.05852289999893401,
+      "tiles": 30
+    }
+  ],
+  "exports": {
+    "png_renderer": true,
+    "csv_rows": 81920,
+    "json_provenance": true,
+    "invalid_cells_preserved": true
+  },
+  "busy_retry_verified": true,
+  "browser_interactions_verified": false,
+  "browser_review": "V2 manual Chrome review pending; browser host unavailable"
+}

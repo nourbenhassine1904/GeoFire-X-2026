@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "checks": [
+    "overview:real-counts-saved-raster-reduced-motion",
+    "research:provenance-export",
+    "navigation:analytics",
+    "analytics:all-tabs-frozen-model-metrics",
+    "navigation:data",
+    "data:spark-parquet-existing-results",
+    "navigation:studio",
+    "studio:event-list-date-navigation-real-inference-target-separated",
+    "exports:json-csv-canvas-rgba-png-dialog-zoom",
+    "navigation:overview",
+    "navigation:studio",
+    "errors:catalogue-unavailable-retry-no-fabricated-result",
+    "navigation:overview",
+    "mobile:navigation-dialog-open-select-close",
+    "keyboard:command-search-enter-and-analytics-arrow-keys",
+    "navigation:overview",
+    "motion:system-preference-live-change-user-toggle-and-persistence",
+    "a11y:five-pages-structural-axe-rules-and-single-main-heading"
+  ],
+  "requests": [
+    "/science/summary",
+    "/science/unet-ablation",
+    "/lab/lineage",
+    "/science/big-data",
+    "/health",
+    "/science/summary",
+    "/lab/lineage",
+    "/science/unet-ablation",
+    "/science/unet-ablation?revision=0",
+    "/science/maps?phase=holdout169",
+    "/science/summary",
+    "/science/events?phase=holdout169",
+    "/science/maps?phase=holdout169",
+    "/science/events?phase=calibration32",
+    "/science/maps?phase=calibration32",
+    "/science/propagation",
+    "/science/propagation-comparison",
+    "/science/big-data",
+    "/lab/lineage",
+    "/lab/events",
+    "/lab/predict?event_id=2020%2Ffire_24332880&as_of=2020-09-03&max_side=512",
+    "/lab/ground-truth?event_id=2020%2Ffire_24332880&as_of=2020-09-03&max_side=512",
+    "/science/summary",
+    "/science/unet-ablation",
+    "/lab/lineage",
+    "/science/big-data",
+    "/lab/events",
+    "/lab/events",
+    "/science/summary",
+    "/science/unet-ablation",
+    "/lab/lineage",
+    "/science/big-data",
+    "/science/summary",
+    "/lab/lineage",
+    "/science/unet-ablation",
+    "/science/unet-ablation?revision=0",
+    "/science/maps?phase=holdout169",
+    "/science/summary",
+    "/science/summary",
+    "/science/unet-ablation",
+    "/lab/lineage",
+    "/science/big-data"
+  ],
+  "exports": [
+    {
+      "name": "geofirex-research-provenance.json",
+      "kind": "Blob"
+    },
+    {
+      "name": "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10.json",
+      "kind": "Blob"
+    },
+    {
+      "name": "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10.csv",
+      "kind": "Blob"
+    },
+    {
+      "name": "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10_Feu_observe_J_2020_09_03.png",
+      "kind": "canvas PNG data URL"
+    }
+  ],
+  "rendering": "ReactDOM in Happy DOM with real FastAPI endpoints; canvas RGBA captured and encoded as PNG in test adapter",
+  "limits": [
+    "No browser layout or screenshot validation: browser host unavailable; native app approval timed out.",
+    "Colour contrast and responsive geometry require real-browser review.",
+    "Native dialogs and canvas APIs use explicit simulator adapters."
+  ],
+  "backend_pixels_2021_requested": false,
+  "new_training": false,
+  "spark_jobs_started": false
+}

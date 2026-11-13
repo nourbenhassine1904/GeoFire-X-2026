@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 const h=React.createElement;
 const num=(v,digits=6)=>v===null||v===undefined?'—':Number(v).toLocaleString('fr-FR',{maximumFractionDigits:digits});
 const names={B1:'CNN historique · 0,95',B2:'U-Net historique · 0,95',B2_w10:'U-Net poids 10 · 0,78'};
-const colors={B1:'#ffad66',B2:'#66d6cb',B2_w10:'#d0a6ff'};
+const colors={B1:'#B45309',B2:'#0F766E',B2_w10:'#7C3AED'};
 function useJson(url){
   const [state,set]=useState({data:null,error:''});
   useEffect(()=>{const controller=new AbortController();
@@ -21,7 +21,7 @@ function EventDistribution({confirmed}){
   return h('section',{className:'panel'},h('h2',null,'Distribution sur les 169 événements'),
     h('label',null,'Métrique ',h('select',{value:metric,onChange:e=>setMetric(e.target.value)},...['dice','iou','precision','recall','average_precision','brier_score'].map(k=>h('option',{key:k,value:k},k)))),
     h('svg',{viewBox:'0 0 700 235',className:'distribution',role:'img','aria-label':`Distribution par événement ${metric}`},
-      ...[0,.25,.5,.75,1].flatMap(v=>[h('line',{key:'line'+v,x1:45,x2:665,y1:y(v),y2:y(v),stroke:'#365053'}),h('text',{key:'label'+v,x:0,y:y(v)+4,fontSize:12,fill:'#b4cac5'},`${v*100}%`),h('text',{key:'value'+v,x:x(v*max),y:224,textAnchor:'middle',fontSize:12,fill:'#b4cac5'},num(v*max,3))]),
+      ...[0,.25,.5,.75,1].flatMap(v=>[h('line',{key:'line'+v,x1:45,x2:665,y1:y(v),y2:y(v),stroke:'var(--line)'}),h('text',{key:'label'+v,x:0,y:y(v)+4,fontSize:12,fill:'var(--text-secondary)'},`${v*100}%`),h('text',{key:'value'+v,x:x(v*max),y:224,textAnchor:'middle',fontSize:12,fill:'var(--text-secondary)'},num(v*max,3))]),
       ...Object.entries(series).map(([key,rows])=>{const values=rows.map(r=>r[metric]).filter(v=>v!==null).sort((a,b)=>a-b);return h('polyline',{key,points:values.map((v,i)=>`${x(v)},${y((i+1)/values.length)}`).join(' '),fill:'none',stroke:colors[key],strokeWidth:2.5});})),
     h('p',{className:'legend'},'Orange : CNN historique · Turquoise : U-Net historique · Violet : U-Net poids 10. Chaque événement a le même poids ; valeurs indéfinies exclues.'),
     h('details',null,h('summary',null,'Métriques par événement · poids 10'),h('div',{className:'event-table'},h(Table,{rows:confirmed.per_event,columns:[['event_id','Événement'],['dice','Dice',v=>num(v)],['iou','IoU',v=>num(v)],['precision','Précision',v=>num(v)],['recall','Rappel',v=>num(v)],['average_precision','AP',v=>num(v)],['brier_score','Brier',v=>num(v)],['tp','TP',v=>num(v,0)],['fp','FP',v=>num(v,0)],['fn','FN',v=>num(v,0)]]}))));
@@ -36,6 +36,7 @@ function Maps({confirmed,historical}){
   return h('section',{className:'panel'},h('h2',null,'Cartes de confirmation · mêmes événements réels'),
     h('label',null,'Événement ',h('select',{value:chosen.event_id,onChange:e=>setChoice(e.target.value)},...cases.map(c=>h('option',{key:c.event_id,value:c.event_id},`${c.event_id} · ${c.target_date}`)))),
     h('p',null,'Trois événements choisis par métadonnées, date médiane et toutes les tuiles. Grille de pixels ; invalides transparents. Aucune sélection de cas selon le score.'),
+    h('aside',{className:'sparse-map-note'},'Cartes presque vides : les détections actives sont rares et seuls les pixels dépassant le seuil sont segmentés. Les zones sombres peuvent donc dominer une vraie carte. Les couches vérité / erreurs et les tableaux NPZ permettent de distinguer absence, feu manqué et pixels invalides ; aucune image de remplacement n’est générée.'),
     ...display.map(c=>h('div',{key:c.model,className:'model-maps'},h('h3',null,names[c.model]),
       h('div',{className:'map-grid'},...[['target','Vérité terrain J+1'],['probability','Probabilités'],['segmentation',`Segmentation · ${num(c.threshold,2)}`],['errors','TP vert · FP rouge · FN bleu']].map(([key,title])=>h('figure',{key},h('figcaption',null,title),h('img',{src:uri(c,c.layers[key]),alt:`${title}, ${c.model}, ${c.event_id}`,loading:'lazy'})))),
       h('a',{href:uri(c,c.npz),download:true},'Tableaux réels NPZ : probabilités, cible, masque, segmentation et erreurs'))));
@@ -47,13 +48,13 @@ export default function UnetAblation(){
   useEffect(()=>{if(!state.data||state.data.confirmation?.status==='COMPLETE')return;
     const timer=setTimeout(()=>setRevision(r=>r+1),30000);return()=>clearTimeout(timer);
   },[state.data]);
-  if(state.error)return h('main',{className:'science'},h('p',{role:'alert'},state.error));
-  if(!state.data)return h('main',{className:'science'},h('p',{role:'status'},'Lecture des résultats vérifiés…'));
+  if(state.error)return h('section',{className:'science'},h('p',{role:'alert'},state.error));
+  if(!state.data)return h('section',{className:'science'},h('p',{role:'status'},'Lecture des résultats vérifiés…'));
   const data=state.data;
-  if(data.status!=='VERIFIED')return h('main',{className:'science'},h('h1',null,'Ablation U-Net'),h('p',null,'Résultats vérifiés non disponibles. Les résultats historiques restent accessibles.'));
+  if(data.status!=='VERIFIED')return h('section',{className:'science'},h('h2',null,'Ablation U-Net'),h('p',null,'Résultats vérifiés non disponibles. Les résultats historiques restent accessibles.'));
   const c=data.confirmation,done=c.status==='COMPLETE';
   const rows=data.variants.map(v=>({...v,...v.metrics}));
-  return h('main',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Trois entraînements indépendants · vérification des checkpoints'),h('h1',null,'U-Net : du réglage à la confirmation'),h('p',null,'Seed 42 · 4 époques · 23 404 updates · 250 événements train · même état initial et même protocole')),
+  return h('section',{className:'science'},h('header',{className:'science-header'},h('span',{className:'eyebrow'},'Trois entraînements indépendants · vérification des checkpoints'),h('h2',null,'U-Net : du réglage à la confirmation'),h('p',null,'Seed 42 · 4 époques · 23 404 updates · 250 événements train · même état initial et même protocole')),
     h('section',{className:'panel'},h('h2',null,'Décision figée sur les 32 événements de réglage'),
       h(Table,{rows,columns:[['pos_weight','Poids positif'],['threshold','Seuil'],['dice','Dice micro',v=>num(v)],['iou','IoU',v=>num(v)],['precision','Précision',v=>num(v)],['recall','Rappel',v=>num(v)],['average_precision','AP',v=>num(v)],['brier_score','Brier ↓',v=>num(v)]]}),
       h('p',null,`Poids 10 retenu selon la règle Dice micro : Δ Dice = +${num(data.delta_dice_10_vs_30)} face au poids 30. Le poids 30 conserve la meilleure AP. Écart très faible, une seule seed : aucune supériorité statistique démontrée.`)),
@@ -66,6 +67,7 @@ export default function UnetAblation(){
       h(EventDistribution,{confirmed:c}),
       h('section',{className:'panel'},h('h2',null,'Nouveaux pixels de feu à J+1'),
         h('p',null,'Le rappel des nouveaux pixels de feu baisse avec ce point de fonctionnement. Le modèle retenu ne domine pas les références sur tous les critères.'),
+        h('aside',{className:'recall-limit'},h('span',null,'Limite mesurée · U-Net poids 10 · seuil 0,78'),h('strong',null,num(c.new_fire.new_fire_candidates.recall*100,2)+' % de rappel des nouveaux pixels'),h('div',{className:'recall-meter',role:'meter','aria-label':'Rappel des nouveaux pixels de feu','aria-valuemin':0,'aria-valuemax':100,'aria-valuenow':c.new_fire.new_fire_candidates.recall*100},h('span',{style:{width:c.new_fire.new_fire_candidates.recall*100+'%'}})),h('p',null,`${num(c.new_fire.new_fire_candidates.tp,0)} nouveaux pixels retrouvés sur ${num(c.new_fire.new_fire_candidates.positive_pixels,0)} positifs ; ${num(c.new_fire.new_fire_candidates.fn,0)} manqués. Panel de 169 événements déjà observés. Ce compromis ne justifie aucune supériorité générale.`)),
         h(Table,{rows:[...(c.historical_new_fire||[]).map(r=>({model:r.model,recall:r.new_fire_recall,dice:r.new_fire_dice,precision:r.new_fire_precision})),{model:'B2_w10',...c.new_fire.new_fire_candidates}],columns:[['model','Nouveaux pixels · modèle',v=>names[v]],['dice','Dice',v=>num(v)],['precision','Précision',v=>num(v)],['recall','Rappel',v=>num(v)]]}),
         h(Table,{rows:[{domain:'Pas de détection à J',...c.new_fire.new_fire_candidates},{domain:'Déjà détecté à J',...c.new_fire.observed_fire_candidates}],columns:[['domain','Sous-domaine'],['positive_pixels','Feux cibles',v=>num(v,0)],['dice','Dice',v=>num(v)],['precision','Précision',v=>num(v)],['recall','Rappel',v=>num(v)],['tp','TP',v=>num(v,0)],['fp','FP',v=>num(v,0)],['fn','FN',v=>num(v,0)]]}),h('p',null,'Les deux sous-domaines partitionnent les pixels valides. Une détection nouvelle ne démontre pas une ignition physique.')),
       h(Maps,{confirmed:c,historical:oldMaps.data})),

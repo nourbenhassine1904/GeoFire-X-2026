@@ -2,7 +2,61 @@
 
 Multimodal Spatio-Temporal Deep Learning for Next-Day Wildfire Spread Forecasting under Geographic and Temporal Domain Shift.
 
-## Current Phase
+## État actuel — GeoFire-X Studio, novembre 2026
+
+GeoFire-X dispose d'une application **FastAPI + React fonctionnelle** avec une
+inférence réelle J+1 sur les événements historiques de validation 2020.
+Le modèle principal est **U-Net poids 10, seuil figé 0,78**. Les entraînements
+compacts utilisent **250 événements train (2018–2019)**, quatre époques et
+23 404 mises à jour par entraînement. Les 201 événements de validation 2020
+se répartissent en 32 de réglage et 169 de confirmation désormais observés.
+L'inventaire officiel couvre 607 événements ; **aucun pixel du test 2021 n'est ouvert**.
+
+L'interface Studio V2 « Flamme solaire » conserve les routes et calculs existants et organise les
+parcours en cinq espaces : **Overview**, **Prediction Studio**, **Model Analytics**,
+**Big Data Observatory** et **Research**. Elle conserve les cartes raster,
+agrandissements et exports PNG/JSON/CSV, comparaisons CNN/U-Net, ablations,
+propagation et résultats Spark/Parquet déjà calculés. React 19.3.1, esbuild et
+le CSS classique restent en place ; les effets React Bits respectent la réduction
+des animations et disposent également d'une commande dans la barre supérieure.
+Le thème est clair par défaut ; les composants officiels Aurora, SplitText,
+CountUp, SpotlightCard, FadeContent, Stepper et AnimatedList sont activés selon
+les préférences de mouvement. Les grilles et largeurs validées en V1 sont conservées.
+
+Les cartes du compact sont des **grilles de pixels sans CRS disponible**, pas des
+cartes géographiques. La vérité J+1 est lue séparément après l'inférence.
+La tête spécialisée de propagation est une expérience comparative **non retenue**.
+La plateforme présente des résultats de recherche historiques, sans prétention
+de système opérationnel d'alerte ni d'incertitude probabiliste calibrée.
+
+### Lancer l'application actuelle, sans entraînement
+
+Après restauration des artefacts locaux requis :
+
+```powershell
+Push-Location frontend
+npm ci
+npm run build
+Pop-Location
+.\.venv\Scripts\python.exe scripts/serve_demo.py --results-only --port 8014
+```
+
+Ouvrir **http://127.0.0.1:8014/#/overview**. Le mode `--results-only` conserve
+l'inférence réelle du Prediction Lab ; il ne requiert pas le snapshot TIFF du
+Predictor historique. Il ne déclenche ni entraînement ni calcul Spark.
+
+- [Résultats U-Net confirmés](reports/unet_confirmation_20261112_v1/RESULTATS_CONFIRMES.md)
+- [Diagnostic des modèles historiques](reports/calibration_20261112_v1/DIAGNOSTIC.md)
+- [Préservation des modèles et restauration](docs/GITHUB_PRESERVATION_20261113.md)
+- [Architecture et validation de Studio V1](docs/UI_STUDIO_V1.md)
+- [Studio V2 : animations, tests et checklist Chrome](docs/UI_STUDIO_V2.md)
+
+## Historique — préparation, premiers modèles et pilote 108 TIFF
+
+Les étapes suivantes documentent l'état des premières phases, avant les
+entraînements compacts et l'application actuelle décrits ci-dessus. Leurs preuves
+et résultats sont conservés ; leurs commandes ne sont pas nécessaires à la
+démonstration actuelle.
 
 **Suivi 3 — GPU pilot completed (1 November 2026).** B1 CNN, B2 U-Net and B3 ConvLSTM
 each completed 10 epochs / 1,280 updates on the certified 108-TIFF sample.

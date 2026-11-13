@@ -1,0 +1,83 @@
+{
+  "environment": "DOM simulator; structural checks only, not browser contrast or geometry",
+  "pages": {
+    "research": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "analytics": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-required-children",
+        "aria-required-parent",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "data": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "studio": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "overview": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "image-alt",
+        "landmark-one-main",
+        "link-name"
+      ]
+    }
+  }
+}

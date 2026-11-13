@@ -1,0 +1,128 @@
+{
+  "status": "IMPLEMENTED; real-browser visual review pending",
+  "branch": "feature/geofire-studio-ui-v1",
+  "base_commit": "39ed50c11b3ba0a8908b64d9080dd8e6a68d00cf",
+  "tracked_files_modified": 11,
+  "new_files_created": 31,
+  "files": [
+    "README.md",
+    "docs/UI_STUDIO_V1.md",
+    "frontend/build.mjs",
+    "frontend/index.html",
+    "frontend/package-lock.json",
+    "frontend/package.json",
+    "frontend/src/EventForecast.mjs",
+    "frontend/src/Propagation.mjs",
+    "frontend/src/ScienceResults.mjs",
+    "frontend/src/StudioApp.mjs",
+    "frontend/src/StudioPages.mjs",
+    "frontend/src/UnetAblation.mjs",
+    "frontend/src/main.mjs",
+    "frontend/src/reactbits/AnimatedList.css",
+    "frontend/src/reactbits/AnimatedList.jsx",
+    "frontend/src/reactbits/Aurora.css",
+    "frontend/src/reactbits/Aurora.jsx",
+    "frontend/src/reactbits/CountUp.jsx",
+    "frontend/src/reactbits/FadeContent.jsx",
+    "frontend/src/reactbits/LICENSE.md",
+    "frontend/src/reactbits/PROVENANCE.json",
+    "frontend/src/reactbits/SplitText.jsx",
+    "frontend/src/reactbits/SpotlightCard.css",
+    "frontend/src/reactbits/SpotlightCard.jsx",
+    "frontend/src/reactbits/Stepper.css",
+    "frontend/src/reactbits/Stepper.jsx",
+    "frontend/src/studio_ui.mjs",
+    "frontend/src/style.css",
+    "frontend/tests/studio-dom.mjs",
+    "frontend/verify-studio.mjs",
+    "reports/ui_studio_v1/BILAN.md",
+    "reports/ui_studio_v1/accessibility_dom.json",
+    "reports/ui_studio_v1/backend_targeted_tests.xml",
+    "reports/ui_studio_v1/data_contract.json",
+    "reports/ui_studio_v1/frontend_dom_tests.json",
+    "reports/ui_studio_v1/immutable_before.json",
+    "reports/ui_studio_v1/lineage_contract.json",
+    "reports/ui_studio_v1/scientific_integrity.json",
+    "reports/ui_studio_v1/status_contract.json",
+    "reports/ui_studio_v1/summary_contract.json",
+    "reports/ui_studio_v1/unet_contract.json",
+    "reports/ui_studio_v1/verification_summary.json"
+  ],
+  "build": {
+    "status": "PASS",
+    "artifacts": [
+      {
+        "path": "frontend/dist/index.html",
+        "bytes": 551,
+        "gzip_bytes": 346,
+        "http_status": 200
+      },
+      {
+        "path": "frontend/dist/app.js",
+        "bytes": 568820,
+        "gzip_bytes": 193947,
+        "http_status": 200
+      },
+      {
+        "path": "frontend/dist/app.css",
+        "bytes": 11270,
+        "gzip_bytes": 2564,
+        "http_status": 200
+      },
+      {
+        "path": "frontend/dist/style.css",
+        "bytes": 34950,
+        "gzip_bytes": 8420,
+        "http_status": 200
+      },
+      {
+        "path": "frontend/dist/react-bits-LICENSE.txt",
+        "bytes": 2060,
+        "gzip_bytes": 1076,
+        "http_status": 200
+      }
+    ]
+  },
+  "backend_tests": {
+    "passed": 22,
+    "failures": 0,
+    "errors": 0
+  },
+  "frontend_component_scenarios": {
+    "passed": 18,
+    "exports_verified": 4,
+    "environment": "Happy DOM with real FastAPI; explicit native-dialog/canvas test adapters"
+  },
+  "accessibility": {
+    "pages": [
+      "research",
+      "analytics",
+      "data",
+      "studio",
+      "overview"
+    ],
+    "structural_violations": 0,
+    "contrast_tested": false
+  },
+  "scientific_integrity": {
+    "sha256_files_checked": 63,
+    "mismatches": 0
+  },
+  "browser_review": {
+    "status": "NOT_COMPLETED",
+    "reason": "Browser access host unavailable; native Chrome app approval timed out",
+    "pending": [
+      "Real responsive geometry at 390/768/1440 px",
+      "Rendered colour contrast and typography",
+      "Native browser dialog/download behaviour"
+    ]
+  },
+  "new_training": false,
+  "full_evaluation": false,
+  "spark_job_started": false,
+  "test_2021_pixels_opened": 0,
+  "git_commit": false,
+  "git_push": false,
+  "git_merge": false,
+  "index_modified": false
+}
