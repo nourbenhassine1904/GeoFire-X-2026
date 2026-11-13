@@ -1,0 +1,25 @@
+{
+  "id": "nnnnbhss/geofirex-b1-b2-compact-certified",
+  "title": "GeoFire-X B1 B2 Compact Certified",
+  "code_file": "B1_B2_COMPACT_CERTIFIED_READY.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-compact-t3-20261111-p00",
+    "nnnnbhss/geofirex-compact-t3-20261111-p01",
+    "nnnnbhss/geofirex-compact-t3-20261111-p02",
+    "nnnnbhss/geofirex-compact-t3-20261111-p03",
+    "nnnnbhss/geofirex-compact-t3-20261111-p04",
+    "nnnnbhss/geofirex-compact-t3-20261111-p05",
+    "nnnnbhss/geofirex-compact-t3-20261111-p06",
+    "nnnnbhss/geofirex-compact-t3-20261111-p07",
+    "nnnnbhss/geofirex-compact-t3-20261111-p08",
+    "nnnnbhss/geofirex-compact-t3-20261111-p09",
+    "nnnnbhss/geofirex-compact-t3-20261111-p10"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "status": "OFFLINE_BLOB_VALIDATOR_VERIFIED_NO_NETWORK",
+  "tests_passed": 33,
+  "real_start_blob_calls": 0,
+  "real_put_calls": 0,
+  "real_dataset_creates": 0,
+  "cumulative_http_body_bytes": 2739,
+  "remaining_http_body_bytes": 5999997261,
+  "payload_bytes": 4829918684,
+  "recorded_payload_sha256": "464e89146fa6fdabfccdd1eb81d97b08549ca9b14428a32e3993f5996e8f5890",
+  "real_zip_contents_read": false,
+  "response_from_attempt_02_available": false,
+  "exact_prior_rejection_cause": "UNKNOWN_FROM_RETAINED_LOGS",
+  "policy": "HTTPS, existing GCS host family only, port 443/default, no userinfo/fragment/control chars, no redirects or retries",
+  "source_sha256": {
+    "scripts/kaggle_blob_session.py": "f7c98a9c2c9406df2396e1d0aff9154188b5082a2622a3c7d415a21cbfaae353",
+    "scripts/publish_kaggle_single_attempt.py": "bd223646df240dbbf4983535b1a9d8192d2c4516c1223af198a6c19a29b73fe3",
+    "tests/test_kaggle_blob_session.py": "b9580f9fcb174f8dfa54fbff1b09891e5c49ed752d82d71db79e207417699b04",
+    "reports/kaggle_prepublication_20261107_v2/PILOTE_LOT_001.ps1": "e8c95ea43a0e474d912f7d3f54951cf042b0a4b559090c1d625b753f1b7e89c9"
+  },
+  "preserved_history_sha256": {
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-01/network.jsonl": "da3060fbfaa32bf7989cc7430092bc3fbdbaa78645f5473080a87e48014b3f54",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-01/result.json": "bbda4a89c5a0414b73381772934fe38e24fb40344d45264851d802a6d8a6bc6f",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-01/started.json": "3d73f6b8ece8f2f4ce47b975aa178f2eca252aadf25c00a58dbf0a303baee8a3",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-02/dataset-preflight.json": "ade923599a078ad86996de31b81d95651c2df85bcb61c4e78737dd73f13770ef",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-02/network.jsonl": "e712afec55ff53b598c2d6e6e6778ce805e99d4e14e2499f30068026e7f6746d",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-02/result.json": "a12032113155d1e6f4e42c094e5aaae4ecb1221e2ae6127661d1facbe225334c",
+    "reports/kaggle_pilot_001_20261107_v1/lot-001-create-attempt-02/started.json": "56312907409f558a77ace09abf614cfdbedbdf059ad962b40d774d119d05c206",
+    "reports/kaggle_pilot_001_20261107_v1/http-body.jsonl": "be09118edae0babdde7eb8266b9b95f4193b821a9ce02e0a7745684c73222cea"
+  },
+  "minimum_available_bytes_during_final_tests": 5513744384,
+  "final_tests_peak_rss_bytes": 39378944
+}

@@ -1,0 +1,204 @@
+{
+  "status": "COMPLETE",
+  "url": "http://127.0.0.1:8014",
+  "mode": "scientific-results",
+  "selected": {
+    "model": "B2",
+    "pos_weight": 10,
+    "threshold": 0.78
+  },
+  "metrics": {
+    "phase": "holdout169",
+    "model": "B2_w10",
+    "mode": "confirmed_fixed",
+    "events": 169,
+    "tiles": 65012,
+    "threshold": 0.78,
+    "tp": 262243,
+    "fp": 385578,
+    "fn": 300710,
+    "tn": 216558436,
+    "valid_pixels": 217506967,
+    "positive_pixels": 562953,
+    "predicted_positive_pixels": 647821,
+    "prevalence": 0.0025882067492578294,
+    "dice": 0.43318241059025053,
+    "iou": 0.2764727773789154,
+    "precision": 0.40480780956467916,
+    "recall": 0.46583462562594036,
+    "average_precision": 0.3186180462118112,
+    "brier_score": 0.0034977911713319127
+  },
+  "new_fire": {
+    "new_fire_candidates": {
+      "threshold": 0.78,
+      "tp": 45245,
+      "fp": 143828,
+      "fn": 262923,
+      "tn": 216484453,
+      "valid_pixels": 216936449,
+      "positive_pixels": 308168,
+      "predicted_positive_pixels": 189073,
+      "prevalence": 0.0014205450555706293,
+      "dice": 0.18198418875354205,
+      "iou": 0.10010044336675546,
+      "precision": 0.2392991066942398,
+      "recall": 0.14681926741258014
+    },
+    "observed_fire_candidates": {
+      "threshold": 0.78,
+      "tp": 216998,
+      "fp": 241750,
+      "fn": 37787,
+      "tn": 73983,
+      "valid_pixels": 570518,
+      "positive_pixels": 254785,
+      "predicted_positive_pixels": 458748,
+      "prevalence": 0.4465853838090998,
+      "dice": 0.6082353584207038,
+      "iou": 0.43702458034176844,
+      "precision": 0.4730222257099759,
+      "recall": 0.8516906411287949
+    },
+    "definition": "new fire: target=1, observed fire at J=0, joint valid mask"
+  },
+  "runtime": {
+    "status": "COMPLETE",
+    "device": "cpu",
+    "gpu_used": false,
+    "events": 169,
+    "tiles": 65012,
+    "threshold": 0.78,
+    "confirmation_lock_sha256": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+    "elapsed_seconds": 747.9547643000005,
+    "evaluation_sha256": "4944478ae4d5d2e017149992550d19d304370338c6406be84ffc3d76e50b02d5",
+    "manifest_sha256": "40647f2434b6999860a1c30816525ae4f77ea7e2c59f2837c66f67fe9ce96d38",
+    "training_executed": false,
+    "test_2021_pixels_opened": 0
+  },
+  "source_ablation_sha256": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+  "historical_zip_sha256": "bd1e2f7e70ad6b8d1ce516e72626b1dfc9cb7050d0e02ad120b7b5a38031d6dd",
+  "input_archive_unchanged": true,
+  "historical_results_unchanged": true,
+  "spark_parquet_unchanged": true,
+  "spark_parquet_files": [
+    {
+      "path": "reports/mission_20261111/spark/annual.parquet",
+      "sha256": "dc9b4f54419ff9ac8a982f1008a75b961b64e9eae04df90437eba06dc4dd245e",
+      "bytes": 1413,
+      "rows": 4
+    },
+    {
+      "path": "reports/mission_20261111/spark/windows.parquet",
+      "sha256": "4469a317b760f5b82861b88da18ce1a898aa909319376a09dfa284def0a73e90",
+      "bytes": 1361,
+      "rows": 6
+    },
+    {
+      "path": "reports/mission_20261111/spark/quality.parquet",
+      "sha256": "625c0ba14ede2291ec3c9b03dd7bb4ade53f7509a790bdd4a570212297873070",
+      "bytes": 2299,
+      "rows": 2
+    },
+    {
+      "path": "reports/mission_20261111/spark/annual_leakage.parquet",
+      "sha256": "8ab85ae55cff0a8b6d945ca4408978cf7795b91635ecf9211ac435bfe60aa8a0",
+      "bytes": 514,
+      "rows": 1
+    },
+    {
+      "path": "reports/mission_20261111/spark/window_join.parquet",
+      "sha256": "0cce49dd490872503b3bd07b8e04c8625da7471070ad6b44af60cbb60c2473ac",
+      "bytes": 783,
+      "rows": 2
+    }
+  ],
+  "http_checks": [
+    {
+      "path": "/health",
+      "status": 200,
+      "bytes": 89
+    },
+    {
+      "path": "/science/unet-ablation",
+      "status": 200,
+      "bytes": 317953
+    },
+    {
+      "path": "/science/retained-model",
+      "status": 200,
+      "bytes": 250
+    },
+    {
+      "path": "/science/summary",
+      "status": 200,
+      "bytes": 19220
+    },
+    {
+      "path": "/science/events?phase=holdout169",
+      "status": 200,
+      "bytes": 291597
+    },
+    {
+      "path": "/science/maps?phase=holdout169",
+      "status": 200,
+      "bytes": 5191
+    },
+    {
+      "path": "/science/big-data",
+      "status": 200,
+      "bytes": 4199
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 318
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 251444
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "bytes": 3941
+    }
+  ],
+  "new_png_layers_verified": 12,
+  "tests_passed": 21,
+  "gpu_launched": false,
+  "training_launched": false,
+  "kaggle_publication": false,
+  "new_ablation": false,
+  "commit_or_push": false,
+  "evidence": {
+    "confirmation_cpu/confirmation_locked.json": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+    "confirmation_cpu/status_complete.json": "271fb1a85273a802d118da349d63717812669a0b468de460c3b0429a6f32886a",
+    "confirmation_cpu/app_manifest.json": "40647f2434b6999860a1c30816525ae4f77ea7e2c59f2837c66f67fe9ce96d38",
+    "confirmation_cpu/comparison.json": "f9e3ec9b6543a956f970e8a1b05ac407e5b5c5776ef8aaa58bef0d7235ba2097",
+    "confirmation_cpu/B2_w10_holdout169/evaluation.json": "4944478ae4d5d2e017149992550d19d304370338c6406be84ffc3d76e50b02d5",
+    "ablation_verified.json": "0a794365ed33b75040c86135954c3643cd1f9927fb1cc4214ec5a264023a01e0"
+  },
+  "test_2021_pixels_opened": 0,
+  "test_2021_scores_computed": false,
+  "existing_2021_inventory_metadata_displayed": true,
+  "map_parity_sha256": "f5b737f7cc1a3cdc89d66c42eb4e2aed869eb014fc34ce4afd9e6376cfbf5a3a",
+  "tests_xml_sha256": "cbc6b556ad8715bfa5919877a2c766735ab71ee7cf65dfbdfbb4a34a08f18f63",
+  "source_sha256": {
+    "src/geofirex/unet_confirmation.py": "5e89d8240ed77907c70adcb873653cb971f78eb58e663ac9e5a0770037501d8c",
+    "src/geofirex/unet_results.py": "a5b20b5c9c2f4ffe2ed0568c6e00e6ce122c462d9c8f4599046dafff06760ada",
+    "src/geofirex/compact_calibration.py": "58560e3f6eca9edfa41ec14a64fbb5a4a2aa899edeab283ac2e3ecdba3da78f2",
+    "src/geofirex/benchmark_models.py": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1",
+    "src/geofirex/unet.py": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0",
+    "src/geofirex/fast_compact.py": "6ddd5468a8261ef55c6dc4cab59d191eb345b8ab2cc063d345d435a4dfe4d657",
+    "src/geofirex/science_results.py": "c6fb097fede412cd350b7c8d4f1073e151aec8c9dc861c519df2ff1cd668b96b",
+    "scripts/confirm_unet_ablation.py": "aa38e9bb98a82029ab15fafc82ceb3a1665f99b95fe63789824072aa0e349aa3",
+    "scripts/serve_demo.py": "69aec5d33f26230e446c8bdfbe8f341f7126b10a94cc6a05bcff5ddbfc4a2414",
+    "frontend/src/UnetAblation.mjs": "e75a4cff1dc0c68ff91ea8905d9514319402c0777a8bbe4f8c489c73014c820c",
+    "frontend/src/ScienceResults.mjs": "a7fe035bf5809b26c723b5a94de0240cf0bfa55453fa2275ec0ee5918f3c890d",
+    "frontend/src/main.mjs": "2fd74ef51e65dbc70394c5ed289299c0e8aec8ec6049030eb4fc4348c430f075",
+    "frontend/src/style.css": "c86aee6c80a2438627de69b532af323ee5682bd227734e7325adaa3cae5d5e2a",
+    "frontend/dist/app.js": "05c0409414a0a21de45eedf55450a1fa9dec4f02b1c4aa371c74fcf1a0a72cb7"
+  }
+}

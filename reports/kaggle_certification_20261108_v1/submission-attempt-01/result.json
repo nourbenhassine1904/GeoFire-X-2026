@@ -1,0 +1,13 @@
+{
+  "status": "CPU_SUBMISSION_STOPPED_INSPECT_REMOTE_STATE",
+  "kernel": "nnnnbhss/geofirex-certify-lot001-cpu-20261108-v1",
+  "notebook_bytes": 184641,
+  "private": true,
+  "gpu": false,
+  "internet": false,
+  "error_type": "ConnectionError",
+  "http_status": null,
+  "reserved_http_body_bytes": 4829923793,
+  "requests": 1,
+  "credentials_unchanged": true
+}

@@ -1,0 +1,52 @@
+{
+  "time": "2026-11-03T16:29:31.968680+00:00",
+  "authenticated_owner": "nnnnbhss",
+  "datasets": [
+    {
+      "handle": "nnnnbhss/geofire-x-wildfirespreadts-sample",
+      "private": true,
+      "api_total_bytes": 447927526,
+      "version": 1,
+      "versions_returned": 1
+    },
+    {
+      "handle": "nnnnbhss/geofirex-sample-pilot-code-20261101",
+      "private": true,
+      "api_total_bytes": 6071338,
+      "version": 1,
+      "versions_returned": 1
+    },
+    {
+      "handle": "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+      "private": true,
+      "api_total_bytes": 11762,
+      "version": 1,
+      "versions_returned": 1
+    },
+    {
+      "handle": "nnnnbhss/geofire-x-cloud-code-v3",
+      "private": true,
+      "api_total_bytes": 5875872,
+      "version": 1,
+      "versions_returned": 1
+    },
+    {
+      "handle": "nnnnbhss/geofire-x-wsts-batch001",
+      "private": true,
+      "api_total_bytes": 45064308,
+      "version": 1,
+      "versions_returned": 1
+    },
+    {
+      "handle": "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212",
+      "private": true,
+      "api_total_bytes": 11762,
+      "version": 1,
+      "versions_returned": 1
+    }
+  ],
+  "documented_standard_private_limit_bytes": 200000000000,
+  "limit_source": "https://www.kaggle.com/docs/datasets#technical-specifications",
+  "current_api_bytes": 504962568,
+  "qualification": "Authenticated GetDataset total_bytes per private dataset; not a personalized quota meter"
+}

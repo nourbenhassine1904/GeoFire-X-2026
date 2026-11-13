@@ -1,0 +1,65 @@
+{
+  "selected_start_bytes": 3221225472,
+  "reserve_bytes": 2147483648,
+  "tree_cap_bytes": 536870912,
+  "rejected_start_bytes": 2684354560,
+  "reason": "3 GiB leaves 1 GiB above the reserve, including the unchanged 512 MiB whole-tree cap and supervisor/OS variability. 2.5 GiB would leave only 512 MiB. Prior 25 MiB staging observed >1 GiB system RAM loss in 118 seconds; dynamic stop must remain.",
+  "measurements": [
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/automation-preflight-monitor-01/supervisor.json",
+      "status": "FAILED",
+      "peak_tree_rss_bytes": 51896320,
+      "peak_job_commit_bytes": 38703104,
+      "minimum_available_bytes": 3527659520,
+      "elapsed_seconds": 64.82799999999952
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/automation-preflight-monitor-02/supervisor.json",
+      "status": "FAILED",
+      "peak_tree_rss_bytes": 51953664,
+      "peak_job_commit_bytes": 38842368,
+      "minimum_available_bytes": 3377836032,
+      "elapsed_seconds": 65.09399999999914
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/execution/canary-monitor/supervisor.json",
+      "status": "FINISHED",
+      "peak_tree_rss_bytes": 52801536,
+      "peak_job_commit_bytes": 38875136,
+      "minimum_available_bytes": 3045130240,
+      "elapsed_seconds": 65.88999999999942
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/execution/lot-002/stage-monitor/supervisor.json",
+      "status": "LOW_AVAILABLE_MEMORY",
+      "peak_tree_rss_bytes": 25665536,
+      "peak_job_commit_bytes": 14614528,
+      "minimum_available_bytes": 2123952128,
+      "elapsed_seconds": 117.8130000000001
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/resume-01/execution/lot-002/cpu-monitor/supervisor.json",
+      "status": "FINISHED",
+      "peak_tree_rss_bytes": 53809152,
+      "peak_job_commit_bytes": 42913792,
+      "minimum_available_bytes": 4543508480,
+      "elapsed_seconds": 588.8590000000004
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/resume-01/execution/lot-002/publish-monitor/supervisor.json",
+      "status": "FAILED",
+      "peak_tree_rss_bytes": 54149120,
+      "peak_job_commit_bytes": 39718912,
+      "minimum_available_bytes": 4577124352,
+      "elapsed_seconds": 4070.4220000000005
+    },
+    {
+      "source": "reports/kaggle_remaining_20261108_v1/resume-01/zip002-monitor/supervisor.json",
+      "status": "FINISHED",
+      "peak_tree_rss_bytes": 28344320,
+      "peak_job_commit_bytes": 17559552,
+      "minimum_available_bytes": 4557471744,
+      "elapsed_seconds": 15.82799999999952
+    }
+  ]
+}

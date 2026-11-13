@@ -1,0 +1,50 @@
+{
+  "loader": "cached",
+  "workers": 4,
+  "pin_memory": true,
+  "persistent_workers": true,
+  "model": "B1",
+  "measured_updates": 4,
+  "tiles": 64,
+  "seconds": 2.0332792479999853,
+  "tiles_per_second": 31.476247083598064,
+  "estimated_119_train_epoch_seconds": 1534.0774226277388,
+  "scaled_250_train_seconds": 2973.7662101647284,
+  "scope": "raw119 measured; compact throughput not measured on this GPU",
+  "stages": [
+    {
+      "wait": 0.5294442290000347,
+      "h2d": 0.0006714859999874534,
+      "compute": 0.006549434000021392,
+      "worker_loading_sum": 2.307430482999848,
+      "tiles": 16,
+      "loss": 0.867534339427948
+    },
+    {
+      "wait": 0.00010806099999172147,
+      "h2d": 0.0006417970000143214,
+      "compute": 0.006223226999964027,
+      "worker_loading_sum": 2.0321233180000036,
+      "tiles": 16,
+      "loss": 0.8636702299118042
+    },
+    {
+      "wait": 0.6918476899999746,
+      "h2d": 0.0006769670000039696,
+      "compute": 0.006116478000024017,
+      "worker_loading_sum": 1.5454593030000865,
+      "tiles": 16,
+      "loss": 0.8601602911949158
+    },
+    {
+      "wait": 0.7844305259999942,
+      "h2d": 0.0006601700000032906,
+      "compute": 0.005909182999971563,
+      "worker_loading_sum": 2.052827230000105,
+      "tiles": 16,
+      "loss": 0.8170238137245178
+    }
+  ],
+  "peak_parent_rss": 1967837184,
+  "gpu_allocated": 71436800
+}

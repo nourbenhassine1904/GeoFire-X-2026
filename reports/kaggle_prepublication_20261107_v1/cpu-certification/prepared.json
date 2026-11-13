@@ -1,0 +1,96 @@
+{
+  "status": "LOCAL_PREPARATION_ONLY",
+  "helper_sha256": "e935bf89a64261d7de0a0f8db8ef82fb0f24cbc4bdfa6e8ed0bdc76c7860409b",
+  "frozen_payload_sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+  "notebooks": [
+    {
+      "tag": "code",
+      "notebook_sha256": "55e74b04160122a84641bd2aa4facb68449480a14c05ff16dcf6969a9c4e913e",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-code-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-001",
+      "notebook_sha256": "7c1178f27d5b40b901a8ffd1b93922780c9c380a211481de3cac6d6279f65e78",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-001-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-002",
+      "notebook_sha256": "e64a247e7277244ef7eef2a3f0e0eacf65752340f35cf51d5d1b083214ee44d1",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-002-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-002-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-003",
+      "notebook_sha256": "41ae1bbae681a4158e876b3e3b76169cac3aecd281dc245184c3470d46f5c223",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-003-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-003-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-004",
+      "notebook_sha256": "65ef24b00ac47846262bec35a5d5104a1ec60e13179b7132dfeca68f2dc28873",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-004-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-004-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-005",
+      "notebook_sha256": "8ce2908b54abebd458dd140f10e8d55cd670595d26987d7345a6d4c204c613b6",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-005-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-005-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-006",
+      "notebook_sha256": "eb9ca5c27feffb5713595bf04d9b21f6253dc20c037eaba34ae4b2b2e4168408",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-006-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-006-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-007",
+      "notebook_sha256": "8b2c18823601484202e497dca8bf853be4d4b8818fd627e17d0463017398662f",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-007-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-007-20261107-v1",
+      "executed": false
+    },
+    {
+      "tag": "lot-008",
+      "notebook_sha256": "65be30b18e52111238af8f13a51bbd72ac50f988a7b773676643e30d2d6e0ef2",
+      "sources": [
+        "nnnnbhss/geofirex-expanded-code-recovery-v1",
+        "nnnnbhss/geofirex-wsts-fold0-tv-008-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot-008-20261107-v1",
+      "executed": false
+    }
+  ]
+}

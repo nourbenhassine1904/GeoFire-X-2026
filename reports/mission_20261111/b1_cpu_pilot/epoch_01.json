@@ -1,0 +1,25 @@
+{
+  "epoch": 1,
+  "complete_epoch": true,
+  "train_samples_seen": 3450,
+  "total_train_samples_seen": 3450,
+  "optimizer_updates": 216,
+  "train_loss": 0.6663180836114072,
+  "validation": {
+    "dice": 0.2750441306266549,
+    "iou": 0.15944995203070036,
+    "precision": 0.2407067683692189,
+    "recall": 0.32080813280144127,
+    "tp": 2493,
+    "fp": 7864,
+    "fn": 5278,
+    "pixels": 8351749,
+    "positive_pixels": 7771,
+    "prevalence": 0.0009304637866870759,
+    "brier": 0.0025935943335074407,
+    "average_precision": 0.1395173567071111,
+    "loss": 0.6052753727493422,
+    "samples_seen": 2575
+  },
+  "elapsed_seconds": 145.25407599999926
+}

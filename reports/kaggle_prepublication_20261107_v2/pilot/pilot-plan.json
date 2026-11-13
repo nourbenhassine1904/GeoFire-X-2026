@@ -1,0 +1,34 @@
+{
+  "status": "ONE_LOT_PILOT_PREPARED_NOT_AUTHORIZED",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "private": true,
+  "events": 57,
+  "files": 1269,
+  "raw_bytes": 4829474073,
+  "zip_bytes_measured": 4829918684,
+  "zip_sha256_from_completed_staging": "464e89146fa6fdabfccdd1eb81d97b08549ca9b14428a32e3993f5996e8f5890",
+  "manifest_identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81",
+  "canonical_manifest_sha256": "1392e6ca16c8f22f04be2cb04c81d6da00daf026660d3a86ca4b96e8fb990638",
+  "staged_path": "artifacts/kaggle_publication_20261107_v1/lot-001",
+  "notebook_path": "reports/kaggle_prepublication_20261107_v2/pilot/cpu-certification/lot-001/certify.ipynb",
+  "notebook_sha256": "98ab7384192071d0e8f7004a59b9d9daaf3b1034845c40b4f041900a5e0123b9",
+  "serialized_notebook_bytes": 229565,
+  "certification_dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+  ],
+  "budgets": {
+    "first_attempt_phase_stop": 6000000000,
+    "pilot_body_ceiling": 11000000000,
+    "two_full_archive_bodies": 9659837368,
+    "body_margin_after_two_full_archives": 1340162632,
+    "physical_network_planning_envelope": 12000000000,
+    "automatic_retries": 0,
+    "extra_full_attempts_proposed": 1,
+    "retry_requires_separate_explicit_approval": true,
+    "header_tls_tcp_overhead_and_downloads_not_measured_by_body_journal": true
+  },
+  "code_dataset_upload_required": false,
+  "cloud_certification_executed": false,
+  "uploads_executed": false,
+  "parquet_and_normalizer_cloud_validation": "Deferred; not claimed by this one-data-lot pilot"
+}

@@ -1,0 +1,9 @@
+{"time": "2026-11-08T00:01:36.054567+00:00", "method": "POST", "operation": "GenerateAccessToken", "reserved_body_bytes": 121, "http_status": 200}
+{"time": "2026-11-08T00:01:36.540219+00:00", "method": "POST", "operation": "IntrospectToken", "reserved_body_bytes": 160, "http_status": 200}
+{"time": "2026-11-08T00:01:36.699184+00:00", "method": "POST", "operation": "ListDatasets", "reserved_body_bytes": 56, "http_status": 200}
+{"time": "2026-11-08T00:01:37.230571+00:00", "method": "POST", "operation": "ListDatasets", "reserved_body_bytes": 64, "http_status": 200}
+{"time": "2026-11-08T00:01:37.464367+00:00", "method": "POST", "operation": "ListDatasets", "reserved_body_bytes": 63, "http_status": 200}
+{"time": "2026-11-08T00:01:37.648833+00:00", "method": "POST", "operation": "GetDataset", "reserved_body_bytes": 77, "http_status": 200}
+{"time": "2026-11-08T00:01:37.923639+00:00", "method": "POST", "operation": "StartBlobUpload", "reserved_body_bytes": 111, "http_status": 200}
+{"time": "2026-11-08T00:01:38.115999+00:00", "method": "PUT", "operation": "BlobPUT", "reserved_body_bytes": 4829918684, "http_status": 200}
+{"time": "2026-11-08T00:53:06.450799+00:00", "method": "POST", "operation": "CreateDataset", "reserved_body_bytes": 591, "http_status": 200}

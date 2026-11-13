@@ -1,0 +1,20 @@
+{
+  "output": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\2018\\fire_21890115\\2018-07-09.tif",
+  "output_exists": false,
+  "part": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\2018\\fire_21890115\\2018-07-09.tif.459a753a50264d4f9c9f6704007da800.part",
+  "bytes": 4328884,
+  "expected_bytes": 4328884,
+  "expected_crc32": "6eb853c4",
+  "crc_valid": true,
+  "sha256": "fc84d1fe85e379bd6506f81bc03dde82b1f85688caa18925641ffa016db9c196",
+  "attributes": 32,
+  "restart_manager": {
+    "status": "QUERIED",
+    "processes": []
+  },
+  "delete_access": {
+    "status": "ACCESS_GRANTED_NO_MUTATION"
+  },
+  "note": "No rename/delete/shutdown/restart was requested; transient or kernel filter locks may be absent from this snapshot.",
+  "unchanged_during_diagnosis": true
+}

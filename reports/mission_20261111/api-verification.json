@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "requests": 6,
+  "method": "direct ASGI HTTP request execution",
+  "root_frontend_mount_preserved": true
+}

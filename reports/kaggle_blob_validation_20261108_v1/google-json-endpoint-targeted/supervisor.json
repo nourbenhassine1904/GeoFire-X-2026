@@ -1,0 +1,43 @@
+{
+  "command": [
+    "artifacts/orchestrator/kaggle-cli-env/Scripts/python.exe",
+    "-m",
+    "unittest",
+    "test_kaggle_blob_session.BlobSessionTests.test_google_json_upload_endpoint_is_accepted_unchanged",
+    "test_kaggle_blob_session.BlobSessionTests.test_google_json_upload_endpoint_rejects_domain_and_path_tricks"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5740355584,
+    "load_percent": 65,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18193862656,
+    "commit_used_bytes": 19044732928
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 268435456,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-08T00:01:17.011888+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 27008,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5939999999973224,
+  "peak_tree_rss_bytes": 35758080,
+  "peak_sampled_private_commit_bytes": 22867968,
+  "peak_job_commit_bytes": 40103936,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 5716062208,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 5739077632,
+    "load_percent": 65,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18194317312,
+    "commit_used_bytes": 19044278272
+  }
+}

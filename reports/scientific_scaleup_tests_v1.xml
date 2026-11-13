@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="7" time="8.191" timestamp="2026-11-02T18:45:11.255421+01:00" hostname="NourBh"><testcase classname="tests.test_scientific_scaleup" name="test_zero_invalid_and_finite_detection[False-False-0-20]" time="0.833"><failure message="TypeError: dict() got multiple values for keyword argument 'observations'">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-331/test_zero_invalid_and_finite_d0')
+invalid = False, fire = False, positive = 0, valid = 20
+
+    @pytest.mark.parametrize('invalid,fire,positive,valid',[(False,False,0,20),(True,True,0,0),(False,True,1,20)])
+    def test_zero_invalid_and_finite_detection(tmp_path,invalid,fire,positive,valid):
+        rows,index=fixture(tmp_path,invalid=invalid,fire=fire)
+        records=audit_observations(rows,index,tmp_path,block_size=2)
+        assert all(r['positive_pixels']==positive and r['valid_pixels']==valid for r in records)
+&gt;       summary=summarize_audit(records,index)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_scientific_scaleup.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+records = [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'split': 'train', ...}, {'event_id': '2018/fire_1', '...8, 'split': 'train', ...}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'split': 'train', ...}, ...]
+index = {'entries': [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'path': '2018/fire_1/2018-01-01.tif', .........}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'path': '2018/fire_1/2018-01-06.tif', ...}, ...]}
+
+    def summarize_audit(records, index):
+        """Windows use only readable, same-grid observations and canonical rules."""
+        by_event = defaultdict(list)
+        for r in records:
+            by_event[r['event_id']].append(r)
+        events, clean = [], []
+        expected = defaultdict(set)
+        for e in index['entries']:
+            expected[e['event_id']].add(e['date'])
+        for event, group in sorted(by_event.items()):
+            ok = [r for r in group if r['status'] == 'ok']
+            geometries = {(r['height'], r['width'], r['crs'], tuple(r['transform'])) for r in ok}
+            consistent = len(geometries) == 1
+            if consistent:
+                clean.extend(ok)
+            dates = sorted(date.fromisoformat(r['date']) for r in ok)
+&gt;           events.append(dict(event_id=event, year=int(event[:4]), split=group[0]['split'],
+                               expected_observations=len(expected[event]), observations=len(group),
+                               audited_observations=len(ok), geometry_consistent=consistent,
+                               complete=consistent and {r['date'] for r in ok} == expected[event],
+                               missing_dates=sorted(expected[event]-{r['date'] for r in ok}),
+                               gaps=[dict(start=a.isoformat(), end=b.isoformat(), missing_days=(b-a).days-1)
+                                     for a, b in zip(dates, dates[1:]) if (b-a).days != 1],
+                               **pixel_summary(ok)))
+E           TypeError: dict() got multiple values for keyword argument 'observations'
+
+src\geofirex\scientific_scaleup.py:96: TypeError</failure></testcase><testcase classname="tests.test_scientific_scaleup" name="test_zero_invalid_and_finite_detection[True-True-0-0]" time="0.533"><failure message="TypeError: dict() got multiple values for keyword argument 'observations'">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-331/test_zero_invalid_and_finite_d1')
+invalid = True, fire = True, positive = 0, valid = 0
+
+    @pytest.mark.parametrize('invalid,fire,positive,valid',[(False,False,0,20),(True,True,0,0),(False,True,1,20)])
+    def test_zero_invalid_and_finite_detection(tmp_path,invalid,fire,positive,valid):
+        rows,index=fixture(tmp_path,invalid=invalid,fire=fire)
+        records=audit_observations(rows,index,tmp_path,block_size=2)
+        assert all(r['positive_pixels']==positive and r['valid_pixels']==valid for r in records)
+&gt;       summary=summarize_audit(records,index)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_scientific_scaleup.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+records = [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'split': 'train', ...}, {'event_id': '2018/fire_1', '...8, 'split': 'train', ...}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'split': 'train', ...}, ...]
+index = {'entries': [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'path': '2018/fire_1/2018-01-01.tif', .........}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'path': '2018/fire_1/2018-01-06.tif', ...}, ...]}
+
+    def summarize_audit(records, index):
+        """Windows use only readable, same-grid observations and canonical rules."""
+        by_event = defaultdict(list)
+        for r in records:
+            by_event[r['event_id']].append(r)
+        events, clean = [], []
+        expected = defaultdict(set)
+        for e in index['entries']:
+            expected[e['event_id']].add(e['date'])
+        for event, group in sorted(by_event.items()):
+            ok = [r for r in group if r['status'] == 'ok']
+            geometries = {(r['height'], r['width'], r['crs'], tuple(r['transform'])) for r in ok}
+            consistent = len(geometries) == 1
+            if consistent:
+                clean.extend(ok)
+            dates = sorted(date.fromisoformat(r['date']) for r in ok)
+&gt;           events.append(dict(event_id=event, year=int(event[:4]), split=group[0]['split'],
+                               expected_observations=len(expected[event]), observations=len(group),
+                               audited_observations=len(ok), geometry_consistent=consistent,
+                               complete=consistent and {r['date'] for r in ok} == expected[event],
+                               missing_dates=sorted(expected[event]-{r['date'] for r in ok}),
+                               gaps=[dict(start=a.isoformat(), end=b.isoformat(), missing_days=(b-a).days-1)
+                                     for a, b in zip(dates, dates[1:]) if (b-a).days != 1],
+                               **pixel_summary(ok)))
+E           TypeError: dict() got multiple values for keyword argument 'observations'
+
+src\geofirex\scientific_scaleup.py:96: TypeError</failure></testcase><testcase classname="tests.test_scientific_scaleup" name="test_zero_invalid_and_finite_detection[False-True-1-20]" time="0.411"><failure message="TypeError: dict() got multiple values for keyword argument 'observations'">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-331/test_zero_invalid_and_finite_d2')
+invalid = False, fire = True, positive = 1, valid = 20
+
+    @pytest.mark.parametrize('invalid,fire,positive,valid',[(False,False,0,20),(True,True,0,0),(False,True,1,20)])
+    def test_zero_invalid_and_finite_detection(tmp_path,invalid,fire,positive,valid):
+        rows,index=fixture(tmp_path,invalid=invalid,fire=fire)
+        records=audit_observations(rows,index,tmp_path,block_size=2)
+        assert all(r['positive_pixels']==positive and r['valid_pixels']==valid for r in records)
+&gt;       summary=summarize_audit(records,index)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_scientific_scaleup.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+records = [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'split': 'train', ...}, {'event_id': '2018/fire_1', '...8, 'split': 'train', ...}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'split': 'train', ...}, ...]
+index = {'entries': [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'path': '2018/fire_1/2018-01-01.tif', .........}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'path': '2018/fire_1/2018-01-06.tif', ...}, ...]}
+
+    def summarize_audit(records, index):
+        """Windows use only readable, same-grid observations and canonical rules."""
+        by_event = defaultdict(list)
+        for r in records:
+            by_event[r['event_id']].append(r)
+        events, clean = [], []
+        expected = defaultdict(set)
+        for e in index['entries']:
+            expected[e['event_id']].add(e['date'])
+        for event, group in sorted(by_event.items()):
+            ok = [r for r in group if r['status'] == 'ok']
+            geometries = {(r['height'], r['width'], r['crs'], tuple(r['transform'])) for r in ok}
+            consistent = len(geometries) == 1
+            if consistent:
+                clean.extend(ok)
+            dates = sorted(date.fromisoformat(r['date']) for r in ok)
+&gt;           events.append(dict(event_id=event, year=int(event[:4]), split=group[0]['split'],
+                               expected_observations=len(expected[event]), observations=len(group),
+                               audited_observations=len(ok), geometry_consistent=consistent,
+                               complete=consistent and {r['date'] for r in ok} == expected[event],
+                               missing_dates=sorted(expected[event]-{r['date'] for r in ok}),
+                               gaps=[dict(start=a.isoformat(), end=b.isoformat(), missing_days=(b-a).days-1)
+                                     for a, b in zip(dates, dates[1:]) if (b-a).days != 1],
+                               **pixel_summary(ok)))
+E           TypeError: dict() got multiple values for keyword argument 'observations'
+
+src\geofirex\scientific_scaleup.py:96: TypeError</failure></testcase><testcase classname="tests.test_scientific_scaleup" name="test_missing_corrupt_and_incomplete" time="0.139"><failure message="TypeError: dict() got multiple values for keyword argument 'observations'">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-331/test_missing_corrupt_and_incom0')
+
+    def test_missing_corrupt_and_incomplete(tmp_path):
+        rows,index=fixture(tmp_path)
+        # Fixture mutation only; production auditing is read-only.
+        (tmp_path/'2018-01-02.tif').unlink()
+        (tmp_path/'2018-01-04.tif').write_bytes(b'broken')
+        records=audit_observations(rows,index,tmp_path)
+        assert records[1]['status']=='missing' and records[1]['positive_pixels'] is None
+        assert records[3]['status']=='corrupt' and records[3]['positive_pixels'] is None
+&gt;       summary=summarize_audit(records,index)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_scientific_scaleup.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+records = [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'split': 'train', ...}, {'event_id': '2018/fire_1', '...8, 'split': 'train', ...}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'split': 'train', ...}, ...]
+index = {'entries': [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'path': '2018/fire_1/2018-01-01.tif', .........}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'path': '2018/fire_1/2018-01-06.tif', ...}, ...]}
+
+    def summarize_audit(records, index):
+        """Windows use only readable, same-grid observations and canonical rules."""
+        by_event = defaultdict(list)
+        for r in records:
+            by_event[r['event_id']].append(r)
+        events, clean = [], []
+        expected = defaultdict(set)
+        for e in index['entries']:
+            expected[e['event_id']].add(e['date'])
+        for event, group in sorted(by_event.items()):
+            ok = [r for r in group if r['status'] == 'ok']
+            geometries = {(r['height'], r['width'], r['crs'], tuple(r['transform'])) for r in ok}
+            consistent = len(geometries) == 1
+            if consistent:
+                clean.extend(ok)
+            dates = sorted(date.fromisoformat(r['date']) for r in ok)
+&gt;           events.append(dict(event_id=event, year=int(event[:4]), split=group[0]['split'],
+                               expected_observations=len(expected[event]), observations=len(group),
+                               audited_observations=len(ok), geometry_consistent=consistent,
+                               complete=consistent and {r['date'] for r in ok} == expected[event],
+                               missing_dates=sorted(expected[event]-{r['date'] for r in ok}),
+                               gaps=[dict(start=a.isoformat(), end=b.isoformat(), missing_days=(b-a).days-1)
+                                     for a, b in zip(dates, dates[1:]) if (b-a).days != 1],
+                               **pixel_summary(ok)))
+E           TypeError: dict() got multiple values for keyword argument 'observations'
+
+src\geofirex\scientific_scaleup.py:96: TypeError</failure></testcase><testcase classname="tests.test_scientific_scaleup" name="test_duplicate_and_test_lock" time="0.213" /><testcase classname="tests.test_scientific_scaleup" name="test_parquet_to_temporal_store_and_tampering" time="0.434"><failure message="TypeError: dict() got multiple values for keyword argument 'observations'">tmp_path = WindowsPath('C:/Users/nourb/AppData/Local/Temp/pytest-of-nourb/pytest-331/test_parquet_to_temporal_store0')
+
+    def test_parquet_to_temporal_store_and_tampering(tmp_path):
+        import pyarrow as pa
+        import pyarrow.parquet as pq
+        rows,index=fixture(tmp_path,fire=True)
+        records=audit_observations(rows,index,tmp_path)
+&gt;       summary=summarize_audit(records,index)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_scientific_scaleup.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+records = [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'split': 'train', ...}, {'event_id': '2018/fire_1', '...8, 'split': 'train', ...}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'split': 'train', ...}, ...]
+index = {'entries': [{'event_id': '2018/fire_1', 'date': '2018-01-01', 'year': 2018, 'path': '2018/fire_1/2018-01-01.tif', .........}, {'event_id': '2018/fire_1', 'date': '2018-01-06', 'year': 2018, 'path': '2018/fire_1/2018-01-06.tif', ...}, ...]}
+
+    def summarize_audit(records, index):
+        """Windows use only readable, same-grid observations and canonical rules."""
+        by_event = defaultdict(list)
+        for r in records:
+            by_event[r['event_id']].append(r)
+        events, clean = [], []
+        expected = defaultdict(set)
+        for e in index['entries']:
+            expected[e['event_id']].add(e['date'])
+        for event, group in sorted(by_event.items()):
+            ok = [r for r in group if r['status'] == 'ok']
+            geometries = {(r['height'], r['width'], r['crs'], tuple(r['transform'])) for r in ok}
+            consistent = len(geometries) == 1
+            if consistent:
+                clean.extend(ok)
+            dates = sorted(date.fromisoformat(r['date']) for r in ok)
+&gt;           events.append(dict(event_id=event, year=int(event[:4]), split=group[0]['split'],
+                               expected_observations=len(expected[event]), observations=len(group),
+                               audited_observations=len(ok), geometry_consistent=consistent,
+                               complete=consistent and {r['date'] for r in ok} == expected[event],
+                               missing_dates=sorted(expected[event]-{r['date'] for r in ok}),
+                               gaps=[dict(start=a.isoformat(), end=b.isoformat(), missing_days=(b-a).days-1)
+                                     for a, b in zip(dates, dates[1:]) if (b-a).days != 1],
+                               **pixel_summary(ok)))
+E           TypeError: dict() got multiple values for keyword argument 'observations'
+
+src\geofirex\scientific_scaleup.py:96: TypeError</failure></testcase><testcase classname="tests.test_scientific_scaleup" name="test_nested_plans_exact_and_no_test" time="0.006" /></testsuite></testsuites>

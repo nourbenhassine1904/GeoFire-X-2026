@@ -1,0 +1,45 @@
+{
+  "model": "B1",
+  "architecture": "spatial_cnn_v2",
+  "context": 3,
+  "channels": 8,
+  "device": "cpu",
+  "epochs": 1,
+  "profile_steps": 2,
+  "train_tiles": 3450,
+  "val_tiles": 2575,
+  "train_events": [
+    "2018/fire_21458798",
+    "2018/fire_21751305",
+    "2018/fire_21889744",
+    "2018/fire_21890058",
+    "2018/fire_21997828",
+    "2018/fire_21999270",
+    "2018/fire_22257882",
+    "2019/fire_23036860",
+    "2019/fire_23300668",
+    "2019/fire_23572745"
+  ],
+  "val_events": [
+    "2020/fire_23654679",
+    "2020/fire_24191375",
+    "2020/fire_24332761",
+    "2020/fire_24333033",
+    "2020/fire_24462764",
+    "2020/fire_24695970"
+  ],
+  "sampling": "each grid tile once per complete epoch, shuffle train only",
+  "threshold": 0.5,
+  "pos_weight": 100.0,
+  "dice_weight": 0.5,
+  "seed": 42,
+  "wall_seconds": 60,
+  "provenance": {
+    "compact_report_sha256": "2e2f2ed4354de672c82909c2727f6887f733218a7257449b85c99a7defb1a3ef"
+  },
+  "normalization": "existing train-only; already applied once in compact shards",
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "test_pixels_opened": 0,
+  "validation_scope": "first 64 metadata-ordered tiles, profiling only; no benchmark claim",
+  "validation_tiles_scheduled": 64
+}

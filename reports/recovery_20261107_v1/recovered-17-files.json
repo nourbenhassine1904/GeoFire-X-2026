@@ -1,0 +1,90 @@
+{
+  "qualification": "Reconstructed scope; no original named manifest of 17 files supplied",
+  "files": [
+    {
+      "path": "scripts/run_benchmark.py",
+      "present": true,
+      "initial_sha256": "2bd99694028c47d2a59f86c80ca59524bf319e25851398731fcba732db706345"
+    },
+    {
+      "path": "src/geofirex/benchmark_metrics.py",
+      "present": true,
+      "initial_sha256": "7868afaa6cbb7f8b38fec1db0193cb11578a54d19aede7e164018fa9f323d9f0"
+    },
+    {
+      "path": "src/geofirex/runner.py",
+      "present": true,
+      "initial_sha256": "96131a1a7d26a3dda835f5d69569afd09d560f79bb19c4d0761a6653da650445"
+    },
+    {
+      "path": "src/geofirex/runner_data.py",
+      "present": true,
+      "initial_sha256": "c0acf84bc775c9d8fe06f62080549af74d02a7815a73ef2adc8ccec6371c6f7f"
+    },
+    {
+      "path": "src/geofirex/runner_evaluation.py",
+      "present": true,
+      "initial_sha256": "a388f85fb78c26425e2d5c590afe87b782b6fcf6adb88cc9be4879bec3685511"
+    },
+    {
+      "path": "src/geofirex/gpu_operational.py",
+      "present": true,
+      "initial_sha256": "e5b6fcab19b7d09b260da6094a59dc9635a00a9de7bad5035cd279945c507d6c"
+    },
+    {
+      "path": "src/geofirex/job_control.py",
+      "present": true,
+      "initial_sha256": "f0c3776b26df2e02a3832213bcf4de931d25fcb92c57f1e12e09903561eda97e"
+    },
+    {
+      "path": "src/geofirex/upload_budget.py",
+      "present": true,
+      "initial_sha256": "6bfb5f7723740e06f372ff8b609de6cfa7f12574fc792fd0b0d38fe0b731c57f"
+    },
+    {
+      "path": "scripts/prepare_gpu_operational.py",
+      "present": true,
+      "initial_sha256": "fb01fab2db75d13b24c8e939804a9cc31e1f3daa19b4932a26665d6cbef269e0"
+    },
+    {
+      "path": "scripts/prepare_expanded_code.py",
+      "present": true,
+      "initial_sha256": "3a9267237a0c58bcd8abd7631cffc8f8421ae8e1223db706bbb1bd7edb0a643b"
+    },
+    {
+      "path": "scripts/profile_expanded_gpu.py",
+      "present": true,
+      "initial_sha256": "4d17eed3ad606bd836331ea7c3ce5ad4231611425c56a7508dff4e573cc4482d"
+    },
+    {
+      "path": "scripts/run_expanded_benchmark.py",
+      "present": true,
+      "initial_sha256": "1725619b152153f7a583ec633c9231e8fd42a7bc68da7cc4396f63dd7088baf1"
+    },
+    {
+      "path": "scripts/mount_expanded_corpus.py",
+      "present": true,
+      "initial_sha256": "ed2315d23f141c6369b3ff59848730420c5a6ef4136145a46ccbda324d862af0"
+    },
+    {
+      "path": "scripts/stage_expanded_lot.py",
+      "present": true,
+      "initial_sha256": "5f45ba6c239cc704d49a36a2d94db46bb3a4fe79be826f54209bc385d813ea23"
+    },
+    {
+      "path": "scripts/publish_expanded_lot.py",
+      "present": true,
+      "initial_sha256": "47ec97e299a4855bef9f52e54cc4e2ceabcf43fb941baaf8c269d47287dcf3ec"
+    },
+    {
+      "path": "tests/test_gpu_operational.py",
+      "present": true,
+      "initial_sha256": "acf6fb51c8f80cefd30203abf576dbf172baea63d7292b183b90932032365eaf"
+    },
+    {
+      "path": "tests/test_gpu_resources.py",
+      "present": true,
+      "initial_sha256": "47f079544ed40a564359d319c39a216638ab71c82b696790d0c606bb98f75ec1"
+    }
+  ]
+}

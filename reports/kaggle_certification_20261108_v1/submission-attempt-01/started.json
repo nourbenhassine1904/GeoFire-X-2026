@@ -1,0 +1,8 @@
+{
+  "status": "OFFLINE_CPU_SUBMISSION_REVIEW_ONLY",
+  "kernel": "nnnnbhss/geofirex-certify-lot001-cpu-20261108-v1",
+  "notebook_bytes": 184641,
+  "private": true,
+  "gpu": false,
+  "internet": false
+}

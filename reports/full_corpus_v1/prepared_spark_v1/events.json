@@ -1,0 +1,6072 @@
+[
+  {
+    "event_id": "2018/fire_21458798",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21458801",
+    "split": "train",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21458806",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21458836",
+    "split": "train",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21458848",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21459234",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21459239",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21459242",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21459249",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21459253",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21538827",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21615465",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21615469",
+    "split": "train",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21617464",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21688910",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21688916",
+    "split": "train",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21690064",
+    "split": "train",
+    "expected_observations": 38,
+    "observations": 38,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21690071",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21690073",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21690102",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21693353",
+    "split": "train",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21748766",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21748783",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21748798",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21748801",
+    "split": "train",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21748813",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21751303",
+    "split": "train",
+    "expected_observations": 50,
+    "observations": 50,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21751305",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21751315",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804572",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804577",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804582",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804588",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804589",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804590",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804877",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804883",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804884",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804893",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804895",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804899",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804942",
+    "split": "train",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804961",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804975",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804980",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21804985",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21805022",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889672",
+    "split": "train",
+    "expected_observations": 38,
+    "observations": 38,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889679",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889682",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889683",
+    "split": "train",
+    "expected_observations": 36,
+    "observations": 36,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889697",
+    "split": "train",
+    "expected_observations": 94,
+    "observations": 94,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889717",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889719",
+    "split": "train",
+    "expected_observations": 67,
+    "observations": 67,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889734",
+    "split": "train",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889744",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889750",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889754",
+    "split": "train",
+    "expected_observations": 56,
+    "observations": 56,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889763",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889779",
+    "split": "train",
+    "expected_observations": 43,
+    "observations": 43,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889798",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889808",
+    "split": "train",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889826",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889943",
+    "split": "train",
+    "expected_observations": 46,
+    "observations": 46,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889947",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889953",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889957",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889986",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889990",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889992",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889994",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889995",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21889997",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890003",
+    "split": "train",
+    "expected_observations": 38,
+    "observations": 38,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890007",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890009",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890010",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890013",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890019",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890024",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890033",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890054",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890056",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890058",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890063",
+    "split": "train",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890065",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890069",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890072",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890078",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890087",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890091",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890098",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890100",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890101",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890103",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890106",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890109",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890111",
+    "split": "train",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890115",
+    "split": "train",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890134",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890137",
+    "split": "train",
+    "expected_observations": 34,
+    "observations": 34,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890143",
+    "split": "train",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890160",
+    "split": "train",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890170",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890208",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890515",
+    "split": "train",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890524",
+    "split": "train",
+    "expected_observations": 52,
+    "observations": 52,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21890643",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997770",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997775",
+    "split": "train",
+    "expected_observations": 52,
+    "observations": 52,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997828",
+    "split": "train",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997844",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997851",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997854",
+    "split": "train",
+    "expected_observations": 10,
+    "observations": 10,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21997864",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998023",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998081",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998095",
+    "split": "train",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998097",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998100",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998103",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998119",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998143",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998152",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998157",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998187",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998227",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998230",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998255",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998263",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998264",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998265",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998287",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998291",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998299",
+    "split": "train",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21998313",
+    "split": "train",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999251",
+    "split": "train",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999260",
+    "split": "train",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999270",
+    "split": "train",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999273",
+    "split": "train",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999299",
+    "split": "train",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999321",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999351",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999354",
+    "split": "train",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_21999381",
+    "split": "train",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141195",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141243",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141327",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141343",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141356",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141426",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141445",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141461",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141465",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141509",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141528",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141554",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141566",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141567",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141571",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141572",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141576",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141577",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141585",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141596",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22141683",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22257882",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22257911",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22257961",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22258087",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22258318",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22258421",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22343661",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22343666",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22343688",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2018/fire_22343689",
+    "split": "train",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22710141",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22863125",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22863172",
+    "split": "train",
+    "expected_observations": 34,
+    "observations": 34,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22938746",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22938749",
+    "split": "train",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22939556",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_22939600",
+    "split": "train",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036522",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036523",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036542",
+    "split": "train",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036559",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036564",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036565",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036575",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036803",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036804",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036806",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036860",
+    "split": "train",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036871",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23036877",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23037423",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23037424",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23037431",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159633",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159637",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159642",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159647",
+    "split": "train",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159657",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159787",
+    "split": "train",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159789",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159792",
+    "split": "train",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159821",
+    "split": "train",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159836",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159838",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159841",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159842",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159847",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159853",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159855",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159860",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23159862",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23160475",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23160488",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23160511",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300665",
+    "split": "train",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300668",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300669",
+    "split": "train",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300689",
+    "split": "train",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300699",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300712",
+    "split": "train",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300741",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300744",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300839",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300861",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23300886",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301037",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301046",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301095",
+    "split": "train",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301101",
+    "split": "train",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301106",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301386",
+    "split": "train",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23301395",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410594",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410601",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410607",
+    "split": "train",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410616",
+    "split": "train",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410617",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410619",
+    "split": "train",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23410720",
+    "split": "train",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23493973",
+    "split": "train",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23493978",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23493983",
+    "split": "train",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23493986",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2019/fire_23572745",
+    "split": "train",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_23654679",
+    "split": "val",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_23756984",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_23757491",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_23757522",
+    "split": "val",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_23947000",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24025599",
+    "split": "val",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24025601",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24025605",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24025610",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24027563",
+    "split": "val",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24027566",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24027570",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24027580",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103545",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103557",
+    "split": "val",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103560",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103561",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103571",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103572",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103581",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103582",
+    "split": "val",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103584",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24103590",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104628",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104631",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104636",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104639",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104640",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104644",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104654",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104658",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104674",
+    "split": "val",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24104857",
+    "split": "val",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191347",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191357",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191360",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191363",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191364",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191372",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191373",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191375",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191376",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191377",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191384",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191389",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191393",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191395",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191402",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191411",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191418",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191419",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191423",
+    "split": "val",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191427",
+    "split": "val",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191673",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191680",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191728",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191741",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191743",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191756",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191760",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191933",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191943",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24191979",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332591",
+    "split": "val",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332592",
+    "split": "val",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332600",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332608",
+    "split": "val",
+    "expected_observations": 59,
+    "observations": 59,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332619",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332622",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332628",
+    "split": "val",
+    "expected_observations": 76,
+    "observations": 76,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332647",
+    "split": "val",
+    "expected_observations": 60,
+    "observations": 60,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332676",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332700",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332702",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332704",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332728",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332731",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332732",
+    "split": "val",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332746",
+    "split": "val",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332760",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332761",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332763",
+    "split": "val",
+    "expected_observations": 61,
+    "observations": 61,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332764",
+    "split": "val",
+    "expected_observations": 46,
+    "observations": 46,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332768",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332776",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332779",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332783",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332784",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332785",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332787",
+    "split": "val",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332791",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332793",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332796",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332798",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332800",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332801",
+    "split": "val",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332803",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332808",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332815",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332872",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332880",
+    "split": "val",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332885",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332894",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332922",
+    "split": "val",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332923",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332925",
+    "split": "val",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332933",
+    "split": "val",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332934",
+    "split": "val",
+    "expected_observations": 39,
+    "observations": 39,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332939",
+    "split": "val",
+    "expected_observations": 52,
+    "observations": 52,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332949",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332954",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332956",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332969",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332989",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332991",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24332995",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333000",
+    "split": "val",
+    "expected_observations": 45,
+    "observations": 45,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333006",
+    "split": "val",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333012",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333026",
+    "split": "val",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333033",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333039",
+    "split": "val",
+    "expected_observations": 39,
+    "observations": 39,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333255",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333259",
+    "split": "val",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333267",
+    "split": "val",
+    "expected_observations": 9,
+    "observations": 9,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333270",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333277",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333279",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333285",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333287",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24333293",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461320",
+    "split": "val",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461328",
+    "split": "val",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461347",
+    "split": "val",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461421",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461607",
+    "split": "val",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461618",
+    "split": "val",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461623",
+    "split": "val",
+    "expected_observations": 48,
+    "observations": 48,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461771",
+    "split": "val",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461780",
+    "split": "val",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461785",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461789",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461899",
+    "split": "val",
+    "expected_observations": 31,
+    "observations": 31,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461930",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461965",
+    "split": "val",
+    "expected_observations": 10,
+    "observations": 10,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24461996",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462033",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462088",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462127",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462212",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462233",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462243",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462263",
+    "split": "val",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462306",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462335",
+    "split": "val",
+    "expected_observations": 31,
+    "observations": 31,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462488",
+    "split": "val",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462604",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462610",
+    "split": "val",
+    "expected_observations": 36,
+    "observations": 36,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462691",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462753",
+    "split": "val",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462764",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462788",
+    "split": "val",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462819",
+    "split": "val",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462847",
+    "split": "val",
+    "expected_observations": 44,
+    "observations": 44,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462867",
+    "split": "val",
+    "expected_observations": 42,
+    "observations": 42,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462882",
+    "split": "val",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24462912",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463162",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463172",
+    "split": "val",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463187",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463188",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463190",
+    "split": "val",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463206",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463211",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24463227",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604426",
+    "split": "val",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604435",
+    "split": "val",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604456",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604462",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604463",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604676",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604731",
+    "split": "val",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604754",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604777",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604783",
+    "split": "val",
+    "expected_observations": 37,
+    "observations": 37,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604832",
+    "split": "val",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24604848",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695413",
+    "split": "val",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695430",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695442",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695447",
+    "split": "val",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695497",
+    "split": "val",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695532",
+    "split": "val",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695557",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695566",
+    "split": "val",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695584",
+    "split": "val",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695627",
+    "split": "val",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695756",
+    "split": "val",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695758",
+    "split": "val",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695963",
+    "split": "val",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2020/fire_24695970",
+    "split": "val",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_24935867",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_24935874",
+    "split": "test",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_24935885",
+    "split": "test",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_24936357",
+    "split": "test",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25017306",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25017323",
+    "split": "test",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25017384",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25017416",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25084892",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25086458",
+    "split": "test",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25086466",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25088018",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25088019",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25138926",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25138935",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25138942",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25138947",
+    "split": "test",
+    "expected_observations": 47,
+    "observations": 47,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204812",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204815",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204820",
+    "split": "test",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204835",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204848",
+    "split": "test",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204858",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204859",
+    "split": "test",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204868",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204869",
+    "split": "test",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204877",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204897",
+    "split": "test",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25204900",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205245",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205247",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205255",
+    "split": "test",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205259",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205260",
+    "split": "test",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205295",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205306",
+    "split": "test",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205312",
+    "split": "test",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205336",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205354",
+    "split": "test",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205362",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205363",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205387",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205462",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205788",
+    "split": "test",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205814",
+    "split": "test",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205827",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205936",
+    "split": "test",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205954",
+    "split": "test",
+    "expected_observations": 24,
+    "observations": 24,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25205956",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294687",
+    "split": "test",
+    "expected_observations": 63,
+    "observations": 63,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294691",
+    "split": "test",
+    "expected_observations": 63,
+    "observations": 63,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294692",
+    "split": "test",
+    "expected_observations": 62,
+    "observations": 62,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294706",
+    "split": "test",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294714",
+    "split": "test",
+    "expected_observations": 72,
+    "observations": 72,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294735",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294746",
+    "split": "test",
+    "expected_observations": 32,
+    "observations": 32,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294754",
+    "split": "test",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294757",
+    "split": "test",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294976",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294977",
+    "split": "test",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294983",
+    "split": "test",
+    "expected_observations": 11,
+    "observations": 11,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294984",
+    "split": "test",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294989",
+    "split": "test",
+    "expected_observations": 10,
+    "observations": 10,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294991",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294998",
+    "split": "test",
+    "expected_observations": 36,
+    "observations": 36,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25294999",
+    "split": "test",
+    "expected_observations": 60,
+    "observations": 60,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295023",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295026",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295031",
+    "split": "test",
+    "expected_observations": 40,
+    "observations": 40,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295057",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295073",
+    "split": "test",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295081",
+    "split": "test",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295089",
+    "split": "test",
+    "expected_observations": 31,
+    "observations": 31,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295099",
+    "split": "test",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295127",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295804",
+    "split": "test",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295808",
+    "split": "test",
+    "expected_observations": 49,
+    "observations": 49,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295816",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295818",
+    "split": "test",
+    "expected_observations": 38,
+    "observations": 38,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295831",
+    "split": "test",
+    "expected_observations": 42,
+    "observations": 42,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295837",
+    "split": "test",
+    "expected_observations": 39,
+    "observations": 39,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295843",
+    "split": "test",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295852",
+    "split": "test",
+    "expected_observations": 59,
+    "observations": 59,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295855",
+    "split": "test",
+    "expected_observations": 48,
+    "observations": 48,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295856",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295857",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295862",
+    "split": "test",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295869",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295877",
+    "split": "test",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295902",
+    "split": "test",
+    "expected_observations": 34,
+    "observations": 34,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295908",
+    "split": "test",
+    "expected_observations": 19,
+    "observations": 19,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295909",
+    "split": "test",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295923",
+    "split": "test",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295927",
+    "split": "test",
+    "expected_observations": 48,
+    "observations": 48,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295931",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295934",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295937",
+    "split": "test",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295938",
+    "split": "test",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295941",
+    "split": "test",
+    "expected_observations": 40,
+    "observations": 40,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295951",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295956",
+    "split": "test",
+    "expected_observations": 25,
+    "observations": 25,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25295966",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410438",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410444",
+    "split": "test",
+    "expected_observations": 35,
+    "observations": 35,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410445",
+    "split": "test",
+    "expected_observations": 61,
+    "observations": 61,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410483",
+    "split": "test",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410659",
+    "split": "test",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410700",
+    "split": "test",
+    "expected_observations": 38,
+    "observations": 38,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410727",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410735",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410746",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410845",
+    "split": "test",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410858",
+    "split": "test",
+    "expected_observations": 55,
+    "observations": 55,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410883",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410907",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410960",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410972",
+    "split": "test",
+    "expected_observations": 28,
+    "observations": 28,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410985",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25410996",
+    "split": "test",
+    "expected_observations": 31,
+    "observations": 31,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411006",
+    "split": "test",
+    "expected_observations": 47,
+    "observations": 47,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411013",
+    "split": "test",
+    "expected_observations": 52,
+    "observations": 52,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411029",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411057",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411093",
+    "split": "test",
+    "expected_observations": 46,
+    "observations": 46,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411102",
+    "split": "test",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411134",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411738",
+    "split": "test",
+    "expected_observations": 30,
+    "observations": 30,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411739",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411748",
+    "split": "test",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411777",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411795",
+    "split": "test",
+    "expected_observations": 33,
+    "observations": 33,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411821",
+    "split": "test",
+    "expected_observations": 21,
+    "observations": 21,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411825",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411827",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411889",
+    "split": "test",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411893",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411896",
+    "split": "test",
+    "expected_observations": 12,
+    "observations": 12,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411897",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411905",
+    "split": "test",
+    "expected_observations": 26,
+    "observations": 26,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411910",
+    "split": "test",
+    "expected_observations": 13,
+    "observations": 13,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411915",
+    "split": "test",
+    "expected_observations": 29,
+    "observations": 29,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25411925",
+    "split": "test",
+    "expected_observations": 15,
+    "observations": 15,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25547912",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25547988",
+    "split": "test",
+    "expected_observations": 18,
+    "observations": 18,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548047",
+    "split": "test",
+    "expected_observations": 42,
+    "observations": 42,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548063",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548074",
+    "split": "test",
+    "expected_observations": 41,
+    "observations": 41,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548182",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548269",
+    "split": "test",
+    "expected_observations": 22,
+    "observations": 22,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548446",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548658",
+    "split": "test",
+    "expected_observations": 20,
+    "observations": 20,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548678",
+    "split": "test",
+    "expected_observations": 27,
+    "observations": 27,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25548700",
+    "split": "test",
+    "expected_observations": 14,
+    "observations": 14,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25639187",
+    "split": "test",
+    "expected_observations": 17,
+    "observations": 17,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25639315",
+    "split": "test",
+    "expected_observations": 23,
+    "observations": 23,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  },
+  {
+    "event_id": "2021/fire_25639646",
+    "split": "test",
+    "expected_observations": 16,
+    "observations": 16,
+    "geometry_consistent": true,
+    "complete": true,
+    "missing_dates": [],
+    "gaps": []
+  }
+]

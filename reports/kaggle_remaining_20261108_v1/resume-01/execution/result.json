@@ -1,0 +1,16 @@
+{
+  "status": "RESUME_FAILED_STOP_NO_RETRY",
+  "completed": [],
+  "reused": [
+    "lot-002-archive"
+  ],
+  "starting_reserved_body_bytes": 7345,
+  "zip002_rebuilt": false,
+  "lot001_unchanged": true,
+  "gpu": false,
+  "reused_cpu_gate": "reports\\kaggle_remaining_20261108_v1\\execution\\cpu-canary",
+  "error_type": "RuntimeError",
+  "reason": "Stopped at lot-002/publish-monitor: FAILED; state retained, no automatic retry",
+  "cumulative_reserved_body_bytes": 4995534055,
+  "remaining_body_bytes": 26004465945
+}

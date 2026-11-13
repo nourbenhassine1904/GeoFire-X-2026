@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "same_model_tensors_bitwise": true,
+  "same_loss_accumulator": true,
+  "optimizer_updates": 2,
+  "samples_seen": 32,
+  "method": "one step + mid-epoch resume versus uninterrupted two steps on real compact tiles"
+}

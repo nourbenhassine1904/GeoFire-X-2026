@@ -1,0 +1,37 @@
+{
+  "status": "PLANNED_NOT_ACQUIRED",
+  "known_manual_exclusion": "2018/fire_21458798",
+  "private_quota_declared_bytes": 12884901888,
+  "plans": [
+    {
+      "label": "train2018",
+      "year": 2018,
+      "events": 37,
+      "eligible_events_by_dates": 37,
+      "observations": 714,
+      "geotiff_bytes": 2844119383,
+      "transfer_cap": 3221225472,
+      "staging_plus_reserve_bytes": 6761980590
+    },
+    {
+      "label": "val2020",
+      "year": 2020,
+      "events": 30,
+      "eligible_events_by_dates": 30,
+      "observations": 546,
+      "geotiff_bytes": 2134551752,
+      "transfer_cap": 3221225472,
+      "staging_plus_reserve_bytes": 5342845328
+    },
+    {
+      "label": "extension2019",
+      "year": 2019,
+      "events": 30,
+      "eligible_events_by_dates": 30,
+      "observations": 599,
+      "geotiff_bytes": 2331203739,
+      "transfer_cap": 3221225472,
+      "staging_plus_reserve_bytes": 5736149302
+    }
+  ]
+}

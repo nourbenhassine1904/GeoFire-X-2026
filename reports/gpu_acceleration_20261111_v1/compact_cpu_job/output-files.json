@@ -1,0 +1,188 @@
+[
+  {
+    "fileName": "compact-certification/__pycache__/certify_compact_runtime.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/__pycache__/compact_publication.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/certificate.json"
+  },
+  {
+    "fileName": "compact-certification/certify_compact_runtime.py"
+  },
+  {
+    "fileName": "compact-certification/compact_publication.py"
+  },
+  {
+    "fileName": "compact-certification/expected.json"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__init__.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/__init__.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/benchmark.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/corpus.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/fast_compact.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/mission_streaming.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/real_constants.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/remote_archive.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/runner_data.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/unet_data.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/__pycache__/windows.cpython-313.pyc"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/acquisition_session.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/archive_transfer.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/archive_verification.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/audit.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/baseline.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/benchmark.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/benchmark_metrics.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/benchmark_models.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/cloud_corpus.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/constants.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/corpus.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/dataset.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/deterministic_models.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/event_cache.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/fast_compact.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/fast_raw.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/feature_profiles.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/full_corpus.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/gpu_operational.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/io.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/job_control.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/kaggle_persistence.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/manifest.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/metrics.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/mission_results.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/mission_streaming.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/mission_training.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/orchestration.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/real_constants.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/real_dataset.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/real_manifest.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/real_splits.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/remote_archive.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/runner.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/runner_data.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/runner_evaluation.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/scientific_scaleup.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/serving.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/splits.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/synthetic.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/unet.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/unet_data.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/unet_evaluation.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/upload_budget.py"
+  },
+  {
+    "fileName": "compact-certification/src/geofirex/windows.py"
+  }
+]

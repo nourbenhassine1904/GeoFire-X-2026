@@ -1,0 +1,18 @@
+{
+  "checkpoint_archive": "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip",
+  "checkpoint_member": "B2_posweight_10/checkpoint_latest.pt",
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "source_bundle": "reports/loss_ablation_20261112_v1/loss-ablation-code.zip",
+  "publication_plan": "reports/gpu_acceleration_20261111_v1/publication/plan.json",
+  "corpus": "reports/mission_20261111/compact_full",
+  "index": "reports/gpu_acceleration_20261111_v1/index",
+  "index_sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "pinned_files": {
+    "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+    "reports/loss_ablation_20261112_v1/loss-ablation-code.zip": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e",
+    "reports/gpu_acceleration_20261111_v1/publication/plan.json": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8",
+    "reports/gpu_acceleration_20261111_v1/index/index.json": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+    "reports/gpu_acceleration_20261111_v1/index/normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+  }
+}

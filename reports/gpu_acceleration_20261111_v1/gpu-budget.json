@@ -1,0 +1,12 @@
+{
+  "actual_T4_profile_seconds": 72.89519354500001,
+  "setup_seconds": 4.800465323999987,
+  "gain_B1_same_GPU": 8.80564200692615,
+  "B1_raw_119_training_minutes": 25.567957043795648,
+  "B1_250_training_minutes_raw_IO_scenario": 49.56277016941214,
+  "B2_250_training_minutes_raw_IO_scenario": 50.49093178910443,
+  "proposed_one_epoch_plus_32val_ceiling_seconds_per_model": 5400,
+  "assumptions": "250-event scenario retains measured raw-IO wait and model-specific GPU compute; excludes official validation/AP and checkpoints; compact Kaggle not yet mounted",
+  "warning": "B2 warm-cache 971 tiles/sec is not a cold full-epoch throughput; do not extrapolate it",
+  "compact_GPU_epoch_time": "pending authorized publication and short compact profile"
+}

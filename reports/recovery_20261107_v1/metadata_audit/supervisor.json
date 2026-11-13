@@ -1,0 +1,39 @@
+{
+  "time": "2026-11-07T12:22:56.378095+00:00",
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "scripts/audit_gpu_recovery.py",
+    "--out",
+    "reports/recovery_20261107_v1/metadata-integrity.json"
+  ],
+  "pid": 24016,
+  "status": "LOW_AVAILABLE_MEMORY",
+  "exit_code": 1,
+  "elapsed_seconds": 2.3120000000001255,
+  "limit_seconds": 90,
+  "peak_system_memory_load_percent": 95,
+  "before": {
+    "memory": {
+      "total": 16837500928,
+      "available": 690089984,
+      "load_percent": 95
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903559831552,
+      "free": 119192883200
+    }
+  },
+  "after": {
+    "memory": {
+      "total": 16837500928,
+      "available": 687181824,
+      "load_percent": 95
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903559921664,
+      "free": 119192793088
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "status": "IMPLEMENTED_AND_VERIFIED",
+  "url": "http://127.0.0.1:8012",
+  "mode": "scientific-results",
+  "source_zip_sha256": "bd1e2f7e70ad6b8d1ce516e72626b1dfc9cb7050d0e02ad120b7b5a38031d6dd",
+  "threshold_lock_sha256": "844d9a29197f2095cec010911e5b55dd7191af94d01098cb27265c96d7209c0e",
+  "tests_passed": 15,
+  "http_checks": [
+    {
+      "path": "/health",
+      "status": 200,
+      "bytes": 89,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/summary",
+      "status": 200,
+      "bytes": 19220,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/events?phase=calibration32",
+      "status": 200,
+      "bytes": 189141,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/events?phase=holdout169",
+      "status": 200,
+      "bytes": 291597,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/maps?phase=holdout169",
+      "status": 200,
+      "bytes": 5191,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/science/big-data",
+      "status": 200,
+      "bytes": 4199,
+      "content_type": "application/json"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 318,
+      "content_type": "text/html"
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "bytes": 241111,
+      "content_type": "application/javascript"
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "bytes": 3941,
+      "content_type": "text/css"
+    }
+  ],
+  "map_cases": 12,
+  "png_layers_checked": 48,
+  "spark_parquet_files": [
+    {
+      "path": "reports/mission_20261111/spark/annual.parquet",
+      "sha256": "dc9b4f54419ff9ac8a982f1008a75b961b64e9eae04df90437eba06dc4dd245e",
+      "bytes": 1413,
+      "rows": 4
+    },
+    {
+      "path": "reports/mission_20261111/spark/windows.parquet",
+      "sha256": "4469a317b760f5b82861b88da18ce1a898aa909319376a09dfa284def0a73e90",
+      "bytes": 1361,
+      "rows": 6
+    },
+    {
+      "path": "reports/mission_20261111/spark/quality.parquet",
+      "sha256": "625c0ba14ede2291ec3c9b03dd7bb4ade53f7509a790bdd4a570212297873070",
+      "bytes": 2299,
+      "rows": 2
+    },
+    {
+      "path": "reports/mission_20261111/spark/annual_leakage.parquet",
+      "sha256": "8ab85ae55cff0a8b6d945ca4408978cf7795b91635ecf9211ac435bfe60aa8a0",
+      "bytes": 514,
+      "rows": 1
+    },
+    {
+      "path": "reports/mission_20261111/spark/window_join.parquet",
+      "sha256": "0cce49dd490872503b3bd07b8e04c8625da7471070ad6b44af60cbb60c2473ac",
+      "bytes": 783,
+      "rows": 2
+    }
+  ],
+  "training_executed": false,
+  "transfer_executed": false,
+  "calibration_repeated": false,
+  "spark_restarted": false,
+  "commit_or_push": false,
+  "limitations": {
+    "browser_visual_validation": "BLOCKED: CUA could not determine current URL confidently",
+    "historical_live_predictor": "Existing snapshot refused by source-integrity guard; result views functional without loading it"
+  },
+  "files": {
+    "src/geofirex/science_results.py": {
+      "bytes": 11370,
+      "sha256": "bb0e5dbef9d625e8e7f3eba5943d507d5c19532d1c2d5a31f1bdbb6972123bfc"
+    },
+    "src/geofirex/loss_ablation.py": {
+      "bytes": 9605,
+      "sha256": "377a8c588d0ab49b31ac6c93592a4cb2329ccb2b6a0391a52d7766c58c577646"
+    },
+    "src/geofirex/serving.py": {
+      "bytes": 14315,
+      "sha256": "63c6f419cc51511a54e12a7584830065245f198c23c5687f62ba2604b6c60231"
+    },
+    "scripts/serve_demo.py": {
+      "bytes": 1211,
+      "sha256": "2526d02f1f54d610d91c9b1fca3795623ba62ae024c4f28b2a28af4313f7ac06"
+    },
+    "scripts/select_loss_ablation.py": {
+      "bytes": 2962,
+      "sha256": "d18b22153a3377cb56890d2e847f6939ab58e4de1f3a42549f9842badca2cc69"
+    },
+    "scripts/prepare_loss_ablation_notebook.py": {
+      "bytes": 6603,
+      "sha256": "e141cbaa8de3cbad698f1b58c906ba5599aa04af2a402bc765e0ba7a2689c166"
+    },
+    "frontend/src/ScienceResults.mjs": {
+      "bytes": 14922,
+      "sha256": "424680f962f2a3bc3c9261f0a64f887809a625e4b59e9058f391e0ff5fe8adbb"
+    },
+    "frontend/src/main.mjs": {
+      "bytes": 1349,
+      "sha256": "99b3fde71a26b55e13361f4ba11d89e2170e2737e55268af08ba1fa571f3ddd7"
+    },
+    "frontend/src/style.css": {
+      "bytes": 3941,
+      "sha256": "c86aee6c80a2438627de69b532af323ee5682bd227734e7325adaa3cae5d5e2a"
+    },
+    "frontend/dist/app.js": {
+      "bytes": 241111,
+      "sha256": "438966a7791acf9b414734c5ee808db105ca8b2b86c420afcda6e6f1e33d5b57"
+    },
+    "frontend/dist/style.css": {
+      "bytes": 3941,
+      "sha256": "c86aee6c80a2438627de69b532af323ee5682bd227734e7325adaa3cae5d5e2a"
+    },
+    "reports/loss_ablation_20261112_v1/GEOFIREX_POS_WEIGHT_INDEPENDENT_20261112.ipynb": {
+      "bytes": 47182,
+      "sha256": "12457a9ca4895ba8187a3b44f3eaf574d897a7fd2baea345f2edcfd220ed480a"
+    },
+    "reports/loss_ablation_20261112_v1/loss-ablation-code.zip": {
+      "bytes": 31089,
+      "sha256": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e"
+    },
+    "reports/loss_ablation_20261112_v1/PLAN.md": {
+      "bytes": 7353,
+      "sha256": "fbefc3f7d29f885dadf713fb9a3dff5b09411a3f04bd141243fbb2b1f01fa6f5"
+    },
+    "reports/science_integration_20261112_v1/SCIENTIFIQUE.md": {
+      "bytes": 7171,
+      "sha256": "46692a7f9e49228fb11c699aa16b934d44fb1f57cb8c1c180ac82c5f75f156cc"
+    },
+    "reports/science_integration_20261112_v1/EXECUTION.md": {
+      "bytes": 5341,
+      "sha256": "81d3306d1335b4ad720b880e92db3add2a1950c900013c192011123dfc1f5ab3"
+    }
+  }
+}

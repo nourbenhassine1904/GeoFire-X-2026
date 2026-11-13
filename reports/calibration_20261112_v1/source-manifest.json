@@ -1,0 +1,38 @@
+{
+  "zip_sha256": "659ccf0e07c494c3a4c93d527af13054e68019f74bd71c8c86458601b32fa61f",
+  "modules": {
+    "__init__.py": {
+      "source_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "bundle_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    "calibration_io.py": {
+      "source_sha256": "68de4b6673d0f3bf54d1aeb362f19b709d514e6483106065d431f101d8a95cc8",
+      "bundle_sha256": "68de4b6673d0f3bf54d1aeb362f19b709d514e6483106065d431f101d8a95cc8"
+    },
+    "calibration_mounts.py": {
+      "source_sha256": "1e66ae50234606545572142401c72bf47fa1a265b4a664d7568031c707efff12",
+      "bundle_sha256": "1e66ae50234606545572142401c72bf47fa1a265b4a664d7568031c707efff12"
+    },
+    "compact_calibration.py": {
+      "source_sha256": "58560e3f6eca9edfa41ec14a64fbb5a4a2aa899edeab283ac2e3ecdba3da78f2",
+      "bundle_sha256": "58560e3f6eca9edfa41ec14a64fbb5a4a2aa899edeab283ac2e3ecdba3da78f2"
+    },
+    "fast_compact.py": {
+      "source_sha256": "6ddd5468a8261ef55c6dc4cab59d191eb345b8ab2cc063d345d435a4dfe4d657",
+      "bundle_sha256": "d52ed93ca58f4ce76019c3b52be48b4a830efead5d5327448c3820a974844e3e"
+    },
+    "benchmark_models.py": {
+      "source_sha256": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1",
+      "bundle_sha256": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1"
+    },
+    "benchmark_metrics.py": {
+      "source_sha256": "7868afaa6cbb7f8b38fec1db0193cb11578a54d19aede7e164018fa9f323d9f0",
+      "bundle_sha256": "7868afaa6cbb7f8b38fec1db0193cb11578a54d19aede7e164018fa9f323d9f0"
+    },
+    "unet.py": {
+      "source_sha256": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0",
+      "bundle_sha256": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0"
+    }
+  },
+  "adapter": "fast_compact: only save/sha utility import replaced; loader, masks, normalization and models byte-identical"
+}

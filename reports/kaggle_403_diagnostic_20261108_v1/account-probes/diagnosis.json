@@ -1,0 +1,246 @@
+{
+  "time": "2026-11-07T23:19:01.211085+00:00",
+  "target": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "versions": {
+    "kaggle": "2.2.5",
+    "kagglesdk": "0.1.38",
+    "kagglehub": "1.0.3"
+  },
+  "write_requests": 0,
+  "blob_requests": 0,
+  "notebook_requests": 0,
+  "existing_token_refreshed_in_memory": true,
+  "identity": {
+    "username": "nnnnbhss",
+    "active": true,
+    "scope_names": [
+      "resources.admin:*"
+    ]
+  },
+  "inventories": {
+    "mine": {
+      "handles": [
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212"
+      ],
+      "complete": true,
+      "pages": 1
+    },
+    "private": {
+      "handles": [
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212"
+      ],
+      "complete": true,
+      "pages": 1
+    },
+    "public": {
+      "handles": [],
+      "complete": true,
+      "pages": 1
+    },
+    "owner_view": {
+      "handles": [
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101"
+      ],
+      "complete": true,
+      "pages": 1
+    }
+  },
+  "private_control": {
+    "ok": true,
+    "value": {
+      "handle": "nnnnbhss/geofire-x-wildfirespreadts-sample",
+      "private": true,
+      "version": 1,
+      "total_bytes": 447927526
+    }
+  },
+  "target_get": {
+    "ok": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  "target_status": {
+    "ok": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  "official_cli_mine": {
+    "ok": true,
+    "value": [
+      "nnnnbhss/geofire-x-wildfirespreadts-sample",
+      "nnnnbhss/geofirex-sample-pilot-code-20261101",
+      "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+      "nnnnbhss/geofire-x-cloud-code-v3",
+      "nnnnbhss/geofire-x-wsts-batch001",
+      "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212"
+    ]
+  },
+  "official_cli_status": {
+    "ok": false,
+    "error_type": "HTTPError",
+    "http_status": 403
+  },
+  "status": "READONLY_DIAGNOSTIC_COMPLETED",
+  "requests": [
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/users.AccountService/GenerateAccessToken",
+      "operation": "GenerateAccessToken",
+      "body_bytes": 121,
+      "authentication": "OAuth token operation",
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/security.OAuthService/IntrospectToken",
+      "operation": "IntrospectToken",
+      "body_bytes": 160,
+      "authentication": "OAuth token operation",
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasets",
+      "operation": "ListDatasets",
+      "body_bytes": 56,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "group": "DATASET_SELECTION_GROUP_MY",
+        "pageSize": 100
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasets",
+      "operation": "ListDatasets",
+      "body_bytes": 64,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "group": "DATASET_SELECTION_GROUP_MY_PRIVATE",
+        "pageSize": 100
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasets",
+      "operation": "ListDatasets",
+      "body_bytes": 63,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "group": "DATASET_SELECTION_GROUP_MY_PUBLIC",
+        "pageSize": 100
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasets",
+      "operation": "ListDatasets",
+      "body_bytes": 78,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "group": "DATASET_SELECTION_GROUP_USER",
+        "user": "nnnnbhss",
+        "pageSize": 100
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/GetDataset",
+      "operation": "GetDataset",
+      "body_bytes": 77,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "ownerSlug": "nnnnbhss",
+        "datasetSlug": "geofire-x-wildfirespreadts-sample"
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/GetDataset",
+      "operation": "GetDataset",
+      "body_bytes": 73,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "ownerSlug": "nnnnbhss",
+        "datasetSlug": "geofirex-wsts-fold0-tv-001-v1"
+      },
+      "http_status": 403,
+      "server_message": "{'code': 403, 'message': \"Permission 'datasets.get' was denied\", 'status': 'PERMISSION_DENIED'}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus",
+      "operation": "GetDatasetStatus",
+      "body_bytes": 73,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "ownerSlug": "nnnnbhss",
+        "datasetSlug": "geofirex-wsts-fold0-tv-001-v1"
+      },
+      "http_status": 403,
+      "server_message": "{'code': 403, 'message': \"Permission 'datasets.get' was denied\", 'status': 'PERMISSION_DENIED'}"
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/security.OAuthService/IntrospectToken",
+      "operation": "IntrospectToken",
+      "body_bytes": 160,
+      "authentication": "Bearer OAuth",
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/ListDatasets",
+      "operation": "ListDatasets",
+      "body_bytes": 124,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "group": "DATASET_SELECTION_GROUP_MY",
+        "user": "",
+        "pageToken": "",
+        "pageSize": 100,
+        "search": ""
+      },
+      "http_status": 200
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus",
+      "operation": "GetDatasetStatus",
+      "body_bytes": 73,
+      "authentication": "Bearer OAuth",
+      "resource": {
+        "ownerSlug": "nnnnbhss",
+        "datasetSlug": "geofirex-wsts-fold0-tv-001-v1"
+      },
+      "http_status": 403,
+      "server_message": "{'code': 403, 'message': \"Permission 'datasets.get' was denied\", 'status': 'PERMISSION_DENIED'}"
+    }
+  ],
+  "publication_body_before": 354,
+  "diagnostic_http_body_bytes": 1122,
+  "cumulative_http_body_bytes": 1476,
+  "ceiling": 6000000000,
+  "credentials_unchanged": true,
+  "prior_budget_records_preserved": true
+}

@@ -1,0 +1,8 @@
+{"operation": "GenerateAccessToken", "body_bytes": 121, "http_status": 200}
+{"operation": "IntrospectToken", "body_bytes": 160, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 56, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 64, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 63, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 56, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 64, "http_status": 200}
+{"operation": "ListDatasets", "body_bytes": 63, "http_status": 200}

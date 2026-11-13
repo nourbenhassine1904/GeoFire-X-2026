@@ -1,0 +1,30 @@
+{
+  "status": "DOWNLOADED_LOT001_EVIDENCE_VERIFIED",
+  "dataset": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "identity": "29ccf1eaa0f4d1fb0ab4333ee307e8af881f4255d1bd5639721ccaea2c540f81",
+  "files": 1269,
+  "bytes": 4829474073,
+  "events": 57,
+  "anomalies": [],
+  "crc32_and_sha256_rows_match_local_manifest": true,
+  "progress_status": "RUNNING",
+  "progress_note": "RUNNING is the final hash-phase snapshot; certificate.json records completed raster/DataLoader checks",
+  "remote_certification_rerun": false,
+  "evidence_files": {
+    "certificate.json": {
+      "source": "C:\\Users\\nourb\\Downloads\\certificate.json",
+      "bytes": 6434,
+      "sha256": "b7887d8ce38fbbdb2df6c488433d7ef2a33098cfe9d0fcac012d3fc146a1e137"
+    },
+    "verified.jsonl": {
+      "source": "C:\\Users\\nourb\\Downloads\\verified.jsonl",
+      "bytes": 206847,
+      "sha256": "7f8516f1ca3e634bfa4cbdda85da6a7223fb0877246a3f4f3ebec06a9c70a86d"
+    },
+    "progress.json": {
+      "source": "C:\\Users\\nourb\\Downloads\\progress.json",
+      "bytes": 1431,
+      "sha256": "9ea7b1c469820589aea3e25d1b98d93c67f82f2f3178a5434b4db9c5f201ca8d"
+    }
+  }
+}

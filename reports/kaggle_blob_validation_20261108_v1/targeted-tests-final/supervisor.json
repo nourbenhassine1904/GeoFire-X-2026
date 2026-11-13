@@ -1,0 +1,41 @@
+{
+  "command": [
+    ".\\artifacts\\orchestrator\\kaggle-cli-env\\Scripts\\python.exe",
+    "tests/test_kaggle_blob_session.py",
+    "-v"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5524475904,
+    "load_percent": 67,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18113560576,
+    "commit_used_bytes": 19125035008
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 268435456,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T23:48:16.791640+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 48400,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5630000000019209,
+  "peak_tree_rss_bytes": 39378944,
+  "peak_sampled_private_commit_bytes": 29409280,
+  "peak_job_commit_bytes": 41598976,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 5513744384,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 5517262848,
+    "load_percent": 67,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18163916800,
+    "commit_used_bytes": 19074678784
+  }
+}

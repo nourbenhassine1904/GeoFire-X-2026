@@ -1,0 +1,12 @@
+{
+  "plan_identity": "7f24f1c401077e6bcf172a9c2ce250d7f0223e4cfd1bb62a7594758f4162a929",
+  "index_source": "https://zenodo.org/api/records/8006177/files/WildfireSpreadTS.zip/content",
+  "destination": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\scientific_corpus_v1",
+  "roots": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\corpus_v1",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\real_sample"
+  ],
+  "budget_bytes": 6611516695,
+  "batch_bytes": 268435456,
+  "max_mbps": 20
+}

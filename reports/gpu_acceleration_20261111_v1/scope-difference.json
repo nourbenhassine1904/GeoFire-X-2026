@@ -1,0 +1,19 @@
+{
+  "lot1_events": 57,
+  "lot2_events": 62,
+  "lot_union_events": 119,
+  "overlap": [],
+  "sample_train": [
+    "2018/fire_21748813",
+    "2018/fire_21997864",
+    "2019/fire_23300839"
+  ],
+  "extra_train": [
+    "2019/fire_23300839"
+  ],
+  "duplicate_sample_events": [
+    "2018/fire_21748813",
+    "2018/fire_21997864"
+  ],
+  "source": "nnnnbhss/geofire-x-wildfirespreadts-sample"
+}

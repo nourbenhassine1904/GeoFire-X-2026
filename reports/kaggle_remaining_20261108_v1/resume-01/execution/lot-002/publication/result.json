@@ -1,0 +1,30 @@
+{
+  "status": "STOPPED_REMOTE_STATE_REQUIRES_READONLY_INSPECTION",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+  "pre_network_zip_sha256_verified": "d6857453424a34423211f7c62ecfaa423a864700f6a1e0cc0b4b5c40210e9b4f",
+  "payload_bytes": 4995525361,
+  "confirmed_blob_body_bytes": 4995525361,
+  "authenticated_owner_before_upload": "nnnnbhss",
+  "dataset_preflight": {
+    "state": "ABSENT_VERIFIED",
+    "allow_create_new": true,
+    "owner": "nnnnbhss",
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "absence_basis": "Complete consistent owner catalogues (MY, MY_PRIVATE, MY_PUBLIC) plus successful existing-owner read control",
+    "direct_lookup_state": "NOT_QUERIED",
+    "create_permission_verified": false,
+    "reason": "Target absent from complete authenticated owner inventory; no HTTP error is used as proof of absence",
+    "catalogued_owner_datasets": 7,
+    "limitation": "Catalogue visibility/consistency scope only; fresh check before create. CreateDataset must reject any collision; no version/update fallback."
+  },
+  "create_request_accepted": true,
+  "error_type": "ValueError",
+  "error_stage": "confirm_private_remote_presence_from_catalogues",
+  "http_status": null,
+  "reserved_http_body_bytes": 4995534055,
+  "cumulative_ceiling": 31000000000,
+  "phase_stop_at": 31000000000,
+  "blob_sends": 1,
+  "requests": 11,
+  "credentials_unchanged": true
+}

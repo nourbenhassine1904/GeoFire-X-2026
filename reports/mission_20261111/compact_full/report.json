@@ -1,0 +1,42 @@
+{
+  "status": "EXECUTED_AND_PARTITIONS_VERIFIED",
+  "format": "one ZIP per event containing lossless float32 NPZ day tiles; temporal references",
+  "train_events": 250,
+  "val_events": 201,
+  "events": 451,
+  "observations": 9490,
+  "windows": 7235,
+  "samples": 172374,
+  "shards": 226859,
+  "raw_geotiff_bytes": 34995352430,
+  "logical_array_bytes": 30664077312,
+  "archive_bytes": 9595846733,
+  "metadata_bytes": 249738339,
+  "transfer_payload_bytes": 9845585072,
+  "payload_files": 454,
+  "categories": {
+    "train": {
+      "negative": 85940,
+      "positive": 6136,
+      "hard_negative": 1527
+    },
+    "val": {
+      "negative": 70625,
+      "positive": 6551,
+      "hard_negative": 1595
+    }
+  },
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "conversion_worker_seconds": 3280.3014685,
+  "longest_partition_seconds": 1110.2901595000003,
+  "peak_rss_bytes_by_partition": [
+    621744128,
+    619548672,
+    613076992
+  ],
+  "roundtrip_days": 9490,
+  "test_pixels_opened": 0,
+  "network_bytes": 0,
+  "validation": "all official events and every nonoverlapping tile; no rebalancing",
+  "source_checks": "existing certified original SHA referenced; scene size/CRS/transform checked during conversion; first tile of each day roundtripped; sampled tensors/targets/joint masks compared exactly with original TIFFs in each partition"
+}

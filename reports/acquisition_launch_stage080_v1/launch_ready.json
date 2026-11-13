@@ -1,0 +1,42 @@
+{
+  "status": "READY_AWAITING_EXPLICIT_USER_APPROVAL",
+  "destination": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\data\\raw\\WildfireSpreadTS\\scientific_corpus_v1",
+  "disk_now": {
+    "total": 1022752714752,
+    "used": 899419209728,
+    "free": 123333505024
+  },
+  "project_bytes_measured": 7707106812,
+  "raw_directory_bytes": 805735845,
+  "local_files_crc_sha_verified": 208,
+  "reused_in_stage80": 202,
+  "new_files": 1566,
+  "expected_observations": 1768,
+  "expected_events": 80,
+  "sub_batches": 26,
+  "max_batch_payload_bytes": 266052121,
+  "payload_bytes": 5741850510,
+  "new_geotiff_bytes": 5853750530,
+  "write_allocation_bytes": 12488063369,
+  "free_reserve_bytes": 20000000000,
+  "maximum_additional_disk_with_reserve_bytes": 32488063369,
+  "stage451_conservative_with_reserve_bytes": 89184988138,
+  "stage451_headroom_bytes": 34148516886,
+  "network_cap_bytes": 6611516695,
+  "network_rate_target_mbps": 20,
+  "concurrency": 1,
+  "network_cap_scope": "cumulative HTTP response bodies reserved including retries/ZIP metadata; TCP/TLS overhead excluded",
+  "network_started": false,
+  "exact_command": ".\\.venv\\Scripts\\python.exe scripts/acquire_scientific_stage.py --launch-config configs/acquisition_stage080_v1.json --execute",
+  "validated_v4_plans_unchanged": {
+    "acquisition_80.json": true,
+    "acquisition_200.json": true,
+    "acquisition_451.json": true
+  },
+  "source_sha256": {
+    "scripts/acquire_scientific_stage.py": "f5e7efc58a7843963bd5b2bab4a4409d53379fe6f7148af2b550c9315b6d7965",
+    "src/geofirex/acquisition_session.py": "3a9bbfd5beead02fee91d114a76c46da114404ed63c8a153a33b5ab0b285daa6",
+    "configs/acquisition_stage080_v1.json": "9f23aaa91efe851aad114eb21e8e9bdcaab7b8697f78d27e278ddfd96f6c6fae",
+    "tests/test_acquisition_session.py": "c41752a2ed5d96c04af5fabaa2904621f74ff816e46d05b95a614e318f016f54"
+  }
+}

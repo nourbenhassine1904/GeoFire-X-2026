@@ -1,0 +1,7 @@
+{
+  "candidate_files": 297,
+  "high_confidence_secret_paths": [],
+  "files_over_10MiB": [],
+  "scope": "Signature scan only; no secret values emitted. Ignored credentials/data/checkpoints not candidates.",
+  "preservation": "No deletion, staging, commit or push. artifacts/, raw TIFF, MLflow DB and frontend/dist ignored."
+}

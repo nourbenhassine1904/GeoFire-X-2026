@@ -1,0 +1,14 @@
+{
+  "status": "BUILT_AND_ALL_CODE_CELLS_COMPILED",
+  "notebook": "reports\\mission_20261111\\B1_GPU_READY_20261111.ipynb",
+  "embedded_zip_bytes": 931133,
+  "embedded_zip_sha256": "07d70e66abee11791cc79f2af2cb1263a5f7db9d21ee9af001f20af2d8faebce",
+  "raw_data_embedded": false,
+  "gpu_executed": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "nnnnbhss/geofire-x-wildfirespreadts-sample"
+  ],
+  "quota_status": "UNKNOWN: Browser host unavailable; native UI stopped because current URL could not be verified"
+}

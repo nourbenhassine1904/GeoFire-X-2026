@@ -1,0 +1,52 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_memory_guard.py::test_monitor_refuses_without_starting_child",
+    "-vv",
+    "-s",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\essential-isolated-corrected\\tmp-04",
+    "--junitxml",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\essential-isolated-corrected\\test-04.xml",
+    "-o",
+    "faulthandler_timeout=60"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6736912384,
+    "load_percent": 59,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19823308800,
+    "commit_used_bytes": 17415286784
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:19:24.686551+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 36620,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5149999999994179,
+  "peak_tree_rss_bytes": 36143104,
+  "peak_sampled_private_commit_bytes": 24616960,
+  "peak_job_commit_bytes": 34459648,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 6700654592,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6740058112,
+    "load_percent": 59,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19821547520,
+    "commit_used_bytes": 17417048064
+  }
+}

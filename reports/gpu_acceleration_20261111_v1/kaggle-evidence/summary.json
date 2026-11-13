@@ -1,0 +1,42 @@
+{
+  "status": "WALL_LIMIT",
+  "device": "cuda",
+  "epochs_completed": 0,
+  "train_samples_seen": 400,
+  "optimizer_updates": 25,
+  "history": [
+    {
+      "epoch": 1,
+      "complete_epoch": false,
+      "train_samples_seen": 400,
+      "total_train_samples_seen": 400,
+      "optimizer_updates": 25,
+      "train_loss": 0.8905749331651733,
+      "validation": {
+        "dice": 1.0,
+        "iou": 1.0,
+        "precision": null,
+        "recall": null,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "pixels": 60352,
+        "positive_pixels": 0,
+        "prevalence": 0.0,
+        "brier": 0.04438968229541923,
+        "average_precision": null,
+        "loss": 0.6113130450248718,
+        "samples_seen": 16,
+        "status": "WALL_LIMIT"
+      },
+      "train_seconds": 179.35459873799994,
+      "validation_seconds": 0.7273385579999285,
+      "elapsed_seconds": 180.08200621000015
+    }
+  ],
+  "elapsed_seconds": 180.10592235500008,
+  "peak_rss_bytes": 2103406592,
+  "gpu_peak_allocated_bytes": 38387712,
+  "best_validation_ap": null,
+  "best_epoch": null
+}

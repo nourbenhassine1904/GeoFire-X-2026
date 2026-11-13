@@ -1,0 +1,141 @@
+{
+  "status": "PASSED_REAL_CPU_INTEGRATION",
+  "input_hashes": {
+    "manifest": "345dd1455ea10554e71a04cccb7be381d7b213075bbfa44fbdb0f9b1b8cd25d5",
+    "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+    "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "targets": "4244c1cf26e3f462f0380730e510c4db6dc6e53061720f508916b82a231359f5"
+  },
+  "normalizer_sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+  "train_events": 250,
+  "validation_events": 201,
+  "targets": {
+    "train": 3948,
+    "val": 3287,
+    "test": 0
+  },
+  "test_rows": 0,
+  "fit_files": 4948,
+  "fit_events": 250,
+  "channels": [
+    "slope_z",
+    "elevation_z",
+    "slope_missing",
+    "elevation_missing",
+    "aspect_sin",
+    "aspect_cos",
+    "aspect_missing",
+    "fire_J"
+  ],
+  "batches": [
+    {
+      "split": "train",
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 16,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "read_seconds": 3.076196099995286,
+      "patches_per_read_second": 5.2012288813526935,
+      "outputs": {
+        "B0": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B1": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B2": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B3": [
+          4,
+          1,
+          64,
+          64
+        ]
+      },
+      "total_seconds": 3.1790065999957733
+    },
+    {
+      "split": "val",
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 16,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "read_seconds": 3.8959234000067227,
+      "patches_per_read_second": 4.106856926389361,
+      "outputs": {
+        "B0": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B1": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B2": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "B3": [
+          4,
+          1,
+          64,
+          64
+        ]
+      },
+      "total_seconds": 3.97047639999073
+    }
+  ],
+  "seconds": 77.02995840000222,
+  "optimizer_updates": 0,
+  "raw_writes": 0,
+  "network_bytes": 0
+}

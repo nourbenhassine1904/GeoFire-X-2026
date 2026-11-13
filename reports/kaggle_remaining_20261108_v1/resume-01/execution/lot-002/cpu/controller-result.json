@@ -1,0 +1,11 @@
+{
+  "status": "REMOTE_CPU_RECEIPT_VERIFIED",
+  "kernel": "nnnnbhss/geofirex-certify-lot-002-cpu-20261108-v1",
+  "private": true,
+  "gpu": false,
+  "version": 1,
+  "download_bytes": 227342,
+  "control_body_bytes": 200500,
+  "cumulative_body_bytes": 4995735202,
+  "credentials_unchanged": true
+}

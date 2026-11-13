@@ -1,0 +1,17 @@
+{
+  "time": "2026-11-08T14:32:47.639606+00:00",
+  "plan_sha256": "7f4e15805ba093e9560f3b6c4b717b8b8deae87fa66afca7ab1179520894cd7d",
+  "approved_body_bytes": 31000000000,
+  "starting_reserved_body_bytes": 7345,
+  "initial_memory": {
+    "total": 16837500928,
+    "available": 4910227456,
+    "load_percent": 70,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18831065088,
+    "commit_used_bytes": 18407530496
+  },
+  "start_threshold_bytes": 4294967296,
+  "reserve_bytes": 2147483648,
+  "process_limit_bytes": 536870912
+}

@@ -1,0 +1,976 @@
+{
+  "status": "FULL_CORPUS_INTEGRATED",
+  "audit": {
+    "status": "CERTIFIED",
+    "verified_observations": 13607,
+    "verified_events": 607,
+    "expected_observations": 13607,
+    "expected_events": 607,
+    "errors": [],
+    "processed_this_attempt": 13607,
+    "reused_certificates": 0,
+    "seconds": 1517.033919900001,
+    "verified_bytes": 49294235723,
+    "network_bytes": 0,
+    "raw_writes": 0,
+    "journal": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\full_corpus_v1\\audit-attempt-1793711579113888200-d2ba964710c4406b9eda50575240afd5.jsonl",
+    "split_events": {
+      "train": 250,
+      "val": 201,
+      "test": 156
+    },
+    "split_observations": {
+      "train": 5198,
+      "val": 4292,
+      "test": 4117
+    }
+  },
+  "preparation": {
+    "status": "PREPARED",
+    "events": 607,
+    "observations": 13607,
+    "train_validation_events": 451,
+    "window_counts": {
+      "train": {
+        "1": {
+          "natural": 4948,
+          "aligned": 3948,
+          "rejections": {}
+        },
+        "3": {
+          "natural": 4448,
+          "aligned": 3948,
+          "rejections": {}
+        },
+        "5": {
+          "natural": 3948,
+          "aligned": 3948,
+          "rejections": {}
+        }
+      },
+      "val": {
+        "1": {
+          "natural": 4091,
+          "aligned": 3287,
+          "rejections": {}
+        },
+        "3": {
+          "natural": 3689,
+          "aligned": 3287,
+          "rejections": {}
+        },
+        "5": {
+          "natural": 3287,
+          "aligned": 3287,
+          "rejections": {}
+        }
+      }
+    },
+    "window_rows": 21705,
+    "processing": {
+      "status": "SPARK_EXECUTED",
+      "spark_version": "4.0.2",
+      "master": "local[2]",
+      "distributed_cluster": false,
+      "observations": 13607,
+      "window_rows": 21705,
+      "independent_window_comparison": "exact_match",
+      "annual": [
+        {
+          "year": 2018,
+          "split": "train",
+          "observations": 3773,
+          "events": 176
+        },
+        {
+          "year": 2019,
+          "split": "train",
+          "observations": 1425,
+          "events": 74
+        },
+        {
+          "year": 2020,
+          "split": "val",
+          "observations": 4292,
+          "events": 201
+        },
+        {
+          "year": 2021,
+          "split": "test",
+          "observations": 4117,
+          "events": 156
+        }
+      ],
+      "materialization": "Spark SQL results -> PyArrow Parquet; no Hadoop native writer",
+      "seconds": 41.87598260000232
+    },
+    "extraction_comparison": {
+      "status": "EXACT_SHA256_CRC_SIZE_MATCH",
+      "members": 13607,
+      "certificate": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\.extraction-session\\complete-e285d40057b44a488b9baee10afe7c22.json",
+      "certificate_sha256": "96fc830c716437d0a390c490ecfb8d1d76d3831f6df7190cd2497020654d088f",
+      "archive_md5": "dc1a04e63ccc70037b277d585b8fe761",
+      "archive_md5_status": "VERIFIED",
+      "archive_note": "Previously certified; no repeat read of the ZIP in this integration"
+    },
+    "test_policy": "2021 storage inventory/QC only; excluded from window tables, normalization and selection",
+    "certificate_sha256": "f7606ac51a3541a04d65330e266757107f1e5a9c4239fea2534944afdf891f4b",
+    "index_identity": "7aee2fc32d01fb8b3f0671073ab7aa12c12fbb4a90cb1d0f21d79e0ff843bbad",
+    "artifacts": {
+      "annual-inventory.parquet": "dc9b4f54419ff9ac8a982f1008a75b961b64e9eae04df90437eba06dc4dd245e",
+      "events.json": "723aa41b83c8b03482391acf5468a48b9122ba706f806615a1e79065fc23593d",
+      "events.parquet": "420a6e71b8ea2b9158de8796b59af03c6d71230b148cad88dbc1ac60ace421a8",
+      "extraction-comparison.json": "a9fa285cd552d4f9cb53bb142ffe5bb3214665f5fcbfc84232cd6fe4e71174b3",
+      "feature-contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+      "fold_00.csv": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "manifest.csv": "f0f04615e45914ee1c3f4332fa66758cbed0f3d45c271f5075b2285ff4aa86c0",
+      "observations-qc.parquet": "38f1b5dc88e583bb1559a619ca38ef19c74bf25b303b27a110921b4bfe944bee",
+      "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+      "processing.json": "50c116604b1149447d4afaf02a0ad66ee09c2a35d268576f6b7590417f8d8c33",
+      "window-counts.json": "2f1d013166416a0c59356e051ea9b7806895362dc0db1a75d8d8f15447cbbe07",
+      "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345"
+    }
+  },
+  "cpu_validation": {
+    "status": "VALIDATED_CPU_ONLY",
+    "normalization_seconds": 0.7121620999969309,
+    "normalization_mode": "REUSED_VERIFIED_TRAIN_ONLY",
+    "normalization_reuse": {
+      "source": "reports\\full_corpus_v1\\prepared_v1\\normalization.json",
+      "sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+      "original_fit_seconds": 466.24399000000267,
+      "original_input_hashes": {
+        "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+        "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+        "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+        "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+        "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+      }
+    },
+    "normalization_unique_train_contexts": 4948,
+    "normalization_train_events": 250,
+    "normalizer_channels": [
+      "slope_z",
+      "elevation_z",
+      "slope_missing",
+      "elevation_missing",
+      "aspect_sin",
+      "aspect_cos",
+      "aspect_missing",
+      "fire_J"
+    ],
+    "channels": 8,
+    "raw_bands": 23,
+    "test_paths_used": 0,
+    "batches": [
+      {
+        "split": "train",
+        "context": 1,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.3760830999963218,
+        "seconds": 2.382197400002042,
+        "patches_per_second": 20.14946368422653,
+        "p50_batch_seconds": 0.003909150000254158,
+        "p95_batch_seconds": 1.1525832300016188,
+        "x_shape": [
+          4,
+          1,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "train",
+        "context": 3,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 0.6574546000047121,
+        "seconds": 1.3331979000067804,
+        "patches_per_second": 36.003657071283925,
+        "p50_batch_seconds": 0.007551300004706718,
+        "p95_batch_seconds": 0.6054358750043319,
+        "x_shape": [
+          4,
+          3,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "train",
+        "context": 5,
+        "events": [
+          "2018/fire_21458798",
+          "2018/fire_21890058",
+          "2018/fire_22257882",
+          "2019/fire_23572745"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.4495776999974623,
+        "seconds": 3.211287700003595,
+        "patches_per_second": 14.94727488911886,
+        "p50_batch_seconds": 0.020069650003279094,
+        "p95_batch_seconds": 1.5042277249944163,
+        "x_shape": [
+          4,
+          5,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 1,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 2.720718000011402,
+        "seconds": 6.352699700015364,
+        "patches_per_second": 7.555842754519611,
+        "p50_batch_seconds": 0.008335100006661378,
+        "p95_batch_seconds": 3.094963065001502,
+        "x_shape": [
+          4,
+          1,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 3,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.709359200001927,
+        "seconds": 3.2928662999765947,
+        "patches_per_second": 14.576965970449871,
+        "p50_batch_seconds": 0.010228349994577002,
+        "p95_batch_seconds": 1.585650010005338,
+        "x_shape": [
+          4,
+          3,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      },
+      {
+        "split": "val",
+        "context": 5,
+        "events": [
+          "2020/fire_23654679",
+          "2020/fire_24332608",
+          "2020/fire_24461347",
+          "2020/fire_24695970"
+        ],
+        "patches": 48,
+        "first_batch_seconds": 1.9819535999995423,
+        "seconds": 3.762539800038212,
+        "patches_per_second": 12.757340134850539,
+        "p50_batch_seconds": 0.013760650006588548,
+        "p95_batch_seconds": 1.794056990001263,
+        "x_shape": [
+          4,
+          5,
+          8,
+          64,
+          64
+        ],
+        "y_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "valid_shape": [
+          4,
+          1,
+          64,
+          64
+        ],
+        "cache_hits": 264,
+        "cache_misses": 24,
+        "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+      }
+    ],
+    "forward_contracts": [
+      {
+        "model": "B0",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.038158700001076795,
+        "parameters": 0,
+        "device": "cpu"
+      },
+      {
+        "model": "B1",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.06693780000205152,
+        "parameters": 5809,
+        "device": "cpu"
+      },
+      {
+        "model": "B2",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.050450800001272,
+        "parameters": 123977,
+        "device": "cpu"
+      },
+      {
+        "model": "B3",
+        "output_shape": [
+          1,
+          1,
+          64,
+          64
+        ],
+        "seconds": 0.025639599989517592,
+        "parameters": 5297,
+        "device": "cpu"
+      }
+    ],
+    "patch_inventory": {
+      "patch_size": 64,
+      "domain": "joint maximum context T=5 + target, identical for T=1/3/5",
+      "positive_sampling": "not used for this inventory; validation never filtered by labels",
+      "by_split": {
+        "train": {
+          "examples": 3948,
+          "geometric_patches": 93603,
+          "usable_patches": 93603,
+          "empty_patches": 0,
+          "valid_joint_pixels": 313977876,
+          "masked_examples": 0
+        },
+        "val": {
+          "examples": 3287,
+          "geometric_patches": 78771,
+          "usable_patches": 78771,
+          "empty_patches": 0,
+          "valid_joint_pixels": 263630731,
+          "masked_examples": 0
+        }
+      }
+    },
+    "gpu_training": false,
+    "optimizer_updates": 0,
+    "windows_source": "reports\\full_corpus_v1\\prepared_spark_v1\\windows.parquet",
+    "input_hashes": {
+      "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+      "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+      "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+      "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+    },
+    "torch_threads": 2,
+    "loader_workers": 0,
+    "reader_cache_mb": 64,
+    "resources": {
+      "platform": "Windows-10-10.0.26200-SP0",
+      "logical_cpus": 12,
+      "workspace_free_bytes": 111056547840,
+      "corpus_volume_free_bytes": 438386307072,
+      "ram_total_bytes": 16837500928,
+      "ram_available_bytes": 1621049344,
+      "process_working_set_bytes": 747892736,
+      "process_peak_working_set_bytes": 770387968
+    },
+    "cache_caveat": "OS cache not flushed; first batch is not a certified cold-disk measurement"
+  },
+  "window_events_used": {
+    "train": 250,
+    "val": 201
+  },
+  "qc_by_split": {
+    "train": {
+      "observations": 5198,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        10636908,
+        10635996,
+        10635386,
+        9297248,
+        9297544,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        4291563,
+        3247364,
+        3247364,
+        3180891,
+        5818892,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        413904274
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "training preparation"
+    },
+    "val": {
+      "observations": 4292,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        7216401,
+        7223825,
+        7223089,
+        25334232,
+        25334370,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        5125269,
+        6441888,
+        6441888,
+        6338252,
+        6834136,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        344480528
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "training preparation"
+    },
+    "test": {
+      "observations": 4117,
+      "raw_bands": [
+        23
+      ],
+      "invalid_footprint_pixels": 0,
+      "band_nan_counts": [
+        35354762,
+        35352735,
+        35352710,
+        55160544,
+        55160568,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        2241261,
+        966626,
+        966626,
+        951117,
+        3445717,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        315215250
+      ],
+      "band_inf_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "scope": "storage integrity only, no model use"
+    }
+  },
+  "gpu_budget": {
+    "status": "NOT_AUTHORIZED_NOT_SUBMITTED",
+    "namespace": "geofirex-full-corpus-fold0-v1",
+    "runs": [
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T1_seed42.yaml",
+        "context": 1,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T1_seed42.yaml",
+        "context": 1,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 3505,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T1_seed42.yaml",
+        "context": 1,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 122825,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T1_seed42.yaml",
+        "context": 1,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T3_seed42.yaml",
+        "context": 3,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T3_seed42.yaml",
+        "context": 3,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 5809,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T3_seed42.yaml",
+        "context": 3,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 123977,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T3_seed42.yaml",
+        "context": 3,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B0_T5_seed42.yaml",
+        "context": 5,
+        "model": "B0",
+        "seed": 42,
+        "parameters": 0,
+        "maximum_optimizer_updates": 0,
+        "sampled_patches_per_epoch": 0,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B1_T5_seed42.yaml",
+        "context": 5,
+        "model": "B1",
+        "seed": 42,
+        "parameters": 8113,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B2_T5_seed42.yaml",
+        "context": 5,
+        "model": "B2",
+        "seed": 42,
+        "parameters": 125129,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      },
+      {
+        "config": "reports\\full_corpus_v1\\prepared_spark_v1\\gpu_configs\\B3_T5_seed42.yaml",
+        "context": 5,
+        "model": "B3",
+        "seed": 42,
+        "parameters": 5297,
+        "maximum_optimizer_updates": 58510,
+        "sampled_patches_per_epoch": 93616,
+        "full_grid_coverage_guaranteed": false,
+        "status": "PREPARED_NOT_AUTHORIZED_NOT_SUBMITTED"
+      }
+    ],
+    "next_step": "Discarded T=3 throughput probes, 20 measured + 3 warmup steps for B1/B2/B3; separately authorize <= 0.5 GPU hours total including preparation",
+    "proposed_first_T3_campaign_gpu_hours": 6.0,
+    "proposed_per_trainable_run_gpu_hours": 2.0,
+    "B0": "Persistence, zero optimizer updates; prefer CPU, not included in GPU-hour allocation",
+    "T1_T5": "Prepared configs only; no GPU budget granted or assumed",
+    "timing_caveat": "Provisional resource envelopes, not measured full-corpus GPU runtimes. Profile full validation before approval.",
+    "runner_time_limit": "max_run_seconds is cooperative at epoch boundaries, not a hard wall-time cap; external job timeout required",
+    "machine": {
+      "gpu_vram_gb": 16,
+      "ram_gb": 16,
+      "cpu_threads": 2,
+      "loader_workers": 0,
+      "reader_cache_mb_per_process": 64,
+      "minimum_free_disk_bytes": 20000000000
+    },
+    "transfer_policy": "No automatic cloud publication or copying; mount an already authorized corpus and relocate data_root/window paths",
+    "modalities": "Only conservative_fire_terrain; other existing profiles retain their availability-evidence lock",
+    "corpus_bytes_by_split": {
+      "train": 19173183260,
+      "val": 15822169170,
+      "test": 14298883293
+    },
+    "minimum_train_validation_volume_bytes": 54995352430
+  },
+  "tests": {
+    "tests_delivery.xml": {
+      "tests": 55,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "passed": 54,
+      "sha256": "489f928961c586ff8f5a91c0100ec0ad00c620909971950494898e245748712b"
+    },
+    "tests_contracts_final.xml": {
+      "tests": 13,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 1,
+      "passed": 12,
+      "sha256": "ed2b16ffab72e2467c57091f86d73d639a7ec910176b3ed3d67f4927d56495cf"
+    },
+    "tests_spark_installer.xml": {
+      "tests": 3,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "passed": 3,
+      "sha256": "b0000a5b5ba623468a979d2e3c624404ba7c5a48bec4d916834dc6fa854d4b6f"
+    },
+    "tests_spark_execution_v1.xml": {
+      "tests": 1,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "passed": 1,
+      "sha256": "87b211b4851dff77be505487a0998c2f447d1018b3f84fcc5e2dccabb40d0f1b"
+    },
+    "tests_spark_reuse.xml": {
+      "tests": 15,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "passed": 15,
+      "sha256": "453ce55b6a553b298e255bb677d3a94172e2946293edfaffef5c8cd65fdd55e2"
+    },
+    "tests_spark_final.xml": {
+      "tests": 58,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "passed": 58,
+      "sha256": "5a65fcb157d27b0e2b06a5691f9e09af0ab89c5a4158e35977f2064ae82c87db"
+    }
+  },
+  "installation": {
+    "status": "INSTALLED_OFFLINE_FROM_VERIFIED_PACKAGES",
+    "versions": {
+      "pyspark": "4.0.2",
+      "py4j": "0.10.9.9"
+    },
+    "confirmed_body_bytes": 434421883,
+    "reserved_body_bytes": 436510100,
+    "cap_bytes": 600000000,
+    "packages": [
+      {
+        "filename": "pyspark-4.0.2.tar.gz",
+        "url": "https://files.pythonhosted.org/packages/96/89/408b42c803db71f4a4d8a3f1ab0745a40dfe41aeacdfc453545665a171f4/pyspark-4.0.2.tar.gz",
+        "bytes": 434209940,
+        "sha256": "938b4a1883383374d331ebfcb5d92debfa1891cf3d7a6d730520a1a2d23f1a90"
+      },
+      {
+        "filename": "py4j-0.10.9.9-py2.py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/bd/db/ea0203e495be491c85af87b66e37acfd3bf756fd985f87e46fc5e3bf022c/py4j-0.10.9.9-py2.py3-none-any.whl",
+        "bytes": 203008,
+        "sha256": "c7c26e4158defb37b0bb124933163641a2ff6e3a3913f7811b0ddbe07ed61533"
+      }
+    ],
+    "corpus_downloads": 0,
+    "receipt": "artifacts\\local-spark-tooling-v1\\installed-11a0c403a78a4e47b568d0fe6b228089.json",
+    "receipt_sha256": "8483d15caf64bbf9ee87744e7332b41b28d82fd2ad3f56766e08765b834c5d84",
+    "ledger": "artifacts\\local-spark-tooling-v1\\http-body.jsonl",
+    "ledger_sha256": "431a8856db2c8bb6b21672decf0429aa2a7924e0a259bbabb9bfeb9b2b6387d5",
+    "installer_sha256": "13acc8c413234f8220795f0131e6e57c885e46542b4ff4fa0013c4f55454c8d9"
+  },
+  "resources": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpus": 12,
+    "workspace_free_bytes": 111111852032,
+    "corpus_volume_free_bytes": 438386307072,
+    "ram_total_bytes": 16837500928,
+    "ram_available_bytes": 1608372224,
+    "process_working_set_bytes": 405688320,
+    "process_peak_working_set_bytes": 406740992
+  },
+  "artifact_hashes": {
+    "annual-inventory.parquet": "dc9b4f54419ff9ac8a982f1008a75b961b64e9eae04df90437eba06dc4dd245e",
+    "cpu-validation.json": "7622ddcd111f759312f200933dae3999954b0727d839b66b698e67586d5eb2ac",
+    "events.json": "723aa41b83c8b03482391acf5468a48b9122ba706f806615a1e79065fc23593d",
+    "events.parquet": "420a6e71b8ea2b9158de8796b59af03c6d71230b148cad88dbc1ac60ace421a8",
+    "extraction-comparison.json": "a9fa285cd552d4f9cb53bb142ffe5bb3214665f5fcbfc84232cd6fe4e71174b3",
+    "feature-contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+    "fold_00.csv": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "gpu-budget.json": "7ccfca035f49940c609b2041661ee82dcb70a1484e964bac8957a412a2019874",
+    "manifest.csv": "f0f04615e45914ee1c3f4332fa66758cbed0f3d45c271f5075b2285ff4aa86c0",
+    "normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "observations-qc.parquet": "38f1b5dc88e583bb1559a619ca38ef19c74bf25b303b27a110921b4bfe944bee",
+    "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "patch-inventory.json": "e3c5e9962a87694710ae626f20e21195757e129b8dabae1d345d7dd7106a3342",
+    "preparation.json": "dd412ffdc62222722807a65237c502f07376055e5cf9b60a2583700318e2e058",
+    "processing.json": "50c116604b1149447d4afaf02a0ad66ee09c2a35d268576f6b7590417f8d8c33",
+    "window-counts.json": "2f1d013166416a0c59356e051ea9b7806895362dc0db1a75d8d8f15447cbbe07",
+    "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "gpu_configs/B0_T1_seed42.yaml": "1920076e2d2dca68460e8007697c5a94a4df86608276cb19c5c3a2ae0c4784e2",
+    "gpu_configs/B0_T3_seed42.yaml": "03938bb47961c5ebcf34f8cbe9daaa19eeaa4a0507ad3721546db8dfbce037fb",
+    "gpu_configs/B0_T5_seed42.yaml": "729032fa380533d08683ddf76c312d728ffdc9b2113250d3053d2bcbdab2511d",
+    "gpu_configs/B1_T1_seed42.yaml": "33b54a1f884392f125c2caf2a97b62ffd06acbbf826bb7b4371ce0e800ccc8cc",
+    "gpu_configs/B1_T3_seed42.yaml": "9032a55a97077a103a03974260478eb2447f8d4060ed2b892b3daffc26b2aca0",
+    "gpu_configs/B1_T5_seed42.yaml": "f752ea7ac01bc8b8c067f9942ce084143df8696317e86285e6147c36f54fefce",
+    "gpu_configs/B2_T1_seed42.yaml": "091a9bdb6fe09ddc280093f34a0f0ed547188f22d9a9920c87f48308ea9cd134",
+    "gpu_configs/B2_T3_seed42.yaml": "94e0d5e498712129542edac65f23f2ed5a004b9a177a637bab7ba4766045a7f4",
+    "gpu_configs/B2_T5_seed42.yaml": "9275e0e751c14a7584aca98c3773a522a5547b66e07155bb6f8fcec88024de0e",
+    "gpu_configs/B3_T1_seed42.yaml": "afae76aa0734efa579af241782d4f97d2c87ee87630cf0ba00ef5b658bb99779",
+    "gpu_configs/B3_T3_seed42.yaml": "5e2dc2bcd05c17484265779c7ee890addc94a89a81c272f2ab94937e8b513e85",
+    "gpu_configs/B3_T5_seed42.yaml": "ebc4ed108400dcc7574cd3c000739292afd51a8e1889bd5cbbb6618805a3542c",
+    "spark-input/observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "spark-input/windows.parquet": "75efc84b5b078fc293a88f64d2887a74554fd7c959f4e43da4b0df16b1ae8947"
+  },
+  "source_hashes": {
+    "src/geofirex/full_corpus.py": "380b42bde26f1a402d4a0aa8cd2826f02e97310b496e5b44c008dc596c670030",
+    "src/geofirex/runner.py": "4582e0c6594656c2940c3133b881c975d3eb40e13e4fa1097c658a1bd6edb5e4",
+    "src/geofirex/runner_data.py": "d2e90d5a00408574a1c994b8fa2bf6535e1997ff17a825d1c025a95d37de9a1b",
+    "src/geofirex/scientific_scaleup.py": "153449e453b3c20974eb7bb7f731dc0412deef0483a89b83a2c8ed2c5e1afc45",
+    "scripts/integrate_full_corpus.py": "8ec9d45fcd8e616c9b47b32d8ebd7cdc363bd0989d80c415e392abe987c81bba",
+    "scripts/run_benchmark.py": "2bd99694028c47d2a59f86c80ca59524bf319e25851398731fcba732db706345",
+    "tests/test_full_corpus.py": "55571a35a80098f3cd4f53fde26e322b2c508356933437dce6398b3d6277ebf9",
+    "scripts/install_local_spark_bounded.py": "13acc8c413234f8220795f0131e6e57c885e46542b4ff4fa0013c4f55454c8d9",
+    "tests/test_local_spark_install.py": "89b529c27fc7a0dd6f4fdb3ca5cd94e03276ab9ebd084ee296f6cc4aaa230a3d"
+  },
+  "forbidden_actions": {
+    "corpus_acquisition": false,
+    "gpu_training": false,
+    "model_test_2021": false,
+    "cloud_publication": false,
+    "commit": false,
+    "push": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "--collect-only",
+    "tests/test_gpu_operational.py",
+    "tests/test_gpu_resources.py",
+    "tests/test_runner.py",
+    "tests/test_benchmark_contracts.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6154141696,
+    "load_percent": 63,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19777511424,
+    "commit_used_bytes": 17461084160
+  },
+  "limit_seconds": 30,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:28:52.007546+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 39536,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 4.280999999999949,
+  "peak_tree_rss_bytes": 346517504,
+  "peak_sampled_private_commit_bytes": 371367936,
+  "peak_job_commit_bytes": 371445760,
+  "peak_owned_processes": 3,
+  "minimum_available_bytes": 5838848000,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6169096192,
+    "load_percent": 63,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19795460096,
+    "commit_used_bytes": 17443135488
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "status": "LOCAL_PREPARATION_CONTRACT_PASSED",
+  "actual_frozen_zip_bootstrap": true,
+  "expanded_bootstrap": true,
+  "local_distribution_metadata": {
+    "numpy": "2.4.6",
+    "rasterio": "1.4.4",
+    "torch": "2.15.0",
+    "mlflow": "3.17.2",
+    "pyyaml": "6.0.3",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "pyarrow": "25.0.1",
+    "psutil": null
+  },
+  "source_sha256": {
+    "scripts/kaggle_prepublication_readonly.py": "14bff58bb5a3c9bdf3209f3027f452923a75440fe6948d735bdbf21b4d55c7fe",
+    "scripts/review_kaggle_prepublication.py": "93be1b122133e1e5b90f709e382eef727f57b22063892d3c17853aef5a0e6a60",
+    "scripts/kaggle_certify_inputs.py": "a1a9ebfe5486265fee6266ebbf6b83f7eb1b4b706fdeaf737aec817c17418c1e",
+    "scripts/publish_kaggle_single_attempt.py": "5b4a8bd7fece804977c427f4859eb35cf6dcfcc087ad0ef86924dd24f8c5b337",
+    "scripts/run_kaggle_phase_guarded.py": "d5e84b524630e25fb3cd50be0bc131ce19a950e26bb9f96e0de271866b56b911",
+    "scripts/prepare_kaggle_certification_notebooks.py": "ae9fcd62045c02db706bfaa4e7737034a610e0de6f4d75d934b0ef71ab661166",
+    "scripts/submit_kaggle_cpu_certification.py": "39eb4a1cfa46ec1aad68d42380658ac926aa101aa04a28ca897eef18b0cd9f64",
+    "tests/test_kaggle_prepublication_small.py": "fa2ffafb744df246d54de151c1777f53b5984f4114cb8fecd196cb77a9857aed"
+  },
+  "notebooks": [
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/all/certify.ipynb",
+      "sha256": "f8a8c1f1f149d4f154322e0b0d3ec607bbeb38fa80ef37ef75a69718e0efcd8b",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/code/certify.ipynb",
+      "sha256": "37bbf3dfe1d209c32524f4dca868a8411b4b221fdf93b4189f36ad7657a4faa7",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-001/certify.ipynb",
+      "sha256": "4105c7b420e2f7ea187ff88fd9107f2341eb93cb80bdfb658b224eb531f303f1",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-002/certify.ipynb",
+      "sha256": "2ef233210e25e325492756c28ac11eff4f7853825b0aa7b44fc00e71eb6401de",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-003/certify.ipynb",
+      "sha256": "f351f9da82c7d3a09c80df2c305982898d4003540cba8a0342750acf3490c0b6",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-004/certify.ipynb",
+      "sha256": "4921769569d8cd945a5b9e12c7b9b6bf4aece2c2b21e3eaef556b8bfaa5eb51f",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-005/certify.ipynb",
+      "sha256": "3949b860ad99331fba964b81fb151229f9e6b3c1a9f7439df19ec5505f671fe5",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-006/certify.ipynb",
+      "sha256": "f86fa2c58fc1f092571bb7118286e1b8ef455df9230f7f6a78fea8e1a126f03e",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-007/certify.ipynb",
+      "sha256": "76d8d4bd504dbc67303c0048cf232d0e4e2b0e21af1b5a16f0fb5acde1d62a7e",
+      "executed": false
+    },
+    {
+      "path": "C:/Users/nourb/Projects/GeoFire-X-2026/reports/kaggle_prepublication_20261107_v1/cpu-certification-v3/lot-008/certify.ipynb",
+      "sha256": "335020838b88ae7e0dfe18b760263fe885c1f4c291b5c2871ca0cd7343bf18d0",
+      "executed": false
+    }
+  ],
+  "disk": {
+    "workspace": {
+      "total": 1022752714752,
+      "used": 912925736960,
+      "free": 109826977792
+    },
+    "historical_raw_volume": {
+      "total": 1000187359232,
+      "used": 561801052160,
+      "free": 438386307072
+    }
+  },
+  "original_payload_sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+  "raw_rasters_read": 0,
+  "cloud_certifications_executed": 0,
+  "uploads": 0
+}

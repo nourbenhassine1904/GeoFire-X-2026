@@ -1,0 +1,12 @@
+{
+  "model": "B1",
+  "launch_record": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\demo-serving\\gpu-pilot-20261101.json",
+  "event": "2020/fire_23654679",
+  "target": "2020-01-06",
+  "checkpoint_sha256": "242b61967c0a4a4312998fc2be452109c63bdc6216955c404a4b879987493c9b",
+  "updates": 1280,
+  "old_launch_record_preserved": true,
+  "real_prediction_and_separate_ground_truth": true,
+  "fastapi_constructed": true,
+  "browser_visual_qa": false
+}

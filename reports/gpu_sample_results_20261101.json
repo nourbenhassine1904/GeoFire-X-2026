@@ -1,0 +1,127 @@
+{
+  "kernel": "nnnnbhss/geofirex-sample-gpu-pilot-20261101",
+  "version": 1,
+  "archive_sha256": "2b5f72d63df6b71f15124ce1a7e1945e428590acfc495a53251688ae34e2b0b0",
+  "verified_files": 2003,
+  "local_readback": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\sample-launch-20261101\\verified-output",
+  "sqlite_integrity": "ok",
+  "completion": {
+    "wall_seconds": 1261.385596788,
+    "within_3600_seconds": true,
+    "archive_sha256": "2b5f72d63df6b71f15124ce1a7e1945e428590acfc495a53251688ae34e2b0b0",
+    "files": 2003
+  },
+  "rows": [
+    {
+      "model": "B0",
+      "status": "completed",
+      "epochs": 0,
+      "updates": 0,
+      "training_seconds": 0,
+      "wall_seconds": 35.87057787500004,
+      "complete_budget": true,
+      "dice": 0.4813519813519814,
+      "iou": 0.31696085955487335,
+      "precision": 0.48702830188679247,
+      "recall": 0.47580645161290325,
+      "average_precision": 0.2319483834781091,
+      "best_epoch": 0,
+      "checkpoint": "epoch_0000.pt",
+      "early_stopped": false
+    },
+    {
+      "model": "B1",
+      "status": "completed",
+      "epochs": 10,
+      "updates": 1280,
+      "training_seconds": 30.39202084300001,
+      "wall_seconds": 465.764767814,
+      "complete_budget": true,
+      "dice": 0.4799596672548525,
+      "iou": 0.3157545605306799,
+      "precision": 0.42671447781264005,
+      "recall": 0.5483870967741935,
+      "average_precision": 0.3534968341039826,
+      "best_epoch": 7,
+      "checkpoint": "epoch_0007.pt",
+      "early_stopped": true
+    },
+    {
+      "model": "B2",
+      "status": "completed",
+      "epochs": 10,
+      "updates": 1280,
+      "training_seconds": 35.040175545000125,
+      "wall_seconds": 474.71815648400013,
+      "complete_budget": true,
+      "dice": 0.2573692551505547,
+      "iou": 0.1476900691160422,
+      "precision": 0.2861169837914024,
+      "recall": 0.23387096774193547,
+      "average_precision": 0.12399271057291049,
+      "best_epoch": 8,
+      "checkpoint": "epoch_0008.pt",
+      "early_stopped": false
+    },
+    {
+      "model": "B3",
+      "status": "completed",
+      "epochs": 10,
+      "updates": 1280,
+      "training_seconds": 30.440640493000046,
+      "wall_seconds": 184.96289037499992,
+      "complete_budget": true,
+      "dice": 0.3050239234449761,
+      "iou": 0.17995765702187722,
+      "precision": 0.31716417910447764,
+      "recall": 0.29377880184331795,
+      "average_precision": 0.16051063145958405,
+      "best_epoch": 8,
+      "checkpoint": "epoch_0008.pt",
+      "early_stopped": false
+    }
+  ],
+  "preflight": [
+    {
+      "model": "B1",
+      "amp": false,
+      "passed": true,
+      "loss": 1.780729055404663
+    },
+    {
+      "model": "B1",
+      "amp": true,
+      "passed": true,
+      "loss": 1.7807282209396362
+    },
+    {
+      "model": "B2",
+      "amp": false,
+      "passed": true,
+      "loss": 3.8535001277923584
+    },
+    {
+      "model": "B2",
+      "amp": true,
+      "passed": false,
+      "error": "AssertionError: "
+    },
+    {
+      "model": "B3",
+      "amp": false,
+      "passed": true,
+      "loss": 1.8584660291671753
+    },
+    {
+      "model": "B3",
+      "amp": true,
+      "passed": true,
+      "loss": 1.858462929725647
+    }
+  ],
+  "energy_kwh_by_gpu": {
+    "0": 0.010036940881956287,
+    "1": 0.00316891290248798
+  },
+  "persistence": "Retrieved from completed official Kaggle output storage, all member sizes/SHA-256 rechecked locally"
+}

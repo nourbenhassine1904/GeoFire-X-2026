@@ -1,0 +1,12 @@
+{
+  "status": "CPU_JOB_STOPPED",
+  "kernel": "nnnnbhss/geofirex-cpu-automation-gate-20261108-v2",
+  "private": true,
+  "gpu": false,
+  "version": 1,
+  "error_type": "ValueError",
+  "http_status": null,
+  "control_body_bytes": 1902,
+  "cumulative_body_bytes": 4516,
+  "credentials_unchanged": true
+}

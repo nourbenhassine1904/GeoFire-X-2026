@@ -1,0 +1,16 @@
+{
+  "id": "nnnnbhss/geofirex-certify-lot-002-20261107-v1",
+  "title": "GeoFireX Certify lot 002 20261107 V1",
+  "code_file": "certify.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-expanded-code-recovery-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-002-v1"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

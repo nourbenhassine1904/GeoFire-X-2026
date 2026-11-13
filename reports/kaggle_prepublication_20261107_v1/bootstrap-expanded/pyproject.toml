@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geofirex"
+version = "0.1.0"
+description = "Multimodal spatio-temporal deep learning for next-day wildfire spread forecasting (GeoFire-X)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "rasterio",
+    "torch",
+    "mlflow",
+    "pyyaml",
+    "matplotlib",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+viewer = ["xarray", "rioxarray"]
+benchmark-metadata = ["pyarrow"]
+gpu-operational = ["pyarrow", "psutil>=5.9,<8"]
+kaggle = ["kagglehub>=1.0.3,<2"]
+api = ["fastapi", "uvicorn"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

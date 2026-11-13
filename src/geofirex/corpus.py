@@ -9,6 +9,7 @@ import binascii
 import datetime as dt
 import hashlib
 import json
+import os
 import re
 import shutil
 import time
@@ -192,33 +193,139 @@ def verify_member(path, entry):
     return f"{crc & 0xffffffff:08x}" == entry["crc32"]
 
 
-def acquire_members(zf, entries, destination, *, max_files=None, max_compressed_bytes=None):
+def publication_record(journal, kind, **fields):
+    """Append and commit a publication event; journal failures stop the caller."""
+    if journal is None:
+        return
+    with Path(journal).open('a', encoding='utf-8') as stream:
+        stream.write(json.dumps(dict(kind=kind, utc=dt.datetime.now(dt.timezone.utc).isoformat(),
+                                     **fields), allow_nan=False) + '\n')
+        stream.flush()
+        os.fsync(stream.fileno())
+
+
+def _contained_regular(path, destination):
+    if not path.resolve().is_relative_to(destination):
+        raise ValueError(f'Entry escapes destination: {path}')
+    # Reject symlinks and Windows reparse points, including dangling links.
+    if os.path.lexists(path):
+        stat = path.lstat()
+        if path.is_symlink() or getattr(stat, 'st_file_attributes', 0) & 0x400 or not path.is_file():
+            raise ValueError(f'Expected ordinary file; preserved: {path}')
+
+
+def _file_identity(path):
+    stat = path.stat()
+    return stat.st_dev, stat.st_ino, stat.st_size, stat.st_mtime_ns
+
+
+def _reusable_part(output, entry, destination, journal):
+    pattern = re.compile(re.escape(output.name) + r'\.[0-9a-f]{32}\.part')
+    if not output.parent.exists():
+        return None
+    for candidate in sorted(output.parent.iterdir()):
+        if not pattern.fullmatch(candidate.name):
+            continue
+        _contained_regular(candidate, destination)
+        valid = verify_member(candidate, entry)
+        publication_record(journal, 'part_checked', part=str(candidate), member=entry['path'],
+                           crc_valid=valid, bytes=candidate.stat().st_size)
+        if valid:
+            return candidate
+    return None
+
+
+def _publish_member(temporary, output, entry, destination, journal, preserve_parts):
+    """Bounded no-clobber publication. NTFS hard links keep the original .part.
+
+    No replace, unlink, ACL change, security exclusion or copy fallback is used.
+    On POSIX a hard link also avoids rename's overwrite-on-race semantics.
+    """
+    _contained_regular(temporary, destination)
+    identity = _file_identity(temporary)
+    if not verify_member(temporary, entry):
+        raise ValueError(f'Temporary member failed integrity check; preserved: {temporary}')
+    digest = sha256_file(temporary)
+    if _file_identity(temporary) != identity:
+        raise RuntimeError(f'Temporary member changed during validation; preserved: {temporary}')
+    method = 'hardlink' if preserve_parts or os.name != 'nt' else 'rename'
+    delays = (0.25, 0.5, 1.0, 2.0)  # Five attempts, at most 3.75 s backoff.
+    for attempt in range(1, len(delays) + 2):
+        _contained_regular(temporary, destination)
+        _contained_regular(output, destination)
+        if _file_identity(temporary) != identity:
+            raise RuntimeError(f'Temporary member changed before publication; preserved: {temporary}')
+        if os.path.lexists(output):
+            if not verify_member(output, entry) or sha256_file(output) != digest:
+                raise ValueError(f'Existing publication differs; both files preserved: {output}')
+            publication_record(journal, 'publication_existing_valid', member=entry['path'],
+                               part=str(temporary), output=str(output), sha256=digest)
+            return
+        publication_record(journal, 'publication_attempt', member=entry['path'], part=str(temporary),
+                           output=str(output), attempt=attempt, method=method, sha256=digest)
+        try:
+            if method == 'hardlink':
+                os.link(temporary, output)  # Atomic creation; fails if output already exists.
+            else:
+                temporary.rename(output)  # Windows alone guarantees no replacement.
+        except OSError as error:
+            publication_record(journal, 'publication_error', member=entry['path'], attempt=attempt,
+                               part=str(temporary), output=str(output), error_type=type(error).__name__,
+                               errno=error.errno, winerror=getattr(error, 'winerror', None), message=str(error))
+            if isinstance(error, FileExistsError):
+                # A concurrent creation is checked without overwriting either file.
+                _contained_regular(output, destination)
+                if verify_member(output, entry) and sha256_file(output) == digest:
+                    publication_record(journal, 'publication_existing_valid', member=entry['path'],
+                                       output=str(output), part=str(temporary), sha256=digest)
+                    return
+                raise ValueError(f'Publication conflict; both files preserved: {output}') from error
+            if getattr(error, 'winerror', None) not in (5, 32, 33) or attempt > len(delays):
+                raise
+            time.sleep(delays[attempt - 1])
+            continue
+        if not verify_member(output, entry) or sha256_file(output) != digest:
+            raise ValueError(f'Published member failed integrity; all files preserved: {output}')
+        publication_record(journal, 'publication_ok', member=entry['path'], output=str(output),
+                           part=str(temporary), part_retained=temporary.exists(), method=method,
+                           bytes=entry['geotiff_bytes'], crc32=entry['crc32'], sha256=digest)
+        return
+
+
+def acquire_members(zf, entries, destination, *, max_files=None, max_compressed_bytes=None,
+                    publication_journal=None, preserve_parts=False):
     """Validate existing bytes via CRC. Never replace a corrupt historical file.
 
-    Completed writes use a temporary file in the same directory, validated before
-    atomic rename. Interrupted .part files are retained and retried at file level.
+    Reuse complete CRC-valid .part files before reading ZIP payloads. With
+    preserve_parts=True, publish by hard link and retain every .part unchanged.
     """
     destination = Path(destination).resolve()
     destination.mkdir(parents=True, exist_ok=True)
-    written, skipped, reserved = [], [], 0
+    written, skipped, reused, reserved = [], [], [], 0
     for entry in entries:
         safe_entry(entry["path"])
         output = destination / entry["path"]
-        if not output.resolve().is_relative_to(destination):
-            raise ValueError("Entry escapes destination")
-        if output.exists():
+        _contained_regular(output, destination)
+        if os.path.lexists(output):
             if not verify_member(output, entry):
                 raise ValueError(f"Existing file failed CRC; preserved for manual repair: {output}")
             skipped.append(entry["path"])
+            publication_record(publication_journal, 'existing_verified', member=entry['path'], output=str(output))
             continue
         if max_files is not None and len(written) >= max_files:
-            break
-        if max_compressed_bytes is not None and reserved + entry["compressed_bytes"] > max_compressed_bytes:
             break
         info = zf.getinfo(entry["path"])
         if (info.CRC, info.file_size, info.compress_size) != (
             int(entry["crc32"], 16), entry["geotiff_bytes"], entry["compressed_bytes"]):
             raise ValueError("Remote directory differs from pinned acquisition plan")
+        temporary = _reusable_part(output, entry, destination, publication_journal)
+        if temporary is not None:
+            _publish_member(temporary, output, entry, destination, publication_journal, preserve_parts)
+            reused.append(dict(path=entry['path'], part=str(temporary)))
+            written.append(entry['path'])
+            continue
+        if max_compressed_bytes is not None and reserved + entry["compressed_bytes"] > max_compressed_bytes:
+            break
         if shutil.disk_usage(destination).free < entry["geotiff_bytes"] + 1024**3:
             raise RuntimeError("Insufficient space for next file plus 1 GiB reserve")
         reserved += entry["compressed_bytes"]
@@ -228,14 +335,12 @@ def acquire_members(zf, entries, destination, *, max_files=None, max_compressed_
             zf.fp.begin_member(info)
         with zf.open(info) as source, temporary.open("xb") as target:
             shutil.copyfileobj(source, target, length=1024 * 1024)
-        if not verify_member(temporary, entry):
-            raise ValueError(f"Downloaded member failed integrity check: {temporary}")
-        # rename refuses an existing destination on Windows; never use replace.
-        if output.exists():
-            raise FileExistsError(output)
-        temporary.rename(output)
+            target.flush()
+            os.fsync(target.fileno())
+        _publish_member(temporary, output, entry, destination, publication_journal, preserve_parts)
         written.append(entry["path"])
     return {"written": written, "verified_existing": skipped,
+            "reused_parts": reused,
             "planned_compressed_bytes_written": reserved}
 
 

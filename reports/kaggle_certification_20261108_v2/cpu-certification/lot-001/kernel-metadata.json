@@ -1,0 +1,16 @@
+{
+  "id": "nnnnbhss/geofirex-certify-lot001-cpu-20261108-v2",
+  "title": "GeoFireX Certify Lot001 CPU 20261108 V2",
+  "code_file": "certify.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

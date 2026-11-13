@@ -1,0 +1,10 @@
+{
+  "status": "PRIVATE_REMOTE_PRESENCE_CONFIRMED",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+  "private": true,
+  "version": 1,
+  "basis": "Complete consistent authenticated owner catalogues",
+  "GetDataset_required": false,
+  "confirmed_after_indexing": true,
+  "source_reconciliation": "resume-01/reconciliation-lot002/result.json"
+}

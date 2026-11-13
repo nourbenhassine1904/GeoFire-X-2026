@@ -1,0 +1,9 @@
+{
+  "source": "Read-only GlobalMemoryStatusEx measurement after the test supervisor had returned",
+  "total_bytes": 16837500928,
+  "available_bytes": 86605824,
+  "load_percent": 99,
+  "test_process_ids_checked_absent": [2748, 30792],
+  "tests_restarted_after_low_memory": false,
+  "attribution": "The system-wide memory consumption is not attributed to pytest alone"
+}

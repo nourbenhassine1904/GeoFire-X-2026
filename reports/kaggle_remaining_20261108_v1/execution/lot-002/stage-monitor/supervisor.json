@@ -1,0 +1,51 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\kaggle-cli-env\\Scripts\\python.exe",
+    "scripts/stage_expanded_lot.py",
+    "--lot",
+    "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-002.json",
+    "--raw-root",
+    "D:/GeoFire-X/WildfireSpreadTS/rasters",
+    "--out",
+    "artifacts/kaggle_remaining_20261108_v1/lot-002",
+    "--max-bytes",
+    "5005042486"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 3325124608,
+    "load_percent": 80,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 15558225920,
+    "commit_used_bytes": 21680369664
+  },
+  "limit_seconds": 3600,
+  "start_memory_bytes": 2415919104,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 536870912,
+  "rss_limit_bytes": 536870912,
+  "time": "2026-11-08T13:57:55.399395+00:00",
+  "status": "LOW_AVAILABLE_MEMORY",
+  "exit_code": 1,
+  "pid": 31252,
+  "children_started": 1,
+  "last_observed_owned_pids": [
+    31252,
+    32064
+  ],
+  "elapsed_seconds": 117.8130000000001,
+  "peak_tree_rss_bytes": 25665536,
+  "peak_sampled_private_commit_bytes": 14348288,
+  "peak_job_commit_bytes": 14614528,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 2123952128,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 2153811968,
+    "load_percent": 87,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 14489317376,
+    "commit_used_bytes": 22749278208
+  }
+}

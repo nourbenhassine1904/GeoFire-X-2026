@@ -1,0 +1,41 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "tests/test_kaggle_prepublication_small.py",
+    "-v"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6166495232,
+    "load_percent": 63,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18962759680,
+    "commit_used_bytes": 18275835904
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 536870912,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T14:35:33.024542+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 21128,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5159999999996217,
+  "peak_tree_rss_bytes": 28643328,
+  "peak_sampled_private_commit_bytes": 17133568,
+  "peak_job_commit_bytes": 18251776,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 6148956160,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6151127040,
+    "load_percent": 63,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18962870272,
+    "commit_used_bytes": 18275725312
+  }
+}

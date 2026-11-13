@@ -1,0 +1,359 @@
+{
+  "status": "VALIDATED_CPU_ONLY",
+  "normalization_seconds": 0.7121620999969309,
+  "normalization_mode": "REUSED_VERIFIED_TRAIN_ONLY",
+  "normalization_reuse": {
+    "source": "reports\\full_corpus_v1\\prepared_v1\\normalization.json",
+    "sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "original_fit_seconds": 466.24399000000267,
+    "original_input_hashes": {
+      "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+      "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+      "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+      "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+      "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+    }
+  },
+  "normalization_unique_train_contexts": 4948,
+  "normalization_train_events": 250,
+  "normalizer_channels": [
+    "slope_z",
+    "elevation_z",
+    "slope_missing",
+    "elevation_missing",
+    "aspect_sin",
+    "aspect_cos",
+    "aspect_missing",
+    "fire_J"
+  ],
+  "channels": 8,
+  "raw_bands": 23,
+  "test_paths_used": 0,
+  "batches": [
+    {
+      "split": "train",
+      "context": 1,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.3760830999963218,
+      "seconds": 2.382197400002042,
+      "patches_per_second": 20.14946368422653,
+      "p50_batch_seconds": 0.003909150000254158,
+      "p95_batch_seconds": 1.1525832300016188,
+      "x_shape": [
+        4,
+        1,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "train",
+      "context": 3,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 0.6574546000047121,
+      "seconds": 1.3331979000067804,
+      "patches_per_second": 36.003657071283925,
+      "p50_batch_seconds": 0.007551300004706718,
+      "p95_batch_seconds": 0.6054358750043319,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "train",
+      "context": 5,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.4495776999974623,
+      "seconds": 3.211287700003595,
+      "patches_per_second": 14.94727488911886,
+      "p50_batch_seconds": 0.020069650003279094,
+      "p95_batch_seconds": 1.5042277249944163,
+      "x_shape": [
+        4,
+        5,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 1,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 2.720718000011402,
+      "seconds": 6.352699700015364,
+      "patches_per_second": 7.555842754519611,
+      "p50_batch_seconds": 0.008335100006661378,
+      "p95_batch_seconds": 3.094963065001502,
+      "x_shape": [
+        4,
+        1,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 3,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.709359200001927,
+      "seconds": 3.2928662999765947,
+      "patches_per_second": 14.576965970449871,
+      "p50_batch_seconds": 0.010228349994577002,
+      "p95_batch_seconds": 1.585650010005338,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 5,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.9819535999995423,
+      "seconds": 3.762539800038212,
+      "patches_per_second": 12.757340134850539,
+      "p50_batch_seconds": 0.013760650006588548,
+      "p95_batch_seconds": 1.794056990001263,
+      "x_shape": [
+        4,
+        5,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    }
+  ],
+  "forward_contracts": [
+    {
+      "model": "B0",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.038158700001076795,
+      "parameters": 0,
+      "device": "cpu"
+    },
+    {
+      "model": "B1",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.06693780000205152,
+      "parameters": 5809,
+      "device": "cpu"
+    },
+    {
+      "model": "B2",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.050450800001272,
+      "parameters": 123977,
+      "device": "cpu"
+    },
+    {
+      "model": "B3",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.025639599989517592,
+      "parameters": 5297,
+      "device": "cpu"
+    }
+  ],
+  "patch_inventory": {
+    "patch_size": 64,
+    "domain": "joint maximum context T=5 + target, identical for T=1/3/5",
+    "positive_sampling": "not used for this inventory; validation never filtered by labels",
+    "by_split": {
+      "train": {
+        "examples": 3948,
+        "geometric_patches": 93603,
+        "usable_patches": 93603,
+        "empty_patches": 0,
+        "valid_joint_pixels": 313977876,
+        "masked_examples": 0
+      },
+      "val": {
+        "examples": 3287,
+        "geometric_patches": 78771,
+        "usable_patches": 78771,
+        "empty_patches": 0,
+        "valid_joint_pixels": 263630731,
+        "masked_examples": 0
+      }
+    }
+  },
+  "gpu_training": false,
+  "optimizer_updates": 0,
+  "windows_source": "reports\\full_corpus_v1\\prepared_spark_v1\\windows.parquet",
+  "input_hashes": {
+    "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+    "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+  },
+  "torch_threads": 2,
+  "loader_workers": 0,
+  "reader_cache_mb": 64,
+  "resources": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpus": 12,
+    "workspace_free_bytes": 111056547840,
+    "corpus_volume_free_bytes": 438386307072,
+    "ram_total_bytes": 16837500928,
+    "ram_available_bytes": 1621049344,
+    "process_working_set_bytes": 747892736,
+    "process_peak_working_set_bytes": 770387968
+  },
+  "cache_caveat": "OS cache not flushed; first batch is not a certified cold-disk measurement"
+}

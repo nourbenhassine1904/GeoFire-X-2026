@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "original_samples": [
+    {
+      "role": "train",
+      "index": 0,
+      "event_id": "2018/fire_21458798",
+      "target_date": "2018-01-06",
+      "category": "negative"
+    },
+    {
+      "role": "train",
+      "index": 35,
+      "event_id": "2018/fire_21458798",
+      "target_date": "2018-01-07",
+      "category": "positive"
+    },
+    {
+      "role": "train",
+      "index": 55,
+      "event_id": "2018/fire_21458798",
+      "target_date": "2018-01-08",
+      "category": "hard_negative"
+    },
+    {
+      "role": "train",
+      "index": 1725,
+      "event_id": "2018/fire_21999270",
+      "target_date": "2018-08-20",
+      "category": "negative"
+    },
+    {
+      "role": "train",
+      "index": 3449,
+      "event_id": "2019/fire_23572745",
+      "target_date": "2019-12-15",
+      "category": "negative"
+    },
+    {
+      "role": "val",
+      "index": 0,
+      "event_id": "2020/fire_23654679",
+      "target_date": "2020-01-06",
+      "category": "negative"
+    },
+    {
+      "role": "val",
+      "index": 42,
+      "event_id": "2020/fire_23654679",
+      "target_date": "2020-01-07",
+      "category": "positive"
+    },
+    {
+      "role": "val",
+      "index": 102,
+      "event_id": "2020/fire_23654679",
+      "target_date": "2020-01-09",
+      "category": "hard_negative"
+    },
+    {
+      "role": "val",
+      "index": 1287,
+      "event_id": "2020/fire_24333033",
+      "target_date": "2020-08-16",
+      "category": "negative"
+    },
+    {
+      "role": "val",
+      "index": 2574,
+      "event_id": "2020/fire_24695970",
+      "target_date": "2020-12-06",
+      "category": "negative"
+    }
+  ],
+  "archive_members_identical_to_reference": 7850,
+  "train_and_validation_loader": true,
+  "comparison": "float32 arrays and masks exactly equal; no tolerance"
+}

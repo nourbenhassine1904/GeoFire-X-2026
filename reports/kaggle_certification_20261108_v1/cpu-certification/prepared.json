@@ -1,0 +1,25 @@
+{
+  "status": "LOCAL_PREPARATION_ONLY",
+  "notebook_bytes": 184641,
+  "source_manifest": {
+    "geofirex/__init__.py": "41362a5ea4931c546433d4c48290c5707bf02dbbea1c3aafa9f43d1225e47003",
+    "geofirex/runner_data.py": "c0acf84bc775c9d8fe06f62080549af74d02a7815a73ef2adc8ccec6371c6f7f",
+    "geofirex/benchmark.py": "5028ee575056e256fa925d4a20e4a31a4a226243bf3dc8587b9d1a58defff754",
+    "geofirex/corpus.py": "1677024d71e437985e370b551684ca72a415f1c216b0890864a40f23771bbe52",
+    "geofirex/remote_archive.py": "e4c0db84efb0b9460fe0397dd9a809cd6202bcb69af8c9ec9f718c5151940650",
+    "geofirex/unet_data.py": "78b38ddf3590acb8dc57ff9d5b6071f68b70ad72b4bbd32aee8658b65ca09d1b",
+    "geofirex/windows.py": "304a8eeca69004bf3dfcd0fb3eb2c3be3a2765b9ac6473673d15109cb4a0a785",
+    "geofirex/real_constants.py": "e6d71a56ba0add9aded9fbe01748355f88924aaf33502d4b3b49d12cf55ef1f9"
+  },
+  "canonical_manifest_sha256": "1392e6ca16c8f22f04be2cb04c81d6da00daf026660d3a86ca4b96e8fb990638",
+  "notebooks": [
+    {
+      "tag": "lot-001",
+      "notebook_sha256": "4d0c91a1d011c00ac2aa262dee28e3f99fe0af9d6729f03c7daeb3bf986d3554",
+      "sources": [
+        "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-lot001-cpu-20261108-v1"
+    }
+  ]
+}

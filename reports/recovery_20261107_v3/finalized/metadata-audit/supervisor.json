@@ -1,0 +1,45 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "scripts/audit_gpu_recovery.py",
+    "--metadata-only",
+    "--raw-root",
+    "D:/GeoFire-X/WildfireSpreadTS/rasters",
+    "--out",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\finalized\\metadata-integrity.json"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5900611584,
+    "load_percent": 64,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19489701888,
+    "commit_used_bytes": 17748893696
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:27:36.049671+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 15312,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 1.2660000000005311,
+  "peak_tree_rss_bytes": 173535232,
+  "peak_sampled_private_commit_bytes": 235188224,
+  "peak_job_commit_bytes": 246824960,
+  "peak_owned_processes": 3,
+  "minimum_available_bytes": 5815140352,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6029119488,
+    "load_percent": 64,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19628228608,
+    "commit_used_bytes": 17610366976
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "log": "[{\"stream_name\":\"stdout\",\"time\":568.813163005,\"data\":\"{\\\"device\\\": \\\"cuda\\\", \\\"gpu\\\": \\\"Tesla T4\\\", \\\"rows\\\": [], \\\"provenance\\\": {\\\"train_events\\\": [\\\"2018/fire_21458798\\\", \\\"2018/fire_21458801\\\", \\\"2018/fire_21458806\\\", \\\"2018/fire_21458836\\\", \\\"2018/fire_21458848\\\", \\\"2018/fire_21459234\\\", \\\"2018/fire_21459239\\\", \\\"2018/fire_21459242\\\", \\\"2018/fire_21459249\\\", \\\"2018/fire_21459253\\\", \\\"2018/fire_21538827\\\", \\\"2018/fire_21615465\\\", \\\"2018/fire_21615469\\\", \\\"2018/fire_21617464\\\", \\\"2018/fire_21688910\\\", \\\"2018/fire_21688916\\\", \\\"2018/fire_21690064\\\", \\\"2018/fire_21690071\\\", \\\"2018/fire_21690073\\\", \\\"2018/fire_21690102\\\", \\\"2018/fire_21693353\\\", \\\"2018/fire_21748766\\\", \\\"2018/fire_21748783\\\", \\\"2018/fire_21748798\\\", \\\"2018/fire_21748801\\\", \\\"2018/fire_21748813\\\", \\\"2018/fire_21751303\\\", \\\"2018/fire_21751305\\\", \\\"2018/fire_21751315\\\", \\\"2018/fire_21804572\\\", \\\"2018/fire_21804577\\\", \\\"2018/fire_21804582\\\", \\\"2018/fire_21804588\\\", \\\"2018/fire_21804589\\\", \\\"2018/fire_21804590\\\", \\\"2018/fire_21804877\\\", \\\"2018/fire_21804883\\\", \\\"2018/fire_21804884\\\", \\\"2018/fire_21804893\\\", \\\"2018/fire_21804895\\\", \\\"2018/fire_21804899\\\", \\\"2018/fire_21804942\\\", \\\"2018/fire_21804961\\\", \\\"2018/fire_21804975\\\", \\\"2018/fire_21804980\\\", \\\"2018/fire_21804985\\\", \\\"2018/fire_21805022\\\", \\\"2018/fire_21889672\\\", \\\"2018/fire_21889679\\\", \\\"2018/fire_21889682\\\", \\\"2018/fire_21889683\\\", \\\"2018/fire_21889697\\\", \\\"2018/fire_21889717\\\", \\\"2018/fire_21889719\\\", \\\"2018/fire_21889734\\\", \\\"2018/fire_21889744\\\", \\\"2018/fire_21889750\\\", \\\"2018/fire_21889754\\\", \\\"2018/fire_21889763\\\", \\\"2018/fire_21889779\\\", \\\"2018/fire_21889798\\\", \\\"2018/fire_21889808\\\", \\\"2018/fire_21889826\\\", \\\"2018/fire_21889943\\\", \\\"2018/fire_21889947\\\", \\\"2018/fire_21889953\\\", \\\"2018/fire_21889957\\\", \\\"2018/fire_21889986\\\", \\\"2018/fire_21889990\\\", \\\"2018/fire_21889992\\\", \\\"2018/fire_21889994\\\", \\\"2018/fire_21889995\\\", \\\"2018/fire_21889997\\\", \\\"2018/fire_21890003\\\", \\\"2018/fire_21890007\\\", \\\"2018/fire_21890009\\\", \\\"2018/fire_21890010\\\", \\\"2018/fire_21890013\\\", \\\"2018/fire_21890019\\\", \\\"2018/fire_21890024\\\", \\\"2018/fire_21890033\\\", \\\"2018/fire_21890054\\\", \\\"2018/fire_21890056\\\", \\\"2018/fire_21890058\\\", \\\"2018/fire_21890063\\\", \\\"2018/fire_21890065\\\", \\\"2018/fire_21890069\\\", \\\"2018/fire_21890072\\\", \\\"2018/fire_21890078\\\", \\\"2018/fire_21890087\\\", \\\"2018/fire_21890091\\\", \\\"2018/fire_21890098\\\", \\\"2018/fire_21890100\\\", \\\"2018/fire_21890101\\\", \\\"2018/fire_21890103\\\", \\\"2018/fire_21890106\\\", \\\"2018/fire_21890109\\\", \\\"2018/fire_21890111\\\", \\\"2018/fire_21890115\\\", \\\"2018/fire_21890134\\\", \\\"2018/fire_21890137\\\", \\\"2018/fire_21890143\\\", \\\"2018/fire_21890160\\\", \\\"2018/fire_21890170\\\", \\\"2018/fire_21890208\\\", \\\"2018/fire_21890515\\\", \\\"2018/fire_21890524\\\", \\\"2018/fire_21890643\\\", \\\"2018/fire_21997770\\\", \\\"2018/fire_21997775\\\", \\\"2018/fire_21997828\\\", \\\"2018/fire_21997844\\\", \\\"2018/fire_21997851\\\", \\\"2018/fire_21997854\\\", \\\"2018/fire_21997864\\\", \\\"2018/fire_21998023\\\", \\\"2018/fire_21998081\\\", \\\"2018/fire_21998095\\\", \\\"2018/fire_21998097\\\"], \\\"val_events\\\": [\\\"2020/fire_23654679\\\", \\\"2020/fire_24104674\\\"], \\\"duplicate_paths_resolved\\\": 32, \\\"source_verification\\\": \\\"existing certificates; current file sizes only, no repeat SHA/CRC audit\\\"}, \\\"train_tiles\\\": 48287, \\\"diagnostic_cases\\\": [], \\\"diagnostic_positive_pixels\\\": 0, \\\"diagnostic_scope\\\": \\\"label-informed loader diagnostic, not representative validation\\\", \\\"elapsed_seconds\\\": 525.706484368, \\\"complete_epochs\\\": 0, \\\"test_2021\\\": false}\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":573.61624285,\"data\":\"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\\\|'\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":573.616295365,\"data\":\"  cells[i][c] = re.sub('\\\\\\\\\\\\\\\\\\\\|', '|', cell)\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":573.879185135,\"data\":\"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\\\_'\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":573.879209502,\"data\":\"  text = re.sub(r'_', '\\\\_', text) # Escape underscores in display text\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":574.646806027,\"data\":\"[NbConvertApp] Converting notebook __script__.ipynb to html\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":575.586835747,\"data\":\"[NbConvertApp] Writing 857051 bytes to __results__.html\\n\"}\n]",
+  "files": [
+    {
+      "fileName": "acceleration-code/__pycache__/profile_acceleration_gpu.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/metadata/normalization.json"
+    },
+    {
+      "fileName": "acceleration-code/metadata/observations.parquet"
+    },
+    {
+      "fileName": "acceleration-code/metadata/windows.parquet"
+    },
+    {
+      "fileName": "acceleration-code/profile_acceleration_gpu.py"
+    },
+    {
+      "fileName": "acceleration-code/scope.json"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__init__.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/__init__.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark_metrics.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark_models.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/corpus.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/fast_compact.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/fast_raw.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/mission_streaming.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/mission_training.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/real_constants.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/remote_archive.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/runner_data.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/runner_evaluation.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet_data.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet_evaluation.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/windows.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/acquisition_session.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/archive_transfer.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/archive_verification.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/audit.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/baseline.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark_metrics.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark_models.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/cloud_corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/constants.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/dataset.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/deterministic_models.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/event_cache.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/fast_compact.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/fast_raw.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/feature_profiles.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/full_corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/gpu_operational.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/io.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/job_control.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/kaggle_persistence.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/manifest.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/metrics.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_results.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_streaming.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_training.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/orchestration.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_constants.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_dataset.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_manifest.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_splits.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/remote_archive.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner_data.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner_evaluation.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/scientific_scaleup.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/serving.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/splits.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/synthetic.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet_data.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet_evaluation.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/upload_budget.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/windows.py"
+    },
+    {
+      "fileName": "profile-results/summary.json"
+    }
+  ]
+}

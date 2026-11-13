@@ -1,0 +1,233 @@
+{
+  "log": "[{\"stream_name\":\"stdout\",\"time\":24.134446056,\"data\":\"SETUP_SECONDS 4.800465323999987\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":70.092393893,\"data\":\"{\\\"loader\\\": \\\"old\\\", \\\"workers\\\": 0, \\\"pin_memory\\\": false, \\\"persistent_workers\\\": false, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 17.904329157999882, \\\"tiles_per_second\\\": 3.574554479825567, \\\"estimated_119_train_epoch_seconds\\\": 13508.536594567819, \\\"scaled_250_train_seconds\\\": 26185.92065900411, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 5.842023627000003, \\\"h2d\\\": 0.0019071950000011384, \\\"compute\\\": 0.006257791000052748, \\\"worker_loading_sum\\\": 5.840474478999852, \\\"tiles\\\": 16, \\\"loss\\\": 0.8616602420806885}, {\\\"wait\\\": 4.372003358999962, \\\"h2d\\\": 0.0017961439999680806, \\\"compute\\\": 0.006313312999964182, \\\"worker_loading_sum\\\": 4.36840030999997, \\\"tiles\\\": 16, \\\"loss\\\": 0.8533715605735779}, {\\\"wait\\\": 3.8014485769999737, \\\"h2d\\\": 0.0021115339999937532, \\\"compute\\\": 0.006637001000001419, \\\"worker_loading_sum\\\": 3.7999693749999324, \\\"tiles\\\": 16, \\\"loss\\\": 0.8429917693138123}, {\\\"wait\\\": 3.8557317879999573, \\\"h2d\\\": 0.0018690250000190645, \\\"compute\\\": 0.006229803999985961, \\\"worker_loading_sum\\\": 3.8545409649999556, \\\"tiles\\\": 16, \\\"loss\\\": 0.8279028534889221}], \\\"peak_parent_rss\\\": 1840902144, \\\"gpu_allocated\\\": 38387712}\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":77.505386068,\"data\":\"{\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 0, \\\"pin_memory\\\": false, \\\"persistent_workers\\\": false, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 5.640780759999984, \\\"tiles_per_second\\\": 11.345947081268973, \\\"estimated_119_train_epoch_seconds\\\": 4255.880946220614, \\\"scaled_250_train_seconds\\\": 8249.906273098102, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 1.419529175999969, \\\"h2d\\\": 0.0017556910000280368, \\\"compute\\\": 0.006376614000032532, \\\"worker_loading_sum\\\": 1.4183315659998925, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 1.1629059989999746, \\\"h2d\\\": 0.0019146019999993769, \\\"compute\\\": 0.006266497999945386, \\\"worker_loading_sum\\\": 1.1596352740000953, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 1.1665966539999886, \\\"h2d\\\": 0.0018439550000266536, \\\"compute\\\": 0.006517235999979221, \\\"worker_loading_sum\\\": 1.1627659770000491, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 1.8590903170000388, \\\"h2d\\\": 0.001841224000031616, \\\"compute\\\": 0.0061427939999703085, \\\"worker_loading_sum\\\": 1.85773371699986, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1925705728, \\\"gpu_allocated\\\": 38387712}\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":82.010521195,\"data\":\"{\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 2, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 3.231753586000025, \\\"tiles_per_second\\\": 19.803490054826078, \\\"estimated_119_train_epoch_seconds\\\": 2438.3075844872374, \\\"scaled_250_train_seconds\\\": 4726.59110797438, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 1.2597429070000317, \\\"h2d\\\": 0.0006763109999496919, \\\"compute\\\": 0.006353284999988773, \\\"worker_loading_sum\\\": 1.4463158170001407, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 7.257800001525538e-05, \\\"h2d\\\": 0.0006106540000132554, \\\"compute\\\": 0.005885905000013736, \\\"worker_loading_sum\\\": 1.2538569419999703, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 1.2561509399999977, \\\"h2d\\\": 0.0007657820000304127, \\\"compute\\\": 0.006745485000010376, \\\"worker_loading_sum\\\": 1.2767501840000364, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 0.6880494679999742, \\\"h2d\\\": 0.0006625880000115103, \\\"compute\\\": 0.006037682999988192, \\\"worker_loading_sum\\\": 1.9799477680001019, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1925705728, \\\"gpu_allocated\\\": 38387712}\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":82.33095576,\"data\":\"{\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 2, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B2\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 0.06590076100002307, \\\"tiles_per_second\\\": 971.1572222963798, \\\"estimated_119_train_epoch_seconds\\\": 49.721094475126776, \\\"scaled_250_train_seconds\\\": 96.38295206070562, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 0.00012454199998046533, \\\"h2d\\\": 0.0006645010000170259, \\\"compute\\\": 0.015827849000004335, \\\"worker_loading_sum\\\": 0.0031602770000063174, \\\"tiles\\\": 16, \\\"loss\\\": 0.5160971879959106}, {\\\"wait\\\": 9.024799999224342e-05, \\\"h2d\\\": 0.0006180620000009185, \\\"compute\\\": 0.01595873799999481, \\\"worker_loading_sum\\\": 0.005283865000080823, \\\"tiles\\\": 16, \\\"loss\\\": 0.5142112970352173}, {\\\"wait\\\": 8.614600000100836e-05, \\\"h2d\\\": 0.000607070000000931, \\\"compute\\\": 0.015687895999974444, \\\"worker_loading_sum\\\": 0.004082697000114877, \\\"tiles\\\": 16, \\\"loss\\\": 0.5120947360992432}, {\\\"wait\\\": 7.387800002334188e-05, \\\"h2d\\\": 0.0006036430000335713, \\\"compute\\\": 0.015558187999999973, \\\"worker_loading_sum\\\": 0.0033415420000437734, \\\"tiles\\\": 16, \\\"loss\\\": 0.5126643776893616}], \\\"peak_parent_rss\\\": 1967796224, \\\"gpu_allocated\\\": 71436800}\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":86.289118793,\"data\":\"{\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 4, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 2.0332792479999853, \\\"tiles_per_second\\\": 31.476247083598064, \\\"estimated_119_train_epoch_seconds\\\": 1534.0774226277388, \\\"scaled_250_train_seconds\\\": 2973.7662101647284, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 0.5294442290000347, \\\"h2d\\\": 0.0006714859999874534, \\\"compute\\\": 0.006549434000021392, \\\"worker_loading_sum\\\": 2.307430482999848, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 0.00010806099999172147, \\\"h2d\\\": 0.0006417970000143214, \\\"compute\\\": 0.006223226999964027, \\\"worker_loading_sum\\\": 2.0321233180000036, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 0.6918476899999746, \\\"h2d\\\": 0.0006769670000039696, \\\"compute\\\": 0.006116478000024017, \\\"worker_loading_sum\\\": 1.5454593030000865, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 0.7844305259999942, \\\"h2d\\\": 0.0006601700000032906, \\\"compute\\\": 0.005909182999971563, \\\"worker_loading_sum\\\": 2.052827230000105, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1967837184, \\\"gpu_allocated\\\": 71436800}\\n\"}\n,{\"stream_name\":\"stdout\",\"time\":92.240283789,\"data\":\"{\\\"device\\\": \\\"cuda\\\", \\\"gpu\\\": \\\"Tesla T4\\\", \\\"rows\\\": [{\\\"loader\\\": \\\"old\\\", \\\"workers\\\": 0, \\\"pin_memory\\\": false, \\\"persistent_workers\\\": false, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 17.904329157999882, \\\"tiles_per_second\\\": 3.574554479825567, \\\"estimated_119_train_epoch_seconds\\\": 13508.536594567819, \\\"scaled_250_train_seconds\\\": 26185.92065900411, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 5.842023627000003, \\\"h2d\\\": 0.0019071950000011384, \\\"compute\\\": 0.006257791000052748, \\\"worker_loading_sum\\\": 5.840474478999852, \\\"tiles\\\": 16, \\\"loss\\\": 0.8616602420806885}, {\\\"wait\\\": 4.372003358999962, \\\"h2d\\\": 0.0017961439999680806, \\\"compute\\\": 0.006313312999964182, \\\"worker_loading_sum\\\": 4.36840030999997, \\\"tiles\\\": 16, \\\"loss\\\": 0.8533715605735779}, {\\\"wait\\\": 3.8014485769999737, \\\"h2d\\\": 0.0021115339999937532, \\\"compute\\\": 0.006637001000001419, \\\"worker_loading_sum\\\": 3.7999693749999324, \\\"tiles\\\": 16, \\\"loss\\\": 0.8429917693138123}, {\\\"wait\\\": 3.8557317879999573, \\\"h2d\\\": 0.0018690250000190645, \\\"compute\\\": 0.006229803999985961, \\\"worker_loading_sum\\\": 3.8545409649999556, \\\"tiles\\\": 16, \\\"loss\\\": 0.8279028534889221}], \\\"peak_parent_rss\\\": 1840902144, \\\"gpu_allocated\\\": 38387712}, {\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 0, \\\"pin_memory\\\": false, \\\"persistent_workers\\\": false, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 5.640780759999984, \\\"tiles_per_second\\\": 11.345947081268973, \\\"estimated_119_train_epoch_seconds\\\": 4255.880946220614, \\\"scaled_250_train_seconds\\\": 8249.906273098102, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 1.419529175999969, \\\"h2d\\\": 0.0017556910000280368, \\\"compute\\\": 0.006376614000032532, \\\"worker_loading_sum\\\": 1.4183315659998925, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 1.1629059989999746, \\\"h2d\\\": 0.0019146019999993769, \\\"compute\\\": 0.006266497999945386, \\\"worker_loading_sum\\\": 1.1596352740000953, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 1.1665966539999886, \\\"h2d\\\": 0.0018439550000266536, \\\"compute\\\": 0.006517235999979221, \\\"worker_loading_sum\\\": 1.1627659770000491, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 1.8590903170000388, \\\"h2d\\\": 0.001841224000031616, \\\"compute\\\": 0.0061427939999703085, \\\"worker_loading_sum\\\": 1.85773371699986, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1925705728, \\\"gpu_allocated\\\": 38387712}, {\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 2, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 3.231753586000025, \\\"tiles_per_second\\\": 19.803490054826078, \\\"estimated_119_train_epoch_seconds\\\": 2438.3075844872374, \\\"scaled_250_train_seconds\\\": 4726.59110797438, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 1.2597429070000317, \\\"h2d\\\": 0.0006763109999496919, \\\"compute\\\": 0.006353284999988773, \\\"worker_loading_sum\\\": 1.4463158170001407, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 7.257800001525538e-05, \\\"h2d\\\": 0.0006106540000132554, \\\"compute\\\": 0.005885905000013736, \\\"worker_loading_sum\\\": 1.2538569419999703, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 1.2561509399999977, \\\"h2d\\\": 0.0007657820000304127, \\\"compute\\\": 0.006745485000010376, \\\"worker_loading_sum\\\": 1.2767501840000364, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 0.6880494679999742, \\\"h2d\\\": 0.0006625880000115103, \\\"compute\\\": 0.006037682999988192, \\\"worker_loading_sum\\\": 1.9799477680001019, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1925705728, \\\"gpu_allocated\\\": 38387712}, {\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 2, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B2\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 0.06590076100002307, \\\"tiles_per_second\\\": 971.1572222963798, \\\"estimated_119_train_epoch_seconds\\\": 49.721094475126776, \\\"scaled_250_train_seconds\\\": 96.38295206070562, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 0.00012454199998046533, \\\"h2d\\\": 0.0006645010000170259, \\\"compute\\\": 0.015827849000004335, \\\"worker_loading_sum\\\": 0.0031602770000063174, \\\"tiles\\\": 16, \\\"loss\\\": 0.5160971879959106}, {\\\"wait\\\": 9.024799999224342e-05, \\\"h2d\\\": 0.0006180620000009185, \\\"compute\\\": 0.01595873799999481, \\\"worker_loading_sum\\\": 0.005283865000080823, \\\"tiles\\\": 16, \\\"loss\\\": 0.5142112970352173}, {\\\"wait\\\": 8.614600000100836e-05, \\\"h2d\\\": 0.000607070000000931, \\\"compute\\\": 0.015687895999974444, \\\"worker_loading_sum\\\": 0.004082697000114877, \\\"tiles\\\": 16, \\\"loss\\\": 0.5120947360992432}, {\\\"wait\\\": 7.387800002334188e-05, \\\"h2d\\\": 0.0006036430000335713, \\\"compute\\\": 0.015558187999999973, \\\"worker_loading_sum\\\": 0.0033415420000437734, \\\"tiles\\\": 16, \\\"loss\\\": 0.5126643776893616}], \\\"peak_parent_rss\\\": 1967796224, \\\"gpu_allocated\\\": 71436800}, {\\\"loader\\\": \\\"cached\\\", \\\"workers\\\": 4, \\\"pin_memory\\\": true, \\\"persistent_workers\\\": true, \\\"model\\\": \\\"B1\\\", \\\"measured_updates\\\": 4, \\\"tiles\\\": 64, \\\"seconds\\\": 2.0332792479999853, \\\"tiles_per_second\\\": 31.476247083598064, \\\"estimated_119_train_epoch_seconds\\\": 1534.0774226277388, \\\"scaled_250_train_seconds\\\": 2973.7662101647284, \\\"scope\\\": \\\"raw119 measured; compact throughput not measured on this GPU\\\", \\\"stages\\\": [{\\\"wait\\\": 0.5294442290000347, \\\"h2d\\\": 0.0006714859999874534, \\\"compute\\\": 0.006549434000021392, \\\"worker_loading_sum\\\": 2.307430482999848, \\\"tiles\\\": 16, \\\"loss\\\": 0.867534339427948}, {\\\"wait\\\": 0.00010806099999172147, \\\"h2d\\\": 0.0006417970000143214, \\\"compute\\\": 0.006223226999964027, \\\"worker_loading_sum\\\": 2.0321233180000036, \\\"tiles\\\": 16, \\\"loss\\\": 0.8636702299118042}, {\\\"wait\\\": 0.6918476899999746, \\\"h2d\\\": 0.0006769670000039696, \\\"compute\\\": 0.006116478000024017, \\\"worker_loading_sum\\\": 1.5454593030000865, \\\"tiles\\\": 16, \\\"loss\\\": 0.8601602911949158}, {\\\"wait\\\": 0.7844305259999942, \\\"h2d\\\": 0.0006601700000032906, \\\"compute\\\": 0.005909182999971563, \\\"worker_loading_sum\\\": 2.052827230000105, \\\"tiles\\\": 16, \\\"loss\\\": 0.8170238137245178}], \\\"peak_parent_rss\\\": 1967837184, \\\"gpu_allocated\\\": 71436800}], \\\"setup_seconds\\\": 4.800465323999987, \\\"provenance\\\": {\\\"train_events\\\": [\\\"2018/fire_21458798\\\", \\\"2018/fire_21458801\\\", \\\"2018/fire_21458806\\\", \\\"2018/fire_21458836\\\", \\\"2018/fire_21458848\\\", \\\"2018/fire_21459234\\\", \\\"2018/fire_21459239\\\", \\\"2018/fire_21459242\\\", \\\"2018/fire_21459249\\\", \\\"2018/fire_21459253\\\", \\\"2018/fire_21538827\\\", \\\"2018/fire_21615465\\\", \\\"2018/fire_21615469\\\", \\\"2018/fire_21617464\\\", \\\"2018/fire_21688910\\\", \\\"2018/fire_21688916\\\", \\\"2018/fire_21690064\\\", \\\"2018/fire_21690071\\\", \\\"2018/fire_21690073\\\", \\\"2018/fire_21690102\\\", \\\"2018/fire_21693353\\\", \\\"2018/fire_21748766\\\", \\\"2018/fire_21748783\\\", \\\"2018/fire_21748798\\\", \\\"2018/fire_21748801\\\", \\\"2018/fire_21748813\\\", \\\"2018/fire_21751303\\\", \\\"2018/fire_21751305\\\", \\\"2018/fire_21751315\\\", \\\"2018/fire_21804572\\\", \\\"2018/fire_21804577\\\", \\\"2018/fire_21804582\\\", \\\"2018/fire_21804588\\\", \\\"2018/fire_21804589\\\", \\\"2018/fire_21804590\\\", \\\"2018/fire_21804877\\\", \\\"2018/fire_21804883\\\", \\\"2018/fire_21804884\\\", \\\"2018/fire_21804893\\\", \\\"2018/fire_21804895\\\", \\\"2018/fire_21804899\\\", \\\"2018/fire_21804942\\\", \\\"2018/fire_21804961\\\", \\\"2018/fire_21804975\\\", \\\"2018/fire_21804980\\\", \\\"2018/fire_21804985\\\", \\\"2018/fire_21805022\\\", \\\"2018/fire_21889672\\\", \\\"2018/fire_21889679\\\", \\\"2018/fire_21889682\\\", \\\"2018/fire_21889683\\\", \\\"2018/fire_21889697\\\", \\\"2018/fire_21889717\\\", \\\"2018/fire_21889719\\\", \\\"2018/fire_21889734\\\", \\\"2018/fire_21889744\\\", \\\"2018/fire_21889750\\\", \\\"2018/fire_21889754\\\", \\\"2018/fire_21889763\\\", \\\"2018/fire_21889779\\\", \\\"2018/fire_21889798\\\", \\\"2018/fire_21889808\\\", \\\"2018/fire_21889826\\\", \\\"2018/fire_21889943\\\", \\\"2018/fire_21889947\\\", \\\"2018/fire_21889953\\\", \\\"2018/fire_21889957\\\", \\\"2018/fire_21889986\\\", \\\"2018/fire_21889990\\\", \\\"2018/fire_21889992\\\", \\\"2018/fire_21889994\\\", \\\"2018/fire_21889995\\\", \\\"2018/fire_21889997\\\", \\\"2018/fire_21890003\\\", \\\"2018/fire_21890007\\\", \\\"2018/fire_21890009\\\", \\\"2018/fire_21890010\\\", \\\"2018/fire_21890013\\\", \\\"2018/fire_21890019\\\", \\\"2018/fire_21890024\\\", \\\"2018/fire_21890033\\\", \\\"2018/fire_21890054\\\", \\\"2018/fire_21890056\\\", \\\"2018/fire_21890058\\\", \\\"2018/fire_21890063\\\", \\\"2018/fire_21890065\\\", \\\"2018/fire_21890069\\\", \\\"2018/fire_21890072\\\", \\\"2018/fire_21890078\\\", \\\"2018/fire_21890087\\\", \\\"2018/fire_21890091\\\", \\\"2018/fire_21890098\\\", \\\"2018/fire_21890100\\\", \\\"2018/fire_21890101\\\", \\\"2018/fire_21890103\\\", \\\"2018/fire_21890106\\\", \\\"2018/fire_21890109\\\", \\\"2018/fire_21890111\\\", \\\"2018/fire_21890115\\\", \\\"2018/fire_21890134\\\", \\\"2018/fire_21890137\\\", \\\"2018/fire_21890143\\\", \\\"2018/fire_21890160\\\", \\\"2018/fire_21890170\\\", \\\"2018/fire_21890208\\\", \\\"2018/fire_21890515\\\", \\\"2018/fire_21890524\\\", \\\"2018/fire_21890643\\\", \\\"2018/fire_21997770\\\", \\\"2018/fire_21997775\\\", \\\"2018/fire_21997828\\\", \\\"2018/fire_21997844\\\", \\\"2018/fire_21997851\\\", \\\"2018/fire_21997854\\\", \\\"2018/fire_21997864\\\", \\\"2018/fire_21998023\\\", \\\"2018/fire_21998081\\\", \\\"2018/fire_21998095\\\", \\\"2018/fire_21998097\\\"], \\\"val_events\\\": [\\\"2020/fire_23654679\\\", \\\"2020/fire_24104674\\\"], \\\"duplicate_events_resolved\\\": 0, \\\"source_verification\\\": \\\"pinned certified mount scope and event directory presence; file/header failures propagate at reads; no repeated per-file audit\\\", \\\"tiff_headers_opened_during_setup\\\": 0}, \\\"train_tiles\\\": 48287, \\\"diagnostic_cases\\\": [[\\\"2020/fire_23654679\\\", \\\"2020-01-07\\\", 128, 128], [\\\"2020/fire_23654679\\\", \\\"2020-01-08\\\", 64, 0], [\\\"2020/fire_23654679\\\", \\\"2020-01-08\\\", 128, 128], [\\\"2020/fire_23654679\\\", \\\"2020-01-09\\\", 64, 0], [\\\"2020/fire_23654679\\\", \\\"2020-01-13\\\", 64, 0], [\\\"2020/fire_23654679\\\", \\\"2020-01-28\\\", 64, 0], [\\\"2020/fire_24104674\\\", \\\"2020-06-16\\\", 128, 128], [\\\"2020/fire_24104674\\\", \\\"2020-06-17\\\", 128, 128], [\\\"2020/fire_24104674\\\", \\\"2020-06-18\\\", 128, 128], [\\\"2020/fire_24104674\\\", \\\"2020-06-19\\\", 128, 128], [\\\"2020/fire_24104674\\\", \\\"2020-06-20\\\", 128, 128], [\\\"2020/fire_24104674\\\", \\\"2020-06-21\\\", 128, 128]], \\\"diagnostic_positive_pixels\\\": 556, \\\"diagnostic_scope\\\": \\\"label-informed loader diagnostic, not representative validation\\\", \\\"elapsed_seconds\\\": 72.89519354500001, \\\"complete_epochs\\\": 0, \\\"test_2021\\\": false}\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":98.261944999,\"data\":\"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\\\|'\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":98.261972187,\"data\":\"  cells[i][c] = re.sub('\\\\\\\\\\\\\\\\\\\\|', '|', cell)\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":98.497877583,\"data\":\"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\\\_'\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":98.497905079,\"data\":\"  text = re.sub(r'_', '\\\\_', text) # Escape underscores in display text\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":99.313456428,\"data\":\"[NbConvertApp] Converting notebook __script__.ipynb to html\\n\"}\n,{\"stream_name\":\"stderr\",\"time\":100.190557784,\"data\":\"[NbConvertApp] Writing 857363 bytes to __results__.html\\n\"}\n]",
+  "files": [
+    {
+      "fileName": "acceleration-code/__pycache__/profile_acceleration_gpu.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/metadata/normalization.json"
+    },
+    {
+      "fileName": "acceleration-code/metadata/observations.parquet"
+    },
+    {
+      "fileName": "acceleration-code/metadata/windows.parquet"
+    },
+    {
+      "fileName": "acceleration-code/profile_acceleration_gpu.py"
+    },
+    {
+      "fileName": "acceleration-code/scope.json"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__init__.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/__init__.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark_metrics.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/benchmark_models.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/corpus.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/fast_compact.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/fast_raw.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/mission_streaming.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/mission_training.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/real_constants.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/remote_archive.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/runner_data.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/runner_evaluation.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet_data.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/unet_evaluation.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/__pycache__/windows.cpython-313.pyc"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/acquisition_session.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/archive_transfer.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/archive_verification.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/audit.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/baseline.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark_metrics.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/benchmark_models.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/cloud_corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/constants.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/dataset.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/deterministic_models.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/event_cache.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/fast_compact.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/fast_raw.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/feature_profiles.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/full_corpus.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/gpu_operational.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/io.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/job_control.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/kaggle_persistence.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/manifest.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/metrics.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_results.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_streaming.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/mission_training.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/orchestration.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_constants.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_dataset.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_manifest.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/real_splits.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/remote_archive.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner_data.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/runner_evaluation.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/scientific_scaleup.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/serving.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/splits.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/synthetic.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet_data.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/unet_evaluation.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/upload_budget.py"
+    },
+    {
+      "fileName": "acceleration-code/src/geofirex/windows.py"
+    },
+    {
+      "fileName": "profile-results/result_01.json"
+    },
+    {
+      "fileName": "profile-results/result_02.json"
+    },
+    {
+      "fileName": "profile-results/result_03.json"
+    },
+    {
+      "fileName": "profile-results/result_04.json"
+    },
+    {
+      "fileName": "profile-results/result_05.json"
+    },
+    {
+      "fileName": "profile-results/setup.json"
+    },
+    {
+      "fileName": "profile-results/summary.json"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-13",
+  "branch": "feature/scientific-scaleup-v1",
+  "head": "7428561f607914eb2f7cd286ee50435d142f8e09",
+  "remote": "https://github.com/nourbenhassine1904/GeoFire-X-2026.git",
+  "remote_main": "7428561f607914eb2f7cd286ee50435d142f8e09",
+  "divergence_with_origin_main": "0\t0",
+  "upstream_configured": false,
+  "remote_feature_branch_existed": false,
+  "remote_heads_verified_via_ls_remote": {
+    "main": "7428561f607914eb2f7cd286ee50435d142f8e09",
+    "feature/unet-baseline": "f75b63643d20ce64a0bfc2a1f567847b485c98d5"
+  },
+  "fetch_completed": true,
+  "branch_vv": "feature/frontend-lab-v2       7428561 Merge pull request #1 from nourbenhassine1904/feature/unet-baseline\n* feature/scientific-scaleup-v1 7428561 Merge pull request #1 from nourbenhassine1904/feature/unet-baseline\n  feature/unet-baseline         f75b636 [origin/feature/unet-baseline] feat: finalize certified GPU pilot demo and restored MLflow\n  main                          620f8a1 [origin/main: behind 6] chore: import validated GeoFire-X project snapshot",
+  "remote_heads_rechecked_after_staging": true,
+  "remote_feature_branch_still_absent": true
+}

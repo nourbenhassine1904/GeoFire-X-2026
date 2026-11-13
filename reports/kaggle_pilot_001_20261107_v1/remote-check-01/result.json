@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-08T00:53:46.358392+00:00",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "write_requests": 0,
+  "status": "READONLY_CHECK_STOPPED",
+  "error_type": "HTTPError",
+  "http_status": 403,
+  "diagnostic_body_bytes": 354,
+  "cumulative_http_body_bytes": 4829923672,
+  "credentials_unchanged": true
+}

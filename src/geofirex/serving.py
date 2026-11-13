@@ -242,6 +242,10 @@ def create_app(package, data_roots, expected_inventory_identity, *, device="cpu"
         from fastapi.staticfiles import StaticFiles
         app.mount("/", StaticFiles(directory=frontend, html=True), name="frontend")
 
+    from geofirex.science_results import DEFAULT_ZIP, attach_science
+    if DEFAULT_ZIP.is_file():
+        attach_science(app)
+
     return app
 
 

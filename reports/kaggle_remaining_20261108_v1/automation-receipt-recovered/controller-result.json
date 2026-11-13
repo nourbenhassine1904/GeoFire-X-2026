@@ -1,0 +1,11 @@
+{
+  "status": "CPU_AUTOMATION_READY",
+  "kernel": "nnnnbhss/geofirex-cpu-automation-gate-20261108-v2",
+  "private": true,
+  "gpu": false,
+  "recovered_existing_job_without_resubmission": true,
+  "download_bytes": 153,
+  "control_body_bytes": 462,
+  "cumulative_body_bytes": 5440,
+  "credentials_unchanged": true
+}

@@ -1,0 +1,42 @@
+{
+  "model": "B1",
+  "architecture": "spatial_cnn_v2",
+  "context": 3,
+  "channels": 8,
+  "device": "cpu",
+  "epochs": 2,
+  "profile_steps": 0,
+  "train_tiles": 3450,
+  "val_tiles": 2575,
+  "train_events": [
+    "2018/fire_21458798",
+    "2018/fire_21751305",
+    "2018/fire_21889744",
+    "2018/fire_21890058",
+    "2018/fire_21997828",
+    "2018/fire_21999270",
+    "2018/fire_22257882",
+    "2019/fire_23036860",
+    "2019/fire_23300668",
+    "2019/fire_23572745"
+  ],
+  "val_events": [
+    "2020/fire_23654679",
+    "2020/fire_24191375",
+    "2020/fire_24332761",
+    "2020/fire_24333033",
+    "2020/fire_24462764",
+    "2020/fire_24695970"
+  ],
+  "sampling": "each grid tile once per complete epoch, shuffle train only",
+  "threshold": 0.5,
+  "pos_weight": 100.0,
+  "dice_weight": 0.5,
+  "seed": 42,
+  "wall_seconds": 900,
+  "provenance": {
+    "compact_report_sha256": "fadc352675bbab1bdeafe6361d2e59c1b89ad694634d5d9769d072ba08a303c6"
+  },
+  "normalization": "existing train-only; already applied once in compact shards",
+  "test_pixels_opened": 0
+}

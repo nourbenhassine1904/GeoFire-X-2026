@@ -1,0 +1,196 @@
+{
+  "schema": "remaining-kaggle-sequential-v1",
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "lot001_closed": true,
+  "lot001_evidence": "reports\\kaggle_lot001_certified_20261108_v1",
+  "raw_root": "D:/GeoFire-X/WildfireSpreadTS/rasters",
+  "lots": [
+    {
+      "number": 2,
+      "tag": "lot-002",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+      "role": "train",
+      "events": 62,
+      "files": 1380,
+      "raw_bytes": 4995042486,
+      "identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f",
+      "observation_year_counts": {
+        "2018": 1380
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-002.json",
+      "canonical_sha256": "23ed7f84308b1946a986c6fc833954bc9a022a41282374bb1a4afeea5f0dd790",
+      "archive_ceiling_bytes": 5005042486,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-002",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-002",
+        "sha256": "2775d4530a0406c0b483e741c3a6e9912a3970f14d6048468b57f4cb21dcd64a",
+        "kernel": "nnnnbhss/geofirex-certify-lot-002-cpu-20261108-v1",
+        "bytes": 196962
+      }
+    },
+    {
+      "number": 3,
+      "tag": "lot-003",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-003-v1",
+      "role": "train",
+      "events": 68,
+      "files": 1344,
+      "raw_bytes": 4905540263,
+      "identity": "15ad89eca43c61678ad886af60387cb43b7104bb888e7a4700c2aabdb3de6201",
+      "observation_year_counts": {
+        "2018": 1124,
+        "2019": 220
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-003.json",
+      "canonical_sha256": "a939ec2dd361787c96f2a929da54cf983c2739fbd84e8cdecff4e57e5b266218",
+      "archive_ceiling_bytes": 4915540263,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-003",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-003",
+        "sha256": "d71584ffdadc39e6b9596385c5f3636d8b09b87cd877ff532908922123fcc44c",
+        "kernel": "nnnnbhss/geofirex-certify-lot-003-cpu-20261108-v1",
+        "bytes": 194922
+      }
+    },
+    {
+      "number": 4,
+      "tag": "lot-004",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-004-v1",
+      "role": "train",
+      "events": 63,
+      "files": 1205,
+      "raw_bytes": 4443126438,
+      "identity": "5de8dec39928f8adca729888fff0f00a23b87aba961af9d4fee6c7d195520844",
+      "observation_year_counts": {
+        "2019": 1205
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-004.json",
+      "canonical_sha256": "cecf5e57089596bd7fd06d5cd9c63a8a0f95b6faefd7c235f0dce694241eae23",
+      "archive_ceiling_bytes": 4453126438,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-004",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-004",
+        "sha256": "b62c55fba883db2954451e48eebc1b4e4f1879adc60a76c57d75556691dfcf0b",
+        "kernel": "nnnnbhss/geofirex-certify-lot-004-cpu-20261108-v1",
+        "bytes": 181554
+      }
+    },
+    {
+      "number": 5,
+      "tag": "lot-005",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-005-v1",
+      "role": "val",
+      "events": 69,
+      "files": 1305,
+      "raw_bytes": 4886889025,
+      "identity": "ef579d40d24107bbb034ab4e0cef12a256f7ecf0ddd85f43d5162b6854fd92ff",
+      "observation_year_counts": {
+        "2020": 1305
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-005.json",
+      "canonical_sha256": "07556ec3ac5e10caf572e5f35403875cf69591ba9e9e062434f49ebe0af00b34",
+      "archive_ceiling_bytes": 4896889025,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-005",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-005",
+        "sha256": "674251b9fa9e8b2777bfe27ab390013c471c28a76cdbb988f5ccb1fe739d1249",
+        "kernel": "nnnnbhss/geofirex-certify-lot-005-cpu-20261108-v1",
+        "bytes": 191290
+      }
+    },
+    {
+      "number": 6,
+      "tag": "lot-006",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-006-v1",
+      "role": "val",
+      "events": 54,
+      "files": 1350,
+      "raw_bytes": 4919863753,
+      "identity": "8852036659a34e19836bafc57b89fc50afc38ebf9302745a8db8ad3caf9b96d7",
+      "observation_year_counts": {
+        "2020": 1350
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-006.json",
+      "canonical_sha256": "62d5294f48098d9cfbf18b94590c27a880027a20f8854ddb4988df56d2e2fccf",
+      "archive_ceiling_bytes": 4929863753,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-006",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-006",
+        "sha256": "058811fc2cc26573fe76d96ff0b96f3d236ecb477f6798d37f9ae4a0c9cb2c9f",
+        "kernel": "nnnnbhss/geofirex-certify-lot-006-cpu-20261108-v1",
+        "bytes": 194114
+      }
+    },
+    {
+      "number": 7,
+      "tag": "lot-007",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-007-v1",
+      "role": "val",
+      "events": 61,
+      "files": 1321,
+      "raw_bytes": 4833117096,
+      "identity": "87afc8aa0ed24ef0e469d4c4e20e0f6d28a52f95d56df46c10de7b87be6e4ed2",
+      "observation_year_counts": {
+        "2020": 1321
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-007.json",
+      "canonical_sha256": "01863705fd0d5aff8e2e8c6062ee1e37673b7d92e9b9f99f2b4d0b5f8bf66e96",
+      "archive_ceiling_bytes": 4843117096,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-007",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-007",
+        "sha256": "bee8a233fe98d96ab0328f691a485775e8d778606de3e57cd441d61e0ae4ef10",
+        "kernel": "nnnnbhss/geofirex-certify-lot-007-cpu-20261108-v1",
+        "bytes": 192410
+      }
+    },
+    {
+      "number": 8,
+      "tag": "lot-008",
+      "handle": "nnnnbhss/geofirex-wsts-fold0-tv-008-v1",
+      "role": "val",
+      "events": 17,
+      "files": 316,
+      "raw_bytes": 1182299296,
+      "identity": "94f961182623909310a20e594a0517adc1af36d004be98c8be876e59dfb8e407",
+      "observation_year_counts": {
+        "2020": 316
+      },
+      "canonical": "reports\\kaggle_remaining_20261108_v1\\training\\bundle\\metadata\\lot-008.json",
+      "canonical_sha256": "123dfecff6c89867cdeef4aeca9f2f3d70acdfbe43d692a66d14eb6037e82884",
+      "archive_ceiling_bytes": 1192299296,
+      "staging": "artifacts/kaggle_remaining_20261108_v1/lot-008",
+      "state": "MANIFEST_READY_NOT_STAGED_NOT_UPLOADED",
+      "cpu_notebook": {
+        "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\lot-008",
+        "sha256": "c21e1ae66bb4ab6fff9a5d6c74e3d3890cabcd3a38f2791fff1c3b98495dc4a6",
+        "kernel": "nnnnbhss/geofirex-certify-lot-008-cpu-20261108-v1",
+        "bytes": 105034
+      }
+    }
+  ],
+  "canary": {
+    "folder": "reports\\kaggle_remaining_20261108_v1\\cpu-certification\\canary",
+    "sha256": "87866d26f0c579b644d9c2a652a676f8579ea04cd72c9e027b420ad448dcae5f",
+    "kernel": "nnnnbhss/geofirex-cpu-automation-gate-20261108-v1",
+    "bytes": 1042
+  },
+  "remaining_raw_bytes": 30165878357,
+  "archive_ceiling_bytes": 30235878357,
+  "remaining_body_ceiling_bytes": 31000000000,
+  "physical_network_planning_envelope_bytes": 32000000000,
+  "budget_scope": "New remaining-lots phase only; historical lot001 body ledger is preserved separately; no retries",
+  "journal": "reports\\kaggle_remaining_20261108_v1\\http-body.jsonl",
+  "automatic_retries": 0,
+  "normalizer_sha256": "aa30df4e3d6d895760f04e35d74bcbbac0d739cea045d236517401f5f9f4c7f6",
+  "cpu_api_note": "Previous SaveKernel HTTP 401 unresolved; canary MUST complete before any raster staging/upload",
+  "train_events": 250,
+  "validation_events": 201,
+  "test_events": 0
+}

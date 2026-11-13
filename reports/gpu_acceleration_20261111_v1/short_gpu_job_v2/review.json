@@ -1,0 +1,10 @@
+{
+  "code_bytes": 580526,
+  "code_sha256": "a9fc63e5637630bed30babf82751b716079d67df4bb7b1bfffd29526bc24f399",
+  "gpu_limit_seconds": 600,
+  "script_budget_seconds": 420,
+  "train_events": 119,
+  "excluded_event": "2019/fire_23300839",
+  "data_upload_bytes": 0,
+  "raw_or_compact_rebuilt": false
+}

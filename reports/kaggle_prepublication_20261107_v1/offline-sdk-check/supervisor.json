@@ -1,0 +1,40 @@
+{
+  "command": [
+    ".\\artifacts\\orchestrator\\kaggle-cli-env\\Scripts\\python.exe",
+    "reports/kaggle_prepublication_20261107_v1/check_offline_sdk.py"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 5084024832,
+    "load_percent": 69,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18751062016,
+    "commit_used_bytes": 18487533568
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 536870912,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T14:45:47.733754+00:00",
+  "status": "FINISHED",
+  "exit_code": 0,
+  "pid": 50788,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.5779999999995198,
+  "peak_tree_rss_bytes": 36196352,
+  "peak_sampled_private_commit_bytes": 25731072,
+  "peak_job_commit_bytes": 36560896,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 5047353344,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 5060878336,
+    "load_percent": 69,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 18744664064,
+    "commit_used_bytes": 18493931520
+  }
+}

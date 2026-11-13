@@ -45,13 +45,22 @@ def _merge(paths):
 
 
 class ExternalAveragePrecision:
-    def __init__(self,directory,chunk_pixels=250_000,fan_in=32):
+    def __init__(self,directory,chunk_pixels=250_000,fan_in=32,retain_runs=True):
         if chunk_pixels<1 or fan_in<2:
             raise ValueError("Positive chunk size and fan_in >=2 required")
         self.directory=Path(directory)
         self.directory.mkdir(parents=True,exist_ok=False)
         self.chunk_pixels,self.fan_in=chunk_pixels,fan_in
         self.paths=[]; self.positives=0; self.pixels=0; self.finalized=False
+        self.retain_runs = retain_runs
+        self.owned = set()
+
+    def _release(self, paths):
+        if not self.retain_runs:
+            for path in paths:
+                if path in self.owned:
+                    path.unlink()
+                    self.owned.remove(path)
 
     def update(self,probability,target):
         if self.finalized:
@@ -74,6 +83,7 @@ class ExternalAveragePrecision:
             with path.open("xb") as f:
                 grouped.tofile(f)
             self.paths.append(path)
+            self.owned.add(path)
             self.positives+=int(labels.sum()); self.pixels+=len(labels)
 
     def compute(self):
@@ -81,6 +91,7 @@ class ExternalAveragePrecision:
             raise RuntimeError("AP accumulator already finalized")
         self.finalized=True
         if not self.positives:
+            self._release(list(self.owned))
             return None
         paths=list(self.paths)
         level=0
@@ -95,6 +106,8 @@ class ExternalAveragePrecision:
                         if not block:
                             break
                         np.array(block,dtype=DTYPE).tofile(f)
+                self.owned.add(path)
+                self._release(paths[start:start+self.fan_in])
                 merged.append(path)
             level+=1; paths=merged
         tp=seen=0
@@ -102,6 +115,7 @@ class ExternalAveragePrecision:
         for _,count,positive in _merge(paths):
             tp+=positive; seen+=count
             ap+=(positive/self.positives)*(tp/seen)
+        self._release(list(self.owned))
         return float(ap)
 
 

@@ -1,0 +1,72 @@
+{
+  "status": "PREPARED",
+  "events": 607,
+  "observations": 13607,
+  "train_validation_events": 451,
+  "window_counts": {
+    "train": {
+      "1": {
+        "natural": 4948,
+        "aligned": 3948,
+        "rejections": {}
+      },
+      "3": {
+        "natural": 4448,
+        "aligned": 3948,
+        "rejections": {}
+      },
+      "5": {
+        "natural": 3948,
+        "aligned": 3948,
+        "rejections": {}
+      }
+    },
+    "val": {
+      "1": {
+        "natural": 4091,
+        "aligned": 3287,
+        "rejections": {}
+      },
+      "3": {
+        "natural": 3689,
+        "aligned": 3287,
+        "rejections": {}
+      },
+      "5": {
+        "natural": 3287,
+        "aligned": 3287,
+        "rejections": {}
+      }
+    }
+  },
+  "window_rows": 21705,
+  "processing": {
+    "status": "PYARROW_ONLY",
+    "note": "Spark not executed"
+  },
+  "extraction_comparison": {
+    "status": "EXACT_SHA256_CRC_SIZE_MATCH",
+    "members": 13607,
+    "certificate": "D:\\GeoFire-X\\WildfireSpreadTS\\rasters\\.extraction-session\\complete-e285d40057b44a488b9baee10afe7c22.json",
+    "certificate_sha256": "96fc830c716437d0a390c490ecfb8d1d76d3831f6df7190cd2497020654d088f",
+    "archive_md5": "dc1a04e63ccc70037b277d585b8fe761",
+    "archive_md5_status": "VERIFIED",
+    "archive_note": "Previously certified; no repeat read of the ZIP in this integration"
+  },
+  "test_policy": "2021 storage inventory/QC only; excluded from window tables, normalization and selection",
+  "certificate_sha256": "f7606ac51a3541a04d65330e266757107f1e5a9c4239fea2534944afdf891f4b",
+  "index_identity": "7aee2fc32d01fb8b3f0671073ab7aa12c12fbb4a90cb1d0f21d79e0ff843bbad",
+  "artifacts": {
+    "events.json": "723aa41b83c8b03482391acf5468a48b9122ba706f806615a1e79065fc23593d",
+    "events.parquet": "420a6e71b8ea2b9158de8796b59af03c6d71230b148cad88dbc1ac60ace421a8",
+    "extraction-comparison.json": "a9fa285cd552d4f9cb53bb142ffe5bb3214665f5fcbfc84232cd6fe4e71174b3",
+    "feature-contracts.json": "0ce5001b77722d205dfd7edd510e66fcf84a026f208fe45abaff71e0c0efb6f6",
+    "fold_00.csv": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "manifest.csv": "f0f04615e45914ee1c3f4332fa66758cbed0f3d45c271f5075b2285ff4aa86c0",
+    "observations-qc.parquet": "38f1b5dc88e583bb1559a619ca38ef19c74bf25b303b27a110921b4bfe944bee",
+    "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "processing.json": "06f129dca181bc2e26fba62ead5cac4998e476a9c1eca153ede819b2cda5e7cd",
+    "window-counts.json": "2f1d013166416a0c59356e051ea9b7806895362dc0db1a75d8d8f15447cbbe07",
+    "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345"
+  }
+}

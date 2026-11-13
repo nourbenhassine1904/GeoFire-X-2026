@@ -1,0 +1,82 @@
+{
+  "branch": "feature/unet-baseline",
+  "unchanged_git_head": "e8ff4b0",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "179",
+    "time": "145.792",
+    "timestamp": "2026-10-31T16:36:02.373189+01:00",
+    "hostname": "NourBh"
+  },
+  "tests_added_since_previous_160": 19,
+  "checks": {
+    "python_compileall": true,
+    "react_component_node_syntax": true,
+    "git_diff_check": true,
+    "archive_all_155_source_hashes_and_zip_crc": true
+  },
+  "code_archive": {
+    "path": "artifacts/kaggle/geofirex-cloud-code-v3.zip",
+    "sha256": "17f323d45349b279a8cc674585ce5f84ca68015b325a1c63eaff8a68cab5a765"
+  },
+  "manual_batch001": {
+    "source_of_live_evidence": "user confirmation; not a Codex-created certificate",
+    "handle": "nnnnbhss/geofire-x-wsts-batch001",
+    "events": [
+      "2018/fire_21458798"
+    ],
+    "observations": 14,
+    "adoption_certificate_created_in_live_kaggle_by_codex": false
+  },
+  "plans": {
+    "status": "PLANNED_NOT_ACQUIRED",
+    "known_manual_exclusion": "2018/fire_21458798",
+    "private_quota_declared_bytes": 12884901888,
+    "plans": [
+      {
+        "label": "train2018",
+        "year": 2018,
+        "events": 37,
+        "eligible_events_by_dates": 37,
+        "observations": 714,
+        "geotiff_bytes": 2844119383,
+        "transfer_cap": 3221225472,
+        "staging_plus_reserve_bytes": 6761980590
+      },
+      {
+        "label": "val2020",
+        "year": 2020,
+        "events": 30,
+        "eligible_events_by_dates": 30,
+        "observations": 546,
+        "geotiff_bytes": 2134551752,
+        "transfer_cap": 3221225472,
+        "staging_plus_reserve_bytes": 5342845328
+      },
+      {
+        "label": "extension2019",
+        "year": 2019,
+        "events": 30,
+        "eligible_events_by_dates": 30,
+        "observations": 599,
+        "geotiff_bytes": 2331203739,
+        "transfer_cap": 3221225472,
+        "staging_plus_reserve_bytes": 5736149302
+      }
+    ]
+  },
+  "not_executed": [
+    "live Kaggle automatic creation/version/upload",
+    "live manual adoption/fresh-session certification",
+    "large Zenodo acquisition",
+    "Tesla T4 throughput or training",
+    "PySpark job",
+    "React integration/browser validation",
+    "commit/push/merge"
+  ],
+  "local_model_checks": "Tiny CPU synthetic-raster training and ASGI inference contracts only; no scientific benchmark claim",
+  "next_action": "Run the CPU v3 adoption cell against the already mounted manual dataset"
+}

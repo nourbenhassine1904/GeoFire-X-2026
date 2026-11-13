@@ -1,0 +1,24 @@
+{
+  "status": "LOCAL_ESSENTIAL_TESTS_AND_PACKAGE_VALIDATED",
+  "code_package": {
+    "handle": "nnnnbhss/geofirex-expanded-code-recovery-v1",
+    "payload_bytes": 1930818,
+    "sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+    "lot_identity": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+    "kind": "code_and_metadata_only",
+    "files": 64,
+    "raw_tiffs": 0
+  },
+  "validation": {
+    "status": "ESSENTIAL_TESTS_PASSED",
+    "tests": 32,
+    "evidence": "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\essential-final",
+    "source_manifest_sha256": "8df6e24f8f155d872995fcf8aeecad4e718598b585b2b5b470871b06bb474db8"
+  },
+  "complete_reference_suite_validated": false,
+  "historical_cpu_integration": "Reused after metadata bindings audit; no redundant raster replay",
+  "uploads": 0,
+  "gpu_jobs": 0,
+  "commits": 0,
+  "private_quota": "Refresh authenticated account before any upload or GPU job"
+}

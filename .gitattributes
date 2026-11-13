@@ -1,0 +1,5 @@
+# Scientific records are byte-pinned by SHA-256. Preserve original line endings
+# across Windows/Linux checkouts; do not renormalize existing tracked records.
+/reports/** -text
+/configs/** -text
+/artifacts/propagation-comparison/** -text

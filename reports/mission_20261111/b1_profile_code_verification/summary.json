@@ -1,0 +1,42 @@
+{
+  "status": "FINISHED",
+  "device": "cpu",
+  "epochs_completed": 0,
+  "train_samples_seen": 32,
+  "optimizer_updates": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "complete_epoch": false,
+      "train_samples_seen": 32,
+      "total_train_samples_seen": 32,
+      "optimizer_updates": 2,
+      "train_loss": 0.9520668989070098,
+      "validation": {
+        "dice": 3.761519653940192e-05,
+        "iou": 1.8807952002106492e-05,
+        "precision": 1.8807952002106492e-05,
+        "recall": 1.0,
+        "tp": 4,
+        "fp": 212672,
+        "fn": 0,
+        "pixels": 213280,
+        "positive_pixels": 4,
+        "prevalence": 1.8754688672168043e-05,
+        "brier": 0.27280553435758487,
+        "average_precision": 3.167014701081448e-05,
+        "loss": 0.8699803511182438,
+        "samples_seen": 64,
+        "status": "COMPLETE"
+      },
+      "train_seconds": 2.4464146000000255,
+      "validation_seconds": 2.0872002999994947,
+      "elapsed_seconds": 4.535535099999834
+    }
+  ],
+  "elapsed_seconds": 4.585825699999987,
+  "peak_rss_bytes": 489459712,
+  "gpu_peak_allocated_bytes": null,
+  "best_validation_ap": 3.167014701081448e-05,
+  "best_epoch": 1
+}

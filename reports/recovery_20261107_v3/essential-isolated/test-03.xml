@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.336" timestamp="2026-11-07T14:15:31.155758+01:00" hostname="NourBh"><testcase classname="tests.test_memory_guard" name="test_monitor_stops_owned_child_on_rss_limit" time="0.276" /></testsuite></testsuites>

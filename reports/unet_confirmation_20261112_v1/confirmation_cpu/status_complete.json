@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "device": "cpu",
+  "gpu_used": false,
+  "events": 169,
+  "tiles": 65012,
+  "threshold": 0.78,
+  "confirmation_lock_sha256": "9862113e2be1146de370d07a8d47b8570c0a20273cbbdf97bcf5a3f91af883a4",
+  "elapsed_seconds": 747.9547643000005,
+  "evaluation_sha256": "4944478ae4d5d2e017149992550d19d304370338c6406be84ffc3d76e50b02d5",
+  "manifest_sha256": "40647f2434b6999860a1c30816525ae4f77ea7e2c59f2837c66f67fe9ce96d38",
+  "training_executed": false,
+  "test_2021_pixels_opened": 0
+}

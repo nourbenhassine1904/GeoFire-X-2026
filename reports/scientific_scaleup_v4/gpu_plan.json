@@ -1,0 +1,136 @@
+{
+  "status": "NOT_APPROVED_NOT_SUBMITTED",
+  "runs": [
+    {
+      "config": "L1_B0_seed42.yaml",
+      "level": 1,
+      "model": "B0",
+      "seed": 42,
+      "parameters": 0,
+      "updates": 0,
+      "approved": false
+    },
+    {
+      "config": "L1_B1_seed42.yaml",
+      "level": 1,
+      "model": "B1",
+      "seed": 42,
+      "parameters": 5809,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L1_B2_seed42.yaml",
+      "level": 1,
+      "model": "B2",
+      "seed": 42,
+      "parameters": 123977,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L1_B3_seed42.yaml",
+      "level": 1,
+      "model": "B3",
+      "seed": 42,
+      "parameters": 5297,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B0_seed42.yaml",
+      "level": 2,
+      "model": "B0",
+      "seed": 42,
+      "parameters": 0,
+      "updates": 0,
+      "approved": false
+    },
+    {
+      "config": "L2_B1_seed42.yaml",
+      "level": 2,
+      "model": "B1",
+      "seed": 42,
+      "parameters": 5809,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B1_seed43.yaml",
+      "level": 2,
+      "model": "B1",
+      "seed": 43,
+      "parameters": 5809,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B1_seed44.yaml",
+      "level": 2,
+      "model": "B1",
+      "seed": 44,
+      "parameters": 5809,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B2_seed42.yaml",
+      "level": 2,
+      "model": "B2",
+      "seed": 42,
+      "parameters": 123977,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B2_seed43.yaml",
+      "level": 2,
+      "model": "B2",
+      "seed": 43,
+      "parameters": 123977,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B2_seed44.yaml",
+      "level": 2,
+      "model": "B2",
+      "seed": 44,
+      "parameters": 123977,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B3_seed42.yaml",
+      "level": 2,
+      "model": "B3",
+      "seed": 42,
+      "parameters": 5297,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B3_seed43.yaml",
+      "level": 2,
+      "model": "B3",
+      "seed": 43,
+      "parameters": 5297,
+      "updates": 1280,
+      "approved": false
+    },
+    {
+      "config": "L2_B3_seed44.yaml",
+      "level": 2,
+      "model": "B3",
+      "seed": 44,
+      "parameters": 5297,
+      "updates": 1280,
+      "approved": false
+    }
+  ],
+  "level3": "Deferred: modality declarations and harmonized T=1/3/5 required before generating runs",
+  "duration": "Unknown until bounded throughput and full-scene validation profiling on acquired stage",
+  "quotas": "Historical quota receipts are not current quota authorization",
+  "checkpoint_policy": "Existing runner: best validation AP, optimizer/RNG resume; new output directories",
+  "limitation": "Runner scientific qualification currently requires all 607 events, including test inventory; partial stages must remain pilot"
+}

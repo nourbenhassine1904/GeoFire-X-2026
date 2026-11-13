@@ -1,0 +1,79 @@
+{
+  "status": "TARGETED_PREPARATION_CHECKS_PASSED",
+  "lots": [
+    {
+      "number": 2,
+      "events": 62,
+      "files": 1380,
+      "raw_bytes": 4995042486,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "train"
+    },
+    {
+      "number": 3,
+      "events": 68,
+      "files": 1344,
+      "raw_bytes": 4905540263,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "train"
+    },
+    {
+      "number": 4,
+      "events": 63,
+      "files": 1205,
+      "raw_bytes": 4443126438,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "train"
+    },
+    {
+      "number": 5,
+      "events": 69,
+      "files": 1305,
+      "raw_bytes": 4886889025,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "val"
+    },
+    {
+      "number": 6,
+      "events": 54,
+      "files": 1350,
+      "raw_bytes": 4919863753,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "val"
+    },
+    {
+      "number": 7,
+      "events": 61,
+      "files": 1321,
+      "raw_bytes": 4833117096,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "val"
+    },
+    {
+      "number": 8,
+      "events": 17,
+      "files": 316,
+      "raw_bytes": 1182299296,
+      "local_source_sizes_verified": true,
+      "CPU_notebook_compiles": true,
+      "role": "val"
+    }
+  ],
+  "remaining_raw_bytes": 30165878357,
+  "raw_pixels_read": 0,
+  "network_requests": 0,
+  "test_2021_events": 0,
+  "cpu_notebooks": 7,
+  "training_templates": 4,
+  "remote_certification_remaining": "Not executed; CPU automation gate is required before bulk upload",
+  "gpu_started": false,
+  "staging_filesystem_free_bytes": 109879537664,
+  "free_bytes_required_for_all_retained_archives": 50235878357,
+  "sufficient_staging_capacity": true
+}

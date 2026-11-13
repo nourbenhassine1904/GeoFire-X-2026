@@ -1,0 +1,17 @@
+{
+  "id": "nnnnbhss/geofirex-loader-profile-20261111-v3",
+  "title": "geofirex-loader-profile-20261111-v3",
+  "code_file": "job.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "nnnnbhss/geofire-x-wildfirespreadts-sample"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}

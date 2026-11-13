@@ -1,0 +1,13 @@
+{
+  "status": "LOCAL_PREPARATION_ONLY_NO_TRANSFER_AUTHORIZED",
+  "notebooks": [
+    {
+      "tag": "lot-001",
+      "notebook_sha256": "98ab7384192071d0e8f7004a59b9d9daaf3b1034845c40b4f041900a5e0123b9",
+      "sources": [
+        "nnnnbhss/geofirex-wsts-fold0-tv-001-v1"
+      ],
+      "kernel": "nnnnbhss/geofirex-certify-pilot-001-20261107-v2"
+    }
+  ]
+}

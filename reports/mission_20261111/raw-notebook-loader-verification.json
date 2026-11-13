@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "train_tiles": 975,
+  "val_tiles": 1260,
+  "train_events": [
+    "2018/fire_21748813",
+    "2018/fire_21997864",
+    "2019/fire_23300839"
+  ],
+  "val_events": [
+    "2020/fire_23654679",
+    "2020/fire_24104674"
+  ],
+  "batch_shape": [
+    4,
+    3,
+    8,
+    64,
+    64
+  ],
+  "provenance": {
+    "available_events": [
+      "2018/fire_21748813",
+      "2018/fire_21997864",
+      "2019/fire_23300839",
+      "2020/fire_23654679",
+      "2020/fire_24104674"
+    ],
+    "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "source": "attached certified original TIFFs"
+  }
+}

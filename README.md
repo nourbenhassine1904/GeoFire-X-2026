@@ -80,6 +80,67 @@ pytest -q
 
 WildfireSpreadTS
 
+## Application de démonstration — novembre 2026
+
+```powershell
+.\.venv\Scripts\python.exe scripts/serve_demo.py --results-only --port 8014
+```
+
+Ouvrir http://127.0.0.1:8014 : **Prediction Lab** → événement2020 → date J → **Prédire J+1**.
+Le vrai U-Net poids10 est exécuté sur CPU au seuil figé0,78. Le checkpoint,
+les sources d'entraînement, le normaliseur et l'archive de l'événement sont vérifiés.
+J+1 est lu séparément après la prédiction pour afficher vérité terrain et erreurs.
+Les cartes sont des grilles de pixels du compact, sans CRS disponible.
+
+**Propagation J+1** présente l'expérience à tête spécialisée comme comparaison sur32,
+non retenue : le modèle principal et son seuil restent inchangés. Les vues historiques,
+l'ablation et Spark/Parquet restent disponibles. Le test2021 reste verrouillé.
+Le mode du Predictor TIFF historique conserve ses propres contrôles d'intégrité.
+
+Le Lab propose des cartes sur deux colonnes, un agrandissement avec zoom et légende,
+la navigation entre dates et les exports PNG par carte, JSON avec provenance et
+CSV des pixels de l'aperçu. Le pas spatial est exporté ; les cellules invalides
+sont `null` en JSON et vides en CSV. Les coordonnées sont des lignes/colonnes de
+pixels, pas des coordonnées géographiques.
+
+Vérification fonctionnelle locale, sans entraînement ni évaluation agrégée :
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest tests/test_prediction_lab.py -q
+cd frontend
+node verify-prediction-lab.mjs
+```
+
+Le test fonctionnel utilise la même routine de requête, la même vue React et le
+même rendu des pixels que l'interface. Il vérifie le cas central du 3 septembre
+et trois dates sur chacun de deux autres événements. Il ne relance aucune
+évaluation agrégée et ne calcule pas de nouveaux scores de validation.
+
+Pour étudier et présenter l'application :
+
+1. **Prediction Lab** : `2020/fire_24332880`, J=`2020-09-03`, cible=`2020-09-04`.
+   Distinguer feu observé, feu futur total et nouveaux pixels. Expliquer TP/FP/FN
+   avec les légendes ; ouvrir une carte agrandie et exporter son JSON de provenance.
+2. **Propagation J+1** : sur les32, la tête spécialisée gagne5,61 points de rappel
+   nouveau, mais ajoute13 055 FP nouveaux. Son Dice global et son AP baissent :
+   critère d'acceptation faux, modèle principal conservé. Les statistiques169
+   plus bas restent un diagnostic séparé.
+3. **Ablation U-Net** : même corpus, seed et budget ; faible écart entre poids10
+   et30. La sélection utilise les32 ; la confirmation169 a déjà été consultée
+   et ne constitue plus un test aveugle pour de nouvelles décisions.
+4. **CNN / U-Net historiques** : lire Dice, rappel et fausses alertes ensemble.
+   Le seuil modifie la segmentation, pas les probabilités, l'AP ou le Brier.
+5. **Big Data** : ouvrir les véritables requêtes Spark SQL et fichiers Parquet.
+   Distinguer observations, fenêtres temporelles et tuiles. Montrer ensuite les
+   onze partitions, l'index compact et leur lien avec l'inférence. Spark a été
+   exécuté en `local[2]`, pas sur un cluster distribué.
+
+Limites à connaître : détection active quotidienne ≠ surface brûlée cumulée ;
+pas de vent/météo dans les huit canaux compacts ; masques de J+1 exclus de
+l'inférence, ajoutés seulement à la comparaison historique ; test2021 fermé.
+La durée du Lab couvre le calcul et la lecture des tuiles après chargement du
+modèle, sans représenter le temps complet du navigateur ni un benchmark général.
+
 ## Team
 
 4 Data Science / AI engineering students
@@ -136,3 +197,8 @@ la base de cette nouvelle phase de developpement.
 Les contributions historiques restent consultables dans
 le depot source.
 
+## Sauvegarde avant refonte frontend
+
+Consulter le [plan de publication et de restauration](docs/GITHUB_PRESERVATION_20261113.md)
+et la [selection exhaustive soumise a accord](reports/github_preservation_20261113/PLAN_PUBLICATION.md).
+Les checkpoints et corpus restent hors Git ; leurs empreintes sont conservees dans les manifestes.

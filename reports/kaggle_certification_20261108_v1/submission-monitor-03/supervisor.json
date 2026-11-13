@@ -1,0 +1,53 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\artifacts\\orchestrator\\kaggle-cli-env\\Scripts\\python.exe",
+    "scripts/submit_kaggle_cpu_certification.py",
+    "--folder",
+    "reports/kaggle_certification_20261108_v1/cpu-certification/lot-001",
+    "--credentials",
+    "C:/Users/nourb/.kaggle/credentials.json",
+    "--journal",
+    "reports/kaggle_pilot_001_20261107_v1/http-body.jsonl",
+    "--attempt",
+    "reports/kaggle_certification_20261108_v1/submission-attempt-02",
+    "--max-http-body-bytes",
+    "6000000000",
+    "--stop-at-cumulative-body-bytes",
+    "6000000000",
+    "--execute"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 2759200768,
+    "load_percent": 83,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 17571745792,
+    "commit_used_bytes": 19666849792
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 2281701376,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 268435456,
+  "rss_limit_bytes": 268435456,
+  "time": "2026-11-08T11:42:19.928108+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 28736,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 3.092999999999847,
+  "peak_tree_rss_bytes": 53587968,
+  "peak_sampled_private_commit_bytes": 39784448,
+  "peak_job_commit_bytes": 39804928,
+  "peak_owned_processes": 2,
+  "minimum_available_bytes": 2730958848,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 2769977344,
+    "load_percent": 83,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 17568837632,
+    "commit_used_bytes": 19669757952
+  }
+}

@@ -1,0 +1,346 @@
+{
+  "status": "VALIDATED_CPU_ONLY",
+  "normalization_seconds": 466.24399000000267,
+  "normalization_unique_train_contexts": 4948,
+  "normalization_train_events": 250,
+  "normalizer_channels": [
+    "slope_z",
+    "elevation_z",
+    "slope_missing",
+    "elevation_missing",
+    "aspect_sin",
+    "aspect_cos",
+    "aspect_missing",
+    "fire_J"
+  ],
+  "channels": 8,
+  "raw_bands": 23,
+  "test_paths_used": 0,
+  "batches": [
+    {
+      "split": "train",
+      "context": 1,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.0091074999945704,
+      "seconds": 1.893772600000375,
+      "patches_per_second": 25.346232171692893,
+      "p50_batch_seconds": 0.003986849995271768,
+      "p95_batch_seconds": 0.9209095549980701,
+      "x_shape": [
+        4,
+        1,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "train",
+      "context": 3,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 0.45700070000020787,
+      "seconds": 0.9002008999959799,
+      "patches_per_second": 53.32143080529509,
+      "p50_batch_seconds": 0.0033944500028155744,
+      "p95_batch_seconds": 0.43068265000256356,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "train",
+      "context": 5,
+      "events": [
+        "2018/fire_21458798",
+        "2018/fire_21890058",
+        "2018/fire_22257882",
+        "2019/fire_23572745"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 0.4780624999984866,
+      "seconds": 0.9553463000484044,
+      "patches_per_second": 50.243560892597785,
+      "p50_batch_seconds": 0.005848350003361702,
+      "p95_batch_seconds": 0.446058055001049,
+      "x_shape": [
+        4,
+        5,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 1,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 1.0259931999898981,
+      "seconds": 2.196986700000707,
+      "patches_per_second": 21.848106772783172,
+      "p50_batch_seconds": 0.002112850001140032,
+      "p95_batch_seconds": 1.0816643649959587,
+      "x_shape": [
+        4,
+        1,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 3,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 0.5626241999998456,
+      "seconds": 1.1672734999883687,
+      "patches_per_second": 41.12146810535688,
+      "p50_batch_seconds": 0.004773749999003485,
+      "p95_batch_seconds": 0.5602477600004931,
+      "x_shape": [
+        4,
+        3,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    },
+    {
+      "split": "val",
+      "context": 5,
+      "events": [
+        "2020/fire_23654679",
+        "2020/fire_24332608",
+        "2020/fire_24461347",
+        "2020/fire_24695970"
+      ],
+      "patches": 48,
+      "first_batch_seconds": 0.6343675999960396,
+      "seconds": 1.2572394000017084,
+      "patches_per_second": 38.178886216845235,
+      "p50_batch_seconds": 0.005077750000054948,
+      "p95_batch_seconds": 0.6007371349987807,
+      "x_shape": [
+        4,
+        5,
+        8,
+        64,
+        64
+      ],
+      "y_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "valid_shape": [
+        4,
+        1,
+        64,
+        64
+      ],
+      "cache_hits": 264,
+      "cache_misses": 24,
+      "scope": "bounded read/encoding CPU microbenchmark, sampled I/O only; no quality metric"
+    }
+  ],
+  "forward_contracts": [
+    {
+      "model": "B0",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.01431589999992866,
+      "parameters": 0,
+      "device": "cpu"
+    },
+    {
+      "model": "B1",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.04395269999804441,
+      "parameters": 5809,
+      "device": "cpu"
+    },
+    {
+      "model": "B2",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.02516750000359025,
+      "parameters": 123977,
+      "device": "cpu"
+    },
+    {
+      "model": "B3",
+      "output_shape": [
+        1,
+        1,
+        64,
+        64
+      ],
+      "seconds": 0.011568099987925962,
+      "parameters": 5297,
+      "device": "cpu"
+    }
+  ],
+  "patch_inventory": {
+    "patch_size": 64,
+    "domain": "joint maximum context T=5 + target, identical for T=1/3/5",
+    "positive_sampling": "not used for this inventory; validation never filtered by labels",
+    "by_split": {
+      "train": {
+        "examples": 3948,
+        "geometric_patches": 93603,
+        "usable_patches": 93603,
+        "empty_patches": 0,
+        "valid_joint_pixels": 313977876,
+        "masked_examples": 0
+      },
+      "val": {
+        "examples": 3287,
+        "geometric_patches": 78771,
+        "usable_patches": 78771,
+        "empty_patches": 0,
+        "valid_joint_pixels": 263630731,
+        "masked_examples": 0
+      }
+    }
+  },
+  "gpu_training": false,
+  "optimizer_updates": 0,
+  "windows_source": "reports\\full_corpus_v1\\prepared_v1\\windows.parquet",
+  "input_hashes": {
+    "manifest": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "split": "900e1daf8ac754a645539e99d4fdf305672ae60a4c74e913224ca3400e5e9141",
+    "index": "990fe900bd8727497d78bc51d005bc1c90dc15eed38d675e849b5776da4d2686",
+    "window_manifest": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "targets": "45b8a57207a518a1b04b71b53008bcf7ab0b9eb617b078ded8cbd4fd192b6bbb"
+  },
+  "torch_threads": 2,
+  "loader_workers": 0,
+  "reader_cache_mb": 64,
+  "resources": {
+    "platform": "Windows-10-10.0.26200-SP0",
+    "logical_cpus": 12,
+    "workspace_free_bytes": 113643417600,
+    "corpus_volume_free_bytes": 438386307072,
+    "ram_total_bytes": 16837500928,
+    "ram_available_bytes": 1353707520,
+    "process_working_set_bytes": 728608768,
+    "process_peak_working_set_bytes": 736980992
+  },
+  "cache_caveat": "OS cache not flushed; first batch is not a certified cold-disk measurement"
+}

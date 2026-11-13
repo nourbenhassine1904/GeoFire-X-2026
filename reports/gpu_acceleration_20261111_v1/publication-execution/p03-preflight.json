@@ -1,0 +1,75 @@
+{
+  "owner": "nnnnbhss",
+  "handle": "nnnnbhss/geofirex-compact-t3-20261111-p03",
+  "identity": {
+    "active": true,
+    "username": "nnnnbhss"
+  },
+  "inventories": {
+    "mine": {
+      "handles": [
+        "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212",
+        "nnnnbhss/geofirex-compact-t3-20261111-p02",
+        "nnnnbhss/geofirex-compact-t3-20261111-p01",
+        "nnnnbhss/geofirex-compact-t3-20261111-p00"
+      ],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    },
+    "private": {
+      "handles": [
+        "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212",
+        "nnnnbhss/geofirex-compact-t3-20261111-p02",
+        "nnnnbhss/geofirex-compact-t3-20261111-p01",
+        "nnnnbhss/geofirex-compact-t3-20261111-p00"
+      ],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    },
+    "public": {
+      "handles": [],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    }
+  },
+  "read_control": {
+    "ok": true,
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "version": 1,
+    "private": true,
+    "basis": "Authenticated owner dataset metadata read through complete catalogue views; GetDataset not required"
+  },
+  "target_status": {
+    "skipped": true,
+    "basis": "owner_catalogue_only"
+  },
+  "decision": {
+    "state": "ABSENT_VERIFIED",
+    "allow_create_new": true,
+    "owner": "nnnnbhss",
+    "handle": "nnnnbhss/geofirex-compact-t3-20261111-p03",
+    "absence_basis": "Complete consistent owner catalogues (MY, MY_PRIVATE, MY_PUBLIC) plus successful existing-owner read control",
+    "direct_lookup_state": "NOT_QUERIED",
+    "create_permission_verified": false,
+    "reason": "Target absent from complete authenticated owner inventory; no HTTP error is used as proof of absence",
+    "catalogued_owner_datasets": 11,
+    "limitation": "Catalogue visibility/consistency scope only; fresh check before create. CreateDataset must reject any collision; no version/update fallback."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "completed": [
+    "lot-002"
+  ],
+  "same_resume": "resume-01",
+  "indexing_reconciled": true,
+  "lot001_unchanged": true,
+  "lot002_reuploaded": false,
+  "gpu": false
+}

@@ -1,0 +1,23 @@
+{
+  "id": "nnnnbhss/geofirex-expanded-b2-t3-seed42-20261108-v1",
+  "title": "GeoFireX Expanded B2 T3 Seed42 20261108 V1",
+  "code_file": "certify.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-003-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-004-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-005-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-006-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-007-v1",
+    "nnnnbhss/geofirex-wsts-fold0-tv-008-v1"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

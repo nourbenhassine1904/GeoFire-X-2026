@@ -1,0 +1,16 @@
+{
+  "status": "STOPPED_REMOTE_STATE_REQUIRES_READONLY_INSPECTION",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "pre_network_zip_sha256_verified": "464e89146fa6fdabfccdd1eb81d97b08549ca9b14428a32e3993f5996e8f5890",
+  "payload_bytes": 4829918684,
+  "confirmed_blob_body_bytes": 0,
+  "error_type": "RuntimeError",
+  "error_stage": "prove_dataset_absence",
+  "http_status": null,
+  "reserved_http_body_bytes": 354,
+  "cumulative_ceiling": 6000000000,
+  "phase_stop_at": 6000000000,
+  "blob_sends": 0,
+  "requests": 3,
+  "credentials_unchanged": true
+}

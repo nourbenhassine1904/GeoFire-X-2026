@@ -1,0 +1,112 @@
+{
+  "owner": "nnnnbhss",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+  "identity": {
+    "active": true,
+    "username": "nnnnbhss",
+    "scope_names": [
+      "resources.admin:*"
+    ]
+  },
+  "inventories": {
+    "mine": {
+      "handles": [
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212"
+      ],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    },
+    "private": {
+      "handles": [
+        "nnnnbhss/geofire-x-wildfirespreadts-sample",
+        "nnnnbhss/geofirex-sample-pilot-code-20261101",
+        "nnnnbhss/geofirex-transport-probe-20261031-203241-aae74499",
+        "nnnnbhss/geofire-x-cloud-code-v3",
+        "nnnnbhss/geofire-x-wsts-batch001",
+        "nnnnbhss/geofirex-transport-probe-20261031-221724-b1312212"
+      ],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    },
+    "public": {
+      "handles": [],
+      "complete": true,
+      "pages": 1,
+      "filters": "none"
+    }
+  },
+  "read_control": {
+    "ok": true,
+    "handle": "nnnnbhss/geofire-x-wildfirespreadts-sample",
+    "version": 1,
+    "private": true
+  },
+  "target_status": {
+    "ok": false,
+    "http_status": 403,
+    "error_type": "HTTPError"
+  },
+  "decision": {
+    "state": "ABSENT_VERIFIED",
+    "allow_create_new": true,
+    "owner": "nnnnbhss",
+    "handle": "nnnnbhss/geofirex-wsts-fold0-tv-001-v1",
+    "absence_basis": "Complete consistent owner catalogues (MY, MY_PRIVATE, MY_PUBLIC) plus successful existing-owner read control",
+    "direct_lookup_state": "ACCESS_FORBIDDEN",
+    "create_permission_verified": false,
+    "reason": "Target absent from complete authenticated owner inventory; direct 403 is retained separately, not used as proof of absence",
+    "catalogued_owner_datasets": 6,
+    "limitation": "Catalogue visibility/consistency scope only; fresh check before create. CreateDataset must reject any collision; no version/update fallback."
+  },
+  "status": "READONLY_PREFLIGHT_COMPLETED",
+  "uploads": 0,
+  "writes": 0,
+  "credentials_unchanged": true,
+  "requests": [
+    {
+      "operation": "GenerateAccessToken",
+      "body_bytes": 121,
+      "http_status": 200
+    },
+    {
+      "operation": "IntrospectToken",
+      "body_bytes": 157,
+      "http_status": 200
+    },
+    {
+      "operation": "ListDatasets",
+      "body_bytes": 56,
+      "http_status": 200
+    },
+    {
+      "operation": "ListDatasets",
+      "body_bytes": 64,
+      "http_status": 200
+    },
+    {
+      "operation": "ListDatasets",
+      "body_bytes": 63,
+      "http_status": 200
+    },
+    {
+      "operation": "GetDataset",
+      "body_bytes": 77,
+      "http_status": 200
+    },
+    {
+      "operation": "GetDatasetStatus",
+      "body_bytes": 73,
+      "http_status": 403
+    }
+  ],
+  "additional_body_bytes": 611,
+  "cumulative_body_bytes": 2087,
+  "ceiling": 6000000000
+}

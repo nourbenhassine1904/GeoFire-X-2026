@@ -1,0 +1,25 @@
+{
+  "publisher": {
+    "status": "OFFLINE_REVIEW_ONLY_NO_NETWORK",
+    "private": true,
+    "automatic_retries": 0,
+    "handle": "nnnnbhss/geofirex-expanded-code-recovery-v1",
+    "payload_bytes": 1930818,
+    "sha256": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+    "lot_identity": "7f942c6cccebe17096064f3a641f1b110a5048d48a73348bcc1cf6dc0aeeb9fe",
+    "kind": "code_and_metadata_only",
+    "files": 64,
+    "raw_tiffs": 0
+  },
+  "cpu_submit": {
+    "status": "OFFLINE_CPU_SUBMISSION_REVIEW_ONLY",
+    "kernel": "nnnnbhss/geofirex-certify-code-20261107-v1",
+    "notebook_bytes": 11256,
+    "private": true,
+    "gpu": false,
+    "internet": false
+  },
+  "status": "OFFLINE_SDK_REQUEST_AND_DRY_MODES_PASSED",
+  "network_calls": 0,
+  "caveat": "Serialization and offline control only; server acceptance and cloud execution remain untested"
+}

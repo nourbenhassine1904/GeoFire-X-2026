@@ -1,0 +1,52 @@
+{
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_memory_guard.py::test_sampling_handles_normal_process_exit",
+    "-vv",
+    "-s",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\essential-isolated-corrected\\tmp-05",
+    "--junitxml",
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\reports\\recovery_20261107_v3\\essential-isolated-corrected\\test-05.xml",
+    "-o",
+    "faulthandler_timeout=60"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 6740058112,
+    "load_percent": 59,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19821547520,
+    "commit_used_bytes": 17417048064
+  },
+  "limit_seconds": 120,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 2147483648,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:19:25.457841+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 55832,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.7820000000001528,
+  "peak_tree_rss_bytes": 43241472,
+  "peak_sampled_private_commit_bytes": 30154752,
+  "peak_job_commit_bytes": 36413440,
+  "peak_owned_processes": 3,
+  "minimum_available_bytes": 6705455104,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 6732210176,
+    "load_percent": 60,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 19825770496,
+    "commit_used_bytes": 17412825088
+  }
+}

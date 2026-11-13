@@ -1,0 +1,36 @@
+{
+  "train": {
+    "1": {
+      "natural": 4948,
+      "aligned": 3948,
+      "rejections": {}
+    },
+    "3": {
+      "natural": 4448,
+      "aligned": 3948,
+      "rejections": {}
+    },
+    "5": {
+      "natural": 3948,
+      "aligned": 3948,
+      "rejections": {}
+    }
+  },
+  "val": {
+    "1": {
+      "natural": 4091,
+      "aligned": 3287,
+      "rejections": {}
+    },
+    "3": {
+      "natural": 3689,
+      "aligned": 3287,
+      "rejections": {}
+    },
+    "5": {
+      "natural": 3287,
+      "aligned": 3287,
+      "rejections": {}
+    }
+  }
+}

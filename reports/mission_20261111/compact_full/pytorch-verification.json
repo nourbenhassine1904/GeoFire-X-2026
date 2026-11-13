@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "train_events": 250,
+  "val_events": 201,
+  "batch_shape": [
+    4,
+    3,
+    8,
+    64,
+    64
+  ],
+  "parts_verified": 3,
+  "test_pixels_opened": 0
+}

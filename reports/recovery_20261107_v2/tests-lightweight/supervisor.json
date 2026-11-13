@@ -1,0 +1,44 @@
+{
+  "time": "2026-11-07T12:47:02.792635+00:00",
+  "command": [
+    "C:\\Users\\nourb\\Projects\\GeoFire-X-2026\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_recovery_tools.py",
+    "-v"
+  ],
+  "pid": 2748,
+  "status": "FINISHED",
+  "exit_code": 0,
+  "elapsed_seconds": 3.3589999999999236,
+  "limit_seconds": 60,
+  "peak_system_memory_load_percent": 79,
+  "before": {
+    "memory": {
+      "total": 16837500928,
+      "available": 3495469056,
+      "load_percent": 79
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903630008320,
+      "free": 119122706432
+    }
+  },
+  "after": {
+    "memory": {
+      "total": 16837500928,
+      "available": 3471953920,
+      "load_percent": 79
+    },
+    "disk": {
+      "total": 1022752714752,
+      "used": 903634456576,
+      "free": 119118258176
+    }
+  }
+}

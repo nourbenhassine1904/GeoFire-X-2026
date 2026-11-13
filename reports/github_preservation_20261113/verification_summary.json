@@ -1,0 +1,10 @@
+{
+  "frontend_build": "PASS: npm run build",
+  "initial_sandbox_attempt": "esbuild parent-directory access denied; same command passed outside sandbox",
+  "targeted_application_tests": 22,
+  "targeted_data_tests": 7,
+  "new_training": false,
+  "kaggle_transfers": false,
+  "visual_redesign": false,
+  "external_backup_performed": false
+}

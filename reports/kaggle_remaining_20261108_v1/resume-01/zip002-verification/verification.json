@@ -1,0 +1,15 @@
+{
+  "status": "EXISTING_ZIP_FULLY_VERIFIED_REUSED",
+  "lot_identity": "743ddf890901f5d92c8fca17bb8bfa02e918701a2d69f7d4d0fee0bbf221ae1f",
+  "handle": "nnnnbhss/geofirex-wsts-fold0-tv-002-v1",
+  "payload_bytes": 4995525361,
+  "sha256": "d6857453424a34423211f7c62ecfaa423a864700f6a1e0cc0b4b5c40210e9b4f",
+  "observations": 1380,
+  "verified_files": 1380,
+  "verified_raw_bytes": 4995042486,
+  "zip_structure": true,
+  "all_crc32": true,
+  "all_sha256": true,
+  "rebuilt": false,
+  "network_bytes": 0
+}

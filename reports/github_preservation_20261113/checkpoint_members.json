@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip",
+    "member": "B2_posweight_100/checkpoint_latest.pt",
+    "bytes": 1561043,
+    "sha256": "b117276998d7b01e6f5a0a9e5f337b8c3fb0f7858fe3974c84ca8fc8765c23e4"
+  },
+  {
+    "archive": "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip",
+    "member": "B2_posweight_30/checkpoint_latest.pt",
+    "bytes": 1561043,
+    "sha256": "2115c9e79ed6168623cd6ec13518704c846c30ef1ae856fc6219d5612dc8f710"
+  },
+  {
+    "archive": "reports/unet_confirmation_20261112_v1/inputs/GeoFireX_UNet_ABLATION_3_MODELS.zip",
+    "member": "B2_posweight_10/checkpoint_latest.pt",
+    "bytes": 1561043,
+    "sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e"
+  },
+  {
+    "archive": "artifacts/propagation-comparison/GeoFireX_UNET_PROPAGATION_COMPLETE.zip",
+    "member": "training/checkpoint_latest.pt",
+    "bytes": 1570387,
+    "sha256": "55b05174b0c2cf61d005f1a38bdd45bff16ead3957ffd3345f309a474f59b67e"
+  }
+]

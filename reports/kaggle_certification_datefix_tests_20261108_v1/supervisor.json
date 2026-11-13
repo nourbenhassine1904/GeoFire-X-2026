@@ -1,0 +1,30 @@
+{
+  "command": [
+    "python",
+    "tests/test_lot001_date_policy.py"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 3120041984,
+    "load_percent": 81,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 16305532928,
+    "commit_used_bytes": 20933062656
+  },
+  "limit_seconds": 60,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 268435456,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-08T12:38:38.315370+00:00",
+  "status": "PREFLIGHT_LOW_MEMORY",
+  "children_started": 0,
+  "after": {
+    "total": 16837500928,
+    "available": 3120037888,
+    "load_percent": 81,
+    "commit_limit_bytes": 37238595584,
+    "commit_available_bytes": 16305532928,
+    "commit_used_bytes": 20933062656
+  }
+}

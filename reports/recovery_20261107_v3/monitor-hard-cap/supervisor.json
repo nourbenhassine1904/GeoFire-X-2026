@@ -1,0 +1,38 @@
+{
+  "command": [
+    ".\\.venv\\Scripts\\python.exe",
+    "-c",
+    "import sys; exec('try:\\n x=bytearray(256*1024*1024)\\n print(\" UNEXPECTED_ALLOCATION\\);",
+    "sys.exit(2)\\nexcept",
+    "MemoryError:\\n",
+    "print(\\NATIVE_CAP_ENFORCED\\)')"
+  ],
+  "before": {
+    "total": 16837500928,
+    "available": 7127048192,
+    "load_percent": 57
+  },
+  "limit_seconds": 10,
+  "start_memory_bytes": 3221225472,
+  "reserve_memory_bytes": 2147483648,
+  "job_commit_limit_bytes": 134217728,
+  "rss_limit_bytes": 2147483648,
+  "time": "2026-11-07T13:08:41.372483+00:00",
+  "status": "FAILED",
+  "exit_code": 1,
+  "pid": 48412,
+  "children_started": 1,
+  "last_observed_owned_pids": [],
+  "elapsed_seconds": 0.2660000000000764,
+  "peak_tree_rss_bytes": 2187264,
+  "peak_sampled_private_commit_bytes": 503808,
+  "peak_job_commit_bytes": 6541312,
+  "peak_owned_processes": 1,
+  "minimum_available_bytes": 7116509184,
+  "monitor_error": null,
+  "after": {
+    "total": 16837500928,
+    "available": 7123984384,
+    "load_percent": 57
+  }
+}

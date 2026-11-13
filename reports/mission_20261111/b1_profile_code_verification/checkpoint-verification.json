@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "same_predictions": true,
+  "optimizer_updates": 2,
+  "contains_optimizer_and_rng": true
+}
