@@ -1,0 +1,23 @@
+{
+  "training_executed": false,
+  "gpu_queried": false,
+  "submitted": false,
+  "runs": 1,
+  "config_sha256": "48a13f21fc1bf7f1d581025f585f78fc254ef9bd298fe4492c469cdd1256defc",
+  "code_sha256": "8f48deba428b11be05cc20ccaaf9c4ef3dec19445a4479ccfbf9dd19355a16bd",
+  "bundled_source_sha256": {
+    "geofirex/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "geofirex/calibration_io.py": "68de4b6673d0f3bf54d1aeb362f19b709d514e6483106065d431f101d8a95cc8",
+    "geofirex/calibration_mounts.py": "1e66ae50234606545572142401c72bf47fa1a265b4a664d7568031c707efff12",
+    "geofirex/compact_calibration.py": "58560e3f6eca9edfa41ec14a64fbb5a4a2aa899edeab283ac2e3ecdba3da78f2",
+    "geofirex/fast_compact.py": "d52ed93ca58f4ce76019c3b52be48b4a830efead5d5327448c3820a974844e3e",
+    "geofirex/benchmark_models.py": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1",
+    "geofirex/benchmark_metrics.py": "7868afaa6cbb7f8b38fec1db0193cb11578a54d19aede7e164018fa9f323d9f0",
+    "geofirex/unet.py": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0",
+    "geofirex/loss_ablation.py": "377a8c588d0ab49b31ac6c93592a4cb2329ccb2b6a0391a52d7766c58c577646",
+    "geofirex/focal_loss.py": "4f4daa759fd08caba53524dd9f425027e415948c9aacad4aa23fd54237d83978",
+    "geofirex/focal_experiment.py": "b81f88b301328629a302425842fa155f48e8566077bca961a7eb8089f91f3362"
+  },
+  "baseline_archive_sha256": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+  "source_adaptation": "fast_compact import only: same save/sha helpers, no loader logic changed"
+}

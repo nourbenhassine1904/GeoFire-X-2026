@@ -1,0 +1,11 @@
+{
+  "torch_version": "2.15.0+cpu",
+  "numpy_version": "2.4.6",
+  "expected_initial_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+  "observed_initial_sha256": "69f6c443d7b12c0f45132c328dde9b82e44e42ca857475d6231a9afe31dd8fe0",
+  "matches_historical": false,
+  "cuda_queried": false,
+  "model_weights_loaded": false,
+  "optimizer_steps": 0,
+  "interpretation": "Deterministic local initialization differs. Matching source files do not establish the cause; reproduce historical runtime before execution. Never change expected historical SHA."
+}

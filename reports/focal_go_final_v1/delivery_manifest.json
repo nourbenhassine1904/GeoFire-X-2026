@@ -1,0 +1,125 @@
+{
+  "scope": "Final preparation only; no trained Focal result",
+  "files": [
+    {
+      "path": "reports/focal_go_final_v1/authorization_TEMPLATE_DISABLED.json",
+      "bytes": 554,
+      "sha256": "b8c2ac4bd0dbbe1879841967aade29f96e591103e774d6e1bb97224f21b5fb7b"
+    },
+    {
+      "path": "reports/focal_go_final_v1/BILAN_FINAL.md",
+      "bytes": 12618,
+      "sha256": "d479c1c93d816abf3458bce1770e18e3f8adb02168f71ecaefeb78b7ee19f624"
+    },
+    {
+      "path": "reports/focal_go_final_v1/decision.json",
+      "bytes": 1671,
+      "sha256": "0ec79cb41a5bbaac2656172b9e834935ea9bdfd5b64fabc873e3ccbdb72cacdc"
+    },
+    {
+      "path": "reports/focal_go_final_v1/GEOFIREX_FOCAL_SINGLE_DISABLED.before.ipynb",
+      "bytes": 1023575,
+      "sha256": "1460c69c6498e1139a30c372ad421bd4bd50fe22c902e973a75b0a59193afb56"
+    },
+    {
+      "path": "reports/focal_go_final_v1/KAGGLE_CELLULES_ET_SAUVEGARDE.md",
+      "bytes": 9241,
+      "sha256": "5711fc8baf054e5a4d809565b8b73679aa91bfef05a6f75df4a743af915354aa"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/dataset-sources.json",
+      "bytes": 531,
+      "sha256": "8c1059a0bc9590b3f5725d6decc234fa079350d7bf68b4d66c27415b6ae73be9"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/finalize_focal_logistics.py",
+      "bytes": 8860,
+      "sha256": "5dc46d1a00872fc8cc0133566c16b304d6468386e0de47b3312cdda3d8abe7b8"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/focal-code.zip",
+      "bytes": 762695,
+      "sha256": "8f48deba428b11be05cc20ccaaf9c4ef3dec19445a4479ccfbf9dd19355a16bd"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/focal_config.json",
+      "bytes": 7741,
+      "sha256": "48a13f21fc1bf7f1d581025f585f78fc254ef9bd298fe4492c469cdd1256defc"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/focal_run_logistics.py",
+      "bytes": 16675,
+      "sha256": "71f8cf79764bef15f13cc99951b540ba686c7f5fbc77881126d505ea7b846f34"
+    },
+    {
+      "path": "reports/focal_go_final_v1/kit/GEOFIREX_FOCAL_SINGLE_DISABLED.ipynb",
+      "bytes": 1085041,
+      "sha256": "d095420e5460caf3cba9b93dae4ad3ccdb64315f322cc7eedf4d648f99e2d7b9"
+    },
+    {
+      "path": "reports/focal_go_final_v1/precheck_report_kaggle_PASS.json",
+      "bytes": 29029,
+      "sha256": "d52dccc18e6caa71532c6c73de100d7294aff87d5d3a4fb785f401459a3ac3af"
+    },
+    {
+      "path": "reports/focal_go_final_v1/precheck_report_kaggle_PASS.json.sha256",
+      "bytes": 100,
+      "sha256": "c37dd55fb1cfea26abd6d17e5f3a8156b6910ca69b331acd8fb91dfb1172fbb0"
+    },
+    {
+      "path": "reports/focal_go_final_v1/preservation_after.json",
+      "bytes": 12878,
+      "sha256": "d63e8a483238c9630ee8ba80c5095845a39e07f36123629d76b9a23e88019822"
+    },
+    {
+      "path": "reports/focal_go_final_v1/preservation_before.json",
+      "bytes": 12488,
+      "sha256": "d807b91bb120106a923239c63fd1983699c96e339860c0369b2fd30bb75cfbc5"
+    },
+    {
+      "path": "reports/focal_go_final_v1/PRIORITE_MULTIMODALE.md",
+      "bytes": 14948,
+      "sha256": "898c89cb9c23a01f9e442ece4221572728e621a39754da7803bcf87402b6830d"
+    },
+    {
+      "path": "reports/focal_go_final_v1/tests-final-v2.xml",
+      "bytes": 1854,
+      "sha256": "1b05024ac17f10fdbfedf841ed093e2e4794dce23e8212aad4581ea4086b564b"
+    },
+    {
+      "path": "reports/focal_go_final_v1/tests-final.xml",
+      "bytes": 13321,
+      "sha256": "3307ec3d65b5f04aaaf26f71643f35a50f50e37844da0428963aca1c55476930"
+    },
+    {
+      "path": "reports/focal_go_final_v1/tests-logistics.xml",
+      "bytes": 6406,
+      "sha256": "85e142a18add43f4a74248401aacb8aea8baf1075f1ccebc9d039ebf42048f6f"
+    },
+    {
+      "path": "reports/focal_go_final_v1/tests-verified.xml",
+      "bytes": 1539,
+      "sha256": "e0713238d70cabd608ad09163ed2a73057181972171a4788f4ed689a88393e31"
+    },
+    {
+      "path": "reports/focal_preparation_v1/GEOFIREX_FOCAL_SINGLE_DISABLED.ipynb",
+      "bytes": 1085041,
+      "sha256": "d095420e5460caf3cba9b93dae4ad3ccdb64315f322cc7eedf4d648f99e2d7b9"
+    },
+    {
+      "path": "scripts/finalize_focal_logistics.py",
+      "bytes": 8860,
+      "sha256": "5dc46d1a00872fc8cc0133566c16b304d6468386e0de47b3312cdda3d8abe7b8"
+    },
+    {
+      "path": "scripts/focal_run_logistics.py",
+      "bytes": 16675,
+      "sha256": "71f8cf79764bef15f13cc99951b540ba686c7f5fbc77881126d505ea7b846f34"
+    },
+    {
+      "path": "tests/test_focal_run_logistics.py",
+      "bytes": 9545,
+      "sha256": "dcad88b38903709b4ac2ee979af5a154f1da2b3db3aba20a9c78131b2ddd9f1a"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "scope": "Files prepared by this audit; includes one existing test fixture edited, excludes pre-existing unrelated untracked files and ignored scratch",
+  "files": [
+    {
+      "path": "docs/SCIENTIFIC_IMPROVEMENTS_V1.md",
+      "bytes": 42774,
+      "sha256": "aef9084933dfd7387fecda1df2c5f6494ae6b7c3be3a2839410f05361395236d"
+    },
+    {
+      "path": "configs/scientific_improvements_v1.json",
+      "bytes": 7398,
+      "sha256": "f43c38e14b396759038458513f10c7b82cc53f5b9b9be38437bb3e3021912019"
+    },
+    {
+      "path": "src/geofirex/experiment_readiness.py",
+      "bytes": 9479,
+      "sha256": "10f182eeada377b8bf3fadf4210fbf9efa565af2767ed3bb9e9a50d0d0f5f0f8"
+    },
+    {
+      "path": "scripts/audit_scientific_improvements.py",
+      "bytes": 16274,
+      "sha256": "35a94a3102ead287fddf7940c029febc75e1d0611fab4b222811b7f51bfd8467"
+    },
+    {
+      "path": "tests/test_experiment_readiness.py",
+      "bytes": 11724,
+      "sha256": "c491ab21a540271acf026da66dcf891c45dfca9f51f4075eaa7989bb772774ec"
+    },
+    {
+      "path": "tests/test_unet_data.py",
+      "bytes": 7775,
+      "sha256": "7d00f1ac154244ca500a6e3a0f3b60ffa593bd892e1d1f85f49b9ab42095a52e"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/feature_availability_matrix.csv",
+      "bytes": 6421,
+      "sha256": "958641367489d775e73438c2116dd5cea60a84d3abfdf451845d17348acf0a33"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/gpu_budget_scenarios.json",
+      "bytes": 1474,
+      "sha256": "27482c6ef65a40751b412c936fd5d0f2fc33976e9dc7878087083a41867b8916"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/per_event_saved.csv",
+      "bytes": 87201,
+      "sha256": "ec8426ec2b328267fd623bede19e9ed76a78830ebffa5e94405223be4608c015"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/performance_saved.png",
+      "bytes": 154037,
+      "sha256": "71ce58b6d4972b4666bc414f27d881b7c55fced40e33d923952988cf547bb9e5"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/plot_saved.py",
+      "bytes": 2714,
+      "sha256": "3979c870ffc221a490e299418ffdd5b1aaa766062ff1ae4a5ab20090ef7b5814"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/preservation_after.json",
+      "bytes": 6731,
+      "sha256": "30780098dca65f6c80e83347ca7d3072ff43064309bced740e72e5be22bec757"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/preservation_before.json",
+      "bytes": 13330,
+      "sha256": "0892f0a890a1d9cfb314f20207c7fb7ec7d1fcd0072864d5266f9a323f46fdd2"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/readiness.json",
+      "bytes": 4406,
+      "sha256": "1b88db87eac8dd9209f234c171bd20408c8bc135e6e0916779e5ffa8794f9049"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/saved_metrics_audit.json",
+      "bytes": 13615,
+      "sha256": "b0396cf7a79fe2cdc6e0d314dda89e110b54a0c63bb6b3e90cb6667fc04b0c8c"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/sources.json",
+      "bytes": 2938,
+      "sha256": "4f5366eda3a5d37acc3beab377786ace8b1bad68e5555b0461f79b7cd674c434"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/tests-delivery.xml",
+      "bytes": 7894,
+      "sha256": "1892061d18639fe263edc071b7addbb42e3fcb7525c785e897d268d4bb5e98f9"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/tests-targeted-final-pass.xml",
+      "bytes": 7449,
+      "sha256": "3919fb9b2c9425bc795213664fd86aac466d0895f1718372ac4b5140020447e3"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/tests-targeted.xml",
+      "bytes": 7039,
+      "sha256": "928dee1338ad262c29036cb03e404ed4f349c8f7672e5679063ae40da1d1df26"
+    },
+    {
+      "path": "reports/scientific_improvements_v1/VALIDATION.md",
+      "bytes": 6912,
+      "sha256": "670be8788d157da11e3deb32626fbb57b3c48ced95a5ebacc03080d79192681a"
+    }
+  ],
+  "total_bytes_excluding_this_manifest": 417585,
+  "saved_figure_reproduces_identically": true,
+  "staging": false,
+  "commit": false,
+  "push": false
+}

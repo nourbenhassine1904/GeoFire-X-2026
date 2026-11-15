@@ -42,7 +42,7 @@ def inputs(tmp_path):
         for day, value in enumerate(values, 1):
             write_day(tmp_path / "raw" / "2020" / event / f"2020-01-{day:02d}.tif", value)
     manifest, split = tmp_path / "manifest.csv", tmp_path / "split.csv"
-    save_real_manifest(build_real_manifest(tmp_path / "raw"), manifest)
+    save_real_manifest(build_real_manifest(tmp_path / "raw", root=tmp_path), manifest)
     save_split_csv({"2020/fire_1": "train", "2020/fire_2": "val", "2020/fire_3": "test"}, split)
     rows, mapping, windows, rejections = load_event_windows(manifest, split, tmp_path)
     return manifest, split, windows

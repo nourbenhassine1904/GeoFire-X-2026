@@ -1,0 +1,16 @@
+{
+  "code_sha256": "4ab817e0966ce8d08c995ea576e2bdabd38bcb92c023d1e6a0342ec2635ba724",
+  "frozen_config_sha256": "48a13f21fc1bf7f1d581025f585f78fc254ef9bd298fe4492c469cdd1256defc",
+  "existing_focal_notebook_sha256": "1460c69c6498e1139a30c372ad421bd4bd50fe22c902e973a75b0a59193afb56",
+  "sources": {
+    "geofirex/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "geofirex/unet.py": "bc63f4eef458b284d25ac37b993ddfa533de9fcd0c43a4ad0ba84f5d3caddfc0",
+    "geofirex/benchmark_models.py": "3261256ad1a4c49aa2a0c5b1c18bfc869cc757b003bae22ab62ae28cac7404c1",
+    "metadata_sampler.py": "7fc9d709b0474bdbd9fc762959b2dc6c853a5c8a0b9811f2ceba492d90f4cf49",
+    "focal_repro_precheck.py": "6c7d179be5e84287e4e21e11fa69adfff8f162f5b63540d93cd00c5903b46647"
+  },
+  "optimizer_present": false,
+  "training_enabled": false,
+  "submitted": false,
+  "corpus_republished": false
+}

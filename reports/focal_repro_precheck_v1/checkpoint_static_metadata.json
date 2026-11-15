@@ -1,0 +1,16 @@
+{
+  "method": "Static pickletools opcode inspection ONLY, no unpickling or torch.load",
+  "checkpoint_member": "B2_posweight_10/checkpoint_latest.pt",
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "storage_globals": [
+    "torch ByteStorage",
+    "torch FloatStorage"
+  ],
+  "storage_devices": [
+    "cpu",
+    "cuda:0"
+  ],
+  "initial_tensors_recovered": false,
+  "checkpoint_modified": false,
+  "python_version_recorded": false
+}

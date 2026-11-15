@@ -1,0 +1,18 @@
+{
+  "historical_preparation_bundle_sha256": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e",
+  "files": {
+    "unet.py": {
+      "matches": true,
+      "current_sha256": "c0a9ce9a28e0e3475f8b138f52485f09173e6e5a0eba6070990aa2c46d93a6cc"
+    },
+    "benchmark_models.py": {
+      "matches": true,
+      "current_sha256": "6d72a4f890ab2e92a1d9b6ed1c91bb0e33c9b3c6fd15bac7c624a2a4a94185c5"
+    },
+    "loss_ablation.py": {
+      "matches": true,
+      "current_sha256": "c2ba87d57dbafc8b82ed56b2729d8225f7b96b666ba09c5b181a290cedcd6e15"
+    }
+  },
+  "qualification": "Matches the saved preparation bundle. Not proof of bitwise initialization or of the exact executing GPU environment."
+}

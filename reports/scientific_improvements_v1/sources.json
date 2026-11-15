@@ -1,0 +1,34 @@
+{
+  "local_inputs": {
+    "configs/prediction_lab_v1.json": "4c09d17c9bcf1c56c513f3297df6d6e51ea2d852b06315387375dd3025f7dd57",
+    "configs/propagation_comparison_v1.json": "926ea70249d84afe7b390a56c63c6d2909d5b9b113a0f1dda1dbb1d0d4dfc4bf",
+    "reports/gpu_acceleration_20261111_v1/index/index.json": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+    "reports/gpu_acceleration_20261111_v1/index/normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "reports/gpu_acceleration_20261111_v1/publication/plan.json": "87ad4e23ea8b35280b6e589e120a8e40efdbe13f5e78108bdb6d1aa204d502f8",
+    "reports/mission_20261111/compact_full/report.json": "072a159a32a0d298258c38915ff6e4759986658135bb50808d5e7a2d93a03dcf",
+    "reports/unet_confirmation_20261112_v1/ablation_verified.json": "0a794365ed33b75040c86135954c3643cd1f9927fb1cc4214ec5a264023a01e0",
+    "reports/unet_confirmation_20261112_v1/confirmation_cpu/comparison.json": "f9e3ec9b6543a956f970e8a1b05ac407e5b5c5776ef8aaa58bef0d7235ba2097",
+    "reports/unet_confirmation_20261112_v1/confirmation_cpu/new_fire.json": "5c3ecb34351532badc113e90325b17dddf6604f5669b845f95ec8bd85ff7990a",
+    "reports/unet_confirmation_20261112_v1/confirmation_cpu/B2_w10_holdout169/evaluation.json": "4944478ae4d5d2e017149992550d19d304370338c6406be84ffc3d76e50b02d5",
+    "artifacts/propagation-comparison/comparison.json": "ccc8a9c6224ae0bb183da070597a2da533fe33b261611fb4d6b2ced3caa3851b",
+    "reports/calibration_20261112_v1/GeoFireX_CALIBRATION_RESULTATS.zip": "bd1e2f7e70ad6b8d1ce516e72626b1dfc9cb7050d0e02ad120b7b5a38031d6dd"
+  },
+  "read_method": "JSON/CSV/ZIP JSON members only; no raster/NPZ/checkpoint deserialization",
+  "external_consulted": "2026-11-13",
+  "external_sources": [
+    "https://github.com/SebastianGer/WildfireSpreadTS",
+    "https://github.com/SebastianGer/WildfireSpreadTSCreateDataset/blob/master/DataPreparation/satellites/FirePred.py",
+    "https://github.com/SebastianGer/WildfireSpreadTSCreateDataset/blob/master/DataPreparation/DatasetPrepareService.py",
+    "https://lpdaac.usgs.gov/documents/1372/VNP13_User_Guide_ATBD_V2.1.2.pdf",
+    "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_GRIDMET",
+    "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT",
+    "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1",
+    "https://developers.google.com/earth-engine/datasets/catalog/NOAA_GFS0P25",
+    "https://arxiv.org/html/2502.12003v3",
+    "https://github.com/slahrichi/WildfireSpreadTS",
+    "https://huggingface.co/saadlahrichi/WSTSPlus",
+    "https://arxiv.org/html/2609.22191v2",
+    "https://arxiv.org/abs/1708.02002"
+  ],
+  "warning": "Current upstream code is not proof of the exact generation version or historical publication latency of the 2023 archive; public weights were not downloaded"
+}

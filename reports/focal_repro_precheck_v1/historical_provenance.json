@@ -1,0 +1,56 @@
+{
+  "expected_initial_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+  "historical_archive_sha256": "a122dfa4ac419f3b8f8d32e1ae309033ef02ccfb1891fbaed3b5ed7c6a751e07",
+  "variants": [
+    {
+      "weight": 100,
+      "config_member": "B2_posweight_100/config.json",
+      "config_sha256": "a5b24b5f8b2519f14170dfc4aafbe904b3fab27921ef94a4767740ee2633cb12",
+      "selection_member": "B2_posweight_100/selection32.json",
+      "selection_sha256": "d2bcfeab9265142254ad185affa260eaf0df00a6008535b501c669a9d553fdd5",
+      "initial_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+      "torch": "2.11.0+cu130",
+      "numpy": "2.1.3",
+      "device": "cuda",
+      "trained_checkpoint_sha256": "b117276998d7b01e6f5a0a9e5f337b8c3fb0f7858fe3974c84ca8fc8765c23e4"
+    },
+    {
+      "weight": 30,
+      "config_member": "B2_posweight_30/config.json",
+      "config_sha256": "fdf1aa49198e475e72dc87697cf32f320b2b5caccaae98f2d957c3000760e3e8",
+      "selection_member": "B2_posweight_30/selection32.json",
+      "selection_sha256": "e372842492808efbaecacceac2eb17faf45cc128b10b58ba335b3514b0e2d8d6",
+      "initial_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+      "torch": "2.11.0+cu130",
+      "numpy": "2.1.3",
+      "device": "cuda",
+      "trained_checkpoint_sha256": "2115c9e79ed6168623cd6ec13518704c846c30ef1ae856fc6219d5612dc8f710"
+    },
+    {
+      "weight": 10,
+      "config_member": "B2_posweight_10/config.json",
+      "config_sha256": "899956766b356a2fb288c085a68da045413f183c0a7ddf88acbd55ed95499aeb",
+      "selection_member": "B2_posweight_10/selection32.json",
+      "selection_sha256": "44f6768d3208e8fbdf6c1169d36fcfdda4ae45fa9274172070933f87d8e9112a",
+      "initial_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+      "torch": "2.11.0+cu130",
+      "numpy": "2.1.3",
+      "device": "cuda",
+      "trained_checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e"
+    }
+  ],
+  "historical_preparation_bundle_sha256": "603b4c28908af47a069c57b235a0392a6a2a3d5ee7a20344eece6ddf75c80a7e",
+  "historical_hash_function": "def model_hash(model):\n    digest=hashlib.sha256()\n    for name,tensor in sorted(model.state_dict().items()):\n        digest.update(name.encode());digest.update(tensor.detach().cpu().numpy().tobytes())\n    return digest.hexdigest()",
+  "model_sources_identical_between_saved_preparations": true,
+  "historical_python_version": "NOT_RECORDED",
+  "historical_platform_build": "NOT_RECORDED",
+  "historical_initial_tensor_snapshot": "NOT_SAVED",
+  "direct_baseline_gpu_name": "NOT_RECORDED; config says CUDA",
+  "related_propagation_environment": {
+    "torch": "2.11.0+cu130",
+    "numpy": "2.1.3",
+    "cuda": "13.0",
+    "gpu": "Tesla T4"
+  },
+  "provenance_limit": "Recorded config/selection hashes agree and prior audit checked checkpoint config; saved preparation source is not a complete attestation of the executing runtime."
+}
