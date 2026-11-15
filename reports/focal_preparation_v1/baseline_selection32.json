@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE",
+  "model": "B2",
+  "pos_weight": 10,
+  "initial_state_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+  "updates": 23404,
+  "threshold": 0.78,
+  "metrics": {
+    "threshold": 0.78,
+    "tp": 36640,
+    "fp": 71223,
+    "fn": 44713,
+    "tn": 45971188,
+    "valid_pixels": 46123764,
+    "positive_pixels": 81353,
+    "predicted_positive_pixels": 107863,
+    "prevalence": 0.0017637979415556805,
+    "dice": 0.38728225942837813,
+    "iou": 0.24014261744966442,
+    "precision": 0.33969016252097567,
+    "recall": 0.4503828992169926,
+    "average_precision": 0.26788397857293444,
+    "brier_score": 0.002789059444907891
+  },
+  "boundary_warning": false,
+  "selection_scope": "32 only",
+  "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+  "index_sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "protocol_sha256": "5983837d035a9cd536969bc3c601705d054e100e7f85aae279e4adc385d2630e",
+  "holdout_pixels_opened": 0,
+  "test_2021_pixels_opened": 0
+}

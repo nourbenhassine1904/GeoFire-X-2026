@@ -1,0 +1,198 @@
+{
+  "status": "PREPARED_NOT_EXECUTABLE",
+  "campaign": {
+    "status": "PREPARATION_CONTRACT_VALID",
+    "training_enabled": false
+  },
+  "current_compact": {
+    "events": 451,
+    "train_events": 250,
+    "val_events": 201,
+    "roles": {
+      "train": {
+        "tiles": 93603,
+        "events": 250
+      },
+      "val": {
+        "tiles": 78771,
+        "events": 201
+      }
+    },
+    "partitions": 11
+  },
+  "current_normalizer": {
+    "continuous": [
+      12,
+      14
+    ],
+    "mean": [
+      6.763715660108812,
+      1535.3911188349437
+    ],
+    "std": [
+      6.789603729886774,
+      774.4477277410857
+    ],
+    "clip": 8.0,
+    "fit_paths": 4948,
+    "train_only": true,
+    "sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+  },
+  "profile_schemas": {
+    "conservative_fire_terrain": {
+      "channels": 8,
+      "channel_names": [
+        "slope_z",
+        "elevation_z",
+        "slope_missing",
+        "elevation_missing",
+        "aspect_sin",
+        "aspect_cos",
+        "aspect_missing",
+        "fire_J"
+      ],
+      "raw_bands": [
+        12,
+        13,
+        14,
+        22
+      ],
+      "status": "EXISTING_HISTORICAL_CONDITIONAL_BASELINE"
+    },
+    "terrain_vegetation_v1": {
+      "channels": 36,
+      "channel_names": [
+        "M11_z",
+        "I2_z",
+        "I1_z",
+        "NDVI_last_z",
+        "EVI2_last_z",
+        "slope_z",
+        "elevation_z",
+        "M11_missing",
+        "I2_missing",
+        "I1_missing",
+        "NDVI_last_missing",
+        "EVI2_last_missing",
+        "slope_missing",
+        "elevation_missing",
+        "aspect_sin",
+        "aspect_cos",
+        "aspect_missing",
+        "fire_J",
+        "LC_Type1_1",
+        "LC_Type1_2",
+        "LC_Type1_3",
+        "LC_Type1_4",
+        "LC_Type1_5",
+        "LC_Type1_6",
+        "LC_Type1_7",
+        "LC_Type1_8",
+        "LC_Type1_9",
+        "LC_Type1_10",
+        "LC_Type1_11",
+        "LC_Type1_12",
+        "LC_Type1_13",
+        "LC_Type1_14",
+        "LC_Type1_15",
+        "LC_Type1_16",
+        "LC_Type1_17",
+        "LC_Type1_unknown"
+      ],
+      "raw_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        12,
+        13,
+        14,
+        16,
+        22
+      ],
+      "status": "BLOCKED_NO_ASSET_AVAILABILITY_EVIDENCE"
+    },
+    "multimodal_observed_j_v1": {
+      "channels": 50,
+      "channel_names": [
+        "M11_z",
+        "I2_z",
+        "I1_z",
+        "NDVI_last_z",
+        "EVI2_last_z",
+        "total precipitation_z",
+        "wind speed_z",
+        "minimum temperature_z",
+        "maximum temperature_z",
+        "energy release component_z",
+        "specific humidity_z",
+        "slope_z",
+        "elevation_z",
+        "pdsi_z",
+        "M11_missing",
+        "I2_missing",
+        "I1_missing",
+        "NDVI_last_missing",
+        "EVI2_last_missing",
+        "total precipitation_missing",
+        "wind speed_missing",
+        "minimum temperature_missing",
+        "maximum temperature_missing",
+        "energy release component_missing",
+        "specific humidity_missing",
+        "slope_missing",
+        "elevation_missing",
+        "pdsi_missing",
+        "aspect_sin",
+        "aspect_cos",
+        "aspect_missing",
+        "fire_J",
+        "LC_Type1_1",
+        "LC_Type1_2",
+        "LC_Type1_3",
+        "LC_Type1_4",
+        "LC_Type1_5",
+        "LC_Type1_6",
+        "LC_Type1_7",
+        "LC_Type1_8",
+        "LC_Type1_9",
+        "LC_Type1_10",
+        "LC_Type1_11",
+        "LC_Type1_12",
+        "LC_Type1_13",
+        "LC_Type1_14",
+        "LC_Type1_15",
+        "LC_Type1_16",
+        "LC_Type1_17",
+        "LC_Type1_unknown"
+      ],
+      "raw_bands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        22
+      ],
+      "status": "BLOCKED_NO_ASSET_AVAILABILITY_EVIDENCE"
+    }
+  },
+  "new_modalities_available_in_current_compact": false,
+  "raw_pixels_opened": 0,
+  "test_2021_pixels_opened": 0,
+  "focal_trainer_implemented": false,
+  "experiment_launchers_created": false,
+  "studio_model_changed": false
+}

@@ -1,0 +1,17 @@
+{
+  "precheck_ready": true,
+  "local_status": "BLOCKED",
+  "kaggle_report_received": false,
+  "training_authorized": false,
+  "expected_hash_changed": false,
+  "existing_focal_notebook_changed": false,
+  "precise_cause_of_historical_hash_divergence": "not yet isolated; version/platform/build differences remain hypotheses",
+  "local_causes_excluded": [
+    "NumPy RNG seed in weight creation",
+    "NumPy byte serialization",
+    "Conv2d2.11 reset semantics on current contiguous backend"
+  ],
+  "technical_PASS_does_not_authorize_training": true,
+  "tests": 55,
+  "previous_files_preserved": 166
+}

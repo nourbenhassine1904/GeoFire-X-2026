@@ -1,0 +1,46 @@
+{
+  "measured_reference": {
+    "epochs": 4,
+    "updates": 23404,
+    "gpu": "Tesla T4",
+    "seconds": 887.0689039439999,
+    "source": "artifacts/propagation-comparison/comparison.json",
+    "qualification": "related dual-head U-Net, not a timing of focal/nativeT1/ResNet18/UTAE",
+    "updates_per_second": 26.383519809953206,
+    "tile_presentations_per_second": 422.077696935746
+  },
+  "scenario_only": {
+    "A_one_new_run_minutes": [
+      11.088361299299999,
+      22.176722598599998
+    ],
+    "B_one_new_run_minutes": [
+      11.088361299299999,
+      22.176722598599998
+    ],
+    "A_plus_B_new_GPU_hours": [
+      0.36961204330999997,
+      0.7392240866199999
+    ],
+    "multipliers": [
+      0.75,
+      1.5
+    ],
+    "confidence": "planning range chosen around one related measured run, not a statistical interval or guaranteed bound",
+    "excludes": [
+      "GPU environment setup",
+      "source/data integrity checks",
+      "selection32 exact AP/scratch",
+      "backup",
+      "additional seeds or mechanism controls"
+    ]
+  },
+  "CPU_confirmation169_seconds": 747.9547643000005,
+  "C_D_E_GPU_cost": "not measured; requires separate future authorization and architecture/loader qualification",
+  "rejected_extrapolations": [
+    "971 tiles/s from four warm-cache raw batches",
+    "5400s wall limit mistaken for measured runtime",
+    "linear GPU time from parameter count"
+  ],
+  "gpu_jobs_started": 0
+}

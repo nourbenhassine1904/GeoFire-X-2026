@@ -1,0 +1,117 @@
+{
+  "scope": "Only additions from Focal preparation; existing scientific audit and Studio preserved",
+  "files": [
+    {
+      "path": "src/geofirex/focal_loss.py",
+      "bytes": 2360,
+      "sha256": "4f4daa759fd08caba53524dd9f425027e415948c9aacad4aa23fd54237d83978"
+    },
+    {
+      "path": "src/geofirex/focal_experiment.py",
+      "bytes": 19498,
+      "sha256": "b81f88b301328629a302425842fa155f48e8566077bca961a7eb8089f91f3362"
+    },
+    {
+      "path": "scripts/prepare_focal_experiment.py",
+      "bytes": 14756,
+      "sha256": "3897176e7701ebc0e33f48cc264f75cdbeda9c67d36e6f1556250e0f29fcb9ba"
+    },
+    {
+      "path": "tests/test_focal_experiment.py",
+      "bytes": 16446,
+      "sha256": "d5e36056fc5b32a56ca874005c01cbec9925f5be4585aa817cec2b5520404074"
+    },
+    {
+      "path": "reports/focal_preparation_v1/baseline_comparison_contract.json",
+      "bytes": 23868,
+      "sha256": "c67b57bf704ef7421f506591d556a5e7897120bcb3cdd2dfadbbb20524104662"
+    },
+    {
+      "path": "reports/focal_preparation_v1/baseline_config.json",
+      "bytes": 4112,
+      "sha256": "899956766b356a2fb288c085a68da045413f183c0a7ddf88acbd55ed95499aeb"
+    },
+    {
+      "path": "reports/focal_preparation_v1/baseline_evaluation32.json",
+      "bytes": 8232959,
+      "sha256": "3956aa821804451ca416cc31ad64055b07253e5b04f4662b37c4ba3b7a63193e"
+    },
+    {
+      "path": "reports/focal_preparation_v1/baseline_selection32.json",
+      "bytes": 1160,
+      "sha256": "44f6768d3208e8fbdf6c1169d36fcfdda4ae45fa9274172070933f87d8e9112a"
+    },
+    {
+      "path": "reports/focal_preparation_v1/build.json",
+      "bytes": 1629,
+      "sha256": "3e2317ceba7bf485220d07e8f1bdc5130fde7b81ce0fd9f3f15daf8dcd989fb8"
+    },
+    {
+      "path": "reports/focal_preparation_v1/bundled_preflight.json",
+      "bytes": 1487,
+      "sha256": "edd30b425c3e3d4813bf783ba84e74d6adb87310403f7df58d84ea385bdbd92f"
+    },
+    {
+      "path": "reports/focal_preparation_v1/cpu_initialization_probe.json",
+      "bytes": 582,
+      "sha256": "a042b0e23a29855bcaae2603d6e4068e8ff1161b3e59abfcae9174a4ad91375f"
+    },
+    {
+      "path": "reports/focal_preparation_v1/dataset-sources.json",
+      "bytes": 531,
+      "sha256": "8c1059a0bc9590b3f5725d6decc234fa079350d7bf68b4d66c27415b6ae73be9"
+    },
+    {
+      "path": "reports/focal_preparation_v1/focal-code.zip",
+      "bytes": 762695,
+      "sha256": "8f48deba428b11be05cc20ccaaf9c4ef3dec19445a4479ccfbf9dd19355a16bd"
+    },
+    {
+      "path": "reports/focal_preparation_v1/focal_config.json",
+      "bytes": 7741,
+      "sha256": "48a13f21fc1bf7f1d581025f585f78fc254ef9bd298fe4492c469cdd1256defc"
+    },
+    {
+      "path": "reports/focal_preparation_v1/GEOFIREX_FOCAL_SINGLE_DISABLED.ipynb",
+      "bytes": 1023575,
+      "sha256": "1460c69c6498e1139a30c372ad421bd4bd50fe22c902e973a75b0a59193afb56"
+    },
+    {
+      "path": "reports/focal_preparation_v1/GO_NO_GO.md",
+      "bytes": 17999,
+      "sha256": "0d04741ad150211ff8678a891bbbaa0b028d06423989b353da14cfa8ff3c4835"
+    },
+    {
+      "path": "reports/focal_preparation_v1/historical_source_check.json",
+      "bytes": 720,
+      "sha256": "dc1994bde2ccb8dd3aee9f3d7cacbaa6e7a9e7317bf018b863f101bcfa1e9047"
+    },
+    {
+      "path": "reports/focal_preparation_v1/metadata_preflight.json",
+      "bytes": 1487,
+      "sha256": "edd30b425c3e3d4813bf783ba84e74d6adb87310403f7df58d84ea385bdbd92f"
+    },
+    {
+      "path": "reports/focal_preparation_v1/partitions_verified.json",
+      "bytes": 3115,
+      "sha256": "fcab36c591eb126a49d2869ff3d335726186bc7760e6aea9da7e1e0e156b6904"
+    },
+    {
+      "path": "reports/focal_preparation_v1/preservation.json",
+      "bytes": 7739,
+      "sha256": "2ffb335860ee83a3bfdee6f12580b840a93d4e45716210736fef05be41eef358"
+    },
+    {
+      "path": "reports/focal_preparation_v1/tests-delivery.xml",
+      "bytes": 13360,
+      "sha256": "ea11e0ce3d3feaf9992c2c3b9d2d226d1564db25f0b675b34fb3c3019fdf30fb"
+    }
+  ],
+  "total_bytes_excluding_this_manifest": 10157819,
+  "tests": 93,
+  "gpu_jobs": 0,
+  "optimizer_steps": 0,
+  "test2021_pixels_opened": 0,
+  "training_authorized": false,
+  "notebook_training_enabled": false
+}

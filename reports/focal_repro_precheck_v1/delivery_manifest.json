@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "path": "scripts/focal_repro_precheck.py",
+      "bytes": 14672,
+      "sha256": "6c7d179be5e84287e4e21e11fa69adfff8f162f5b63540d93cd00c5903b46647"
+    },
+    {
+      "path": "scripts/prepare_focal_repro_precheck.py",
+      "bytes": 10621,
+      "sha256": "f1178d7c70cff6e69f3a9d07a55619417ddf9237621c71b1cb72c7338b87d0ca"
+    },
+    {
+      "path": "tests/test_focal_repro_precheck.py",
+      "bytes": 6872,
+      "sha256": "0da109f301463d95330092399206ef73df19d66bf355a1e6ca48f2f6dcc1946a"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/build.json",
+      "bytes": 917,
+      "sha256": "5d6ee6da382ed851c290e0c1b526dea0a6e2ec00bedf7814a732988f2028b951"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/checkpoint_static_metadata.json",
+      "bytes": 493,
+      "sha256": "e2b6f767c09fc0245c78204e061eb7b90ad450e73357e4a2482220e8d11bc07a"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/DIAGNOSTIC_ET_KAGGLE.md",
+      "bytes": 19821,
+      "sha256": "1c82267eecf08918e0507716d6ee64b2c1f00cf20615ebdf366145fb4d9674e8"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/GEOFIREX_FOCAL_PRECHECK_ONLY.ipynb",
+      "bytes": 20343,
+      "sha256": "589f3bcaace137227f75f2e6bb39b8020a9069c722378082f1945833b4931abb"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/historical_provenance.json",
+      "bytes": 3074,
+      "sha256": "8514065ffc740cb7c6810d08f777a89b9347a54e5ea9153a99b397a88391833f"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/local_precheck_report.json",
+      "bytes": 29992,
+      "sha256": "414b322362206da4bf3fec50fdd946e58db4409bf554757b242072afe5cbcfcd"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/precheck-code.zip",
+      "bytes": 11691,
+      "sha256": "4ab817e0966ce8d08c995ea576e2bdabd38bcb92c023d1e6a0342ec2635ba724"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/preservation.json",
+      "bytes": 19289,
+      "sha256": "e0ff997e5aaa5e4fbd7c4eeeff42d255bd76a21ac0e3bf8ae51fa9ee1f80170b"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/preservation_check.json",
+      "bytes": 8865,
+      "sha256": "6ebfd8317012973768397f31edf90f2407ef5c918da4e6de27d1a12bcdb924d8"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/technical_decision.json",
+      "bytes": 615,
+      "sha256": "8f44f7708358266efd8bb9dca45cbfca5d2f93e2f47a705922c9f58a68fe182c"
+    },
+    {
+      "path": "reports/focal_repro_precheck_v1/tests-delivery.xml",
+      "bytes": 7425,
+      "sha256": "09e95ea64ff3e5ea89e09b4bd9f87db7a80754061616d1bd102724ba72bf28e6"
+    }
+  ],
+  "total_bytes_excluding_manifest": 154690,
+  "tests": 55,
+  "training_runs": 0,
+  "optimizer_steps": 0,
+  "kaggle_submissions": 0
+}

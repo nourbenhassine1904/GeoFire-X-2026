@@ -1,0 +1,14 @@
+{
+  "training_authorized": false,
+  "runs": 1,
+  "experiment": "A_focal_gamma2_pos10_seed42_v1",
+  "config_sha256": "48a13f21fc1bf7f1d581025f585f78fc254ef9bd298fe4492c469cdd1256defc",
+  "code_sha256": "8f48deba428b11be05cc20ccaaf9c4ef3dec19445a4479ccfbf9dd19355a16bd",
+  "logistics_sha256": "71f8cf79764bef15f13cc99951b540ba686c7f5fbc77881126d505ea7b846f34",
+  "max_training_seconds": 2700,
+  "session_reserve_minutes": 120,
+  "gpu_count": 1,
+  "checkpoint_backup_destination": "",
+  "local_backup_destination": "",
+  "authorized_by": ""
+}
