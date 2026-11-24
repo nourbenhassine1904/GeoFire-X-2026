@@ -1,0 +1,47 @@
+GeoFire-X Studio — livraison locale finale du 24 novembre 2026
+Soutenance : 2 décembre 2026
+
+Lancer : .\Start-GeoFireX.ps1
+URL : http://127.0.0.1:8026/#/overview
+Guide : docs/SOUTENANCE_FINALE_20261202.txt
+
+Livré : identité charbon/orange/ambre/crème, flamme SVG/CSS et braises discrètes,
+mode statique, lecteur réel J−2/J−1/J/prévision J+1, sélection directe de la scène
+de soutenance, vérité J+1 séparée, comparaison côte à côte, métriques expliquées,
+cartes agrandies, zoom et plein écran corrigé, exports séparés PNG et métadonnées,
+V2 en priorité dans Analytics, historique et méthode dans des sections accessibles.
+Aucune nouvelle dépendance. Pas de reconstruction du projet ni de nouveau modèle.
+
+Vérification :
+- Build React/esbuild : PASS. Exécution hors sandbox nécessaire pour les droits
+  de lecture des répertoires parents Windows ; aucun paquet supplémentaire installé.
+- API/CPU : 29 tests réussis, api-cpu.xml.
+- Frontend : 27 contrôles réussis, frontend-release/propagation-dom.json.
+  Vraies API, inférence CPU et comparaison pixel à pixel des exports instrumentés.
+- Règles axe sélectionnées : aucune violation sur les cinq pages, dans le même reçu.
+- Préservation : 77 identités historiques et 213 fichiers du snapshot protégés,
+  preservation.json. Les changements UI autorisés sont explicitement énumérés.
+- Navigateur : Chrome bureau, plein écran réel et émulation mobile 390×844.
+  Voir browser-audit.json. Ce contrôle ne certifie pas un téléphone physique.
+- PNG et métadonnées réellement téléchargés dans Chrome et comparés : PASS,
+  browser-exports.json. Un fichier par clic ; aucune autorisation de téléchargements
+  multiples nécessaire après correction.
+- Mouvement réduit testé par l’émulation CSS système de Chrome ; version statique
+  et contrôle manuel vérifiés. Retour sur Overview, DevTools fermé.
+
+La scène conserve TP 27, FP 58, FN 201 pour les nouveaux feux. Les agrégats V2,
+archives, checkpoints, normaliseurs, splits et critères ne sont pas réécrits.
+Aucun raster fictif ou lissage temporel ; pas de pixel J+1 dans l’inférence.
+Aucune nouvelle inférence V2/2021, récupération ou session d’entraînement GPU.
+
+Captures : fichiers *-native.png dans captures/ montrent l’application seule.
+Les captures d’écran Windows brutes restent locales, car elles peuvent inclure
+les onglets Chrome et le profil. Le manifeste ne sélectionne que les captures natives.
+Les dimensions des captures peuvent être multipliées par le DPR Chrome ; la taille
+CSS du viewport figure dans l’audit navigateur.
+
+Git : git-files-to-publish.txt est la sélection exacte proposée, git-manifest.json
+donne tailles et SHA-256. Les prérequis préexistants sont séparés du lot UI final.
+ADATA_only indique les quatre archives V2 et les artefacts historiques à préserver.
+Une restauration locale des données reste nécessaire sur un nouveau clone.
+Aucun git add, commit, push, merge, suppression ou déplacement d’archives exécuté.

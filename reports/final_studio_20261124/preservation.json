@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "historical_identities_verified": 77,
+  "prior_snapshot_files_preserved": 213,
+  "authorized_ui_changes": [
+    "frontend/src/EventForecast.mjs",
+    "frontend/src/prediction_view.mjs",
+    "frontend/src/ScientificComparison.mjs",
+    "frontend/src/studio_ui.mjs",
+    "frontend/src/StudioApp.mjs",
+    "frontend/src/StudioPages.mjs",
+    "frontend/src/style.css",
+    "README.md",
+    "src/geofirex/jury_app.py"
+  ],
+  "new_training": false,
+  "new_v2_inference": false,
+  "test2021_pixels_opened": 0,
+  "git_commit_push_merge": false
+}

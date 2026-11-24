@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "date": "2026-11-24",
+  "browser": "Google Chrome on Windows, real UI actions via Computer Use",
+  "desktop": {
+    "window": [
+      1536,
+      816
+    ],
+    "fullscreen": [
+      1536,
+      864
+    ],
+    "native_capture_viewports": [
+      [
+        1440,
+        1100
+      ],
+      [
+        1440,
+        1600
+      ]
+    ]
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "kind": "Chrome responsive device emulation, not a physical phone"
+  },
+  "pages_visually_checked": [
+    "Overview",
+    "Prediction Studio",
+    "Comparaison V2",
+    "Model Analytics",
+    "Research"
+  ],
+  "actions_observed": [
+    "Overview real saved J/J+1 grids and animated SVG flame",
+    "Historical event defaults to 2020/fire_24332880, as_of 2020-09-03",
+    "Actual CPU inference, loading state and deferred truth reveal",
+    "Timeline Play progresses from real observations to explicitly labelled 2020-09-04 prediction and stops",
+    "Direct selection of the J+1 timeline frame",
+    "Truth revealed with separate explicit button",
+    "Scene metrics TP 27, FP 58, FN 201 and short explanations",
+    "Prediction/truth side by side",
+    "Map enlargement and zoom x2",
+    "Fullscreen enters successfully, Quitter le plein Ã©cran appears, closing returns to the page",
+    "Mobile navigation dialog opens and comparison link navigates",
+    "Mobile timeline dates wrap into two columns, controls stay visible",
+    "Mobile V2 bars and scatter fit the viewport",
+    "Three saved V2 scenes load with common crop and identical pixel domain verified by API",
+    "Separate actual Chrome PNG and metadata JSON downloads, no multi-download permission needed",
+    "V2 metrics prioritised in Model Analytics, historical analyses in accessible details",
+    "Research pipeline and methodological sections render",
+    "Chrome emulated prefers-reduced-motion: reduce disables the animation button with system preference status",
+    "Restoring the motion preference restores the animation toggle",
+    "Manual motion button toggles to Activer les animations and back; normal desktop restored on Overview"
+  ],
+  "issues_found_and_fixed": [
+    "Chrome forbids requestFullscreen on a dialog; target documentElement and expand the modal with fullscreen CSS",
+    "Simultaneous PNG and JSON downloads prompted Chrome; split into explicit separate download buttons",
+    "Missing favicon caused 404; add inline SVG favicon"
+  ],
+  "application_javascript_errors_observed_after_final_reload": [],
+  "functional_DOM_checks": "frontend-release/propagation-dom.json",
+  "actual_browser_export_verification": "browser-exports.json",
+  "limits": [
+    "Mobile checked through Chrome emulation only",
+    "No exhaustive cross-browser or physical-device certification",
+    "Token contrast and selected axe rules checked separately; no claim of complete WCAG certification"
+  ]
+}

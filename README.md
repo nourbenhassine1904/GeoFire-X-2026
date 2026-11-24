@@ -2,7 +2,48 @@
 
 Multimodal Spatio-Temporal Deep Learning for Next-Day Wildfire Spread Forecasting under Geographic and Temporal Domain Shift.
 
-## État actuel — GeoFire-X Studio, novembre 2026
+## Démonstration jury — 2 décembre 2026
+
+Lancer la version locale finalisée depuis la racine du dépôt :
+
+```powershell
+.\Start-GeoFireX.ps1
+```
+
+Ouvrir **http://127.0.0.1:8026/#/overview**. La commande compile React puis lance FastAPI ;
+aucun entraînement, récupération FIRE13 ou calcul Spark ne démarre au lancement.
+Si un serveur occupe déjà 8026, l'arrêter dans son terminal avec Ctrl+C avant
+le lancement, ou utiliser `.\Start-GeoFireX.ps1 -Port 8027`.
+
+La page **Comparaison V2** présente C8, NEWPOS2, NEWPOS4 et FIRE13 sur les mêmes
+80 événements de **validation 2020**, au seuil 0,78, avec archives et checkpoints
+liés par SHA-256. Aucune variante n'est promue. L'inférence interactive conserve
+le U-Net historique, sur son protocole distinct à 201 événements ; les scores
+des deux périmètres ne sont pas mélangés. Les erreurs TP/FP/FN et exports restent
+des grilles de pixels sans CRS, sans conversion en hectares.
+
+Le Studio montre les observations J−2/J−1/J, calcule J+1 sur CPU puis attend
+le bouton **Révéler la vérité J+1**. Le zoom conserve le rapport du raster.
+La comparaison spatiale V2 lit les sorties sauvegardées NEWPOS2/NEWPOS4/FIRE13
+sur ADATA ; aucune nouvelle inférence V2 n'est lancée. C8 n'a pas de matrices
+complètes sauvegardées. Les nouveaux exports PNG ont un fichier de métadonnées.
+
+Parcours jury actualisé de 5–7 minutes et sauvegarde GitHub préparée :
+[procédure Studio](docs/STUDIO_PROPAGATION_JURY_20261202.txt).
+Vérification React/HTTP : `cd frontend`, puis `npm run test:studio` (serveur actif,
+URL configurable par `GEOFIREX_TEST_URL`).
+
+Le candidat **AUXNEW V2** est seulement préparé : huit canaux C8 inchangés,
+supervision auxiliaire fixe et tête principale seule en inférence. Son notebook
+est désactivé ; aucun résultat ni gain n'est revendiqué. Une nouvelle autorisation
+et un précontrôle GPU sont nécessaires avant tout lancement éventuel.
+
+Voir la [procédure de démonstration](docs/DEMONSTRATION_JURY_20261202.txt), la
+[comparaison officielle](reports/jury_20261202_v1/comparison.csv) et le
+[protocole AUXNEW](reports/auxnew_20261123_v1/protocol.json).
+L'axe Big Data/Spark est séparé du parcours jury GeoFire-X.
+
+## Référence historique — Studio avant la finalisation jury
 
 GeoFire-X dispose d'une application **FastAPI + React fonctionnelle** avec une
 inférence réelle J+1 sur les événements historiques de validation 2020.
@@ -256,3 +297,8 @@ le depot source.
 Consulter le [plan de publication et de restauration](docs/GITHUB_PRESERVATION_20261113.md)
 et la [selection exhaustive soumise a accord](reports/github_preservation_20261113/PLAN_PUBLICATION.md).
 Les checkpoints et corpus restent hors Git ; leurs empreintes sont conservees dans les manifestes.
+## GeoFire-X Studio — version finale du 2 décembre 2026
+
+Lancement local : `./Start-GeoFireX.ps1`, puis <http://127.0.0.1:8026/#/overview>.
+Le [guide final de six minutes](docs/SOUTENANCE_FINALE_20261202.txt) décrit le lecteur historique, la révélation séparée J+1, les exports et la distinction avec les résultats V2 sauvegardés.
+Les contrôles et le manifeste de publication sont dans `reports/final_studio_20261124/`. Aucun commit, push ou merge automatique.

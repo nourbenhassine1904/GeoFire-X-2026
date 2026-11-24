@@ -1,0 +1,22 @@
+{
+  "schema": "v2-propagation-pr-preregistration-1",
+  "fpr_budgets": [
+    0,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "recall_curve_intervals": 100,
+  "official_threshold": 0.78,
+  "threshold_selection_enabled": false,
+  "denominator": "negatives among valid & observed_J==0, repeated pixel-windows, not unique area",
+  "budget_rule": "floor(FPR_budget * negative_count); ties indivisible; reject-all always feasible",
+  "selected_point": "maximum recall at or below FP budget; earliest highest threshold on recall ties",
+  "empty_policy": "no positives: recall/AP null; no negatives: FPR null",
+  "pr_curve": "Exact full global-tie scan; output downsampled at fixed recall crossings plus final point",
+  "distinction": "0.78 fixed official metrics; PR/budget envelope descriptive; operational threshold selection disabled",
+  "optimism": "Choosing and evaluating threshold on same panel is optimistically biased. Report envelope as descriptive, never prospective operating performance.",
+  "future_operational_selection": "Requires separate preregistration before results: event-disjoint development calibration and assessment, or nested event-level CV; lock before final 2021. Current 80 already observed, not blind.",
+  "test2021": "Never used for threshold choice; no test reader in this kit"
+}

@@ -3,8 +3,10 @@ import {h,Icon,Fade,WelcomeTitle,AuroraBackdrop,StatCard,PageHeader,Badge,useRes
 import {Results,BigData} from './ScienceResults.mjs';
 import UnetAblation from './UnetAblation.mjs';
 import Propagation from './Propagation.mjs';
+import {V2MetricCharts} from './V2Views.mjs';
+export {JuryOverview as Overview} from './ScientificComparison.mjs';
 
-export function Overview({navigate}){
+function LegacyOverview({navigate}){
  const science=useResource('/science/summary'),unet=useResource('/science/unet-ablation'),lineage=useResource('/lab/lineage'),big=useResource('/science/big-data');
  const s=science.data,u=unet.data,l=lineage.data,b=big.data;
  const candidate=u?.confirmation?.comparison?.find(r=>r.model==='B2_w10'),inventory=b?.tables.annual.reduce((a,r)=>a+r.events,0);
@@ -37,10 +39,13 @@ export function Overview({navigate}){
 const analysisTabs=[['unet','Modèle principal'],['historical','CNN / U-Net'],['propagation','Propagation'],['architectures','Architectures']];
 export function ModelAnalytics(){
  const [tab,setTab]=useState('unet');
+ const v2=useResource('/science/v2/comparison');
  function onKey(e){const i=analysisTabs.findIndex(t=>t[0]===tab);let next;if(e.key==='ArrowRight')next=(i+1)%analysisTabs.length;if(e.key==='ArrowLeft')next=(i-1+analysisTabs.length)%analysisTabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=analysisTabs.length-1;if(next!==undefined){e.preventDefault();setTab(analysisTabs[next][0]);document.getElementById('analytics-tab-'+analysisTabs[next][0])?.focus();}}
- return h('div',{className:'analytics-page page-width'},h(PageHeader,{kicker:'COMPARER · MESURER · INTERPRÉTER',title:'Model Analytics',description:'Des résultats vérifiés, leurs compromis et les décisions expérimentales qui les accompagnent.',action:h(Badge,{tone:'violet'},'PRINCIPAL · U-NET POIDS 10')}),
+ return h('div',{className:'analytics-page page-width'},h(PageHeader,{kicker:'COMPARER · MESURER · INTERPRÉTER',title:'Model Analytics',description:'Des résultats vérifiés, leurs compromis et les décisions expérimentales qui les accompagnent.',action:h(Badge,{tone:'violet'},'V2 · RÉFÉRENCE C8')}),
+  h('section',{className:'panel'},h('h2',null,'Validation V2 2020 · 80 événements communs'),h('p',null,'C8 est la référence V2. NEWPOS2, NEWPOS4 et FIRE13 restent expérimentaux et non promus. Les résultats historiques ci-dessous portent sur des domaines distincts et ne sont pas appariés à V2.'),h(SourceState,{state:v2}),v2.data&&h(V2MetricCharts,{data:v2.data})),
+  h('details',{className:'panel historical-analytics'},h('summary',null,'Analyses historiques · protocole distinct'),
   h('div',{className:'studio-tabs',role:'tablist','aria-label':'Analyses des modèles',onKeyDown:onKey},...analysisTabs.map(([key,title])=>h('button',{key,id:'analytics-tab-'+key,role:'tab','aria-selected':tab===key,'aria-controls':'analytics-panel',tabIndex:tab===key?0:-1,onClick:()=>setTab(key)},title))),
-  h('div',{role:'tabpanel',id:'analytics-panel','aria-labelledby':'analytics-tab-'+tab,tabIndex:0},h(Fade,{key:tab,trigger:'mount'},tab==='unet'?h(UnetAblation):tab==='historical'?h(Results):tab==='propagation'?h(Propagation):h(Architectures))));
+  h('div',{role:'tabpanel',id:'analytics-panel','aria-labelledby':'analytics-tab-'+tab,tabIndex:0},h(Fade,{key:tab,trigger:'mount'},tab==='unet'?h(UnetAblation):tab==='historical'?h(Results):tab==='propagation'?h(Propagation):h(Architectures)))));
 }
 export function Architectures(){return h(Fade,null,h('div',{className:'architecture-grid'},
  ...[['B1 · CNN','Référence convolutive','Convolutions 2D','Contexte T3 empilé','Tête de segmentation J+1'],['B2 · U-Net','Modèle principal · poids 10','Encodeur multirésolution','Connexions de saut','Décodeur + logits J+1']].map(([name,detail,...steps])=>h('section',{className:'feature-panel',key:name},h(Badge,{tone:name.startsWith('B2')?'violet':''},detail),h('h2',null,name),h('div',{className:'architecture-flow'},...steps.map((s,i)=>h(React.Fragment,{key:s},h('div',null,h(Icon,{name:i===1?'layers':'code'}),s),i<steps.length-1&&h('span',{'aria-hidden':true},'↓')))),h('p',null,'Entrées compactes : 8 canaux. Les dates du contexte et les masques sont contrôlés ; la cible J+1 reste séparée de l’inférence.')))),
@@ -52,13 +57,14 @@ export function Research(){
  const science=useResource('/science/summary'),lineage=useResource('/lab/lineage'),unet=useResource('/science/unet-ablation');
  return h('div',{className:'page-width research-page'},h(PageHeader,{kicker:'PROTOCOLES · PROVENANCE · REPRODUCTIBILITÉ',title:'Research',description:'Comprendre ce qui est mesuré, ce qui est prédit et ce que les résultats permettent réellement de conclure.',action:h(Badge,null,h(Icon,{name:'lock',size:13}),'TEST 2021 VERROUILLÉ')}),
  h(Fade,null,h('section',{className:'feature-panel research-principle'},h('span',{className:'eyebrow'},'LE CONTRAT SCIENTIFIQUE'),h('h2',null,'Prédire une détection future. Préserver la séparation temporelle.'),h('p',null,'Le modèle observe J−2, J−1 et J pour prédire la détection active à J+1. Les cinq jours disponibles à J définissent la validité des entrées. La vérité terrain J+1 n’est lue que dans une requête distincte, après la prédiction.'),h('div',{className:'temporal-contract'},...['J−4','J−3','J−2','J−1','J','J+1'].map((v,i)=>h('div',{key:v,className:i===5?'future':i>=2?'model-input':''},h('strong',null,v),h('span',null,i===5?'Cible séparée':i>=2?'Entrée du modèle':'Masque de validité')))))),
+ h('section',{className:'panel'},h('h2',null,'Un pipeline lisible, des preuves à chaque étape'),h('div',{className:'pipeline-diagram'},...['Données satellitaires et masques valides','Contexte temporel T3 · huit canaux C8','U-Net · encodeur et décodeur','Scores J+1 et seuil 0,78','Vérité séparée, métriques et exports'].map((text,i)=>h('div',{className:'pipeline-node',key:text},h('span',{className:'eyebrow'},['DONNÉES','CONTEXTE','MODÈLE','PRÉVISION','ÉVALUATION'][i]),h('strong',null,text)))),h('p',null,'Le compact alimente l’inférence historique CPU. Les résultats V2 proviennent d’archives vérifiées et d’un protocole distinct.')),
  h('div',{className:'research-grid'},...[
   ['01','Données et séparation','607 événements inventoriés ; 250 événements d’entraînement (2018–2019) et 201 de validation (2020) dans le compact. L’inventaire 2021 est constitué de métadonnées : aucun pixel de test n’est consulté.'],
   ['02','Sélection expérimentale','Les 32 événements de réglage choisissent le poids et le seuil. La confirmation porte sur 169 événements désormais observés : ce panel ne constitue plus un test aveugle pour des décisions ultérieures.'],
   ['03','Métriques et déséquilibre','Dice et IoU évaluent les segmentations. Précision, rappel et faux positifs explicitent leurs compromis. AP et Brier portent sur les scores originaux et restent indépendants du seuil.'],
   ['04','Reproductibilité','Même seed 42 et même budget pour les ablations : quatre époques, 23 404 mises à jour par entraînement. Checkpoints, archives, normaliseur train-only et index sont liés par SHA-256.']
  ].map(([id,title,text])=>h(Fade,{key:id,className:'feature-panel'},h('section',null,h('span',{className:'research-number mono'},id),h('h2',null,title),h('p',null,text))))),
- h('section',{className:'panel limitations'},h('h2',null,'Lire les résultats à leur juste échelle'),h('ul',null,
+ h('details',{className:'panel limitations'},h('summary',null,'Lire les résultats à leur juste échelle · limites scientifiques'),h('ul',null,
   h('li',null,'Détection active quotidienne ≠ surface brûlée cumulée. Un nouveau pixel ne prouve pas une ignition ou une propagation physique.'),
   h('li',null,'Grille raster compacte sans CRS ni affine disponibles : aucune carte géographique ou surface en hectares n’est déduite.'),
   h('li',null,'Les huit canaux compacts ne contiennent ni vent, ni humidité, ni météo prévue.'),

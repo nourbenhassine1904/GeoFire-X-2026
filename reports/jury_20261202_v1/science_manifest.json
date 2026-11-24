@@ -1,0 +1,54 @@
+{
+  "files": {
+    "C8_evaluation.json": "37e39603f42909c5a5afa86a1bd45b9050d11a0406260428143af09a7b88fcd7",
+    "comparison.json": "2b1285fd0fecbaba4cf84752155d1bd9e982a6af26af351b2aa294d5f18ff96c",
+    "diagnostic_tile.json": "7c82a9be2f59fca8b899635719706aa23be076139ba271c7fac5170160fcdd12",
+    "FIRE13_acceptance_saved.json": "b5317c63300be3cac4ac59bc420648ba1859399a7eb8e18a5f929371634c99d3",
+    "FIRE13_comparable_fp_saved.json": "d838264a8f5cbde038ad685c1485ad37664bb57e1e9d304d8c4d9bbe7ff10ac0",
+    "FIRE13_evaluation.json": "c700b09434824481b3db191fd8299795d18931edd896bc9b53ec397dd1b0f6f6",
+    "NEWPOS2_evaluation.json": "74dc9af9fdf1abaee346a1347f262cb5c79270f4ccb97545de31138f969d5033",
+    "NEWPOS4_evaluation.json": "eacec1e3df7268a5508f4d0a8424858b17f49057158a43676caefc334d8e64fb",
+    "comparison.csv": "bdfeb70cf24fb603f24d1aa1ba4fc123a46f8d0b737c7825cb47e960a319c8b4",
+    "paired_results.json": "5d852b349479b24d0e0a566b5b767f24917d91d4a4a0ef19de630086a9d3e4f6"
+  },
+  "source_archives": [
+    {
+      "model": "C8",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_seed42-COMPLETE-48e35c59.zip",
+      "archive_sha256": "37a8d69647ddebaa902d88e21fddf4df3f56eaa57e7094695b478d04116c1415",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "37e39603f42909c5a5afa86a1bd45b9050d11a0406260428143af09a7b88fcd7",
+      "checkpoint_sha256": "c2273fea252d709f4d316eba76515d669be97eac8bfa9302ff4831da2c9aedc1",
+      "all_archive_members_verified": true
+    },
+    {
+      "model": "NEWPOS2",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_NEWPOS2_seed42-COMPLETE-193dafd8.zip",
+      "archive_sha256": "70c9693265c64c2a3b435c2c0a60f1f410ad1604e08a2625c04b687dead1b8f5",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "74dc9af9fdf1abaee346a1347f262cb5c79270f4ccb97545de31138f969d5033",
+      "checkpoint_sha256": "6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91",
+      "all_archive_members_verified": true
+    },
+    {
+      "model": "NEWPOS4",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_NEWPOS4_seed42-COMPLETE-2193b5a8.zip",
+      "archive_sha256": "0b1ea0ad35004fc2c5828325f0b42d55dd430f2ccdfc00bac964e7ba56555b39",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "eacec1e3df7268a5508f4d0a8424858b17f49057158a43676caefc334d8e64fb",
+      "checkpoint_sha256": "5e139fa2dde831e21a05ce10d73a88c62bad7069c23cdde687cb16b1d04c9819",
+      "all_archive_members_verified": true
+    },
+    {
+      "model": "FIRE13",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C13_FIRE_V2_seed42_EVALUATION_RECOVERY_ONLY-EVALUATION-RECOVERY-COMPLETE-e1c5a248.zip",
+      "archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "c700b09434824481b3db191fd8299795d18931edd896bc9b53ec397dd1b0f6f6",
+      "checkpoint_sha256": "5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c",
+      "all_archive_members_verified": true
+    }
+  ],
+  "original_scientific_identities": 77,
+  "original_manifest_sha256": "c150333d74baa454a8ac48763fc1665a8dc7bd853f768264a527f8b917c45989"
+}

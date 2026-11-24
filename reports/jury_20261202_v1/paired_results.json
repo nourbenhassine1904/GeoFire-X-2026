@@ -1,0 +1,281 @@
+{
+  "scope": "already observed validation2020 V2 80 events",
+  "new_bootstrap_executed": false,
+  "rows": [
+    {
+      "candidate": "NEWPOS2",
+      "reference": "C8",
+      "source_archive_sha256": "70c9693265c64c2a3b435c2c0a60f1f410ad1604e08a2625c04b687dead1b8f5",
+      "member": "evaluation/paired_comparison/bootstrap_events.json",
+      "member_sha256": "810538c271931aff929c0a3fbb33f1e0baeb69cb145af5f7cb572f5149be6591",
+      "saved_result": {
+        "repetitions": 2000,
+        "seed": 20261121,
+        "unit": "paired event, not pixel",
+        "intervals": {
+          "pooled_dice": {
+            "low": 0.0016146315770359145,
+            "high": 0.021245654464128256,
+            "defined": 2000
+          },
+          "macro_event_dice": {
+            "low": 0.006853576752720139,
+            "high": 0.01574388362394224,
+            "defined": 2000
+          },
+          "brier": {
+            "low": 0.00040506083998079217,
+            "high": 0.0006694612982453723,
+            "defined": 2000
+          },
+          "new_recall": {
+            "low": 0.07903335125771842,
+            "high": 0.11413295653842963,
+            "defined": 2000
+          },
+          "new_dice": {
+            "low": 0.08358115496333238,
+            "high": 0.10195600701302177,
+            "defined": 2000
+          },
+          "new_precision": {
+            "low": -0.041436828572833144,
+            "high": -0.012372089450614559,
+            "defined": 2000
+          },
+          "new_iou": {
+            "low": 0.047291321793920614,
+            "high": 0.06055827619781598,
+            "defined": 2000
+          },
+          "new_fp": {
+            "low": 34926.075,
+            "high": 69851.29999999999,
+            "defined": 2000
+          }
+        },
+        "scope": "confusion-count metrics, macro Dice and Brier; exact pooled AP reported separately, not approximated or bootstrapped"
+      }
+    },
+    {
+      "candidate": "NEWPOS4",
+      "reference": "C8",
+      "source_archive_sha256": "0b1ea0ad35004fc2c5828325f0b42d55dd430f2ccdfc00bac964e7ba56555b39",
+      "member": "evaluation/paired_comparison/bootstrap_events.json",
+      "member_sha256": "94e72ee0f8aeee6636ece3f16f77dfdbc92d48b5639aa6da6efcfd832b9fe72a",
+      "saved_result": {
+        "repetitions": 2000,
+        "seed": 20261121,
+        "unit": "paired event, not pixel",
+        "intervals": {
+          "pooled_dice": {
+            "low": -0.025176960424626384,
+            "high": -0.0005671506344781301,
+            "defined": 2000
+          },
+          "macro_event_dice": {
+            "low": -0.0028002897579321334,
+            "high": 0.01129626122795083,
+            "defined": 2000
+          },
+          "brier": {
+            "low": 0.0015318645126314136,
+            "high": 0.002260115617848708,
+            "defined": 2000
+          },
+          "new_recall": {
+            "low": 0.13724069078464646,
+            "high": 0.18498193889108472,
+            "defined": 2000
+          },
+          "new_dice": {
+            "low": 0.09974030634195775,
+            "high": 0.12476203474243369,
+            "defined": 2000
+          },
+          "new_precision": {
+            "low": -0.09007436717308141,
+            "high": -0.05384543486895767,
+            "defined": 2000
+          },
+          "new_iou": {
+            "low": 0.057656358048149725,
+            "high": 0.07404067602809351,
+            "defined": 2000
+          },
+          "new_fp": {
+            "low": 83923.9,
+            "high": 145860.67499999996,
+            "defined": 2000
+          }
+        },
+        "scope": "confusion-count metrics, macro Dice and Brier; exact pooled AP reported separately, not approximated or bootstrapped"
+      }
+    },
+    {
+      "candidate": "FIRE13",
+      "reference": "C8",
+      "source_archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "member": "evaluation/paired_comparison/bootstrap_events.json",
+      "member_sha256": "00ec140d0187d5e8bf3e302539e799bc59a0758b77464b7589d37f65b9a78f61",
+      "saved_result": {
+        "repetitions": 2000,
+        "seed": 20261121,
+        "unit": "paired event, not pixel",
+        "intervals": {
+          "pooled_dice": {
+            "low": -0.012943972525772734,
+            "high": 0.007179253666030864,
+            "defined": 2000
+          },
+          "macro_event_dice": {
+            "low": -0.005785689537986543,
+            "high": 0.010225774762607373,
+            "defined": 2000
+          },
+          "brier": {
+            "low": 0.0019083759420854738,
+            "high": 0.003367254353641304,
+            "defined": 2000
+          },
+          "new_recall": {
+            "low": 0.08196724801222267,
+            "high": 0.13467565098081,
+            "defined": 2000
+          },
+          "new_dice": {
+            "low": 0.07841322642428653,
+            "high": 0.10397136580856572,
+            "defined": 2000
+          },
+          "new_precision": {
+            "low": -0.07305078918899527,
+            "high": -0.034777416408089984,
+            "defined": 2000
+          },
+          "new_iou": {
+            "low": 0.04478284625563915,
+            "high": 0.061146962070999636,
+            "defined": 2000
+          },
+          "new_fp": {
+            "low": 46766.7,
+            "high": 96189.72499999999,
+            "defined": 2000
+          }
+        },
+        "scope": "confusion-count metrics, macro Dice and Brier; exact pooled AP reported separately, not approximated or bootstrapped"
+      }
+    },
+    {
+      "candidate": "FIRE13",
+      "reference": "NEWPOS2",
+      "source_archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "member": "evaluation/paired_comparison/bootstrap_vs_newpos2.json",
+      "member_sha256": "472861a7e540a4d1dd20514739e4353d72d2cf91b0d46a22265fe900a0486570",
+      "saved_result": {
+        "repetitions": 2000,
+        "seed": 20261121,
+        "unit": "paired event, not pixel",
+        "intervals": {
+          "pooled_dice": {
+            "low": -0.029175750978668032,
+            "high": -0.00247183409711345,
+            "defined": 2000
+          },
+          "macro_event_dice": {
+            "low": -0.015404881957061401,
+            "high": -0.0028537875277197047,
+            "defined": 2000
+          },
+          "brier": {
+            "low": 0.0014021857136877298,
+            "high": 0.00280566396427026,
+            "defined": 2000
+          },
+          "new_recall": {
+            "low": -0.0026114135714961945,
+            "high": 0.026398221480093385,
+            "defined": 2000
+          },
+          "new_dice": {
+            "low": -0.010828697143203335,
+            "high": 0.007327534586721523,
+            "defined": 2000
+          },
+          "new_precision": {
+            "low": -0.03792476052488434,
+            "high": -0.01674259577126587,
+            "defined": 2000
+          },
+          "new_iou": {
+            "low": -0.006524668492992257,
+            "high": 0.004473853080087211,
+            "defined": 2000
+          },
+          "new_fp": {
+            "low": 8420.5,
+            "high": 30800.274999999998,
+            "defined": 2000
+          }
+        },
+        "scope": "confusion-count metrics, macro Dice and Brier; exact pooled AP reported separately, not approximated or bootstrapped"
+      }
+    },
+    {
+      "candidate": "FIRE13",
+      "reference": "NEWPOS4",
+      "source_archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "member": "evaluation/paired_comparison/bootstrap_vs_newpos4.json",
+      "member_sha256": "9a6cabe0a00e6d1a819f988fc5908533427088e8656e5378ef1055210f649284",
+      "saved_result": {
+        "repetitions": 2000,
+        "seed": 20261121,
+        "unit": "paired event, not pixel",
+        "intervals": {
+          "pooled_dice": {
+            "low": -0.006412185979393181,
+            "high": 0.021857462562587818,
+            "defined": 2000
+          },
+          "macro_event_dice": {
+            "low": -0.008498661499301364,
+            "high": 0.004646171014786472,
+            "defined": 2000
+          },
+          "brier": {
+            "low": -3.360229255805124e-05,
+            "high": 0.0015064676499632402,
+            "defined": 2000
+          },
+          "new_recall": {
+            "low": -0.06626962894400319,
+            "high": -0.0371520752074453,
+            "defined": 2000
+          },
+          "new_dice": {
+            "low": -0.033755845647587525,
+            "high": -0.009662157476743418,
+            "defined": 2000
+          },
+          "new_precision": {
+            "low": 0.0017001688913215046,
+            "high": 0.03414834771887975,
+            "defined": 2000
+          },
+          "new_iou": {
+            "low": -0.020754862676750033,
+            "high": -0.0059156925856034956,
+            "defined": 2000
+          },
+          "new_fp": {
+            "low": -62137.25,
+            "high": -25440.200000000004,
+            "defined": 2000
+          }
+        },
+        "scope": "confusion-count metrics, macro Dice and Brier; exact pooled AP reported separately, not approximated or bootstrapped"
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "kind": "React DOM simulator; actual HTTP/CPU; not browser layout",
+  "checks": [
+    "counts_and_tied_AP",
+    "CSV_absolute_pixel_offsets",
+    "overview_real_cropped_raster_and_split_labels",
+    "timeline_real_dates_manual_steps_speed_play_stop",
+    "timeline_prediction_label_separate_truth",
+    "past_observations_2020_only",
+    "live_CPU_inference",
+    "truth_requires_user_action",
+    "crop_unchanged_after_truth",
+    "real_scene_counts",
+    "prediction_truth_side_by_side",
+    "timeline_pause_and_previous",
+    "domain_and_layers_controls",
+    "full_grid_and_active_crop_pixel_exact",
+    "enlargement_open_close",
+    "PNG_and_metadata_export",
+    "scene_JSON_CSV_export",
+    "navigation:comparison",
+    "metric_chart_selection_and_FP_scatter",
+    "saved_80_event_catalogue",
+    "three_models_same_scene_saved_only",
+    "spatial_layer_and_domain_controls",
+    "official_metrics_exports_unchanged",
+    "navigation:analytics",
+    "navigation:research",
+    "no_BigData_route",
+    "mobile_navigation_dialog"
+  ],
+  "a11y": {
+    "overview": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "studio": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "comparison": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "analytics": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    },
+    "research": {
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": [
+        "aria-required-attr",
+        "aria-valid-attr-value",
+        "aria-valid-attr",
+        "button-name",
+        "document-title",
+        "heading-order",
+        "html-has-lang",
+        "landmark-one-main",
+        "link-name"
+      ]
+    }
+  },
+  "requests": [
+    "http://127.0.0.1:8026/studio/overview",
+    "http://127.0.0.1:8026/science/unet-ablation",
+    "http://127.0.0.1:8026/lab/lineage",
+    "http://127.0.0.1:8026/science/v2/comparison",
+    "http://127.0.0.1:8026/health",
+    "http://127.0.0.1:8026/lab/events",
+    "http://127.0.0.1:8026/lab/observations?event_id=2020%2Ffire_24332880&as_of=2020-09-03",
+    "http://127.0.0.1:8026/lab/predict?event_id=2020%2Ffire_24332880&as_of=2020-09-03&max_side=512",
+    "http://127.0.0.1:8026/lab/ground-truth?event_id=2020%2Ffire_24332880&as_of=2020-09-03&max_side=512",
+    "http://127.0.0.1:8026/science/v2/scenes",
+    "http://127.0.0.1:8026/science/v2/comparison",
+    "http://127.0.0.1:8026/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8026/science/v2/scene?event_id=2020%2Ffire_24332704&target_date=2020-09-10",
+    "http://127.0.0.1:8026/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8026/science/maps?phase=holdout169",
+    "http://127.0.0.1:8026/science/v2/comparison",
+    "http://127.0.0.1:8026/science/summary",
+    "http://127.0.0.1:8026/lab/lineage",
+    "http://127.0.0.1:8026/science/unet-ablation"
+  ],
+  "downloads": [
+    "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10_Feu_observe_J_2020_09_03.png",
+    "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10_Feu_observe_J_2020_09_03.metadata.json",
+    "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10.json",
+    "2020__fire_24332880_2020-09-04_B2_U_Net_poids_10.csv",
+    "geofirex-V2-2020__fire_24332704_2020-09-10.json",
+    "geofirex-validation2020-V2-80.json"
+  ],
+  "actual_CPU_inference": true,
+  "truth_explicit_user_action": true,
+  "training_executed": false
+}

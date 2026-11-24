@@ -1,0 +1,112 @@
+{
+  "schema": "v2-final-split-lock-1",
+  "date": "2026-11-19",
+  "selected": "2020-08-23",
+  "protocol": "V2",
+  "comparisons": [
+    {
+      "cutoff": "2020-08-18",
+      "events": {
+        "train": 316,
+        "purged": 46,
+        "val": 89,
+        "test": 156
+      },
+      "tiles": {
+        "train": 115030,
+        "val": 35892,
+        "purged": 21452
+      },
+      "train_last": "2020-08-16",
+      "val_first": "2020-08-18"
+    },
+    {
+      "cutoff": "2020-08-23",
+      "events": {
+        "train": 318,
+        "purged": 53,
+        "val": 80,
+        "test": 156
+      },
+      "tiles": {
+        "train": 115900,
+        "val": 30882,
+        "purged": 25592
+      },
+      "train_last": "2020-08-22",
+      "val_first": "2020-08-23"
+    }
+  ],
+  "transitions": [
+    {
+      "before": "purged",
+      "after": "purged",
+      "events": 44
+    },
+    {
+      "before": "purged",
+      "after": "train",
+      "events": 2
+    },
+    {
+      "before": "test",
+      "after": "test",
+      "events": 156
+    },
+    {
+      "before": "train",
+      "after": "train",
+      "events": 316
+    },
+    {
+      "before": "val",
+      "after": "purged",
+      "events": 9
+    },
+    {
+      "before": "val",
+      "after": "val",
+      "events": 80
+    }
+  ],
+  "rationale": "Preserve preregistered closest-80/20 rule, two additional train events and certified domains; accept nine fewer validation events and seven extra exclusions. 18 August has better retention; neither dominates all criteria.",
+  "selection_inputs": "dates, event counts, tile counts, fixed geometry/domain rules only",
+  "labels_used": false,
+  "model_scores_used": false,
+  "further_split_exploration_allowed": false,
+  "protected_sha256": {
+    "configs/protocol_v2/baseline_c8.json": "aea982df94ba98ab8a6c75f74cd37bedd5d7772651519f12928f37173090b98c",
+    "configs/protocol_v2/candidate_c36.json": "b9dc739a123f2b851f79a08ebe74a926fc3bb2e4f93bb47e497c2ff228a4c83a",
+    "configs/protocol_v2/evaluation.json": "fc575dc739e9724cada6157b5d736a8cebf771976848306ce68edf68ca8414e0",
+    "reports/protocol_v2_20261118/cpu_loader_checks.json": "f5b8ea83f03f280ab598b8d2674000b3771495855ee3e98cd802f4e40f633792",
+    "reports/protocol_v2_20261118/cutoff_candidates.csv": "211fd984b10ba1003655bf4eded03e0329c50790d2af2dbbf09fb15bd595daad",
+    "reports/protocol_v2_20261118/decision.json": "021aa75f01a48545f014cf09c2338bedca7e65dfe89222a86ed7ce38926e4417",
+    "reports/protocol_v2_20261118/delivery_manifest.json": "4e8f20b5263d3f348fb21de413a7c91ee444091bf8ecc911afe20510e230920d",
+    "reports/protocol_v2_20261118/delivery_manifest.json.sha256": "171245831106b155ce1175c6310f43bf706837c6943c9b0ec4f625fcb64898e9",
+    "reports/protocol_v2_20261118/distribution_progress.jsonl": "ec8dbbab915e1a1fe59b7f04b337d00809dd1603b762502736b50b94ec4233b0",
+    "reports/protocol_v2_20261118/distribution_saved_consistency.json": "3887482cecb396489ce6d495fdd3fb3d3f5919a1974e6ec28e77fa0452130232",
+    "reports/protocol_v2_20261118/distributions.json": "d21c74fb16247042f2d7140f07baf35696efe79ef77a7d8196088d1d5da816dc",
+    "reports/protocol_v2_20261118/distributions.json.sha256": "6c24dfbb8622774101a41ea8ba439927eff3699170d1093634051d610526ec3c",
+    "reports/protocol_v2_20261118/event_distributions.csv": "f41f8b272d288a8ed969f4d1a20029cd6fa25dd1da309d370c1bbbf188d669c1",
+    "reports/protocol_v2_20261118/events.csv": "3245228c81ed52b807bbea27fe683a0a5c5aaae30393287f97d85030d693c38f",
+    "reports/protocol_v2_20261118/events.csv.sha256": "d9bccf0e9fed208d438e05dd836fb11839fecc67d5a9c88d5226459318333cd5",
+    "reports/protocol_v2_20261118/index/index.json": "e61448e6791dacafe95b67bf4d12b90fb6a8575b14ba9ba19ad5df5e34160655",
+    "reports/protocol_v2_20261118/index/index.json.sha256": "433c6db49e4143f8c6cf4fd25a2913e7a2584fa64c7c7233487040eabcb2cf5e",
+    "reports/protocol_v2_20261118/index/normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "reports/protocol_v2_20261118/index/normalization.json.sha256": "1d4d162dbc17672005b319457fb1817b0bb24b142301a777ffd2847cb8939e11",
+    "reports/protocol_v2_20261118/index/train.npy": "336462bda91417309b539e1839f1e0a89c408129147712ef61afdf9a6f211a80",
+    "reports/protocol_v2_20261118/index/train.npy.sha256": "364f22740c21c9d1d0ca6e01f3711f24e0f3091c949909cd9cfd30d686ef0a8d",
+    "reports/protocol_v2_20261118/index/val.npy": "9f86b5f1779ed679ddec242c1feef409c74e3065f42f9fb270db05e4fceef7cf",
+    "reports/protocol_v2_20261118/index/val.npy.sha256": "de191ca0813c1cdf6f443875ba0918cf87c58a89756887afca9f83768aa5476e",
+    "reports/protocol_v2_20261118/leakage_checks.json": "cd70e77d1c0ba5e96eeb298faadf97e6f5793d63cb99f53482dec3d8b3f0beba",
+    "reports/protocol_v2_20261118/PLAN_EXECUTION.md": "9fc41c26cc3ecff5cb166d4f221857573168dbcd494e5ea25d4e2d18d02b74f7",
+    "reports/protocol_v2_20261118/RAPPORT.md": "a80f649e2fa9b0464a645033aa6cd84b0799e3ae7a6711e28ad96c3881adbf4c",
+    "reports/protocol_v2_20261118/SHA256SUMS": "3418f71692fc259784a8127bd7341fb287135a7ed773ca69d19175e26422f2f3",
+    "reports/protocol_v2_20261118/split_summary.json": "189b85f745fd3fd47223573c94c7d4f82a471107eed159cd1f7057182099d7fb",
+    "reports/protocol_v2_20261118/tests-cpu-final.xml": "c888d33dfe2a70d46ce0a0056fff98049ec806daa210d488f17dc7b0ae0b9074",
+    "reports/protocol_v2_20261118/tests-cpu.xml": "09295fe0a02f3b9429523972ad4cc07003c39e7cb383072cea89c3952679aec8",
+    "reports/protocol_v2_20261118/windows.csv": "f96ef796c37d101b43e1d80ac5ff0820a5c0f4754061b24bca81e83ea88da6a3",
+    "src/geofirex/protocol_v2.py": "0f4f1112fe96c98063513b3f9008295f15c1c48434e9bacb3adbea02c0477ac0",
+    "src/geofirex/v2_evaluation.py": "ed13f2dd5269f7c2bc4b9b5d9853acf272026c225a1ccbe8bdc31ebb7684c6d6"
+  }
+}

@@ -27,7 +27,8 @@ const paths={
  shield:'m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6z M8 12l3 3 5-6'
 };
 export function Icon({name,size=18,...props}){return h('svg',{width:size,height:size,viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:1.6,strokeLinecap:'round',strokeLinejoin:'round','aria-hidden':true,focusable:false,...props},h('path',{d:paths[name]||paths.layers}));}
-export function Brand(){return h('span',{className:'brand-content'},h('span',{className:'brand-mark'},h(Icon,{name:'flame',size:21})),h('span',null,'GEOFIRE',h('span',{className:'brand-x'},'–X')));}
+export function FireEmblem({hero=false}){return h('span',{className:hero?'fire-emblem hero-flame':'fire-emblem','aria-hidden':true},h('svg',{viewBox:'0 0 100 120',fill:'none'},h('path',{className:'flame-outer',fill:'#f97316',d:'M52 4C61 31 84 40 83 68C82 94 68 111 49 113C25 114 12 98 15 76C17 57 30 47 31 30C40 40 40 50 39 58C57 43 49 24 52 4Z'}),h('path',{className:'flame-inner',fill:'#ffcb67',d:'M53 49C58 67 72 75 65 94C59 111 34 109 31 94C28 80 43 74 42 63C48 69 47 78 48 81C56 70 50 61 53 49Z'})),...Array.from({length:4},(_,i)=>h('i',{key:i,className:'ember ember-'+i})));}
+export function Brand(){return h('span',{className:'brand-content'},h('span',{className:'brand-mark'},h(FireEmblem)),h('span',null,'GEOFIRE',h('span',{className:'brand-x'},'–X')));}
 export function useResource(url){
  const [revision,setRevision]=useState(0),[state,setState]=useState({data:null,error:''});
  useEffect(()=>{const c=new AbortController();setState({data:null,error:''});

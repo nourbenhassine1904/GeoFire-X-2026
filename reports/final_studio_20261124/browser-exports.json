@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "kind": "actual Chrome downloads, separate user gestures",
+  "image_shape": [
+    38,
+    32
+  ],
+  "metadata": {
+    "event_id": "2020/fire_24332704",
+    "target_date": "2020-09-10",
+    "as_of": "2020-09-09",
+    "model": "NEWPOS2 V2",
+    "threshold": 0.78,
+    "full_shape": [
+      320,
+      256
+    ],
+    "preview_stride": 1,
+    "scope": "validation2020_V2_80_saved_scene",
+    "checkpoint_sha256": "6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91",
+    "source_archive_sha256": "70c9693265c64c2a3b435c2c0a60f1f410ad1604e08a2625c04b687dead1b8f5",
+    "saved_member_sha256": "d632658fe683425a2d0e41803d0c00ba86339483f0627c4542f05bd80ae69200",
+    "optimizer_updates": 28976,
+    "crs": null,
+    "transform": null,
+    "provenance": "Saved COMPLETE predictions; no new inference",
+    "scene_metrics": {
+      "global": {
+        "tp": 43,
+        "fp": 40,
+        "fn": 15,
+        "tn": 74627,
+        "valid_pixels": 74725,
+        "recall": 0.7413793103448276,
+        "precision": 0.5180722891566265,
+        "dice": 0.6099290780141844,
+        "AP": 0.5091864981192494,
+        "Brier": 0.0008447991904890443
+      },
+      "new_fire": {
+        "tp": 2,
+        "fp": 15,
+        "fn": 15,
+        "tn": 74625,
+        "valid_pixels": 74657,
+        "recall": 0.11764705882352941,
+        "precision": 0.11764705882352941,
+        "dice": 0.11764705882352941,
+        "AP": 0.14457149018908733,
+        "Brier": 0.0005327192400387412
+      }
+    },
+    "metrics_scope": "full saved scene; joint valid mask",
+    "input_dates": [
+      "2020-09-07",
+      "2020-09-08",
+      "2020-09-09"
+    ],
+    "domain": "new",
+    "layer": "NEWPOS2 \u00b7 TP vert \u00b7 FP rouge \u00b7 FN bleu",
+    "kind": "errors",
+    "viewport": {
+      "top": 136,
+      "left": 98,
+      "height": 38,
+      "width": 32
+    },
+    "png_pixels": "one image pixel per displayed raster sample; no interpolation; no CRS",
+    "legend": {
+      "0": "TN",
+      "1": "TP",
+      "2": "FP",
+      "3": "FN",
+      "null": "excluded"
+    }
+  },
+  "png_sha256": "b75ceff273f470b7b34e24b348b0beb04505424717bf6402ebefde38f9cd1c5d",
+  "metadata_sha256": "ce50aa31cdf0525889bad9a021a6e4fea31254fc0733b4caf1a9d2f7604bae5a"
+}
