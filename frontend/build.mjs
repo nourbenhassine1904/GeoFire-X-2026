@@ -9,4 +9,6 @@ await build({absWorkingDir:directory,tsconfigRaw:{},entryPoints: [resolve(direct
   outfile: 'dist/app.js', define: {'process.env.NODE_ENV': '"production"'}});
 await copyFile('index.html', 'dist/index.html');
 await copyFile('src/style.css', 'dist/style.css');
+await copyFile('src/professional.css', 'dist/professional.css');
+await copyFile('../feu.png', 'dist/feu.png');
 await copyFile('src/reactbits/LICENSE.md', 'dist/react-bits-LICENSE.txt');

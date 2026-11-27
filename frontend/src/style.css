@@ -765,3 +765,14 @@ html:fullscreen .map-dialog .map-zoom-viewport{height:76vh}
 .prediction-stepper p,.map-actions button,.lab-exports button{font-size:.875rem}
 .observation-history,.forecast-reveal,.reveal-control,.scene-metrics{scroll-margin-top:140px}
 @media(max-width:800px){.scene-jump-nav{top:58px}.scene-jump-nav button{flex:1 1 40%;min-height:40px;font-size:.875rem}.observation-history,.forecast-reveal,.reveal-control,.scene-metrics{scroll-margin-top:180px}.hero-actions>.button-primary,.hero-actions>.button-secondary,.prediction-form select,.target-date,.temporal-nav .button-secondary{font-size:.875rem;min-height:44px}.propagation-map .map-actions button{font-size:.875rem;min-height:40px}}
+/* Studio CPU V2 and decorative overview illustration. */
+.overview-fire-art{margin:0;align-self:center;min-width:0;overflow:hidden;border-radius:24px;background:var(--surface)}
+.overview-fire-art img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain}
+.overview-fire-art figcaption{padding:12px 18px;color:var(--text-secondary);font-size:.875rem;text-align:center}
+.model-selector{margin:16px 0 24px;max-width:100%}
+.model-selector label{display:block;margin-bottom:8px;font-weight:600}
+.model-selector select{width:100%;max-width:100%;min-height:44px;font:inherit}
+.final-test-results table{width:100%;border-collapse:collapse}
+.final-test-results th,.final-test-results td{padding:12px;text-align:left;border-bottom:1px solid var(--line)}
+.final-test-results pre{overflow:auto;max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:680px){.overview-fire-art img{max-height:360px}.model-selector select{font-size:.875rem}.final-test-results td,.final-test-results th{padding:8px}}

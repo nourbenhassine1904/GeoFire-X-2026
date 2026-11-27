@@ -2,46 +2,179 @@
 
 Multimodal Spatio-Temporal Deep Learning for Next-Day Wildfire Spread Forecasting under Geographic and Temporal Domain Shift.
 
-## Démonstration jury — 2 décembre 2026
+## Etat actuel : Prediction Studio V2
 
-Lancer la version locale finalisée depuis la racine du dépôt :
+GeoFire-X est un prototype de recherche pour prevoir les detections de feu actif
+a J+1 a partir de trois observations passees. Il etudie la generalisation
+temporelle et le compromis rappel/fausses alertes ; ce n'est pas un service
+operationnel d'alerte, de prediction d'ignition ou de surface brulee.
+
+### Architecture et donnees
+
+React affiche les grilles et appelle FastAPI ; PyTorch execute les modeles sur
+CPU. Les lecteurs d'archives verifient les identites SHA-256 avant de presenter
+les preuves scientifiques. Les poids, TIFF, compacts et grandes archives restent
+externes au depot. Aucun entrainement n'est lance au demarrage.
+
+WildfireSpreadTS fournit 23 bandes brutes. Le protocole compact C8 utilise huit
+canaux par jour (terrain, indicateurs de donnees manquantes et feu observe),
+empiles sur J-2/J-1/J. Le split V2 chronologique contient 318 evenements train,
+53 purges et 80 de validation 2020 ; le test independant 2021 compte 156
+evenements. Le normaliseur historique train-only 2018-2019 est fige ; il n'est
+pas reajuste sur la validation ou le test. Ces populations V2 ne doivent pas
+etre confondues avec les anciens protocoles 250 train / 201 validation.
+
+### Modeles et evaluation
+
+C8, NEWPOS2 et NEWPOS4 sont des U-Net entraines (epoque 4, 28 976 updates,
+123 977 parametres, seuil 0,78). NEWPOS2/4 changent la ponderation BCE des
+nouveaux positifs, pas la famille d'architecture. FIRE13 est aussi entraine,
+mais reste **archive et desactive en inference directe** : deux scenes echouent
+a la tolerance de parite CPU initiale `atol=rtol=1e-6`, non assouplie.
+Les variantes n'ont pas ete promues et n'ont pas ete evaluees sur 2021.
+Le U-Net historique reste une option separee avec son propre protocole.
+
+| C8, seuil 0,78 | Validation 2020 | Test independant 2021 |
+| --- | ---: | ---: |
+| Evenements / tuiles | 80 / 30 882 | 156 / 75 540 |
+| AP globale | 0,3352339037 | 0,4550013955 |
+| Dice global | 0,4389254872 | 0,5348317337 |
+| Rappel global | 0,4358386785 | 0,5512253057 |
+| AP nouveaux feux | 0,1101283730 | 0,1754763634 |
+| Dice nouveaux feux | 0,1006963425 | 0,1576373262 |
+| Rappel nouveaux feux | 0,0613835115 | 0,1040384448 |
+
+Le test 2021 est **COMPLETE**, consulte en lecture seule depuis RESULTS verifie.
+Il ne doit pas etre relance. Les ecarts entre annees sont descriptifs, pas un
+gain apparie. Le faible rappel des nouveaux feux reste une limite majeure.
+
+### Interfaces
+
+Cinq espaces : Overview, Studio (individuel ou comparaison appariee),
+Performances, Comparaison et Methodologie. Les observations communes, les vrais
+calculs CPU, la revelation separee de J+1, les erreurs TP/FP/FN et les exports
+PNG/JSON/CSV sont controles. Les cartes sont des grilles de pixels sans CRS
+exploitable : pas d'hectares ni de probabilites calibrees revendiques.
+
+### CRISP-DM et Big Data
+
+La [matrice de cloture CRISP-DM](docs/CRISP_DM_CLOTURE_20261127.md) distingue
+objectifs, experiences, entrees/sorties, preuves et criteres d'acceptation.
+Les cinq phases scientifiques sont PASS dans le perimetre experimental fige ;
+Deployment est PARTIAL (installation vierge et plein ecran interactif a valider).
+
+Spark 4.0.2 a execute les requetes SQL de metadonnees en **local[2]**, sur une
+machine. Cinq petits agregats ont ete materialises en Parquet apres `collect`
+par PyArrow. L'ingestion utilise les inventaires d'observations et de fenetres,
+pas un nouvel examen des pixels 2021. Ce pipeline historique 250/201/156 aide
+l'audit des donnees du Deep Learning ; ce n'est pas un entrainement distribue
+ni la preuve d'un traitement Spark des pixels du protocole V2.
+Preuve : [rapport execute](reports/mission_20261111/spark/report.json).
+
+### Installation, artefacts et tests
+
+Environnement valide : Python 3.11.6, Node.js 22.12.0. Les dependances Python
+sont figees dans [requirements-studio-cpu.txt](requirements-studio-cpu.txt),
+les dependances React dans [frontend/package-lock.json](frontend/package-lock.json).
+Installer puis restaurer les artefacts exacts avant de qualifier les modeles :
+
+```powershell
+py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-studio-cpu.txt
+.\.venv\Scripts\python.exe -m pip install --no-deps -e .
+Push-Location frontend
+npm.cmd ci
+Pop-Location
+# Restaurer ADATA et les metadonnees externes selon le guide Deployment.
+$env:PYTHONPATH = Join-Path $PWD 'src'
+.\.venv\Scripts\python.exe scripts/qualify_studio_v2.py
+.\Start-GeoFireX.ps1 -Port 8028
+```
+
+Ouvrir http://127.0.0.1:8028/#/overview. Le port par defaut est 8026 ; ne pas
+confondre une instance plus ancienne avec la release courante. La qualification
+sur 2020 doit donner `PASS_WITH_ARCHIVED_FIRE13` dans l'environnement valide.
+Configurer `GEOFIREX_V2_ROOT`, `GEOFIREX_COMPACT_ROOT` et, si necessaire,
+`GEOFIREX_RESULTS_ARCHIVE`. Sans ADATA les calculs indisponibles echouent
+explicitement ; aucune prediction archivee ne remplace une inference.
+
+Le [guide Deployment](docs/DEPLOYMENT_STUDIO_V2.md) donne les chemins, empreintes,
+dependances supplementaires, endpoints, erreurs, sauvegardes et maintenance.
+Une installation sur machine vierge **n'a pas ete effectuee** ; le clone seul
+ne contient ni corpus, ni poids, ni RESULTS ni verrou durable local 2021.
+
+```powershell
+$env:PYTHONPATH = Join-Path $PWD 'src'
+.\.venv\Scripts\python.exe -m pytest tests/test_studio_v2_deployment.py tests/test_studio_fire13.py tests/test_studio_populations.py tests/test_ui_performance.py tests/test_studio_spatial.py tests/test_prediction_lab.py tests/test_jury_finalization.py tests/test_science_results.py::test_big_data_actual_parquet_values_and_provenance -q
+$env:GEOFIREX_TEST_URL = 'http://127.0.0.1:8028'
+Push-Location frontend
+npm.cmd run build
+npm.cmd run test:studio
+Pop-Location
+```
+
+Les tests couvrent CPU 2020, provenance, refus 2021, ADATA absent, navigation et
+exports. Ils ne relancent pas l'evaluation 2021. Voir le
+[bilan de publication](docs/PUBLICATION_20261127.md) pour les recus et reserves.
+Perspectives : qualification numerique FIRE13 sans changer le critere,
+validation d'installation restauree, calibration et generalisation sur de
+nouveaux jeux autorises, sans reutiliser 2021 pour selectionner un modele.
+
+## Archives historiques
+
+Les sections repliees ci-dessous preservent les anciennes commandes et les
+anciens statuts (dont « test ferme »). Elles ne decrivent pas la release actuelle.
+
+<details>
+<summary>Historique du projet et anciennes procedures</summary>
+
+## Prediction Studio V2 — premiere documentation de finalisation
 
 ```powershell
 .\Start-GeoFireX.ps1
 ```
 
-Ouvrir **http://127.0.0.1:8026/#/overview**. La commande compile React puis lance FastAPI ;
-aucun entraînement, récupération FIRE13 ou calcul Spark ne démarre au lancement.
-Si un serveur occupe déjà 8026, l'arrêter dans son terminal avec Ctrl+C avant
-le lancement, ou utiliser `.\Start-GeoFireX.ps1 -Port 8027`.
+Ouvrir **http://127.0.0.1:8026/#/overview**. Le lanceur compile React puis démarre
+FastAPI. Il ne lance aucun entraînement, test 2021 ou calcul Spark.
+En cas de port occupé : `.\Start-GeoFireX.ps1 -Port 8028`.
 
-La page **Comparaison V2** présente C8, NEWPOS2, NEWPOS4 et FIRE13 sur les mêmes
-80 événements de **validation 2020**, au seuil 0,78, avec archives et checkpoints
-liés par SHA-256. Aucune variante n'est promue. L'inférence interactive conserve
-le U-Net historique, sur son protocole distinct à 201 événements ; les scores
-des deux périmètres ne sont pas mélangés. Les erreurs TP/FP/FN et exports restent
-des grilles de pixels sans CRS, sans conversion en hectares.
+Studio exécute réellement sur CPU **C8 V2**, **NEWPOS2**, **NEWPOS4** et conserve
+le **U-Net historique** comme option séparée. Les variantes restent expérimentales,
+sans promotion scientifique. V2 est limité aux 80 événements de validation 2020 ;
+le catalogue historique de 201 événements conserve son ancien protocole.
 
-Le Studio montre les observations J−2/J−1/J, calcule J+1 sur CPU puis attend
-le bouton **Révéler la vérité J+1**. Le zoom conserve le rapport du raster.
-La comparaison spatiale V2 lit les sorties sauvegardées NEWPOS2/NEWPOS4/FIRE13
-sur ADATA ; aucune nouvelle inférence V2 n'est lancée. C8 n'a pas de matrices
-complètes sauvegardées. Les nouveaux exports PNG ont un fichier de métadonnées.
+Les trois observations J−2/J−1/J, les probabilités J+1, les nouveaux pixels de feu,
+la vérité révélée séparément, les erreurs TP/FP/FN, le zoom et les exports sont
+disponibles dans Studio. La comparaison V2 permet trois recalculs CPU sur une même
+scène ; les sorties enregistrées NEWPOS2/NEWPOS4/FIRE13 sont présentées séparément.
+Overview utilise `feu.png` comme illustration décorative, sans valeur prédictive.
 
-Parcours jury actualisé de 5–7 minutes et sauvegarde GitHub préparée :
-[procédure Studio](docs/STUDIO_PROPAGATION_JURY_20261202.txt).
-Vérification React/HTTP : `cd frontend`, puis `npm run test:studio` (serveur actif,
-URL configurable par `GEOFIREX_TEST_URL`).
+**Le test indépendant C8 2021 est terminé (COMPLETE)** : 156 événements et
+75 540 tuiles. Son panneau est en lecture seule et vérifie le SHA-256 officiel de
+RESULTS.zip. AP globale **0,4550013955**, Dice **0,5348317337**, rappel
+**0,5512253057** ; nouveaux feux : AP **0,1754763634**, Dice **0,1576373262**,
+rappel **0,1040384448**. Aucun modèle expérimental n'est déclaré testé sur 2021.
+Le test ne doit jamais être relancé et son verrou durable est conservé.
 
-Le candidat **AUXNEW V2** est seulement préparé : huit canaux C8 inchangés,
-supervision auxiliaire fixe et tête principale seule en inférence. Son notebook
-est désactivé ; aucun résultat ni gain n'est revendiqué. Une nouvelle autorisation
-et un précontrôle GPU sont nécessaires avant tout lancement éventuel.
+La qualification compare les vraies inférences 2020 aux références archivées,
+avec classes identiques à 0,78. Pour C8, la référence disponible est une tuile
+diagnostique scellée ; son archive ne contient pas de matrices complètes.
+NEWPOS2/NEWPOS4 sont aussi vérifiés sur trois scènes complètes. Les limites de
+ces preuves et les versions utilisées figurent dans les reçus de qualification.
 
-Voir la [procédure de démonstration](docs/DEMONSTRATION_JURY_20261202.txt), la
-[comparaison officielle](reports/jury_20261202_v1/comparison.csv) et le
-[protocole AUXNEW](reports/auxnew_20261123_v1/protocol.json).
-L'axe Big Data/Spark est séparé du parcours jury GeoFire-X.
+Installation, chemins ADATA, commandes de tests, exploitation et maintenance :
+[guide Deployment Studio V2](docs/DEPLOYMENT_STUDIO_V2.md).
+Les dépendances CPU sont figées dans `requirements-studio-cpu.txt`, celles du
+frontend dans `frontend/package-lock.json`. Les modèles ne sont activés qu'avec
+une qualification CPU correspondant aux sources et aux versions Torch/NumPy.
+
+Les grilles compactes n'ont pas de CRS/affine disponible. Aucune conversion en
+hectares et aucune probabilité calibrée ne sont revendiquées. Le faible rappel
+des nouveaux feux reste une limite scientifique majeure.
+
+Les sections et procédures plus anciennes ci-dessous décrivent leurs états
+historiques. Le guide Deployment V2 ci-dessus fait autorité pour le lancement
+actuel ; les anciennes mentions « test fermé » ne décrivent plus son statut.
 
 ## Référence historique — Studio avant la finalisation jury
 
@@ -302,3 +435,5 @@ Les checkpoints et corpus restent hors Git ; leurs empreintes sont conservees da
 Lancement local : `./Start-GeoFireX.ps1`, puis <http://127.0.0.1:8026/#/overview>.
 Le [guide final de six minutes](docs/SOUTENANCE_FINALE_20261202.txt) décrit le lecteur historique, la révélation séparée J+1, les exports et la distinction avec les résultats V2 sauvegardés.
 Les contrôles et le manifeste de publication sont dans `reports/final_studio_20261124/`. Aucun commit, push ou merge automatique.
+
+</details>

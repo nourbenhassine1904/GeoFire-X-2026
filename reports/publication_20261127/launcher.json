@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "command": "Start-GeoFireX.ps1 -Port 8031 -SkipBuild",
+  "health_http": 200,
+  "model_catalog_http": 200,
+  "port": 8031,
+  "cpu_models": [
+    "C8",
+    "NEWPOS2",
+    "NEWPOS4",
+    "legacy"
+  ],
+  "FIRE13": "ARCHIVED",
+  "training_executed": false,
+  "test_2021_inference": false,
+  "note": "Temporary dedicated launch verified; primary existing instance remains on 8028."
+}

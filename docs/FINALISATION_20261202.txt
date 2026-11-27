@@ -1,0 +1,261 @@
+GeoFire-X - Livraison scientifique et applicative avant le 2 decembre 2026
+Audit du 27 novembre 2026, fuseau Africa/Tunis
+
+Perimetre : aucune nouvelle experience GPU, aucun entrainement, aucun pixel
+2021 consulte pour une inference ou une comparaison. Aucun commit/push/merge/
+reset, aucune modification du rapport LaTeX ou des slides.
+
+1. Modeles disponibles et decision FIRE13
+----------------------------------------
+C8 V2, NEWPOS2 et NEWPOS4 : U-Net StackedUNet/LightUNet, base 8, profondeur 3,
+8 canaux/jour, T3 empile (24 entrees), 123 977 parametres, epoque fixe 4,
+28 976 mises a jour, seuil 0,78. Chacun charge son propre checkpoint verifie,
+avec controle strict de son state_dict et de sa configuration d'entrainement.
+L'inference est un vrai forward PyTorch CPU, pas la lecture d'une prediction.
+
+Empreintes des checkpoints :
+C8       c2273fea252d709f4d316eba76515d669be97eac8bfa9302ff4831da2c9aedc1
+NEWPOS2  6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91
+NEWPOS4  5e139fa2dde831e21a05ce10d73a88c62bad7069c23cdde687cb16b1d04c9819
+FIRE13   5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c
+U-Net historique : 7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e
+
+Normaliseur C8 commun, train-only 2018-2019, sans nouvel ajustement :
+bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27
+
+FIRE13 est bien entraine et son checkpoint est verifiable. Il utilise le meme
+U-Net avec 13 canaux/jour (39 empiles), 125 057 parametres : C8 plus distance
+euclidienne au feu plafonnee a 8 pixels, densite 7x7, apparition depuis le jour
+le plus ancien, changement depuis ce jour et support des derivees.
+Les descripteurs sont calcules sur les scenes entieres, avant decoupage, pour
+eviter les bords artificiels des tuiles. Les moments derives restent ceux du
+train, avec leur clipping original. Aucun champ meteo n'est ajoute.
+
+Normaliseur derive FIRE13 :
+e905dcd42c227b8d6910143624f2f14859d5bf7f14e16b9f785154790bec0516
+Geometrie des scenes :
+8f5719e940a7d30803699cfe83442223939acf11b69d8faea268a7274dfbae7d
+
+Decision : FIRE13 RESTE ARCHIVE dans l'interface. Un adaptateur CPU de controle
+reutilise les fonctions originales daily_maps/descriptors/normalize et lit
+uniquement les observations passees, sans utiliser Fire13Tiles.__getitem__
+qui chargerait aussi la cible. Il est soumis au meme verrou de qualification.
+Les trois scenes choisies sans consulter leurs scores montrent des ecarts
+maximaux de probabilite de 1,430511e-6, 9,536743e-7 et 4,112720e-6.
+La tuile diagnostique a un ecart de 2,682209e-7. Les classifications au seuil
+0,78 sont identiques sur ces controles, mais deux scenes echouent a la
+tolerance existante atol=rtol=1e-6. Elle n'a pas ete assouplie pour activer le
+modele. Le selecteur montre la raison precise et desactive son execution.
+Ses resultats officiels et cartes sauvegardees restent consultables.
+
+Les trois modeles C8 passent leurs controles de parite :
+C8, tuile diagnostique : ecart maximal 2,17e-18 ; classes identiques.
+NEWPOS2, tuile et trois scenes : ecart maximal 3,2783e-7 ; classes identiques.
+NEWPOS4, tuile et trois scenes : ecart maximal 4,7684e-7 ; classes identiques.
+C8 ne possede pas de probabilites archivees de scenes completes ; sa parite
+ne doit pas etre decrite comme un nouveau test exhaustif du split.
+Recu courant : artifacts/studio-v2-deployment/qualification.json.
+Chaque controle conserve aussi un recu horodate ; aucun ancien recu n'est efface.
+
+2. Comparaison demonstrative
+---------------------------
+Studio propose maintenant deux modes : Prevision individuelle et Comparaison
+appariee. Le second reutilise le composant de comparaison existant, egalement
+conserve dans Comparaison des modeles. Pas de seconde implementation scientifique.
+
+Sont affiches : les trois observations communes J-2/J-1/J, les predictions de
+C8/NEWPOS2/NEWPOS4, les nouveaux pixels, le feu global et les probabilites.
+La verite J+1 est une requete distincte, uniquement apres action explicite.
+Le tableau ajoute rappel, Dice, precision, TP, FP et FN par modele apres
+revelation. Ces nombres sont calcules depuis les grilles de la scene, jamais
+depuis les scores agreges. Leur export JSON accompagne les trois predictions.
+
+Le code refuse toute difference d'evenement, date J/cible, contexte, forme,
+pas, CRS/affine, observation J ou masque de validite entre modeles.
+Le cadrage est commun, fonde sur J et les predictions ; il ne change pas avec
+la verite. Les observations suivent aussi le choix grille complete/zone active.
+Un changement de scene efface predictions, verite et erreurs ; les requetes
+obsoletees sont annulees. Une navigation hors page n'enchaine plus les calculs.
+
+3. Explications scientifiques
+-----------------------------
+Comparaison explique directement les quatre experiences :
+- C8 : 0,5 BCE ponderee (positifs x10) + 0,5 Dice.
+- NEWPOS2 : termes BCE des nouveaux positifs multiplies par 2 ; poids effectif
+  20 pour ceux-ci, 10 pour le feu persistant ; terme Dice inchange.
+- NEWPOS4 : facteur 4, poids effectif 40 ; le reste du protocole est commun.
+- FIRE13 : changement des entrees, pas une nouvelle famille d'architecture.
+Les echecs aux criteres preregistres sont listes depuis scientific_gates des
+resultats verifies. Un meilleur rappel peut augmenter les faux positifs et ne
+suffit pas a promouvoir une variante. Seul C8 a un test independant 2021.
+
+Methodologie distingue CNN, U-Net et ConvLSTM des noms d'experiences V2.
+Le CNN historique et les U-Net ont des resultats attestes dans leurs protocoles.
+SpatialCNN et ConvLSTM existent dans le code ; aucun score ConvLSTM n'est
+attribue aux comparaisons V2 ni invente dans l'interface.
+
+4. Resultats independants, consultes en lecture seule
+---------------------------------------------------
+Performances conserve la separation validation 2020 / test independant 2021.
+Les tableaux proposent 3, 6 ou 10 decimales et affichent les ecarts descriptifs.
+Les effectifs et valeurs viennent des archives verifiees, pas du texte demandeur.
+Le domaine nouveaux feux reste distinct du domaine global.
+
+Valeurs officielles, arrondies ici a 10 decimales pour lecture :
+                                   Validation 2020       Test C8 2021
+Evenements                         80                    156
+Tuiles                             30 882                75 540
+AP globale                         0,3352339037          0,4550013955
+Dice global                        0,4389254872          0,5348317337
+AP nouveaux feux                   0,1101283730          0,1754763634
+Dice nouveaux feux                 0,1006963425          0,1576373262
+Rappel nouveaux feux               0,0613835115          0,1040384448
+
+Ce sont des domaines, evenements et annees differents : ces ecarts ne mesurent
+ni un gain apparie ni une amelioration obtenue par un nouvel entrainement.
+La faible sensibilite sur les nouveaux pixels reste une limite centrale.
+Les chiffres 2021 ne sont pas ajoutes au tableau comparatif des quatre modeles.
+
+5. CRISP-DM et traitement des donnees
+------------------------------------
+Compréhension metier : detection active quotidienne a J+1, limites explicites ;
+pas de surface brulee, d'ignition ou d'alerte operationnelle revendiquee.
+Compréhension des donnees : 23 bandes TIFF documentees, canaux reellement
+utilises distingues ; absence de CRS exploitable dans le compact explicitee.
+Preparation : split chronologique et embargo, 318 train / 53 purges / 80 val ;
+normalisation ajustee exclusivement sur train ; masques et contexte T3 verifies.
+Modelisation : quatre experiences V2 deja entrainees et U-Net historique ;
+aucun nouvel entrainement ; architectures seulement implementees distinguees.
+Evaluation : panel commun 2020, criteres figes, comparaison appariee ; C8 2021
+termine et scelle ; variantes non promues ; parite logicielle CPU documentee.
+Deployment : lancement local, dependances figees, quatre modeles CPU qualifies
+en comptant le U-Net historique, FIRE13 archive, etats d'erreur/ADATA, exports,
+tests et procedure de sauvegarde/livraison. Installation vierge non revendiquee.
+
+Spark/Parquet : un panneau de preuves lit le rapport et les fichiers existants.
+Le master est local[2], soit deux threads sur une machine. Cinq agregats Parquet
+sont materialises ; leurs chemins, nombres de lignes et SHA-256 sont consultables.
+Aucun cluster distribue, streaming ou nouveau job Spark n'est revendique ou lance.
+L'API correspondante et ses artefacts sont verifies par le test backend cible.
+
+6. Validation et protections
+----------------------------
+Voir reports/finalisation_20261127/ pour les recus de cette mission :
+- backend-final.xml : 43 tests PASS, API/CPU, refus 2021, FIRE13, sources et archives.
+- frontend-final-pass/propagation-dom.json : 44 controles PASS, parcours React/HTTP, vrais CPU, exports,
+  precision officielle, compteurs, geometries et comparaisons.
+- browser/browser-audit.json : Chrome reel, cinq pages, 1920x1080 / 1366x768 /
+  390x844, zoom 100 %, mouvement normal et reduit, puis comparaison appariee.
+- preservation-before.json et preservation-after.json : empreintes protegees.
+- model-inventory.json : checkpoints, archives, metriques et parite par modele.
+
+Les tests n'evaluent pas a nouveau le split de test. Le lecteur 2021 ouvre
+seulement les membres JSON autorises de RESULTS et verifie leurs empreintes.
+Les fichiers de checkpoint, normaliseurs, seuils, splits, verrou durable,
+RESULTS C:/D: et rapport/slides restent preserves. Le fichier historique
+prediction_lab.py conserve son SHA-256 scientifique d'origine.
+
+La grande flamme, ses preferences de mouvement et feu.png sont conserves.
+Les cartes restent pixelisees et leurs legendes ne simulent pas une carte
+geographique. Aucun nouveau resultat ConvLSTM ou GPU n'est cree.
+
+Limites connues :
+- FIRE13 non active sur CPU pour la raison de parite detaillee ci-dessus.
+- Plein ecran natif a verifier dans Chrome interactif ; headless ne l'active
+  pas. Dialogue d'agrandissement, zoom, cartes et exports sont verifies.
+- Pas de certification d'installation sur machine vierge ni de parcours
+  exhaustif de toutes les dates/evenements.
+- Donnees externes necessaires : le paquet applicatif n'est pas une copie du
+  corpus, des archives de modeles, de RESULTS ni de toutes leurs sauvegardes.
+
+7. Audit Git et publication preparee, non executee
+-------------------------------------------------
+Branche : release/geofirex-jury-20261202.
+HEAD local et tete distante de la PR :
+1d510d77b8c0f2d74c008bcaafcb6b1530fa7f2d
+Main distant : 8c939f6670974a9cfad9e31c834fe591ce09e941.
+La branche distante est en avance de deux commits sur main, sans retard.
+La PR #5 est ouverte, non brouillon, non fusionnee et indiquee fusionnable :
+https://github.com/nourbenhassine1904/GeoFire-X-2026/pull/5
+Lecture distante effectuee via le connecteur GitHub ; aucune modification de PR.
+
+Les ameliorations actuelles sont des modifications locales et des fichiers
+non suivis ; elles ne sont pas contenues dans les deux commits deja publies.
+git-audit.json inventorie les chemins et les plus gros fichiers non suivis.
+L'ancienne PR contient deja 237 fichiers et de volumineux rapports : sa revue
+doit distinguer code, preuves legeres et copies de travail, avant publication.
+
+Procedure proposee pour une decision GitHub ulterieure :
+1. Conserver une copie locale du travail non suivi et les sauvegardes externes.
+2. Relire git-audit.json, application-files.json et le diff de chaque fichier
+   applicatif. Ne jamais utiliser git add . ou inclure un profil Chrome.
+3. Selectionner explicitement sources frontend/backend, tests, lanceur,
+   dependances, feu.png et documentation necessaires. Exclure modeles, corpus,
+   RESULTS, copies temporaires, telechargements, journaux, profil Chrome,
+   environnements et credentials. Ne pas forcer les fichiers ignores.
+4. Verifier index/normaliseurs/recus requis dans une sauvegarde externe et
+   leur procedure de restauration ; ne pas tenter de reconstituer ces donnees
+   en entrainant ou en relancant le test 2021.
+5. Reexecuter les controles sur la selection exacte et inspecter git diff
+   --cached seulement apres une decision explicite de preparation de commit.
+6. Rediger la PR autour de l'etat final, du statut archive FIRE13, des vrais
+   tests et des limites. Une nouvelle decision explicite sera necessaire pour
+   commit/push, puis une autre revue avant fusion.
+
+Le paquet GeoFireX-APPLICATION-*.zip est une mise a jour pour un checkout
+existant, verifiee membre par membre avec un manifeste SHA-256. Les artefacts
+scientifiques volumineux restent externes. Ce paquet ne prouve pas a lui seul
+qu'un clone neuf peut demarrer sans restauration de ces dependances.
+external-dependencies.json liste les archives, copies RESULTS et fichiers
+compacts de validation attendus avec leurs empreintes et chemins logiques.
+application-package.json indique le dernier paquet et son SHA-256 ; les tests
+frontend/backend/Chrome et la preservation sont controles avant sa creation.
+
+8. Demonstration et commandes exactes
+------------------------------------
+Instance de cette recette : http://127.0.0.1:8028/#/overview
+Une ancienne instance occupe 8026 ; elle n'a pas ete arretee par cette mission.
+Depuis la racine du depot, dans un terminal dedie, pour un nouveau lancement :
+
+  $env:PYTHONPATH=Join-Path $PWD 'src'
+  .\.venv\Scripts\python.exe scripts/qualify_studio_v2.py
+  .\Start-GeoFireX.ps1 -Port 8028
+
+Arreter d'abord l'instance de ce port dans son terminal ; sinon choisir un autre
+port libre. Ne pas confondre une page servie par l'ancienne instance avec la
+version actuelle du code et de ses recus de qualification.
+La qualification doit signaler PASS_WITH_ARCHIVED_FIRE13 dans cet environnement.
+
+Parcours propose :
+1. Overview : flamme, illustration, effectifs ; aucun chiffre scientifique faux.
+2. Studio individuel : C8, scene 2020/fire_24332704, J=2020-09-09 ; predire ;
+   observer les trois premieres cartes, puis reveler J+1 separement.
+3. Studio, Comparaison appariee : memes scene/date ; recalculer les trois
+   modeles, reveler la verite commune ; comparer probabilites, nouveaux pixels,
+   erreurs et tableau ; expliquer le compromis rappel/fausses alertes.
+4. Comparaison : criteres preregistres, experiences V2 et FIRE13 archive.
+5. Performances : C8 validation puis test independant ; domaine nouveaux feux,
+   affichage 10 decimales, limites de generalisation, exports.
+6. Methodologie : 23 bandes/8 canaux, familles, CRISP-DM, preuves Spark local[2].
+
+Tests frontend (serveur 8028 deja lance) :
+  Push-Location frontend
+  npm.cmd run build
+  $env:GEOFIREX_TEST_URL='http://127.0.0.1:8028'
+  $env:GEOFIREX_TEST_REPORT_DIR='../reports/finalisation_recheck'
+  npm.cmd run test:studio
+  Pop-Location
+
+Tests backend :
+  $env:PYTHONPATH=Join-Path $PWD 'src'
+  .\.venv\Scripts\python.exe -m pytest tests/test_studio_fire13.py tests/test_studio_populations.py tests/test_ui_performance.py tests/test_studio_v2_deployment.py tests/test_studio_spatial.py tests/test_prediction_lab.py tests/test_jury_finalization.py tests/test_science_results.py::test_big_data_actual_parquet_values_and_provenance -q
+
+Chrome : lancer un Chrome headless dedie, port de debogage 9233, profil de
+recette distinct ; puis, depuis frontend avec les deux variables ci-dessus :
+  node verify-non-regression-browser.mjs
+
+Donnees externes : conserver/configurer GEOFIREX_V2_ROOT (archives COMPLETE),
+GEOFIREX_COMPACT_ROOT (compact existant) et GEOFIREX_RESULTS_ARCHIVE (RESULTS
+officiel). Les valeurs par defaut et la copie C: sont decrites dans
+docs/DEPLOYMENT_STUDIO_V2.md. Une erreur ADATA doit rester une erreur expliquee,
+jamais un remplacement silencieux par une prediction sauvegardee.

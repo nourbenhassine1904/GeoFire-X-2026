@@ -23,7 +23,7 @@ export function forecastCSV(result,truth){
     rows.push([result.event_id,result.as_of,result.target_date,result.checkpoint_sha256,result.threshold,result.preview_stride,
       (result.tile_origin?.[0]||0)+y*result.preview_stride,(result.tile_origin?.[1]||0)+x*result.preview_stride,p,result.observed_fire[y][x],result.predicted_fire[y][x],result.new_predicted_fire?.[y][x]??'',
       layers?.ground[y][x]??'',layers?.newTarget[y][x]??'',layers?.errors[y][x]??'',layers?.newErrors[y][x]??'',
-      result.model,result.source_archive_sha256,result.saved_member_sha256,result.scope,...result.full_shape,result.crs,result.crs?'raster CRS supplied':'pixel grid; no CRS',result.input_dates?.join('|'),result.provenance||'CPU historical interactive inference'].map(cell).join(','));
+      result.model,result.source_archive_sha256,result.saved_member_sha256,result.scope,...result.full_shape,result.crs,result.crs?'raster CRS supplied':'pixel grid; no CRS',result.input_dates?.join('|'),result.provenance||'Real CPU inference; see model and scope'].map(cell).join(','));
   }));return rows.join('\n');
 }
 export function downloadText(content,filename,type){

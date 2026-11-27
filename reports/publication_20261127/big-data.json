@@ -1,0 +1,171 @@
+{
+  "status": "SPARK_EXECUTED",
+  "spark_version": "4.0.2",
+  "master": "local[2]",
+  "distributed_cluster": false,
+  "total_seconds": 65.11089599999923,
+  "processing_seconds": 21.786875300000247,
+  "jvm_start_seconds": 43.32401359999949,
+  "query_seconds": {
+    "annual": 6.187177099999644,
+    "windows": 1.2707371999995303,
+    "quality": 1.472569000000476,
+    "duplicate_keys": 0.734354500000336,
+    "annual_leakage": 0.6790160999998989,
+    "window_join": 1.3539682999999059
+  },
+  "tables": {
+    "annual": [
+      {
+        "year": 2018,
+        "split": "train",
+        "observations": 3773,
+        "events": 176
+      },
+      {
+        "year": 2019,
+        "split": "train",
+        "observations": 1425,
+        "events": 74
+      },
+      {
+        "year": 2020,
+        "split": "val",
+        "observations": 4292,
+        "events": 201
+      },
+      {
+        "year": 2021,
+        "split": "test",
+        "observations": 4117,
+        "events": 156
+      }
+    ],
+    "windows": [
+      {
+        "split": "train",
+        "context": 1,
+        "windows": 3948,
+        "events": 250
+      },
+      {
+        "split": "train",
+        "context": 3,
+        "windows": 3948,
+        "events": 250
+      },
+      {
+        "split": "train",
+        "context": 5,
+        "windows": 3948,
+        "events": 250
+      },
+      {
+        "split": "val",
+        "context": 1,
+        "windows": 3287,
+        "events": 201
+      },
+      {
+        "split": "val",
+        "context": 3,
+        "windows": 3287,
+        "events": 201
+      },
+      {
+        "split": "val",
+        "context": 5,
+        "windows": 3287,
+        "events": 201
+      }
+    ],
+    "quality": [
+      {
+        "split": "train",
+        "status": "ok",
+        "observations": 5198,
+        "positive_pixels": 429682,
+        "valid_pixels": 414333956,
+        "invalid_pixels": 0,
+        "no_detection_days": 2198
+      },
+      {
+        "split": "val",
+        "status": "ok",
+        "observations": 4292,
+        "positive_pixels": 674958,
+        "valid_pixels": 345155486,
+        "invalid_pixels": 0,
+        "no_detection_days": 1753
+      }
+    ],
+    "annual_leakage": [
+      {
+        "violations": 0
+      }
+    ],
+    "window_join": [
+      {
+        "split": "train",
+        "matched_targets": 3948
+      },
+      {
+        "split": "val",
+        "matched_targets": 3287
+      }
+    ]
+  },
+  "queries": {
+    "annual": "SELECT year, split, COUNT(*) AS observations, COUNT(DISTINCT event_id) AS events FROM observations GROUP BY year, split ORDER BY year",
+    "windows": "SELECT split, context, COUNT(*) AS windows, COUNT(DISTINCT event_id) AS events FROM windows GROUP BY split, context ORDER BY split, context",
+    "quality": "SELECT split, status, COUNT(*) AS observations, SUM(positive_pixels) AS positive_pixels, SUM(valid_pixels) AS valid_pixels, SUM(invalid_pixels) AS invalid_pixels, SUM(CASE WHEN positive_pixels=0 THEN 1 ELSE 0 END) AS no_detection_days FROM observations WHERE split IN ('train','val') GROUP BY split, status ORDER BY split, status",
+    "duplicate_keys": "SELECT event_id,date,COUNT(*) AS n FROM observations GROUP BY event_id,date HAVING COUNT(*)>1",
+    "annual_leakage": "SELECT COUNT(*) AS violations FROM observations WHERE (split='train' AND year NOT IN (2018,2019)) OR (split='val' AND year<>2020)",
+    "window_join": "SELECT w.split, COUNT(*) AS matched_targets FROM windows w JOIN observations o ON w.event_id=o.event_id AND w.target_date=o.date WHERE w.context=3 GROUP BY w.split ORDER BY w.split"
+  },
+  "duplicate_keys": [],
+  "scope": "2021 metadata inventory only; quality from existing certified train/val counts; no new pixel audit",
+  "source_hashes": {
+    "observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345"
+  },
+  "parquet_files": [
+    {
+      "path": "reports/mission_20261111/spark/annual.parquet",
+      "sha256": "dc9b4f54419ff9ac8a982f1008a75b961b64e9eae04df90437eba06dc4dd245e",
+      "bytes": 1413,
+      "rows": 4
+    },
+    {
+      "path": "reports/mission_20261111/spark/windows.parquet",
+      "sha256": "4469a317b760f5b82861b88da18ce1a898aa909319376a09dfa284def0a73e90",
+      "bytes": 1361,
+      "rows": 6
+    },
+    {
+      "path": "reports/mission_20261111/spark/quality.parquet",
+      "sha256": "625c0ba14ede2291ec3c9b03dd7bb4ade53f7509a790bdd4a570212297873070",
+      "bytes": 2299,
+      "rows": 2
+    },
+    {
+      "path": "reports/mission_20261111/spark/annual_leakage.parquet",
+      "sha256": "8ab85ae55cff0a8b6d945ca4408978cf7795b91635ecf9211ac435bfe60aa8a0",
+      "bytes": 514,
+      "rows": 1
+    },
+    {
+      "path": "reports/mission_20261111/spark/window_join.parquet",
+      "sha256": "0cce49dd490872503b3bd07b8e04c8625da7471070ad6b44af60cbb60c2473ac",
+      "bytes": 783,
+      "rows": 2
+    }
+  ],
+  "report_sha256": "c4d60077996676203c1ca9a56bd5f95fdd3550285f66bf194fae2e15d68312e6",
+  "provenance": "reports/mission_20261111/spark/report.json + existing aggregate Parquet; read only, no Spark restart",
+  "caveats": [
+    "local[2] : ex\u00e9cution locale \u00e0 deux threads, pas un cluster distribu\u00e9.",
+    "2021 : inventaire de m\u00e9tadonn\u00e9es existantes seulement ; aucun pixel ni score de test.",
+    "Les comptes qualit\u00e9 concernent les observations ; la calibration utilise des fen\u00eatres et un masque joint."
+  ]
+}

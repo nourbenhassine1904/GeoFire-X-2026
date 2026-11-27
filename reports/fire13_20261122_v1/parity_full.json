@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "roles": {
+    "train": {
+      "tiles": 115900,
+      "events": 318,
+      "evaluation_domain_sha256": "155618ed94c3d1cb13437dea5b6ae801312f2be321d9f43536e367d5ddb61b65",
+      "derived_supported_pixels": 344540692,
+      "padded_pixels": 474726400,
+      "seconds": 981.2340000000004
+    },
+    "val": {
+      "tiles": 30882,
+      "events": 80,
+      "evaluation_domain_sha256": "efc995be596d7d520bac472ceb1b5122fe2111fe9d5a53c5edbec02851c1accc",
+      "derived_supported_pixels": 92623736,
+      "padded_pixels": 126492672,
+      "seconds": 223.76599999999962
+    }
+  },
+  "seconds": 1205.530999999999,
+  "source": "all frozen train and validation keys; no balancing; exact y/valid/observed_J/C8 equality",
+  "test_pixels_opened": 0
+}

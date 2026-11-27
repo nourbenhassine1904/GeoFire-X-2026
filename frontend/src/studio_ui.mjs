@@ -4,6 +4,7 @@ import SplitText from './reactbits/SplitText.jsx';
 import CountUp from './reactbits/CountUp.jsx';
 import SpotlightCard from './reactbits/SpotlightCard.jsx';
 import FadeContent from './reactbits/FadeContent.jsx';
+import {readJSON} from './api.mjs';
 export const h=React.createElement;
 export const MotionContext=createContext({enabled:false});
 export const number=(value,digits=0)=>Number.isFinite(value)?value.toLocaleString('fr-FR',{maximumFractionDigits:digits}):'—';
@@ -32,7 +33,7 @@ export function Brand(){return h('span',{className:'brand-content'},h('span',{cl
 export function useResource(url){
  const [revision,setRevision]=useState(0),[state,setState]=useState({data:null,error:''});
  useEffect(()=>{const c=new AbortController();setState({data:null,error:''});
-  fetch(url,{signal:c.signal}).then(async r=>{if(!r.ok)throw new Error(`Source indisponible (${r.status})`);const data=await r.json();if(!c.signal.aborted)setState({data,error:''});}).catch(e=>{if(e.name!=='AbortError')setState({data:null,error:e.message});});
+  readJSON(url,{signal:c.signal}).then(data=>{if(!c.signal.aborted)setState({data,error:''});}).catch(e=>{if(e.name!=='AbortError')setState({data:null,error:e.message});});
   return()=>c.abort();
  },[url,revision]);
  return {...state,retry:()=>setRevision(r=>r+1)};
@@ -47,7 +48,7 @@ export function AuroraBackdrop(){const {enabled}=useContext(MotionContext);retur
 export function StatCard({icon,label,value,detail,suffix='',digits=0}){
  const {enabled}=useContext(MotionContext),valid=Number.isFinite(value),[countState,setCountState]=useState('waiting');
  const body=[h('div',{className:'stat-heading',key:'title'},h('span',null,label),h(Icon,{name:icon})),
-  h('div',{className:'stat-value',key:'value','aria-label':valid?number(value,digits)+suffix:'Non disponible','data-react-bits':enabled&&valid?'CountUp':undefined,'data-animation-state':enabled?countState:'static'},h('span',{'aria-hidden':true},valid?(enabled?h(CountUp,{to:value,duration:1.35,separator:' ',decimals:digits,onStart:()=>setCountState('running'),onEnd:()=>setCountState('complete')}):number(value,digits)):'—'),h('span',{className:'stat-unit','aria-hidden':true},suffix)),h('p',{key:'detail'},detail)];
+  h('div',{className:'stat-value',key:'value','aria-label':valid?number(value,digits)+suffix:'Non disponible','data-react-bits':enabled&&valid?'CountUp':undefined,'data-animation-state':enabled?countState:'static'},h('span',{'aria-hidden':true},valid?(enabled?h(CountUp,{key:value+':'+digits,to:value,trigger:'load',duration:1.35,separator:' ',decimals:digits,onStart:()=>setCountState('running'),onEnd:()=>setCountState('complete')}):number(value,digits)):'—'),h('span',{className:'stat-unit','aria-hidden':true},suffix)),h('p',{key:'detail'},detail)];
  return enabled?h(SpotlightCard,{className:'stat-card',theme:'light',spotlightColor:'#F97316',intensity:.85,borderGlow:.9,spotlightSize:260,proximity:24,flare:false,'data-react-bits':'SpotlightCard'},...body):h('div',{className:'stat-card spotlight-card','data-motion-fallback':'SpotlightCard'},...body);
 }
 export function PageHeader({kicker,title,description,action}){return h('header',{className:'page-header'},h('div',null,h('div',{className:'eyebrow'},kicker),h('h1',null,title),h('p',null,description)),action);}

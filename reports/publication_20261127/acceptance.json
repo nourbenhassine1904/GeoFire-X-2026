@@ -1,0 +1,81 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_DEPLOYMENT_LIMITS",
+  "created_utc": "2026-11-27T12:24:09.157311+00:00",
+  "backend": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "synthetic_guard_tests": {
+    "tests": 38,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frontend_checks": 44,
+  "build": "npm.cmd run build: PASS",
+  "api": [
+    {
+      "route": "/health",
+      "status": 200,
+      "bytes": 121,
+      "sha256": "c79a512943a63378c7ab7aeebc885b74c8d795a4067f90291ef2f4e9752ecb25"
+    },
+    {
+      "route": "/studio/models",
+      "status": 200,
+      "bytes": 1217,
+      "sha256": "6e871ea83d5fc91ede6d4e688c4b196afd655d44366bf305a92bec43f2ec6643"
+    },
+    {
+      "route": "/science/v2/populations",
+      "status": 200,
+      "bytes": 275,
+      "sha256": "d786a95b08478ebe006bb105659dc147891aa5e8e642bbc02e3e5992effa4cad"
+    },
+    {
+      "route": "/science/performance",
+      "status": 200,
+      "bytes": 174859,
+      "sha256": "8ed8294e4bff9d40a4b37515d584a176d14fe1acd54c95c5dffa1bce93b5a032"
+    },
+    {
+      "route": "/science/final-2021/export.json",
+      "status": 200,
+      "bytes": 180284,
+      "sha256": "fadc693de41a997058b3aafaf86a46563b218732544b28daf51f18d9859233dc"
+    },
+    {
+      "route": "/science/final-2021/export.csv",
+      "status": 200,
+      "bytes": 538,
+      "sha256": "3ff8121da146722eaccc6b0e2a5e0b512d33dc29cd0aa337059c7cd565a981d9"
+    },
+    {
+      "route": "/science/performance/events.csv",
+      "status": 200,
+      "bytes": 113766,
+      "sha256": "d196cfeadf52c55259635559f8b07bb9be4bcf5f79b2e0e86dfc52475677f2e3"
+    },
+    {
+      "route": "/science/v2/export.csv",
+      "status": 200,
+      "bytes": 1058,
+      "sha256": "bdfeb70cf24fb603f24d1aa1ba4fc123a46f8d0b737c7825cb47e960a319c8b4"
+    },
+    {
+      "route": "/feu.png",
+      "status": 200,
+      "bytes": 2522299,
+      "sha256": "4c46f727fd2b81736ceaf866b10ad26e31dbf7d302e6f40ffdb84ff13058f4bc"
+    }
+  ],
+  "qualification": "PASS_WITH_ARCHIVED_FIRE13",
+  "browser_previous_receipt": "reports/finalisation_20261127/browser/browser-audit.json",
+  "browser_status": "PASS_WITH_EXTERNAL_LIMITS",
+  "fresh_machine_tested": false,
+  "native_fullscreen_tested": false,
+  "training_executed": false,
+  "new_2021_inference": false
+}

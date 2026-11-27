@@ -1,0 +1,266 @@
+{
+  "bands": [
+    {
+      "index0": "0",
+      "band1": "1",
+      "raw_name": "M11",
+      "source": "VIIRS VNP09GA",
+      "observation_period": "daily observations",
+      "availability_by_J": "BLOCKED: asset acquisition and processing/publication times absent",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "1",
+      "band1": "2",
+      "raw_name": "I2",
+      "source": "VIIRS VNP09GA",
+      "observation_period": "daily observations",
+      "availability_by_J": "BLOCKED: asset acquisition and processing/publication times absent",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "2",
+      "band1": "3",
+      "raw_name": "I1",
+      "source": "VIIRS VNP09GA",
+      "observation_period": "daily observations",
+      "availability_by_J": "BLOCKED: asset acquisition and processing/publication times absent",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "3",
+      "band1": "4",
+      "raw_name": "NDVI_last",
+      "source": "VIIRS VNP13A1",
+      "observation_period": "16-day composite selected by timestamp",
+      "availability_by_J": "BLOCKED: composite period end and delivery byJ not proven; last is not causal evidence",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "4",
+      "band1": "5",
+      "raw_name": "EVI2_last",
+      "source": "VIIRS VNP13A1",
+      "observation_period": "16-day composite selected by timestamp",
+      "availability_by_J": "BLOCKED: composite period end and delivery byJ not proven; last is not causal evidence",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "5",
+      "band1": "6",
+      "raw_name": "total precipitation",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "6",
+      "band1": "7",
+      "raw_name": "wind speed",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "7",
+      "band1": "8",
+      "raw_name": "wind direction",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown; direction excluded; dedicated circular encoding and provenance review required",
+      "current_output": "not served",
+      "missing_and_encoding": "no implemented/approved representation in active profiles",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "8",
+      "band1": "9",
+      "raw_name": "minimum temperature",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "9",
+      "band1": "10",
+      "raw_name": "maximum temperature",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "10",
+      "band1": "11",
+      "raw_name": "energy release component",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "11",
+      "band1": "12",
+      "raw_name": "specific humidity",
+      "source": "GRIDMET",
+      "observation_period": "daily consolidated meteorological field",
+      "availability_by_J": "BLOCKED: early/provisional/permanent revisions; archive vintage/publication byJ unknown",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "12",
+      "band1": "13",
+      "raw_name": "slope",
+      "source": "SRTMGL1_003",
+      "observation_period": "static terrain",
+      "availability_by_J": "existing historical baseline; static source predates2018",
+      "current_output": "slope_z + slope_missing",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "conservative_fire_terrain;terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "13",
+      "band1": "14",
+      "raw_name": "aspect",
+      "source": "SRTMGL1_003",
+      "observation_period": "static terrain",
+      "availability_by_J": "existing historical baseline; static source predates2018",
+      "current_output": "aspect_sin + aspect_cos + aspect_missing",
+      "missing_and_encoding": "sin/cos; invalid angle ->0,0 + missing flag",
+      "candidate_profiles": "conservative_fire_terrain;terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "14",
+      "band1": "15",
+      "raw_name": "elevation",
+      "source": "SRTMGL1_003",
+      "observation_period": "static terrain",
+      "availability_by_J": "existing historical baseline; static source predates2018",
+      "current_output": "elevation_z + elevation_missing",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "conservative_fire_terrain;terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "15",
+      "band1": "16",
+      "raw_name": "pdsi",
+      "source": "GRIDMET/DROUGHT",
+      "observation_period": "multi-day PDSI validity interval",
+      "availability_by_J": "BLOCKED: interval coveringJ is not proof of release byJ",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": "multimodal_observed_j_v1"
+    },
+    {
+      "index0": "16",
+      "band1": "17",
+      "raw_name": "LC_Type1",
+      "source": "MODIS MCD12Q1",
+      "observation_period": "annual land cover for same calendar year",
+      "availability_by_J": "BLOCKED: whole-year consolidated product; use only a demonstrably prior released vintage",
+      "current_output": "not served",
+      "missing_and_encoding": "17 one-hot classes + unknown; fractional values stay unknown",
+      "candidate_profiles": "terrain_vegetation_v1;multimodal_observed_j_v1"
+    },
+    {
+      "index0": "17",
+      "band1": "18",
+      "raw_name": "total_precipitation_surface_sum",
+      "source": "NOAA GFS0P25",
+      "observation_period": "00UTC cycle, forecast hours1..24 of date on file",
+      "availability_by_J": "BLOCKED: local TIFF has no issue/valid/release metadata; not automatically a J+1 forecast; sum/last semantics changed2019-11-07 upstream",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "18",
+      "band1": "19",
+      "raw_name": "forecast wind speed",
+      "source": "NOAA GFS0P25",
+      "observation_period": "00UTC cycle, forecast hours1..24 of date on file",
+      "availability_by_J": "BLOCKED: local TIFF has no issue/valid/release metadata; not automatically a J+1 forecast",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "19",
+      "band1": "20",
+      "raw_name": "forecast wind direction",
+      "source": "NOAA GFS0P25",
+      "observation_period": "00UTC cycle, forecast hours1..24 of date on file",
+      "availability_by_J": "BLOCKED: local TIFF has no issue/valid/release metadata; not automatically a J+1 forecast; direction excluded; dedicated circular encoding and provenance review required",
+      "current_output": "not served",
+      "missing_and_encoding": "no implemented/approved representation in active profiles",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "20",
+      "band1": "21",
+      "raw_name": "forecast temperature",
+      "source": "NOAA GFS0P25",
+      "observation_period": "00UTC cycle, forecast hours1..24 of date on file",
+      "availability_by_J": "BLOCKED: local TIFF has no issue/valid/release metadata; not automatically a J+1 forecast",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "21",
+      "band1": "22",
+      "raw_name": "forecast specific humidity",
+      "source": "NOAA GFS0P25",
+      "observation_period": "00UTC cycle, forecast hours1..24 of date on file",
+      "availability_by_J": "BLOCKED: local TIFF has no issue/valid/release metadata; not automatically a J+1 forecast",
+      "current_output": "not served",
+      "missing_and_encoding": "finite train-only z-score, clip+-8; missing -> mean (z0) + missing flag",
+      "candidate_profiles": ""
+    },
+    {
+      "index0": "22",
+      "band1": "23",
+      "raw_name": "active fire",
+      "source": "VIIRS active fire",
+      "observation_period": "acquisition day J",
+      "availability_by_J": "existing historical conditional baseline; operational delivery latency not proven",
+      "current_output": "active_fire / fire_J",
+      "missing_and_encoding": "NaN=no detection; finite VIIRS code ->1; not fire intensity",
+      "candidate_profiles": "conservative_fire_terrain;terrain_vegetation_v1;multimodal_observed_j_v1"
+    }
+  ],
+  "external_additions_certified": [],
+  "reason": "No new reviewed asset/version/acquisition/composite/issue/publication/availability dossier",
+  "existing_C8_raw_indices": [
+    12,
+    13,
+    14,
+    22
+  ],
+  "fire13_admission": "Derived from accepted C8 observations only; inherited operational latency assumption, not a new real-time certification"
+}

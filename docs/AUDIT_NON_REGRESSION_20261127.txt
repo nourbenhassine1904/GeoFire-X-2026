@@ -1,0 +1,256 @@
+GeoFire-X Studio - Audit de non-regression du 27 novembre 2026
+
+Perimetre
+---------
+Audit du travail local existant, sans nouvelle refonte. Historique Git consulte
+en lecture seule : HEAD 1d510d77b8c0f2d74c008bcaafcb6b1530fa7f2d.
+Les fichiers deja modifies et non suivis ont ete conserves.
+Preuves generees dans reports/non_regression_20261127/.
+
+1. Cause exacte de la disparition de la grande flamme
+----------------------------------------------------
+Dans HEAD:frontend/src/ScientificComparison.mjs, JuryOverview monte explicitement
+h(FireEmblem,{hero:true}) comme premier enfant de .overview-hero. StudioPages
+reexportait cet Overview. La refonte locale extrait ensuite Overview dans
+frontend/src/Overview.mjs et ScientificComparison reexporte ce nouveau module.
+Ce dernier ne montait plus FireEmblem : la grande flamme etait absente du DOM.
+Ce n'etait ni une disparition du logo, ni un fichier d'image manquant, ni un
+composant ReactBits casse. FireEmblem et les keyframes flame-breathe/ember-drift
+etaient toujours presents dans studio_ui.mjs et style.css.
+
+Correction : remontage du MEME FireEmblem hero, sans modifier ses chemins SVG
+ou ses keyframes. Placement adapte a la banniere actuelle : 300 x 360 px,
+opacite 0,24, derriere la copie, sans capture des clics, aria-hidden=true.
+Les regles systeme et utilisateur existantes figent la flamme et masquent les
+braises en mouvement reduit. Aucun canvas WebGL supplementaire n'est lance.
+
+2. Preuves de restauration et image
+----------------------------------
+Le script frontend/verify-non-regression-browser.mjs pilote Chrome reel par CDP.
+Il mesure les transformations de .hero-flame .flame-outer a deux instants,
+verifie qu'elles different en mode normal et restent identiques en mode reduit.
+Il compare aussi les captures avec/sans grande flamme : les pixels rendus
+different, y compris pour la version statique. Cette verification distingue
+explicitement la grande flamme de celle du logo.
+
+Les captures *-overview.png montrent la cohabitation avec le texte et feu.png.
+L'image conserve son fichier original, son ratio carre et object-fit:contain.
+Le figcaption a ete supprime du DOM, sans texte de remplacement sous l'image.
+Les deux anciennes legendes ne figurent plus dans Overview. L'attribut alt
+precise qu'il s'agit d'une illustration conceptuelle sans sortie du modele.
+
+SHA-256 de feu.png original et de sa copie servie, identiques :
+4c46f727fd2b81736ceaf866b10ad26e31dbf7d302e6f40ffdb84ff13058f4bc
+
+3. Inventaire des animations
+----------------------------
+Element                              Etat et verification
+Grande flamme Overview               RESTAUREE ; animation CSS reelle Chrome,
+                                     pixels visibles ; statique en mode reduit.
+Titre principal / SplitText           PRESENT ET FONCTIONNEL ; mots animes en
+                                     mode normal, titre entier en mode reduit.
+Sections / FadeContent                PRESENT ET FONCTIONNEL ; apparition au
+                                     defilement/montage ; contenu statique sinon.
+Compteurs / CountUp                   PRESENT ET CORRIGE ; demarrage au chargement
+                                     meme hors ecran ; valeurs finales exactes.
+KPI / SpotlightCard                   PRESENT ET FONCTIONNEL ; effet pointeur
+                                     ReactBits ; repli statique en mode reduit.
+Selecteur evenements / AnimatedList   PRESENT ; recherche et selection conservees ;
+                                     animation conditionnee par MotionContext.
+Etapes d'inference / Stepper           PRESENT ; etapes liees aux vrais etats,
+                                     transition=none en mode reduit.
+Navigation / page-enter               PRESENT ; transition CSS de route, supprimee
+                                     par preferences systeme/utilisateur.
+Timeline J-2/J-1/J/J+1                 PRESENTE ET FONCTIONNELLE ; dates reelles,
+                                     precedent/suivant, vitesse, lecture/pause.
+                                     Jamais de propagation scientifique inventee.
+                                     En mode reduit, lecture uniquement manuelle.
+Chargement inference                  PRESENT ; etat occupe reel, boutons bloques,
+                                     Stepper et indicateur d'activite.
+Micro-interactions                    PRESENTES ; survol, focus, selection,
+                                     ouverture/fermeture des dialogues.
+Cartes / map-layer-transition         PRESENTE ; changement de couche, sans
+                                     interpolation spatiale des rasters.
+Panneaux et barres de metriques        PRESENTS ; transitions de montage/largeur ;
+                                     prefere-reduced-motion respecte.
+AuroraBackdrop                        CODE CONSERVE, NON MONTE. L'ancien
+                                     LegacyOverview le montait ; ce composant
+                                     n'etait deja plus l'Overview route dans HEAD.
+                                     L'Overview actif utilisait FireEmblem.
+                                     Pas de reintroduction d'un fond WebGL
+                                     redondant dans la nouvelle banniere.
+
+4. Compteurs et provenances
+--------------------------
+Affichage final controle : 318 train V2 ; 80 validation V2 ; 156 test 2021.
+Le 318 code en dur dans Overview a ete retire.
+/science/v2/populations lit seulement index/index.json, dont le SHA-256 doit
+correspondre a baseline_c8.json avant lecture des roles train/val. Il ne construit
+aucun dataset et n'ouvre aucun pixel. L'index verifie est :
+e61448e6791dacafe95b67bf4d12b90fb6a8575b14ba9ba19ad5df5e34160655
+Le compteur test conserve /science/final-2021 et les resultats officiels archives.
+
+CountUp demarre maintenant au chargement de chaque valeur, plutot que d'attendre
+que la carte entre dans le viewport. La valeur et la precision identifient son
+montage. Le texte accessible reste exact pendant l'animation.
+Chargement incomplet/erreur : tiret etat non disponible, jamais zero de repli.
+Erreurs train/val et test independantes, avec actions Reessayer independantes.
+Verifie : mode normal, systeme reduit, preference utilisateur persistante,
+rechargement, aller-retour de route, API 503, delai de chargement et reprise.
+
+5. Tableau des fonctionnalites des cinq pages
+-------------------------------------------
+Page                     Present et verifie                         Restauration
+Vue d'ensemble           Navigation Studio/Performances/Methode ;   Grande flamme,
+                         illustration ; KPI ; synthese 2021 ;       source KPI,
+                         provenances et etats d'erreur.             cadrage mobile.
+Studio de prediction     C8/NEWPOS2/NEWPOS4 CPU reels et U-Net       Aucune fonction
+                         historique ; choix modele/evenement/date ; scientifique
+                         trois observations ; timeline ; J+1        a reimplementer.
+                         revele separement ; probabilites ; feu
+                         observe/predit ; nouveaux pixels ; erreurs
+                         TP/FP/FN ; vue par couches et cote a cote ;
+                         cadrage commun, agrandissement, zoom ;
+                         exports PNG/metadonnees/JSON/CSV.
+Performances             Resultats officiels C8 2020 et 2021 ;      Presentation des
+                         domaines global/nouveaux pixels ;          liens d'export.
+                         tableaux, distributions et pagination ;
+                         CSV/JSON precis ; historique CNN/U-Net,
+                         ablations et tete de propagation conserves.
+Comparaison modeles      Metriques C8/NEWPOS2/NEWPOS4/FIRE13 ;       Presentation du
+                         graphiques et seuils figes ; trois CPU     lien CSV.
+                         sur scene commune ; verite commune
+                         separee ; scenes sauvegardees appairees ;
+                         diagnostic quatre modeles ; exports,
+                         decisions et SHA-256.
+Methodologie/donnees     23 bandes, 8 canaux C8, masques T3,         Export JSON de
+                         schema U-Net, split V2, CRISP-DM,           provenance V2
+                         ancres et limites scientifiques.          retabli.
+
+L'ancien onglet Architectures est remplace par l'explication U-Net dans
+Methodologie ; les analyses CNN/U-Net restent dans Performances. L'ancienne
+page Big Data autonome et les repetitions de KPI ne sont pas reintroduites.
+Le vocabulaire de presentation interne n'a pas ete reintroduit dans l'interface.
+L'export Methodologie retrouve une action utile supprimee pendant l'extraction
+des pages : il exporte maintenant le JSON V2 courant, sans melanger les protocoles.
+
+6. Autres bugs corriges, prouves pendant la recette
+-------------------------------------------------
+Mobile : professional.css redefinissait --sidebar=258px puis 235px APRES la regle
+mobile --sidebar=0px de style.css. La sidebar etait masquee mais la workspace
+conservait sa marge et sa largeur reduite, comprimant tout le contenu a 390 px.
+La feuille professionnelle fixe desormais --sidebar=0, marge=0 et largeur=100%
+sous 800 px. Chrome confirme workspace.left=0 et aucun debordement horizontal
+des cinq pages aux trois dimensions demandees.
+
+Exports : les liens a.button-secondary n'heritaient pas du cadre et du padding
+des elements button. Ils sont maintenant cadres et alignes dans .lab-exports,
+sans changer leurs URL, leur precision ou leurs donnees.
+
+Serveur Windows : deux incidents WinError 64 d'asyncio Proactor ont laisse le
+processus Uvicorn vivant sans socket d'ecoute utilisable pendant les changements
+rapides de page. serve_jury.py selectionne maintenant asyncio:SelectorEventLoop
+sur Windows uniquement. Le serveur corrige a passe le test de 120 requetes
+statiques abandonnees, suivi de controles /health et / a 200, et la recette
+complete de navigation. Aucun changement du moteur d'inference.
+
+7. Tests et preuves
+-------------------
+Compilation npm run build : PASS.
+Frontend React/HTTP : 43 controles PASS ; vraies inferences CPU C8, NEWPOS2,
+NEWPOS4 et U-Net historique ; 5 pages ; controles d'accessibilite selectionnes
+sans violation ; export Methodologie identique au payload de l'API.
+Preuve : reports/non_regression_20261127/frontend-delivery/propagation-dom.json.
+CSS/contrastes : PASS, dont 3 tailles simulees. Ces tests DOM ne sont pas
+presentes comme une preuve de mise en page ; Chrome apporte cette verification.
+
+Backend : 39 tests PASS, 0 echec, 0 ignore dans backend-final.xml :
+tests/test_studio_populations.py, test_ui_performance.py,
+test_studio_v2_deployment.py, test_studio_spatial.py,
+test_prediction_lab.py et test_jury_finalization.py.
+Les tests portent sur des inferences ponctuelles 2020, des sorties deja archivees
+et des gardes de refus 2021 ; aucun entrainement ni test 2021 relance.
+Les erreurs du premier backend-initial.xml provenaient d'un D: alors inaccessible.
+Le disque est redevenu accessible, et la suite complete a ensuite passe.
+
+Chrome reel : 1920x1080, 1366x768, 390x844 ; facteur de zoom 1 et DPR 1 ;
+animations normales puis reduites. 30 captures des cinq pages, plus captures
+des cartes, des erreurs API et de l'agrandissement. Navigation mobile reelle.
+Details, limites exactes et liste des requetes : browser/browser-audit.json.
+La difference de pixels avec/sans flamme et les transformations CSS mesurees
+prouvent sa presence et son mouvement, au-dela d'une simple compilation.
+Les rasters de prediction ont plusieurs couleurs et des dimensions non nulles.
+
+8. Protections et limites
+-------------------------
+1 350 fichiers proteges sont inchanges selon SHA-256 : checkpoints accessibles,
+index/normaliseurs/splits/configurations, preuves officielles, RESULTS et
+sauvegardes C:/D:, verrou durable et fichiers du rapport/presentation, feu.png.
+Preuves : preservation-accessible-before.json et preservation-after.json.
+Aucune lecture des pixels 2021 par les routes de prediction ; seuls les membres
+JSON autorises de RESULTS sont lus pour les resultats. Le hachage de l'archive
+entiere est une verification d'integrite, sans decodage de rasters 2021.
+Aucun entrainement, commit, push, merge, reset ou modification du rapport LaTeX.
+
+La recette cible les parcours principaux et les etats cites ; elle ne pretend
+pas parcourir exhaustivement chaque evenement/date du corpus. Les resultats
+restent des grilles de pixels sans CRS et des scores non calibres, comme avant.
+Le seul controle restant est le plein ecran natif : meme avec un clic souris
+natif CDP, Chrome headless ne l'a pas active. Verifier manuellement Agrandir,
+Plein ecran, Quitter le plein ecran et Echap sur un navigateur interactif.
+Le dialogue d'agrandissement et son zoom sont verifies dans Chrome reel.
+Les quatre telechargements Chrome sont effectivement presents dans
+reports/downloads : PNG (292 octets), metadonnees JSON (1 002 octets), JSON
+de scene (6 000 533 octets) et CSV des pixels (34 171 063 octets).
+Leur contenu est aussi verifie independamment par les tests React/HTTP.
+La cle limits du dernier browser-audit.json indique cette seule limite native.
+
+9. Fichiers modifies par cette intervention
+-------------------------------------------
+Application :
+- frontend/src/Overview.mjs
+- frontend/src/studio_ui.mjs
+- frontend/src/professional.css
+- frontend/src/Methodology.mjs
+- src/geofirex/jury_app.py
+- scripts/serve_jury.py
+
+Tests, outils et compte rendu :
+- frontend/tests/professional-contract.mjs
+- frontend/tests/propagation-dom.mjs
+- frontend/verify-non-regression-browser.mjs (nouveau)
+- tests/test_studio_populations.py (nouveau)
+- scripts/audit_studio_preservation.py (nouveau)
+- scripts/audit_studio_http_stability.py (nouveau)
+- docs/AUDIT_NON_REGRESSION_20261127.txt (nouveau)
+- reports/non_regression_20261127/ et telechargements generes de recette.
+frontend/dist est regenere par le build ; feu.png original reste intact.
+Les autres modifications deja presentes dans git status ne viennent pas de
+cette intervention et n'ont pas ete annulees.
+
+10. Lancement et reproduction
+-----------------------------
+Depuis la racine du projet, apres arret du serveur deja en cours :
+  .\Start-GeoFireX.ps1
+URL : http://127.0.0.1:8026/#/overview
+Si le port est occupe : .\Start-GeoFireX.ps1 -Port 8028
+
+Frontend :
+  Push-Location frontend
+  $env:GEOFIREX_TEST_REPORT_DIR='../reports/non_regression_recheck'
+  npm.cmd run build
+  npm.cmd run test:studio
+  Pop-Location
+
+Backend :
+  $env:PYTHONPATH=Join-Path $PWD 'src'
+  .\.venv\Scripts\python.exe -m pytest tests/test_studio_populations.py tests/test_ui_performance.py tests/test_studio_v2_deployment.py tests/test_studio_spatial.py tests/test_prediction_lab.py tests/test_jury_finalization.py -q
+
+Chrome : lancer un Chrome headless dedie avec --remote-debugging-port=9233
+et --user-data-dir pointant vers un repertoire de recette distinct, puis :
+  Push-Location frontend
+  node verify-non-regression-browser.mjs
+  Pop-Location
+Le script utilise le port 8026 par defaut ; GEOFIREX_TEST_URL permet un autre port.
+Le test de stabilite HTTP cible explicitement le serveur local sur 8026 :
+  .\.venv\Scripts\python.exe scripts/audit_studio_http_stability.py

@@ -1,5 +1,83 @@
 # Scientific records are byte-pinned by SHA-256. Preserve original line endings
 # across Windows/Linux checkouts; do not renormalize existing tracked records.
-/reports/** -text
-/configs/** -text
-/artifacts/propagation-comparison/** -text
+/reports/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/configs/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/artifacts/propagation-comparison/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen source identities must survive Windows/Linux checkout byte for byte.
+/docs/FIRE13_LANCEMENT.md -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/prepare_fire13.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/prepare_fire13_data.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/run_fire13.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/scripts/run_v2_baseline.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/__init__.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/acquisition_session.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/archive_transfer.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/archive_verification.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/audit.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/baseline.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/benchmark.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/benchmark_metrics.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/benchmark_models.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/c8_comparison.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/c8_newpos_loss.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/c8_predictions.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/calibration_io.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/calibration_mounts.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/cloud_corpus.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/compact_calibration.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/constants.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/corpus.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/dataset.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/deterministic_models.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/event_cache.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/experiment_readiness.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/fast_compact.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/fast_raw.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/feature_profiles.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/fire13_comparison.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/fire13_experiment.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/fire13_features.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/focal_experiment.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/focal_loss.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/full_corpus.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/gpu_operational.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/io.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/job_control.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/kaggle_persistence.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/loss_ablation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/manifest.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/metrics.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/mission_results.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/mission_streaming.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/mission_training.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/orchestration.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/prediction_lab.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/propagation_experiment.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/propagation_results.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/protocol_v2.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/real_constants.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/real_dataset.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/real_manifest.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/real_splits.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/remote_archive.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/runner.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/runner_data.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/runner_evaluation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/science_results.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/scientific_scaleup.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/serving.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/splits.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/studio_v2.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/synthetic.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/unet.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/unet_confirmation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/unet_data.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/unet_evaluation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/unet_results.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/upload_budget.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/v2_evaluation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/v2_execution.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/v2_propagation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/src/geofirex/windows.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+/tests/test_fire13.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
