@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "partitions": [
+    {
+      "number": 0,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p00",
+      "identity": "ed88f93ae8329c57f34709fdf3a59e3ec3272db8238f843d4329f2cb23e293d0",
+      "objects": 8,
+      "bytes": 251765459,
+      "full_sha256": true
+    },
+    {
+      "number": 1,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p01",
+      "identity": "4aa8b2818192a2cc67941f1c1bbb8a1001e144114486bb05ecaa9b504993c6fa",
+      "objects": 40,
+      "bytes": 989085982,
+      "full_sha256": true
+    },
+    {
+      "number": 2,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p02",
+      "identity": "b5caf48618be26a75a480d91401f9de0d0936607936d09556f6308c1d76c5dcd",
+      "objects": 50,
+      "bytes": 987809689,
+      "full_sha256": true
+    },
+    {
+      "number": 3,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p03",
+      "identity": "ba72fbbc58f398a7bcd471d5cb21aebe4d11ed68da02caa912c2e746ccadc04d",
+      "objects": 46,
+      "bytes": 995318367,
+      "full_sha256": true
+    },
+    {
+      "number": 4,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p04",
+      "identity": "ada2f8b9a3f7f340efed521b15bf3fe4e3b4151fa39eab06ca2055518f58ab58",
+      "objects": 49,
+      "bytes": 992292044,
+      "full_sha256": true
+    },
+    {
+      "number": 5,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p05",
+      "identity": "3bcde37b262d5828f98153350d961e0ad771032fdedb04ff180ace536e4cb33a",
+      "objects": 46,
+      "bytes": 981423131,
+      "full_sha256": true
+    },
+    {
+      "number": 6,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p06",
+      "identity": "001a171f309ac58f4160269d46b9163b0c0c26c7a488cc545f6fa1b42e55d72a",
+      "objects": 42,
+      "bytes": 968717297,
+      "full_sha256": true
+    },
+    {
+      "number": 7,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p07",
+      "identity": "906b02993f756f4b6098ac8da11ecac173f59d20ebda70c8d2bd3bb37b8f6dbd",
+      "objects": 45,
+      "bytes": 990891142,
+      "full_sha256": true
+    },
+    {
+      "number": 8,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p08",
+      "identity": "793223fda8a5f0d06e792bcd09b2604a97252952a5323b144184a8e4f1496a4f",
+      "objects": 48,
+      "bytes": 981783843,
+      "full_sha256": true
+    },
+    {
+      "number": 9,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p09",
+      "identity": "af3015768e0174071c4d197ad31681ef20fbe0cc1de2c1084254bfef5b91393f",
+      "objects": 53,
+      "bytes": 992783102,
+      "full_sha256": true
+    },
+    {
+      "number": 10,
+      "handle": "nnnnbhss/geofirex-compact-t3-20261111-p10",
+      "identity": "49e5551860a6d14c020c86dc33118a7cd2e0ca3dc9b470e6e95af6061817fa81",
+      "objects": 32,
+      "bytes": 715742136,
+      "full_sha256": true
+    }
+  ],
+  "objects": 459,
+  "total_bytes": 9847612192,
+  "unique_file_contents_hashed": 465,
+  "arrays_decoded": 0,
+  "downloads": 0,
+  "remote_status": "not queried; historical publication certificate only"
+}

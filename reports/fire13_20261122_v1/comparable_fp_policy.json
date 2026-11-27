@@ -1,0 +1,15 @@
+{
+  "FPR_rational": [
+    25334,
+    103727130
+  ],
+  "folds": 5,
+  "calibration_events": 64,
+  "assessment_events": 16,
+  "assignment": "SHA256 geofirex-threshold-v1 event rank modulo5",
+  "budget": "floor(rate * calibration negatives)",
+  "tie_rule": "global score ties indivisible, maximum recall and highest threshold at equal recall",
+  "lock_all_thresholds_before_assessment": true,
+  "operational_threshold_selected": false,
+  "acceptance_unchanged": true
+}

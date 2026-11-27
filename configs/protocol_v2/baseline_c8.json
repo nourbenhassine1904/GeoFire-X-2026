@@ -1,0 +1,88 @@
+{
+  "schema": "geofirex-v2-experiment-preregistration-1",
+  "run_id": "B2_C8_V2_seed42",
+  "training_authorized": false,
+  "launch_enabled": false,
+  "status": "CPU_DATA_READY_GPU_RUNNER_NOT_PACKAGED",
+  "event_manifest": "reports/protocol_v2_20261118/events.csv",
+  "event_manifest_sha256": "3245228c81ed52b807bbea27fe683a0a5c5aaae30393287f97d85030d693c38f",
+  "index": "reports/protocol_v2_20261118/index",
+  "index_sha256": "e61448e6791dacafe95b67bf4d12b90fb6a8575b14ba9ba19ad5df5e34160655",
+  "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+  "normalization_policy": "frozen_2018_2019_subset_of_v2_train",
+  "train_tiles": 115900,
+  "validation_tiles": 30882,
+  "model": "B2/StackedUNet/LightUNet",
+  "base_channels": 8,
+  "depth": 3,
+  "feature_policy": "conservative_fire_terrain",
+  "channels_per_day": 8,
+  "channel_names": [
+    "slope_z",
+    "elevation_z",
+    "slope_missing",
+    "elevation_missing",
+    "aspect_sin",
+    "aspect_cos",
+    "aspect_missing",
+    "fire_J"
+  ],
+  "fire_channel": 7,
+  "context_days": 3,
+  "model_input_channels": 24,
+  "tile_size": 64,
+  "initialization": "fresh_seed42_no_checkpoint_resume",
+  "seed": 42,
+  "epochs": 4,
+  "fixed_checkpoint_epoch": 4,
+  "early_stopping": false,
+  "batch_size": 16,
+  "drop_last": false,
+  "updates_per_epoch": 7244,
+  "total_updates": 28976,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "clip_grad_norm": 1.0
+  },
+  "loss": {
+    "name": "SegmentationLoss",
+    "dice_weight": 0.5,
+    "pos_weight": 10.0,
+    "bce_reduction": "mean_valid_pixels",
+    "dice_reduction": "mean_valid_images"
+  },
+  "precision": "float32",
+  "amp": false,
+  "augmentation": false,
+  "sampler": {
+    "name": "LocalitySampler",
+    "seed": 42,
+    "block_size": 256,
+    "epochs": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "policy": "each_train_tile_once_per_epoch"
+  },
+  "validation": "all_80_events_all_30882_tiles_once_after_fixed_epoch4",
+  "threshold": 0.78,
+  "threshold_tuning": false,
+  "exclusions": [
+    "purged_events",
+    "2021",
+    "historical_checkpoints_as_initialization"
+  ],
+  "studio_promotion": false,
+  "source_sha256": {
+    "src/geofirex/protocol_v2.py": "0f4f1112fe96c98063513b3f9008295f15c1c48434e9bacb3adbea02c0477ac0",
+    "src/geofirex/v2_evaluation.py": "ed13f2dd5269f7c2bc4b9b5d9853acf272026c225a1ccbe8bdc31ebb7684c6d6",
+    "src/geofirex/fast_compact.py": "1396ab8bbda26b3e10d199dda20bbdb4d3fe858c394f684b5effbaf057bed635",
+    "src/geofirex/benchmark_models.py": "6d72a4f890ab2e92a1d9b6ed1c91bb0e33c9b3c6fd15bac7c624a2a4a94185c5",
+    "src/geofirex/unet.py": "c0a9ce9a28e0e3475f8b138f52485f09173e6e5a0eba6070990aa2c46d93a6cc",
+    "src/geofirex/feature_profiles.py": "5176754868f48d9164f4d968978add9423b534a02d78411ea2d55ac638f70088"
+  }
+}

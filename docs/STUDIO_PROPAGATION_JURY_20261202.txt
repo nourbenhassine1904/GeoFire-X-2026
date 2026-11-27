@@ -1,0 +1,119 @@
+GEOFIRE-X STUDIO — PARCOURS JURY DU 2 DÉCEMBRE 2026
+Version locale du 23 novembre 2026. Durée : environ 6 minutes.
+
+LANCEMENT UNIQUE
+Depuis C:\Users\nourb\Projects\GeoFire-X-2026 dans PowerShell :
+    .\Start-GeoFireX.ps1
+Puis ouvrir http://127.0.0.1:8026/#/overview et faire Ctrl+Maj+R.
+Le script compile React puis lance FastAPI au premier plan. Ctrl+C l’arrête.
+Si 8026 est occupé, arrêter l’ancien serveur dans SON terminal, ou utiliser
+.\Start-GeoFireX.ps1 -Port 8027. Ne pas arrêter un processus inconnu.
+Prérequis existants : .venv, Node/npm, frontend/node_modules, corpus compact,
+onze partitions déjà montées et disque ADATA connecté au même emplacement.
+Aucune installation, publication, récupération ou session GPU n’est lancée.
+
+0:00–0:45 — OVERVIEW
+Montrer les deux grilles agrandies de feu réel : J 2020-09-03 et prévision
+sauvegardée J+1 2020-09-04, événement historique 2020/fire_24332880.
+Expliquer : détection active quotidienne ; ni surface brûlée, ni carte GPS.
+Lire les périmètres : historique 250/201 ; V2 318 train, 80 validation,
+156 test 2021 réservé et 53 événements purgés. Les pixels 2021 restent fermés.
+Cliquer « Explorer la propagation ».
+
+0:45–2:00 — OBSERVER PUIS PRÉDIRE
+Dans Prediction Studio, conserver 2020/fire_24332880, date J 2020-09-03.
+Les trois observations affichent 2020-09-01, 2020-09-02, 2020-09-03.
+Cliquer « Prédire J+1 ». Attendre la fin du calcul CPU.
+Descendre vers « Prévision calculée ». Montrer score, prédiction binaire au
+seuil 0,78 et nouveaux pixels prédits. Le zoom utilise J et la prédiction.
+La vérité n’est pas téléchargée automatiquement. Le modèle reçoit J−2/J−1/J ;
+les cinq masques passés J−4..J sont vérifiés. J+1 reste hors de l’inférence.
+Modèle servi : U-Net poids 10 HISTORIQUE, checkpoint 7295eaa6f957…
+Ce n’est pas le checkpoint C8 V2.
+
+2:00–3:20 — RÉVÉLER ET EXPLIQUER LES ERREURS
+Cliquer « Révéler la vérité J+1 » au-dessus de la prévision.
+Sur cette scène complète (320×256, stride 1), domaine nouveaux feux :
+    TP 27 ; FP 58 ; FN 201 ; rappel 11,8421 % ; Dice 17,2524 % ;
+    précision 31,7647 % ; AP exacte 14,9546 % ; Brier 0,00762340.
+Ces métriques ponctuelles ne remplacent aucun résultat agrégé.
+Vert = TP détecté, rouge = FP fausse alerte, bleu = FN manqué ; ancien feu
+exclu en gris dans le domaine nouveaux feux. Le cadre ne change pas à la révélation.
+Cliquer « Feu global » puis revenir à « Nouveaux feux ».
+Sur les erreurs, « Agrandir » ouvre le dialogue ; zoom et « Plein écran »
+permettent l’inspection. Fermer ou Échap pour revenir. « Toutes les couches »
+montre également cible globale, nouveaux feux réels et erreurs des deux domaines.
+Exporter un PNG avec son fichier .metadata.json, ou JSON/CSV avec provenance.
+
+3:20–4:20 — COMPARAISON OFFICIELLE V2
+Cliquer « Comparaison V2 » dans la navigation.
+Lire le graphique des nouveaux feux, changer Rappel vers AP exacte ou FP.
+Expliquer le nuage rappel–FP : quatre modèles, même seuil 0,78 et mêmes
+80 événements de validation 2020. Ce n’est pas une courbe de seuils.
+C8 reste la référence ; NEWPOS2, NEWPOS4, FIRE13 restent expérimentaux non promus.
+FIRE13 : rappel 16,9077 %, AP nouveaux 8,4184 %, FP 95 053.
+Aucune variante ne satisfait tous les critères ; aucune supériorité FIRE13
+démontrée à budget FP comparable. Déplier les critères ou le tableau si demandé.
+AP est Average Precision exacte, pas une intégration trapézoïdale PR-AUC.
+
+4:20–5:30 — MÊME SCÈNE, TROIS MODÈLES V2
+Descendre vers « Même scène V2, mêmes pixels ».
+Conserver l’événement initial 2020/fire_24332704, cible 2020-09-10
+(date médiane du premier événement, choix indépendant des performances).
+Cliquer « Afficher les sorties sauvegardées » et attendre la vérification.
+Les trois cartes et leurs métriques portent sur J 2020-09-09 → J+1 2020-09-10 :
+    NEWPOS2 : nouveaux TP 2, FP 15, FN 15 ; rappel 11,7647 %.
+    NEWPOS4 : nouveaux TP 4, FP 29, FN 13 ; rappel 23,5294 %.
+    FIRE13  : nouveaux TP 7, FP 36, FN 10 ; rappel 41,1765 %.
+Ce cas illustre le compromis ; il ne justifie aucune promotion et n’est pas
+représentatif du panel. Le rappel ponctuel FIRE13 ne contredit pas sa non-promotion.
+Changer Couche vers Probabilité/Binaire ou Domaine vers Feu global.
+Les métriques viennent de tous les pixels valides de la scène complète ;
+le stride des cartes est indiqué. Les observations/cibles/masques sont identiques
+entre les trois modèles. Les SHA-256 archive, membre et checkpoint sont exportés.
+Aucune nouvelle inférence V2 ni évaluation agrégée n’est exécutée.
+C8 n’a pas de matrices complètes sauvegardées dans son archive ; conserver ses
+agrégats et, si utile, déplier son diagnostic 64×64 calculé précédemment.
+Ne pas comparer ces scènes comme appariées à l’inférence historique 201.
+
+5:30–6:15 — LIMITES, TRAÇABILITÉ ET CONCLUSION
+Model Analytics sépare graphiques V2 et analyses historiques.
+Research rappelle causalité, absence de CRS/météo et limites de généralisation.
+Montrer un export JSON/CSV si demandé. Aucun gain futur n’est promis.
+Une seule seed, validation déjà observée, aucune utilisation opérationnelle d’alerte.
+
+VÉRIFICATIONS REPRODUCTIBLES
+Depuis la racine (le serveur doit être actif pour le test React) :
+    $env:PYTHONPATH='src'
+    .\.venv\Scripts\python.exe -m pytest tests/test_jury_finalization.py tests/test_prediction_lab.py tests/test_studio_spatial.py -q
+    cd frontend
+    $env:GEOFIREX_TEST_URL='http://127.0.0.1:8026'
+    npm run test:studio
+Les reçus finaux sont dans reports/studio_propagation_20261123_v2 ; les captures
+et premiers contrôles restent scellés dans studio_propagation_20261123_v1.
+Chaque relance frontend utilise un nouveau dossier reports/studio_checks.
+Les tests CPU utilisent leur dossier temporaire ; un dossier scellé est refusé.
+Le simulateur DOM teste React, HTTP, inférence CPU et pixels, pas le layout.
+Les captures Chrome et leur rapport d’audit documentent séparément le layout.
+
+SAUVEGARDE ET PUBLICATION GITHUB — PLAN SANS EXÉCUTION
+1. Conserver les archives/checkpoints originaux ADATA et leurs .sha256.
+   Garder une deuxième copie indépendante avant la soutenance et vérifier son hash.
+   La sauvegarde locale de cette livraison est un overlay : elle nécessite le dépôt
+   et les données existantes ; elle ne contient pas les poids ni le corpus.
+2. Préserver tout l’arbre de travail, y compris les fichiers non suivis. Le snapshot
+   previous-ui et git_before.patch/txt ne remplace pas une sauvegarde complète.
+   Ne pas utiliser git clean, reset --hard ou un changement de branche non préparé.
+3. Relire git status/diff et le rapport de préservation avant toute publication.
+   Candidats à une sélection explicite : Start-GeoFireX.ps1, README, docs de démo,
+   frontend/src, frontend/package.json, frontend/build.mjs, tests frontend,
+   verify-studio-propagation.mjs, src/geofirex/jury_app.py et studio_spatial.py,
+   scripts de préparation/vérification et tests/test_studio_spatial.py.
+   Inclure les preuves scientifiques scellées nécessaires à jury_app et le reçu
+   visualization_sources/manifest, après vérification de la confidentialité des chemins.
+4. Exclure .venv, node_modules, caches, corpus, données pixels, checkpoints, gros ZIP,
+   autorisations/verrous privés et captures brutes de Chrome (onglets/profil visibles).
+   Les PNG exportés depuis l’application contiennent seulement les rasters.
+5. Après validation humaine uniquement : git add avec liste de chemins explicite,
+   revue de git diff --cached, commit puis push. Aucune de ces commandes n’a été
+   exécutée par cette livraison. Ne pas faire git add . sur cet arbre chargé.

@@ -4,6 +4,7 @@ import SplitText from './reactbits/SplitText.jsx';
 import CountUp from './reactbits/CountUp.jsx';
 import SpotlightCard from './reactbits/SpotlightCard.jsx';
 import FadeContent from './reactbits/FadeContent.jsx';
+import {readJSON} from './api.mjs';
 export const h=React.createElement;
 export const MotionContext=createContext({enabled:false});
 export const number=(value,digits=0)=>Number.isFinite(value)?value.toLocaleString('fr-FR',{maximumFractionDigits:digits}):'—';
@@ -27,11 +28,12 @@ const paths={
  shield:'m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6z M8 12l3 3 5-6'
 };
 export function Icon({name,size=18,...props}){return h('svg',{width:size,height:size,viewBox:'0 0 24 24',fill:'none',stroke:'currentColor',strokeWidth:1.6,strokeLinecap:'round',strokeLinejoin:'round','aria-hidden':true,focusable:false,...props},h('path',{d:paths[name]||paths.layers}));}
-export function Brand(){return h('span',{className:'brand-content'},h('span',{className:'brand-mark'},h(Icon,{name:'flame',size:21})),h('span',null,'GEOFIRE',h('span',{className:'brand-x'},'–X')));}
+export function FireEmblem({hero=false}){return h('span',{className:hero?'fire-emblem hero-flame':'fire-emblem','aria-hidden':true},h('svg',{viewBox:'0 0 100 120',fill:'none'},h('path',{className:'flame-outer',fill:'#f97316',d:'M52 4C61 31 84 40 83 68C82 94 68 111 49 113C25 114 12 98 15 76C17 57 30 47 31 30C40 40 40 50 39 58C57 43 49 24 52 4Z'}),h('path',{className:'flame-inner',fill:'#ffcb67',d:'M53 49C58 67 72 75 65 94C59 111 34 109 31 94C28 80 43 74 42 63C48 69 47 78 48 81C56 70 50 61 53 49Z'})),...Array.from({length:4},(_,i)=>h('i',{key:i,className:'ember ember-'+i})));}
+export function Brand(){return h('span',{className:'brand-content'},h('span',{className:'brand-mark'},h(FireEmblem)),h('span',null,'GEOFIRE',h('span',{className:'brand-x'},'–X')));}
 export function useResource(url){
  const [revision,setRevision]=useState(0),[state,setState]=useState({data:null,error:''});
  useEffect(()=>{const c=new AbortController();setState({data:null,error:''});
-  fetch(url,{signal:c.signal}).then(async r=>{if(!r.ok)throw new Error(`Source indisponible (${r.status})`);const data=await r.json();if(!c.signal.aborted)setState({data,error:''});}).catch(e=>{if(e.name!=='AbortError')setState({data:null,error:e.message});});
+  readJSON(url,{signal:c.signal}).then(data=>{if(!c.signal.aborted)setState({data,error:''});}).catch(e=>{if(e.name!=='AbortError')setState({data:null,error:e.message});});
   return()=>c.abort();
  },[url,revision]);
  return {...state,retry:()=>setRevision(r=>r+1)};
@@ -46,7 +48,7 @@ export function AuroraBackdrop(){const {enabled}=useContext(MotionContext);retur
 export function StatCard({icon,label,value,detail,suffix='',digits=0}){
  const {enabled}=useContext(MotionContext),valid=Number.isFinite(value),[countState,setCountState]=useState('waiting');
  const body=[h('div',{className:'stat-heading',key:'title'},h('span',null,label),h(Icon,{name:icon})),
-  h('div',{className:'stat-value',key:'value','aria-label':valid?number(value,digits)+suffix:'Non disponible','data-react-bits':enabled&&valid?'CountUp':undefined,'data-animation-state':enabled?countState:'static'},h('span',{'aria-hidden':true},valid?(enabled?h(CountUp,{to:value,duration:1.35,separator:' ',decimals:digits,onStart:()=>setCountState('running'),onEnd:()=>setCountState('complete')}):number(value,digits)):'—'),h('span',{className:'stat-unit','aria-hidden':true},suffix)),h('p',{key:'detail'},detail)];
+  h('div',{className:'stat-value',key:'value','aria-label':valid?number(value,digits)+suffix:'Non disponible','data-react-bits':enabled&&valid?'CountUp':undefined,'data-animation-state':enabled?countState:'static'},h('span',{'aria-hidden':true},valid?(enabled?h(CountUp,{key:value+':'+digits,to:value,trigger:'load',duration:1.35,separator:' ',decimals:digits,onStart:()=>setCountState('running'),onEnd:()=>setCountState('complete')}):number(value,digits)):'—'),h('span',{className:'stat-unit','aria-hidden':true},suffix)),h('p',{key:'detail'},detail)];
  return enabled?h(SpotlightCard,{className:'stat-card',theme:'light',spotlightColor:'#F97316',intensity:.85,borderGlow:.9,spotlightSize:260,proximity:24,flare:false,'data-react-bits':'SpotlightCard'},...body):h('div',{className:'stat-card spotlight-card','data-motion-fallback':'SpotlightCard'},...body);
 }
 export function PageHeader({kicker,title,description,action}){return h('header',{className:'page-header'},h('div',null,h('div',{className:'eyebrow'},kicker),h('h1',null,title),h('p',null,description)),action);}

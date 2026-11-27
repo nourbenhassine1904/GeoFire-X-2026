@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "fixed_threshold": 0.78,
+  "scientific_gates": {
+    "AP_new": false,
+    "AP_pooled": false,
+    "Dice_pooled": true,
+    "recall_new": true,
+    "Dice_new": true,
+    "FP_new": false,
+    "macro_Dice": true,
+    "Brier": false
+  },
+  "all_scientific_gates_pass": false,
+  "paired_vs_C8": {
+    "AP_pooled": -0.05603810659852182,
+    "AP_new": -0.02594461137729269,
+    "Dice_pooled": -0.004905779520791853,
+    "recall_new": 0.10769364925131425,
+    "Dice_new": 0.09131344716398071,
+    "macro_Dice": 0.0024512577030971205,
+    "Brier": 0.002620031731021781
+  },
+  "exact_AP_definition": "Average precision from exact global score ties; not trapezoidal PR area",
+  "budget_gate": "runtime_budget.json and actual Kaggle quota receipt required before promotion",
+  "calibration": "Brier and unchanged historical descriptive PR/calibration conventions",
+  "exploratory_single_seed": true,
+  "validation_already_observed": true,
+  "promotion_authorized": false,
+  "AP_bootstrap": false,
+  "test_pixels_opened": 0
+}

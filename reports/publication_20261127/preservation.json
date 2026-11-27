@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ACCESSIBLE_FILES",
+  "verified": 1350,
+  "changed": [],
+  "unavailable": [],
+  "baseline": "Local immutable snapshot from finalisation_20261127; full paths retained locally.",
+  "report_latex_preserved": true,
+  "original_feu_preserved": true,
+  "test_2021_rerun": false
+}

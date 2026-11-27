@@ -1,0 +1,40 @@
+{
+  "schema": "newpos4-exploratory-thresholds-1",
+  "primary": "fpr_0.00028",
+  "registered_before_new_threshold_assessment": true,
+  "exploratory_after_observed_078_results": true,
+  "scenarios": [
+    {
+      "id": "fpr_0.00014",
+      "fpr_rational": [
+        7,
+        50000
+      ]
+    },
+    {
+      "id": "fpr_0.00028",
+      "fpr_rational": [
+        7,
+        25000
+      ]
+    },
+    {
+      "id": "fpr_0.00056",
+      "fpr_rational": [
+        7,
+        12500
+      ]
+    }
+  ],
+  "miss_to_false_alarm_cost_ratios": [
+    1,
+    5,
+    20
+  ],
+  "folds": 5,
+  "calibration_events": 64,
+  "assessment_events": 16,
+  "threshold_ties": "indivisible, highest threshold at max recall",
+  "select_scenario_from_heldout": false,
+  "final_all80_threshold_fit": false
+}

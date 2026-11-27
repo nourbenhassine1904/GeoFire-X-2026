@@ -1,0 +1,69 @@
+GEOFIRE-X STUDIO — VERSION FINALE DU 24 NOVEMBRE 2026
+
+Lancer depuis la racine : .\Start-GeoFireX.ps1
+Ouvrir http://127.0.0.1:8026/#/overview puis Ctrl+Maj+R.
+Le script compile React et lance FastAPI en local. Ctrl+C arrête le serveur.
+Prérequis : .venv, Node/npm, dépendances frontend existantes, ADATA et les
+partitions compactes aux emplacements d’origine. Aucun entraînement au lancement.
+
+PARCOURS DE SIX MINUTES
+0:00–0:45 Overview : identité animée et vrai exemple J/J+1 sauvegardé.
+L’animation de la flamme est décorative, indépendante des cartes scientifiques.
+0:45–1:45 Prediction Studio : « Charger la scène de soutenance » sélectionne
+2020/fire_24332880, J 2020-09-03, cible 2020-09-04. Observer le lecteur :
+J−2 2020-09-01, J−1 2020-09-02, J 2020-09-03. Lire, Pause, pas à pas et vitesse.
+1:45–2:45 « Prédire J+1 » : inférence CPU du U-Net poids 10 historique,
+checkpoint 7295eaa6f957… Le lecteur reçoit alors la quatrième grille, identifiée
+comme prévision. Aucun pixel cible n’entre dans cette inférence.
+2:45–3:45 Révéler séparément J+1, montrer les erreurs et le mode côte à côte.
+Nouveaux feux de cette scène : TP 27, FP 58, FN 201 ; rappel 11,842105 %,
+Dice 17,252396 %, précision 31,764706 %, AP 14,954552 %, Brier 0,007623399863.
+Ces valeurs ponctuelles ne remplacent aucun agrégat. Chaque carte de métrique
+donne une explication courte. Le cadre est inchangé lors de la révélation.
+3:45–5:00 Comparaison V2 : graphiques des quatre modèles sur 80 événements.
+Afficher les sorties sauvegardées du premier événement, cible 2020-09-10 :
+NEWPOS2, NEWPOS4, FIRE13, cadre commun et métriques sur la scène complète.
+Ce sont des archives V2, pas le modèle historique interactif. C8 conserve ses
+agrégats et son diagnostic de tuile ; aucune matrice complète n’est inventée.
+5:00–6:00 Model Analytics : V2 en premier, historique dans une section distincte.
+Research : pipeline, masques, architecture, provenance et limites accessibles.
+Conclure sur les fonctions démontrées et les compromis mesurés.
+
+CARTES ET EXPORTS
+« Agrandir » ouvre une carte avec zoom de 1 à 8 et plein écran. Échap ou Fermer
+permet de revenir. Les pixels sont échantillonnés au stride indiqué, jamais lissés.
+« Exporter PNG » puis « Métadonnées JSON » récupèrent deux fichiers séparément.
+Ils partagent le même nom de base. Le JSON contient couche, cadre, stride,
+dates, identités disponibles et légende. Les exports de scène JSON/CSV gardent
+la grille complète de l’aperçu avec les coordonnées absolues des échantillons.
+Les métriques V2 sauvegardées portent sur tous les pixels valides de la scène,
+même si l’affichage est échantillonné. Les JSON conservent la précision numérique.
+Sans CRS/affine : grille de pixels non géoréférencée, aucune surface en hectares.
+TP vert, FP rouge, FN bleu ; absence sombre ; invalide ou hors domaine gris.
+
+MOUVEMENT ET MÉTHODE
+La préférence système prefers-reduced-motion et le bouton de mouvement sont
+respectés. La flamme devient statique ; le lecteur démarre toujours manuellement.
+Les variantes V2 restent expérimentales et non promues. Le panel 2020 a déjà été
+observé ; les gains de rappel se lisent avec les faux positifs. AP exacte et Brier
+utilisent les scores originaux. Une sortie sigmoid ne prouve pas sa calibration.
+Les limites, critères et identités restent consultables dans les sections méthode.
+Aucune inférence 2021, nouveau modèle, entraînement GPU ou modification des splits.
+
+VALIDATION ET PUBLICATION
+Résultats et captures : reports/final_studio_20261124/.
+Tests API/CPU : 29 réussis. Frontend : voir frontend-release/propagation-dom.json.
+Le test DOM utilise les vraies API et une inférence CPU ; il ne mesure pas le layout.
+L’audit navigateur séparé documente Chrome bureau et émulation mobile 390×844.
+Les captures natives Chrome ne montrent que l’application ; les captures brutes
+incluant les onglets ou le profil restent locales et sont exclues du manifeste Git.
+La vérification scripts/verify_final_studio.py confirme les identités scientifiques
+et les fichiers protégés. L’ancien vérificateur d’UI refuse studio_ui.mjs parce que
+sa liste de modifications autorisées précédait cette mission ; il reste inchangé.
+
+Le manifeste Git donne une liste exacte de chemins et SHA-256. Ne pas utiliser
+git add . sur cet arbre déjà chargé. Le lot prerequisites contient des travaux
+préexistants requis par l’application, à relire séparément du lot UI final.
+Les archives COMPLETE, corpus, checkpoints, tableaux et captures privées restent
+sur ADATA / stockage local. Les fichiers déjà suivis ne sont ni supprimés ni réécrits.
+Aucun commit, push ou merge n’est exécuté par les scripts de cette livraison.

@@ -1,0 +1,81 @@
+FIRE13 EVALUATION RECOVERY ONLY — procédure Kaggle
+
+1. Importer notebooks/GEOFIREX_FIRE13_EVALUATION_RECOVERY_ONLY.ipynb dans
+   un NOUVEAU notebook privé Kaggle. Internet OFF. Sélectionner les T4.
+   Attacher les onze datasets p00 à p10 déjà utilisés, sans les republier.
+
+2. Créer un dataset privé de récupération avec les deux fichiers du dossier
+   kit/kaggle-upload de la livraison : TRAINING-SAFE-c1145600.bin et .sha256.
+   Le .bin est une copie binaire exacte du ZIP ADATA, avec le même SHA-256.
+   Il se lit comme un ZIP et conserve intact le fichier original .zip.
+   Attacher ce dataset en plus des onze partitions. Ne pas utiliser PARTIAL
+   comme source. Ne pas attacher deux copies TRAINING-SAFE simultanément.
+
+3. Exécuter les cellules CPU de préparation. Elles vérifient le payload,
+   les 35 modules, les 77 identités scientifiques, les onze mount-map et
+   les ressources. Aucun pip/install ni accès Internet n'est nécessaire.
+   Garder les archives et verrous historiques. Le verrou SINGLE_RUN du fit
+   n'est pas inclus dans les ZIP reçus : ne pas le supprimer s'il existe
+   dans la session historique. Aucun verrou historique n'est recréé.
+
+4. Vérifier le quota ACTUEL dans Kaggle. Renseigner OPERATOR,
+   SESSION_REMAINING_MINUTES et QUOTA_REMAINING_CARD_HOURS.
+   Exiger au moins 300 minutes disponibles et réserver 10 heures-carte.
+   Réserve conservatrice inchangée, même si aucun entraînement n'est prévu.
+   Les deux T4 peuvent compter dans le budget même si une seule est visible.
+   RAM : 16 GiB totale, 8 GiB disponibles. Disque libre : environ 18,28 GiB
+   au minimum pour cette archive ; viser 20 GiB disponibles avant restauration.
+   Délai maximal inférence + AP exacte + comparaisons : 8100 secondes.
+   Le précontrôle vérifie le runtime historique, T4, CUDA et cuDNN.
+   Ces réserves sont des estimations conservatrices, pas des temps mesurés.
+
+5. Passer CREATE_NEW_AUTHORIZATIONS à True et exécuter une seule fois sa
+   cellule : elle crée deux NOUVEAUX fichiers liés au manifeste corrigé,
+   au SHA du ZIP et au SHA du checkpoint. Remettre ce drapeau à False.
+   Activer RUN_GPU_PREFLIGHT et exécuter son contrôle.
+   Activer ensuite RUN_EVALUATION et exécuter uniquement sa cellule.
+   Aucun optimiseur ni appel de fit n'existe dans ce chemin de récupération.
+
+6. La restauration utilise /kaggle/working/fire13-restored-training-safe,
+   obligatoirement neuf. La sortie est un autre dossier neuf :
+   /kaggle/working/B2_C13_FIRE_V2_seed42_EVALUATION_RECOVERY_ONLY.
+   Le checkpoint doit être checkpoint_u0028976.pt, 4 époques, 28976 mises
+   à jour, curseur 0, SHA-256 :
+   5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c
+   Un verrou exclusif fire13-evaluate-<SHA>.lock.json consomme la tentative
+   avant l'inférence. Ne jamais supprimer ce verrou pour relancer.
+   Il protège cette session ; il ne peut pas interdire une autre session
+   Kaggle vierge. Conserver le verrou téléchargé et ne pas dupliquer le run.
+
+7. Télécharger le ZIP EVALUATION-RECOVERY-COMPLETE et son .sha256, le verrou,
+   les nouvelles autorisations et le notebook exécuté. En cas d'échec,
+   conserver EVALUATION-RECOVERY-PARTIAL ; pas de relance automatique.
+   Copier les sorties vers les DEUX destinations et vérifier les SHA-256 :
+   C:\Users\nourb\Projects\GeoFire-X-2026\artifacts\fire13
+   D:\GeoFire-X\GeoFire-X-V2
+   Ces chemins Windows servent au téléchargement ; Kaggle ne les monte pas.
+   Exemple de vérification locale PowerShell :
+   Get-FileHash -Algorithm SHA256 -LiteralPath 'CHEMIN_DU_ZIP_FINAL'
+   Comparer intégralement avec le premier champ du fichier .sha256.
+
+Résultats attendus dans evaluation/ :
+ - evaluation.json : propagation, AP exacte globale et nouveau feu, Brier,
+   Dice/IoU/précision/rappel, FP et détail par événement.
+ - paired_comparison/metrics.csv et per_event_differences.csv.
+ - paired_comparison/bootstrap_events.json, bootstrap_vs_newpos4.json,
+   bootstrap_vs_newpos2.json : appariement par événement, conventions figées.
+ - paired_comparison/FIRE13_acceptance.json : huit critères inchangés.
+ - comparable_fp/thresholds_locked.json et result.json : analyse exploratoire
+   64/16 événements, cinq folds, tous les seuils verrouillés avant assessment.
+ - complete.json uniquement après l'ensemble des calculs réussis.
+   runtime_budget.json et preflight.json se trouvent à la racine de sortie.
+
+L'évaluation principale reste au seuil 0,78, sur 30882 tuiles et exactement
+80 événements de validation 2020. Domaine :
+efc995be596d7d520bac472ceb1b5122fe2111fe9d5a53c5edbec02851c1accc
+Les seuils exploratoires ne remplacent pas ce seuil et ne modifient pas les
+critères d'acceptation. Aucun pixel de test 2021. Aucune promotion automatique.
+Relever le quota réel avant/après session pour décider de l'intégration Studio.
+
+Cette livraison prépare l'évaluation ; aucune performance FIRE13 n'est encore
+mesurée localement et aucun GPU n'a été lancé par la préparation.

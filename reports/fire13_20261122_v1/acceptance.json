@@ -1,0 +1,16 @@
+{
+  "AP_new_min": 0.11512837301201886,
+  "AP_pooled_min": 0.34023390370637985,
+  "Dice_pooled_min": 0.4339254871567759,
+  "recall_new_min": 0.08138351147320427,
+  "Dice_new_min": 0.1106963425412671,
+  "FP_new_max": 29134,
+  "macro_Dice_min": 0.22778327086319602,
+  "Brier_max": 0.0031547185297208474,
+  "threshold": 0.78,
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20261121,
+  "exact_domain_required": true,
+  "authorized_budget_required": true,
+  "promotion_authorized": false
+}

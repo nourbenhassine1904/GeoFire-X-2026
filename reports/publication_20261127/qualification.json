@@ -1,0 +1,213 @@
+{
+  "schema": "studio-v2-cpu-qualification-1",
+  "created_utc": "2026-11-27T12:09:49.354946+00:00",
+  "implementation_sha256": {
+    "src/geofirex/studio_v2.py": "3df89d478d2ae977e1c335caa19ddcad678c47e99f6e683a65c592bd80a0da99",
+    "src/geofirex/prediction_lab.py": "1b5dffd241dbae96b29978d98d62a6a1232c07bb490c35daa031ab66a22da5a2",
+    "src/geofirex/fire13_features.py": "48dc564cec6fa3beafe619eb62f07d555f6cb7b29cb1d3cf33e89a7daaa2c72e"
+  },
+  "runtime": {
+    "torch": "2.15.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "models": {
+    "C8": {
+      "status": "PASS",
+      "checkpoint_sha256": "c2273fea252d709f4d316eba76515d669be97eac8bfa9302ff4831da2c9aedc1",
+      "archive_sha256": "37a8d69647ddebaa902d88e21fddf4df3f56eaa57e7094695b478d04116c1415",
+      "checks": [
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-08-30",
+          "reference": "sealed diagnostic_tile.json",
+          "reference_sha256": "7c82a9be2f59fca8b899635719706aa23be076139ba271c7fac5170160fcdd12",
+          "passed": true,
+          "valid_pixels": 4096,
+          "max_abs_error": 2.168404344971009e-18,
+          "threshold_classification_equal": true
+        }
+      ],
+      "torch_version": "2.15.0+cpu",
+      "device": "cpu",
+      "channels": 8,
+      "parameters": 123977,
+      "context_days": 3,
+      "normalizer_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    },
+    "NEWPOS2": {
+      "status": "PASS",
+      "checkpoint_sha256": "6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91",
+      "archive_sha256": "70c9693265c64c2a3b435c2c0a60f1f410ad1604e08a2625c04b687dead1b8f5",
+      "checks": [
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-08-30",
+          "reference": "sealed diagnostic_tile.json",
+          "reference_sha256": "7c82a9be2f59fca8b899635719706aa23be076139ba271c7fac5170160fcdd12",
+          "passed": true,
+          "valid_pixels": 4096,
+          "max_abs_error": 4.336808689942018e-18,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-09-10",
+          "reference_member": "2020__fire_24332704.npy",
+          "reference_sha256": "d632658fe683425a2d0e41803d0c00ba86339483f0627c4542f05bd80ae69200",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 74725,
+          "max_abs_error": 3.2782554626464844e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24462788",
+          "target_date": "2020-09-23",
+          "reference_member": "2020__fire_24462788.npy",
+          "reference_sha256": "ef517b951bbb737118128463d09a8181614973b89453dc7dd8039b4e7ccec47e",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 80640,
+          "max_abs_error": 2.980232238769531e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24695970",
+          "target_date": "2020-11-27",
+          "reference_member": "2020__fire_24695970.npy",
+          "reference_sha256": "cab9e873b497a0b948490d2614520168021c7831490a16117e947b691f634cab",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 87804,
+          "max_abs_error": 9.540979117872439e-18,
+          "threshold_classification_equal": true
+        }
+      ],
+      "torch_version": "2.15.0+cpu",
+      "device": "cpu",
+      "channels": 8,
+      "parameters": 123977,
+      "context_days": 3,
+      "normalizer_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    },
+    "NEWPOS4": {
+      "status": "PASS",
+      "checkpoint_sha256": "5e139fa2dde831e21a05ce10d73a88c62bad7069c23cdde687cb16b1d04c9819",
+      "archive_sha256": "0b1ea0ad35004fc2c5828325f0b42d55dd430f2ccdfc00bac964e7ba56555b39",
+      "checks": [
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-08-30",
+          "reference": "sealed diagnostic_tile.json",
+          "reference_sha256": "7c82a9be2f59fca8b899635719706aa23be076139ba271c7fac5170160fcdd12",
+          "passed": true,
+          "valid_pixels": 4096,
+          "max_abs_error": 1.5178830414797062e-17,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-09-10",
+          "reference_member": "2020__fire_24332704.npy",
+          "reference_sha256": "4a3ccaa4886dcd3a4dcef4ab5b1fef0cffdb3ba8a81542f1d5f342ed1f265431",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 74725,
+          "max_abs_error": 4.76837158203125e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24462788",
+          "target_date": "2020-09-23",
+          "reference_member": "2020__fire_24462788.npy",
+          "reference_sha256": "898a58d6029ad577ff9ed1cc427ad7816572d08a53df92a5db597d8a5d63371c",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 80640,
+          "max_abs_error": 4.76837158203125e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24695970",
+          "target_date": "2020-11-27",
+          "reference_member": "2020__fire_24695970.npy",
+          "reference_sha256": "856dd52eb320842daada92f166c50ca42c032361a4ffe6319589c9a0903203c7",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 87804,
+          "max_abs_error": 5.898059818321144e-17,
+          "threshold_classification_equal": true
+        }
+      ],
+      "torch_version": "2.15.0+cpu",
+      "device": "cpu",
+      "channels": 8,
+      "parameters": 123977,
+      "context_days": 3,
+      "normalizer_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    },
+    "FIRE13": {
+      "status": "FAIL",
+      "checkpoint_sha256": "5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c",
+      "archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "checks": [
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-08-30",
+          "reference": "sealed diagnostic_tile.json",
+          "reference_sha256": "7c82a9be2f59fca8b899635719706aa23be076139ba271c7fac5170160fcdd12",
+          "passed": true,
+          "valid_pixels": 4096,
+          "max_abs_error": 2.682209014892578e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24332704",
+          "target_date": "2020-09-10",
+          "reference_member": "2020__fire_24332704.npy",
+          "reference_sha256": "d19101b002f8d6d616c96388f92b52b8a70b39e8b241f1007a78f4d3ac0236f2",
+          "preview_stride": 1,
+          "passed": false,
+          "valid_pixels": 74725,
+          "max_abs_error": 1.430511474609375e-06,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24462788",
+          "target_date": "2020-09-23",
+          "reference_member": "2020__fire_24462788.npy",
+          "reference_sha256": "4bb795e2894fdc73b814696eb49a303370500c95a42279aa93ab3ae05ba8e9ea",
+          "preview_stride": 1,
+          "passed": true,
+          "valid_pixels": 80640,
+          "max_abs_error": 9.5367431640625e-07,
+          "threshold_classification_equal": true
+        },
+        {
+          "event_id": "2020/fire_24695970",
+          "target_date": "2020-11-27",
+          "reference_member": "2020__fire_24695970.npy",
+          "reference_sha256": "3760c1f46cee8265788acdcee63746a8d03cbadf2f89a12a6ab374e5bbd228a2",
+          "preview_stride": 1,
+          "passed": false,
+          "valid_pixels": 87804,
+          "max_abs_error": 4.112720489501953e-06,
+          "threshold_classification_equal": true
+        }
+      ],
+      "torch_version": "2.15.0+cpu",
+      "device": "cpu",
+      "channels": 13,
+      "parameters": 125057,
+      "context_days": 3,
+      "normalizer_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27"
+    }
+  },
+  "test_pixels_opened": 0,
+  "training_executed": false,
+  "scope": "2020 deterministic software parity; no new model selection",
+  "limitations": "C8 archive contains no full probability arrays: archived diagnostic tile only; NEWPOS full scenes.",
+  "elapsed_seconds": 12.883969599999546,
+  "status": "PASS_WITH_ARCHIVED_FIRE13"
+}

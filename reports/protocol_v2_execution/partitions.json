@@ -1,0 +1,46 @@
+{
+  "ed88f93ae8329c57f34709fdf3a59e3ec3272db8238f843d4329f2cb23e293d0": {
+    "partition": "p00",
+    "map_sha256": "6ae2bb2349a2c9c9c2be666bce57f3440119688de2b8d87f403108547921b74d"
+  },
+  "4aa8b2818192a2cc67941f1c1bbb8a1001e144114486bb05ecaa9b504993c6fa": {
+    "partition": "p01",
+    "map_sha256": "7baa9a472f7f02608beafa6949eafc3f328a23c910ca50cdc5e9333fec6dd1f9"
+  },
+  "b5caf48618be26a75a480d91401f9de0d0936607936d09556f6308c1d76c5dcd": {
+    "partition": "p02",
+    "map_sha256": "f57c515c0ea3635fa89114faccee5ab0524305104f21f518162559e4c1bb7509"
+  },
+  "ba72fbbc58f398a7bcd471d5cb21aebe4d11ed68da02caa912c2e746ccadc04d": {
+    "partition": "p03",
+    "map_sha256": "5441ba1621f51e1fa1af905053e1b389031c1561e542d3d05c41f137715e2060"
+  },
+  "ada2f8b9a3f7f340efed521b15bf3fe4e3b4151fa39eab06ca2055518f58ab58": {
+    "partition": "p04",
+    "map_sha256": "c27083ebc55946cf8ea04d56cd409c72161457b00440dbdc80cef27c654d7cc6"
+  },
+  "3bcde37b262d5828f98153350d961e0ad771032fdedb04ff180ace536e4cb33a": {
+    "partition": "p05",
+    "map_sha256": "eadeed7db0346e049dad552fb7e1294eb65d24a5b9ce3393b94e9f3059cb9c35"
+  },
+  "001a171f309ac58f4160269d46b9163b0c0c26c7a488cc545f6fa1b42e55d72a": {
+    "partition": "p06",
+    "map_sha256": "6446fc14f6bf8c246b550843f3b99a13b7b3513f06678f3ab868fd41b529fe53"
+  },
+  "906b02993f756f4b6098ac8da11ecac173f59d20ebda70c8d2bd3bb37b8f6dbd": {
+    "partition": "p07",
+    "map_sha256": "ee1d06026b633b6c15d3fdd11a37c036c33fd6f65e34ba829e481b2202f2fc02"
+  },
+  "793223fda8a5f0d06e792bcd09b2604a97252952a5323b144184a8e4f1496a4f": {
+    "partition": "p08",
+    "map_sha256": "0dd039f7d101bbb1ee0c75c3f77fa271194b4b5fdb7a05fef1091ba5539503d6"
+  },
+  "af3015768e0174071c4d197ad31681ef20fbe0cc1de2c1084254bfef5b91393f": {
+    "partition": "p09",
+    "map_sha256": "1732cc87802d2585ba11a2651fef93f634c3f544771b46dc70b3fa7e0e93f898"
+  },
+  "49e5551860a6d14c020c86dc33118a7cd2e0ca3dc9b470e6e95af6061817fa81": {
+    "partition": "p10",
+    "map_sha256": "3b8ad5c3a42b94926b36bdb9306db56c22a8c08695bf6e71e200baccbbd52d87"
+  }
+}

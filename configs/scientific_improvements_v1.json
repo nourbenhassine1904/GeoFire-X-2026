@@ -1,0 +1,106 @@
+{
+  "schema": "geofirex-scientific-improvements-preparation-v1",
+  "training_authorized": false,
+  "training_executed": false,
+  "seed": 42,
+  "epochs": 4,
+  "batch_size": 16,
+  "train_tiles": 93603,
+  "updates_per_new_run": 23404,
+  "fold": {"id": 0, "train_years": [2018, 2019], "validation_years": [2020]},
+  "locked_test_years": [2021],
+  "selection_scope": "development32",
+  "confirmation_scope": "observed169_descriptive_only",
+  "promotion_to_studio": false,
+  "historical_reference": {
+    "model": "B2 LightUNet stacked T3, base8 depth3",
+    "pos_weight": 10,
+    "dice_weight": 0.5,
+    "threshold": 0.78,
+    "checkpoint_sha256": "7295eaa6f957e59a31b7155403881a9b3bf19933a35b6872768896bda1f1b14e",
+    "initial_state_sha256": "a835383534d061787c2449bbb4a896c32c3e990d92b80fe2b3105f9c91ac6f5f",
+    "index_sha256": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+    "normalization_sha256": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "use": "saved outputs only; do not retrain or re-evaluate historical runs"
+  },
+  "shared_training_contract": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "sampler": "LocalitySampler, seed42, same block order, all tiles once per epoch",
+    "data_augmentation": false,
+    "checkpoint_selection": "fixed epoch4; no early stopping or selection on observed169",
+    "initialization": "fresh seed42; never warm-start from the trained principal model",
+    "evaluation_domain": "same target keys and intersection of target + all five historical footprints",
+    "inference_domain": "five known historical footprints only; no future mask read",
+    "selection_threshold_grid": "existing loss_ablation.THRESHOLDS: 0.10..0.95 step0.005 plus 0.96,0.97,0.98,0.99,0.995,0.999",
+    "threshold_rule": "development32 micro Dice; tie precision then higher threshold; boundary optimum is inconclusive",
+    "checkpoint_policy": "new run directory; periodic every100 updates and each epoch; model, optimizer, RNG, cursor, sampler/loader state, loss spec, source and data hashes; SHA256 and external verified backup",
+    "additional_seed_policy": "42 is exploratory; only after a promising gate pre-register 43 and44 with matching comparator provenance; no significance claim from seed42"
+  },
+  "predeclared_acceptance_on_development32": {
+    "all_required": true,
+    "delta_pooled_ap_at_least": 0.005,
+    "delta_pooled_dice_at_least": -0.005,
+    "delta_new_fire_recall_at_least": 0.02,
+    "new_fire_fp_ratio_at_most": 1.15,
+    "delta_macro_event_dice_at_least": -0.01,
+    "interpretation": "proposed engineering gates, not measured improvements or statistical significance; if any fails retain research-only status; never tune these gates using observed169"
+  },
+  "experiments": [
+    {
+      "id": "A_loss",
+      "rank": 1,
+      "status": "PREPARED_NOT_EXECUTABLE",
+      "launch_enabled": false,
+      "reference": "saved B2_w10, T3, eight channels, weighted BCE + Dice",
+      "candidate": "same LightUNet/data/T3; pure binary focal with logits, gamma2, positive weight10 and negative weight1, masked pixel mean",
+      "new_training_runs_if_later_authorized": 1,
+      "focal_definition": "[10*y*(1-sigmoid(z))^2*softplus(-z) + (1-y)*sigmoid(z)^2*softplus(z)] averaged over valid pixels; equivalent to alpha10/11 scaled by11",
+      "causal_scope": "loss-family change including removal of Dice; not proof that focusing alone causes any difference",
+      "optional_mechanism_control": "separate later proposal: 0.5*focal(gamma2)+0.5*same Dice versus 0.5*focal(gamma0)+0.5*same Dice; gamma0 equals historical weighted BCE; not part of the one-run first experiment",
+      "prerequisites": ["review actual focal implementation and masked reduction against definition tests", "recreate historical PyTorch2.11.0+cu130 environment and paired initialization digest", "pin exact source, initial optimizer state, sampler order and certified data hashes", "approve a future GPU budget and output/backup destination; no launch in this mission"]
+    },
+    {
+      "id": "B_temporal",
+      "rank": 2,
+      "status": "PREPARED_NOT_EXECUTABLE",
+      "launch_enabled": false,
+      "reference": "same fixed loss as historical T3; do not combine with A's loss change",
+      "candidate": "native T1 uses only final day J; target/tile keys, T5 validity and exhaustive train order stay identical",
+      "new_training_runs_if_later_authorized": 1,
+      "causal_scope": "native T1 also changes first-layer input width and parameter count; disclose this",
+      "optional_mechanism_control": "same24-channel model with J repeated three times versus J-2,J-1,J; same initialization and capacity, a separately registered information ablation",
+      "prerequisites": ["implement read-only context projection without regenerating compact data", "validate target and T5+target domain identity for every selected sample", "pin native T1 initialization; do not claim equality with T3's different-shaped initial tensors", "same future environment and GPU approval gates as A"]
+    },
+    {
+      "id": "C_modalities",
+      "rank": 3,
+      "status": "PREPARED_NOT_EXECUTABLE",
+      "launch_enabled": false,
+      "reference": "existing fire+terrain, fixed historical loss and T3",
+      "candidate": "vegetation only after asset-level availability proof; then observed weather only if independently justified by J",
+      "new_training_runs_if_later_authorized": null,
+      "prerequisites": ["prove acquisition end AND publication/issue availability for every added asset by fixed J cutoff", "reject same-year annual land cover and unfinished composites unless an earlier released causal product is identified", "raw modalities are absent from eight-channel compact: prepare a separate immutable keyed overlay only after evidence, never reconstruct or overwrite the certified base", "fit any new normalizer on unique train inputs only; new file and hash; no fitting in this mission", "measure future loader and GPU cost; present GPU approval before any campaign"]
+    },
+    {
+      "id": "D_resnet18_unet",
+      "rank": 4,
+      "status": "PREPARED_NOT_EXECUTABLE",
+      "launch_enabled": false,
+      "candidate": "ResNet18-U-Net with fixed data/loss/context; any ImageNet pretraining is a separate documented factor",
+      "new_training_runs_if_later_authorized": null,
+      "prerequisites": ["A/B establish the baseline and budget", "future architecture-specific memory/time qualification; parameter ratio is not a runtime estimate", "document input-convolution adaptation, library version and pretraining corpus", "no WSTS/WSTS+ public weights before full fold/event/year and tuning-overlap audit, especially2021"]
+    },
+    {
+      "id": "E_utae",
+      "rank": 5,
+      "status": "PREPARED_NOT_EXECUTABLE",
+      "launch_enabled": false,
+      "candidate": "temporal attention only after a demonstrated value of history; true calendar offsets and unchanged causal inputs",
+      "new_training_runs_if_later_authorized": null,
+      "prerequisites": ["B shows a reproducible temporal benefit on matching targets", "GPU memory/time and dependency feasibility established in a separate authorized qualification", "do not mix architecture, loss, temporal length and modality changes", "same external-weight overlap exclusion as D"]
+    }
+  ]
+}

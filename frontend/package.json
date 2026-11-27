@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
-    "test:studio": "node verify-studio.mjs"
+    "test:studio": "node verify-studio-propagation.mjs"
   },
   "dependencies": {
     "@gsap/react": "2.1.2",

@@ -121,3 +121,12 @@ reports/**/react-ssr-check.cjs
 !/artifacts/propagation-comparison/executed-training-code.zip
 /reports/github_preservation_20261113/selected_files.csv
 reports/**/memory.jsonl
+
+# Local acceptance artifacts; selected lightweight receipts remain publishable.
+reports/**/chrome-profile/
+reports/**/downloads/
+/reports/publication_20261127/local-git-inventory.json
+/reports/publication_20261127/local-preservation-*.json
+/reports/publication_20261127/local-backend-original.xml
+/reports/publication_20261127/local-backend.xml
+/reports/publication_20261127/local-guards.xml

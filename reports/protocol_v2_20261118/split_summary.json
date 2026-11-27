@@ -1,0 +1,70 @@
+{
+  "schema": "geofirex-v2-preparation",
+  "selected": {
+    "cutoff": "2020-08-23",
+    "train": 318,
+    "val": 80,
+    "purged": 53,
+    "train_fraction": 0.7989949748743719,
+    "ratio_error": 0.0010050251256281673
+  },
+  "best_without_embargo": {
+    "cutoff": "2020-03-11",
+    "train": 254,
+    "val": 197,
+    "purged": 0,
+    "train_fraction": 0.5631929046563193,
+    "ratio_error": 0.23680709534368072
+  },
+  "roles": {
+    "train": 318,
+    "purged": 53,
+    "val": 80,
+    "test": 156
+  },
+  "usable_fraction": 0.8824833702882483,
+  "distributions": {
+    "train": {
+      "events": 318,
+      "tiles": 115900,
+      "categories": {
+        "negative": 107200,
+        "positive": 6861,
+        "hard_negative": 1839
+      }
+    },
+    "val": {
+      "events": 80,
+      "tiles": 30882,
+      "categories": {
+        "negative": 27332,
+        "positive": 2813,
+        "hard_negative": 737
+      }
+    }
+  },
+  "historical_normalizer_preserved": true,
+  "inputs": {
+    "reports\\full_corpus_v1\\prepared_v1\\observations.parquet": "830dbe796adbb65c883c6d3bbae963d15279ddd0cebb44cde6bcfaaabc1d6d0e",
+    "reports\\full_corpus_v1\\prepared_v1\\windows.parquet": "a12d84b5b589b1f0b94f5450d9ca8837449a831193db1e682fcfa2fb0df67345",
+    "reports\\gpu_acceleration_20261111_v1\\index\\index.json": "56d62ebadae5fa162ad9cdb48d33b3d2b1af7a5129cb72341e5662abcb93d1b7",
+    "reports\\gpu_acceleration_20261111_v1\\index\\normalization.json": "bf8b5adb6276126540786351e66076d35c2e82be09b21e14bea96a4c678b2f27",
+    "reports\\gpu_acceleration_20261111_v1\\index\\train.npy": "ca48ce1ee07879f6175490239c56494c751a52aa0215b72d90c9dbd27debb182",
+    "reports\\gpu_acceleration_20261111_v1\\index\\val.npy": "7a9021b41d2a054c6dbe2b9f44d7e713079eb14538fa0397d4e77a13912257be",
+    "reports\\mission_20261111\\compact_full\\report.json": "072a159a32a0d298258c38915ff6e4759986658135bb50808d5e7a2d93a03dcf",
+    "reports\\mission_20261111\\compact_full\\transfer-manifest.json": "0715de6eaa4f1df5053430f3fd3f889bb821aba453a6ec5976905d65ab8ae4e2",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p00\\mount-map.json": "6ae2bb2349a2c9c9c2be666bce57f3440119688de2b8d87f403108547921b74d",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p01\\mount-map.json": "7baa9a472f7f02608beafa6949eafc3f328a23c910ca50cdc5e9333fec6dd1f9",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p02\\mount-map.json": "f57c515c0ea3635fa89114faccee5ab0524305104f21f518162559e4c1bb7509",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p03\\mount-map.json": "5441ba1621f51e1fa1af905053e1b389031c1561e542d3d05c41f137715e2060",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p04\\mount-map.json": "c27083ebc55946cf8ea04d56cd409c72161457b00440dbdc80cef27c654d7cc6",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p05\\mount-map.json": "eadeed7db0346e049dad552fb7e1294eb65d24a5b9ce3393b94e9f3059cb9c35",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p06\\mount-map.json": "6446fc14f6bf8c246b550843f3b99a13b7b3513f06678f3ab868fd41b529fe53",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p07\\mount-map.json": "ee1d06026b633b6c15d3fdd11a37c036c33fd6f65e34ba829e481b2202f2fc02",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p08\\mount-map.json": "0dd039f7d101bbb1ee0c75c3f77fa271194b4b5fdb7a05fef1091ba5539503d6",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p09\\mount-map.json": "1732cc87802d2585ba11a2651fef93f634c3f544771b46dc70b3fa7e0e93f898",
+    "reports\\gpu_acceleration_20261111_v1\\publication\\p10\\mount-map.json": "3b8ad5c3a42b94926b36bdb9306db56c22a8c08695bf6e71e200baccbbd52d87"
+  },
+  "pixel_reads": 0,
+  "training_executed": false
+}

@@ -1,0 +1,603 @@
+{
+  "browser": "Chrome/158.0.8127.37",
+  "base": "http://127.0.0.1:8028",
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "reduced": false,
+      "motion": "full",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "flame-breathe",
+        "transform": "matrix(0.939655, 0.0361979, -0.0325735, 1.04421, 0, 0)",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "reduced": true,
+      "motion": "reduced",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "none",
+        "transform": "none",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "reduced": false,
+      "motion": "full",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "flame-breathe",
+        "transform": "matrix(0.939427, 0.03647, -0.0328055, 1.04436, 0, 0)",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "reduced": true,
+      "motion": "reduced",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "none",
+        "transform": "none",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "motion": "full",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "flame-breathe",
+        "transform": "matrix(0.939452, 0.0364405, -0.0327804, 1.04435, 0, 0)",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": true,
+      "motion": "reduced",
+      "counts": [
+        "318",
+        "80",
+        "156"
+      ],
+      "flame": {
+        "width": 300,
+        "height": 360,
+        "opacity": "0.24",
+        "animation": "none",
+        "transform": "none",
+        "hidden": "true",
+        "renderedPixelDifference": true
+      },
+      "image": {
+        "width": 1254,
+        "height": 1254,
+        "fit": "contain"
+      },
+      "caption": "",
+      "overflow": false,
+      "devicePixelRatio": 1,
+      "scale": 1,
+      "routes": [
+        {
+          "id": "studio",
+          "heading": "Studio de prédiction",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "analytics",
+          "heading": "Performances",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "comparison",
+          "heading": "Comparaison des modèles",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        },
+        {
+          "id": "research",
+          "heading": "Méthodologie et données",
+          "overflow": false,
+          "emptyHeading": false,
+          "alerts": []
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "30 actual Chrome viewport captures; five pages at all three sizes, full and system-reduced motion; scale 1; no page overflow",
+    "original large flame changes transform and rendered pixels; static reduced-motion fallback",
+    "KPI visible text is 318 / 80 / 156 even below fold; no captions under illustration",
+    "user reduced-motion preference persists across reload; KPI remains exact",
+    "503 sources display unavailable values, never zero; both independent retries restore exact KPI",
+    "real CPU C8 V2 observations, timeline play/pause, separate truth, 8 maps, nonblank canvas pixels, zoom, PNG/metadata/JSON/CSV downloads",
+    "Studio paired mode: common T3 observations, three real checkpoints, independent truth and per-model recall/Dice/precision/TP/FP/FN; shared geometry/crop; desktop/mobile screenshots"
+  ],
+  "consoleErrors": [],
+  "requests": [
+    "http://127.0.0.1:8028/",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/?audit=1920-false",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/?audit=1920-true",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/?audit=1366-false",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/?audit=1366-true",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/?audit=390-false",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/?audit=390-true",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/unet-ablation?revision=0",
+    "http://127.0.0.1:8028/science/maps?phase=holdout169",
+    "http://127.0.0.1:8028/science/performance",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/science/v2/scenes",
+    "http://127.0.0.1:8028/science/v2/comparison",
+    "http://127.0.0.1:8028/science/v2/diagnostic-tile",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/?audit=390-true",
+    "http://127.0.0.1:8028/app.css",
+    "http://127.0.0.1:8028/style.css",
+    "http://127.0.0.1:8028/professional.css",
+    "http://127.0.0.1:8028/app.js",
+    "http://127.0.0.1:8028/feu.png",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/health",
+    "http://127.0.0.1:8028/science/v2/provenance",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/science/v2/populations",
+    "http://127.0.0.1:8028/science/final-2021",
+    "http://127.0.0.1:8028/studio/models",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/studio/v2/C8/predict?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512",
+    "http://127.0.0.1:8028/studio/v2/C8/ground-truth?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512",
+    "http://127.0.0.1:8028/studio/v2/C8/events",
+    "http://127.0.0.1:8028/studio/v2/C8/observations?event_id=2020%2Ffire_24332704&as_of=2020-09-09",
+    "http://127.0.0.1:8028/studio/v2/C8/predict?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512",
+    "http://127.0.0.1:8028/studio/v2/NEWPOS2/predict?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512",
+    "http://127.0.0.1:8028/studio/v2/NEWPOS4/predict?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512",
+    "http://127.0.0.1:8028/studio/v2/C8/ground-truth?event_id=2020%2Ffire_24332704&as_of=2020-09-09&max_side=512"
+  ],
+  "limits": [
+    "Native fullscreen unavailable in headless Chrome; dialog enlargement and zoom verified."
+  ],
+  "models": [
+    {
+      "id": "C8",
+      "label": "C8 V2 · référence évaluée indépendamment sur 2021",
+      "enabled": true,
+      "reason": null,
+      "checkpoint_sha256": "c2273fea252d709f4d316eba76515d669be97eac8bfa9302ff4831da2c9aedc1",
+      "scope": "validation2020_V2_80"
+    },
+    {
+      "id": "NEWPOS2",
+      "label": "NEWPOS2 · variante expérimentale",
+      "enabled": true,
+      "reason": null,
+      "checkpoint_sha256": "6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91",
+      "scope": "validation2020_V2_80"
+    },
+    {
+      "id": "NEWPOS4",
+      "label": "NEWPOS4 · variante expérimentale haute sensibilité",
+      "enabled": true,
+      "reason": null,
+      "checkpoint_sha256": "5e139fa2dde831e21a05ce10d73a88c62bad7069c23cdde687cb16b1d04c9819",
+      "scope": "validation2020_V2_80"
+    },
+    {
+      "id": "FIRE13",
+      "label": "FIRE13 · descripteurs causaux du feu · expérimental",
+      "enabled": false,
+      "reason": "FIRE13 reste archivé : parité CPU hors tolérance (écart maximal 4.11e-06, atol=rtol=1e-6). Aucun changement de seuil ou de normaliseur autorisé.",
+      "checkpoint_sha256": "5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c",
+      "scope": "validation2020_V2_80"
+    },
+    {
+      "id": "legacy",
+      "label": "U-Net historique · ancien protocole",
+      "enabled": true,
+      "reason": null,
+      "scope": "legacy201"
+    }
+  ],
+  "canvas": {
+    "width": 30,
+    "height": 36,
+    "colours": 2
+  },
+  "downloads": [
+    {
+      "name": "2020__fire_24332704_2020-09-10_C8_V2_r_f_rence_valu_e_ind_pendamment_sur_2021.csv",
+      "bytes": 34171063
+    },
+    {
+      "name": "2020__fire_24332704_2020-09-10_C8_V2_r_f_rence_valu_e_ind_pendamment_sur_2021.json",
+      "bytes": 6000532
+    },
+    {
+      "name": "2020__fire_24332704_2020-09-10_C8_V2_r_f_rence_valu_e_ind_pendamment_sur_2021_Feu_observe_J_2020_09_09.metadata.json",
+      "bytes": 1002
+    },
+    {
+      "name": "2020__fire_24332704_2020-09-10_C8_V2_r_f_rence_valu_e_ind_pendamment_sur_2021_Feu_observe_J_2020_09_09.png",
+      "bytes": 292
+    }
+  ],
+  "status": "PASS_WITH_EXTERNAL_LIMITS"
+}

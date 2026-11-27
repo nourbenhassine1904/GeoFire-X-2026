@@ -1,0 +1,100 @@
+GeoFire-X Studio — démonstration du 2 décembre 2026
+
+LANCEMENT LOCAL, SANS ENTRAÎNEMENT
+
+Depuis PowerShell :
+  Set-Location -LiteralPath 'C:\Users\nourb\Projects\GeoFire-X-2026'
+  $env:PYTHONPATH = 'src'
+  .\.venv\Scripts\python.exe scripts/serve_jury.py --port 8026
+
+Ouvrir http://127.0.0.1:8026/#/overview
+Le frontend compilé est inclus. Aucun notebook Kaggle n'est requis.
+Pour reconstruire uniquement l'interface :
+  Push-Location frontend
+  npm run build
+  Pop-Location
+Ne pas lancer les anciens scripts d'entraînement, de récupération ou de Spark.
+Le serveur écoute uniquement sur 127.0.0.1. Arrêt : Ctrl+C dans sa console.
+
+PARCOURS CONSEILLÉ, 8 À 10 MINUTES
+
+1. Overview : expliquer la tâche, détection active J+1, observations jusqu'à J.
+   Distinguer les protocoles : modèle interactif historique 201 événements de
+   validation 2020 ; comparaison V2 de 80 événements de validation 2020.
+   Le test 2021 est fermé. Une détection quotidienne n'est pas une surface brûlée.
+
+2. Prediction Studio : sélectionner 2020/fire_24332880, observation 2020-09-03,
+   cible 2020-09-04. Cliquer « Prédire J+1 ». Le serveur charge les poids réels,
+   calcule les scores sur CPU, puis lit J+1 dans une requête séparée.
+   Montrer feu observé J, score J+1, segmentation, nouveaux pixels, vérité J+1,
+   TP verts, FP rouges, FN bleus ; gris = invalide/exclu. Zoom puis fermeture.
+   Les métriques globales ne sont pas déduites de cet exemple ponctuel.
+
+3. Exporter une carte PNG, l'aperçu JSON avec provenance, puis le CSV des pixels.
+   Les coordonnées sont des indices de pixels. Il n'y a ni CRS ni affine
+   certifiés : ne pas appeler ces grilles des cartes géoréférencées, ni produire
+   des hectares. Les exports indiquent le sous-échantillonnage éventuel.
+
+4. Comparaison V2 : présenter C8, NEWPOS2, NEWPOS4 et FIRE13 au seuil fixe 0,78,
+   sur exactement 80 événements / 30882 tuiles, avec mêmes cibles et masques.
+   Ouvrir critères et provenance. Le rappel seul ne suffit pas : lire AP,
+   précision, faux positifs et Brier. Aucun des trois candidats n'est promu.
+   Changer le modèle du diagnostic : mêmes pixels et mêmes labels, scores
+   réellement enregistrés pour NEWPOS2/4/FIRE13. Le cas est la première tuile
+   lexicographique, choisie sans regarder ses résultats, non représentative.
+   C8 a été calculé ponctuellement sur CPU depuis son checkpoint original.
+
+5. Exporter la comparaison JSON/CSV. FIRE13 reste clos ; aucun nouveau fit,
+   aucune récupération ni nouvelle inférence FIRE13 n'est déclenché.
+   Son rappel accru s'accompagne de 95053 FP nouveaux et d'une AP nouveaux
+   de 8,4184 %. L'analyse sauvegardée à FP comparable ne démontre pas sa
+   supériorité. Les intervalles appariés sauvegardés sont fournis dans le rapport.
+
+6. Model Analytics / Research : présenter les expériences historiques dans
+   leur propre périmètre et les limites : validation déjà observée, une seed,
+   sorties sigmoid non calibrées, absence de météo et de combustible.
+   Le modèle servi reste le U-Net poids10 historique, pas le checkpoint C8 V2.
+   L'axe Big Data/Spark est séparé et retiré de la navigation jury.
+
+DERNIER CANDIDAT : AUXNEW V2, PRÉPARÉ UNIQUEMENT
+
+Notebook : notebooks/GEOFIREX_AUXNEW_V2_DISABLED.ipynb
+Protocole : reports/auxnew_20261123_v1/protocol.json
+Décision : faisable pour préparation CPU ; lancement GPU NO-GO tant qu'une
+nouvelle autorisation utilisateur, le quota courant et le précontrôle manquent.
+
+Un seul facteur : tête auxiliaire de 9 paramètres, BCE pondérée10 sur
+valid & feu_J==0, coefficient fixe 0,25. La loss principale, les huit canaux,
+le normaliseur, les index, le sampler et le seuil restent ceux de C8 V2.
+La tête principale reste la seule prévision ; aucune fusion ni routage vers
+la tête auxiliaire. Fresh seed42, quatre époques / 28976 mises à jour, pas de
+reprise ni balayage. Critères d'acceptation inchangés, aucune promotion automatique.
+Ne pas présenter de métriques AUXNEW : aucun entraînement ni résultat obtenu.
+
+Conditions avant tout lancement ultérieurement autorisé : 300 minutes de session,
+10 heures-carte disponibles/réservées, 16 GiB RAM totale / 8 GiB disponibles,
+20 GiB disque, au moins 2 GiB VRAM libres, runtime T4 historique exact.
+Le digest initial du backbone doit être celui du checkpoint C8 à zéro mise à jour.
+Le PyTorch CPU local a une initialisation différente : il n'est pas qualifié
+pour entraîner ce candidat. Le garde refuse avant création de l'optimiseur.
+En cas de manque de quota, runtime incompatible ou échéance trop proche,
+rester NO-GO et utiliser la démonstration stable ; ne pas modifier les critères.
+
+VÉRIFICATIONS AVANT LE JURY
+
+ - GET /health et /lab/status : prêts, modèle attendu, seuil0,78.
+ - GET /science/v2/comparison : quatre modèles, validation2020, 80 événements.
+ - Inférence sur le cas ci-dessus, huit couches, exports et zoom.
+ - Vérification visuelle manuelle desktop et écran étroit : pas de débordement,
+   légendes lisibles, dialogues utilisables. Cette vérification n'a pas pu être
+   automatisée : hôte navigateur indisponible, contrôle Chrome non approuvé
+   avant expiration. Les tests React utilisent un simulateur DOM, pas un navigateur.
+ - Conserver les archives et SHA-256, ne pas supprimer de verrous et ne pas
+   réutiliser d'autorisations consommées. Aucun commit/push automatique.
+
+Tests reproductibles, sans entraînement :
+  .\.venv\Scripts\python.exe -m pytest tests/test_jury_finalization.py tests/test_auxnew.py tests/test_prediction_lab.py -q
+Dans frontend, serveur local lancé :
+  node verify-jury.mjs
+
+Cette procédure ne demande aucun accès aux pixels 2021 et aucun résultat fictif.

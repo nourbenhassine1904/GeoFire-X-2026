@@ -1,0 +1,76 @@
+{
+  "archives": [
+    {
+      "model": "C8",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_seed42-COMPLETE-48e35c59.zip",
+      "archive_sha256": "37a8d69647ddebaa902d88e21fddf4df3f56eaa57e7094695b478d04116c1415",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "37e39603f42909c5a5afa86a1bd45b9050d11a0406260428143af09a7b88fcd7",
+      "checkpoint_sha256": "c2273fea252d709f4d316eba76515d669be97eac8bfa9302ff4831da2c9aedc1",
+      "all_archive_members_verified": true,
+      "saved_spatial": false,
+      "events": 0,
+      "tiles": 0,
+      "manifest_sha256": null
+    },
+    {
+      "model": "NEWPOS2",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_NEWPOS2_seed42-COMPLETE-193dafd8.zip",
+      "archive_sha256": "70c9693265c64c2a3b435c2c0a60f1f410ad1604e08a2625c04b687dead1b8f5",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "74dc9af9fdf1abaee346a1347f262cb5c79270f4ccb97545de31138f969d5033",
+      "checkpoint_sha256": "6e04c9995345bdc4d41dab0e7d648974d7ac07cb2ac95f6022e86deb92aa8d91",
+      "all_archive_members_verified": true,
+      "saved_spatial": true,
+      "events": 80,
+      "tiles": 30882,
+      "manifest_sha256": "fef88d524062c3a2e10b19775ffdb52f8b45a4484532ff67906c3218d88ce4da"
+    },
+    {
+      "model": "NEWPOS4",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C8_V2_NEWPOS4_seed42-COMPLETE-2193b5a8.zip",
+      "archive_sha256": "0b1ea0ad35004fc2c5828325f0b42d55dd430f2ccdfc00bac964e7ba56555b39",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "eacec1e3df7268a5508f4d0a8424858b17f49057158a43676caefc334d8e64fb",
+      "checkpoint_sha256": "5e139fa2dde831e21a05ce10d73a88c62bad7069c23cdde687cb16b1d04c9819",
+      "all_archive_members_verified": true,
+      "saved_spatial": true,
+      "events": 80,
+      "tiles": 30882,
+      "manifest_sha256": "d1241ba79b191f2ff2f1a242ad98ca2bd4e461e44d91bc760728ad1b32ecc6d5"
+    },
+    {
+      "model": "FIRE13",
+      "archive": "D:\\GeoFire-X\\GeoFire-X-V2\\B2_C13_FIRE_V2_seed42_EVALUATION_RECOVERY_ONLY-EVALUATION-RECOVERY-COMPLETE-e1c5a248.zip",
+      "archive_sha256": "5cb45e57c6649e3db4a8c77634bf6557d5067670e6a92eaa747f823216dc307d",
+      "result_member": "evaluation/evaluation.json",
+      "result_sha256": "c700b09434824481b3db191fd8299795d18931edd896bc9b53ec397dd1b0f6f6",
+      "checkpoint_sha256": "5afca67a87d88c25fad2eadb2e12c8aef57b5d294a4af19b56622af51f10909c",
+      "all_archive_members_verified": true,
+      "saved_spatial": true,
+      "events": 80,
+      "tiles": 30882,
+      "manifest_sha256": "2ded408422392f49ef96ca13a94ea9228c756bef4d3d8586f4a1f0851735d465"
+    }
+  ],
+  "hero": {
+    "path": "reports/unet_confirmation_20261112_v1/confirmation_cpu/B2_w10_holdout169/2020__fire_24332880_2020-09-04_raw.npz",
+    "sha256": "b9edd6c80a2345281838609fcbee403bfacede9c6648152c7d29aea1fb33a7ed",
+    "event_id": "2020/fire_24332880",
+    "as_of": "2020-09-03",
+    "target_date": "2020-09-04"
+  },
+  "v2_split": {
+    "path": "reports/protocol_v2_20261118/split_summary.json",
+    "sha256": "189b85f745fd3fd47223573c94c7d4f82a471107eed159cd1f7057182099d7fb",
+    "roles": {
+      "train": 318,
+      "purged": 53,
+      "val": 80,
+      "test": 156
+    }
+  },
+  "new_inference": false,
+  "test2021_pixels_opened": 0,
+  "scientific_metrics_modified": false
+}
